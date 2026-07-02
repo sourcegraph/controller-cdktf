@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validatePutFieldActionsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validatePutFieldActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -272,4 +272,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigTransformationRulesOutputRefere
 
 	return nil
 }
-

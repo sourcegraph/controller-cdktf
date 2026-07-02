@@ -12,9 +12,9 @@ type ComputeNodeTemplateServerBindingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ComputeNodeTemplateServerBindingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ComputeNodeTemplateServerBindingOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ComputeNodeTemplateServerBindingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) TypeInput() 
 	return returns
 }
 
-
 func NewComputeNodeTemplateServerBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeNodeTemplateServerBindingOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewComputeNodeTemplateServerBindingOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewComputeNodeTemplateServerBindingOutputReference_Override(c ComputeNodeTe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetInternalValue(val *ComputeNodeTemplateServerBinding) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetInternalValue(val *ComputeNodeTemplateServerBinding) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) ToString() *
 
 	return returns
 }
-

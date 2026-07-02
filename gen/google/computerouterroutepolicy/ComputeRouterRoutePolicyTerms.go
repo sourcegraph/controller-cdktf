@@ -1,6 +1,5 @@
 package computerouterroutepolicy
 
-
 type ComputeRouterRoutePolicyTerms struct {
 	// match block.
 	//
@@ -13,6 +12,5 @@ type ComputeRouterRoutePolicyTerms struct {
 	// actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_route_policy#actions ComputeRouterRoutePolicy#actions}
-	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
+	Actions any `field:"optional" json:"actions" yaml:"actions"`
 }
-

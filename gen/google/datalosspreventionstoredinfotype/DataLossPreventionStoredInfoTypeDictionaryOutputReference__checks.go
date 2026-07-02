@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataLossPreventionStoredInfoTypeDictionaryOutputReferenceParamet
 
 	return nil
 }
-

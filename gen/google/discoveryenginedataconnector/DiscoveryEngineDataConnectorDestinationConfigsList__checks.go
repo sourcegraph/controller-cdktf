@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineDataConnectorDestinationConfigsListParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaClusterBrokerCapacityConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterBrokerCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaClusterBrokerCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewManagedKafkaClusterBrokerCapacityConfigOutputReferenceParameters
 
 	return nil
 }
-

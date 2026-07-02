@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderKeyKeyDataOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderKeyKeyDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderKeyKeyDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamWorkforcePoolProviderKeyKeyDataOutputReferenceParameters(terr
 
 	return nil
 }
-

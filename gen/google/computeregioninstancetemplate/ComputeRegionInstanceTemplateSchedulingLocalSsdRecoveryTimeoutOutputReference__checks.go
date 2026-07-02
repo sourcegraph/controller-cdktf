@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeou
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeou
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOu
 
 	return nil
 }
-

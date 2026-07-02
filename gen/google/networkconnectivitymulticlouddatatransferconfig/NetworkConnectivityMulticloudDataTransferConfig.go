@@ -15,15 +15,15 @@ type NetworkConnectivityMulticloudDataTransferConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,31 +70,31 @@ type NetworkConnectivityMulticloudDataTransferConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Services() NetworkConnectivityMulticloudDataTransferConfigServicesList
-	ServicesInput() interface{}
+	ServicesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkConnectivityMulticloudDataTransferConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type NetworkConnectivityMulticloudDataTransferConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutServices(value interface{})
+	PutServices(value any)
 	PutTimeouts(value *NetworkConnectivityMulticloudDataTransferConfigTimeouts)
 	ResetDescription()
 	ResetId()
@@ -142,17 +142,17 @@ type NetworkConnectivityMulticloudDataTransferConfig interface {
 	ResetProject()
 	ResetServices()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkConnectivityMulticloudDataTransferConfig
@@ -170,8 +170,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Connection()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Provisioners
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Services() N
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"servicesInput",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) TerraformLab
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Timeouts() N
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -560,7 +560,6 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) UpdateTime()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_multicloud_data_transfer_config google_network_connectivity_multicloud_data_transfer_config} Resource.
 func NewNetworkConnectivityMulticloudDataTransferConfig(scope constructs.Construct, id *string, config *NetworkConnectivityMulticloudDataTransferConfigConfig) NetworkConnectivityMulticloudDataTransferConfig {
 	_init_.Initialize()
@@ -572,7 +571,7 @@ func NewNetworkConnectivityMulticloudDataTransferConfig(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -585,12 +584,12 @@ func NewNetworkConnectivityMulticloudDataTransferConfig_Override(n NetworkConnec
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetConnection
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetId(val *string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLabels(val
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetLocation(v
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetName(val *string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetName(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetProject(val *string) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetProject(va
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -713,7 +712,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetProvider(v
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkConnectivityMulticloudDataTransferConfig_IsConstruct(x interface{}) *bool {
+func NetworkConnectivityMulticloudDataTransferConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityMulticloudDataTransferConfig_IsConstructParameters(x); err != nil {
@@ -771,7 +770,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformElement(x interface{}) *bool {
+func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformElementParameters(x); err != nil {
@@ -790,7 +789,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformElement(x interf
 }
 
 // Experimental.
-func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformResource(x interface{}) *bool {
+func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformResourceParameters(x); err != nil {
@@ -809,7 +808,7 @@ func NetworkConnectivityMulticloudDataTransferConfig_IsTerraformResource(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -834,31 +833,31 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) AddMoveTarge
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetBooleanAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetBooleanMa
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetListAttri
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetNumberAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetNumberLis
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetNumberMap
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetStringAtt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,15 +985,15 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) GetStringMap
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1013,7 +1012,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ImportFrom(i
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1026,7 +1025,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) Interpolatio
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,18 +1039,18 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) MoveFromId(i
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) MoveToId(id 
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1073,18 +1072,18 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) OverrideLogi
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) PutServices(value interface{}) {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) PutServices(value any) {
 	if err := n.validatePutServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) PutTimeouts(
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1155,8 +1154,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ResetTimeout
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1168,8 +1167,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeAt
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1181,8 +1180,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) SynthesizeHc
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1194,8 +1193,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToHclTerrafo
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1220,8 +1219,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToString() *
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1232,4 +1231,3 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) ToTerraform(
 
 	return returns
 }
-

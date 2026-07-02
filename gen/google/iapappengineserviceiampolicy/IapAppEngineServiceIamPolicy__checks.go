@@ -19,7 +19,7 @@ func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateAddMoveTargetParameters
 	return nil
 }
 
-func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IapAppEngineServiceIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIapAppEngineServiceIamPolicy_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateIapAppEngineServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateIapAppEngineServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIapAppEngineServiceIamPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateIapAppEngineServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIapAppEngineServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIapAppEngineServiceIamPolicy_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateIapAppEngineServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIapAppEngineServiceIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetAppIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewIapAppEngineServiceIamPolicyParameters(scope constructs.Construc
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type DataGoogleCloudbuildTriggerBuildOptionsList interface {
 	Get(index *float64) DataGoogleCloudbuildTriggerBuildOptionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewDataGoogleCloudbuildTriggerBuildOptionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudbuildTriggerBuildOptionsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataGoogleCloudbuildTriggerBuildOptionsList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataGoogleCloudbuildTriggerBuildOptionsList_Override(d DataGoogleCloudbu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) Get(index *float
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsList) ToString() *stri
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetEnhancedQueryInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetEnhancedQueryInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryInsightsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryInsightsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordApplicationTagsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetRecordClientAddressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewSqlDatabaseInstanceSettingsInsightsConfigOutputReferenceParamete
 
 	return nil
 }
-

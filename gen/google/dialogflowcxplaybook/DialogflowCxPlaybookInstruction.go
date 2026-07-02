@@ -1,6 +1,5 @@
 package dialogflowcxplaybook
 
-
 type DialogflowCxPlaybookInstruction struct {
 	// General guidelines for the playbook.
 	//
@@ -11,6 +10,5 @@ type DialogflowCxPlaybookInstruction struct {
 	// steps block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_playbook#steps DialogflowCxPlaybook#steps}
-	Steps interface{} `field:"optional" json:"steps" yaml:"steps"`
+	Steps any `field:"optional" json:"steps" yaml:"steps"`
 }
-

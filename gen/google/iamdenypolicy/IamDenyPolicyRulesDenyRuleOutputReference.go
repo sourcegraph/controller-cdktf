@@ -12,9 +12,9 @@ type IamDenyPolicyRulesDenyRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type IamDenyPolicyRulesDenyRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type IamDenyPolicyRulesDenyRuleOutputReference interface {
 	ResetExceptionPrincipals()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewIamDenyPolicyRulesDenyRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamDenyPolicyRulesDenyRuleOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewIamDenyPolicyRulesDenyRuleOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewIamDenyPolicyRulesDenyRuleOutputReference_Override(i IamDenyPolicyRulesD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetDeniedPermissions(val *[]*string) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetDeniedPermissions(val *[]*string) {
 	if err := j.validateSetDeniedPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetDeniedPermission
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetDeniedPrincipals(val *[]*string) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetDeniedPrincipals(val *[]*string) {
 	if err := j.validateSetDeniedPrincipalsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetDeniedPrincipals
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetExceptionPermissions(val *[]*string) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetExceptionPermissions(val *[]*string) {
 	if err := j.validateSetExceptionPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetExceptionPermiss
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetExceptionPrincipals(val *[]*string) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetExceptionPrincipals(val *[]*string) {
 	if err := j.validateSetExceptionPrincipalsParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetExceptionPrincip
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetInternalValue(val *IamDenyPolicyRulesDenyRule) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetInternalValue(val *IamDenyPolicyRulesDenyRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) PutDenialCondition
 	_jsii_.InvokeVoid(
 		i,
 		"putDenialCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) ResetExceptionPrin
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) ToString() *string
 
 	return returns
 }
-

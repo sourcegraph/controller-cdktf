@@ -6,9 +6,9 @@ import (
 
 type DnsResponsePolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DnsResponsePolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The user assigned name for this Response Policy, such as 'myresponsepolicy'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#response_policy_name DnsResponsePolicy#response_policy_name}
@@ -30,7 +30,7 @@ type DnsResponsePolicyConfig struct {
 	// gke_clusters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#gke_clusters DnsResponsePolicy#gke_clusters}
-	GkeClusters interface{} `field:"optional" json:"gkeClusters" yaml:"gkeClusters"`
+	GkeClusters any `field:"optional" json:"gkeClusters" yaml:"gkeClusters"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#id DnsResponsePolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,7 +39,7 @@ type DnsResponsePolicyConfig struct {
 	// networks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#networks DnsResponsePolicy#networks}
-	Networks interface{} `field:"optional" json:"networks" yaml:"networks"`
+	Networks any `field:"optional" json:"networks" yaml:"networks"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#project DnsResponsePolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -47,4 +47,3 @@ type DnsResponsePolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy#timeouts DnsResponsePolicy#timeouts}
 	Timeouts *DnsResponsePolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

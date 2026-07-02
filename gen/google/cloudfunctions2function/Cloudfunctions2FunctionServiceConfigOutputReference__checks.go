@@ -90,7 +90,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutDirectVpcNetworkInterfaceParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutDirectVpcNetworkInterfaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value interface{}) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetAllTrafficOnLatestRevisionParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetAllTrafficOnLatestRevisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -415,4 +415,3 @@ func validateNewCloudfunctions2FunctionServiceConfigOutputReferenceParameters(te
 
 	return nil
 }
-

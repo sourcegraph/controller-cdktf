@@ -114,7 +114,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetColum
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetKeyColumnParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetKeyColumnParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetOrigi
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetRepeatedValuesParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) validateSetRepeatedValuesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewChronicleDataTableColumnInfoOutputReferenceParameters(terraformR
 
 	return nil
 }
-

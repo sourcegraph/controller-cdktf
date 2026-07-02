@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type DataplexTask interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -76,11 +76,11 @@ type DataplexTask interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spark() DataplexTaskSparkOutputReference
 	SparkInput() *DataplexTaskSpark
 	State() *string
@@ -91,11 +91,11 @@ type DataplexTask interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataplexTaskTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TriggerSpec() DataplexTaskTriggerSpecOutputReference
 	TriggerSpecInput() *DataplexTaskTriggerSpec
 	Uid() *string
@@ -104,9 +104,9 @@ type DataplexTask interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type DataplexTask interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type DataplexTask interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type DataplexTask interface {
 	ResetSpark()
 	ResetTaskId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataplexTask
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DataplexTask) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexTask) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DataplexTask) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexTask) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DataplexTask) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexTask) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_DataplexTask) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataplexTask) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_DataplexTask) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexTask) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_DataplexTask) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexTask) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_DataplexTask) Timeouts() DataplexTaskTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTask) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexTask) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -680,7 +680,6 @@ func (j *jsiiProxy_DataplexTask) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_task google_dataplex_task} Resource.
 func NewDataplexTask(scope constructs.Construct, id *string, config *DataplexTaskConfig) DataplexTask {
 	_init_.Initialize()
@@ -692,7 +691,7 @@ func NewDataplexTask(scope constructs.Construct, id *string, config *DataplexTas
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -705,12 +704,12 @@ func NewDataplexTask_Override(d DataplexTask, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataplexTask) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_DataplexTask)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetCount(val interface{}) {
+func (j *jsiiProxy_DataplexTask) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_DataplexTask)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataplexTask) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_DataplexTask)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetDescription(val *string) {
+func (j *jsiiProxy_DataplexTask) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_DataplexTask)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataplexTask) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_DataplexTask)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataplexTask) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -770,7 +769,7 @@ func (j *jsiiProxy_DataplexTask)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetId(val *string) {
+func (j *jsiiProxy_DataplexTask) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_DataplexTask)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataplexTask) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_DataplexTask)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetLake(val *string) {
+func (j *jsiiProxy_DataplexTask) SetLake(val *string) {
 	if err := j.validateSetLakeParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_DataplexTask)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataplexTask) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_DataplexTask)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetLocation(val *string) {
+func (j *jsiiProxy_DataplexTask) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_DataplexTask)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetProject(val *string) {
+func (j *jsiiProxy_DataplexTask) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_DataplexTask)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataplexTask) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_DataplexTask)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataplexTask) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_DataplexTask)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexTask)SetTaskId(val *string) {
+func (j *jsiiProxy_DataplexTask) SetTaskId(val *string) {
 	if err := j.validateSetTaskIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func DataplexTask_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func DataplexTask_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataplexTask_IsConstruct(x interface{}) *bool {
+func DataplexTask_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexTask_IsConstructParameters(x); err != nil {
@@ -913,7 +912,7 @@ func DataplexTask_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func DataplexTask_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexTask_IsTerraformElement(x interface{}) *bool {
+func DataplexTask_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexTask_IsTerraformElementParameters(x); err != nil {
@@ -932,7 +931,7 @@ func DataplexTask_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func DataplexTask_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexTask_IsTerraformResource(x interface{}) *bool {
+func DataplexTask_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexTask_IsTerraformResourceParameters(x); err != nil {
@@ -951,7 +950,7 @@ func DataplexTask_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexTask.DataplexTask",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -976,31 +975,31 @@ func (d *jsiiProxy_DataplexTask) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataplexTask) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataplexTask) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataplexTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexTask) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DataplexTask) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (d *jsiiProxy_DataplexTask) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (d *jsiiProxy_DataplexTask) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (d *jsiiProxy_DataplexTask) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (d *jsiiProxy_DataplexTask) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (d *jsiiProxy_DataplexTask) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (d *jsiiProxy_DataplexTask) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,15 +1127,15 @@ func (d *jsiiProxy_DataplexTask) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTask) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexTask) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1155,7 +1154,7 @@ func (d *jsiiProxy_DataplexTask) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (d *jsiiProxy_DataplexTask) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,18 +1181,18 @@ func (d *jsiiProxy_DataplexTask) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataplexTask) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataplexTask) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1204,7 +1203,7 @@ func (d *jsiiProxy_DataplexTask) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1215,7 +1214,7 @@ func (d *jsiiProxy_DataplexTask) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1226,7 +1225,7 @@ func (d *jsiiProxy_DataplexTask) PutExecutionSpec(value *DataplexTaskExecutionSp
 	_jsii_.InvokeVoid(
 		d,
 		"putExecutionSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (d *jsiiProxy_DataplexTask) PutNotebook(value *DataplexTaskNotebook) {
 	_jsii_.InvokeVoid(
 		d,
 		"putNotebook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (d *jsiiProxy_DataplexTask) PutSpark(value *DataplexTaskSpark) {
 	_jsii_.InvokeVoid(
 		d,
 		"putSpark",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,7 +1258,7 @@ func (d *jsiiProxy_DataplexTask) PutTimeouts(value *DataplexTaskTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1270,7 +1269,7 @@ func (d *jsiiProxy_DataplexTask) PutTriggerSpec(value *DataplexTaskTriggerSpec) 
 	_jsii_.InvokeVoid(
 		d,
 		"putTriggerSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1370,8 +1369,8 @@ func (d *jsiiProxy_DataplexTask) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataplexTask) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexTask) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1383,8 +1382,8 @@ func (d *jsiiProxy_DataplexTask) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTask) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexTask) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1396,8 +1395,8 @@ func (d *jsiiProxy_DataplexTask) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTask) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexTask) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1409,8 +1408,8 @@ func (d *jsiiProxy_DataplexTask) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTask) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexTask) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1435,8 +1434,8 @@ func (d *jsiiProxy_DataplexTask) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTask) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexTask) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1447,4 +1446,3 @@ func (d *jsiiProxy_DataplexTask) ToTerraform() interface{} {
 
 	return returns
 }
-

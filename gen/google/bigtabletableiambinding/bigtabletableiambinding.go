@@ -17,15 +17,15 @@ type BigtableTableIamBinding interface {
 	Condition() BigtableTableIamBindingConditionOutputReference
 	ConditionInput() *BigtableTableIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type BigtableTableIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -76,16 +76,16 @@ type BigtableTableIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type BigtableTableIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type BigtableTableIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type BigtableTableIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigtableTableIamBinding
@@ -177,8 +177,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) ConditionInput() *BigtableTableIamBi
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_BigtableTableIamBinding) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableTableIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_BigtableTableIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
 func NewBigtableTableIamBinding(scope constructs.Construct, id *string, config *BigtableTableIamBindingConfig) BigtableTableIamBinding {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewBigtableTableIamBinding(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewBigtableTableIamBinding_Override(b BigtableTableIamBinding, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetId(val *string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetInstanceName(val *string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetInstanceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_BigtableTableIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding)SetTable(val *string) {
+func (j *jsiiProxy_BigtableTableIamBinding) SetTable(val *string) {
 	if err := j.validateSetTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func BigtableTableIamBinding_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func BigtableTableIamBinding_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigtableTableIamBinding_IsConstruct(x interface{}) *bool {
+func BigtableTableIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableTableIamBinding_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func BigtableTableIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func BigtableTableIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableTableIamBinding_IsTerraformElement(x interface{}) *bool {
+func BigtableTableIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableTableIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func BigtableTableIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func BigtableTableIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableTableIamBinding_IsTerraformResource(x interface{}) *bool {
+func BigtableTableIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableTableIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func BigtableTableIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableTableIamBinding.BigtableTableIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (b *jsiiProxy_BigtableTableIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigtableTableIamBinding) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableTableIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (b *jsiiProxy_BigtableTableIamBinding) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -910,7 +909,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (b *jsiiProxy_BigtableTableIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigtableTableIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -981,7 +980,7 @@ func (b *jsiiProxy_BigtableTableIamBinding) PutCondition(value *BigtableTableIam
 	_jsii_.InvokeVoid(
 		b,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (b *jsiiProxy_BigtableTableIamBinding) ResetProject() {
 	)
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1030,8 +1029,8 @@ func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1043,8 +1042,8 @@ func (b *jsiiProxy_BigtableTableIamBinding) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1056,8 +1055,8 @@ func (b *jsiiProxy_BigtableTableIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1082,8 +1081,8 @@ func (b *jsiiProxy_BigtableTableIamBinding) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableTableIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1094,4 +1093,3 @@ func (b *jsiiProxy_BigtableTableIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenanceEventsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerClusterMaintenanceEventsOutputReferenceParameters(t
 
 	return nil
 }
-

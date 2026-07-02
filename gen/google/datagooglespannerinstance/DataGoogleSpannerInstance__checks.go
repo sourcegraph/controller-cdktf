@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleSpannerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleSpannerInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleSpannerInstance_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataGoogleSpannerInstance_IsConstructParameters(x interface{}) error {
+func validateDataGoogleSpannerInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleSpannerInstance_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataGoogleSpannerInstance_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleSpannerInstance_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleSpannerInstance_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleSpannerInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleSpannerInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetConfigParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleSpannerInstanceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

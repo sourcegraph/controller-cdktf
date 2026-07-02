@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelect
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOpt
 
 	return nil
 }
-

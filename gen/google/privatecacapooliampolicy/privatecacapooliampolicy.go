@@ -18,15 +18,15 @@ type PrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type PrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type PrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type PrivatecaCaPoolIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type PrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PrivatecaCaPoolIamPolicy
@@ -171,8 +171,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Resource.
 func NewPrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, config *PrivatecaCaPoolIamPolicyConfig) PrivatecaCaPoolIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewPrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewPrivatecaCaPoolIamPolicy_Override(p PrivatecaCaPoolIamPolicy, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetCaPool(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetCaPool(val *string) {
 	if err := j.validateSetCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetCaPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func PrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func PrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
+func PrivatecaCaPoolIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCaPoolIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func PrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func PrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
+func PrivatecaCaPoolIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func PrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func PrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PrivatecaCaPoolIamPolicy_IsTerraformResource(x interface{}) *bool {
+func PrivatecaCaPoolIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCaPoolIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func PrivatecaCaPoolIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -853,7 +852,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ResetProject() {
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -962,8 +961,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -975,8 +974,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -988,8 +987,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1014,8 +1013,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1026,4 +1025,3 @@ func (p *jsiiProxy_PrivatecaCaPoolIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

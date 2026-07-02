@@ -1,11 +1,10 @@
 package datalosspreventiondeidentifytemplate
 
-
 type DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCharacterMaskConfig struct {
 	// characters_to_ignore block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_deidentify_template#characters_to_ignore DataLossPreventionDeidentifyTemplate#characters_to_ignore}
-	CharactersToIgnore interface{} `field:"optional" json:"charactersToIgnore" yaml:"charactersToIgnore"`
+	CharactersToIgnore any `field:"optional" json:"charactersToIgnore" yaml:"charactersToIgnore"`
 	// Character to use to mask the sensitive values—for example, * for an alphabetic string such as a name, or 0 for a numeric string such as ZIP code or credit card number.
 	//
 	// This string must have a length of 1. If not supplied, this value defaults to * for
@@ -33,6 +32,5 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFi
 	// input string '1234-5678-9012-3456' is masked as '00000000000000-3456'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_deidentify_template#reverse_order DataLossPreventionDeidentifyTemplate#reverse_order}
-	ReverseOrder interface{} `field:"optional" json:"reverseOrder" yaml:"reverseOrder"`
+	ReverseOrder any `field:"optional" json:"reverseOrder" yaml:"reverseOrder"`
 }
-

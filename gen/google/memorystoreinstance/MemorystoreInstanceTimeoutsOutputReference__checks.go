@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMemorystoreInstanceTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

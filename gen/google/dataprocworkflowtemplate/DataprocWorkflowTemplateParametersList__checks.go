@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataprocWorkflowTemplateParametersListParameters(terraformResour
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatastreamStreamRuleSetsCustomizationRulesListParameters(terrafo
 
 	return nil
 }
-

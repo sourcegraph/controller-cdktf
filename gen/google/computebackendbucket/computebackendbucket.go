@@ -23,15 +23,15 @@ type ComputeBackendBucket interface {
 	SetCompressionMode(val *string)
 	CompressionModeInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CustomResponseHeaders() *[]*string
 	SetCustomResponseHeaders(val *[]*string)
@@ -46,9 +46,9 @@ type ComputeBackendBucket interface {
 	EdgeSecurityPolicy() *string
 	SetEdgeSecurityPolicy(val *string)
 	EdgeSecurityPolicyInput() *string
-	EnableCdn() interface{}
-	SetEnableCdn(val interface{})
-	EnableCdnInput() interface{}
+	EnableCdn() any
+	SetEnableCdn(val any)
+	EnableCdnInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,27 +82,27 @@ type ComputeBackendBucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeBackendBucketTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type ComputeBackendBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type ComputeBackendBucket interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type ComputeBackendBucket interface {
 	ResetParams()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeBackendBucket
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ComputeBackendBucket) CompressionModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_ComputeBackendBucket) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeBackendBucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_ComputeBackendBucket) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ComputeBackendBucket) EdgeSecurityPolicyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) EnableCdn() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) EnableCdn() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCdn",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ComputeBackendBucket) EnableCdn() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) EnableCdnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) EnableCdnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCdnInput",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ComputeBackendBucket) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeBackendBucket) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_ComputeBackendBucket) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_ComputeBackendBucket) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeBackendBucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -604,8 +604,8 @@ func (j *jsiiProxy_ComputeBackendBucket) Timeouts() ComputeBackendBucketTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendBucket) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucket) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -613,7 +613,6 @@ func (j *jsiiProxy_ComputeBackendBucket) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_bucket google_compute_backend_bucket} Resource.
 func NewComputeBackendBucket(scope constructs.Construct, id *string, config *ComputeBackendBucketConfig) ComputeBackendBucket {
@@ -626,7 +625,7 @@ func NewComputeBackendBucket(scope constructs.Construct, id *string, config *Com
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -639,12 +638,12 @@ func NewComputeBackendBucket_Override(c ComputeBackendBucket, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetBucketName(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetCompressionMode(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetCompressionMode(val *string) {
 	if err := j.validateSetCompressionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetCompressionMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeBackendBucket) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeBackendBucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetCustomResponseHeaders(val *[]*string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetCustomResponseHeaders(val *[]*string) {
 	if err := j.validateSetCustomResponseHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetCustomResponseHeaders(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -707,7 +706,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetEdgeSecurityPolicy(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetEdgeSecurityPolicy(val *string) {
 	if err := j.validateSetEdgeSecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetEdgeSecurityPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetEnableCdn(val interface{}) {
+func (j *jsiiProxy_ComputeBackendBucket) SetEnableCdn(val any) {
 	if err := j.validateSetEnableCdnParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetEnableCdn(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeBackendBucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -748,7 +747,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetId(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeBackendBucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetLoadBalancingScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetName(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetProject(val *string) {
+func (j *jsiiProxy_ComputeBackendBucket) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeBackendBucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -811,7 +810,7 @@ func (j *jsiiProxy_ComputeBackendBucket)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucket)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeBackendBucket) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func ComputeBackendBucket_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func ComputeBackendBucket_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeBackendBucket_IsConstruct(x interface{}) *bool {
+func ComputeBackendBucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeBackendBucket_IsConstructParameters(x); err != nil {
@@ -869,7 +868,7 @@ func ComputeBackendBucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func ComputeBackendBucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
+func ComputeBackendBucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeBackendBucket_IsTerraformElementParameters(x); err != nil {
@@ -888,7 +887,7 @@ func ComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func ComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeBackendBucket_IsTerraformResource(x interface{}) *bool {
+func ComputeBackendBucket_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeBackendBucket_IsTerraformResourceParameters(x); err != nil {
@@ -907,7 +906,7 @@ func ComputeBackendBucket_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -932,31 +931,31 @@ func (c *jsiiProxy_ComputeBackendBucket) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeBackendBucket) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (c *jsiiProxy_ComputeBackendBucket) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,15 +1083,15 @@ func (c *jsiiProxy_ComputeBackendBucket) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeBackendBucket) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1111,7 +1110,7 @@ func (c *jsiiProxy_ComputeBackendBucket) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (c *jsiiProxy_ComputeBackendBucket) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1138,18 +1137,18 @@ func (c *jsiiProxy_ComputeBackendBucket) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeBackendBucket) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1160,7 +1159,7 @@ func (c *jsiiProxy_ComputeBackendBucket) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1171,7 +1170,7 @@ func (c *jsiiProxy_ComputeBackendBucket) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1182,7 +1181,7 @@ func (c *jsiiProxy_ComputeBackendBucket) PutCdnPolicy(value *ComputeBackendBucke
 	_jsii_.InvokeVoid(
 		c,
 		"putCdnPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1193,7 +1192,7 @@ func (c *jsiiProxy_ComputeBackendBucket) PutParams(value *ComputeBackendBucketPa
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1204,7 +1203,7 @@ func (c *jsiiProxy_ComputeBackendBucket) PutTimeouts(value *ComputeBackendBucket
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1304,8 +1303,8 @@ func (c *jsiiProxy_ComputeBackendBucket) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeBackendBucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1317,8 +1316,8 @@ func (c *jsiiProxy_ComputeBackendBucket) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeBackendBucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1330,8 +1329,8 @@ func (c *jsiiProxy_ComputeBackendBucket) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeBackendBucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1343,8 +1342,8 @@ func (c *jsiiProxy_ComputeBackendBucket) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeBackendBucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1369,8 +1368,8 @@ func (c *jsiiProxy_ComputeBackendBucket) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucket) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeBackendBucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1381,4 +1380,3 @@ func (c *jsiiProxy_ComputeBackendBucket) ToTerraform() interface{} {
 
 	return returns
 }
-

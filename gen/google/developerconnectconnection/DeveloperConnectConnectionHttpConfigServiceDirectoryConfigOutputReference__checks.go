@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutput
 
 	return nil
 }
-

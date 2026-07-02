@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigqueryReservationGroupTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

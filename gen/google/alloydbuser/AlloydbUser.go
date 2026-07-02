@@ -18,15 +18,15 @@ type AlloydbUser interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseRoles() *[]*string
 	SetDatabaseRoles(val *[]*string)
 	DatabaseRolesInput() *[]*string
@@ -66,19 +66,19 @@ type AlloydbUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AlloydbUserTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
@@ -89,9 +89,9 @@ type AlloydbUser interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type AlloydbUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type AlloydbUser interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type AlloydbUser interface {
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlloydbUser
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AlloydbUser) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbUser) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_AlloydbUser) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlloydbUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_AlloydbUser) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_AlloydbUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlloydbUser) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_AlloydbUser) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_AlloydbUser) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlloydbUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_AlloydbUser) Timeouts() AlloydbUserTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbUser) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbUser) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_AlloydbUser) UserTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_user google_alloydb_user} Resource.
 func NewAlloydbUser(scope constructs.Construct, id *string, config *AlloydbUserConfig) AlloydbUser {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewAlloydbUser(scope constructs.Construct, id *string, config *AlloydbUserC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewAlloydbUser_Override(a AlloydbUser, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetCluster(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_AlloydbUser)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlloydbUser) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_AlloydbUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetCount(val interface{}) {
+func (j *jsiiProxy_AlloydbUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_AlloydbUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetDatabaseRoles(val *[]*string) {
+func (j *jsiiProxy_AlloydbUser) SetDatabaseRoles(val *[]*string) {
 	if err := j.validateSetDatabaseRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_AlloydbUser)SetDatabaseRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlloydbUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_AlloydbUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlloydbUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_AlloydbUser)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetId(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_AlloydbUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlloydbUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_AlloydbUser)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetPassword(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_AlloydbUser)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetPasswordWo(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_AlloydbUser)SetPasswordWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetPasswordWoVersion(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetPasswordWoVersion(val *string) {
 	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_AlloydbUser)SetPasswordWoVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlloydbUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_AlloydbUser)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlloydbUser) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_AlloydbUser)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetUserId(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetUserId(val *string) {
 	if err := j.validateSetUserIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_AlloydbUser)SetUserId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbUser)SetUserType(val *string) {
+func (j *jsiiProxy_AlloydbUser) SetUserType(val *string) {
 	if err := j.validateSetUserTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func AlloydbUser_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func AlloydbUser_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlloydbUser_IsConstruct(x interface{}) *bool {
+func AlloydbUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlloydbUser_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func AlloydbUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func AlloydbUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlloydbUser_IsTerraformElement(x interface{}) *bool {
+func AlloydbUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlloydbUser_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func AlloydbUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func AlloydbUser_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlloydbUser_IsTerraformResource(x interface{}) *bool {
+func AlloydbUser_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlloydbUser_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func AlloydbUser_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (a *jsiiProxy_AlloydbUser) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlloydbUser) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlloydbUser) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlloydbUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlloydbUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (a *jsiiProxy_AlloydbUser) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (a *jsiiProxy_AlloydbUser) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (a *jsiiProxy_AlloydbUser) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (a *jsiiProxy_AlloydbUser) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (a *jsiiProxy_AlloydbUser) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (a *jsiiProxy_AlloydbUser) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (a *jsiiProxy_AlloydbUser) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (a *jsiiProxy_AlloydbUser) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbUser) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlloydbUser) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -981,7 +980,7 @@ func (a *jsiiProxy_AlloydbUser) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (a *jsiiProxy_AlloydbUser) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (a *jsiiProxy_AlloydbUser) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlloydbUser) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlloydbUser) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (a *jsiiProxy_AlloydbUser) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (a *jsiiProxy_AlloydbUser) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (a *jsiiProxy_AlloydbUser) PutTimeouts(value *AlloydbUserTimeouts) {
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,8 +1111,8 @@ func (a *jsiiProxy_AlloydbUser) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AlloydbUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlloydbUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1125,8 +1124,8 @@ func (a *jsiiProxy_AlloydbUser) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlloydbUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1138,8 +1137,8 @@ func (a *jsiiProxy_AlloydbUser) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlloydbUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1151,8 +1150,8 @@ func (a *jsiiProxy_AlloydbUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbUser) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlloydbUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1177,8 +1176,8 @@ func (a *jsiiProxy_AlloydbUser) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbUser) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlloydbUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1189,4 +1188,3 @@ func (a *jsiiProxy_AlloydbUser) ToTerraform() interface{} {
 
 	return returns
 }
-

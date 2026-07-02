@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetwork",
-		reflect.TypeOf((*ComputeCrossSiteNetwork)(nil)).Elem(),
+		reflect.TypeFor[ComputeCrossSiteNetwork](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeCrossSiteNetwork{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkConfig",
-		reflect.TypeOf((*ComputeCrossSiteNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeCrossSiteNetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeouts",
-		reflect.TypeOf((*ComputeCrossSiteNetworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeCrossSiteNetworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeCrossSiteNetwork.ComputeCrossSiteNetworkTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeCrossSiteNetworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeCrossSiteNetworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeCrossSiteNetworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigOutputOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOutputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigOutputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTranscoderJobConfigOutputOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

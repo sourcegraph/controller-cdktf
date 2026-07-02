@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewTranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReferenceP
 
 	return nil
 }
-

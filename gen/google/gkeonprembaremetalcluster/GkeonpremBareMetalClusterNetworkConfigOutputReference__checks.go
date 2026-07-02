@@ -131,7 +131,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) validateSetAdvancedNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) validateSetAdvancedNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewGkeonpremBareMetalClusterNetworkConfigOutputReferenceParameters(
 
 	return nil
 }
-

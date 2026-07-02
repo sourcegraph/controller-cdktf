@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetEnableMetricsParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetEnableMetricsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetEnableRelayParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetEnableRelayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewContainerClusterMonitoringConfigAdvancedDatapathObservabilityCon
 
 	return nil
 }
-

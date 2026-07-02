@@ -19,7 +19,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateAddMoveTargetParameter
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBackupDrBackupPlanAssociation_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateBackupDrBackupPlanAssociation_IsConstructParameters(x interface{}) error {
+func validateBackupDrBackupPlanAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBackupDrBackupPlanAssociation_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateBackupDrBackupPlanAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateBackupDrBackupPlanAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBackupDrBackupPlanAssociation_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateBackupDrBackupPlanAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateBackupDrBackupPlanAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetBackupPlanAssociati
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewBackupDrBackupPlanAssociationParameters(scope constructs.Constru
 
 	return nil
 }
-

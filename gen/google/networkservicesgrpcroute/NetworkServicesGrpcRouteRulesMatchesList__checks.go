@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesGrpcRouteRulesMatchesListParameters(terraformReso
 
 	return nil
 }
-

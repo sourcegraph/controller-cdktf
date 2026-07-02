@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validateInterpolatio
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutBusinessOwnersParameters(value interface{}) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutBusinessOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutCriticali
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutDeveloperOwnersParameters(value interface{}) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutDeveloperOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -174,7 +174,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutEnvironme
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutOperatorOwnersParameters(value interface{}) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validatePutOperatorOwnersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubWorkloadAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -313,4 +313,3 @@ func validateNewApphubWorkloadAttributesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

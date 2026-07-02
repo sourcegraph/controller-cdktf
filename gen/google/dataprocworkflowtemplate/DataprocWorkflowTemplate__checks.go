@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutEncryptionConfigParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutJobsParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutJobsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutJobsParameters(value int
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutParametersParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateDataprocWorkflowTemplate_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataprocWorkflowTemplate_IsConstructParameters(x interface{}) error {
+func validateDataprocWorkflowTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateDataprocWorkflowTemplate_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataprocWorkflowTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocWorkflowTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateDataprocWorkflowTemplate_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDataprocWorkflowTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocWorkflowTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func validateDataprocWorkflowTemplate_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -557,4 +557,3 @@ func validateNewDataprocWorkflowTemplateParameters(scope constructs.Construct, i
 
 	return nil
 }
-

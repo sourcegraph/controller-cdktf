@@ -19,7 +19,7 @@ func (s *jsiiProxy_SpannerDatabase) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (s *jsiiProxy_SpannerDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SpannerDatabase) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SpannerDatabase) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (s *jsiiProxy_SpannerDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SpannerDatabase) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSpannerDatabase_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateSpannerDatabase_IsConstructParameters(x interface{}) error {
+func validateSpannerDatabase_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSpannerDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSpannerDatabase_IsTerraformElementParameters(x interface{}) error {
+func validateSpannerDatabase_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSpannerDatabase_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSpannerDatabase_IsTerraformResourceParameters(x interface{}) error {
+func validateSpannerDatabase_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSpannerDatabase_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SpannerDatabase) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SpannerDatabase) validateSetDefaultTimeZoneParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -400,7 +400,7 @@ func (j *jsiiProxy_SpannerDatabase) validateSetDeletionProtectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetEnableDropProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetEnableDropProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_SpannerDatabase) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabase) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SpannerDatabase) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewSpannerDatabaseParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

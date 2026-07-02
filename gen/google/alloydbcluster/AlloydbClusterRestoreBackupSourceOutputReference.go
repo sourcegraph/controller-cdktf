@@ -15,9 +15,9 @@ type AlloydbClusterRestoreBackupSourceOutputReference interface {
 	BackupNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type AlloydbClusterRestoreBackupSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type AlloydbClusterRestoreBackupSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) BackupNameI
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewAlloydbClusterRestoreBackupSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbClusterRestoreBackupSourceOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewAlloydbClusterRestoreBackupSourceOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewAlloydbClusterRestoreBackupSourceOutputReference_Override(a AlloydbClust
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetBackupName(val *string) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetBackupName(val *string) {
 	if err := j.validateSetBackupNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetBackupNam
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetInternalValue(val *AlloydbClusterRestoreBackupSource) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetInternalValue(val *AlloydbClusterRestoreBackupSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) ComputeFqn(
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetListAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetStringAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) GetStringMa
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) Interpolati
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupSourceOutputReference) ToString() 
 
 	return returns
 }
-

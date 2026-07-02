@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewTranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputRefere
 
 	return nil
 }
-

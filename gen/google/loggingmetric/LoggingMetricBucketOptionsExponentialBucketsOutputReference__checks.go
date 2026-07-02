@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLoggingMetricBucketOptionsExponentialBucketsOutputReferenceParam
 
 	return nil
 }
-

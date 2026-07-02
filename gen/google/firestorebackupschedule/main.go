@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
-		reflect.TypeOf((*FirestoreBackupSchedule)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupSchedule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyRecurrence", GoGetter: "WeeklyRecurrence"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyRecurrenceInput", GoGetter: "WeeklyRecurrenceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreBackupSchedule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleConfig",
-		reflect.TypeOf((*FirestoreBackupScheduleConfig)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrence",
-		reflect.TypeOf((*FirestoreBackupScheduleDailyRecurrence)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleDailyRecurrence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrenceOutputReference",
-		reflect.TypeOf((*FirestoreBackupScheduleDailyRecurrenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleDailyRecurrenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeouts",
-		reflect.TypeOf((*FirestoreBackupScheduleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleTimeoutsOutputReference",
-		reflect.TypeOf((*FirestoreBackupScheduleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrence",
-		reflect.TypeOf((*FirestoreBackupScheduleWeeklyRecurrence)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleWeeklyRecurrence](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleWeeklyRecurrenceOutputReference",
-		reflect.TypeOf((*FirestoreBackupScheduleWeeklyRecurrenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreBackupScheduleWeeklyRecurrenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

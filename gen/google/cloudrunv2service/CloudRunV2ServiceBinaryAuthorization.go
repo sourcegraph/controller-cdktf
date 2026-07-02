@@ -1,6 +1,5 @@
 package cloudrunv2service
 
-
 type CloudRunV2ServiceBinaryAuthorization struct {
 	// If present, indicates to use Breakglass using this justification.
 	//
@@ -15,6 +14,5 @@ type CloudRunV2ServiceBinaryAuthorization struct {
 	// If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#use_default CloudRunV2Service#use_default}
-	UseDefault interface{} `field:"optional" json:"useDefault" yaml:"useDefault"`
+	UseDefault any `field:"optional" json:"useDefault" yaml:"useDefault"`
 }
-

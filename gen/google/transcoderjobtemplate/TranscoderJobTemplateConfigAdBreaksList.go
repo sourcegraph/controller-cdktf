@@ -17,8 +17,8 @@ type TranscoderJobTemplateConfigAdBreaksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type TranscoderJobTemplateConfigAdBreaksList interface {
 	Get(index *float64) TranscoderJobTemplateConfigAdBreaksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewTranscoderJobTemplateConfigAdBreaksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TranscoderJobTemplateConfigAdBreaksList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewTranscoderJobTemplateConfigAdBreaksList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAdBreaksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewTranscoderJobTemplateConfigAdBreaksList_Override(t TranscoderJobTemplate
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAdBreaksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		t,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) Get(index *float64) 
 	_jsii_.Invoke(
 		t,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) ToString() *string {
 
 	return returns
 }
-

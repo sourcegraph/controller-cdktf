@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeNodeTemplate) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeNodeTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeNodeTemplate) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeNodeTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeNodeTemplate) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplate) validatePutAcceleratorsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeNodeTemplate) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (c *jsiiProxy_ComputeNodeTemplate) validatePutAcceleratorsParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplate) validatePutDisksParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeNodeTemplate) validatePutDisksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateComputeNodeTemplate_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateComputeNodeTemplate_IsConstructParameters(x interface{}) error {
+func validateComputeNodeTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateComputeNodeTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeNodeTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateComputeNodeTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateComputeNodeTemplate_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateComputeNodeTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeNodeTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func validateComputeNodeTemplate_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_ComputeNodeTemplate) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -493,7 +493,7 @@ func (j *jsiiProxy_ComputeNodeTemplate) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeNodeTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -565,4 +565,3 @@ func validateNewComputeNodeTemplateParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

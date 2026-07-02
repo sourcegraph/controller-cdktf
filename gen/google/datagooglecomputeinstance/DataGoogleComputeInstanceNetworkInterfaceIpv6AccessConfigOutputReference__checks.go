@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputR
 
 	return nil
 }
-

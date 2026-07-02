@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxToolFunctionSpecOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolFunctionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolFunctionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowCxToolFunctionSpecOutputReferenceParameters(terraformR
 
 	return nil
 }
-

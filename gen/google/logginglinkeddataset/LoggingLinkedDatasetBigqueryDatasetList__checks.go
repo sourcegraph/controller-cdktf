@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingLinkedDatasetBigqueryDatasetListParameters(terraformResou
 
 	return nil
 }
-

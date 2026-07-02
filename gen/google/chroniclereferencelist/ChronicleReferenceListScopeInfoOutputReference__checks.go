@@ -109,7 +109,7 @@ func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewChronicleReferenceListScopeInfoOutputReferenceParameters(terrafo
 
 	return nil
 }
-

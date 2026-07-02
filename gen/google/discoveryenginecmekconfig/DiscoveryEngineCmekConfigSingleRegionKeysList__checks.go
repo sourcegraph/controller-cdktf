@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineCmekConfigSingleRegionKeysListParameters(terrafor
 
 	return nil
 }
-

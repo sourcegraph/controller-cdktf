@@ -15,15 +15,15 @@ type SiteVerificationOwner interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,19 +53,19 @@ type SiteVerificationOwner interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SiteVerificationOwnerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WebResourceId() *string
 	SetWebResourceId(val *string)
 	WebResourceIdInput() *string
@@ -73,9 +73,9 @@ type SiteVerificationOwner interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type SiteVerificationOwner interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type SiteVerificationOwner interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type SiteVerificationOwner interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SiteVerificationOwner
@@ -146,8 +146,8 @@ func (j *jsiiProxy_SiteVerificationOwner) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SiteVerificationOwner) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_SiteVerificationOwner) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SiteVerificationOwner) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SiteVerificationOwner) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SiteVerificationOwner) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_SiteVerificationOwner) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SiteVerificationOwner) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_SiteVerificationOwner) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SiteVerificationOwner) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_SiteVerificationOwner) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SiteVerificationOwner) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_SiteVerificationOwner) Timeouts() SiteVerificationOwnerTimeou
 	return returns
 }
 
-func (j *jsiiProxy_SiteVerificationOwner) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SiteVerificationOwner) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_SiteVerificationOwner) WebResourceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner google_site_verification_owner} Resource.
 func NewSiteVerificationOwner(scope constructs.Construct, id *string, config *SiteVerificationOwnerConfig) SiteVerificationOwner {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewSiteVerificationOwner(scope constructs.Construct, id *string, config *Si
 
 	_jsii_.Create(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewSiteVerificationOwner_Override(s SiteVerificationOwner, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetConnection(val interface{}) {
+func (j *jsiiProxy_SiteVerificationOwner) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetCount(val interface{}) {
+func (j *jsiiProxy_SiteVerificationOwner) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SiteVerificationOwner) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetEmail(val *string) {
+func (j *jsiiProxy_SiteVerificationOwner) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SiteVerificationOwner) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetId(val *string) {
+func (j *jsiiProxy_SiteVerificationOwner) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SiteVerificationOwner) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SiteVerificationOwner) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SiteVerificationOwner) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_SiteVerificationOwner)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SiteVerificationOwner)SetWebResourceId(val *string) {
+func (j *jsiiProxy_SiteVerificationOwner) SetWebResourceId(val *string) {
 	if err := j.validateSetWebResourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func SiteVerificationOwner_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func SiteVerificationOwner_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SiteVerificationOwner_IsConstruct(x interface{}) *bool {
+func SiteVerificationOwner_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSiteVerificationOwner_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func SiteVerificationOwner_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func SiteVerificationOwner_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SiteVerificationOwner_IsTerraformElement(x interface{}) *bool {
+func SiteVerificationOwner_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSiteVerificationOwner_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func SiteVerificationOwner_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func SiteVerificationOwner_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SiteVerificationOwner_IsTerraformResource(x interface{}) *bool {
+func SiteVerificationOwner_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSiteVerificationOwner_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func SiteVerificationOwner_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (s *jsiiProxy_SiteVerificationOwner) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SiteVerificationOwner) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SiteVerificationOwner) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (s *jsiiProxy_SiteVerificationOwner) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (s *jsiiProxy_SiteVerificationOwner) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SiteVerificationOwner) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -796,7 +795,7 @@ func (s *jsiiProxy_SiteVerificationOwner) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_SiteVerificationOwner) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (s *jsiiProxy_SiteVerificationOwner) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SiteVerificationOwner) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (s *jsiiProxy_SiteVerificationOwner) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (s *jsiiProxy_SiteVerificationOwner) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SiteVerificationOwner) PutTimeouts(value *SiteVerificationOwn
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (s *jsiiProxy_SiteVerificationOwner) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SiteVerificationOwner) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -908,8 +907,8 @@ func (s *jsiiProxy_SiteVerificationOwner) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SiteVerificationOwner) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -921,8 +920,8 @@ func (s *jsiiProxy_SiteVerificationOwner) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SiteVerificationOwner) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -934,8 +933,8 @@ func (s *jsiiProxy_SiteVerificationOwner) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SiteVerificationOwner) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -960,8 +959,8 @@ func (s *jsiiProxy_SiteVerificationOwner) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SiteVerificationOwner) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SiteVerificationOwner) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -972,4 +971,3 @@ func (s *jsiiProxy_SiteVerificationOwner) ToTerraform() interface{} {
 
 	return returns
 }
-

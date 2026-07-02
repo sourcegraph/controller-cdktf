@@ -1,6 +1,5 @@
 package recaptchaenterprisekey
 
-
 type RecaptchaEnterpriseKeyWebSettings struct {
 	// Required. Describes how this key is integrated with the website. Possible values: SCORE, CHECKBOX, INVISIBLE, POLICY_BASED_CHALLENGE.
 	//
@@ -9,13 +8,13 @@ type RecaptchaEnterpriseKeyWebSettings struct {
 	// If set to true, it means allowed_domains will not be enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/recaptcha_enterprise_key#allow_all_domains RecaptchaEnterpriseKey#allow_all_domains}
-	AllowAllDomains interface{} `field:"optional" json:"allowAllDomains" yaml:"allowAllDomains"`
+	AllowAllDomains any `field:"optional" json:"allowAllDomains" yaml:"allowAllDomains"`
 	// If set to true, the key can be used on AMP (Accelerated Mobile Pages) websites.
 	//
 	// This is supported only for the SCORE integration type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/recaptcha_enterprise_key#allow_amp_traffic RecaptchaEnterpriseKey#allow_amp_traffic}
-	AllowAmpTraffic interface{} `field:"optional" json:"allowAmpTraffic" yaml:"allowAmpTraffic"`
+	AllowAmpTraffic any `field:"optional" json:"allowAmpTraffic" yaml:"allowAmpTraffic"`
 	// Domains or subdomains of websites allowed to use the key.
 	//
 	// All subdomains of an allowed domain are automatically allowed. A valid domain requires a host and must not include any path, port, query or fragment. Examples: 'example.com' or 'subdomain.example.com'
@@ -33,4 +32,3 @@ type RecaptchaEnterpriseKeyWebSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/recaptcha_enterprise_key#challenge_settings RecaptchaEnterpriseKey#challenge_settings}
 	ChallengeSettings *RecaptchaEnterpriseKeyWebSettingsChallengeSettings `field:"optional" json:"challengeSettings" yaml:"challengeSettings"`
 }
-

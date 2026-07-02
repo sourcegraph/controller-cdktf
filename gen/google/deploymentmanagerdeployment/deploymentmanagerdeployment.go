@@ -15,15 +15,15 @@ type DeploymentManagerDeployment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatePolicy() *string
 	SetCreatePolicy(val *string)
 	CreatePolicyInput() *string
@@ -50,7 +50,7 @@ type DeploymentManagerDeployment interface {
 	SetId(val *string)
 	IdInput() *string
 	Labels() DeploymentManagerDeploymentLabelsList
-	LabelsInput() interface{}
+	LabelsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,9 +61,9 @@ type DeploymentManagerDeployment interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Preview() interface{}
-	SetPreview(val interface{})
-	PreviewInput() interface{}
+	Preview() any
+	SetPreview(val any)
+	PreviewInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -72,29 +72,29 @@ type DeploymentManagerDeployment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	Target() DeploymentManagerDeploymentTargetOutputReference
 	TargetInput() *DeploymentManagerDeploymentTarget
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DeploymentManagerDeploymentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DeploymentManagerDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type DeploymentManagerDeployment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLabels(value interface{})
+	PutLabels(value any)
 	PutTarget(value *DeploymentManagerDeploymentTarget)
 	PutTimeouts(value *DeploymentManagerDeploymentTimeouts)
 	ResetCreatePolicy()
@@ -145,17 +145,17 @@ type DeploymentManagerDeployment interface {
 	ResetPreview()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DeploymentManagerDeployment
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Labels() DeploymentManagerDeploy
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) LabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) LabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelsInput",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) Preview() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) Preview() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preview",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Preview() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) PreviewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) PreviewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"previewInput",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -543,8 +543,8 @@ func (j *jsiiProxy_DeploymentManagerDeployment) Timeouts() DeploymentManagerDepl
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeployment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -552,7 +552,6 @@ func (j *jsiiProxy_DeploymentManagerDeployment) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment} Resource.
 func NewDeploymentManagerDeployment(scope constructs.Construct, id *string, config *DeploymentManagerDeploymentConfig) DeploymentManagerDeployment {
@@ -565,7 +564,7 @@ func NewDeploymentManagerDeployment(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -578,12 +577,12 @@ func NewDeploymentManagerDeployment_Override(d DeploymentManagerDeployment, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetConnection(val interface{}) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetCount(val interface{}) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetCreatePolicy(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetCreatePolicy(val *string) {
 	if err := j.validateSetCreatePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetCreatePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetDeletePolicy(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetDeletePolicy(val *string) {
 	if err := j.validateSetDeletePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetDeletePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetDescription(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetId(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetName(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetPreview(val interface{}) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetPreview(val any) {
 	if err := j.validateSetPreviewParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetPreview(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetProject(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeployment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DeploymentManagerDeployment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func DeploymentManagerDeployment_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func DeploymentManagerDeployment_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DeploymentManagerDeployment_IsConstruct(x interface{}) *bool {
+func DeploymentManagerDeployment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeploymentManagerDeployment_IsConstructParameters(x); err != nil {
@@ -775,7 +774,7 @@ func DeploymentManagerDeployment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func DeploymentManagerDeployment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DeploymentManagerDeployment_IsTerraformElement(x interface{}) *bool {
+func DeploymentManagerDeployment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeploymentManagerDeployment_IsTerraformElementParameters(x); err != nil {
@@ -794,7 +793,7 @@ func DeploymentManagerDeployment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func DeploymentManagerDeployment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DeploymentManagerDeployment_IsTerraformResource(x interface{}) *bool {
+func DeploymentManagerDeployment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDeploymentManagerDeployment_IsTerraformResourceParameters(x); err != nil {
@@ -813,7 +812,7 @@ func DeploymentManagerDeployment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,31 +837,31 @@ func (d *jsiiProxy_DeploymentManagerDeployment) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DeploymentManagerDeployment) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentManagerDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,15 +989,15 @@ func (d *jsiiProxy_DeploymentManagerDeployment) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,7 +1016,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,18 +1043,18 @@ func (d *jsiiProxy_DeploymentManagerDeployment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DeploymentManagerDeployment) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1077,18 +1076,18 @@ func (d *jsiiProxy_DeploymentManagerDeployment) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) PutLabels(value interface{}) {
+func (d *jsiiProxy_DeploymentManagerDeployment) PutLabels(value any) {
 	if err := d.validatePutLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) PutTarget(value *DeploymentManag
 	_jsii_.InvokeVoid(
 		d,
 		"putTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (d *jsiiProxy_DeploymentManagerDeployment) PutTimeouts(value *DeploymentMan
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1186,8 +1185,8 @@ func (d *jsiiProxy_DeploymentManagerDeployment) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1199,8 +1198,8 @@ func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1212,8 +1211,8 @@ func (d *jsiiProxy_DeploymentManagerDeployment) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1225,8 +1224,8 @@ func (d *jsiiProxy_DeploymentManagerDeployment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1251,8 +1250,8 @@ func (d *jsiiProxy_DeploymentManagerDeployment) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeployment) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DeploymentManagerDeployment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1263,4 +1262,3 @@ func (d *jsiiProxy_DeploymentManagerDeployment) ToTerraform() interface{} {
 
 	return returns
 }
-

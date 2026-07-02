@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) validateAddMoveTargetParame
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) validateMoveFromIdParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) validatePutAccessLevelsParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validatePutAccessLevelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateAccessContextManagerAccessLevels_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateAccessContextManagerAccessLevels_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerAccessLevels_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateAccessContextManagerAccessLevels_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateAccessContextManagerAccessLevels_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerAccessLevels_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateAccessContextManagerAccessLevels_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateAccessContextManagerAccessLevels_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerAccessLevels_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateAccessContextManagerAccessLevels_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetParentParameters
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -464,4 +464,3 @@ func validateNewAccessContextManagerAccessLevelsParameters(scope constructs.Cons
 
 	return nil
 }
-

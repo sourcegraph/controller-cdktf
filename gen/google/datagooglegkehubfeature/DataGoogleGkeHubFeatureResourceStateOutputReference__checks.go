@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleGkeHubFeatureResourceStateOutputReferenceParameters(te
 
 	return nil
 }
-

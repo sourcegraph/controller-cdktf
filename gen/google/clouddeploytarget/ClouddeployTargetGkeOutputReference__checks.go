@@ -106,7 +106,7 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetClusterParame
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetDnsEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetDnsEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetDnsEndpointPa
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetInternalIpParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetInternalIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewClouddeployTargetGkeOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

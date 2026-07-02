@@ -17,15 +17,15 @@ type DialogflowCxPage interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,7 +36,7 @@ type DialogflowCxPage interface {
 	EntryFulfillment() DialogflowCxPageEntryFulfillmentOutputReference
 	EntryFulfillmentInput() *DialogflowCxPageEntryFulfillment
 	EventHandlers() DialogflowCxPageEventHandlersList
-	EventHandlersInput() interface{}
+	EventHandlersInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,31 +70,31 @@ type DialogflowCxPage interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DialogflowCxPageTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitionRouteGroups() *[]*string
 	SetTransitionRouteGroups(val *[]*string)
 	TransitionRouteGroupsInput() *[]*string
 	TransitionRoutes() DialogflowCxPageTransitionRoutesList
-	TransitionRoutesInput() interface{}
+	TransitionRoutesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DialogflowCxPage interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DialogflowCxPage interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,11 +133,11 @@ type DialogflowCxPage interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSettings(value *DialogflowCxPageAdvancedSettings)
 	PutEntryFulfillment(value *DialogflowCxPageEntryFulfillment)
-	PutEventHandlers(value interface{})
+	PutEventHandlers(value any)
 	PutForm(value *DialogflowCxPageForm)
 	PutKnowledgeConnectorSettings(value *DialogflowCxPageKnowledgeConnectorSettings)
 	PutTimeouts(value *DialogflowCxPageTimeouts)
-	PutTransitionRoutes(value interface{})
+	PutTransitionRoutes(value any)
 	ResetAdvancedSettings()
 	ResetEntryFulfillment()
 	ResetEventHandlers()
@@ -152,17 +152,17 @@ type DialogflowCxPage interface {
 	ResetTimeouts()
 	ResetTransitionRouteGroups()
 	ResetTransitionRoutes()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DialogflowCxPage
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DialogflowCxPage) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DialogflowCxPage) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowCxPage) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DialogflowCxPage) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DialogflowCxPage) EventHandlers() DialogflowCxPageEventHandle
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) EventHandlersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) EventHandlersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventHandlersInput",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_DialogflowCxPage) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DialogflowCxPage) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_DialogflowCxPage) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_DialogflowCxPage) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowCxPage) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_DialogflowCxPage) Timeouts() DialogflowCxPageTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_DialogflowCxPage) TransitionRoutes() DialogflowCxPageTransiti
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPage) TransitionRoutesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPage) TransitionRoutesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transitionRoutesInput",
@@ -579,7 +579,6 @@ func (j *jsiiProxy_DialogflowCxPage) TransitionRoutesInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewDialogflowCxPage(scope constructs.Construct, id *string, config *DialogflowCxPageConfig) DialogflowCxPage {
@@ -592,7 +591,7 @@ func NewDialogflowCxPage(scope constructs.Construct, id *string, config *Dialogf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -605,12 +604,12 @@ func NewDialogflowCxPage_Override(d DialogflowCxPage, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetConnection(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPage) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetCount(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPage) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxPage) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetDisplayName(val *string) {
+func (j *jsiiProxy_DialogflowCxPage) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DialogflowCxPage) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetId(val *string) {
+func (j *jsiiProxy_DialogflowCxPage) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetLanguageCode(val *string) {
+func (j *jsiiProxy_DialogflowCxPage) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DialogflowCxPage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetParent(val *string) {
+func (j *jsiiProxy_DialogflowCxPage) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DialogflowCxPage) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DialogflowCxPage) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_DialogflowCxPage)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPage)SetTransitionRouteGroups(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxPage) SetTransitionRouteGroups(val *[]*string) {
 	if err := j.validateSetTransitionRouteGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func DialogflowCxPage_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func DialogflowCxPage_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DialogflowCxPage_IsConstruct(x interface{}) *bool {
+func DialogflowCxPage_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxPage_IsConstructParameters(x); err != nil {
@@ -780,7 +779,7 @@ func DialogflowCxPage_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func DialogflowCxPage_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowCxPage_IsTerraformElement(x interface{}) *bool {
+func DialogflowCxPage_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxPage_IsTerraformElementParameters(x); err != nil {
@@ -799,7 +798,7 @@ func DialogflowCxPage_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func DialogflowCxPage_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowCxPage_IsTerraformResource(x interface{}) *bool {
+func DialogflowCxPage_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowCxPage_IsTerraformResourceParameters(x); err != nil {
@@ -818,7 +817,7 @@ func DialogflowCxPage_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -843,31 +842,31 @@ func (d *jsiiProxy_DialogflowCxPage) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DialogflowCxPage) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxPage) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (d *jsiiProxy_DialogflowCxPage) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,15 +994,15 @@ func (d *jsiiProxy_DialogflowCxPage) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPage) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxPage) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1022,7 +1021,7 @@ func (d *jsiiProxy_DialogflowCxPage) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1035,7 +1034,7 @@ func (d *jsiiProxy_DialogflowCxPage) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,18 +1048,18 @@ func (d *jsiiProxy_DialogflowCxPage) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DialogflowCxPage) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1071,7 +1070,7 @@ func (d *jsiiProxy_DialogflowCxPage) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1082,7 +1081,7 @@ func (d *jsiiProxy_DialogflowCxPage) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1093,7 +1092,7 @@ func (d *jsiiProxy_DialogflowCxPage) PutAdvancedSettings(value *DialogflowCxPage
 	_jsii_.InvokeVoid(
 		d,
 		"putAdvancedSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1104,18 +1103,18 @@ func (d *jsiiProxy_DialogflowCxPage) PutEntryFulfillment(value *DialogflowCxPage
 	_jsii_.InvokeVoid(
 		d,
 		"putEntryFulfillment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) PutEventHandlers(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPage) PutEventHandlers(value any) {
 	if err := d.validatePutEventHandlersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEventHandlers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1126,7 +1125,7 @@ func (d *jsiiProxy_DialogflowCxPage) PutForm(value *DialogflowCxPageForm) {
 	_jsii_.InvokeVoid(
 		d,
 		"putForm",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1137,7 +1136,7 @@ func (d *jsiiProxy_DialogflowCxPage) PutKnowledgeConnectorSettings(value *Dialog
 	_jsii_.InvokeVoid(
 		d,
 		"putKnowledgeConnectorSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1148,18 +1147,18 @@ func (d *jsiiProxy_DialogflowCxPage) PutTimeouts(value *DialogflowCxPageTimeouts
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) PutTransitionRoutes(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPage) PutTransitionRoutes(value any) {
 	if err := d.validatePutTransitionRoutesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTransitionRoutes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,8 +1258,8 @@ func (d *jsiiProxy_DialogflowCxPage) ResetTransitionRoutes() {
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPage) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowCxPage) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1272,8 +1271,8 @@ func (d *jsiiProxy_DialogflowCxPage) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPage) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowCxPage) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1285,8 +1284,8 @@ func (d *jsiiProxy_DialogflowCxPage) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPage) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxPage) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1298,8 +1297,8 @@ func (d *jsiiProxy_DialogflowCxPage) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPage) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxPage) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1324,8 +1323,8 @@ func (d *jsiiProxy_DialogflowCxPage) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPage) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowCxPage) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1336,4 +1335,3 @@ func (d *jsiiProxy_DialogflowCxPage) ToTerraform() interface{} {
 
 	return returns
 }
-

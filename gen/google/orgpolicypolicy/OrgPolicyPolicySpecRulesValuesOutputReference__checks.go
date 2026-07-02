@@ -106,7 +106,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesValuesOutputReference) validateSetAll
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOrgPolicyPolicySpecRulesValuesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

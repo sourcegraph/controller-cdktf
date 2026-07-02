@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamWorkloadIdentityPoolNamespaceOwnerServiceOutputReferenceParam
 
 	return nil
 }
-

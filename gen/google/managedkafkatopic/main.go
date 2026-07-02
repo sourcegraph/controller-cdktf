@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.managedKafkaTopic.ManagedKafkaTopic",
-		reflect.TypeOf((*ManagedKafkaTopic)(nil)).Elem(),
+		reflect.TypeFor[ManagedKafkaTopic](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManagedKafkaTopic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.managedKafkaTopic.ManagedKafkaTopicConfig",
-		reflect.TypeOf((*ManagedKafkaTopicConfig)(nil)).Elem(),
+		reflect.TypeFor[ManagedKafkaTopicConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeouts",
-		reflect.TypeOf((*ManagedKafkaTopicTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ManagedKafkaTopicTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.managedKafkaTopic.ManagedKafkaTopicTimeoutsOutputReference",
-		reflect.TypeOf((*ManagedKafkaTopicTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ManagedKafkaTopicTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ManagedKafkaTopicTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

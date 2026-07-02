@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -250,4 +250,3 @@ func validateNewCesGuardrailActionRespondImmediatelyResponsesOutputReferencePara
 
 	return nil
 }
-

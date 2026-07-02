@@ -6,9 +6,9 @@ import (
 
 type WorkbenchInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WorkbenchInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#location WorkbenchInstance#location}
@@ -36,15 +36,15 @@ type WorkbenchInstanceConfig struct {
 	// Optional. If true, the workbench instance will not register with the proxy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#disable_proxy_access WorkbenchInstance#disable_proxy_access}
-	DisableProxyAccess interface{} `field:"optional" json:"disableProxyAccess" yaml:"disableProxyAccess"`
+	DisableProxyAccess any `field:"optional" json:"disableProxyAccess" yaml:"disableProxyAccess"`
 	// Flag to enable managed end user credentials for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#enable_managed_euc WorkbenchInstance#enable_managed_euc}
-	EnableManagedEuc interface{} `field:"optional" json:"enableManagedEuc" yaml:"enableManagedEuc"`
+	EnableManagedEuc any `field:"optional" json:"enableManagedEuc" yaml:"enableManagedEuc"`
 	// Flag that specifies that a notebook can be accessed with third party identity provider.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#enable_third_party_identity WorkbenchInstance#enable_third_party_identity}
-	EnableThirdPartyIdentity interface{} `field:"optional" json:"enableThirdPartyIdentity" yaml:"enableThirdPartyIdentity"`
+	EnableThirdPartyIdentity any `field:"optional" json:"enableThirdPartyIdentity" yaml:"enableThirdPartyIdentity"`
 	// gce_setup block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#gce_setup WorkbenchInstance#gce_setup}
@@ -82,4 +82,3 @@ type WorkbenchInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#timeouts WorkbenchInstance#timeouts}
 	Timeouts *WorkbenchInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

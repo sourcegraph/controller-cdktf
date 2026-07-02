@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeStoragePoolParamsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeStoragePoolParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeStoragePoolParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeStoragePoolParamsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

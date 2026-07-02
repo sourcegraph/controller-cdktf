@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
-		reflect.TypeOf((*NetappHostGroup)(nil)).Elem(),
+		reflect.TypeFor[NetappHostGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappHostGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroupConfig",
-		reflect.TypeOf((*NetappHostGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappHostGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroupTimeouts",
-		reflect.TypeOf((*NetappHostGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappHostGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroupTimeoutsOutputReference",
-		reflect.TypeOf((*NetappHostGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappHostGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappHostGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

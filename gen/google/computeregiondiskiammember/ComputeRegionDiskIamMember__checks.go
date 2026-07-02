@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionDiskIamMember) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionDiskIamMember_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateComputeRegionDiskIamMember_IsConstructParameters(x interface{}) error {
+func validateComputeRegionDiskIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionDiskIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateComputeRegionDiskIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionDiskIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionDiskIamMember_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateComputeRegionDiskIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionDiskIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeRegionDiskIamMember_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewComputeRegionDiskIamMemberParameters(scope constructs.Construct,
 
 	return nil
 }
-

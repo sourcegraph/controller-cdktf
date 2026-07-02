@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x int
 	return nil
 }
 
-func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSourceParame
 	return nil
 }
 
-func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElementParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleHealthcareHl7V2StoreIamPolicyParameters(scope construc
 
 	return nil
 }
-

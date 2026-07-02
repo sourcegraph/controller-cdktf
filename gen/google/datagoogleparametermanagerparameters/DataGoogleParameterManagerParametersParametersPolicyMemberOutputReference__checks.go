@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParametersParametersPolicyMemberOut
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParametersParametersPolicyMemberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleParameterManagerParametersParametersPolicyMemberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleParameterManagerParametersParametersPolicyMemberOutput
 
 	return nil
 }
-

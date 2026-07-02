@@ -1,11 +1,10 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigSpannerSourceConfig struct {
 	// Whether to use DataBoost for backfill queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#backfill_data_boost_enabled DatastreamStream#backfill_data_boost_enabled}
-	BackfillDataBoostEnabled interface{} `field:"optional" json:"backfillDataBoostEnabled" yaml:"backfillDataBoostEnabled"`
+	BackfillDataBoostEnabled any `field:"optional" json:"backfillDataBoostEnabled" yaml:"backfillDataBoostEnabled"`
 	// The Spanner change stream name to use.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#change_stream_name DatastreamStream#change_stream_name}
@@ -35,4 +34,3 @@ type DatastreamStreamSourceConfigSpannerSourceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#spanner_rpc_priority DatastreamStream#spanner_rpc_priority}
 	SpannerRpcPriority *string `field:"optional" json:"spannerRpcPriority" yaml:"spannerRpcPriority"`
 }
-

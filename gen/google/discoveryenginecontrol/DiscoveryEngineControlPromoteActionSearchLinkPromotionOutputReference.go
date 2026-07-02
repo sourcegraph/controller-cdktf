@@ -12,9 +12,9 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference inter
 	Document() *string
 	SetDocument(val *string)
 	DocumentInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	ImageUri() *string
@@ -58,7 +58,7 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference inter
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return returns
 }
 
-
 func NewDiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewDiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewDiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetDocument(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetDocument(val *string) {
 	if err := j.validateSetDocumentParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetImageUri(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetImageUri(val *string) {
 	if err := j.validateSetImageUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetInternalValue(val *DiscoveryEngineControlPromoteActionSearchLinkPromotion) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetInternalValue(val *DiscoveryEngineControlPromoteActionSearchLinkPromotion) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 
 	return returns
 }
-

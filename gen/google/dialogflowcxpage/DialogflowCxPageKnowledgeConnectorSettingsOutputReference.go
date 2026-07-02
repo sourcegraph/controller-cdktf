@@ -12,9 +12,9 @@ type DialogflowCxPageKnowledgeConnectorSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,10 +26,10 @@ type DialogflowCxPageKnowledgeConnectorSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataStoreConnections() DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsList
-	DataStoreConnectionsInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	DataStoreConnectionsInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowCxPageKnowledgeConnectorSettings
@@ -53,7 +53,7 @@ type DialogflowCxPageKnowledgeConnectorSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type DialogflowCxPageKnowledgeConnectorSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDataStoreConnections(value interface{})
+	PutDataStoreConnections(value any)
 	PutTriggerFulfillment(value *DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment)
 	ResetDataStoreConnections()
 	ResetEnabled()
@@ -83,7 +83,7 @@ type DialogflowCxPageKnowledgeConnectorSettingsOutputReference interface {
 	ResetTriggerFulfillment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Da
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) DataStoreConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) DataStoreConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataStoreConnectionsInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Da
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Tr
 	return returns
 }
 
-
 func NewDialogflowCxPageKnowledgeConnectorSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxPageKnowledgeConnectorSettingsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewDialogflowCxPageKnowledgeConnectorSettingsOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageKnowledgeConnectorSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewDialogflowCxPageKnowledgeConnectorSettingsOutputReference_Override(d Dia
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageKnowledgeConnectorSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetInternalValue(val *DialogflowCxPageKnowledgeConnectorSettings) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetInternalValue(val *DialogflowCxPageKnowledgeConnectorSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetTargetFlow(val *string) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetTargetFlow(val *string) {
 	if err := j.validateSetTargetFlowParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetTargetPage(val *string) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetTargetPage(val *string) {
 	if err := j.validateSetTargetPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Co
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,21 +560,21 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) In
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) PutDataStoreConnections(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) PutDataStoreConnections(value any) {
 	if err := d.validatePutDataStoreConnectionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDataStoreConnections",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Pu
 	_jsii_.InvokeVoid(
 		d,
 		"putTriggerFulfillment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Re
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) To
 
 	return returns
 }
-

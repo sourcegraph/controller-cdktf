@@ -17,8 +17,8 @@ type StorageBucketLifecycleRuleList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type StorageBucketLifecycleRuleList interface {
 	Get(index *float64) StorageBucketLifecycleRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewStorageBucketLifecycleRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageBucketLifecycleRuleList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewStorageBucketLifecycleRuleList(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewStorageBucketLifecycleRuleList_Override(s StorageBucketLifecycleRuleList
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleList) AllWithMapKey(mapKeyAttribute
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleList) Get(index *float64) StorageBu
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLifecycleRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageBucketLifecycleRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleList) ToString() *string {
 
 	return returns
 }
-

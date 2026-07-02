@@ -1,6 +1,5 @@
 package cloudbuildtrigger
 
-
 type CloudbuildTriggerBuildOptions struct {
 	// Requested disk size for the VM that runs the build.
 	//
@@ -17,7 +16,7 @@ type CloudbuildTriggerBuildOptions struct {
 	// NOTE this is always enabled for triggered builds and cannot be overridden in the build configuration file.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#dynamic_substitutions CloudbuildTrigger#dynamic_substitutions}
-	DynamicSubstitutions interface{} `field:"optional" json:"dynamicSubstitutions" yaml:"dynamicSubstitutions"`
+	DynamicSubstitutions any `field:"optional" json:"dynamicSubstitutions" yaml:"dynamicSubstitutions"`
 	// A list of global environment variable definitions that will exist for all build steps in this build.
 	//
 	// If a variable is defined in both globally and in a build step,
@@ -66,7 +65,7 @@ type CloudbuildTriggerBuildOptions struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#volumes CloudbuildTrigger#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 	// Option to specify a WorkerPool for the build. Format projects/{project}/workerPools/{workerPool}.
 	//
 	// This field is experimental.
@@ -74,4 +73,3 @@ type CloudbuildTriggerBuildOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#worker_pool CloudbuildTrigger#worker_pool}
 	WorkerPool *string `field:"optional" json:"workerPool" yaml:"workerPool"`
 }
-

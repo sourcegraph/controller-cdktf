@@ -21,9 +21,9 @@ type FilestoreInstanceFileSharesNfsExportOptionsOutputReference interface {
 	AnonUidInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type FilestoreInstanceFileSharesNfsExportOptionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpRanges() *[]*string
 	SetIpRanges(val *[]*string)
 	IpRangesInput() *[]*string
@@ -58,7 +58,7 @@ type FilestoreInstanceFileSharesNfsExportOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type FilestoreInstanceFileSharesNfsExportOptionsOutputReference interface {
 	ResetSquashMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) T
 	return returns
 }
 
-
 func NewFilestoreInstanceFileSharesNfsExportOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FilestoreInstanceFileSharesNfsExportOptionsOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsOutputReference_Override(f Fi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetAccessMode(val *string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetAccessMode(val *string) {
 	if err := j.validateSetAccessModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetAnonGid(val *float64) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetAnonGid(val *float64) {
 	if err := j.validateSetAnonGidParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetAnonUid(val *float64) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetAnonUid(val *float64) {
 	if err := j.validateSetAnonUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetIpRanges(val *[]*string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetIpRanges(val *[]*string) {
 	if err := j.validateSetIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetSquashMode(val *string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetSquashMode(val *string) {
 	if err := j.validateSetSquashModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) C
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) G
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) I
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) R
 	)
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) T
 
 	return returns
 }
-

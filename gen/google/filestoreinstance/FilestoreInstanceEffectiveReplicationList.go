@@ -36,7 +36,7 @@ type FilestoreInstanceEffectiveReplicationList interface {
 	Get(index *float64) FilestoreInstanceEffectiveReplicationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFilestoreInstanceEffectiveReplicationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FilestoreInstanceEffectiveReplicationList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewFilestoreInstanceEffectiveReplicationList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewFilestoreInstanceEffectiveReplicationList_Override(f FilestoreInstanceEf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationList) Get(index *float64
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationList) ToString() *string
 
 	return returns
 }
-

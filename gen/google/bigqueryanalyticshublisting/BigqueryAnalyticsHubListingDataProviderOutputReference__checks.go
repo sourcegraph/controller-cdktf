@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingDataProviderOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingDataProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingDataProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBigqueryAnalyticsHubListingDataProviderOutputReferenceParameters
 
 	return nil
 }
-

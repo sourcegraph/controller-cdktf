@@ -90,7 +90,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputR
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference) validatePutCloudStorageBucketsParameters(value interface{}) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference) validatePutCloudStorageBucketsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewStorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputRefe
 
 	return nil
 }
-

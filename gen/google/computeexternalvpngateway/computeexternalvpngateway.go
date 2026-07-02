@@ -15,15 +15,15 @@ type ComputeExternalVpnGateway interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,7 +44,7 @@ type ComputeExternalVpnGateway interface {
 	SetId(val *string)
 	IdInput() *string
 	Interface() ComputeExternalVpnGatewayInterfaceList
-	InterfaceInput() interface{}
+	InterfaceInput() any
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -68,11 +68,11 @@ type ComputeExternalVpnGateway interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedundancyType() *string
 	SetRedundancyType(val *string)
 	RedundancyTypeInput() *string
@@ -81,18 +81,18 @@ type ComputeExternalVpnGateway interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeExternalVpnGatewayTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ComputeExternalVpnGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,14 +122,14 @@ type ComputeExternalVpnGateway interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutInterface(value interface{})
+	PutInterface(value any)
 	PutParams(value *ComputeExternalVpnGatewayParams)
 	PutTimeouts(value *ComputeExternalVpnGatewayTimeouts)
 	ResetDescription()
@@ -143,17 +143,17 @@ type ComputeExternalVpnGateway interface {
 	ResetProject()
 	ResetRedundancyType()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeExternalVpnGateway
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Interface() ComputeExternalVpnGate
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) InterfaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) InterfaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"interfaceInput",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformLabels() cdktf.StringMap 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) Timeouts() ComputeExternalVpnGatew
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGateway) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config *ComputeExternalVpnGatewayConfig) ComputeExternalVpnGateway {
@@ -553,7 +552,7 @@ func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -566,12 +565,12 @@ func NewComputeExternalVpnGateway_Override(c ComputeExternalVpnGateway, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetId(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetLabels(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetName(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetProject(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,7 +682,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGateway)SetRedundancyType(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGateway) SetRedundancyType(val *string) {
 	if err := j.validateSetRedundancyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func ComputeExternalVpnGateway_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func ComputeExternalVpnGateway_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeExternalVpnGateway_IsConstruct(x interface{}) *bool {
+func ComputeExternalVpnGateway_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeExternalVpnGateway_IsConstructParameters(x); err != nil {
@@ -752,7 +751,7 @@ func ComputeExternalVpnGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func ComputeExternalVpnGateway_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeExternalVpnGateway_IsTerraformElement(x interface{}) *bool {
+func ComputeExternalVpnGateway_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeExternalVpnGateway_IsTerraformElementParameters(x); err != nil {
@@ -771,7 +770,7 @@ func ComputeExternalVpnGateway_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func ComputeExternalVpnGateway_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeExternalVpnGateway_IsTerraformResource(x interface{}) *bool {
+func ComputeExternalVpnGateway_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeExternalVpnGateway_IsTerraformResourceParameters(x); err != nil {
@@ -790,7 +789,7 @@ func ComputeExternalVpnGateway_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,31 +814,31 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeExternalVpnGateway) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeExternalVpnGateway) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,15 +966,15 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -994,7 +993,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,18 +1020,18 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeExternalVpnGateway) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1054,18 +1053,18 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) PutInterface(value interface{}) {
+func (c *jsiiProxy_ComputeExternalVpnGateway) PutInterface(value any) {
 	if err := c.validatePutInterfaceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInterface",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) PutParams(value *ComputeExternalVp
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) PutTimeouts(value *ComputeExternal
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1163,8 +1162,8 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1176,8 +1175,8 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1189,8 +1188,8 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1202,8 +1201,8 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1228,8 +1227,8 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGateway) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeExternalVpnGateway) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1240,4 +1239,3 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcClientSecretOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcClientSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcClientSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewIamWorkforcePoolProviderOidcClientSecretOutputReferenceParameter
 
 	return nil
 }
-

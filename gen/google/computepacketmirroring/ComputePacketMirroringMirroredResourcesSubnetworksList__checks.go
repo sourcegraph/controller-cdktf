@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputePacketMirroringMirroredResourcesSubnetworksListParameters
 
 	return nil
 }
-

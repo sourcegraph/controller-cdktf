@@ -17,8 +17,8 @@ type IamDenyPolicyRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IamDenyPolicyRulesList interface {
 	Get(index *float64) IamDenyPolicyRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IamDenyPolicyRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicyRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IamDenyPolicyRulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewIamDenyPolicyRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamDenyPolicyRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIamDenyPolicyRulesList(terraformResource cdktf.IInterpolatingParent, ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIamDenyPolicyRulesList_Override(i IamDenyPolicyRulesList, terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IamDenyPolicyRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamDenyPolicyRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamDenyPolicyRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesList)SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IamDenyPolicyRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesList) AllWithMapKey(mapKeyAttributeName *st
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IamDenyPolicyRulesList) Get(index *float64) IamDenyPolicyRule
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamDenyPolicyRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IamDenyPolicyRulesList) ToString() *string {
 
 	return returns
 }
-

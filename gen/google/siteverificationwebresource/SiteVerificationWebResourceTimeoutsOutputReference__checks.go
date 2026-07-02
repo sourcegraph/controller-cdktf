@@ -98,7 +98,7 @@ func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSiteVerificationWebResourceTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

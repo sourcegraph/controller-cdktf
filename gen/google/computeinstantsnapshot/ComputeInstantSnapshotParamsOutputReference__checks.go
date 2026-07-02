@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstantSnapshotParamsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshotParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshotParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInstantSnapshotParamsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenc
 
 	return nil
 }
-

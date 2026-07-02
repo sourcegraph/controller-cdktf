@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataplexDatascanDataQualitySpecPostScanActionsOutputReferencePar
 
 	return nil
 }
-

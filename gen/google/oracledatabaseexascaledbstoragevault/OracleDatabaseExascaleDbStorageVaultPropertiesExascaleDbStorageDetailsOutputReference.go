@@ -13,9 +13,9 @@ type OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutpu
 	AvailableSizeGbs() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutpu
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutpu
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	return returns
 }
 
-
 func NewOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetInternalValue(val *OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetInternalValue(val *OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)SetTotalSizeGbs(val *float64) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) SetTotalSizeGbs(val *float64) {
 	if err := j.validateSetTotalSizeGbsParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStora
 
 	return returns
 }
-

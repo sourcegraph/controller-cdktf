@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersManualOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerTriggersManualOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerTriggersManualOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataLossPreventionJobTriggerTriggersManualOutputReferenceParamet
 
 	return nil
 }
-

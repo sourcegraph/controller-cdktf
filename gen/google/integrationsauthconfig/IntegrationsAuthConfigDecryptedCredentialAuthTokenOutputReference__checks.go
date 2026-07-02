@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIntegrationsAuthConfigDecryptedCredentialAuthTokenOutputReferenc
 
 	return nil
 }
-

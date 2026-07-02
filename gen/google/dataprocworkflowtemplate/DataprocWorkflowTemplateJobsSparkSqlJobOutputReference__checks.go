@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -252,4 +252,3 @@ func validateNewDataprocWorkflowTemplateJobsSparkSqlJobOutputReferenceParameters
 
 	return nil
 }
-

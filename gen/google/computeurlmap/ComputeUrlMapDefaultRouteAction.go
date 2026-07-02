@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapDefaultRouteAction struct {
 	// cache_policy block.
 	//
@@ -37,6 +36,5 @@ type ComputeUrlMapDefaultRouteAction struct {
 	// weighted_backend_services block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
-	WeightedBackendServices interface{} `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
+	WeightedBackendServices any `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
 }
-

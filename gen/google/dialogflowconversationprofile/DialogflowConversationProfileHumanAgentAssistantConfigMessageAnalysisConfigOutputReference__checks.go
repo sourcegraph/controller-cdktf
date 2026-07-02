@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessage
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessage
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetEnableEntityExtractionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetEnableEntityExtractionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessage
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetEnableSentimentAnalysisParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConfigOutputReference) validateSetEnableSentimentAnalysisParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewDialogflowConversationProfileHumanAgentAssistantConfigMessageAna
 
 	return nil
 }
-

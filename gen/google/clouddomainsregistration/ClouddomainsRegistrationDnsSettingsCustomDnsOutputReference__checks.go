@@ -90,7 +90,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) validatePutDsRecordsParameters(value interface{}) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) validatePutDsRecordsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewClouddomainsRegistrationDnsSettingsCustomDnsOutputReferenceParam
 
 	return nil
 }
-

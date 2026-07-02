@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewIapSettingsAccessSettingsAllowedDomainsSettingsOutputReferencePa
 
 	return nil
 }
-

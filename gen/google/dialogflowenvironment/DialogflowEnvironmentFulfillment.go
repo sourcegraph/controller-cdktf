@@ -1,6 +1,5 @@
 package dialogflowenvironment
 
-
 type DialogflowEnvironmentFulfillment struct {
 	// The human-readable name of the fulfillment, unique within the agent.
 	//
@@ -9,7 +8,7 @@ type DialogflowEnvironmentFulfillment struct {
 	// features block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_environment#features DialogflowEnvironment#features}
-	Features interface{} `field:"optional" json:"features" yaml:"features"`
+	Features any `field:"optional" json:"features" yaml:"features"`
 	// generic_web_service block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_environment#generic_web_service DialogflowEnvironment#generic_web_service}
@@ -19,4 +18,3 @@ type DialogflowEnvironmentFulfillment struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_environment#name DialogflowEnvironment#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

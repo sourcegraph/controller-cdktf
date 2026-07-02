@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas struct {
 	// Database name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlS
 	// postgresql_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#postgresql_tables DatastreamStream#postgresql_tables}
-	PostgresqlTables interface{} `field:"optional" json:"postgresqlTables" yaml:"postgresqlTables"`
+	PostgresqlTables any `field:"optional" json:"postgresqlTables" yaml:"postgresqlTables"`
 }
-

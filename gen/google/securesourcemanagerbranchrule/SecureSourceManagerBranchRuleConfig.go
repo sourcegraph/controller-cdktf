@@ -6,9 +6,9 @@ import (
 
 type SecureSourceManagerBranchRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecureSourceManagerBranchRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID for the BranchRule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#branch_rule_id SecureSourceManagerBranchRule#branch_rule_id}
@@ -38,11 +38,11 @@ type SecureSourceManagerBranchRuleConfig struct {
 	// Determines if allow stale reviews or approvals before merging to the branch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#allow_stale_reviews SecureSourceManagerBranchRule#allow_stale_reviews}
-	AllowStaleReviews interface{} `field:"optional" json:"allowStaleReviews" yaml:"allowStaleReviews"`
+	AllowStaleReviews any `field:"optional" json:"allowStaleReviews" yaml:"allowStaleReviews"`
 	// Determines if the branch rule is disabled or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#disabled SecureSourceManagerBranchRule#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#id SecureSourceManagerBranchRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -61,18 +61,17 @@ type SecureSourceManagerBranchRuleConfig struct {
 	// Determines if require comments resolved before merging to the branch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#require_comments_resolved SecureSourceManagerBranchRule#require_comments_resolved}
-	RequireCommentsResolved interface{} `field:"optional" json:"requireCommentsResolved" yaml:"requireCommentsResolved"`
+	RequireCommentsResolved any `field:"optional" json:"requireCommentsResolved" yaml:"requireCommentsResolved"`
 	// Determines if require linear history before merging to the branch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#require_linear_history SecureSourceManagerBranchRule#require_linear_history}
-	RequireLinearHistory interface{} `field:"optional" json:"requireLinearHistory" yaml:"requireLinearHistory"`
+	RequireLinearHistory any `field:"optional" json:"requireLinearHistory" yaml:"requireLinearHistory"`
 	// Determines if the branch rule requires a pull request or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#require_pull_request SecureSourceManagerBranchRule#require_pull_request}
-	RequirePullRequest interface{} `field:"optional" json:"requirePullRequest" yaml:"requirePullRequest"`
+	RequirePullRequest any `field:"optional" json:"requirePullRequest" yaml:"requirePullRequest"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule#timeouts SecureSourceManagerBranchRule#timeouts}
 	Timeouts *SecureSourceManagerBranchRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

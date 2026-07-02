@@ -34,7 +34,7 @@ func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStorageBucketIpFilterVpcNetworkSourcesListParameters(terraformRe
 
 	return nil
 }
-

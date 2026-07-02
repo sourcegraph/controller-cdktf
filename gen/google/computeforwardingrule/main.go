@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
-		reflect.TypeOf((*ComputeForwardingRule)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeForwardingRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -156,15 +156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleConfig",
-		reflect.TypeOf((*ComputeForwardingRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations",
-		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrations)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRuleServiceDirectoryRegistrations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
-		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts",
-		reflect.TypeOf((*ComputeForwardingRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeForwardingRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeForwardingRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeForwardingRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

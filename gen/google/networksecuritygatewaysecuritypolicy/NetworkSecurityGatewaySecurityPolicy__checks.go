@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateAddMoveTargetPa
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateMoveFromIdParam
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkSecurityGatewaySecurityPolicy_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x interf
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewNetworkSecurityGatewaySecurityPolicyParameters(scope constructs.
 
 	return nil
 }
-

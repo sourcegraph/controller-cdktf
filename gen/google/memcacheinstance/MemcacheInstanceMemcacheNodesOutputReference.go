@@ -12,9 +12,9 @@ type MemcacheInstanceMemcacheNodesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type MemcacheInstanceMemcacheNodesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type MemcacheInstanceMemcacheNodesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,8 +81,8 @@ type jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,7 +201,6 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) Zone() *string 
 	return returns
 }
 
-
 func NewMemcacheInstanceMemcacheNodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemcacheInstanceMemcacheNodesOutputReference {
 	_init_.Initialize()
 
@@ -212,7 +211,7 @@ func NewMemcacheInstanceMemcacheNodesOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -224,12 +223,12 @@ func NewMemcacheInstanceMemcacheNodesOutputReference_Override(m MemcacheInstance
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetInternalValue(val *MemcacheInstanceMemcacheNodes) {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) SetInternalValue(val *MemcacheInstanceMemcacheNodes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,16 +296,16 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,23 +462,23 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -498,4 +497,3 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference) ToString() *str
 
 	return returns
 }
-

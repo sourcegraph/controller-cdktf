@@ -12,9 +12,9 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DefaultLeaderLocation() interface{}
-	SetDefaultLeaderLocation(val interface{})
-	DefaultLeaderLocationInput() interface{}
+	DefaultLeaderLocation() any
+	SetDefaultLeaderLocation(val any)
+	DefaultLeaderLocationInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -49,7 +49,7 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_SpannerInstanceConfigReplicasOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) DefaultLeaderLocation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) DefaultLeaderLocation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultLeaderLocation",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) DefaultLeaderLo
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) DefaultLeaderLocationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) DefaultLeaderLocationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultLeaderLocationInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) TypeInput() *st
 	return returns
 }
 
-
 func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpannerInstanceConfigReplicasOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSpannerInstanceConfigReplicasOutputReference_Override(s SpannerInstanceC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetDefaultLeaderLocation(val interface{}) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetDefaultLeaderLocation(val any) {
 	if err := j.validateSetDefaultLeaderLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetDefaultLeader
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetLocation(val 
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetType(val *string) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ToString() *str
 
 	return returns
 }
-

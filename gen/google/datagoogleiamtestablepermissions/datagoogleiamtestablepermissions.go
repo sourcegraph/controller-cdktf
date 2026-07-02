@@ -15,11 +15,11 @@ type DataGoogleIamTestablePermissions interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomSupportLevel() *string
 	SetCustomSupportLevel(val *string)
 	CustomSupportLevelInput() *string
@@ -53,20 +53,20 @@ type DataGoogleIamTestablePermissions interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Stages() *[]*string
 	SetStages(val *[]*string)
 	StagesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleIamTestablePermissions interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStages()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleIamTestablePermissions
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_testable_permissions google_iam_testable_permissions} Data Source.
 func NewDataGoogleIamTestablePermissions(scope constructs.Construct, id *string, config *DataGoogleIamTestablePermissionsConfig) DataGoogleIamTestablePermissions {
 	_init_.Initialize()
@@ -355,7 +354,7 @@ func NewDataGoogleIamTestablePermissions(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataGoogleIamTestablePermissions_Override(d DataGoogleIamTestablePermiss
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetCustomSupportLevel(val *string) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetCustomSupportLevel(val *string) {
 	if err := j.validateSetCustomSupportLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetCustomSupportLevel(val *s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetFullResourceName(val *string) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetFullResourceName(val *string) {
 	if err := j.validateSetFullResourceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetFullResourceName(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissions)SetStages(val *[]*string) {
+func (j *jsiiProxy_DataGoogleIamTestablePermissions) SetStages(val *[]*string) {
 	if err := j.validateSetStagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func DataGoogleIamTestablePermissions_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataGoogleIamTestablePermissions_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleIamTestablePermissions_IsConstruct(x interface{}) *bool {
+func DataGoogleIamTestablePermissions_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleIamTestablePermissions_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataGoogleIamTestablePermissions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleIamTestablePermissions_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleIamTestablePermissions_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleIamTestablePermissions_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleIamTestablePermissions_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleIamTestablePermissions_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleIamTestablePermissions_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataGoogleIamTestablePermissions_IsTerraformElement(x interface{}) *bool {
+func DataGoogleIamTestablePermissions_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleIamTestablePermissions_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleIamTestablePermissions_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataGoogleIamTestablePermissions_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) ResetStages() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) ToTerraform() interface{} {
 
 	return returns
 }
-

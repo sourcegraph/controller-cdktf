@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterMigrationSourceOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterMigrationSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterMigrationSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbClusterMigrationSourceOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputRefere
 
 	return nil
 }
-

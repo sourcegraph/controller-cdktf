@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigeeSecurityFeedbackFeedbackContextsListParameters(terraformRe
 
 	return nil
 }
-

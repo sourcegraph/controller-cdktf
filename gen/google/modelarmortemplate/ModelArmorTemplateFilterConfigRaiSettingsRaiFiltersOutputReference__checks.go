@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReferen
 
 	return nil
 }
-

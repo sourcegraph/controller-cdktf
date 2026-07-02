@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRouterPeerMd5AuthenticationKeyOutputReferenceParameters(t
 
 	return nil
 }
-

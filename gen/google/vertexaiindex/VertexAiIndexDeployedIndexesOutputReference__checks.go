@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiIndexDeployedIndexesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexDeployedIndexesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexDeployedIndexesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiIndexDeployedIndexesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

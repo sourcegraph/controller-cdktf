@@ -18,15 +18,15 @@ type VectorSearchCollection interface {
 	SetCollectionId(val *string)
 	CollectionIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataSchema() *string
 	SetDataSchema(val *string)
@@ -76,30 +76,30 @@ type VectorSearchCollection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VectorSearchCollectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	VectorSchema() VectorSearchCollectionVectorSchemaList
-	VectorSchemaInput() interface{}
+	VectorSchemaInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type VectorSearchCollection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type VectorSearchCollection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,7 +138,7 @@ type VectorSearchCollection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionSpec(value *VectorSearchCollectionEncryptionSpec)
 	PutTimeouts(value *VectorSearchCollectionTimeouts)
-	PutVectorSchema(value interface{})
+	PutVectorSchema(value any)
 	ResetDataSchema()
 	ResetDescription()
 	ResetDisplayName()
@@ -151,17 +151,17 @@ type VectorSearchCollection interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetVectorSchema()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VectorSearchCollection
@@ -199,8 +199,8 @@ func (j *jsiiProxy_VectorSearchCollection) CollectionIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_VectorSearchCollection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VectorSearchCollection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_VectorSearchCollection) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_VectorSearchCollection) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VectorSearchCollection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_VectorSearchCollection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_VectorSearchCollection) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VectorSearchCollection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -559,8 +559,8 @@ func (j *jsiiProxy_VectorSearchCollection) Timeouts() VectorSearchCollectionTime
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_VectorSearchCollection) VectorSchema() VectorSearchCollection
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollection) VectorSchemaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollection) VectorSchemaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vectorSchemaInput",
@@ -598,7 +598,6 @@ func (j *jsiiProxy_VectorSearchCollection) VectorSchemaInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vector_search_collection google_vector_search_collection} Resource.
 func NewVectorSearchCollection(scope constructs.Construct, id *string, config *VectorSearchCollectionConfig) VectorSearchCollection {
@@ -611,7 +610,7 @@ func NewVectorSearchCollection(scope constructs.Construct, id *string, config *V
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -624,12 +623,12 @@ func NewVectorSearchCollection_Override(v VectorSearchCollection, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetCollectionId(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetCollectionId(val *string) {
 	if err := j.validateSetCollectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetCollectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetConnection(val interface{}) {
+func (j *jsiiProxy_VectorSearchCollection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetCount(val interface{}) {
+func (j *jsiiProxy_VectorSearchCollection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetDataSchema(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetDataSchema(val *string) {
 	if err := j.validateSetDataSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetDataSchema(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VectorSearchCollection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetDescription(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetDisplayName(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VectorSearchCollection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetId(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_VectorSearchCollection) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VectorSearchCollection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetLocation(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetProject(val *string) {
+func (j *jsiiProxy_VectorSearchCollection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VectorSearchCollection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -774,7 +773,7 @@ func (j *jsiiProxy_VectorSearchCollection)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VectorSearchCollection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func VectorSearchCollection_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func VectorSearchCollection_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VectorSearchCollection_IsConstruct(x interface{}) *bool {
+func VectorSearchCollection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVectorSearchCollection_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func VectorSearchCollection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func VectorSearchCollection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VectorSearchCollection_IsTerraformElement(x interface{}) *bool {
+func VectorSearchCollection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVectorSearchCollection_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func VectorSearchCollection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func VectorSearchCollection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VectorSearchCollection_IsTerraformResource(x interface{}) *bool {
+func VectorSearchCollection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVectorSearchCollection_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func VectorSearchCollection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (v *jsiiProxy_VectorSearchCollection) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VectorSearchCollection) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VectorSearchCollection) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VectorSearchCollection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VectorSearchCollection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (v *jsiiProxy_VectorSearchCollection) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (v *jsiiProxy_VectorSearchCollection) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollection) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VectorSearchCollection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1074,7 +1073,7 @@ func (v *jsiiProxy_VectorSearchCollection) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (v *jsiiProxy_VectorSearchCollection) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (v *jsiiProxy_VectorSearchCollection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VectorSearchCollection) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VectorSearchCollection) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (v *jsiiProxy_VectorSearchCollection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (v *jsiiProxy_VectorSearchCollection) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (v *jsiiProxy_VectorSearchCollection) PutEncryptionSpec(value *VectorSearch
 	_jsii_.InvokeVoid(
 		v,
 		"putEncryptionSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,18 +1155,18 @@ func (v *jsiiProxy_VectorSearchCollection) PutTimeouts(value *VectorSearchCollec
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (v *jsiiProxy_VectorSearchCollection) PutVectorSchema(value interface{}) {
+func (v *jsiiProxy_VectorSearchCollection) PutVectorSchema(value any) {
 	if err := v.validatePutVectorSchemaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"putVectorSchema",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1251,8 +1250,8 @@ func (v *jsiiProxy_VectorSearchCollection) ResetVectorSchema() {
 	)
 }
 
-func (v *jsiiProxy_VectorSearchCollection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VectorSearchCollection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1264,8 +1263,8 @@ func (v *jsiiProxy_VectorSearchCollection) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VectorSearchCollection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1277,8 +1276,8 @@ func (v *jsiiProxy_VectorSearchCollection) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VectorSearchCollection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1290,8 +1289,8 @@ func (v *jsiiProxy_VectorSearchCollection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollection) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VectorSearchCollection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1316,8 +1315,8 @@ func (v *jsiiProxy_VectorSearchCollection) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollection) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VectorSearchCollection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1328,4 +1327,3 @@ func (v *jsiiProxy_VectorSearchCollection) ToTerraform() interface{} {
 
 	return returns
 }
-

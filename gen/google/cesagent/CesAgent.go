@@ -13,11 +13,11 @@ import (
 type CesAgent interface {
 	cdktf.TerraformResource
 	AfterAgentCallbacks() CesAgentAfterAgentCallbacksList
-	AfterAgentCallbacksInput() interface{}
+	AfterAgentCallbacksInput() any
 	AfterModelCallbacks() CesAgentAfterModelCallbacksList
-	AfterModelCallbacksInput() interface{}
+	AfterModelCallbacksInput() any
 	AfterToolCallbacks() CesAgentAfterToolCallbacksList
-	AfterToolCallbacksInput() interface{}
+	AfterToolCallbacksInput() any
 	AgentId() *string
 	SetAgentId(val *string)
 	AgentIdInput() *string
@@ -25,26 +25,26 @@ type CesAgent interface {
 	SetApp(val *string)
 	AppInput() *string
 	BeforeAgentCallbacks() CesAgentBeforeAgentCallbacksList
-	BeforeAgentCallbacksInput() interface{}
+	BeforeAgentCallbacksInput() any
 	BeforeModelCallbacks() CesAgentBeforeModelCallbacksList
-	BeforeModelCallbacksInput() interface{}
+	BeforeModelCallbacksInput() any
 	BeforeToolCallbacks() CesAgentBeforeToolCallbacksList
-	BeforeToolCallbacksInput() interface{}
+	BeforeToolCallbacksInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ChildAgents() *[]*string
 	SetChildAgents(val *[]*string)
 	ChildAgentsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -97,34 +97,34 @@ type CesAgent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteDialogflowAgent() CesAgentRemoteDialogflowAgentOutputReference
 	RemoteDialogflowAgentInput() *CesAgentRemoteDialogflowAgent
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CesAgentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Tools() *[]*string
 	SetTools(val *[]*string)
 	Toolsets() CesAgentToolsetsList
-	ToolsetsInput() interface{}
+	ToolsetsInput() any
 	ToolsInput() *[]*string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -142,7 +142,7 @@ type CesAgent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -154,24 +154,24 @@ type CesAgent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAfterAgentCallbacks(value interface{})
-	PutAfterModelCallbacks(value interface{})
-	PutAfterToolCallbacks(value interface{})
-	PutBeforeAgentCallbacks(value interface{})
-	PutBeforeModelCallbacks(value interface{})
-	PutBeforeToolCallbacks(value interface{})
+	PutAfterAgentCallbacks(value any)
+	PutAfterModelCallbacks(value any)
+	PutAfterToolCallbacks(value any)
+	PutBeforeAgentCallbacks(value any)
+	PutBeforeModelCallbacks(value any)
+	PutBeforeToolCallbacks(value any)
 	PutLlmAgent(value *CesAgentLlmAgent)
 	PutModelSettings(value *CesAgentModelSettings)
 	PutRemoteDialogflowAgent(value *CesAgentRemoteDialogflowAgent)
 	PutTimeouts(value *CesAgentTimeouts)
-	PutToolsets(value interface{})
+	PutToolsets(value any)
 	ResetAfterAgentCallbacks()
 	ResetAfterModelCallbacks()
 	ResetAfterToolCallbacks()
@@ -194,17 +194,17 @@ type CesAgent interface {
 	ResetTimeouts()
 	ResetTools()
 	ResetToolsets()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CesAgent
@@ -222,8 +222,8 @@ func (j *jsiiProxy_CesAgent) AfterAgentCallbacks() CesAgentAfterAgentCallbacksLi
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) AfterAgentCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) AfterAgentCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"afterAgentCallbacksInput",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_CesAgent) AfterModelCallbacks() CesAgentAfterModelCallbacksLi
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) AfterModelCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) AfterModelCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"afterModelCallbacksInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_CesAgent) AfterToolCallbacks() CesAgentAfterToolCallbacksList
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) AfterToolCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) AfterToolCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"afterToolCallbacksInput",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_CesAgent) BeforeAgentCallbacks() CesAgentBeforeAgentCallbacks
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) BeforeAgentCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) BeforeAgentCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"beforeAgentCallbacksInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_CesAgent) BeforeModelCallbacks() CesAgentBeforeModelCallbacks
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) BeforeModelCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) BeforeModelCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"beforeModelCallbacksInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_CesAgent) BeforeToolCallbacks() CesAgentBeforeToolCallbacksLi
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) BeforeToolCallbacksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) BeforeToolCallbacksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"beforeToolCallbacksInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_CesAgent) ChildAgentsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_CesAgent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAgent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_CesAgent) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_CesAgent) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CesAgent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -732,8 +732,8 @@ func (j *jsiiProxy_CesAgent) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_CesAgent) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAgent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -802,8 +802,8 @@ func (j *jsiiProxy_CesAgent) Timeouts() CesAgentTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -832,8 +832,8 @@ func (j *jsiiProxy_CesAgent) Toolsets() CesAgentToolsetsList {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgent) ToolsetsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgent) ToolsetsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"toolsetsInput",
@@ -862,7 +862,6 @@ func (j *jsiiProxy_CesAgent) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent google_ces_agent} Resource.
 func NewCesAgent(scope constructs.Construct, id *string, config *CesAgentConfig) CesAgent {
 	_init_.Initialize()
@@ -874,7 +873,7 @@ func NewCesAgent(scope constructs.Construct, id *string, config *CesAgentConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -887,12 +886,12 @@ func NewCesAgent_Override(c CesAgent, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetAgentId(val *string) {
+func (j *jsiiProxy_CesAgent) SetAgentId(val *string) {
 	if err := j.validateSetAgentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_CesAgent)SetAgentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetApp(val *string) {
+func (j *jsiiProxy_CesAgent) SetApp(val *string) {
 	if err := j.validateSetAppParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func (j *jsiiProxy_CesAgent)SetApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetChildAgents(val *[]*string) {
+func (j *jsiiProxy_CesAgent) SetChildAgents(val *[]*string) {
 	if err := j.validateSetChildAgentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_CesAgent)SetChildAgents(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetConnection(val interface{}) {
+func (j *jsiiProxy_CesAgent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func (j *jsiiProxy_CesAgent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetCount(val interface{}) {
+func (j *jsiiProxy_CesAgent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_CesAgent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesAgent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -955,7 +954,7 @@ func (j *jsiiProxy_CesAgent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetDescription(val *string) {
+func (j *jsiiProxy_CesAgent) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_CesAgent)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetDisplayName(val *string) {
+func (j *jsiiProxy_CesAgent) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -977,7 +976,7 @@ func (j *jsiiProxy_CesAgent)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesAgent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -985,7 +984,7 @@ func (j *jsiiProxy_CesAgent)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetGuardrails(val *[]*string) {
+func (j *jsiiProxy_CesAgent) SetGuardrails(val *[]*string) {
 	if err := j.validateSetGuardrailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -996,7 +995,7 @@ func (j *jsiiProxy_CesAgent)SetGuardrails(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetId(val *string) {
+func (j *jsiiProxy_CesAgent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1006,7 @@ func (j *jsiiProxy_CesAgent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetInstruction(val *string) {
+func (j *jsiiProxy_CesAgent) SetInstruction(val *string) {
 	if err := j.validateSetInstructionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_CesAgent)SetInstruction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_CesAgent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetLocation(val *string) {
+func (j *jsiiProxy_CesAgent) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_CesAgent)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetProject(val *string) {
+func (j *jsiiProxy_CesAgent) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_CesAgent)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesAgent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1059,7 +1058,7 @@ func (j *jsiiProxy_CesAgent)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesAgent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1070,7 +1069,7 @@ func (j *jsiiProxy_CesAgent)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAgent)SetTools(val *[]*string) {
+func (j *jsiiProxy_CesAgent) SetTools(val *[]*string) {
 	if err := j.validateSetToolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func CesAgent_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAgent.CesAgent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func CesAgent_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CesAgent_IsConstruct(x interface{}) *bool {
+func CesAgent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAgent_IsConstructParameters(x); err != nil {
@@ -1128,7 +1127,7 @@ func CesAgent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAgent.CesAgent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1136,7 +1135,7 @@ func CesAgent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAgent_IsTerraformElement(x interface{}) *bool {
+func CesAgent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAgent_IsTerraformElementParameters(x); err != nil {
@@ -1147,7 +1146,7 @@ func CesAgent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAgent.CesAgent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func CesAgent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAgent_IsTerraformResource(x interface{}) *bool {
+func CesAgent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAgent_IsTerraformResourceParameters(x); err != nil {
@@ -1166,7 +1165,7 @@ func CesAgent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAgent.CesAgent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1191,31 +1190,31 @@ func (c *jsiiProxy_CesAgent) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CesAgent) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1231,7 +1230,7 @@ func (c *jsiiProxy_CesAgent) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1247,7 +1246,7 @@ func (c *jsiiProxy_CesAgent) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1263,7 +1262,7 @@ func (c *jsiiProxy_CesAgent) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1279,7 +1278,7 @@ func (c *jsiiProxy_CesAgent) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1295,7 +1294,7 @@ func (c *jsiiProxy_CesAgent) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1311,7 +1310,7 @@ func (c *jsiiProxy_CesAgent) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1327,7 +1326,7 @@ func (c *jsiiProxy_CesAgent) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1343,15 +1342,15 @@ func (c *jsiiProxy_CesAgent) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAgent) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAgent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1370,7 +1369,7 @@ func (c *jsiiProxy_CesAgent) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1383,7 +1382,7 @@ func (c *jsiiProxy_CesAgent) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1397,18 +1396,18 @@ func (c *jsiiProxy_CesAgent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CesAgent) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1419,7 +1418,7 @@ func (c *jsiiProxy_CesAgent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1430,73 +1429,73 @@ func (c *jsiiProxy_CesAgent) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutAfterAgentCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutAfterAgentCallbacks(value any) {
 	if err := c.validatePutAfterAgentCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAfterAgentCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutAfterModelCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutAfterModelCallbacks(value any) {
 	if err := c.validatePutAfterModelCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAfterModelCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutAfterToolCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutAfterToolCallbacks(value any) {
 	if err := c.validatePutAfterToolCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAfterToolCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutBeforeAgentCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutBeforeAgentCallbacks(value any) {
 	if err := c.validatePutBeforeAgentCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBeforeAgentCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutBeforeModelCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutBeforeModelCallbacks(value any) {
 	if err := c.validatePutBeforeModelCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBeforeModelCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutBeforeToolCallbacks(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutBeforeToolCallbacks(value any) {
 	if err := c.validatePutBeforeToolCallbacksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBeforeToolCallbacks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1507,7 +1506,7 @@ func (c *jsiiProxy_CesAgent) PutLlmAgent(value *CesAgentLlmAgent) {
 	_jsii_.InvokeVoid(
 		c,
 		"putLlmAgent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1518,7 +1517,7 @@ func (c *jsiiProxy_CesAgent) PutModelSettings(value *CesAgentModelSettings) {
 	_jsii_.InvokeVoid(
 		c,
 		"putModelSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1529,7 +1528,7 @@ func (c *jsiiProxy_CesAgent) PutRemoteDialogflowAgent(value *CesAgentRemoteDialo
 	_jsii_.InvokeVoid(
 		c,
 		"putRemoteDialogflowAgent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1540,18 +1539,18 @@ func (c *jsiiProxy_CesAgent) PutTimeouts(value *CesAgentTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAgent) PutToolsets(value interface{}) {
+func (c *jsiiProxy_CesAgent) PutToolsets(value any) {
 	if err := c.validatePutToolsetsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putToolsets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1715,8 +1714,8 @@ func (c *jsiiProxy_CesAgent) ResetToolsets() {
 	)
 }
 
-func (c *jsiiProxy_CesAgent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAgent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1728,8 +1727,8 @@ func (c *jsiiProxy_CesAgent) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesAgent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAgent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1741,8 +1740,8 @@ func (c *jsiiProxy_CesAgent) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesAgent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAgent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1754,8 +1753,8 @@ func (c *jsiiProxy_CesAgent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesAgent) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAgent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1780,8 +1779,8 @@ func (c *jsiiProxy_CesAgent) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesAgent) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAgent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1792,4 +1791,3 @@ func (c *jsiiProxy_CesAgent) ToTerraform() interface{} {
 
 	return returns
 }
-

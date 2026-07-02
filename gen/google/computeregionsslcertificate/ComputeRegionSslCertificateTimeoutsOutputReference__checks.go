@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionSslCertificateTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

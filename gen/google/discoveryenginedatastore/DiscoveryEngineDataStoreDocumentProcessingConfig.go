@@ -1,6 +1,5 @@
 package discoveryenginedatastore
 
-
 type DiscoveryEngineDataStoreDocumentProcessingConfig struct {
 	// chunking_config block.
 	//
@@ -13,6 +12,5 @@ type DiscoveryEngineDataStoreDocumentProcessingConfig struct {
 	// parsing_config_overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_store#parsing_config_overrides DiscoveryEngineDataStore#parsing_config_overrides}
-	ParsingConfigOverrides interface{} `field:"optional" json:"parsingConfigOverrides" yaml:"parsingConfigOverrides"`
+	ParsingConfigOverrides any `field:"optional" json:"parsingConfigOverrides" yaml:"parsingConfigOverrides"`
 }
-

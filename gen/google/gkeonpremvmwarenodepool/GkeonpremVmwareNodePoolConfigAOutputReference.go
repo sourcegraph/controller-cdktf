@@ -15,9 +15,9 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	BootDiskSizeGbInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableLoadBalancer() interface{}
-	SetEnableLoadBalancer(val interface{})
-	EnableLoadBalancerInput() interface{}
+	EnableLoadBalancer() any
+	SetEnableLoadBalancer(val any)
+	EnableLoadBalancerInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -54,7 +54,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	SetReplicas(val *float64)
 	ReplicasInput() *float64
 	Taints() GkeonpremVmwareNodePoolConfigTaintsList
-	TaintsInput() interface{}
+	TaintsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +68,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTaints(value interface{})
+	PutTaints(value any)
 	PutVsphereConfig(value *GkeonpremVmwareNodePoolConfigVsphereConfig)
 	ResetBootDiskSizeGb()
 	ResetCpus()
@@ -102,7 +102,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	ResetVsphereConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) BootDiskSizeGb
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) EnableLoadBalancer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) EnableLoadBalancer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoadBalancer",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) EnableLoadBala
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) EnableLoadBalancerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) EnableLoadBalancerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoadBalancerInput",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) Taints() Gkeon
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) TaintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) TaintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"taintsInput",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfigI
 	return returns
 }
 
-
 func NewGkeonpremVmwareNodePoolConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareNodePoolConfigAOutputReference {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewGkeonpremVmwareNodePoolConfigAOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareNodePool.GkeonpremVmwareNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -408,12 +407,12 @@ func NewGkeonpremVmwareNodePoolConfigAOutputReference_Override(g GkeonpremVmware
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareNodePool.GkeonpremVmwareNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetBootDiskSizeGb(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetBootDiskSizeGb(val *float64) {
 	if err := j.validateSetBootDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetBootDiskSize
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetCpus(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetCpus(val *float64) {
 	if err := j.validateSetCpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetCpus(val *fl
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetEnableLoadBalancer(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetEnableLoadBalancer(val any) {
 	if err := j.validateSetEnableLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetEnableLoadBa
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetImage(val *s
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetImageType(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetImageType(va
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetInternalValue(val *GkeonpremVmwareNodePoolConfigA) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetInternalValue(val *GkeonpremVmwareNodePoolConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetLabels(val *
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetMemoryMb(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetMemoryMb(val *float64) {
 	if err := j.validateSetMemoryMbParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetMemoryMb(val
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetReplicas(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetReplicas(val *float64) {
 	if err := j.validateSetReplicasParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetReplicas(val
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,16 +568,16 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,21 +734,21 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) PutTaints(value interface{}) {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) PutTaints(value any) {
 	if err := g.validatePutTaintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTaints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -760,7 +759,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) PutVsphereConf
 	_jsii_.InvokeVoid(
 		g,
 		"putVsphereConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -836,16 +835,16 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ResetVsphereCo
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -864,4 +863,3 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ToString() *st
 
 	return returns
 }
-

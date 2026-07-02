@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputRefe
 
 	return nil
 }
-

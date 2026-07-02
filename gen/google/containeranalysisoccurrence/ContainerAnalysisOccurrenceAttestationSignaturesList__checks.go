@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerAnalysisOccurrenceAttestationSignaturesListParameters(t
 
 	return nil
 }
-

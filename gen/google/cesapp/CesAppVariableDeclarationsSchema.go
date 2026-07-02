@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppVariableDeclarationsSchema struct {
 	// The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 	//
@@ -52,7 +51,7 @@ type CesAppVariableDeclarationsSchema struct {
 	// Indicates if the value may be null.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#nullable CesApp#nullable}
-	Nullable interface{} `field:"optional" json:"nullable" yaml:"nullable"`
+	Nullable any `field:"optional" json:"nullable" yaml:"nullable"`
 	// Optional. Schemas of initial elements of Type.ARRAY.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
@@ -95,6 +94,5 @@ type CesAppVariableDeclarationsSchema struct {
 	// Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#unique_items CesApp#unique_items}
-	UniqueItems interface{} `field:"optional" json:"uniqueItems" yaml:"uniqueItems"`
+	UniqueItems any `field:"optional" json:"uniqueItems" yaml:"uniqueItems"`
 }
-

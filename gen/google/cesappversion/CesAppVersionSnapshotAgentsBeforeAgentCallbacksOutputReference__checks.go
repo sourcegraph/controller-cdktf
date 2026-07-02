@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReferencePa
 
 	return nil
 }
-

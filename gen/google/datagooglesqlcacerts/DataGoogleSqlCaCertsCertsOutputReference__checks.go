@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSqlCaCertsCertsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

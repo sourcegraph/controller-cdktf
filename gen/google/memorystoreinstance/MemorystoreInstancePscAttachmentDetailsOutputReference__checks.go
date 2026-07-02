@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstancePscAttachmentDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstancePscAttachmentDetailsOutputReferenceParameters
 
 	return nil
 }
-

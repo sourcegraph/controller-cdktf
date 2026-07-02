@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxAgentTextToSpeechSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentTextToSpeechSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxAgentTextToSpeechSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxAgentTextToSpeechSettingsOutputReferenceParameters(t
 
 	return nil
 }
-

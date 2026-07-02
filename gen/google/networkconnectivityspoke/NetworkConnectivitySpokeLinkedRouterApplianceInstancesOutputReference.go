@@ -12,9 +12,9 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,12 +40,12 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	SetIncludeImportRanges(val *[]*string)
 	IncludeImportRangesInput() *[]*string
 	Instances() NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList
-	InstancesInput() interface{}
+	InstancesInput() any
 	InternalValue() *NetworkConnectivitySpokeLinkedRouterApplianceInstances
 	SetInternalValue(val *NetworkConnectivitySpokeLinkedRouterApplianceInstances)
-	SiteToSiteDataTransfer() interface{}
-	SetSiteToSiteDataTransfer(val interface{})
-	SiteToSiteDataTransferInput() interface{}
+	SiteToSiteDataTransfer() any
+	SetSiteToSiteDataTransfer(val any)
+	SiteToSiteDataTransferInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,14 +78,14 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInstances(value interface{})
+	PutInstances(value any)
 	ResetExcludeExportRanges()
 	ResetExcludeImportRanges()
 	ResetIncludeExportRanges()
 	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) InstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) InstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"instancesInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SiteToSiteDataTransfer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SiteToSiteDataTransfer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransfer",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SiteToSiteDataTransferInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SiteToSiteDataTransferInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransferInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return returns
 }
 
-
 func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetExcludeExportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetExcludeExportRanges(val *[]*string) {
 	if err := j.validateSetExcludeExportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetExcludeImportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetExcludeImportRanges(val *[]*string) {
 	if err := j.validateSetExcludeImportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetIncludeExportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetIncludeExportRanges(val *[]*string) {
 	if err := j.validateSetIncludeExportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetIncludeImportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetIncludeImportRanges(val *[]*string) {
 	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetInternalValue(val *NetworkConnectivitySpokeLinkedRouterApplianceInstances) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetInternalValue(val *NetworkConnectivitySpokeLinkedRouterApplianceInstances) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetSiteToSiteDataTransfer(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetSiteToSiteDataTransfer(val any) {
 	if err := j.validateSetSiteToSiteDataTransferParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,16 +438,16 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,21 +604,21 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) PutInstances(value interface{}) {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) PutInstances(value any) {
 	if err := n.validatePutInstancesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putInstances",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 
 	return returns
 }
-

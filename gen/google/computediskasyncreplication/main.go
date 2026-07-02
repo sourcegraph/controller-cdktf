@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication",
-		reflect.TypeOf((*ComputeDiskAsyncReplication)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskAsyncReplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig",
-		reflect.TypeOf((*ComputeDiskAsyncReplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk",
-		reflect.TypeOf((*ComputeDiskAsyncReplicationSecondaryDisk)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplicationSecondaryDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDiskOutputReference",
-		reflect.TypeOf((*ComputeDiskAsyncReplicationSecondaryDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplicationSecondaryDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -116,11 +116,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts",
-		reflect.TypeOf((*ComputeDiskAsyncReplicationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplicationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeDiskAsyncReplicationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskAsyncReplicationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

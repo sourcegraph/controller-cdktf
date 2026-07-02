@@ -12,16 +12,16 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConditionalCases() DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList
-	ConditionalCasesInput() interface{}
+	ConditionalCasesInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,12 +32,12 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	InternalValue() *DialogflowCxPageTransitionRoutesTriggerFulfillment
 	SetInternalValue(val *DialogflowCxPageTransitionRoutesTriggerFulfillment)
 	Messages() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList
-	MessagesInput() interface{}
-	ReturnPartialResponses() interface{}
-	SetReturnPartialResponses(val interface{})
-	ReturnPartialResponsesInput() interface{}
+	MessagesInput() any
+	ReturnPartialResponses() any
+	SetReturnPartialResponses(val any)
+	ReturnPartialResponsesInput() any
 	SetParameterActions() DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsList
-	SetParameterActionsInput() interface{}
+	SetParameterActionsInput() any
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -55,7 +55,7 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,9 +76,9 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConditionalCases(value interface{})
-	PutMessages(value interface{})
-	PutSetParameterActions(value interface{})
+	PutConditionalCases(value any)
+	PutMessages(value any)
+	PutSetParameterActions(value any)
 	ResetConditionalCases()
 	ResetMessages()
 	ResetReturnPartialResponses()
@@ -87,7 +87,7 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	ResetWebhook()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ConditionalCasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ConditionalCasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionalCasesInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) MessagesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) MessagesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"messagesInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ReturnPartialResponses() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ReturnPartialResponses() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnPartialResponses",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ReturnPartialResponsesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ReturnPartialResponsesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"returnPartialResponsesInput",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetParameterActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetParameterActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setParameterActionsInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-
 func NewDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewDialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetInternalValue(val *DialogflowCxPageTransitionRoutesTriggerFulfillment) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetInternalValue(val *DialogflowCxPageTransitionRoutesTriggerFulfillment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetReturnPartialResponses(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetReturnPartialResponses(val any) {
 	if err := j.validateSetReturnPartialResponsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetTag(val *string) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetTag(val *string) {
 	if err := j.validateSetTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)SetWebhook(val *string) {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetWebhook(val *string) {
 	if err := j.validateSetWebhookParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,16 +418,16 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,43 +584,43 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutConditionalCases(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutConditionalCases(value any) {
 	if err := d.validatePutConditionalCasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putConditionalCases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutMessages(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutMessages(value any) {
 	if err := d.validatePutMessagesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMessages",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutSetParameterActions(value interface{}) {
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutSetParameterActions(value any) {
 	if err := d.validatePutSetParameterActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSetParameterActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 
 	return returns
 }
-

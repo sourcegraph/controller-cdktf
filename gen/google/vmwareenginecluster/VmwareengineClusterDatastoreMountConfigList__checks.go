@@ -34,7 +34,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVmwareengineClusterDatastoreMountConfigListParameters(terraformR
 
 	return nil
 }
-

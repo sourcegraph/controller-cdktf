@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding",
-		reflect.TypeOf((*DataplexAspectTypeIamBinding)(nil)).Elem(),
+		reflect.TypeFor[DataplexAspectTypeIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAspectTypeIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition",
-		reflect.TypeOf((*DataplexAspectTypeIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[DataplexAspectTypeIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConditionOutputReference",
-		reflect.TypeOf((*DataplexAspectTypeIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAspectTypeIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAspectTypeIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig",
-		reflect.TypeOf((*DataplexAspectTypeIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexAspectTypeIamBindingConfig](),
 	)
 }

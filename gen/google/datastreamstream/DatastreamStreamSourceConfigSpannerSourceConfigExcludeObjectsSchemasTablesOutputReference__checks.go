@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validatePutColumnsParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validatePutColumnsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSch
 
 	return nil
 }
-

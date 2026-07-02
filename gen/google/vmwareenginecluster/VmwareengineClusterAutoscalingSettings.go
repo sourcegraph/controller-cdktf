@@ -1,11 +1,10 @@
 package vmwareenginecluster
 
-
 type VmwareengineClusterAutoscalingSettings struct {
 	// autoscaling_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#autoscaling_policies VmwareengineCluster#autoscaling_policies}
-	AutoscalingPolicies interface{} `field:"required" json:"autoscalingPolicies" yaml:"autoscalingPolicies"`
+	AutoscalingPolicies any `field:"required" json:"autoscalingPolicies" yaml:"autoscalingPolicies"`
 	// The minimum duration between consecutive autoscale operations.
 	//
 	// It starts once addition or removal of nodes is fully completed.
@@ -24,4 +23,3 @@ type VmwareengineClusterAutoscalingSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#min_cluster_node_count VmwareengineCluster#min_cluster_node_count}
 	MinClusterNodeCount *float64 `field:"optional" json:"minClusterNodeCount" yaml:"minClusterNodeCount"`
 }
-

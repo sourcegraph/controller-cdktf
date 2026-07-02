@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeTargetServer) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeTargetServer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeTargetServer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeTargetServer) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeTargetServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeTargetServer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateApigeeTargetServer_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateApigeeTargetServer_IsConstructParameters(x interface{}) error {
+func validateApigeeTargetServer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateApigeeTargetServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApigeeTargetServer_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeTargetServer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateApigeeTargetServer_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateApigeeTargetServer_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeTargetServer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateApigeeTargetServer_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ApigeeTargetServer) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_ApigeeTargetServer) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServer) validateSetIsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServer) validateSetIsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_ApigeeTargetServer) validateSetProtocolParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewApigeeTargetServerParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

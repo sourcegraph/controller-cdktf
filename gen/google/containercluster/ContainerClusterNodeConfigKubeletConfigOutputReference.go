@@ -15,9 +15,9 @@ type ContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	AllowedUnsafeSysctlsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type ContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	ContainerLogMaxSize() *string
 	SetContainerLogMaxSize(val *string)
 	ContainerLogMaxSizeInput() *string
-	CpuCfsQuota() interface{}
-	SetCpuCfsQuota(val interface{})
-	CpuCfsQuotaInput() interface{}
+	CpuCfsQuota() any
+	SetCpuCfsQuota(val any)
+	CpuCfsQuotaInput() any
 	CpuCfsQuotaPeriod() *string
 	SetCpuCfsQuotaPeriod(val *string)
 	CpuCfsQuotaPeriodInput() *string
@@ -79,9 +79,9 @@ type ContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	PodPidsLimit() *float64
 	SetPodPidsLimit(val *float64)
 	PodPidsLimitInput() *float64
-	SingleProcessOomKill() interface{}
-	SetSingleProcessOomKill(val interface{})
-	SingleProcessOomKillInput() interface{}
+	SingleProcessOomKill() any
+	SetSingleProcessOomKill(val any)
+	SingleProcessOomKillInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -95,7 +95,7 @@ type ContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type ContainerClusterNodeConfigKubeletConfigOutputReference interface {
 	ResetTopologyManager()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Allow
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Conta
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) CpuCfsQuota() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) CpuCfsQuota() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuCfsQuota",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) CpuCf
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) CpuCfsQuotaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) CpuCfsQuotaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuCfsQuotaInput",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PodPi
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"singleProcessOomKill",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Singl
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKillInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKillInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"singleProcessOomKillInput",
@@ -626,7 +626,6 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Topol
 	return returns
 }
 
-
 func NewContainerClusterNodeConfigKubeletConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigOutputReference {
 	_init_.Initialize()
 
@@ -637,7 +636,7 @@ func NewContainerClusterNodeConfigKubeletConfigOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -649,12 +648,12 @@ func NewContainerClusterNodeConfigKubeletConfigOutputReference_Override(c Contai
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetAllowedUnsafeSysctls(val *[]*string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetAllowedUnsafeSysctls(val *[]*string) {
 	if err := j.validateSetAllowedUnsafeSysctlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetAll
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetContainerLogMaxFiles(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetContainerLogMaxFiles(val *float64) {
 	if err := j.validateSetContainerLogMaxFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCon
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetContainerLogMaxSize(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetContainerLogMaxSize(val *string) {
 	if err := j.validateSetContainerLogMaxSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCon
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpuCfsQuota(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetCpuCfsQuota(val any) {
 	if err := j.validateSetCpuCfsQuotaParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpu
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpuCfsQuotaPeriod(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetCpuCfsQuotaPeriod(val *string) {
 	if err := j.validateSetCpuCfsQuotaPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpu
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpuManagerPolicy(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetCpuManagerPolicy(val *string) {
 	if err := j.validateSetCpuManagerPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetCpu
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetEvictionMaxPodGracePeriodSeconds(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetEvictionMaxPodGracePeriodSeconds(val *float64) {
 	if err := j.validateSetEvictionMaxPodGracePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetEvi
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetImageGcHighThresholdPercent(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetImageGcHighThresholdPercent(val *float64) {
 	if err := j.validateSetImageGcHighThresholdPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetIma
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetImageGcLowThresholdPercent(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetImageGcLowThresholdPercent(val *float64) {
 	if err := j.validateSetImageGcLowThresholdPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetIma
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetImageMaximumGcAge(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetImageMaximumGcAge(val *string) {
 	if err := j.validateSetImageMaximumGcAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetIma
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetImageMinimumGcAge(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetImageMinimumGcAge(val *string) {
 	if err := j.validateSetImageMinimumGcAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetIma
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetInsecureKubeletReadonlyPortEnabled(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetInsecureKubeletReadonlyPortEnabled(val *string) {
 	if err := j.validateSetInsecureKubeletReadonlyPortEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetIns
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetInternalValue(val *ContainerClusterNodeConfigKubeletConfig) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetInternalValue(val *ContainerClusterNodeConfigKubeletConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetMaxParallelImagePulls(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetMaxParallelImagePulls(val *float64) {
 	if err := j.validateSetMaxParallelImagePullsParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetPodPidsLimit(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetPodPidsLimit(val *float64) {
 	if err := j.validateSetPodPidsLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetPod
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetSingleProcessOomKill(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetSingleProcessOomKill(val any) {
 	if err := j.validateSetSingleProcessOomKillParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetSin
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,16 +886,16 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PutEv
 	_jsii_.InvokeVoid(
 		c,
 		"putEvictionMinimumReclaim",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PutEv
 	_jsii_.InvokeVoid(
 		c,
 		"putEvictionSoft",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PutEv
 	_jsii_.InvokeVoid(
 		c,
 		"putEvictionSoftGracePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PutMe
 	_jsii_.InvokeVoid(
 		c,
 		"putMemoryManager",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) PutTo
 	_jsii_.InvokeVoid(
 		c,
 		"putTopologyManager",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,16 +1274,16 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1303,4 +1302,3 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) ToStr
 
 	return returns
 }
-

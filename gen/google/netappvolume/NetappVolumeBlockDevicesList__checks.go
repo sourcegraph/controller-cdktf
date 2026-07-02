@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetappVolumeBlockDevicesListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

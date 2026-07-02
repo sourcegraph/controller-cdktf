@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAgentModelSettingsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAgentModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCesAgentModelSettingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

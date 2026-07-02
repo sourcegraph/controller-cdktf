@@ -1,6 +1,5 @@
 package cestool
 
-
 type CesToolDataStoreToolModalityConfigsRewriterConfig struct {
 	// model_settings block.
 	//
@@ -9,10 +8,9 @@ type CesToolDataStoreToolModalityConfigsRewriterConfig struct {
 	// Whether the rewriter is disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#disabled CesTool#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// The prompt definition. If not set, default prompt will be used.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#prompt CesTool#prompt}
 	Prompt *string `field:"optional" json:"prompt" yaml:"prompt"`
 }
-

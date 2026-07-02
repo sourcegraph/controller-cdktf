@@ -15,15 +15,15 @@ type DnsManagedZoneIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type DnsManagedZoneIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type DnsManagedZoneIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type DnsManagedZoneIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type DnsManagedZoneIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DnsManagedZoneIamPolicy
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy} Resource.
 func NewDnsManagedZoneIamPolicy(scope constructs.Construct, id *string, config *DnsManagedZoneIamPolicyConfig) DnsManagedZoneIamPolicy {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewDnsManagedZoneIamPolicy(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewDnsManagedZoneIamPolicy_Override(d DnsManagedZoneIamPolicy, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetManagedZone(val *string) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetManagedZone(val *string) {
 	if err := j.validateSetManagedZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetManagedZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DnsManagedZoneIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func DnsManagedZoneIamPolicy_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func DnsManagedZoneIamPolicy_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool {
+func DnsManagedZoneIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsManagedZoneIamPolicy_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func DnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func DnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DnsManagedZoneIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsManagedZoneIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func DnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func DnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsManagedZoneIamPolicy_IsTerraformResource(x interface{}) *bool {
+func DnsManagedZoneIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsManagedZoneIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func DnsManagedZoneIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsManagedZoneIamPolicy.DnsManagedZoneIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -919,8 +918,8 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -932,8 +931,8 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -945,8 +944,8 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -971,8 +970,8 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -983,4 +982,3 @@ func (d *jsiiProxy_DnsManagedZoneIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

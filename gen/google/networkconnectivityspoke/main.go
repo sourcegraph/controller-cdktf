@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
-		reflect.TypeOf((*NetworkConnectivitySpoke)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpoke](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpoke{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -113,15 +113,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig",
-		reflect.TypeOf((*NetworkConnectivitySpokeConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachments",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedInterconnectAttachments)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedInterconnectAttachments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 			_jsii_.MemberProperty{JsiiProperty: "urisInput", GoGetter: "UrisInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedProducerVpcNetwork",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedProducerVpcNetwork)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedProducerVpcNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,15 +216,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstances",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstances)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedRouterApplianceInstances](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachine", GoGetter: "VirtualMachine"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineInput", GoGetter: "VirtualMachineInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpcNetwork",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpcNetwork)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedVpcNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpcNetworkOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpcNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedVpcNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,11 +375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnels",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpnTunnels)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedVpnTunnels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 			_jsii_.MemberProperty{JsiiProperty: "urisInput", GoGetter: "UrisInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,11 +427,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeReasons",
-		reflect.TypeOf((*NetworkConnectivitySpokeReasons)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeReasons](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeReasonsList",
-		reflect.TypeOf((*NetworkConnectivitySpokeReasonsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeReasonsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeReasonsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -452,7 +452,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeReasonsOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeReasonsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeReasonsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "userDetails", GoGetter: "UserDetails"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -487,11 +487,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts",
-		reflect.TypeOf((*NetworkConnectivitySpokeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkConnectivitySpokeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivitySpokeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterPscConnectionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterPscConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterPscConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterPscConnectionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

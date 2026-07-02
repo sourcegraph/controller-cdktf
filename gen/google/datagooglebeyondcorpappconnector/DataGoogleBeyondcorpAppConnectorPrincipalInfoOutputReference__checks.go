@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBeyondcorpAppConnectorPrincipalInfoOutputReferencePara
 
 	return nil
 }
-

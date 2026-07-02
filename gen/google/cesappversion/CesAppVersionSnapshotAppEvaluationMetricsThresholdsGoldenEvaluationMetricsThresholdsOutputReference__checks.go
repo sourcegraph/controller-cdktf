@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEval
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluat
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateInterpolation
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validatePutSafetySettingsParameters(value interface{}) error {
+func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validatePutSafetySettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewCesGuardrailModelSafetyOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

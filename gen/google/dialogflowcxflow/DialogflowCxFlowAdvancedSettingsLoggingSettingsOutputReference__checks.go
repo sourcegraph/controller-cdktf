@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableConsentBasedRedactionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableConsentBasedRedactionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableInteractionLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableInteractionLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferencePa
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
-		reflect.TypeOf((*ComputeBackendService)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -193,15 +193,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackend",
-		reflect.TypeOf((*ComputeBackendServiceBackend)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackend](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics",
-		reflect.TypeOf((*ComputeBackendServiceBackendCustomMetrics)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackendCustomMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList",
-		reflect.TypeOf((*ComputeBackendServiceBackendCustomMetricsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackendCustomMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceBackendCustomMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -223,7 +223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceBackendCustomMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackendCustomMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceBackendCustomMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,7 +262,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendList",
-		reflect.TypeOf((*ComputeBackendServiceBackendList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackendList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceBackendList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -284,7 +284,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceBackendOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceBackendOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "balancingMode", GoGetter: "BalancingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "balancingModeInput", GoGetter: "BalancingModeInput"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceBackendOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,15 +355,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -385,7 +385,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,11 +419,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyCacheKeyPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyCacheKeyPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -468,7 +468,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -476,11 +476,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyNegativeCachingPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyNegativeCachingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyNegativeCachingPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -494,7 +494,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -502,7 +502,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "codeInput", GoGetter: "CodeInput"},
@@ -532,7 +532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -540,7 +540,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCdnPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCdnPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bypassCacheOnRequestHeaders", GoGetter: "BypassCacheOnRequestHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "bypassCacheOnRequestHeadersInput", GoGetter: "BypassCacheOnRequestHeadersInput"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -608,11 +608,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakers",
-		reflect.TypeOf((*ComputeBackendServiceCircuitBreakers)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCircuitBreakers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCircuitBreakersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCircuitBreakersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -651,7 +651,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCircuitBreakersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -659,19 +659,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConfig",
-		reflect.TypeOf((*ComputeBackendServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHash",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHash)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHash](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookie",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHashHttpCookie)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHashHttpCookie](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHashHttpCookieOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHashHttpCookieOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -705,7 +705,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceConsistentHashHttpCookieOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -713,11 +713,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtl",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHashHttpCookieTtl)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHashHttpCookieTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -746,7 +746,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -754,7 +754,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceConsistentHashOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceConsistentHashOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -788,7 +788,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceConsistentHashOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -796,11 +796,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics",
-		reflect.TypeOf((*ComputeBackendServiceCustomMetrics)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCustomMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList",
-		reflect.TypeOf((*ComputeBackendServiceCustomMetricsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCustomMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -814,7 +814,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCustomMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -822,7 +822,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceCustomMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceCustomMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -850,7 +850,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceCustomMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -858,11 +858,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIap",
-		reflect.TypeOf((*ComputeBackendServiceIap)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceIap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceIapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceIapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -895,7 +895,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceIapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -903,15 +903,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPolicies)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPolicies](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicy",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesCustomPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesCustomPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -940,7 +940,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -948,7 +948,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -962,7 +962,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -970,7 +970,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1002,7 +1002,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1010,11 +1010,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicy",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1040,7 +1040,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1048,11 +1048,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfig",
-		reflect.TypeOf((*ComputeBackendServiceLogConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1088,7 +1088,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1096,11 +1096,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration",
-		reflect.TypeOf((*ComputeBackendServiceMaxStreamDuration)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceMaxStreamDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceMaxStreamDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceMaxStreamDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1129,7 +1129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceMaxStreamDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1137,15 +1137,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetection",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetection)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetection](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTime",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetectionBaseEjectionTime)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetectionBaseEjectionTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1174,7 +1174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1182,11 +1182,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionInterval",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetectionInterval)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetectionInterval](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetectionIntervalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetectionIntervalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1215,7 +1215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceOutlierDetectionIntervalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1223,7 +1223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceOutlierDetectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceOutlierDetectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseEjectionTime", GoGetter: "BaseEjectionTime"},
 			_jsii_.MemberProperty{JsiiProperty: "baseEjectionTimeInput", GoGetter: "BaseEjectionTimeInput"},
@@ -1282,7 +1282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1290,11 +1290,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceParams",
-		reflect.TypeOf((*ComputeBackendServiceParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1321,7 +1321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1329,15 +1329,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettings",
-		reflect.TypeOf((*ComputeBackendServiceSecuritySettings)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceSecuritySettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4Authentication",
-		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsAwsV4Authentication)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceSecuritySettingsAwsV4Authentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -1373,7 +1373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1381,7 +1381,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceSecuritySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsV4Authentication", GoGetter: "AwsV4Authentication"},
 			_jsii_.MemberProperty{JsiiProperty: "awsV4AuthenticationInput", GoGetter: "AwsV4AuthenticationInput"},
@@ -1415,7 +1415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1423,11 +1423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookie",
-		reflect.TypeOf((*ComputeBackendServiceStrongSessionAffinityCookie)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceStrongSessionAffinityCookie](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceStrongSessionAffinityCookieOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceStrongSessionAffinityCookieOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1461,7 +1461,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1469,11 +1469,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtl",
-		reflect.TypeOf((*ComputeBackendServiceStrongSessionAffinityCookieTtl)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceStrongSessionAffinityCookieTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1502,7 +1502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1510,11 +1510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTimeouts",
-		reflect.TypeOf((*ComputeBackendServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1547,7 +1547,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1555,11 +1555,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettings",
-		reflect.TypeOf((*ComputeBackendServiceTlsSettings)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTlsSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceTlsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTlsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfig", GoGetter: "AuthenticationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigInput", GoGetter: "AuthenticationConfigInput"},
@@ -1593,7 +1593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1601,11 +1601,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames",
-		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNames)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTlsSettingsSubjectAltNames](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList",
-		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNamesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTlsSettingsSubjectAltNamesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1619,7 +1619,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1627,7 +1627,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference",
-		reflect.TypeOf((*ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1657,7 +1657,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniformResourceIdentifier", GoGetter: "UniformResourceIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "uniformResourceIdentifierInput", GoGetter: "UniformResourceIdentifierInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

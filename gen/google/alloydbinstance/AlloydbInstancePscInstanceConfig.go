@@ -1,6 +1,5 @@
 package alloydbinstance
 
-
 type AlloydbInstancePscInstanceConfig struct {
 	// List of consumer projects that are allowed to create PSC endpoints to service-attachments to this instance.
 	//
@@ -11,10 +10,9 @@ type AlloydbInstancePscInstanceConfig struct {
 	// psc_auto_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
-	PscAutoConnections interface{} `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
+	PscAutoConnections any `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
 	// psc_interface_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
-	PscInterfaceConfigs interface{} `field:"optional" json:"pscInterfaceConfigs" yaml:"pscInterfaceConfigs"`
+	PscInterfaceConfigs any `field:"optional" json:"pscInterfaceConfigs" yaml:"pscInterfaceConfigs"`
 }
-

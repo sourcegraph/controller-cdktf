@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudVcenterOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudVcenterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudVcenterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVmwareenginePrivateCloudVcenterOutputReferenceParameters(terrafo
 
 	return nil
 }
-

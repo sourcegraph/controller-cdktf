@@ -1,6 +1,5 @@
 package developerconnectaccountconnector
 
-
 type DeveloperConnectAccountConnectorCustomOauthConfig struct {
 	// The OAuth2 authrization server URL.
 	//
@@ -37,7 +36,7 @@ type DeveloperConnectAccountConnectorCustomOauthConfig struct {
 	// Disable PKCE for this OAuth config. PKCE is enabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector#pkce_disabled DeveloperConnectAccountConnector#pkce_disabled}
-	PkceDisabled interface{} `field:"optional" json:"pkceDisabled" yaml:"pkceDisabled"`
+	PkceDisabled any `field:"optional" json:"pkceDisabled" yaml:"pkceDisabled"`
 	// service_directory_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector#service_directory_config DeveloperConnectAccountConnector#service_directory_config}
@@ -47,4 +46,3 @@ type DeveloperConnectAccountConnectorCustomOauthConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/developer_connect_account_connector#ssl_ca_certificate DeveloperConnectAccountConnector#ssl_ca_certificate}
 	SslCaCertificate *string `field:"optional" json:"sslCaCertificate" yaml:"sslCaCertificate"`
 }
-

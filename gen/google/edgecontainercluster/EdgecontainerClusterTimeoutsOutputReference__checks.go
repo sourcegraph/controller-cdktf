@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEdgecontainerClusterTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

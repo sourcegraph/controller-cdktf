@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCoo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionBackendServiceStrongSessionAffinityCookie
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiProcessorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDocumentAiProcessorTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

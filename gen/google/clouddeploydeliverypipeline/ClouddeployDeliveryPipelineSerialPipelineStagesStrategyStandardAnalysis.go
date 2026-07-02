@@ -1,6 +1,5 @@
 package clouddeploydeliverypipeline
 
-
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardAnalysis struct {
 	// Required. Duration of the analysis.
 	//
@@ -9,10 +8,9 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardAnalysis str
 	// custom_checks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#custom_checks ClouddeployDeliveryPipeline#custom_checks}
-	CustomChecks interface{} `field:"optional" json:"customChecks" yaml:"customChecks"`
+	CustomChecks any `field:"optional" json:"customChecks" yaml:"customChecks"`
 	// google_cloud block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#google_cloud ClouddeployDeliveryPipeline#google_cloud}
 	GoogleCloud *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardAnalysisGoogleCloud `field:"optional" json:"googleCloud" yaml:"googleCloud"`
 }
-

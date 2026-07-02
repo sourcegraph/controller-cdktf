@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutpu
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewContainerClusterMasterAuthOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

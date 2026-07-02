@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleVmwareengineSubnet_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataGoogleVmwareengineSubnet_IsConstructParameters(x interface{}) error {
+func validateDataGoogleVmwareengineSubnet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleVmwareengineSubnet_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataGoogleVmwareengineSubnet_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleVmwareengineSubnet_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleVmwareengineSubnet_IsTerraformDataSourceParameters(x inte
 	return nil
 }
 
-func validateDataGoogleVmwareengineSubnet_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleVmwareengineSubnet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleVmwareengineSubnet_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleVmwareengineSubnetParameters(scope constructs.Construc
 
 	return nil
 }
-

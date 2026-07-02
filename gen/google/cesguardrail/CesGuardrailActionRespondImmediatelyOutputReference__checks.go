@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validatePutResponsesParameters(value interface{}) error {
+func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validatePutResponsesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewCesGuardrailActionRespondImmediatelyOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutMetadataFiltersParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutMetadataFiltersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateComputeGlobalForwardingRule_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateComputeGlobalForwardingRule_IsConstructParameters(x interface{}) error {
+func validateComputeGlobalForwardingRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateComputeGlobalForwardingRule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeGlobalForwardingRule_IsTerraformElementParameters(x interface{}) error {
+func validateComputeGlobalForwardingRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateComputeGlobalForwardingRule_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateComputeGlobalForwardingRule_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeGlobalForwardingRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateComputeGlobalForwardingRule_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -491,7 +491,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNetworkTierParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNoAutomateDnsZoneParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -527,7 +527,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -615,4 +615,3 @@ func validateNewComputeGlobalForwardingRuleParameters(scope constructs.Construct
 
 	return nil
 }
-

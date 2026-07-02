@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetWriteMetadataParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetWriteMetadataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewPubsubSubscriptionPushConfigNoWrapperOutputReferenceParameters(t
 
 	return nil
 }
-

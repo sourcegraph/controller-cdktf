@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_schedule google_colab_schedule}.
 type ColabSchedule interface {
 	cdktf.TerraformResource
-	AllowQueueing() interface{}
-	SetAllowQueueing(val interface{})
-	AllowQueueingInput() interface{}
+	AllowQueueing() any
+	SetAllowQueueing(val any)
+	AllowQueueingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateNotebookExecutionJobRequest() ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 	CreateNotebookExecutionJobRequestInput() *ColabScheduleCreateNotebookExecutionJobRequest
 	Cron() *string
@@ -80,11 +80,11 @@ type ColabSchedule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -92,18 +92,18 @@ type ColabSchedule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ColabScheduleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type ColabSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type ColabSchedule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type ColabSchedule interface {
 	ResetProject()
 	ResetStartTime()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ColabSchedule
@@ -171,8 +171,8 @@ type jsiiProxy_ColabSchedule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ColabSchedule) AllowQueueing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) AllowQueueing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQueueing",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ColabSchedule) AllowQueueing() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) AllowQueueingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) AllowQueueingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQueueingInput",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ColabSchedule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ColabSchedule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ColabSchedule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ColabSchedule) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_ColabSchedule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ColabSchedule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_ColabSchedule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ColabSchedule) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ColabSchedule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -601,8 +601,8 @@ func (j *jsiiProxy_ColabSchedule) Timeouts() ColabScheduleTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ColabSchedule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabSchedule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -610,7 +610,6 @@ func (j *jsiiProxy_ColabSchedule) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_schedule google_colab_schedule} Resource.
 func NewColabSchedule(scope constructs.Construct, id *string, config *ColabScheduleConfig) ColabSchedule {
@@ -623,7 +622,7 @@ func NewColabSchedule(scope constructs.Construct, id *string, config *ColabSched
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewColabSchedule_Override(c ColabSchedule, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetAllowQueueing(val interface{}) {
+func (j *jsiiProxy_ColabSchedule) SetAllowQueueing(val any) {
 	if err := j.validateSetAllowQueueingParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_ColabSchedule)SetAllowQueueing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetConnection(val interface{}) {
+func (j *jsiiProxy_ColabSchedule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_ColabSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetCount(val interface{}) {
+func (j *jsiiProxy_ColabSchedule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_ColabSchedule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetCron(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetCron(val *string) {
 	if err := j.validateSetCronParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_ColabSchedule)SetCron(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ColabSchedule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_ColabSchedule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetDesiredState(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_ColabSchedule)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetDisplayName(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_ColabSchedule)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetEndTime(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetEndTime(val *string) {
 	if err := j.validateSetEndTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func (j *jsiiProxy_ColabSchedule)SetEndTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ColabSchedule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -734,7 +733,7 @@ func (j *jsiiProxy_ColabSchedule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetId(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_ColabSchedule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ColabSchedule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_ColabSchedule)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetLocation(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_ColabSchedule)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetMaxConcurrentRunCount(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetMaxConcurrentRunCount(val *string) {
 	if err := j.validateSetMaxConcurrentRunCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_ColabSchedule)SetMaxConcurrentRunCount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetMaxRunCount(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetMaxRunCount(val *string) {
 	if err := j.validateSetMaxRunCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_ColabSchedule)SetMaxRunCount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetProject(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_ColabSchedule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ColabSchedule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -808,7 +807,7 @@ func (j *jsiiProxy_ColabSchedule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ColabSchedule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_ColabSchedule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ColabSchedule)SetStartTime(val *string) {
+func (j *jsiiProxy_ColabSchedule) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func ColabSchedule_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func ColabSchedule_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ColabSchedule_IsConstruct(x interface{}) *bool {
+func ColabSchedule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabSchedule_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func ColabSchedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func ColabSchedule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ColabSchedule_IsTerraformElement(x interface{}) *bool {
+func ColabSchedule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabSchedule_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func ColabSchedule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func ColabSchedule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ColabSchedule_IsTerraformResource(x interface{}) *bool {
+func ColabSchedule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabSchedule_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func ColabSchedule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (c *jsiiProxy_ColabSchedule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ColabSchedule) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ColabSchedule) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ColabSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ColabSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (c *jsiiProxy_ColabSchedule) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (c *jsiiProxy_ColabSchedule) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (c *jsiiProxy_ColabSchedule) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_ColabSchedule) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (c *jsiiProxy_ColabSchedule) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (c *jsiiProxy_ColabSchedule) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (c *jsiiProxy_ColabSchedule) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (c *jsiiProxy_ColabSchedule) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ColabSchedule) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabSchedule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1119,7 +1118,7 @@ func (c *jsiiProxy_ColabSchedule) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_ColabSchedule) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (c *jsiiProxy_ColabSchedule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ColabSchedule) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ColabSchedule) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (c *jsiiProxy_ColabSchedule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (c *jsiiProxy_ColabSchedule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (c *jsiiProxy_ColabSchedule) PutCreateNotebookExecutionJobRequest(value *Co
 	_jsii_.InvokeVoid(
 		c,
 		"putCreateNotebookExecutionJobRequest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (c *jsiiProxy_ColabSchedule) PutTimeouts(value *ColabScheduleTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1277,8 +1276,8 @@ func (c *jsiiProxy_ColabSchedule) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ColabSchedule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ColabSchedule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1290,8 +1289,8 @@ func (c *jsiiProxy_ColabSchedule) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_ColabSchedule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ColabSchedule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1303,8 +1302,8 @@ func (c *jsiiProxy_ColabSchedule) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ColabSchedule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabSchedule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1316,8 +1315,8 @@ func (c *jsiiProxy_ColabSchedule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ColabSchedule) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabSchedule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1342,8 +1341,8 @@ func (c *jsiiProxy_ColabSchedule) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ColabSchedule) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabSchedule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1354,4 +1353,3 @@ func (c *jsiiProxy_ColabSchedule) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortO
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutp
 
 	return nil
 }
-

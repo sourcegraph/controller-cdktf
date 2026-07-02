@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolTimeoutsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CesToolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CesToolTimeoutsOutputReference) validateSetDeleteParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CesToolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCesToolTimeoutsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

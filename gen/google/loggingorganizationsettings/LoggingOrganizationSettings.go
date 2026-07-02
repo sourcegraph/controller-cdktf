@@ -15,22 +15,22 @@ type LoggingOrganizationSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableDefaultSink() interface{}
-	SetDisableDefaultSink(val interface{})
-	DisableDefaultSinkInput() interface{}
+	DisableDefaultSink() any
+	SetDisableDefaultSink(val any)
+	DisableDefaultSinkInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,29 +62,29 @@ type LoggingOrganizationSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StorageLocation() *string
 	SetStorageLocation(val *string)
 	StorageLocationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LoggingOrganizationSettingsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type LoggingOrganizationSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type LoggingOrganizationSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type LoggingOrganizationSettings interface {
 	ResetOverrideLogicalId()
 	ResetStorageLocation()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoggingOrganizationSettings
@@ -158,8 +158,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) DisableDefaultSink() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) DisableDefaultSink() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultSink",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) DisableDefaultSink() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) DisableDefaultSinkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) DisableDefaultSinkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultSinkInput",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_LoggingOrganizationSettings) Timeouts() LoggingOrganizationSe
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSettings) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_LoggingOrganizationSettings) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_settings google_logging_organization_settings} Resource.
 func NewLoggingOrganizationSettings(scope constructs.Construct, id *string, config *LoggingOrganizationSettingsConfig) LoggingOrganizationSettings {
@@ -470,7 +469,7 @@ func NewLoggingOrganizationSettings(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewLoggingOrganizationSettings_Override(l LoggingOrganizationSettings, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetDisableDefaultSink(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetDisableDefaultSink(val any) {
 	if err := j.validateSetDisableDefaultSinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetDisableDefaultSink(val interfa
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetId(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetOrganization(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_LoggingOrganizationSettings)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettings)SetStorageLocation(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSettings) SetStorageLocation(val *string) {
 	if err := j.validateSetStorageLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func LoggingOrganizationSettings_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func LoggingOrganizationSettings_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoggingOrganizationSettings_IsConstruct(x interface{}) *bool {
+func LoggingOrganizationSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSettings_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func LoggingOrganizationSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func LoggingOrganizationSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingOrganizationSettings_IsTerraformElement(x interface{}) *bool {
+func LoggingOrganizationSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSettings_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func LoggingOrganizationSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func LoggingOrganizationSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingOrganizationSettings_IsTerraformResource(x interface{}) *bool {
+func LoggingOrganizationSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSettings_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func LoggingOrganizationSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (l *jsiiProxy_LoggingOrganizationSettings) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoggingOrganizationSettings) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingOrganizationSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (l *jsiiProxy_LoggingOrganizationSettings) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -900,7 +899,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (l *jsiiProxy_LoggingOrganizationSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoggingOrganizationSettings) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,7 +959,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -971,7 +970,7 @@ func (l *jsiiProxy_LoggingOrganizationSettings) PutTimeouts(value *LoggingOrgani
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1023,8 +1022,8 @@ func (l *jsiiProxy_LoggingOrganizationSettings) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1036,8 +1035,8 @@ func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1049,8 +1048,8 @@ func (l *jsiiProxy_LoggingOrganizationSettings) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1062,8 +1061,8 @@ func (l *jsiiProxy_LoggingOrganizationSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1088,8 +1087,8 @@ func (l *jsiiProxy_LoggingOrganizationSettings) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1100,4 +1099,3 @@ func (l *jsiiProxy_LoggingOrganizationSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

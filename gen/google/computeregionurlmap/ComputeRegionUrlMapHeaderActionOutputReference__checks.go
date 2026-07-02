@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateInter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutRe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewComputeRegionUrlMapHeaderActionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

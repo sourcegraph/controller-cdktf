@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewHealthcareFhirStoreNotificationConfigOutputReferenceParameters(t
 
 	return nil
 }
-

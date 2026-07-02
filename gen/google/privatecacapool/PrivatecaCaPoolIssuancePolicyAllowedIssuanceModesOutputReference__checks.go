@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetAllowConfigBasedIssuanceParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetAllowConfigBasedIssuanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetAllowCsrBasedIssuanceParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetAllowCsrBasedIssuanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference
 
 	return nil
 }
-

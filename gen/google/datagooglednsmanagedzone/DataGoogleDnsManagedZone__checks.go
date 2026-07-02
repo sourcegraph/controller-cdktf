@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleDnsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleDnsManagedZone) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleDnsManagedZone_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataGoogleDnsManagedZone_IsConstructParameters(x interface{}) error {
+func validateDataGoogleDnsManagedZone_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleDnsManagedZone_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataGoogleDnsManagedZone_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleDnsManagedZone_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleDnsManagedZone_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleDnsManagedZone_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleDnsManagedZone_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleDnsManagedZone_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZone) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDnsManagedZone) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleDnsManagedZoneParameters(scope constructs.Construct, i
 
 	return nil
 }
-

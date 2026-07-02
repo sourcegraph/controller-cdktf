@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionDestinationsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionDestinationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionDestinationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesHttpRouteRulesActionDestinationsListParameters(te
 
 	return nil
 }
-

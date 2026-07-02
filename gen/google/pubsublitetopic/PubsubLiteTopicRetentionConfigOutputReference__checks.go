@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubLiteTopicRetentionConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

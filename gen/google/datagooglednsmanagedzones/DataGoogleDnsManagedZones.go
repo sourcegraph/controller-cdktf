@@ -15,11 +15,11 @@ type DataGoogleDnsManagedZones interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,17 +48,17 @@ type DataGoogleDnsManagedZones interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,18 +84,18 @@ type DataGoogleDnsManagedZones interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleDnsManagedZones
@@ -113,8 +113,8 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDnsManagedZones) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDnsManagedZones) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDnsManagedZones) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDnsManagedZones) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -283,7 +283,6 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/dns_managed_zones google_dns_managed_zones} Data Source.
 func NewDataGoogleDnsManagedZones(scope constructs.Construct, id *string, config *DataGoogleDnsManagedZonesConfig) DataGoogleDnsManagedZones {
 	_init_.Initialize()
@@ -295,7 +294,7 @@ func NewDataGoogleDnsManagedZones(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -308,12 +307,12 @@ func NewDataGoogleDnsManagedZones_Override(d DataGoogleDnsManagedZones, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -332,7 +331,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZones)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZones)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDnsManagedZones) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -382,7 +381,7 @@ func DataGoogleDnsManagedZones_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func DataGoogleDnsManagedZones_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleDnsManagedZones_IsConstruct(x interface{}) *bool {
+func DataGoogleDnsManagedZones_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDnsManagedZones_IsConstructParameters(x); err != nil {
@@ -417,7 +416,7 @@ func DataGoogleDnsManagedZones_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func DataGoogleDnsManagedZones_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleDnsManagedZones_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleDnsManagedZones_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDnsManagedZones_IsTerraformDataSourceParameters(x); err != nil {
@@ -436,7 +435,7 @@ func DataGoogleDnsManagedZones_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func DataGoogleDnsManagedZones_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleDnsManagedZones_IsTerraformElement(x interface{}) *bool {
+func DataGoogleDnsManagedZones_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDnsManagedZones_IsTerraformElementParameters(x); err != nil {
@@ -455,7 +454,7 @@ func DataGoogleDnsManagedZones_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDnsManagedZones.DataGoogleDnsManagedZones",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -473,27 +472,27 @@ func DataGoogleDnsManagedZones_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleDnsManagedZones) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleDnsManagedZones) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -671,8 +670,8 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -684,8 +683,8 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -697,8 +696,8 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDnsManagedZones) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -710,8 +709,8 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDnsManagedZones) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -736,8 +735,8 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZones) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDnsManagedZones) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -748,4 +747,3 @@ func (d *jsiiProxy_DataGoogleDnsManagedZones) ToTerraform() interface{} {
 
 	return returns
 }
-

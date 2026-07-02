@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkSecurityAddressGroupIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

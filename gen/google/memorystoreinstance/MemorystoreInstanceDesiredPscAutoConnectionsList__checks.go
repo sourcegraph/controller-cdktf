@@ -34,7 +34,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMemorystoreInstanceDesiredPscAutoConnectionsListParameters(terra
 
 	return nil
 }
-

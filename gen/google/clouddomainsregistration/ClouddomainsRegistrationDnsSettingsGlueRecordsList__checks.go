@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClouddomainsRegistrationDnsSettingsGlueRecordsListParameters(ter
 
 	return nil
 }
-

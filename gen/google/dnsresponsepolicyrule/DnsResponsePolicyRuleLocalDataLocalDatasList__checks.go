@@ -34,7 +34,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDnsResponsePolicyRuleLocalDataLocalDatasListParameters(terraform
 
 	return nil
 }
-

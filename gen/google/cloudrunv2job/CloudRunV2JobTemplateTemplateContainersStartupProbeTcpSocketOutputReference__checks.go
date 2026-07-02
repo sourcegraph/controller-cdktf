@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketO
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutp
 
 	return nil
 }
-

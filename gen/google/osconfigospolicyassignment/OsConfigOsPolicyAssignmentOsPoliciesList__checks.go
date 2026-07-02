@@ -34,7 +34,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOsConfigOsPolicyAssignmentOsPoliciesListParameters(terraformReso
 
 	return nil
 }
-

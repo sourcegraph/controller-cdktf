@@ -12,9 +12,9 @@ type ComputeWireGroupEndpointsInterconnectsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ComputeWireGroupEndpointsInterconnectsOutputReference interface {
 	InterconnectName() *string
 	SetInterconnectName(val *string)
 	InterconnectNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ComputeWireGroupEndpointsInterconnectsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ComputeWireGroupEndpointsInterconnectsOutputReference interface {
 	ResetVlanTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) Interc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) VlanTa
 	return returns
 }
 
-
 func NewComputeWireGroupEndpointsInterconnectsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeWireGroupEndpointsInterconnectsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewComputeWireGroupEndpointsInterconnectsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewComputeWireGroupEndpointsInterconnectsOutputReference_Override(c Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInterconnect(val *string) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetInterconnect(val *string) {
 	if err := j.validateSetInterconnectParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInterconnectName(val *string) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetInterconnectName(val *string) {
 	if err := j.validateSetInterconnectNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference)SetVlanTags(val *[]*float64) {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) SetVlanTags(val *[]*float64) {
 	if err := j.validateSetVlanTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) Comput
 	return returns
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetLis
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) Interp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) ResetV
 	)
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference) ToStri
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validatePutAdditionalExtensionsParameters(value interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validatePutAdditionalExtensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validatePutPolicyIdsParameters(value interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validatePutPolicyIdsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -301,4 +301,3 @@ func validateNewPrivatecaCertificateAuthorityConfigX509ConfigOutputReferencePara
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package bigquerytable
 
-
 type BigqueryTableTimePartitioning struct {
 	// The supported types are DAY, HOUR, MONTH, and YEAR, which will generate one partition per day, hour, month, and year, respectively.
 	//
@@ -19,6 +18,5 @@ type BigqueryTableTimePartitioning struct {
 	// If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#require_partition_filter BigqueryTable#require_partition_filter}
-	RequirePartitionFilter interface{} `field:"optional" json:"requirePartitionFilter" yaml:"requirePartitionFilter"`
+	RequirePartitionFilter any `field:"optional" json:"requirePartitionFilter" yaml:"requirePartitionFilter"`
 }
-

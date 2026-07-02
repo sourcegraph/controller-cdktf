@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleProjectOrganizationPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataGoogleProjectOrganizationPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleProjectOrganizationPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleProjectOrganizationPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleProjectOrganizationPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleProjectOrganizationPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleProjectOrganizationPolicy_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataGoogleProjectOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleProjectOrganizationPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetConstraintPar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleProjectOrganizationPolicyParameters(scope constructs.C
 
 	return nil
 }
-

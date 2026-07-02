@@ -12,9 +12,9 @@ type NetappVolumeExportPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type NetappVolumeExportPolicyOutputReference interface {
 	InternalValue() *NetappVolumeExportPolicy
 	SetInternalValue(val *NetappVolumeExportPolicy)
 	Rules() NetappVolumeExportPolicyRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type NetappVolumeExportPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type NetappVolumeExportPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRules(value interface{})
+	PutRules(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_NetappVolumeExportPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) Rules() NetappVolume
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewNetappVolumeExportPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappVolumeExportPolicyOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewNetappVolumeExportPolicyOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewNetappVolumeExportPolicyOutputReference_Override(n NetappVolumeExportPol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetInternalValue(val *NetappVolumeExportPolicy) {
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) SetInternalValue(val *NetappVolumeExportPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeExportPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) PutRules(value interface{}) {
+func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) PutRules(value any) {
 	if err := n.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (n *jsiiProxy_NetappVolumeExportPolicyOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type LoggingBillingAccountSinkConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingBillingAccountSinkConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The billing account exported to the sink.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
@@ -44,11 +44,11 @@ type LoggingBillingAccountSinkConfig struct {
 	// If set to True, then this sink is disabled and it does not export any log entries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// exclusions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
-	Exclusions interface{} `field:"optional" json:"exclusions" yaml:"exclusions"`
+	Exclusions any `field:"optional" json:"exclusions" yaml:"exclusions"`
 	// The filter to apply when exporting logs. Only log entries that match the filter are exported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
@@ -59,4 +59,3 @@ type LoggingBillingAccountSinkConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
-

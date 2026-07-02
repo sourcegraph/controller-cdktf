@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
-		reflect.TypeOf((*StorageBucketIamBinding)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBucketIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,11 +79,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition",
-		reflect.TypeOf((*StorageBucketIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
-		reflect.TypeOf((*StorageBucketIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBucketIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,15 +122,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig",
-		reflect.TypeOf((*StorageBucketIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts",
-		reflect.TypeOf((*StorageBucketIamBindingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBindingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference",
-		reflect.TypeOf((*StorageBucketIamBindingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBucketIamBindingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBucketIamBindingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

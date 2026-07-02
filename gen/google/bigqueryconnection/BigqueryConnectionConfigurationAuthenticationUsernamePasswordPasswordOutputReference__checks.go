@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePassword
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryConnectionConfigurationAuthenticationUsernamePasswordPas
 
 	return nil
 }
-

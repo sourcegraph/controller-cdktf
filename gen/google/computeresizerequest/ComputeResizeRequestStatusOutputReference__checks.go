@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResizeRequestStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeResizeRequestStatusOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

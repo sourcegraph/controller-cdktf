@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocSessionTemplateJupyterSessionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateJupyterSessionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocSessionTemplateJupyterSessionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocSessionTemplateJupyterSessionOutputReferenceParameters(t
 
 	return nil
 }
-

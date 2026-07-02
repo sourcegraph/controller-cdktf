@@ -19,7 +19,7 @@ func (e *jsiiProxy_EventarcPipeline) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EventarcPipeline) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EventarcPipeline) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EventarcPipeline) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EventarcPipeline) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipeline) validatePutDestinationsParameters(value interface{}) error {
+func (e *jsiiProxy_EventarcPipeline) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (e *jsiiProxy_EventarcPipeline) validatePutLoggingConfigParameters(value *E
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipeline) validatePutMediationsParameters(value interface{}) error {
+func (e *jsiiProxy_EventarcPipeline) validatePutMediationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func validateEventarcPipeline_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateEventarcPipeline_IsConstructParameters(x interface{}) error {
+func validateEventarcPipeline_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func validateEventarcPipeline_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEventarcPipeline_IsTerraformElementParameters(x interface{}) error {
+func validateEventarcPipeline_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func validateEventarcPipeline_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateEventarcPipeline_IsTerraformResourceParameters(x interface{}) error {
+func validateEventarcPipeline_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -358,7 +358,7 @@ func (j *jsiiProxy_EventarcPipeline) validateSetAnnotationsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipeline) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipeline) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_EventarcPipeline) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipeline) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipeline) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -512,7 +512,7 @@ func (j *jsiiProxy_EventarcPipeline) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipeline) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EventarcPipeline) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -576,4 +576,3 @@ func validateNewEventarcPipelineParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

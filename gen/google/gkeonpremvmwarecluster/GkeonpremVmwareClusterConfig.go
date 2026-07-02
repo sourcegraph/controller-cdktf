@@ -6,9 +6,9 @@ import (
 
 type GkeonpremVmwareClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GkeonpremVmwareClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The admin cluster this VMware User Cluster belongs to.
 	//
 	// This is the full resource name of the admin cluster's hub membership.
@@ -82,15 +82,15 @@ type GkeonpremVmwareClusterConfig struct {
 	// Disable bundled ingress.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#disable_bundled_ingress GkeonpremVmwareCluster#disable_bundled_ingress}
-	DisableBundledIngress interface{} `field:"optional" json:"disableBundledIngress" yaml:"disableBundledIngress"`
+	DisableBundledIngress any `field:"optional" json:"disableBundledIngress" yaml:"disableBundledIngress"`
 	// Enable advanced cluster. Default to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#enable_advanced_cluster GkeonpremVmwareCluster#enable_advanced_cluster}
-	EnableAdvancedCluster interface{} `field:"optional" json:"enableAdvancedCluster" yaml:"enableAdvancedCluster"`
+	EnableAdvancedCluster any `field:"optional" json:"enableAdvancedCluster" yaml:"enableAdvancedCluster"`
 	// Enable control plane V2. Default to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#enable_control_plane_v2 GkeonpremVmwareCluster#enable_control_plane_v2}
-	EnableControlPlaneV2 interface{} `field:"optional" json:"enableControlPlaneV2" yaml:"enableControlPlaneV2"`
+	EnableControlPlaneV2 any `field:"optional" json:"enableControlPlaneV2" yaml:"enableControlPlaneV2"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#id GkeonpremVmwareCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -131,6 +131,5 @@ type GkeonpremVmwareClusterConfig struct {
 	// Enable VM tracking.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#vm_tracking_enabled GkeonpremVmwareCluster#vm_tracking_enabled}
-	VmTrackingEnabled interface{} `field:"optional" json:"vmTrackingEnabled" yaml:"vmTrackingEnabled"`
+	VmTrackingEnabled any `field:"optional" json:"vmTrackingEnabled" yaml:"vmTrackingEnabled"`
 }
-

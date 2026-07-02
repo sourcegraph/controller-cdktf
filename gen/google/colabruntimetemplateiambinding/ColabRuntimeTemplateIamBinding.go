@@ -17,15 +17,15 @@ type ColabRuntimeTemplateIamBinding interface {
 	Condition() ColabRuntimeTemplateIamBindingConditionOutputReference
 	ConditionInput() *ColabRuntimeTemplateIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type ColabRuntimeTemplateIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -76,16 +76,16 @@ type ColabRuntimeTemplateIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ColabRuntimeTemplateIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ColabRuntimeTemplateIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ColabRuntimeTemplateIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ColabRuntimeTemplateIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) ConditionInput() *ColabRuntim
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding} Resource.
 func NewColabRuntimeTemplateIamBinding(scope constructs.Construct, id *string, config *ColabRuntimeTemplateIamBindingConfig) ColabRuntimeTemplateIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewColabRuntimeTemplateIamBinding(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewColabRuntimeTemplateIamBinding_Override(c ColabRuntimeTemplateIamBinding
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetId(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateIamBinding)SetRuntimeTemplate(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateIamBinding) SetRuntimeTemplate(val *string) {
 	if err := j.validateSetRuntimeTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ColabRuntimeTemplateIamBinding_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ColabRuntimeTemplateIamBinding_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ColabRuntimeTemplateIamBinding_IsConstruct(x interface{}) *bool {
+func ColabRuntimeTemplateIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabRuntimeTemplateIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ColabRuntimeTemplateIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ColabRuntimeTemplateIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ColabRuntimeTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
+func ColabRuntimeTemplateIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabRuntimeTemplateIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ColabRuntimeTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ColabRuntimeTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ColabRuntimeTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
+func ColabRuntimeTemplateIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateColabRuntimeTemplateIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ColabRuntimeTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) PutCondition(value *ColabRunt
 	_jsii_.InvokeVoid(
 		c,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,8 +1038,8 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1052,8 +1051,8 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,8 +1064,8 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1091,8 +1090,8 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1103,4 +1102,3 @@ func (c *jsiiProxy_ColabRuntimeTemplateIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

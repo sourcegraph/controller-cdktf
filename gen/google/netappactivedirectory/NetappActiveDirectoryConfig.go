@@ -6,9 +6,9 @@ import (
 
 type NetappActiveDirectoryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetappActiveDirectoryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Comma separated list of DNS server IP addresses for the Active Directory domain.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#dns NetappActiveDirectory#dns}
@@ -61,7 +61,7 @@ type NetappActiveDirectoryConfig struct {
 	// Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#aes_encryption NetappActiveDirectory#aes_encryption}
-	AesEncryption interface{} `field:"optional" json:"aesEncryption" yaml:"aesEncryption"`
+	AesEncryption any `field:"optional" json:"aesEncryption" yaml:"aesEncryption"`
 	// Domain user/group accounts to be added to the Backup Operators group of the SMB service.
 	//
 	// The Backup Operators group allows members to backup and restore files regardless of whether they have read or write access to the files. Comma-separated list.
@@ -75,7 +75,7 @@ type NetappActiveDirectoryConfig struct {
 	// If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#encrypt_dc_connections NetappActiveDirectory#encrypt_dc_connections}
-	EncryptDcConnections interface{} `field:"optional" json:"encryptDcConnections" yaml:"encryptDcConnections"`
+	EncryptDcConnections any `field:"optional" json:"encryptDcConnections" yaml:"encryptDcConnections"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -99,13 +99,13 @@ type NetappActiveDirectoryConfig struct {
 	// Specifies whether or not the LDAP traffic needs to be signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#ldap_signing NetappActiveDirectory#ldap_signing}
-	LdapSigning interface{} `field:"optional" json:"ldapSigning" yaml:"ldapSigning"`
+	LdapSigning any `field:"optional" json:"ldapSigning" yaml:"ldapSigning"`
 	// Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes.
 	//
 	// This option can be used to temporarily switch such volumes to AUTH_SYS authentication (user ID + 1-16 groups).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#nfs_users_with_ldap NetappActiveDirectory#nfs_users_with_ldap}
-	NfsUsersWithLdap interface{} `field:"optional" json:"nfsUsersWithLdap" yaml:"nfsUsersWithLdap"`
+	NfsUsersWithLdap any `field:"optional" json:"nfsUsersWithLdap" yaml:"nfsUsersWithLdap"`
 	// Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes.
 	//
 	// Defaults to 'CN=Computers' if left empty.
@@ -129,4 +129,3 @@ type NetappActiveDirectoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory#timeouts NetappActiveDirectory#timeouts}
 	Timeouts *NetappActiveDirectoryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

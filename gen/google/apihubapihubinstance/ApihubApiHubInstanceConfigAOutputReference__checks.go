@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetCmekKe
 	return nil
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetDisableSearchParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) validateSetDisableSearchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewApihubApiHubInstanceConfigAOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

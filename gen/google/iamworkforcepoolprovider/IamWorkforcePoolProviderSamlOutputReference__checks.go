@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamWorkforcePoolProviderSamlOutputReferenceParameters(terraformR
 
 	return nil
 }
-

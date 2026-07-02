@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNam
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesO
 
 	return nil
 }
-

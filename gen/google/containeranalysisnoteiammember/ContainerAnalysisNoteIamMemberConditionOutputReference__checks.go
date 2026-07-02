@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewContainerAnalysisNoteIamMemberConditionOutputReferenceParameters
 
 	return nil
 }
-

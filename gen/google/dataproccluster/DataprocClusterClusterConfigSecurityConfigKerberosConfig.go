@@ -1,6 +1,5 @@
 package dataproccluster
 
-
 type DataprocClusterClusterConfigSecurityConfigKerberosConfig struct {
 	// The uri of the KMS key used to encrypt various sensitive files.
 	//
@@ -29,7 +28,7 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfig struct {
 	// Flag to indicate whether to Kerberize the cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#enable_kerberos DataprocCluster#enable_kerberos}
-	EnableKerberos interface{} `field:"optional" json:"enableKerberos" yaml:"enableKerberos"`
+	EnableKerberos any `field:"optional" json:"enableKerberos" yaml:"enableKerberos"`
 	// The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#kdc_db_key_uri DataprocCluster#kdc_db_key_uri}
@@ -74,4 +73,3 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#truststore_uri DataprocCluster#truststore_uri}
 	TruststoreUri *string `field:"optional" json:"truststoreUri" yaml:"truststoreUri"`
 }
-

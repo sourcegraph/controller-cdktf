@@ -12,9 +12,9 @@ type RedisInstancePersistenceConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type RedisInstancePersistenceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type RedisInstancePersistenceConfigOutputReference interface {
 	ResetRdbSnapshotStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_RedisInstancePersistenceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -229,7 +229,6 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewRedisInstancePersistenceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedisInstancePersistenceConfigOutputReference {
 	_init_.Initialize()
 
@@ -240,7 +239,7 @@ func NewRedisInstancePersistenceConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstancePersistenceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -252,12 +251,12 @@ func NewRedisInstancePersistenceConfigOutputReference_Override(r RedisInstancePe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstancePersistenceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetInternalValue(val *RedisInstancePersistenceConfig) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetInternalValue(val *RedisInstancePersistenceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetPersistenceMode(val *string) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetPersistenceMode(val *string) {
 	if err := j.validateSetPersistenceModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetPersistenceM
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetRdbSnapshotPeriod(val *string) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetRdbSnapshotPeriod(val *string) {
 	if err := j.validateSetRdbSnapshotPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetRdbSnapshotP
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetRdbSnapshotStartTime(val *string) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetRdbSnapshotStartTime(val *string) {
 	if err := j.validateSetRdbSnapshotStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetRdbSnapshotS
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,16 +357,16 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -555,16 +554,16 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ResetRdbSnapsh
 	)
 }
 
-func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -583,4 +582,3 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ToString() *st
 
 	return returns
 }
-

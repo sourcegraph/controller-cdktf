@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerNodePoolNodeConfigSecondaryBootDisksOutputReferencePara
 
 	return nil
 }
-

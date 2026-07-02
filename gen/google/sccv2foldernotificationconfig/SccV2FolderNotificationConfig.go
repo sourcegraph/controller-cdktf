@@ -18,15 +18,15 @@ type SccV2FolderNotificationConfig interface {
 	SetConfigId(val *string)
 	ConfigIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,32 +63,32 @@ type SccV2FolderNotificationConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PubsubTopic() *string
 	SetPubsubTopic(val *string)
 	PubsubTopicInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccount() *string
 	StreamingConfig() SccV2FolderNotificationConfigStreamingConfigOutputReference
 	StreamingConfigInput() *SccV2FolderNotificationConfigStreamingConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccV2FolderNotificationConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type SccV2FolderNotificationConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type SccV2FolderNotificationConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type SccV2FolderNotificationConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccV2FolderNotificationConfig
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) ConfigIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) PubsubTopicInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) Timeouts() SccV2FolderNotifica
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderNotificationConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_notification_config google_scc_v2_folder_notification_config} Resource.
 func NewSccV2FolderNotificationConfig(scope constructs.Construct, id *string, config *SccV2FolderNotificationConfigConfig) SccV2FolderNotificationConfig {
@@ -504,7 +503,7 @@ func NewSccV2FolderNotificationConfig(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewSccV2FolderNotificationConfig_Override(s SccV2FolderNotificationConfig, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetConfigId(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetConfigId(val *string) {
 	if err := j.validateSetConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetDescription(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetFolder(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetId(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetLocation(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_SccV2FolderNotificationConfig)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderNotificationConfig)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_SccV2FolderNotificationConfig) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func SccV2FolderNotificationConfig_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func SccV2FolderNotificationConfig_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccV2FolderNotificationConfig_IsConstruct(x interface{}) *bool {
+func SccV2FolderNotificationConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderNotificationConfig_IsConstructParameters(x); err != nil {
@@ -703,7 +702,7 @@ func SccV2FolderNotificationConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func SccV2FolderNotificationConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2FolderNotificationConfig_IsTerraformElement(x interface{}) *bool {
+func SccV2FolderNotificationConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderNotificationConfig_IsTerraformElementParameters(x); err != nil {
@@ -722,7 +721,7 @@ func SccV2FolderNotificationConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func SccV2FolderNotificationConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2FolderNotificationConfig_IsTerraformResource(x interface{}) *bool {
+func SccV2FolderNotificationConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderNotificationConfig_IsTerraformResourceParameters(x); err != nil {
@@ -741,7 +740,7 @@ func SccV2FolderNotificationConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,31 +765,31 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccV2FolderNotificationConfig) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccV2FolderNotificationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,15 +917,15 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -945,7 +944,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -958,7 +957,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,18 +971,18 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccV2FolderNotificationConfig) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -994,7 +993,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) PutStreamingConfig(value *SccV
 	_jsii_.InvokeVoid(
 		s,
 		"putStreamingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) PutTimeouts(value *SccV2Folder
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1071,8 +1070,8 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1084,8 +1083,8 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1097,8 +1096,8 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1110,8 +1109,8 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1136,8 +1135,8 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderNotificationConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderNotificationConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1148,4 +1147,3 @@ func (s *jsiiProxy_SccV2FolderNotificationConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

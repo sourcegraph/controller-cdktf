@@ -16,15 +16,15 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,9 +59,9 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QaScorecard() *string
 	SetQaScorecard(val *string)
 	QaScorecardInput() *string
@@ -69,24 +69,24 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	SetQaScorecardRevisionId(val *string)
 	QaScorecardRevisionIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Snapshot() ContactCenterInsightsQaScorecardRevisionSnapshotList
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type ContactCenterInsightsQaScorecardRevision interface {
 	ResetProject()
 	ResetQaScorecardRevisionId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContactCenterInsightsQaScorecardRevision
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) QaScorecardRevision
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) Timeouts() ContactC
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -478,7 +478,6 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) TimeoutsInput() int
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_scorecard_revision google_contact_center_insights_qa_scorecard_revision} Resource.
 func NewContactCenterInsightsQaScorecardRevision(scope constructs.Construct, id *string, config *ContactCenterInsightsQaScorecardRevisionConfig) ContactCenterInsightsQaScorecardRevision {
@@ -491,7 +490,7 @@ func NewContactCenterInsightsQaScorecardRevision(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewContactCenterInsightsQaScorecardRevision_Override(c ContactCenterInsight
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetCount(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -547,7 +546,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetId(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetLocation(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProject(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProject(val *stri
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetProvisioners(val 
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetQaScorecard(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetQaScorecard(val *string) {
 	if err := j.validateSetQaScorecardParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetQaScorecard(val *
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision)SetQaScorecardRevisionId(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SetQaScorecardRevisionId(val *string) {
 	if err := j.validateSetQaScorecardRevisionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func ContactCenterInsightsQaScorecardRevision_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func ContactCenterInsightsQaScorecardRevision_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContactCenterInsightsQaScorecardRevision_IsConstruct(x interface{}) *bool {
+func ContactCenterInsightsQaScorecardRevision_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsQaScorecardRevision_IsConstructParameters(x); err != nil {
@@ -679,7 +678,7 @@ func ContactCenterInsightsQaScorecardRevision_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func ContactCenterInsightsQaScorecardRevision_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContactCenterInsightsQaScorecardRevision_IsTerraformElement(x interface{}) *bool {
+func ContactCenterInsightsQaScorecardRevision_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsQaScorecardRevision_IsTerraformElementParameters(x); err != nil {
@@ -698,7 +697,7 @@ func ContactCenterInsightsQaScorecardRevision_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func ContactCenterInsightsQaScorecardRevision_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func ContactCenterInsightsQaScorecardRevision_IsTerraformResource(x interface{}) *bool {
+func ContactCenterInsightsQaScorecardRevision_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsQaScorecardRevision_IsTerraformResourceParameters(x); err != nil {
@@ -717,7 +716,7 @@ func ContactCenterInsightsQaScorecardRevision_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,31 +741,31 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetBooleanAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetNumberAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetNumberListAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetNumberMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetStringAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,15 +893,15 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) GetStringMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -921,7 +920,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -934,7 +933,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) InterpolationForAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,18 +947,18 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -970,7 +969,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -981,7 +980,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -992,7 +991,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) PutTimeouts(value *
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1036,8 +1035,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1049,8 +1048,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeAttribute
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1062,8 +1061,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) SynthesizeHclAttrib
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1075,8 +1074,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToHclTerraform() in
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1101,8 +1100,8 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToString() *string 
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1113,4 +1112,3 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) ToTerraform() inter
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVectorSearchCollectionTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

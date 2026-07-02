@@ -112,7 +112,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validatePutFilesParameters(value interface{}) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validatePutFilesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewAppEngineFlexibleAppVersionDeploymentOutputReferenceParameters(t
 
 	return nil
 }
-

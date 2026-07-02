@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.provider.GoogleProvider",
-		reflect.TypeOf((*GoogleProvider)(nil)).Elem(),
+		reflect.TypeFor[GoogleProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpoint", GoGetter: "AccessApprovalCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpointInput", GoGetter: "AccessApprovalCustomEndpointInput"},
@@ -622,7 +622,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -630,14 +630,14 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.provider.GoogleProviderBatching",
-		reflect.TypeOf((*GoogleProviderBatching)(nil)).Elem(),
+		reflect.TypeFor[GoogleProviderBatching](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.provider.GoogleProviderConfig",
-		reflect.TypeOf((*GoogleProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.provider.GoogleProviderExternalCredentials",
-		reflect.TypeOf((*GoogleProviderExternalCredentials)(nil)).Elem(),
+		reflect.TypeFor[GoogleProviderExternalCredentials](),
 	)
 }

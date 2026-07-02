@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateAddMoveTa
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveFromI
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAccessContextManagerAccessPolicyIamBinding_GenerateConfigForImportP
 	return nil
 }
 
-func validateAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x 
 	return nil
 }
 
-func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParame
 	return nil
 }
 
-func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetNamePa
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewAccessContextManagerAccessPolicyIamBindingParameters(scope const
 
 	return nil
 }
-

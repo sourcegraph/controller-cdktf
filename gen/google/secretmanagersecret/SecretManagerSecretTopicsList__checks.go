@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecretManagerSecretTopicsList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretTopicsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretTopicsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecretManagerSecretTopicsListParameters(terraformResource cdktf.
 
 	return nil
 }
-

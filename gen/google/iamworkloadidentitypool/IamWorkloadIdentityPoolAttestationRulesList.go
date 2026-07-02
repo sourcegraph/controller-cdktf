@@ -17,8 +17,8 @@ type IamWorkloadIdentityPoolAttestationRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IamWorkloadIdentityPoolAttestationRulesList interface {
 	Get(index *float64) IamWorkloadIdentityPoolAttestationRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewIamWorkloadIdentityPoolAttestationRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamWorkloadIdentityPoolAttestationRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIamWorkloadIdentityPoolAttestationRulesList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolAttestationRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIamWorkloadIdentityPoolAttestationRulesList_Override(i IamWorkloadIdenti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolAttestationRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) Get(index *float
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) ToString() *stri
 
 	return returns
 }
-

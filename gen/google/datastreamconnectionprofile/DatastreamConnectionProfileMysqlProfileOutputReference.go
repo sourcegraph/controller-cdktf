@@ -12,9 +12,9 @@ type DatastreamConnectionProfileMysqlProfileOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -57,7 +57,7 @@ type DatastreamConnectionProfileMysqlProfileOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type DatastreamConnectionProfileMysqlProfileOutputReference interface {
 	ResetSslConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Usern
 	return returns
 }
 
-
 func NewDatastreamConnectionProfileMysqlProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMysqlProfileOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewDatastreamConnectionProfileMysqlProfileOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewDatastreamConnectionProfileMysqlProfileOutputReference_Override(d Datast
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetHos
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetInternalValue(val *DatastreamConnectionProfileMysqlProfile) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetInternalValue(val *DatastreamConnectionProfileMysqlProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetPassword(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetPas
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetPor
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetSecretManagerStoredPassword(val *string) {
 	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetSec
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference)SetUsername(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,16 +438,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) PutSs
 	_jsii_.InvokeVoid(
 		d,
 		"putSslConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (d *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) ToStr
 
 	return returns
 }
-

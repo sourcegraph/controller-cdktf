@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStores) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStores) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleDiscoveryEngineDataStores_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataGoogleDiscoveryEngineDataStores_IsConstructParameters(x interface{}) error {
+func validateDataGoogleDiscoveryEngineDataStores_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleDiscoveryEngineDataStores_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleDiscoveryEngineDataStores_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleDiscoveryEngineDataStores_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleDiscoveryEngineDataStores_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataGoogleDiscoveryEngineDataStores_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleDiscoveryEngineDataStores_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleDiscoveryEngineDataStores_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStores) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStores) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataGoogleDiscoveryEngineDataStoresParameters(scope constructs.C
 
 	return nil
 }
-

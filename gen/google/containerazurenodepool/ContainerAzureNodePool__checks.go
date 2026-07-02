@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContainerAzureNodePool) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContainerAzureNodePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContainerAzureNodePool) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContainerAzureNodePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateContainerAzureNodePool_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateContainerAzureNodePool_IsConstructParameters(x interface{}) error {
+func validateContainerAzureNodePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateContainerAzureNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateContainerAzureNodePool_IsTerraformElementParameters(x interface{}) error {
+func validateContainerAzureNodePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateContainerAzureNodePool_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateContainerAzureNodePool_IsTerraformResourceParameters(x interface{}) error {
+func validateContainerAzureNodePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_ContainerAzureNodePool) validateSetClusterParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ContainerAzureNodePool) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ContainerAzureNodePool) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -533,4 +533,3 @@ func validateNewContainerAzureNodePoolParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

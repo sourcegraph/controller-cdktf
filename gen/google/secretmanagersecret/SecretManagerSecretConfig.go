@@ -6,9 +6,9 @@ import (
 
 type SecretManagerSecretConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecretManagerSecretConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// replication block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret#replication SecretManagerSecret#replication}
@@ -55,7 +55,7 @@ type SecretManagerSecretConfig struct {
 	// or 'terraform destroy' that would delete the secret will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret#deletion_protection SecretManagerSecret#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Timestamp in UTC when the Secret is scheduled to expire.
 	//
 	// This is always provided on output, regardless of what was sent on input.
@@ -108,7 +108,7 @@ type SecretManagerSecretConfig struct {
 	// topics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret#topics SecretManagerSecret#topics}
-	Topics interface{} `field:"optional" json:"topics" yaml:"topics"`
+	Topics any `field:"optional" json:"topics" yaml:"topics"`
 	// The TTL for the Secret.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
@@ -138,4 +138,3 @@ type SecretManagerSecretConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret#version_destroy_ttl SecretManagerSecret#version_destroy_ttl}
 	VersionDestroyTtl *string `field:"optional" json:"versionDestroyTtl" yaml:"versionDestroyTtl"`
 }
-

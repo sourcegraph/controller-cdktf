@@ -34,7 +34,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTranscoderJobConfigOverlaysAnimationsListParameters(terraformRes
 
 	return nil
 }
-

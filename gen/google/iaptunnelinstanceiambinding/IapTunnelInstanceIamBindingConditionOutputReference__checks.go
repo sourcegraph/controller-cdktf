@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamBindingConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapTunnelInstanceIamBindingConditionOutputReferenceParameters(te
 
 	return nil
 }
-

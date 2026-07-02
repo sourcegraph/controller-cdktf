@@ -12,9 +12,9 @@ type KmsEkmConnectionIamBindingConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type KmsEkmConnectionIamBindingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type KmsEkmConnectionIamBindingConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) TitleInpu
 	return returns
 }
 
-
 func NewKmsEkmConnectionIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KmsEkmConnectionIamBindingConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewKmsEkmConnectionIamBindingConditionOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewKmsEkmConnectionIamBindingConditionOutputReference_Override(k KmsEkmConn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsEkmConnectionIamBinding.KmsEkmConnectionIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetDescrip
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetExpress
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetInternalValue(val *KmsEkmConnectionIamBindingCondition) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetInternalValue(val *KmsEkmConnectionIamBindingCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) ComputeFq
 	return returns
 }
 
-func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetBoolea
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetBoolea
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetListAt
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetNumber
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetNumber
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetNumber
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetString
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) GetString
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) Interpola
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) ResetDesc
 	)
 }
 
-func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) ToString(
 
 	return returns
 }
-

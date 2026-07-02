@@ -34,7 +34,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList) 
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSccFolderCustomModuleCustomConfigCustomOutputPropertiesListParam
 
 	return nil
 }
-

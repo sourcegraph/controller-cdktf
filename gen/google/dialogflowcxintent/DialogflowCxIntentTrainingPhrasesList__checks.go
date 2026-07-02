@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxIntentTrainingPhrasesListParameters(terraformResourc
 
 	return nil
 }
-

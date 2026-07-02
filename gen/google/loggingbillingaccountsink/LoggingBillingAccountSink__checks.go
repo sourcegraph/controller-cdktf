@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingBillingAccountSink) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountSink) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountSink) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingBillingAccountSink) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountSink) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingBillingAccountSink) validatePutBigqueryOptionsParamete
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountSink) validatePutExclusionsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountSink) validatePutExclusionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingBillingAccountSink_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateLoggingBillingAccountSink_IsConstructParameters(x interface{}) error {
+func validateLoggingBillingAccountSink_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingBillingAccountSink_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateLoggingBillingAccountSink_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingBillingAccountSink_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingBillingAccountSink_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateLoggingBillingAccountSink_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingBillingAccountSink_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetBillingAccountParameter
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSink) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSink) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetDestinationParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSink) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -452,7 +452,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSink) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -516,4 +516,3 @@ func validateNewLoggingBillingAccountSinkParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigqueryReservationAssignmentTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

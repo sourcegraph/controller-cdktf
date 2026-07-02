@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryUrisOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryUrisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerRepositoryUrisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSecureSourceManagerRepositoryUrisOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -13,14 +13,14 @@ type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference
 	Addresses() *[]*string
 	SetAddresses(val *[]*string)
 	AddressesInput() *[]*string
-	AvoidBuggyIps() interface{}
-	SetAvoidBuggyIps(val interface{})
-	AvoidBuggyIpsInput() interface{}
+	AvoidBuggyIps() any
+	SetAvoidBuggyIps(val any)
+	AvoidBuggyIpsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	ManualAssign() interface{}
-	SetManualAssign(val interface{})
-	ManualAssignInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	ManualAssign() any
+	SetManualAssign(val any)
+	ManualAssignInput() any
 	Pool() *string
 	SetPool(val *string)
 	PoolInput() *string
@@ -52,7 +52,7 @@ type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference
 	ResetManualAssign()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) AvoidBuggyIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) AvoidBuggyIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"avoidBuggyIps",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) AvoidBuggyIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) AvoidBuggyIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"avoidBuggyIpsInput",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssign() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssign() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"manualAssign",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssignInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) ManualAssignInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"manualAssignInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-
 func NewGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewGkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetAddresses(val *[]*string) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetAddresses(val *[]*string) {
 	if err := j.validateSetAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetAvoidBuggyIps(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetAvoidBuggyIps(val any) {
 	if err := j.validateSetAvoidBuggyIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetManualAssign(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetManualAssign(val any) {
 	if err := j.validateSetManualAssignParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetPool(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetPool(val *string) {
 	if err := j.validateSetPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerBgpLbConfigAddressPoolsO
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomation
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationCon
 
 	return nil
 }
-

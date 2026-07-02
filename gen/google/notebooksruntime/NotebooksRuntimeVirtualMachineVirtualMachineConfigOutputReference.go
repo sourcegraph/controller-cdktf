@@ -14,16 +14,16 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference interface
 	AcceleratorConfigInput() *NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ContainerImages() NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList
-	ContainerImagesInput() interface{}
+	ContainerImagesInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -36,9 +36,9 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference interface
 	// Experimental.
 	Fqn() *string
 	GuestAttributes() cdktf.StringMap
-	InternalIpOnly() interface{}
-	SetInternalIpOnly(val interface{})
-	InternalIpOnlyInput() interface{}
+	InternalIpOnly() any
+	SetInternalIpOnly(val any)
+	InternalIpOnlyInput() any
 	InternalValue() *NotebooksRuntimeVirtualMachineVirtualMachineConfig
 	SetInternalValue(val *NotebooksRuntimeVirtualMachineVirtualMachineConfig)
 	Labels() *map[string]*string
@@ -79,7 +79,7 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcceleratorConfig(value *NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfig)
-	PutContainerImages(value interface{})
+	PutContainerImages(value any)
 	PutDataDisk(value *NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk)
 	PutEncryptionConfig(value *NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig)
 	PutShieldedInstanceConfig(value *NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig)
@@ -119,7 +119,7 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference interface
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) ContainerImagesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) ContainerImagesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containerImagesInput",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) InternalIpOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) InternalIpOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalIpOnly",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) InternalIpOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) InternalIpOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalIpOnlyInput",
@@ -502,7 +502,6 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-
 func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference {
 	_init_.Initialize()
 
@@ -513,7 +512,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -525,12 +524,12 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetInternalIpOnly(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetInternalIpOnly(val any) {
 	if err := j.validateSetInternalIpOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetInternalValue(val *NotebooksRuntimeVirtualMachineVirtualMachineConfig) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetInternalValue(val *NotebooksRuntimeVirtualMachineVirtualMachineConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetNicType(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetNicType(val *string) {
 	if err := j.validateSetNicTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetReservedIpRange(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetReservedIpRange(val *string) {
 	if err := j.validateSetReservedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetSubnet(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetSubnet(val *string) {
 	if err := j.validateSetSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,16 +696,16 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -877,18 +876,18 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"putAcceleratorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) PutContainerImages(value interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) PutContainerImages(value any) {
 	if err := n.validatePutContainerImagesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putContainerImages",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -899,7 +898,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"putDataDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -910,7 +909,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -921,7 +920,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1021,16 +1020,16 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1049,4 +1048,3 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigOutputRefer
 
 	return returns
 }
-

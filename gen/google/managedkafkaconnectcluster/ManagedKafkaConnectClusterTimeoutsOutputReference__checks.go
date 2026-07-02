@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewManagedKafkaConnectClusterTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

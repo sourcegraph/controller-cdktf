@@ -1,6 +1,5 @@
 package hypercomputeclustercluster
 
-
 type HypercomputeclusterClusterOrchestratorSlurmNodeSets struct {
 	// Identifier for the nodeset, which allows it to be referenced by partitions.
 	//
@@ -40,6 +39,5 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSets struct {
 	// storage_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
-	StorageConfigs interface{} `field:"optional" json:"storageConfigs" yaml:"storageConfigs"`
+	StorageConfigs any `field:"optional" json:"storageConfigs" yaml:"storageConfigs"`
 }
-

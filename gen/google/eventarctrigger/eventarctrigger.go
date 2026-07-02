@@ -19,15 +19,15 @@ type EventarcTrigger interface {
 	ChannelInput() *string
 	Conditions() cdktf.StringMap
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,7 +62,7 @@ type EventarcTrigger interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MatchingCriteria() EventarcTriggerMatchingCriteriaList
-	MatchingCriteriaInput() interface{}
+	MatchingCriteriaInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -76,11 +76,11 @@ type EventarcTrigger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetryPolicy() EventarcTriggerRetryPolicyOutputReference
 	RetryPolicyInput() *EventarcTriggerRetryPolicy
 	ServiceAccount() *string
@@ -90,11 +90,11 @@ type EventarcTrigger interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EventarcTriggerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Transport() EventarcTriggerTransportOutputReference
 	TransportInput() *EventarcTriggerTransport
 	Uid() *string
@@ -103,9 +103,9 @@ type EventarcTrigger interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type EventarcTrigger interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type EventarcTrigger interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,7 +143,7 @@ type EventarcTrigger interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDestination(value *EventarcTriggerDestination)
-	PutMatchingCriteria(value interface{})
+	PutMatchingCriteria(value any)
 	PutRetryPolicy(value *EventarcTriggerRetryPolicy)
 	PutTimeouts(value *EventarcTriggerTimeouts)
 	PutTransport(value *EventarcTriggerTransport)
@@ -159,17 +159,17 @@ type EventarcTrigger interface {
 	ResetServiceAccount()
 	ResetTimeouts()
 	ResetTransport()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EventarcTrigger
@@ -217,8 +217,8 @@ func (j *jsiiProxy_EventarcTrigger) Conditions() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTrigger) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_EventarcTrigger) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_EventarcTrigger) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_EventarcTrigger) MatchingCriteria() EventarcTriggerMatchingCr
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) MatchingCriteriaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTrigger) MatchingCriteriaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchingCriteriaInput",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_EventarcTrigger) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EventarcTrigger) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_EventarcTrigger) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_EventarcTrigger) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_EventarcTrigger) Timeouts() EventarcTriggerTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTrigger) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -667,7 +667,6 @@ func (j *jsiiProxy_EventarcTrigger) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger(scope constructs.Construct, id *string, config *EventarcTriggerConfig) EventarcTrigger {
 	_init_.Initialize()
@@ -679,7 +678,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -692,12 +691,12 @@ func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetChannel(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetChannel(val *string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_EventarcTrigger)SetChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetConnection(val interface{}) {
+func (j *jsiiProxy_EventarcTrigger) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_EventarcTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_EventarcTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_EventarcTrigger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventarcTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_EventarcTrigger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetEventDataContentType(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetEventDataContentType(val *string) {
 	if err := j.validateSetEventDataContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_EventarcTrigger)SetEventDataContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventarcTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_EventarcTrigger)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetId(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_EventarcTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EventarcTrigger) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_EventarcTrigger)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventarcTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_EventarcTrigger)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetLocation(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_EventarcTrigger)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetName(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_EventarcTrigger)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetProject(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_EventarcTrigger)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventarcTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -831,7 +830,7 @@ func (j *jsiiProxy_EventarcTrigger)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventarcTrigger) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_EventarcTrigger)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetServiceAccount(val *string) {
+func (j *jsiiProxy_EventarcTrigger) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func EventarcTrigger_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func EventarcTrigger_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EventarcTrigger_IsConstruct(x interface{}) *bool {
+func EventarcTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcTrigger_IsConstructParameters(x); err != nil {
@@ -900,7 +899,7 @@ func EventarcTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func EventarcTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcTrigger_IsTerraformElement(x interface{}) *bool {
+func EventarcTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcTrigger_IsTerraformElementParameters(x); err != nil {
@@ -919,7 +918,7 @@ func EventarcTrigger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func EventarcTrigger_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcTrigger_IsTerraformResource(x interface{}) *bool {
+func EventarcTrigger_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcTrigger_IsTerraformResourceParameters(x); err != nil {
@@ -938,7 +937,7 @@ func EventarcTrigger_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -963,31 +962,31 @@ func (e *jsiiProxy_EventarcTrigger) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EventarcTrigger) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EventarcTrigger) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EventarcTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (e *jsiiProxy_EventarcTrigger) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (e *jsiiProxy_EventarcTrigger) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (e *jsiiProxy_EventarcTrigger) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (e *jsiiProxy_EventarcTrigger) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (e *jsiiProxy_EventarcTrigger) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (e *jsiiProxy_EventarcTrigger) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (e *jsiiProxy_EventarcTrigger) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,15 +1114,15 @@ func (e *jsiiProxy_EventarcTrigger) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTrigger) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcTrigger) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1142,7 +1141,7 @@ func (e *jsiiProxy_EventarcTrigger) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (e *jsiiProxy_EventarcTrigger) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1169,18 +1168,18 @@ func (e *jsiiProxy_EventarcTrigger) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EventarcTrigger) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EventarcTrigger) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (e *jsiiProxy_EventarcTrigger) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1202,7 +1201,7 @@ func (e *jsiiProxy_EventarcTrigger) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1213,18 +1212,18 @@ func (e *jsiiProxy_EventarcTrigger) PutDestination(value *EventarcTriggerDestina
 	_jsii_.InvokeVoid(
 		e,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EventarcTrigger) PutMatchingCriteria(value interface{}) {
+func (e *jsiiProxy_EventarcTrigger) PutMatchingCriteria(value any) {
 	if err := e.validatePutMatchingCriteriaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMatchingCriteria",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1235,7 +1234,7 @@ func (e *jsiiProxy_EventarcTrigger) PutRetryPolicy(value *EventarcTriggerRetryPo
 	_jsii_.InvokeVoid(
 		e,
 		"putRetryPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1246,7 +1245,7 @@ func (e *jsiiProxy_EventarcTrigger) PutTimeouts(value *EventarcTriggerTimeouts) 
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (e *jsiiProxy_EventarcTrigger) PutTransport(value *EventarcTriggerTransport
 	_jsii_.InvokeVoid(
 		e,
 		"putTransport",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1341,8 +1340,8 @@ func (e *jsiiProxy_EventarcTrigger) ResetTransport() {
 	)
 }
 
-func (e *jsiiProxy_EventarcTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1354,8 +1353,8 @@ func (e *jsiiProxy_EventarcTrigger) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1367,8 +1366,8 @@ func (e *jsiiProxy_EventarcTrigger) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1380,8 +1379,8 @@ func (e *jsiiProxy_EventarcTrigger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1406,8 +1405,8 @@ func (e *jsiiProxy_EventarcTrigger) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1418,4 +1417,3 @@ func (e *jsiiProxy_EventarcTrigger) ToTerraform() interface{} {
 
 	return returns
 }
-

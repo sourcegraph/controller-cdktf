@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkbenchInstanceUpgradeHistoryOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesAppVariableDeclarationsListParameters(terraformResource cdktf
 
 	return nil
 }
-

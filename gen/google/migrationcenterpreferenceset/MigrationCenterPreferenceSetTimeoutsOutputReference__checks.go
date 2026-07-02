@@ -98,7 +98,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMigrationCenterPreferenceSetTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

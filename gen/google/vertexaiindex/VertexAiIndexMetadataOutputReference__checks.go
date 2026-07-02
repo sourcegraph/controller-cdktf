@@ -109,7 +109,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) validateSetInternalValu
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) validateSetIsCompleteOverwriteParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexMetadataOutputReference) validateSetIsCompleteOverwriteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewVertexAiIndexMetadataOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

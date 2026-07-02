@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputRe
 
 	return nil
 }
-

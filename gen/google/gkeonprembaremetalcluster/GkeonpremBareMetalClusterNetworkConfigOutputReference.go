@@ -10,14 +10,14 @@ import (
 
 type GkeonpremBareMetalClusterNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
-	AdvancedNetworking() interface{}
-	SetAdvancedNetworking(val interface{})
-	AdvancedNetworkingInput() interface{}
+	AdvancedNetworking() any
+	SetAdvancedNetworking(val any)
+	AdvancedNetworkingInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GkeonpremBareMetalClusterNetworkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GkeonpremBareMetalClusterNetworkConfigOutputReference interface {
 	ResetSrIovConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) AdvancedNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) AdvancedNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedNetworking",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Advanc
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) AdvancedNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) AdvancedNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedNetworkingInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Advanc
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewGkeonpremBareMetalClusterNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremBareMetalClusterNetworkConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGkeonpremBareMetalClusterNetworkConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGkeonpremBareMetalClusterNetworkConfigOutputReference_Override(g Gkeonpr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetAdvancedNetworking(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetAdvancedNetworking(val any) {
 	if err := j.validateSetAdvancedNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetAdva
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetInternalValue(val *GkeonpremBareMetalClusterNetworkConfig) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetInternalValue(val *GkeonpremBareMetalClusterNetworkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) PutIsl
 	_jsii_.InvokeVoid(
 		g,
 		"putIslandModeCidr",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) PutMul
 	_jsii_.InvokeVoid(
 		g,
 		"putMultipleNetworkInterfacesConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) PutSrI
 	_jsii_.InvokeVoid(
 		g,
 		"putSrIovConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) ResetS
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigOutputReference) ToStri
 
 	return returns
 }
-

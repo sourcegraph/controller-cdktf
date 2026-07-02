@@ -21,9 +21,9 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	CloudSqlIpv4CidrBlockInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,12 +37,12 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnablePrivateEndpoint() interface{}
-	SetEnablePrivateEndpoint(val interface{})
-	EnablePrivateEndpointInput() interface{}
-	EnablePrivatelyUsedPublicIps() interface{}
-	SetEnablePrivatelyUsedPublicIps(val interface{})
-	EnablePrivatelyUsedPublicIpsInput() interface{}
+	EnablePrivateEndpoint() any
+	SetEnablePrivateEndpoint(val any)
+	EnablePrivateEndpointInput() any
+	EnablePrivatelyUsedPublicIps() any
+	SetEnablePrivatelyUsedPublicIps(val any)
+	EnablePrivatelyUsedPublicIpsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComposerEnvironmentConfigPrivateEnvironmentConfig
@@ -64,7 +64,7 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	ResetWebServerIpv4CidrBlock()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivateEndpoint() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivateEndpoint() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEndpoint",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivateEndpointInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivateEndpointInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEndpointInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivatelyUsedPublicIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivatelyUsedPublicIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatelyUsedPublicIps",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivatelyUsedPublicIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) EnablePrivatelyUsedPublicIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatelyUsedPublicIpsInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-
 func NewComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetCloudComposerConnectionSubnetwork(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetCloudComposerConnectionSubnetwork(val *string) {
 	if err := j.validateSetCloudComposerConnectionSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetCloudComposerNetworkIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetCloudComposerNetworkIpv4CidrBlock(val *string) {
 	if err := j.validateSetCloudComposerNetworkIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetCloudSqlIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetCloudSqlIpv4CidrBlock(val *string) {
 	if err := j.validateSetCloudSqlIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetConnectionType(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetConnectionType(val *string) {
 	if err := j.validateSetConnectionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetEnablePrivateEndpoint(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetEnablePrivateEndpoint(val any) {
 	if err := j.validateSetEnablePrivateEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetEnablePrivatelyUsedPublicIps(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetEnablePrivatelyUsedPublicIps(val any) {
 	if err := j.validateSetEnablePrivatelyUsedPublicIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetInternalValue(val *ComposerEnvironmentConfigPrivateEnvironmentConfig) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetInternalValue(val *ComposerEnvironmentConfigPrivateEnvironmentConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetMasterIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetMasterIpv4CidrBlock(val *string) {
 	if err := j.validateSetMasterIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetWebServerIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) SetWebServerIpv4CidrBlock(val *string) {
 	if err := j.validateSetWebServerIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 
 	return returns
 }
-

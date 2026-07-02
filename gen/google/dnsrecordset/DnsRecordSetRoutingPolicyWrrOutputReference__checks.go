@@ -109,7 +109,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewDnsRecordSetRoutingPolicyWrrOutputReferenceParameters(terraformR
 
 	return nil
 }
-

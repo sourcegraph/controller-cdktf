@@ -13,21 +13,21 @@ import (
 type ApihubPlugin interface {
 	cdktf.TerraformResource
 	ActionsConfig() ApihubPluginActionsConfigList
-	ActionsConfigInput() interface{}
+	ActionsConfigInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfigTemplate() ApihubPluginConfigTemplateOutputReference
 	ConfigTemplateInput() *ApihubPluginConfigTemplate
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -79,28 +79,28 @@ type ApihubPlugin interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ApihubPluginTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type ApihubPlugin interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,14 +130,14 @@ type ApihubPlugin interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutActionsConfig(value interface{})
+	PutActionsConfig(value any)
 	PutConfigTemplate(value *ApihubPluginConfigTemplate)
 	PutDocumentation(value *ApihubPluginDocumentation)
 	PutHostingService(value *ApihubPluginHostingService)
@@ -154,17 +154,17 @@ type ApihubPlugin interface {
 	ResetPluginCategory()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApihubPlugin
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ApihubPlugin) ActionsConfig() ApihubPluginActionsConfigList {
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) ActionsConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPlugin) ActionsConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsConfigInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_ApihubPlugin) ConfigTemplateInput() *ApihubPluginConfigTempla
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPlugin) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ApihubPlugin) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApihubPlugin) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ApihubPlugin) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPlugin) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_ApihubPlugin) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApihubPlugin) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_ApihubPlugin) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPlugin) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_ApihubPlugin) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApihubPlugin) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_ApihubPlugin) Timeouts() ApihubPluginTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPlugin) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPlugin) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -622,7 +622,6 @@ func (j *jsiiProxy_ApihubPlugin) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin google_apihub_plugin} Resource.
 func NewApihubPlugin(scope constructs.Construct, id *string, config *ApihubPluginConfig) ApihubPlugin {
 	_init_.Initialize()
@@ -634,7 +633,7 @@ func NewApihubPlugin(scope constructs.Construct, id *string, config *ApihubPlugi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -647,12 +646,12 @@ func NewApihubPlugin_Override(a ApihubPlugin, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApihubPlugin) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_ApihubPlugin)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetCount(val interface{}) {
+func (j *jsiiProxy_ApihubPlugin) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_ApihubPlugin)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApihubPlugin) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_ApihubPlugin)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetDescription(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_ApihubPlugin)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetDisplayName(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_ApihubPlugin)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApihubPlugin) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_ApihubPlugin)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetId(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_ApihubPlugin)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApihubPlugin) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_ApihubPlugin)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetLocation(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_ApihubPlugin)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetPluginCategory(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetPluginCategory(val *string) {
 	if err := j.validateSetPluginCategoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_ApihubPlugin)SetPluginCategory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetPluginId(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetPluginId(val *string) {
 	if err := j.validateSetPluginIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_ApihubPlugin)SetPluginId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetProject(val *string) {
+func (j *jsiiProxy_ApihubPlugin) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_ApihubPlugin)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApihubPlugin) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -786,7 +785,7 @@ func (j *jsiiProxy_ApihubPlugin)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApihubPlugin)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApihubPlugin) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func ApihubPlugin_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func ApihubPlugin_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApihubPlugin_IsConstruct(x interface{}) *bool {
+func ApihubPlugin_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApihubPlugin_IsConstructParameters(x); err != nil {
@@ -844,7 +843,7 @@ func ApihubPlugin_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func ApihubPlugin_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApihubPlugin_IsTerraformElement(x interface{}) *bool {
+func ApihubPlugin_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApihubPlugin_IsTerraformElementParameters(x); err != nil {
@@ -863,7 +862,7 @@ func ApihubPlugin_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func ApihubPlugin_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApihubPlugin_IsTerraformResource(x interface{}) *bool {
+func ApihubPlugin_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApihubPlugin_IsTerraformResourceParameters(x); err != nil {
@@ -882,7 +881,7 @@ func ApihubPlugin_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apihubPlugin.ApihubPlugin",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -907,31 +906,31 @@ func (a *jsiiProxy_ApihubPlugin) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApihubPlugin) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApihubPlugin) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApihubPlugin) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubPlugin) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (a *jsiiProxy_ApihubPlugin) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (a *jsiiProxy_ApihubPlugin) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (a *jsiiProxy_ApihubPlugin) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (a *jsiiProxy_ApihubPlugin) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (a *jsiiProxy_ApihubPlugin) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (a *jsiiProxy_ApihubPlugin) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (a *jsiiProxy_ApihubPlugin) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,15 +1058,15 @@ func (a *jsiiProxy_ApihubPlugin) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPlugin) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApihubPlugin) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1086,7 +1085,7 @@ func (a *jsiiProxy_ApihubPlugin) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (a *jsiiProxy_ApihubPlugin) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,18 +1112,18 @@ func (a *jsiiProxy_ApihubPlugin) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApihubPlugin) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApihubPlugin) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (a *jsiiProxy_ApihubPlugin) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1146,18 +1145,18 @@ func (a *jsiiProxy_ApihubPlugin) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_ApihubPlugin) PutActionsConfig(value interface{}) {
+func (a *jsiiProxy_ApihubPlugin) PutActionsConfig(value any) {
 	if err := a.validatePutActionsConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putActionsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (a *jsiiProxy_ApihubPlugin) PutConfigTemplate(value *ApihubPluginConfigTemp
 	_jsii_.InvokeVoid(
 		a,
 		"putConfigTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (a *jsiiProxy_ApihubPlugin) PutDocumentation(value *ApihubPluginDocumentati
 	_jsii_.InvokeVoid(
 		a,
 		"putDocumentation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (a *jsiiProxy_ApihubPlugin) PutHostingService(value *ApihubPluginHostingSer
 	_jsii_.InvokeVoid(
 		a,
 		"putHostingService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (a *jsiiProxy_ApihubPlugin) PutTimeouts(value *ApihubPluginTimeouts) {
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,8 +1284,8 @@ func (a *jsiiProxy_ApihubPlugin) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_ApihubPlugin) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApihubPlugin) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1298,8 +1297,8 @@ func (a *jsiiProxy_ApihubPlugin) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPlugin) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApihubPlugin) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1311,8 +1310,8 @@ func (a *jsiiProxy_ApihubPlugin) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPlugin) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApihubPlugin) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1324,8 +1323,8 @@ func (a *jsiiProxy_ApihubPlugin) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPlugin) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApihubPlugin) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1350,8 +1349,8 @@ func (a *jsiiProxy_ApihubPlugin) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPlugin) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApihubPlugin) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1362,4 +1361,3 @@ func (a *jsiiProxy_ApihubPlugin) ToTerraform() interface{} {
 
 	return returns
 }
-

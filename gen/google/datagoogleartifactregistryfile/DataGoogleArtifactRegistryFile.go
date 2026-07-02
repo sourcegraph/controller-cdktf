@@ -15,11 +15,11 @@ type DataGoogleArtifactRegistryFile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,9 +55,9 @@ type DataGoogleArtifactRegistryFile interface {
 	SetOutputPath(val *string)
 	OutputPathInput() *string
 	OutputSha256() *string
-	Overwrite() interface{}
-	SetOverwrite(val interface{})
-	OverwriteInput() interface{}
+	Overwrite() any
+	SetOverwrite(val any)
+	OverwriteInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -66,7 +66,7 @@ type DataGoogleArtifactRegistryFile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -74,16 +74,16 @@ type DataGoogleArtifactRegistryFile interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataGoogleArtifactRegistryFileTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,18 +113,18 @@ type DataGoogleArtifactRegistryFile interface {
 	ResetOverwrite()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleArtifactRegistryFile
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) OutputSha256() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Overwrite() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Overwrite() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overwrite",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Overwrite() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) OverwriteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) OverwriteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overwriteInput",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) Timeouts() DataGoogleArtifact
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -502,7 +502,6 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_file google_artifact_registry_file} Data Source.
 func NewDataGoogleArtifactRegistryFile(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryFileConfig) DataGoogleArtifactRegistryFile {
 	_init_.Initialize()
@@ -514,7 +513,7 @@ func NewDataGoogleArtifactRegistryFile(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -527,12 +526,12 @@ func NewDataGoogleArtifactRegistryFile_Override(d DataGoogleArtifactRegistryFile
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetFileId(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetFileId(val *string) {
 	if err := j.validateSetFileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetFileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetOutputPath(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetOutputPath(val *string) {
 	if err := j.validateSetOutputPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetOutputPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetOverwrite(val interface{}) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetOverwrite(val any) {
 	if err := j.validateSetOverwriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetOverwrite(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile)SetRepositoryId(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func DataGoogleArtifactRegistryFile_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func DataGoogleArtifactRegistryFile_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleArtifactRegistryFile_IsConstruct(x interface{}) *bool {
+func DataGoogleArtifactRegistryFile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryFile_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func DataGoogleArtifactRegistryFile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func DataGoogleArtifactRegistryFile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleArtifactRegistryFile_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleArtifactRegistryFile_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryFile_IsTerraformDataSourceParameters(x); err != nil {
@@ -721,7 +720,7 @@ func DataGoogleArtifactRegistryFile_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func DataGoogleArtifactRegistryFile_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleArtifactRegistryFile_IsTerraformElement(x interface{}) *bool {
+func DataGoogleArtifactRegistryFile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryFile_IsTerraformElementParameters(x); err != nil {
@@ -740,7 +739,7 @@ func DataGoogleArtifactRegistryFile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryFile.DataGoogleArtifactRegistryFile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,27 +757,27 @@ func DataGoogleArtifactRegistryFile_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) PutTimeouts(value *DataGoogle
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -991,8 +990,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1004,8 +1003,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,8 +1016,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1030,8 +1029,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1056,8 +1055,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1068,4 +1067,3 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -164,7 +164,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,7 +237,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateSetDi
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -296,4 +296,3 @@ func validateNewMonitoringAlertPolicyConditionsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

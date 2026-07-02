@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerTargetSizePolicyList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerTargetSizePolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerTargetSizePolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceGroupManagerTargetSizePolicyListParameters(terraf
 
 	return nil
 }
-

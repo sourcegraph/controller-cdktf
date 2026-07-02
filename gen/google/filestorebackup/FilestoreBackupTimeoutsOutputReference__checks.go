@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreBackupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFilestoreBackupTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

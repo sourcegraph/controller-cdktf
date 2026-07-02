@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartitionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartitionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningTi
 
 	return nil
 }
-

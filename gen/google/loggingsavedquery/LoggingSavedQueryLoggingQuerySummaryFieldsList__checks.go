@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsListParameters(terrafo
 
 	return nil
 }
-

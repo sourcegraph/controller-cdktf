@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisInstancePersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewRedisInstancePersistenceConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

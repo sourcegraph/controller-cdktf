@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceStorageSourceOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceStorageSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceStorageSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudbuildTriggerBuildSourceStorageSourceOutputReferenceParamete
 
 	return nil
 }
-

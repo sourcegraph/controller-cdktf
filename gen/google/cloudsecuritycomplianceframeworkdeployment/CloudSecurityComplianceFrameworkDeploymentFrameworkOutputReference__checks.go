@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentFrameworkOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentFrameworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentFrameworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudSecurityComplianceFrameworkDeploymentFrameworkOutputReferen
 
 	return nil
 }
-

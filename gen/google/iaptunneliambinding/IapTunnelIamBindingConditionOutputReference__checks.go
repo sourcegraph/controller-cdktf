@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapTunnelIamBindingConditionOutputReferenceParameters(terraformR
 
 	return nil
 }
-

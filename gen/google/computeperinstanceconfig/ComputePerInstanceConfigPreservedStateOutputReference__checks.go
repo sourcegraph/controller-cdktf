@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutDiskParameters(value interface{}) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value interface{}) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value interface{}) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,4 +299,3 @@ func validateNewComputePerInstanceConfigPreservedStateOutputReferenceParameters(
 
 	return nil
 }
-

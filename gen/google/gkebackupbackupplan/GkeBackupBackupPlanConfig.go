@@ -6,9 +6,9 @@ import (
 
 type GkeBackupBackupPlanConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GkeBackupBackupPlanConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The source cluster from which Backups will be created via this BackupPlan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#cluster GkeBackupBackupPlan#cluster}
@@ -46,7 +46,7 @@ type GkeBackupBackupPlanConfig struct {
 	// from being created via this BackupPlan (including scheduled Backups).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#deactivated GkeBackupBackupPlan#deactivated}
-	Deactivated interface{} `field:"optional" json:"deactivated" yaml:"deactivated"`
+	Deactivated any `field:"optional" json:"deactivated" yaml:"deactivated"`
 	// User specified descriptive string for this BackupPlan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#description GkeBackupBackupPlan#description}
@@ -78,4 +78,3 @@ type GkeBackupBackupPlanConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#timeouts GkeBackupBackupPlan#timeouts}
 	Timeouts *GkeBackupBackupPlanTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

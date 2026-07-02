@@ -36,7 +36,7 @@ type DataGoogleGkeHubFeatureResourceStateList interface {
 	Get(index *float64) DataGoogleGkeHubFeatureResourceStateOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataGoogleGkeHubFeatureResourceStateList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubFeatureResourceStateList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataGoogleGkeHubFeatureResourceStateList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureResourceStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataGoogleGkeHubFeatureResourceStateList_Override(d DataGoogleGkeHubFeat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleGkeHubFeature.DataGoogleGkeHubFeatureResourceStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) Get(index *float64)
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) ToString() *string 
 
 	return returns
 }
-

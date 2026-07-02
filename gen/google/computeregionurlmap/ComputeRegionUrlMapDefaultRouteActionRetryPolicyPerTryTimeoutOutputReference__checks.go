@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOut
 
 	return nil
 }
-

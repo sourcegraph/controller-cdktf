@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesAgentBeforeToolCallbacksList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentBeforeToolCallbacksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAgentBeforeToolCallbacksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesAgentBeforeToolCallbacksListParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ChronicleDataAccessScopeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ChronicleDataAccessScopeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required.
 	//
 	// The user provided scope id which will become the last part of the name
@@ -49,15 +49,15 @@ type ChronicleDataAccessScopeConfig struct {
 	// with labels A and B.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
-	AllowAll interface{} `field:"optional" json:"allowAll" yaml:"allowAll"`
+	AllowAll any `field:"optional" json:"allowAll" yaml:"allowAll"`
 	// allowed_data_access_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
-	AllowedDataAccessLabels interface{} `field:"optional" json:"allowedDataAccessLabels" yaml:"allowedDataAccessLabels"`
+	AllowedDataAccessLabels any `field:"optional" json:"allowedDataAccessLabels" yaml:"allowedDataAccessLabels"`
 	// denied_data_access_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
-	DeniedDataAccessLabels interface{} `field:"optional" json:"deniedDataAccessLabels" yaml:"deniedDataAccessLabels"`
+	DeniedDataAccessLabels any `field:"optional" json:"deniedDataAccessLabels" yaml:"deniedDataAccessLabels"`
 	// Optional. A description of the data access scope for a human reader.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
@@ -74,4 +74,3 @@ type ChronicleDataAccessScopeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
 	Timeouts *ChronicleDataAccessScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

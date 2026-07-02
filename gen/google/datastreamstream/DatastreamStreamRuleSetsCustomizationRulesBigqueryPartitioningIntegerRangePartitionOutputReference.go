@@ -15,9 +15,9 @@ type DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangeP
 	ColumnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangeP
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangeP
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return returns
 }
 
-
 func NewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference {
 	_init_.Initialize()
 
@@ -249,7 +248,7 @@ func NewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -261,12 +260,12 @@ func NewDatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetColumn(val *string) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetEnd(val *float64) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetEnd(val *float64) {
 	if err := j.validateSetEndParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetInternalValue(val *DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetInternalValue(val *DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetInterval(val *float64) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetInterval(val *float64) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -332,7 +331,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetStart(val *float64) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetStart(val *float64) {
 	if err := j.validateSetStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +342,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,7 +353,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,16 +377,16 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,23 +543,23 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartitionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -579,4 +578,3 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryPartitionin
 
 	return returns
 }
-

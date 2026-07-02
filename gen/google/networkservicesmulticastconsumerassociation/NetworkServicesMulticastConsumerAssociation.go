@@ -15,15 +15,15 @@ type NetworkServicesMulticastConsumerAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -75,30 +75,30 @@ type NetworkServicesMulticastConsumerAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() NetworkServicesMulticastConsumerAssociationStateList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UniqueId() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type NetworkServicesMulticastConsumerAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type NetworkServicesMulticastConsumerAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type NetworkServicesMulticastConsumerAssociation interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesMulticastConsumerAssociation
@@ -172,8 +172,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Connection() int
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Provisioners() *
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) TerraformLabels(
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) Timeouts() Netwo
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -582,7 +582,6 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) UpdateTime() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_consumer_association google_network_services_multicast_consumer_association} Resource.
 func NewNetworkServicesMulticastConsumerAssociation(scope constructs.Construct, id *string, config *NetworkServicesMulticastConsumerAssociationConfig) NetworkServicesMulticastConsumerAssociation {
 	_init_.Initialize()
@@ -594,7 +593,7 @@ func NewNetworkServicesMulticastConsumerAssociation(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -607,12 +606,12 @@ func NewNetworkServicesMulticastConsumerAssociation_Override(n NetworkServicesMu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLabels(val *ma
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetLocation(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetMulticastConsumerAssociationId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetMulticastConsumerAssociationId(val *string) {
 	if err := j.validateSetMulticastConsumerAssociationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetMulticastConsu
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetMulticastDomainActivation(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetMulticastDomainActivation(val *string) {
 	if err := j.validateSetMulticastDomainActivationParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetMulticastDomai
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetNetwork(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetNetwork(val *s
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetProject(val *s
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func NetworkServicesMulticastConsumerAssociation_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func NetworkServicesMulticastConsumerAssociation_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesMulticastConsumerAssociation_IsConstruct(x interface{}) *bool {
+func NetworkServicesMulticastConsumerAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastConsumerAssociation_IsConstructParameters(x); err != nil {
@@ -815,7 +814,7 @@ func NetworkServicesMulticastConsumerAssociation_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func NetworkServicesMulticastConsumerAssociation_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func NetworkServicesMulticastConsumerAssociation_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesMulticastConsumerAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastConsumerAssociation_IsTerraformElementParameters(x); err != nil {
@@ -834,7 +833,7 @@ func NetworkServicesMulticastConsumerAssociation_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func NetworkServicesMulticastConsumerAssociation_IsTerraformElement(x interface{
 }
 
 // Experimental.
-func NetworkServicesMulticastConsumerAssociation_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesMulticastConsumerAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastConsumerAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -853,7 +852,7 @@ func NetworkServicesMulticastConsumerAssociation_IsTerraformResource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -878,31 +877,31 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) AddMoveTarget(mo
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetBooleanAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetBooleanMapAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetListAttribute
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetNumberAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetNumberListAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetNumberMapAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetStringAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,15 +1029,15 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) GetStringMapAttr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1057,7 +1056,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ImportFrom(id *s
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1070,7 +1069,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) InterpolationFor
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,18 +1083,18 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) MoveFromId(id *s
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) MoveToId(id *str
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1117,7 +1116,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1128,7 +1127,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) PutTimeouts(valu
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,8 +1179,8 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ResetTimeouts() 
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1193,8 +1192,8 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeAttrib
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1206,8 +1205,8 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) SynthesizeHclAtt
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1219,8 +1218,8 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToHclTerraform()
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1245,8 +1244,8 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToString() *stri
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1257,4 +1256,3 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociation) ToTerraform() in
 
 	return returns
 }
-

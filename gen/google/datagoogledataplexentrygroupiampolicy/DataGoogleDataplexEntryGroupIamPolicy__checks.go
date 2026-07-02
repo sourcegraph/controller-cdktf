@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleDataplexEntryGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleDataplexEntryGroupIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleDataplexEntryGroupIamPolicy_GenerateConfigForImportParame
 	return nil
 }
 
-func validateDataGoogleDataplexEntryGroupIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleDataplexEntryGroupIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleDataplexEntryGroupIamPolicy_IsConstructParameters(x inter
 	return nil
 }
 
-func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformDataSourceParamete
 	return nil
 }
 
-func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleDataplexEntryGroupIamPolicy_IsTerraformElementParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataplexEntryGroupIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataplexEntryGroupIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleDataplexEntryGroupIamPolicyParameters(scope constructs
 
 	return nil
 }
-

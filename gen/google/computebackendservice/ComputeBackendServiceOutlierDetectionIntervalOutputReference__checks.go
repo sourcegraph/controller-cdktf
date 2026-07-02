@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionIntervalOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceOutlierDetectionIntervalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceOutlierDetectionIntervalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeBackendServiceOutlierDetectionIntervalOutputReferencePara
 
 	return nil
 }
-

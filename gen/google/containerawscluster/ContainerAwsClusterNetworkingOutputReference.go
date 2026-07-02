@@ -12,9 +12,9 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerAwsClusterNetworking
 	SetInternalValue(val *ContainerAwsClusterNetworking)
-	PerNodePoolSgRulesDisabled() interface{}
-	SetPerNodePoolSgRulesDisabled(val interface{})
-	PerNodePoolSgRulesDisabledInput() interface{}
+	PerNodePoolSgRulesDisabled() any
+	SetPerNodePoolSgRulesDisabled(val any)
+	PerNodePoolSgRulesDisabledInput() any
 	PodAddressCidrBlocks() *[]*string
 	SetPodAddressCidrBlocks(val *[]*string)
 	PodAddressCidrBlocksInput() *[]*string
@@ -52,7 +52,7 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	ResetPerNodePoolSgRulesDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_ContainerAwsClusterNetworkingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"perNodePoolSgRulesDisabled",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"perNodePoolSgRulesDisabledInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) VpcIdInput() *s
 	return returns
 }
 
-
 func NewContainerAwsClusterNetworkingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsClusterNetworkingOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewContainerAwsClusterNetworkingOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewContainerAwsClusterNetworkingOutputReference_Override(c ContainerAwsClus
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetInternalValue(val *ContainerAwsClusterNetworking) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetInternalValue(val *ContainerAwsClusterNetworking) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetPerNodePoolSgRulesDisabled(val interface{}) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetPerNodePoolSgRulesDisabled(val any) {
 	if err := j.validateSetPerNodePoolSgRulesDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetPerNodePoolSg
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetPodAddressCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetPodAddressCidrBlocks(val *[]*string) {
 	if err := j.validateSetPodAddressCidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetPodAddressCid
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetServiceAddressCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetServiceAddressCidrBlocks(val *[]*string) {
 	if err := j.validateSetServiceAddressCidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetServiceAddres
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetVpcId(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) SetVpcId(val *string) {
 	if err := j.validateSetVpcIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ResetPerNodePoo
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ToString() *str
 
 	return returns
 }
-

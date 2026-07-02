@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputRefer
 
 	return nil
 }
-

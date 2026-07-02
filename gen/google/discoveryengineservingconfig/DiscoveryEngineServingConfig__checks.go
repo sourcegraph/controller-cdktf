@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineServingConfig) validateAddMoveTargetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineServingConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineServingConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineServingConfig) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineServingConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineServingConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDiscoveryEngineServingConfig_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDiscoveryEngineServingConfig_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineServingConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDiscoveryEngineServingConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDiscoveryEngineServingConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineServingConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDiscoveryEngineServingConfig_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateDiscoveryEngineServingConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineServingConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetCollectionIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetPromoteControlIdsPar
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineServingConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -505,4 +505,3 @@ func validateNewDiscoveryEngineServingConfigParameters(scope constructs.Construc
 
 	return nil
 }
-

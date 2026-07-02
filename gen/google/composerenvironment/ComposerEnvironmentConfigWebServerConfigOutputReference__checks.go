@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWebServerConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWebServerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigWebServerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComposerEnvironmentConfigWebServerConfigOutputReferenceParameter
 
 	return nil
 }
-

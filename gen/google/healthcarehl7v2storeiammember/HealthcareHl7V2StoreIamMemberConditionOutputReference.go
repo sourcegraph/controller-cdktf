@@ -12,9 +12,9 @@ type HealthcareHl7V2StoreIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type HealthcareHl7V2StoreIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type HealthcareHl7V2StoreIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) TitleI
 	return returns
 }
 
-
 func NewHealthcareHl7V2StoreIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareHl7V2StoreIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewHealthcareHl7V2StoreIamMemberConditionOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewHealthcareHl7V2StoreIamMemberConditionOutputReference_Override(h Healthc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetDesc
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetExpr
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetInternalValue(val *HealthcareHl7V2StoreIamMemberCondition) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetInternalValue(val *HealthcareHl7V2StoreIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) Comput
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetBoo
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetBoo
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetLis
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetStr
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) GetStr
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) Interp
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) ResetD
 	)
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) ToStri
 
 	return returns
 }
-

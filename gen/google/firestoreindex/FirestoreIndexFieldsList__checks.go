@@ -34,7 +34,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsList) validateResolveParameters(_context 
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFirestoreIndexFieldsListParameters(terraformResource cdktf.IInte
 
 	return nil
 }
-

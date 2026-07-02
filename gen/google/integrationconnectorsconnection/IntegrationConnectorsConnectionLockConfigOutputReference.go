@@ -12,9 +12,9 @@ type IntegrationConnectorsConnectionLockConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type IntegrationConnectorsConnectionLockConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *IntegrationConnectorsConnectionLockConfig
 	SetInternalValue(val *IntegrationConnectorsConnectionLockConfig)
-	Locked() interface{}
-	SetLocked(val interface{})
-	LockedInput() interface{}
+	Locked() any
+	SetLocked(val any)
+	LockedInput() any
 	Reason() *string
 	SetReason(val *string)
 	ReasonInput() *string
@@ -46,7 +46,7 @@ type IntegrationConnectorsConnectionLockConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type IntegrationConnectorsConnectionLockConfigOutputReference interface {
 	ResetReason()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Locked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Locked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locked",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Loc
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) LockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) LockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lockedInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Ter
 	return returns
 }
 
-
 func NewIntegrationConnectorsConnectionLockConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionLockConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewIntegrationConnectorsConnectionLockConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewIntegrationConnectorsConnectionLockConfigOutputReference_Override(i Inte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetInternalValue(val *IntegrationConnectorsConnectionLockConfig) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetInternalValue(val *IntegrationConnectorsConnectionLockConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetLocked(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetLocked(val any) {
 	if err := j.validateSetLockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetL
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetReason(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetReason(val *string) {
 	if err := j.validateSetReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Com
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Get
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Int
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Res
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference) ToS
 
 	return returns
 }
-

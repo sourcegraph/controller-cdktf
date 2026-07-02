@@ -117,7 +117,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetLogDeniesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetLogDeniesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetMutationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetMutationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetReferentialRulesEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetReferentialRulesEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetTemplateLibraryInstalledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference) validateSetTemplateLibraryInstalledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,4 +325,3 @@ func validateNewGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputRef
 
 	return nil
 }
-

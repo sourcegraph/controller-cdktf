@@ -131,7 +131,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewSccOrganizationCustomModuleCustomConfigOutputReferenceParameters
 
 	return nil
 }
-

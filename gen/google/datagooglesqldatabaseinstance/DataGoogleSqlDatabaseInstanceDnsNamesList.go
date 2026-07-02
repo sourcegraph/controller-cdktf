@@ -36,7 +36,7 @@ type DataGoogleSqlDatabaseInstanceDnsNamesList interface {
 	Get(index *float64) DataGoogleSqlDatabaseInstanceDnsNamesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataGoogleSqlDatabaseInstanceDnsNamesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSqlDatabaseInstanceDnsNamesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataGoogleSqlDatabaseInstanceDnsNamesList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceDnsNamesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataGoogleSqlDatabaseInstanceDnsNamesList_Override(d DataGoogleSqlDataba
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceDnsNamesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) Get(index *float64
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceDnsNamesList) ToString() *string
 
 	return returns
 }
-

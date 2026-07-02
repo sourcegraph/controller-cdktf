@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersValidationRegexOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateParametersValidationRegexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateParametersValidationRegexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocWorkflowTemplateParametersValidationRegexOutputReference
 
 	return nil
 }
-

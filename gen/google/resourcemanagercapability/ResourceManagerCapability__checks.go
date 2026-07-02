@@ -19,7 +19,7 @@ func (r *jsiiProxy_ResourceManagerCapability) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_ResourceManagerCapability) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_ResourceManagerCapability) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_ResourceManagerCapability) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateResourceManagerCapability_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateResourceManagerCapability_IsConstructParameters(x interface{}) error {
+func validateResourceManagerCapability_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateResourceManagerCapability_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateResourceManagerCapability_IsTerraformElementParameters(x interface{}) error {
+func validateResourceManagerCapability_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateResourceManagerCapability_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateResourceManagerCapability_IsTerraformResourceParameters(x interface{}) error {
+func validateResourceManagerCapability_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ResourceManagerCapability) validateSetCapabilityNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceManagerCapability) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ResourceManagerCapability) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceManagerCapability) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ResourceManagerCapability) validateSetParentParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ResourceManagerCapability) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ResourceManagerCapability) validateSetProvisionersParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) validateSetValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceManagerCapability) validateSetValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -461,4 +461,3 @@ func validateNewResourceManagerCapabilityParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -1,17 +1,16 @@
 package networkconnectivityspoke
 
-
 type NetworkConnectivitySpokeLinkedRouterApplianceInstances struct {
 	// instances block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_spoke#instances NetworkConnectivitySpoke#instances}
-	Instances interface{} `field:"required" json:"instances" yaml:"instances"`
+	Instances any `field:"required" json:"instances" yaml:"instances"`
 	// A value that controls whether site-to-site data transfer is enabled for these resources.
 	//
 	// Note that data transfer is available only in supported locations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
-	SiteToSiteDataTransfer interface{} `field:"required" json:"siteToSiteDataTransfer" yaml:"siteToSiteDataTransfer"`
+	SiteToSiteDataTransfer any `field:"required" json:"siteToSiteDataTransfer" yaml:"siteToSiteDataTransfer"`
 	// Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
@@ -31,4 +30,3 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstances struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
 	IncludeImportRanges *[]*string `field:"optional" json:"includeImportRanges" yaml:"includeImportRanges"`
 }
-

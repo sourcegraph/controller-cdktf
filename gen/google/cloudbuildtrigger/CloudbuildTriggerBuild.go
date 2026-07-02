@@ -1,11 +1,10 @@
 package cloudbuildtrigger
 
-
 type CloudbuildTriggerBuild struct {
 	// step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#step CloudbuildTrigger#step}
-	Step interface{} `field:"required" json:"step" yaml:"step"`
+	Step any `field:"required" json:"step" yaml:"step"`
 	// artifacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#artifacts CloudbuildTrigger#artifacts}
@@ -42,7 +41,7 @@ type CloudbuildTriggerBuild struct {
 	// secret block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#secret CloudbuildTrigger#secret}
-	Secret interface{} `field:"optional" json:"secret" yaml:"secret"`
+	Secret any `field:"optional" json:"secret" yaml:"secret"`
 	// source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#source CloudbuildTrigger#source}
@@ -65,4 +64,3 @@ type CloudbuildTriggerBuild struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#timeout CloudbuildTrigger#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validatePutEgressPoliciesParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validatePutEgressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validatePutIngressPoliciesParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validatePutIngressPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,4 +295,3 @@ func validateNewAccessContextManagerServicePerimeterStatusOutputReferenceParamet
 
 	return nil
 }
-

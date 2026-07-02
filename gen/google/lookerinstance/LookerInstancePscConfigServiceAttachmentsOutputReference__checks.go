@@ -98,7 +98,7 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLookerInstancePscConfigServiceAttachmentsOutputReferenceParamete
 
 	return nil
 }
-

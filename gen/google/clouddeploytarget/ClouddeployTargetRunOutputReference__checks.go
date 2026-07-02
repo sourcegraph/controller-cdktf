@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployTargetRunOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetRunOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetRunOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewClouddeployTargetRunOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

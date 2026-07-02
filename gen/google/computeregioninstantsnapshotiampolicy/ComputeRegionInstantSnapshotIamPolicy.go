@@ -15,15 +15,15 @@ type ComputeRegionInstantSnapshotIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,27 +60,27 @@ type ComputeRegionInstantSnapshotIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type ComputeRegionInstantSnapshotIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type ComputeRegionInstantSnapshotIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type ComputeRegionInstantSnapshotIamPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionInstantSnapshotIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instant_snapshot_iam_policy google_compute_region_instant_snapshot_iam_policy} Resource.
 func NewComputeRegionInstantSnapshotIamPolicy(scope constructs.Construct, id *string, config *ComputeRegionInstantSnapshotIamPolicyConfig) ComputeRegionInstantSnapshotIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewComputeRegionInstantSnapshotIamPolicy(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewComputeRegionInstantSnapshotIamPolicy_Override(c ComputeRegionInstantSna
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetPolicyData(val *stri
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func ComputeRegionInstantSnapshotIamPolicy_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func ComputeRegionInstantSnapshotIamPolicy_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionInstantSnapshotIamPolicy_IsConstruct(x interface{}) *bool {
+func ComputeRegionInstantSnapshotIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshotIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func ComputeRegionInstantSnapshotIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func ComputeRegionInstantSnapshotIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionInstantSnapshotIamPolicy_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionInstantSnapshotIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshotIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func ComputeRegionInstantSnapshotIamPolicy_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func ComputeRegionInstantSnapshotIamPolicy_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func ComputeRegionInstantSnapshotIamPolicy_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionInstantSnapshotIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshotIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func ComputeRegionInstantSnapshotIamPolicy_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshotIamPolicy.ComputeRegionInstantSnapshotIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetNumberListAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetStringAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) GetStringMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -853,7 +852,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) InterpolationForAttrib
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ResetRegion() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -962,8 +961,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeAttributes()
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -975,8 +974,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) SynthesizeHclAttribute
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -988,8 +987,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToHclTerraform() inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1014,8 +1013,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1026,4 +1025,3 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) ToTerraform() interfac
 
 	return returns
 }
-

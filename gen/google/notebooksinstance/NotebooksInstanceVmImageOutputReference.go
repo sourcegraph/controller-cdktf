@@ -12,9 +12,9 @@ type NotebooksInstanceVmImageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type NotebooksInstanceVmImageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type NotebooksInstanceVmImageOutputReference interface {
 	ResetImageName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_NotebooksInstanceVmImageOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewNotebooksInstanceVmImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksInstanceVmImageOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewNotebooksInstanceVmImageOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewNotebooksInstanceVmImageOutputReference_Override(n NotebooksInstanceVmIm
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetImageFamily(val *string) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetImageFamily(val *string) {
 	if err := j.validateSetImageFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetImageFamily(val *s
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetImageName(val *string) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetImageName(val *string) {
 	if err := j.validateSetImageNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetImageName(val *str
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetInternalValue(val *NotebooksInstanceVmImage) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetInternalValue(val *NotebooksInstanceVmImage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetProject(val *string) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksInstanceVmImageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) ResetImageName() {
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) ToString() *string {
 
 	return returns
 }
-

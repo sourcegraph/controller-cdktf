@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryDatasetExternalDatasetReferenceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetExternalDatasetReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatasetExternalDatasetReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBigqueryDatasetExternalDatasetReferenceOutputReferenceParameters
 
 	return nil
 }
-

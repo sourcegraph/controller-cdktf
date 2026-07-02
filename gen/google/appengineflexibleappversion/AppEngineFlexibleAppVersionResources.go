@@ -1,6 +1,5 @@
 package appengineflexibleappversion
 
-
 type AppEngineFlexibleAppVersionResources struct {
 	// Number of CPU cores needed.
 	//
@@ -17,6 +16,5 @@ type AppEngineFlexibleAppVersionResources struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#volumes AppEngineFlexibleAppVersion#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection",
-		reflect.TypeOf((*IntegrationConnectorsConnection)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,19 +135,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariable)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigAdditionalVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanValue", GoGetter: "BooleanValue"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanValueInput", GoGetter: "BooleanValueInput"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,15 +295,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,7 +337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authUri", GoGetter: "AuthUri"},
 			_jsii_.MemberProperty{JsiiProperty: "authUriInput", GoGetter: "AuthUriInput"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -385,15 +385,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,7 +427,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -457,7 +457,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -465,15 +465,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -499,7 +499,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -507,11 +507,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -544,7 +544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -552,7 +552,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientKey", GoGetter: "ClientKey"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKeyInput", GoGetter: "ClientKeyInput"},
@@ -584,7 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -592,7 +592,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariable", GoGetter: "AdditionalVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariableInput", GoGetter: "AdditionalVariableInput"},
@@ -645,7 +645,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPassword", GoGetter: "UserPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordInput", GoGetter: "UserPasswordInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -653,11 +653,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKey",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKey)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certType", GoGetter: "CertType"},
 			_jsii_.MemberProperty{JsiiProperty: "certTypeInput", GoGetter: "CertTypeInput"},
@@ -694,7 +694,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -702,11 +702,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -732,7 +732,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -740,11 +740,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPass](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -778,11 +778,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPassword",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigUserPassword)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigUserPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -812,7 +812,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -820,11 +820,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPassword",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigUserPasswordPassword)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigUserPasswordPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -850,7 +850,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -858,19 +858,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariable)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -899,7 +899,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -907,7 +907,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -921,7 +921,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConfigVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -929,7 +929,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanValue", GoGetter: "BooleanValue"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanValueInput", GoGetter: "BooleanValueInput"},
@@ -972,7 +972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -980,11 +980,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableSecretValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1018,11 +1018,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConnectorVersionInfraConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConnectorVersionInfraConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConnectorVersionInfraConfigList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConnectorVersionInfraConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1035,7 +1035,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConnectorVersionInfraConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1043,7 +1043,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1068,7 +1068,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1076,15 +1076,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfigDestination)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfigDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfigDestinationList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfigDestinationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1098,7 +1098,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1106,7 +1106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1139,7 +1139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1147,7 +1147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfigList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1161,7 +1161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionDestinationConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1169,7 +1169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1199,7 +1199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1207,19 +1207,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariable)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1249,7 +1249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1257,7 +1257,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1271,7 +1271,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1279,7 +1279,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanValue", GoGetter: "BooleanValue"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanValueInput", GoGetter: "BooleanValueInput"},
@@ -1322,7 +1322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1330,11 +1330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1360,7 +1360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1368,19 +1368,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1410,7 +1410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1418,7 +1418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1432,7 +1432,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1440,7 +1440,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanValue", GoGetter: "BooleanValue"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanValueInput", GoGetter: "BooleanValueInput"},
@@ -1483,7 +1483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1491,11 +1491,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1521,7 +1521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1529,7 +1529,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariable", GoGetter: "AdditionalVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariableInput", GoGetter: "AdditionalVariableInput"},
@@ -1565,7 +1565,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPassword", GoGetter: "UserPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordInput", GoGetter: "UserPasswordInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1573,11 +1573,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1608,7 +1608,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1616,11 +1616,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1646,7 +1646,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1654,7 +1654,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariable", GoGetter: "AdditionalVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariableInput", GoGetter: "AdditionalVariableInput"},
@@ -1692,7 +1692,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1700,15 +1700,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1722,7 +1722,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1730,7 +1730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1763,7 +1763,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1771,7 +1771,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1802,7 +1802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1810,11 +1810,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeData",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeData)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeDataList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeDataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1827,7 +1827,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1835,7 +1835,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1861,7 +1861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1869,11 +1869,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatus",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeDataStatus)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeDataStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeDataStatusList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeDataStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1886,7 +1886,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1894,7 +1894,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1920,7 +1920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1928,11 +1928,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionLockConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionLockConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionLockConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionLockConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1961,7 +1961,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionLockConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1969,11 +1969,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionLogConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2002,7 +2002,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2010,11 +2010,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionNodeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionNodeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionNodeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2044,7 +2044,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionNodeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2052,19 +2052,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariable)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2094,7 +2094,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2102,7 +2102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2116,7 +2116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2124,7 +2124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "booleanValue", GoGetter: "BooleanValue"},
 			_jsii_.MemberProperty{JsiiProperty: "booleanValueInput", GoGetter: "BooleanValueInput"},
@@ -2167,7 +2167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2175,11 +2175,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2205,7 +2205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2213,11 +2213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificate",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientCertificate)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2243,7 +2243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2251,11 +2251,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKey",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientPrivateKey)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientPrivateKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2281,7 +2281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2289,11 +2289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2319,7 +2319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2327,7 +2327,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariable", GoGetter: "AdditionalVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalVariableInput", GoGetter: "AdditionalVariableInput"},
@@ -2385,7 +2385,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useSsl", GoGetter: "UseSsl"},
 			_jsii_.MemberProperty{JsiiProperty: "useSslInput", GoGetter: "UseSslInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2393,11 +2393,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificate",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigPrivateServerCertificate)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigPrivateServerCertificate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2423,7 +2423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2431,11 +2431,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatus",
-		reflect.TypeOf((*IntegrationConnectorsConnectionStatus)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList",
-		reflect.TypeOf((*IntegrationConnectorsConnectionStatusList)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2448,7 +2448,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2456,7 +2456,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2483,7 +2483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2491,11 +2491,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts",
-		reflect.TypeOf((*IntegrationConnectorsConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2528,7 +2528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

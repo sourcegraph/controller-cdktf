@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
-		reflect.TypeOf((*EssentialContactsContact)(nil)).Elem(),
+		reflect.TypeFor[EssentialContactsContact](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EssentialContactsContact{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactConfig",
-		reflect.TypeOf((*EssentialContactsContactConfig)(nil)).Elem(),
+		reflect.TypeFor[EssentialContactsContactConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactTimeouts",
-		reflect.TypeOf((*EssentialContactsContactTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EssentialContactsContactTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContactTimeoutsOutputReference",
-		reflect.TypeOf((*EssentialContactsContactTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EssentialContactsContactTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EssentialContactsContactTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

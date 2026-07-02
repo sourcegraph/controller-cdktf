@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
-		reflect.TypeOf((*HypercomputeclusterCluster)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,19 +103,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResources)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfig",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfig)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstances",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstances)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstances",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstances)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstancesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewReservedInstances",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewReservedInstances)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewReservedInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewReservedInstancesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewReservedInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewReservedInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewReservedInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewSpotInstances",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewSpotInstances)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewSpotInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewSpotInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfigOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -315,7 +315,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -323,7 +323,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesList",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -345,7 +345,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterComputeResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterComputeResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterComputeResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,23 +382,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig",
-		reflect.TypeOf((*HypercomputeclusterClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResources",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResources)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfig",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfig)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigExistingNetwork",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfigExistingNetwork)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfigExistingNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigExistingNetworkOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfigExistingNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfigExistingNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigExistingNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -434,11 +434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetwork",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfigNewNetwork)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfigNewNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -467,7 +467,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigNewNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -475,7 +475,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfigOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,7 +515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesList",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -529,7 +529,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -537,11 +537,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesNetwork",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesNetwork)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesNetworkList",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesNetworkList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesNetworkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -554,7 +554,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesNetworkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -562,7 +562,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesNetworkOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -596,7 +596,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterNetworkResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterNetworkResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterNetworkResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,11 +635,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestrator",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestrator)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestrator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -675,19 +675,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurm",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurm)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurm](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodes",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodes)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -715,7 +715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -723,11 +723,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstances",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstances)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesList",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -748,7 +748,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -773,7 +773,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -781,7 +781,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDisk", GoGetter: "BootDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskInput", GoGetter: "BootDiskInput"},
@@ -832,7 +832,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -840,11 +840,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigs",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigs)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -858,7 +858,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -866,7 +866,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -894,7 +894,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -902,19 +902,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSets",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSets)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDisk",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDisk)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDiskOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -942,7 +942,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -950,7 +950,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDisk", GoGetter: "BootDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskInput", GoGetter: "BootDiskInput"},
@@ -984,7 +984,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -992,7 +992,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsList",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1006,7 +1006,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1014,7 +1014,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1057,7 +1057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1065,11 +1065,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigs",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigs)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsList",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1083,7 +1083,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1091,7 +1091,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1119,7 +1119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1127,7 +1127,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1169,7 +1169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1177,11 +1177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmPartitions",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmPartitions)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmPartitions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmPartitionsList",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmPartitionsList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmPartitionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1195,7 +1195,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1203,7 +1203,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1231,7 +1231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1239,15 +1239,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResources)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesBucket",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesBucket)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesBucket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesBucketList",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesBucketList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesBucketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1260,7 +1260,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1268,7 +1268,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesBucketOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesBucketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesBucketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1293,7 +1293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesBucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1301,15 +1301,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfig",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfig)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingBucket",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingBucket)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingBucket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -1335,7 +1335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1343,11 +1343,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingFilestore",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingFilestore)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingFilestore](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1373,7 +1373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1381,11 +1381,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingLustre",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingLustre)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingLustre](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigExistingLustreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigExistingLustreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigExistingLustreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1411,7 +1411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingLustreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1419,15 +1419,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucket",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucket)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucket](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1453,7 +1453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1461,11 +1461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespace",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespace)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespaceOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1492,7 +1492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1500,7 +1500,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoclass", GoGetter: "Autoclass"},
 			_jsii_.MemberProperty{JsiiProperty: "autoclassInput", GoGetter: "AutoclassInput"},
@@ -1537,7 +1537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1545,15 +1545,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestore",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewFilestore)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewFilestore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileShares",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileShares)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileShares](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1567,7 +1567,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1575,7 +1575,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityGb", GoGetter: "CapacityGb"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGbInput", GoGetter: "CapacityGbInput"},
@@ -1603,7 +1603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1611,7 +1611,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1648,7 +1648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tierInput", GoGetter: "TierInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1656,11 +1656,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewLustre",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewLustre)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewLustre](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewLustreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigNewLustreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigNewLustreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityGb", GoGetter: "CapacityGb"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGbInput", GoGetter: "CapacityGbInput"},
@@ -1693,7 +1693,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewLustreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1701,7 +1701,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1749,7 +1749,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1757,11 +1757,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestore",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesFilestore)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesFilestore](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreList",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesFilestoreList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesFilestoreList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1774,7 +1774,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1782,7 +1782,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesFilestoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesFilestoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1807,7 +1807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1815,7 +1815,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesList",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1829,7 +1829,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1837,11 +1837,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesLustre",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesLustre)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesLustre](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesLustreList",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesLustreList)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesLustreList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1854,7 +1854,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesLustreList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1862,7 +1862,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesLustreOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesLustreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesLustreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1887,7 +1887,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesLustreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1895,7 +1895,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterStorageResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterStorageResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1927,7 +1927,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1935,11 +1935,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts",
-		reflect.TypeOf((*HypercomputeclusterClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeoutsOutputReference",
-		reflect.TypeOf((*HypercomputeclusterClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HypercomputeclusterClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1972,7 +1972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

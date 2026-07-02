@@ -14,12 +14,12 @@ type AlloydbInstanceNetworkConfigOutputReference interface {
 	SetAllocatedIpRangeOverride(val *string)
 	AllocatedIpRangeOverrideInput() *string
 	AuthorizedExternalNetworks() AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
-	AuthorizedExternalNetworksInput() interface{}
+	AuthorizedExternalNetworksInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,12 +30,12 @@ type AlloydbInstanceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableOutboundPublicIp() interface{}
-	SetEnableOutboundPublicIp(val interface{})
-	EnableOutboundPublicIpInput() interface{}
-	EnablePublicIp() interface{}
-	SetEnablePublicIp(val interface{})
-	EnablePublicIpInput() interface{}
+	EnableOutboundPublicIp() any
+	SetEnableOutboundPublicIp(val any)
+	EnableOutboundPublicIpInput() any
+	EnablePublicIp() any
+	SetEnablePublicIp(val any)
+	EnablePublicIpInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AlloydbInstanceNetworkConfig
@@ -51,7 +51,7 @@ type AlloydbInstanceNetworkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type AlloydbInstanceNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthorizedExternalNetworks(value interface{})
+	PutAuthorizedExternalNetworks(value any)
 	ResetAllocatedIpRangeOverride()
 	ResetAuthorizedExternalNetworks()
 	ResetEnableOutboundPublicIp()
 	ResetEnablePublicIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) AuthorizedExtern
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizedExternalNetworksInput",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) AuthorizedExtern
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOutboundPublicIp",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPu
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOutboundPublicIpInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnableOutboundPu
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnablePublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIp",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnablePublicIp()
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnablePublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) EnablePublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIpInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewAlloydbInstanceNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbInstanceNetworkConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewAlloydbInstanceNetworkConfigOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewAlloydbInstanceNetworkConfigOutputReference_Override(a AlloydbInstanceNe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetAllocatedIpRangeOverride(val *string) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetAllocatedIpRangeOverride(val *string) {
 	if err := j.validateSetAllocatedIpRangeOverrideParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetAllocatedIpRan
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetEnableOutboundPublicIp(val interface{}) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetEnableOutboundPublicIp(val any) {
 	if err := j.validateSetEnableOutboundPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetEnableOutbound
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetEnablePublicIp(val interface{}) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetEnablePublicIp(val any) {
 	if err := j.validateSetEnablePublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetEnablePublicIp
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetInternalValue(val *AlloydbInstanceNetworkConfig) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetInternalValue(val *AlloydbInstanceNetworkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) PutAuthorizedExternalNetworks(value interface{}) {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) PutAuthorizedExternalNetworks(value any) {
 	if err := a.validatePutAuthorizedExternalNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthorizedExternalNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) ResetEnablePubli
 	)
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) ToString() *stri
 
 	return returns
 }
-

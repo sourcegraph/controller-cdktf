@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputRefere
 
 	return nil
 }
-

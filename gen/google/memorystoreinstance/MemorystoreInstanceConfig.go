@@ -6,9 +6,9 @@ import (
 
 type MemorystoreInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MemorystoreInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The ID to use for the instance, which will become the final component of the instance's resource name.
 	//
 	// This value is subject to the following restrictions:
@@ -56,15 +56,15 @@ type MemorystoreInstanceConfig struct {
 	// Optional. If set to true deletion of the instance will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#deletion_protection_enabled MemorystoreInstance#deletion_protection_enabled}
-	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
+	DeletionProtectionEnabled any `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// desired_auto_created_endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#desired_auto_created_endpoints MemorystoreInstance#desired_auto_created_endpoints}
-	DesiredAutoCreatedEndpoints interface{} `field:"optional" json:"desiredAutoCreatedEndpoints" yaml:"desiredAutoCreatedEndpoints"`
+	DesiredAutoCreatedEndpoints any `field:"optional" json:"desiredAutoCreatedEndpoints" yaml:"desiredAutoCreatedEndpoints"`
 	// desired_psc_auto_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#desired_psc_auto_connections MemorystoreInstance#desired_psc_auto_connections}
-	DesiredPscAutoConnections interface{} `field:"optional" json:"desiredPscAutoConnections" yaml:"desiredPscAutoConnections"`
+	DesiredPscAutoConnections any `field:"optional" json:"desiredPscAutoConnections" yaml:"desiredPscAutoConnections"`
 	// Optional. User-provided engine configurations for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#engine_configs MemorystoreInstance#engine_configs}
@@ -149,4 +149,3 @@ type MemorystoreInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#zone_distribution_config MemorystoreInstance#zone_distribution_config}
 	ZoneDistributionConfig *MemorystoreInstanceZoneDistributionConfig `field:"optional" json:"zoneDistributionConfig" yaml:"zoneDistributionConfig"`
 }
-

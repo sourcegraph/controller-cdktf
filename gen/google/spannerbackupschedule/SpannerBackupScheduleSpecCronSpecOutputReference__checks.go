@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecCronSpecOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecCronSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerBackupScheduleSpecCronSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSpannerBackupScheduleSpecCronSpecOutputReferenceParameters(terra
 
 	return nil
 }
-

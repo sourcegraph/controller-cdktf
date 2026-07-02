@@ -6,9 +6,9 @@ import (
 
 type BigqueryReservationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BigqueryReservationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the reservation. This field must only contain alphanumeric characters or dash.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_reservation#name BigqueryReservation#name}
@@ -55,7 +55,7 @@ type BigqueryReservationConfig struct {
 	// capacity specified above at most.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
-	IgnoreIdleSlots interface{} `field:"optional" json:"ignoreIdleSlots" yaml:"ignoreIdleSlots"`
+	IgnoreIdleSlots any `field:"optional" json:"ignoreIdleSlots" yaml:"ignoreIdleSlots"`
 	// The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_reservation#location BigqueryReservation#location}
@@ -80,4 +80,3 @@ type BigqueryReservationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_reservation#timeouts BigqueryReservation#timeouts}
 	Timeouts *BigqueryReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

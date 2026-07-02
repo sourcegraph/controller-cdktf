@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReferenc
 
 	return nil
 }
-

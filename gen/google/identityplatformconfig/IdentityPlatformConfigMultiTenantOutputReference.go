@@ -10,14 +10,14 @@ import (
 
 type IdentityPlatformConfigMultiTenantOutputReference interface {
 	cdktf.ComplexObject
-	AllowTenants() interface{}
-	SetAllowTenants(val interface{})
-	AllowTenantsInput() interface{}
+	AllowTenants() any
+	SetAllowTenants(val any)
+	AllowTenantsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type IdentityPlatformConfigMultiTenantOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IdentityPlatformConfigMultiTenantOutputReference interface {
 	ResetDefaultTenantLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenants() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenants() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowTenants",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenant
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenantsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenantsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowTenantsInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) AllowTenant
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewIdentityPlatformConfigMultiTenantOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMultiTenantOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIdentityPlatformConfigMultiTenantOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigMultiTenantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIdentityPlatformConfigMultiTenantOutputReference_Override(i IdentityPlat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigMultiTenantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetAllowTenants(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetAllowTenants(val any) {
 	if err := j.validateSetAllowTenantsParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetAllowTena
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetDefaultTenantLocation(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetDefaultTenantLocation(val *string) {
 	if err := j.validateSetDefaultTenantLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetDefaultTe
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetInternalValue(val *IdentityPlatformConfigMultiTenant) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetInternalValue(val *IdentityPlatformConfigMultiTenant) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) ComputeFqn(
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetListAttr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetStringAt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) GetStringMa
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) Interpolati
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) ResetDefaul
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) ToString() 
 
 	return returns
 }
-

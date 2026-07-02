@@ -109,7 +109,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobBucketListStructOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobBucketListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBatchOperationsJobBucketListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewStorageBatchOperationsJobBucketListStructOutputReferenceParamete
 
 	return nil
 }
-

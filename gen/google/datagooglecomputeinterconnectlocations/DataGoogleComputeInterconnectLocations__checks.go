@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleComputeInterconnectLocations) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleComputeInterconnectLocations) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleComputeInterconnectLocations_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataGoogleComputeInterconnectLocations_IsConstructParameters(x interface{}) error {
+func validateDataGoogleComputeInterconnectLocations_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleComputeInterconnectLocations_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataGoogleComputeInterconnectLocations_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleComputeInterconnectLocations_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleComputeInterconnectLocations_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataGoogleComputeInterconnectLocations_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleComputeInterconnectLocations_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleComputeInterconnectLocations_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInterconnectLocations) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInterconnectLocations) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataGoogleComputeInterconnectLocationsParameters(scope construct
 
 	return nil
 }
-

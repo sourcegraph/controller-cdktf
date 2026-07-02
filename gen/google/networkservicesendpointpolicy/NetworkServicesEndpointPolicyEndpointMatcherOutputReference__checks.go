@@ -109,7 +109,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewNetworkServicesEndpointPolicyEndpointMatcherOutputReferenceParam
 
 	return nil
 }
-

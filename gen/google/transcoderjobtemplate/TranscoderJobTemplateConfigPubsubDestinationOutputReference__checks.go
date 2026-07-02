@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigPubsubDestinationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigPubsubDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigPubsubDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTranscoderJobTemplateConfigPubsubDestinationOutputReferenceParam
 
 	return nil
 }
-

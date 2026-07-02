@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionTargetHttpsProxy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateComputeRegionTargetHttpsProxy_IsConstructParameters(x interface{}) error {
+func validateComputeRegionTargetHttpsProxy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionTargetHttpsProxy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeRegionTargetHttpsProxy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionTargetHttpsProxy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionTargetHttpsProxy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCertificateManagerC
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -505,4 +505,3 @@ func validateNewComputeRegionTargetHttpsProxyParameters(scope constructs.Constru
 
 	return nil
 }
-

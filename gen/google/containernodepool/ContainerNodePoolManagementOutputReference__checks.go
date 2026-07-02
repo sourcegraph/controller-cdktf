@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolManagementOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoRepairParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoRepairParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetAutoUp
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerNodePoolManagementOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

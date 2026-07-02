@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeTargetHttpProxy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeTargetHttpProxy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeTargetHttpProxy_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateComputeTargetHttpProxy_IsConstructParameters(x interface{}) error {
+func validateComputeTargetHttpProxy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeTargetHttpProxy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeTargetHttpProxy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeTargetHttpProxy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeTargetHttpProxy_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeTargetHttpProxy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeTargetHttpProxy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeTargetHttpProxy_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProxyBindParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetProxyBindParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,4 +485,3 @@ func validateNewComputeTargetHttpProxyParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

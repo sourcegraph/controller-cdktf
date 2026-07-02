@@ -1,6 +1,5 @@
 package chronicledashboardchart
 
-
 type ChronicleDashboardChartDashboardChartVisualization struct {
 	// button block.
 	//
@@ -9,7 +8,7 @@ type ChronicleDashboardChartDashboardChartVisualization struct {
 	// column_defs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#column_defs ChronicleDashboardChart#column_defs}
-	ColumnDefs interface{} `field:"optional" json:"columnDefs" yaml:"columnDefs"`
+	ColumnDefs any `field:"optional" json:"columnDefs" yaml:"columnDefs"`
 	// google_maps_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#google_maps_config ChronicleDashboardChart#google_maps_config}
@@ -19,7 +18,7 @@ type ChronicleDashboardChartDashboardChartVisualization struct {
 	// legends block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#legends ChronicleDashboardChart#legends}
-	Legends interface{} `field:"optional" json:"legends" yaml:"legends"`
+	Legends any `field:"optional" json:"legends" yaml:"legends"`
 	// markdown block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#markdown ChronicleDashboardChart#markdown}
@@ -27,7 +26,7 @@ type ChronicleDashboardChartDashboardChartVisualization struct {
 	// series block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#series ChronicleDashboardChart#series}
-	Series interface{} `field:"optional" json:"series" yaml:"series"`
+	Series any `field:"optional" json:"series" yaml:"series"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#series_column ChronicleDashboardChart#series_column}.
 	SeriesColumn *[]*string `field:"optional" json:"seriesColumn" yaml:"seriesColumn"`
 	// table_config block.
@@ -35,7 +34,7 @@ type ChronicleDashboardChartDashboardChartVisualization struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#table_config ChronicleDashboardChart#table_config}
 	TableConfig *ChronicleDashboardChartDashboardChartVisualizationTableConfig `field:"optional" json:"tableConfig" yaml:"tableConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#threshold_coloring_enabled ChronicleDashboardChart#threshold_coloring_enabled}.
-	ThresholdColoringEnabled interface{} `field:"optional" json:"thresholdColoringEnabled" yaml:"thresholdColoringEnabled"`
+	ThresholdColoringEnabled any `field:"optional" json:"thresholdColoringEnabled" yaml:"thresholdColoringEnabled"`
 	// tooltip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#tooltip ChronicleDashboardChart#tooltip}
@@ -43,14 +42,13 @@ type ChronicleDashboardChartDashboardChartVisualization struct {
 	// visual_maps block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#visual_maps ChronicleDashboardChart#visual_maps}
-	VisualMaps interface{} `field:"optional" json:"visualMaps" yaml:"visualMaps"`
+	VisualMaps any `field:"optional" json:"visualMaps" yaml:"visualMaps"`
 	// x_axes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#x_axes ChronicleDashboardChart#x_axes}
-	XAxes interface{} `field:"optional" json:"xAxes" yaml:"xAxes"`
+	XAxes any `field:"optional" json:"xAxes" yaml:"xAxes"`
 	// y_axes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#y_axes ChronicleDashboardChart#y_axes}
-	YAxes interface{} `field:"optional" json:"yAxes" yaml:"yAxes"`
+	YAxes any `field:"optional" json:"yAxes" yaml:"yAxes"`
 }
-

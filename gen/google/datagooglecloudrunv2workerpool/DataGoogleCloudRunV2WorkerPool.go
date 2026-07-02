@@ -20,11 +20,11 @@ type DataGoogleCloudRunV2WorkerPool interface {
 	ClientVersion() *string
 	Conditions() DataGoogleCloudRunV2WorkerPoolConditionsList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	CustomAudiences() *[]*string
@@ -79,7 +79,7 @@ type DataGoogleCloudRunV2WorkerPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	Scaling() DataGoogleCloudRunV2WorkerPoolScalingList
 	Template() DataGoogleCloudRunV2WorkerPoolTemplateList
@@ -88,15 +88,15 @@ type DataGoogleCloudRunV2WorkerPool interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Uid() *string
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,18 +124,18 @@ type DataGoogleCloudRunV2WorkerPool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCloudRunV2WorkerPool
@@ -203,8 +203,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) Conditions() DataGoogleCloudR
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) TerraformLabels() cdktf.Strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -673,7 +673,6 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source.
 func NewDataGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2WorkerPoolConfig) DataGoogleCloudRunV2WorkerPool {
 	_init_.Initialize()
@@ -685,7 +684,7 @@ func NewDataGoogleCloudRunV2WorkerPool(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -698,12 +697,12 @@ func NewDataGoogleCloudRunV2WorkerPool_Override(d DataGoogleCloudRunV2WorkerPool
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -722,7 +721,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -805,7 +804,7 @@ func DataGoogleCloudRunV2WorkerPool_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func DataGoogleCloudRunV2WorkerPool_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCloudRunV2WorkerPool_IsConstruct(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPool_IsConstructParameters(x); err != nil {
@@ -840,7 +839,7 @@ func DataGoogleCloudRunV2WorkerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func DataGoogleCloudRunV2WorkerPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudRunV2WorkerPool_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPool_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPool_IsTerraformDataSourceParameters(x); err != nil {
@@ -859,7 +858,7 @@ func DataGoogleCloudRunV2WorkerPool_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func DataGoogleCloudRunV2WorkerPool_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudRunV2WorkerPool_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPool_IsTerraformElementParameters(x); err != nil {
@@ -878,7 +877,7 @@ func DataGoogleCloudRunV2WorkerPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -896,27 +895,27 @@ func DataGoogleCloudRunV2WorkerPool_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1110,8 +1109,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1122,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1136,8 +1135,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1149,8 +1148,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1175,8 +1174,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1187,4 +1186,3 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPool) ToTerraform() interface{} {
 
 	return returns
 }
-

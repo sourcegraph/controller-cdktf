@@ -12,9 +12,9 @@ type StorageBucketObjectRetentionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type StorageBucketObjectRetentionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type StorageBucketObjectRetentionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_StorageBucketObjectRetentionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewStorageBucketObjectRetentionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBucketObjectRetentionOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewStorageBucketObjectRetentionOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectRetentionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewStorageBucketObjectRetentionOutputReference_Override(s StorageBucketObje
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucketObject.StorageBucketObjectRetentionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetInternalValue(val *StorageBucketObjectRetention) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetInternalValue(val *StorageBucketObjectRetention) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetMode(val *stri
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetRetainUntilTime(val *string) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetRetainUntilTime(val *string) {
 	if err := j.validateSetRetainUntilTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetRetainUntilTim
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketObjectRetentionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (s *jsiiProxy_StorageBucketObjectRetentionOutputReference) ToString() *stri
 
 	return returns
 }
-

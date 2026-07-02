@@ -90,7 +90,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateInte
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewContainerAwsClusterAuthorizationOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type BigqueryDatasetAccessRoutineAOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type BigqueryDatasetAccessRoutineAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type BigqueryDatasetAccessRoutineAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewBigqueryDatasetAccessRoutineAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryDatasetAccessRoutineAOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewBigqueryDatasetAccessRoutineAOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessRoutineAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewBigqueryDatasetAccessRoutineAOutputReference_Override(b BigqueryDatasetA
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessRoutineAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetDatasetId(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetDatasetId(val *string) {
 	if err := j.validateSetDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetDatasetId(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetInternalValue(val *BigqueryDatasetAccessRoutineA) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetInternalValue(val *BigqueryDatasetAccessRoutineA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetProjectId(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetRoutineId(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetRoutineId(val *string) {
 	if err := j.validateSetRoutineIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetRoutineId(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (b *jsiiProxy_BigqueryDatasetAccessRoutineAOutputReference) ToString() *str
 
 	return returns
 }
-

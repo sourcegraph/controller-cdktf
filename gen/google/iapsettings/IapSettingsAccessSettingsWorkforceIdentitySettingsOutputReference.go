@@ -12,9 +12,9 @@ type IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference interface
 	ResetWorkforcePools()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	return returns
 }
 
-
 func NewIapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetInternalValue(val *IapSettingsAccessSettingsWorkforceIdentitySettings) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetInternalValue(val *IapSettingsAccessSettingsWorkforceIdentitySettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference)SetWorkforcePools(val *[]*string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) SetWorkforcePools(val *[]*string) {
 	if err := j.validateSetWorkforcePoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	_jsii_.InvokeVoid(
 		i,
 		"putOauth2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	)
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 
 	return returns
 }
-

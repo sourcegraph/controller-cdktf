@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerUserWorkloadsConfigMap.ComposerUserWorkloadsConfigMap",
-		reflect.TypeOf((*ComposerUserWorkloadsConfigMap)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsConfigMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerUserWorkloadsConfigMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerUserWorkloadsConfigMap.ComposerUserWorkloadsConfigMapConfig",
-		reflect.TypeOf((*ComposerUserWorkloadsConfigMapConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsConfigMapConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerUserWorkloadsConfigMap.ComposerUserWorkloadsConfigMapTimeouts",
-		reflect.TypeOf((*ComposerUserWorkloadsConfigMapTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsConfigMapTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerUserWorkloadsConfigMap.ComposerUserWorkloadsConfigMapTimeoutsOutputReference",
-		reflect.TypeOf((*ComposerUserWorkloadsConfigMapTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsConfigMapTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

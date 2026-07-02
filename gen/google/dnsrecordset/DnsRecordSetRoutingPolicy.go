@@ -1,15 +1,14 @@
 package dnsrecordset
 
-
 type DnsRecordSetRoutingPolicy struct {
 	// Specifies whether to enable fencing for geo queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_record_set#enable_geo_fencing DnsRecordSet#enable_geo_fencing}
-	EnableGeoFencing interface{} `field:"optional" json:"enableGeoFencing" yaml:"enableGeoFencing"`
+	EnableGeoFencing any `field:"optional" json:"enableGeoFencing" yaml:"enableGeoFencing"`
 	// geo block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_record_set#geo DnsRecordSet#geo}
-	Geo interface{} `field:"optional" json:"geo" yaml:"geo"`
+	Geo any `field:"optional" json:"geo" yaml:"geo"`
 	// Specifies the health check.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_record_set#health_check DnsRecordSet#health_check}
@@ -21,6 +20,5 @@ type DnsRecordSetRoutingPolicy struct {
 	// wrr block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_record_set#wrr DnsRecordSet#wrr}
-	Wrr interface{} `field:"optional" json:"wrr" yaml:"wrr"`
+	Wrr any `field:"optional" json:"wrr" yaml:"wrr"`
 }
-

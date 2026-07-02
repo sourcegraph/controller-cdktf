@@ -136,7 +136,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewIamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReferen
 
 	return nil
 }
-

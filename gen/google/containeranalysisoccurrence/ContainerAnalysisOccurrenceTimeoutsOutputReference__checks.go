@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAnalysisOccurrenceTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

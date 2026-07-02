@@ -17,8 +17,8 @@ type VmwareengineClusterNodeTypeConfigsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type VmwareengineClusterNodeTypeConfigsList interface {
 	Get(index *float64) VmwareengineClusterNodeTypeConfigsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewVmwareengineClusterNodeTypeConfigsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwareengineClusterNodeTypeConfigsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewVmwareengineClusterNodeTypeConfigsList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewVmwareengineClusterNodeTypeConfigsList_Override(v VmwareengineClusterNod
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) Get(index *float64) V
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) ToString() *string {
 
 	return returns
 }
-

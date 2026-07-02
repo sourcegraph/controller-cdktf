@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAlloydbInstanceMachineConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

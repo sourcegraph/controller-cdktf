@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetappVolumeExportPolicyRulesList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetappVolumeExportPolicyRulesListParameters(terraformResource cd
 
 	return nil
 }
-

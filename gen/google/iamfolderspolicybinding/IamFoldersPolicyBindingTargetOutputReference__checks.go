@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamFoldersPolicyBindingTargetOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_IamFoldersPolicyBindingTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamFoldersPolicyBindingTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamFoldersPolicyBindingTargetOutputReferenceParameters(terraform
 
 	return nil
 }
-

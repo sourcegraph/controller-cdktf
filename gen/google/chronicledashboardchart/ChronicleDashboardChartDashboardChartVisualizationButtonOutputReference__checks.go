@@ -109,7 +109,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,7 +206,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference) validateSetNewTabParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference) validateSetNewTabParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,4 +253,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationButtonOutputRe
 
 	return nil
 }
-

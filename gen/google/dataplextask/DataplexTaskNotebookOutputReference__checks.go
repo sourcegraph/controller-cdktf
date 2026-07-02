@@ -117,7 +117,7 @@ func (j *jsiiProxy_DataplexTaskNotebookOutputReference) validateSetArchiveUrisPa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskNotebookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskNotebookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewDataplexTaskNotebookOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

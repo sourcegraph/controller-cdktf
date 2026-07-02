@@ -1,11 +1,10 @@
 package alloydbinstance
 
-
 type AlloydbInstanceConnectionPoolConfig struct {
 	// Whether to enabled Managed Connection Pool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#enabled AlloydbInstance#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Flags for configuring managed connection pooling when it is enabled.
 	//
 	// These flags will only be set if 'connection_pool_config.enabled' is
@@ -20,4 +19,3 @@ type AlloydbInstanceConnectionPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#flags AlloydbInstance#flags}
 	Flags *map[string]*string `field:"optional" json:"flags" yaml:"flags"`
 }
-

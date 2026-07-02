@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return nil
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetBypassTempDirValidationParameters(val interface{}) error {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetBypassTempDirValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -134,7 +134,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return nil
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return nil
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetEnableStreamingEngineParameters(val interface{}) error {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference) validateSetEnableStreamingEngineParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -350,4 +350,3 @@ func validateNewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchP
 
 	return nil
 }
-

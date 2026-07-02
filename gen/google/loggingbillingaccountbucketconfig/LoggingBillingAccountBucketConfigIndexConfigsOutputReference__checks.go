@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoggingBillingAccountBucketConfigIndexConfigsOutputReferencePara
 
 	return nil
 }
-

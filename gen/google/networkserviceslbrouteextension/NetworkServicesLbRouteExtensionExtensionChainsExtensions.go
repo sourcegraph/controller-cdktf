@@ -1,6 +1,5 @@
 package networkserviceslbrouteextension
 
-
 type NetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// The name for this extension.
 	//
@@ -31,7 +30,7 @@ type NetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// configuring a custom error response in the load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#fail_open NetworkServicesLbRouteExtension#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// List of the HTTP headers to forward to the extension (from the client or backend).
 	//
 	// If omitted, all headers are sent. Each element is a string indicating the header name.
@@ -51,7 +50,7 @@ type NetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// Only 'STREAMED' (default) body processing mode is supported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#observability_mode NetworkServicesLbRouteExtension#observability_mode}
-	ObservabilityMode interface{} `field:"optional" json:"observabilityMode" yaml:"observabilityMode"`
+	ObservabilityMode any `field:"optional" json:"observabilityMode" yaml:"observabilityMode"`
 	// Configures the send mode for request body processing.
 	//
 	// The field can only be set if 'supported_events' includes 'REQUEST_BODY'.
@@ -77,4 +76,3 @@ type NetworkServicesLbRouteExtensionExtensionChainsExtensions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#timeout NetworkServicesLbRouteExtension#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

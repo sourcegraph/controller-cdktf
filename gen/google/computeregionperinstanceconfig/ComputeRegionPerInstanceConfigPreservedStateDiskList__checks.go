@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionPerInstanceConfigPreservedStateDiskListParameters(t
 
 	return nil
 }
-

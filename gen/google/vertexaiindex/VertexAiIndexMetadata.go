@@ -1,6 +1,5 @@
 package vertexaiindex
 
-
 type VertexAiIndexMetadata struct {
 	// config block.
 	//
@@ -19,6 +18,5 @@ type VertexAiIndexMetadata struct {
 	// If this field is set together with contentsDeltaUri when calling IndexService.UpdateIndex, then existing content of the Index will be replaced by the data from the contentsDeltaUri.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index#is_complete_overwrite VertexAiIndex#is_complete_overwrite}
-	IsCompleteOverwrite interface{} `field:"optional" json:"isCompleteOverwrite" yaml:"isCompleteOverwrite"`
+	IsCompleteOverwrite any `field:"optional" json:"isCompleteOverwrite" yaml:"isCompleteOverwrite"`
 }
-

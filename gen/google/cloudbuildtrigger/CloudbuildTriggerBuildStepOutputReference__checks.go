@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateInterpolat
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetAllowEx
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetAllowFailureParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetAllowFailureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetArgsPar
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,7 +262,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -369,4 +369,3 @@ func validateNewCloudbuildTriggerBuildStepOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

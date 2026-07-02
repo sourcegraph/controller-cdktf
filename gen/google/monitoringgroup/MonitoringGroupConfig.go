@@ -6,9 +6,9 @@ import (
 
 type MonitoringGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitoringGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A user-assigned name for this group, used only for display purposes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_group#display_name MonitoringGroup#display_name}
@@ -38,7 +38,7 @@ type MonitoringGroupConfig struct {
 	// groups that are clusters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_group#is_cluster MonitoringGroup#is_cluster}
-	IsCluster interface{} `field:"optional" json:"isCluster" yaml:"isCluster"`
+	IsCluster any `field:"optional" json:"isCluster" yaml:"isCluster"`
 	// The name of the group's parent, if it has one.
 	//
 	// The format is
@@ -54,4 +54,3 @@ type MonitoringGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_group#timeouts MonitoringGroup#timeouts}
 	Timeouts *MonitoringGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -12,9 +12,9 @@ type DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference interface
 	ResetIncludeObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	return returns
 }
 
-
 func NewDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewDatastreamStreamSourceConfigSalesforceSourceConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetInternalValue(val *DatastreamStreamSourceConfigSalesforceSourceConfig) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetInternalValue(val *DatastreamStreamSourceConfigSalesforceSourceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetPollingInterval(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetPollingInterval(val *string) {
 	if err := j.validateSetPollingIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"putExcludeObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -515,7 +514,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"putIncludeObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 
 	return returns
 }
-

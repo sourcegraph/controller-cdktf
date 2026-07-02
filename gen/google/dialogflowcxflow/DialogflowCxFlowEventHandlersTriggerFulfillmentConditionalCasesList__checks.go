@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCas
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesL
 
 	return nil
 }
-

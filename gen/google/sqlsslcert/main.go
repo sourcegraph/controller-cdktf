@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlSslCert.SqlSslCert",
-		reflect.TypeOf((*SqlSslCert)(nil)).Elem(),
+		reflect.TypeFor[SqlSslCert](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlSslCert{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlSslCert.SqlSslCertConfig",
-		reflect.TypeOf((*SqlSslCertConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlSslCertConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeouts",
-		reflect.TypeOf((*SqlSslCertTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SqlSslCertTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlSslCert.SqlSslCertTimeoutsOutputReference",
-		reflect.TypeOf((*SqlSslCertTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlSslCertTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlSslCertTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

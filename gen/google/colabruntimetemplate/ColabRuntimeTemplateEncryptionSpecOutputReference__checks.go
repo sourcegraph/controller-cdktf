@@ -98,7 +98,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewColabRuntimeTemplateEncryptionSpecOutputReferenceParameters(terr
 
 	return nil
 }
-

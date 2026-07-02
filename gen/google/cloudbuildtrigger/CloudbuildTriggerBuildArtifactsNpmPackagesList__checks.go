@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudbuildTriggerBuildArtifactsNpmPackagesListParameters(terrafo
 
 	return nil
 }
-

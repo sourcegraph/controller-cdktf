@@ -12,9 +12,9 @@ type OrgPolicyCustomConstraintTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type OrgPolicyCustomConstraintTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type OrgPolicyCustomConstraintTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type OrgPolicyCustomConstraintTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) UpdateInput
 	return returns
 }
 
-
 func NewOrgPolicyCustomConstraintTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrgPolicyCustomConstraintTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewOrgPolicyCustomConstraintTimeoutsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewOrgPolicyCustomConstraintTimeoutsOutputReference_Override(o OrgPolicyCus
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraintTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetCreate(va
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetDelete(va
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) Interpolati
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) ResetUpdate
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (o *jsiiProxy_OrgPolicyCustomConstraintTimeoutsOutputReference) ToString() 
 
 	return returns
 }
-

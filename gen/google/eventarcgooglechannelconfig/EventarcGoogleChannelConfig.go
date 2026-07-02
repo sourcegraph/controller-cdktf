@@ -15,15 +15,15 @@ type EventarcGoogleChannelConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
 	CryptoKeyNameInput() *string
@@ -62,27 +62,27 @@ type EventarcGoogleChannelConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EventarcGoogleChannelConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type EventarcGoogleChannelConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type EventarcGoogleChannelConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type EventarcGoogleChannelConfig interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EventarcGoogleChannelConfig
@@ -155,8 +155,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) Timeouts() EventarcGoogleChannel
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleChannelConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -435,7 +435,6 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config} Resource.
 func NewEventarcGoogleChannelConfig(scope constructs.Construct, id *string, config *EventarcGoogleChannelConfigConfig) EventarcGoogleChannelConfig {
 	_init_.Initialize()
@@ -447,7 +446,7 @@ func NewEventarcGoogleChannelConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewEventarcGoogleChannelConfig_Override(e EventarcGoogleChannelConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetId(val *string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetLocation(val *string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetName(val *string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetProject(val *string) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventarcGoogleChannelConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func EventarcGoogleChannelConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func EventarcGoogleChannelConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool {
+func EventarcGoogleChannelConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleChannelConfig_IsConstructParameters(x); err != nil {
@@ -635,7 +634,7 @@ func EventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func EventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool {
+func EventarcGoogleChannelConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleChannelConfig_IsTerraformElementParameters(x); err != nil {
@@ -654,7 +653,7 @@ func EventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func EventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcGoogleChannelConfig_IsTerraformResource(x interface{}) *bool {
+func EventarcGoogleChannelConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleChannelConfig_IsTerraformResourceParameters(x); err != nil {
@@ -673,7 +672,7 @@ func EventarcGoogleChannelConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,31 +697,31 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EventarcGoogleChannelConfig) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcGoogleChannelConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,15 +849,15 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -877,7 +876,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -890,7 +889,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,18 +903,18 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EventarcGoogleChannelConfig) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -926,7 +925,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -937,7 +936,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -948,7 +947,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) PutTimeouts(value *EventarcGoogl
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,8 +991,8 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1005,8 +1004,8 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1018,8 +1017,8 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1031,8 +1030,8 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1057,8 +1056,8 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleChannelConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleChannelConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1069,4 +1068,3 @@ func (e *jsiiProxy_EventarcGoogleChannelConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

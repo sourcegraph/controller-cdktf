@@ -12,9 +12,9 @@ type DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,14 +29,14 @@ type DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference interfa
 	Fqn() *string
 	InternalValue() *DataLossPreventionDiscoveryConfigActionsTagResources
 	SetInternalValue(val *DataLossPreventionDiscoveryConfigActionsTagResources)
-	LowerDataRiskToLow() interface{}
-	SetLowerDataRiskToLow(val interface{})
-	LowerDataRiskToLowInput() interface{}
+	LowerDataRiskToLow() any
+	SetLowerDataRiskToLow(val any)
+	LowerDataRiskToLowInput() any
 	ProfileGenerationsToTag() *[]*string
 	SetProfileGenerationsToTag(val *[]*string)
 	ProfileGenerationsToTagInput() *[]*string
 	TagConditions() DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList
-	TagConditionsInput() interface{}
+	TagConditionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTagConditions(value interface{})
+	PutTagConditions(value any)
 	ResetLowerDataRiskToLow()
 	ResetProfileGenerationsToTag()
 	ResetTagConditions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) LowerDataRiskToLow() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) LowerDataRiskToLow() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lowerDataRiskToLow",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) LowerDataRiskToLowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) LowerDataRiskToLowInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lowerDataRiskToLowInput",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) TagConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) TagConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tagConditionsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return returns
 }
 
-
 func NewDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetInternalValue(val *DataLossPreventionDiscoveryConfigActionsTagResources) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetInternalValue(val *DataLossPreventionDiscoveryConfigActionsTagResources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetLowerDataRiskToLow(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetLowerDataRiskToLow(val any) {
 	if err := j.validateSetLowerDataRiskToLowParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetProfileGenerationsToTag(val *[]*string) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetProfileGenerationsToTag(val *[]*string) {
 	if err := j.validateSetProfileGenerationsToTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) PutTagConditions(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) PutTagConditions(value any) {
 	if err := d.validatePutTagConditionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTagConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 
 	return returns
 }
-

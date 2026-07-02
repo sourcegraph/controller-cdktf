@@ -109,7 +109,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReferenc
 
 	return nil
 }
-

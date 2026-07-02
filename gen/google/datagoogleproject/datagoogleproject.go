@@ -17,11 +17,11 @@ type DataGoogleProject interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,19 +58,19 @@ type DataGoogleProject interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,18 +97,18 @@ type DataGoogleProject interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleProject
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataGoogleProject) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProject) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleProject) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataGoogleProject) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProject) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProject) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_DataGoogleProject) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProject) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProject) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_DataGoogleProject) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProject) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleProject) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -406,7 +406,6 @@ func (j *jsiiProxy_DataGoogleProject) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/project google_project} Data Source.
 func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGoogleProjectConfig) DataGoogleProject {
 	_init_.Initialize()
@@ -418,7 +417,7 @@ func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -431,12 +430,12 @@ func NewDataGoogleProject_Override(d DataGoogleProject, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleProject) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_DataGoogleProject)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleProject) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleProject) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataGoogleProject)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleProject) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataGoogleProject)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleProject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataGoogleProject)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetProjectId(val *string) {
+func (j *jsiiProxy_DataGoogleProject) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_DataGoogleProject)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleProject) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -516,7 +515,7 @@ func DataGoogleProject_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func DataGoogleProject_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleProject_IsConstruct(x interface{}) *bool {
+func DataGoogleProject_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProject_IsConstructParameters(x); err != nil {
@@ -551,7 +550,7 @@ func DataGoogleProject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func DataGoogleProject_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleProject_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleProject_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProject_IsTerraformDataSourceParameters(x); err != nil {
@@ -570,7 +569,7 @@ func DataGoogleProject_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func DataGoogleProject_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleProject_IsTerraformElement(x interface{}) *bool {
+func DataGoogleProject_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProject_IsTerraformElementParameters(x); err != nil {
@@ -589,7 +588,7 @@ func DataGoogleProject_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,27 +606,27 @@ func DataGoogleProject_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProject) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleProject) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataGoogleProject) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataGoogleProject) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataGoogleProject) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataGoogleProject) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataGoogleProject) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataGoogleProject) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataGoogleProject) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleProject) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataGoogleProject) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataGoogleProject) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -813,8 +812,8 @@ func (d *jsiiProxy_DataGoogleProject) ResetProjectId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleProject) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleProject) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -826,8 +825,8 @@ func (d *jsiiProxy_DataGoogleProject) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProject) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleProject) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -839,8 +838,8 @@ func (d *jsiiProxy_DataGoogleProject) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProject) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProject) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -852,8 +851,8 @@ func (d *jsiiProxy_DataGoogleProject) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProject) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProject) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -878,8 +877,8 @@ func (d *jsiiProxy_DataGoogleProject) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProject) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProject) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -890,4 +889,3 @@ func (d *jsiiProxy_DataGoogleProject) ToTerraform() interface{} {
 
 	return returns
 }
-

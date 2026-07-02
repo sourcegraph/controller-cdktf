@@ -36,7 +36,7 @@ type DataGoogleContainerClusterConfidentialNodesList interface {
 	Get(index *float64) DataGoogleContainerClusterConfidentialNodesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) WrapsSet() *
 	return returns
 }
 
-
 func NewDataGoogleContainerClusterConfidentialNodesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleContainerClusterConfidentialNodesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataGoogleContainerClusterConfidentialNodesList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataGoogleContainerClusterConfidentialNodesList_Override(d DataGoogleCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) AllWithMapKe
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) Get(index *f
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataGoogleContainerClusterConfidentialNodesList) ToString() *
 
 	return returns
 }
-

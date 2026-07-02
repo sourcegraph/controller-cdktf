@@ -12,9 +12,9 @@ type BigqueryJobQueryDefaultDatasetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type BigqueryJobQueryDefaultDatasetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type BigqueryJobQueryDefaultDatasetOutputReference interface {
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewBigqueryJobQueryDefaultDatasetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryJobQueryDefaultDatasetOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewBigqueryJobQueryDefaultDatasetOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewBigqueryJobQueryDefaultDatasetOutputReference_Override(b BigqueryJobQuer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetDatasetId(val *string) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetDatasetId(val *string) {
 	if err := j.validateSetDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetDatasetId(va
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetInternalValue(val *BigqueryJobQueryDefaultDataset) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetInternalValue(val *BigqueryJobQueryDefaultDataset) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetProjectId(va
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) InterpolationF
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) ResetProjectId
 	)
 }
 
-func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) ToString() *st
 
 	return returns
 }
-

@@ -120,7 +120,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewOsConfigPatchDeploymentPatchConfigPreStepOutputReferenceParamete
 
 	return nil
 }
-

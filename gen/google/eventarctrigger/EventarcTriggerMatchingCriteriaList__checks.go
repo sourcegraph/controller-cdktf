@@ -34,7 +34,7 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEventarcTriggerMatchingCriteriaListParameters(terraformResource 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallat
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallation
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package gkebackupbackupplan
 
-
 type GkeBackupBackupPlanBackupScheduleRpoConfig struct {
 	// Defines the target RPO for the BackupPlan in minutes, which means the target maximum data loss in time that is acceptable for this BackupPlan.
 	//
@@ -12,6 +11,5 @@ type GkeBackupBackupPlanBackupScheduleRpoConfig struct {
 	// exclusion_windows block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#exclusion_windows GkeBackupBackupPlan#exclusion_windows}
-	ExclusionWindows interface{} `field:"optional" json:"exclusionWindows" yaml:"exclusionWindows"`
+	ExclusionWindows any `field:"optional" json:"exclusionWindows" yaml:"exclusionWindows"`
 }
-

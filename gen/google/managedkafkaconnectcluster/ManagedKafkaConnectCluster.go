@@ -20,15 +20,15 @@ type ManagedKafkaConnectCluster interface {
 	SetConnectClusterId(val *string)
 	ConnectClusterIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -72,29 +72,29 @@ type ManagedKafkaConnectCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ManagedKafkaConnectClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type ManagedKafkaConnectCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type ManagedKafkaConnectCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type ManagedKafkaConnectCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ManagedKafkaConnectCluster
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) ConnectClusterIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -539,8 +539,8 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) Timeouts() ManagedKafkaConnectClu
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -559,7 +559,6 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/managed_kafka_connect_cluster google_managed_kafka_connect_cluster} Resource.
 func NewManagedKafkaConnectCluster(scope constructs.Construct, id *string, config *ManagedKafkaConnectClusterConfig) ManagedKafkaConnectCluster {
 	_init_.Initialize()
@@ -571,7 +570,7 @@ func NewManagedKafkaConnectCluster(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -584,12 +583,12 @@ func NewManagedKafkaConnectCluster_Override(m ManagedKafkaConnectCluster, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetConnectClusterId(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetConnectClusterId(val *string) {
 	if err := j.validateSetConnectClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetConnectClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetId(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetKafkaCluster(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetKafkaCluster(val *string) {
 	if err := j.validateSetKafkaClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetKafkaCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLocation(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetProject(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func ManagedKafkaConnectCluster_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func ManagedKafkaConnectCluster_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ManagedKafkaConnectCluster_IsConstruct(x interface{}) *bool {
+func ManagedKafkaConnectCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedKafkaConnectCluster_IsConstructParameters(x); err != nil {
@@ -770,7 +769,7 @@ func ManagedKafkaConnectCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func ManagedKafkaConnectCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedKafkaConnectCluster_IsTerraformElement(x interface{}) *bool {
+func ManagedKafkaConnectCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedKafkaConnectCluster_IsTerraformElementParameters(x); err != nil {
@@ -789,7 +788,7 @@ func ManagedKafkaConnectCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func ManagedKafkaConnectCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ManagedKafkaConnectCluster_IsTerraformResource(x interface{}) *bool {
+func ManagedKafkaConnectCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManagedKafkaConnectCluster_IsTerraformResourceParameters(x); err != nil {
@@ -808,7 +807,7 @@ func ManagedKafkaConnectCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -833,31 +832,31 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_ManagedKafkaConnectCluster) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ManagedKafkaConnectCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,15 +984,15 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1012,7 +1011,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1025,7 +1024,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,18 +1038,18 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_ManagedKafkaConnectCluster) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) PutCapacityConfig(value *ManagedK
 	_jsii_.InvokeVoid(
 		m,
 		"putCapacityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) PutGcpConfig(value *ManagedKafkaC
 	_jsii_.InvokeVoid(
 		m,
 		"putGcpConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1105,7 +1104,7 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) PutTimeouts(value *ManagedKafkaCo
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1149,8 +1148,8 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1162,8 +1161,8 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1175,8 +1174,8 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1188,8 +1187,8 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1214,8 +1213,8 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ManagedKafkaConnectCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1226,4 +1225,3 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

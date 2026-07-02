@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewContainerClusterConfidentialNodesOutputReferenceParameters(terra
 
 	return nil
 }
-

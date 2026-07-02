@@ -34,7 +34,7 @@ func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGeminiRepositoryGroupRepositoriesListParameters(terraformResourc
 
 	return nil
 }
-

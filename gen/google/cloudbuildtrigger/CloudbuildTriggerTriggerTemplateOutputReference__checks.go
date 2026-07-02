@@ -114,7 +114,7 @@ func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewCloudbuildTriggerTriggerTemplateOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type ChronicleDataTableColumnInfoOutputReference interface {
 	ColumnTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,20 +33,20 @@ type ChronicleDataTableColumnInfoOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	KeyColumn() interface{}
-	SetKeyColumn(val interface{})
-	KeyColumnInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	KeyColumn() any
+	SetKeyColumn(val any)
+	KeyColumnInput() any
 	MappedColumnPath() *string
 	SetMappedColumnPath(val *string)
 	MappedColumnPathInput() *string
 	OriginalColumn() *string
 	SetOriginalColumn(val *string)
 	OriginalColumnInput() *string
-	RepeatedValues() interface{}
-	SetRepeatedValues(val interface{})
-	RepeatedValuesInput() interface{}
+	RepeatedValues() any
+	SetRepeatedValues(val any)
+	RepeatedValuesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type ChronicleDataTableColumnInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type ChronicleDataTableColumnInfoOutputReference interface {
 	ResetRepeatedValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ColumnTypeInput(
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) KeyColumn() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) KeyColumn() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keyColumn",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) KeyColumn() inte
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) KeyColumnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) KeyColumnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keyColumnInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) OriginalColumnIn
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) RepeatedValues() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) RepeatedValues() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repeatedValues",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) RepeatedValues()
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) RepeatedValuesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) RepeatedValuesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repeatedValuesInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewChronicleDataTableColumnInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ChronicleDataTableColumnInfoOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewChronicleDataTableColumnInfoOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewChronicleDataTableColumnInfoOutputReference_Override(c ChronicleDataTabl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetColumnIndex(val *float64) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetColumnIndex(val *float64) {
 	if err := j.validateSetColumnIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetColumnIndex(va
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetColumnType(val *string) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetColumnType(val *string) {
 	if err := j.validateSetColumnTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetColumnType(val
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetKeyColumn(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetKeyColumn(val any) {
 	if err := j.validateSetKeyColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetKeyColumn(val 
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetMappedColumnPath(val *string) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetMappedColumnPath(val *string) {
 	if err := j.validateSetMappedColumnPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetMappedColumnPa
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetOriginalColumn(val *string) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetOriginalColumn(val *string) {
 	if err := j.validateSetOriginalColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetOriginalColumn
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetRepeatedValues(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetRepeatedValues(val any) {
 	if err := j.validateSetRepeatedValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetRepeatedValues
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ResetRepeatedVal
 	)
 }
 
-func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (c *jsiiProxy_ChronicleDataTableColumnInfoOutputReference) ToString() *stri
 
 	return returns
 }
-

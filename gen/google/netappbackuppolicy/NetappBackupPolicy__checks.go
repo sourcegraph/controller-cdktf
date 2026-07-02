@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetappBackupPolicy) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetappBackupPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetappBackupPolicy) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetappBackupPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetappBackupPolicy_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateNetappBackupPolicy_IsConstructParameters(x interface{}) error {
+func validateNetappBackupPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetappBackupPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetappBackupPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateNetappBackupPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetappBackupPolicy_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateNetappBackupPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateNetappBackupPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetappBackupPolicy_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetappBackupPolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_NetappBackupPolicy) validateSetDescriptionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupPolicy) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupPolicy) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_NetappBackupPolicy) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetappBackupPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewNetappBackupPolicyParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

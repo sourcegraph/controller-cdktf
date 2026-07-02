@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDialogflowEncryptionSpecTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

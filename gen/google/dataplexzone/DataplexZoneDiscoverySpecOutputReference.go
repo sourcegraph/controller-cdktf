@@ -12,9 +12,9 @@ type DataplexZoneDiscoverySpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type DataplexZoneDiscoverySpecOutputReference interface {
 	CreationStack() *[]*string
 	CsvOptions() DataplexZoneDiscoverySpecCsvOptionsOutputReference
 	CsvOptionsInput() *DataplexZoneDiscoverySpecCsvOptions
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	ExcludePatterns() *[]*string
 	SetExcludePatterns(val *[]*string)
 	ExcludePatternsInput() *[]*string
@@ -56,7 +56,7 @@ type DataplexZoneDiscoverySpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DataplexZoneDiscoverySpecOutputReference interface {
 	ResetSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_DataplexZoneDiscoverySpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) CsvOptionsInput() *
 	return returns
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) Enabled() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewDataplexZoneDiscoverySpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexZoneDiscoverySpecOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewDataplexZoneDiscoverySpecOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewDataplexZoneDiscoverySpecOutputReference_Override(d DataplexZoneDiscover
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetExcludePatterns(val *[]*string) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetExcludePatterns(val *[]*string) {
 	if err := j.validateSetExcludePatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetExcludePatterns(v
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetIncludePatterns(val *[]*string) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetIncludePatterns(val *[]*string) {
 	if err := j.validateSetIncludePatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetIncludePatterns(v
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetInternalValue(val *DataplexZoneDiscoverySpec) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetInternalValue(val *DataplexZoneDiscoverySpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetSchedule(val *string) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetSchedule(val *str
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,16 +428,16 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) PutCsvOptions(value
 	_jsii_.InvokeVoid(
 		d,
 		"putCsvOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) PutJsonOptions(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putJsonOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) ResetSchedule() {
 	)
 }
 
-func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecOutputReference) ToString() *string 
 
 	return returns
 }
-

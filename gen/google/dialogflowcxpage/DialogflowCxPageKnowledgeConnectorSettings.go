@@ -1,15 +1,14 @@
 package dialogflowcxpage
 
-
 type DialogflowCxPageKnowledgeConnectorSettings struct {
 	// data_store_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#data_store_connections DialogflowCxPage#data_store_connections}
-	DataStoreConnections interface{} `field:"optional" json:"dataStoreConnections" yaml:"dataStoreConnections"`
+	DataStoreConnections any `field:"optional" json:"dataStoreConnections" yaml:"dataStoreConnections"`
 	// Whether Knowledge Connector is enabled or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#enabled DialogflowCxPage#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The target flow to transition to.
 	//
 	// Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<FlowID>.
@@ -30,4 +29,3 @@ type DialogflowCxPageKnowledgeConnectorSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#trigger_fulfillment DialogflowCxPage#trigger_fulfillment}
 	TriggerFulfillment *DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillment `field:"optional" json:"triggerFulfillment" yaml:"triggerFulfillment"`
 }
-

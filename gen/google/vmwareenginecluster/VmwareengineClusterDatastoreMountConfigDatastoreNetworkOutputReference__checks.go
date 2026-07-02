@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutput
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputRef
 
 	return nil
 }
-

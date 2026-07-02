@@ -12,9 +12,9 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterConfidentialNodes
@@ -46,7 +46,7 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	ResetConfidentialInstanceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ContainerClusterConfidentialNodesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Enabled() i
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewContainerClusterConfidentialNodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterConfidentialNodesOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewContainerClusterConfidentialNodesOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewContainerClusterConfidentialNodesOutputReference_Override(c ContainerClu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetConfidentialInstanceType(val *string) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetConfidentialInstanceType(val *string) {
 	if err := j.validateSetConfidentialInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetConfident
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetInternalValue(val *ContainerClusterConfidentialNodes) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetInternalValue(val *ContainerClusterConfidentialNodes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ResetConfid
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ToString() 
 
 	return returns
 }
-

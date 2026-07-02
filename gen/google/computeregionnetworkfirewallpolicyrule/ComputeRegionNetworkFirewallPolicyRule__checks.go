@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateAddMoveTarget
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateMoveFromIdPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validatePutMatchParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validatePutTargetSecureTagsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validatePutTargetSecureTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateComputeRegionNetworkFirewallPolicyRule_GenerateConfigForImportParam
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateComputeRegionNetworkFirewallPolicyRule_IsConstructParameters(x inte
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyRule_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateComputeRegionNetworkFirewallPolicyRule_IsTerraformElementParameters
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetActionPara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -411,7 +411,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetDirectionP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -431,7 +431,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetDisabledPa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -491,7 +491,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -585,7 +585,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetTargetType
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetTlsInspectParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateSetTlsInspectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -623,4 +623,3 @@ func validateNewComputeRegionNetworkFirewallPolicyRuleParameters(scope construct
 
 	return nil
 }
-

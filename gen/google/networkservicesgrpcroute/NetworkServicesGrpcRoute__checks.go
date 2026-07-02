@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRoute) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesGrpcRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRoute) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesGrpcRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRoute) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRoute) validatePutRulesParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesGrpcRoute) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateNetworkServicesGrpcRoute_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateNetworkServicesGrpcRoute_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesGrpcRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateNetworkServicesGrpcRoute_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateNetworkServicesGrpcRoute_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesGrpcRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateNetworkServicesGrpcRoute_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateNetworkServicesGrpcRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesGrpcRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateNetworkServicesGrpcRoute_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -456,7 +456,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewNetworkServicesGrpcRouteParameters(scope constructs.Construct, i
 
 	return nil
 }
-

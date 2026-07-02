@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateInterp
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validatePutSpecParameters(value interface{}) error {
+func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validatePutSpecParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetDat
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewCesToolDataStoreToolBoostSpecsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

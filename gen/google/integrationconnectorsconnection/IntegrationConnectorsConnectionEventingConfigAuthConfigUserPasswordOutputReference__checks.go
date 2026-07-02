@@ -109,7 +109,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPa
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewIntegrationConnectorsConnectionEventingConfigAuthConfigUserPassw
 
 	return nil
 }
-

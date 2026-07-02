@@ -1,6 +1,5 @@
 package lustreinstance
 
-
 type LustreInstanceAccessRulesOptions struct {
 	// The squash mode for the default access rule. Possible values: NO_SQUASH ROOT_SQUASH.
 	//
@@ -9,7 +8,7 @@ type LustreInstanceAccessRulesOptions struct {
 	// access_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/lustre_instance#access_rules LustreInstance#access_rules}
-	AccessRules interface{} `field:"optional" json:"accessRules" yaml:"accessRules"`
+	AccessRules any `field:"optional" json:"accessRules" yaml:"accessRules"`
 	// The user squash GID for the default access rule.
 	//
 	// This user squash GID applies to all root users connecting from clients
@@ -27,4 +26,3 @@ type LustreInstanceAccessRulesOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/lustre_instance#default_squash_uid LustreInstance#default_squash_uid}
 	DefaultSquashUid *float64 `field:"optional" json:"defaultSquashUid" yaml:"defaultSquashUid"`
 }
-

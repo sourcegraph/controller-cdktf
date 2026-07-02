@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAccessConfigList) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAccessConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAccessConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceFromTemplateNetworkInterfaceAccessConfigListParam
 
 	return nil
 }
-

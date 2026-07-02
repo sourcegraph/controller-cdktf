@@ -34,7 +34,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsP
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationVisualMapsPiec
 
 	return nil
 }
-

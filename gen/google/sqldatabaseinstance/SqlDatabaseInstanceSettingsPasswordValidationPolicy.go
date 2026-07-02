@@ -1,11 +1,10 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettingsPasswordValidationPolicy struct {
 	// Whether the password policy is enabled or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enable_password_policy SqlDatabaseInstance#enable_password_policy}
-	EnablePasswordPolicy interface{} `field:"required" json:"enablePasswordPolicy" yaml:"enablePasswordPolicy"`
+	EnablePasswordPolicy any `field:"required" json:"enablePasswordPolicy" yaml:"enablePasswordPolicy"`
 	// Password complexity.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#complexity SqlDatabaseInstance#complexity}
@@ -13,7 +12,7 @@ type SqlDatabaseInstanceSettingsPasswordValidationPolicy struct {
 	// Disallow username as a part of the password.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#disallow_username_substring SqlDatabaseInstance#disallow_username_substring}
-	DisallowUsernameSubstring interface{} `field:"optional" json:"disallowUsernameSubstring" yaml:"disallowUsernameSubstring"`
+	DisallowUsernameSubstring any `field:"optional" json:"disallowUsernameSubstring" yaml:"disallowUsernameSubstring"`
 	// Minimum number of characters allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#min_length SqlDatabaseInstance#min_length}
@@ -27,4 +26,3 @@ type SqlDatabaseInstanceSettingsPasswordValidationPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#reuse_interval SqlDatabaseInstance#reuse_interval}
 	ReuseInterval *float64 `field:"optional" json:"reuseInterval" yaml:"reuseInterval"`
 }
-

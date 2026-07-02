@@ -12,9 +12,9 @@ type DiscoveryEngineWidgetConfigUiSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,34 +26,34 @@ type DiscoveryEngineWidgetConfigUiSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataStoreUiConfigs() DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList
-	DataStoreUiConfigsInput() interface{}
+	DataStoreUiConfigsInput() any
 	DefaultSearchRequestOrderBy() *string
 	SetDefaultSearchRequestOrderBy(val *string)
 	DefaultSearchRequestOrderByInput() *string
-	DisableUserEventsCollection() interface{}
-	SetDisableUserEventsCollection(val interface{})
-	DisableUserEventsCollectionInput() interface{}
-	EnableAutocomplete() interface{}
-	SetEnableAutocomplete(val interface{})
-	EnableAutocompleteInput() interface{}
-	EnableCreateAgentButton() interface{}
-	SetEnableCreateAgentButton(val interface{})
-	EnableCreateAgentButtonInput() interface{}
-	EnablePeopleSearch() interface{}
-	SetEnablePeopleSearch(val interface{})
-	EnablePeopleSearchInput() interface{}
-	EnableQualityFeedback() interface{}
-	SetEnableQualityFeedback(val interface{})
-	EnableQualityFeedbackInput() interface{}
-	EnableSafeSearch() interface{}
-	SetEnableSafeSearch(val interface{})
-	EnableSafeSearchInput() interface{}
-	EnableSearchAsYouType() interface{}
-	SetEnableSearchAsYouType(val interface{})
-	EnableSearchAsYouTypeInput() interface{}
-	EnableVisualContentSummary() interface{}
-	SetEnableVisualContentSummary(val interface{})
-	EnableVisualContentSummaryInput() interface{}
+	DisableUserEventsCollection() any
+	SetDisableUserEventsCollection(val any)
+	DisableUserEventsCollectionInput() any
+	EnableAutocomplete() any
+	SetEnableAutocomplete(val any)
+	EnableAutocompleteInput() any
+	EnableCreateAgentButton() any
+	SetEnableCreateAgentButton(val any)
+	EnableCreateAgentButtonInput() any
+	EnablePeopleSearch() any
+	SetEnablePeopleSearch(val any)
+	EnablePeopleSearchInput() any
+	EnableQualityFeedback() any
+	SetEnableQualityFeedback(val any)
+	EnableQualityFeedbackInput() any
+	EnableSafeSearch() any
+	SetEnableSafeSearch(val any)
+	EnableSafeSearchInput() any
+	EnableSearchAsYouType() any
+	SetEnableSearchAsYouType(val any)
+	EnableSearchAsYouTypeInput() any
+	EnableVisualContentSummary() any
+	SetEnableVisualContentSummary(val any)
+	EnableVisualContentSummaryInput() any
 	// Experimental.
 	Fqn() *string
 	GenerativeAnswerConfig() DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference
@@ -77,7 +77,7 @@ type DiscoveryEngineWidgetConfigUiSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type DiscoveryEngineWidgetConfigUiSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDataStoreUiConfigs(value interface{})
+	PutDataStoreUiConfigs(value any)
 	PutGenerativeAnswerConfig(value *DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig)
 	ResetDataStoreUiConfigs()
 	ResetDefaultSearchRequestOrderBy()
@@ -115,7 +115,7 @@ type DiscoveryEngineWidgetConfigUiSettingsOutputReference interface {
 	ResetResultDescriptionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ type jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DataSto
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DataStoreUiConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DataStoreUiConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataStoreUiConfigsInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Default
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DisableUserEventsCollection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DisableUserEventsCollection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableUserEventsCollection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Disable
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DisableUserEventsCollectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) DisableUserEventsCollectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableUserEventsCollectionInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Disable
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableAutocomplete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableAutocomplete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutocomplete",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableA
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableAutocompleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableAutocompleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutocompleteInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableA
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableCreateAgentButton() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableCreateAgentButton() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCreateAgentButton",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableC
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableCreateAgentButtonInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableCreateAgentButtonInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCreateAgentButtonInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableC
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnablePeopleSearch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnablePeopleSearch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePeopleSearch",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableP
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnablePeopleSearchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnablePeopleSearchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePeopleSearchInput",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableP
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQualityFeedback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQualityFeedback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableQualityFeedback",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQ
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQualityFeedbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQualityFeedbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableQualityFeedbackInput",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableQ
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSafeSearch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSafeSearch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSafeSearch",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSafeSearchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSafeSearchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSafeSearchInput",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSearchAsYouType() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSearchAsYouType() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSearchAsYouType",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSearchAsYouTypeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableSearchAsYouTypeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSearchAsYouTypeInput",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableVisualContentSummary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableVisualContentSummary() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVisualContentSummary",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableV
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableVisualContentSummaryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) EnableVisualContentSummaryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVisualContentSummaryInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewDiscoveryEngineWidgetConfigUiSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewDiscoveryEngineWidgetConfigUiSettingsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewDiscoveryEngineWidgetConfigUiSettingsOutputReference_Override(d Discover
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetDefaultSearchRequestOrderBy(val *string) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetDefaultSearchRequestOrderBy(val *string) {
 	if err := j.validateSetDefaultSearchRequestOrderByParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetDefau
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetDisableUserEventsCollection(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetDisableUserEventsCollection(val any) {
 	if err := j.validateSetDisableUserEventsCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetDisab
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableAutocomplete(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableAutocomplete(val any) {
 	if err := j.validateSetEnableAutocompleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableCreateAgentButton(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableCreateAgentButton(val any) {
 	if err := j.validateSetEnableCreateAgentButtonParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnablePeopleSearch(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnablePeopleSearch(val any) {
 	if err := j.validateSetEnablePeopleSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableQualityFeedback(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableQualityFeedback(val any) {
 	if err := j.validateSetEnableQualityFeedbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableSafeSearch(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableSafeSearch(val any) {
 	if err := j.validateSetEnableSafeSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableSearchAsYouType(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableSearchAsYouType(val any) {
 	if err := j.validateSetEnableSearchAsYouTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnableVisualContentSummary(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetEnableVisualContentSummary(val any) {
 	if err := j.validateSetEnableVisualContentSummaryParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetInteractionType(val *string) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetInteractionType(val *string) {
 	if err := j.validateSetInteractionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetInternalValue(val *DiscoveryEngineWidgetConfigUiSettings) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetInternalValue(val *DiscoveryEngineWidgetConfigUiSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetResultDescriptionType(val *string) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetResultDescriptionType(val *string) {
 	if err := j.validateSetResultDescriptionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetResul
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,16 +674,16 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Compute
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetList
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,21 +840,21 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) PutDataStoreUiConfigs(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) PutDataStoreUiConfigs(value any) {
 	if err := d.validatePutDataStoreUiConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDataStoreUiConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) PutGene
 	_jsii_.InvokeVoid(
 		d,
 		"putGenerativeAnswerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,16 +973,16 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) ResetRe
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) ToStrin
 
 	return returns
 }
-

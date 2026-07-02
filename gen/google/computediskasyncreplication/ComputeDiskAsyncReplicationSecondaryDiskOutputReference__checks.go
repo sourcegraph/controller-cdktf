@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeDiskAsyncReplicationSecondaryDiskOutputReferenceParameter
 
 	return nil
 }
-

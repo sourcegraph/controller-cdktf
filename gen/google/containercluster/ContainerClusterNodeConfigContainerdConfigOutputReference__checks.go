@@ -101,7 +101,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) validatePutRegistryHostsParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) validatePutRegistryHostsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewContainerClusterNodeConfigContainerdConfigOutputReferenceParamet
 
 	return nil
 }
-

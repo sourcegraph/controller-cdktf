@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceFromTemplateScratchDiskListParameters(terraformRe
 
 	return nil
 }
-

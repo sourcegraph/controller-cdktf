@@ -34,7 +34,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFirebaseAppHostingTrafficTargetSplitsListParameters(terraformRes
 
 	return nil
 }
-

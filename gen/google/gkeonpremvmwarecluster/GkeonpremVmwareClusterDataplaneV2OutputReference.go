@@ -10,14 +10,14 @@ import (
 
 type GkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	cdktf.ComplexObject
-	AdvancedNetworking() interface{}
-	SetAdvancedNetworking(val interface{})
-	AdvancedNetworkingInput() interface{}
+	AdvancedNetworking() any
+	SetAdvancedNetworking(val any)
+	AdvancedNetworkingInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DataplaneV2Enabled() interface{}
-	SetDataplaneV2Enabled(val interface{})
-	DataplaneV2EnabledInput() interface{}
+	DataplaneV2Enabled() any
+	SetDataplaneV2Enabled(val any)
+	DataplaneV2EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GkeonpremVmwareClusterDataplaneV2
@@ -43,13 +43,13 @@ type GkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WindowsDataplaneV2Enabled() interface{}
-	SetWindowsDataplaneV2Enabled(val interface{})
-	WindowsDataplaneV2EnabledInput() interface{}
+	WindowsDataplaneV2Enabled() any
+	SetWindowsDataplaneV2Enabled(val any)
+	WindowsDataplaneV2EnabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	ResetWindowsDataplaneV2Enabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedNetworking",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNet
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advancedNetworkingInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNet
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) DataplaneV2Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) DataplaneV2Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataplaneV2Enabled",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) DataplaneV2
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) DataplaneV2EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) DataplaneV2EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataplaneV2EnabledInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) TerraformRe
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsDataplaneV2Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsDataplaneV2Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"windowsDataplaneV2Enabled",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsData
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsDataplaneV2EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsDataplaneV2EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"windowsDataplaneV2EnabledInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) WindowsData
 	)
 	return returns
 }
-
 
 func NewGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareClusterDataplaneV2OutputReference {
 	_init_.Initialize()
@@ -229,7 +228,7 @@ func NewGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterDataplaneV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGkeonpremVmwareClusterDataplaneV2OutputReference_Override(g GkeonpremVmw
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterDataplaneV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetAdvancedNetworking(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetAdvancedNetworking(val any) {
 	if err := j.validateSetAdvancedNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetAdvancedN
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetDataplaneV2Enabled(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetDataplaneV2Enabled(val any) {
 	if err := j.validateSetDataplaneV2EnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetDataplane
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetInternalValue(val *GkeonpremVmwareClusterDataplaneV2) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetInternalValue(val *GkeonpremVmwareClusterDataplaneV2) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference)SetWindowsDataplaneV2Enabled(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) SetWindowsDataplaneV2Enabled(val any) {
 	if err := j.validateSetWindowsDataplaneV2EnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) ResetWindow
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) ToString() 
 
 	return returns
 }
-

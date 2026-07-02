@@ -1,6 +1,5 @@
 package osconfigospolicyassignment
 
-
 type OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDebSource struct {
 	// Defaults to false.
 	//
@@ -8,7 +7,7 @@ type OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDebSource str
 	// Remote: A checksum must be specified. Cloud Storage: An object generation number must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#allow_insecure OsConfigOsPolicyAssignment#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// gcs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#gcs OsConfigOsPolicyAssignment#gcs}
@@ -22,4 +21,3 @@ type OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDebSource str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#remote OsConfigOsPolicyAssignment#remote}
 	Remote *OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesPkgDebSourceRemote `field:"optional" json:"remote" yaml:"remote"`
 }
-

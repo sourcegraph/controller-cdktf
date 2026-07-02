@@ -98,7 +98,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewArtifactRegistryRepositoryTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

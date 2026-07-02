@@ -15,9 +15,9 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference interface {
 	ClusterInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference interface {
 	EvaluationModeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RequireAttestationsBy() *[]*string
 	SetRequireAttestationsBy(val *[]*string)
 	RequireAttestationsByInput() *[]*string
@@ -52,7 +52,7 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference interface {
 	ResetRequireAttestationsBy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	return returns
 }
 
-
 func NewBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference_Override(b
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetCluster(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetEnforcementMode(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetEnforcementMode(val *string) {
 	if err := j.validateSetEnforcementModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetEvaluationMode(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetEvaluationMode(val *string) {
 	if err := j.validateSetEvaluationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetRequireAttestationsBy(val *[]*string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetRequireAttestationsBy(val *[]*string) {
 	if err := j.validateSetRequireAttestationsByParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 
 	return returns
 }
-

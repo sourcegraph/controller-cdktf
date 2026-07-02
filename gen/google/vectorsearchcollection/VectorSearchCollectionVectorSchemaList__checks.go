@@ -34,7 +34,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVectorSearchCollectionVectorSchemaListParameters(terraformResour
 
 	return nil
 }
-

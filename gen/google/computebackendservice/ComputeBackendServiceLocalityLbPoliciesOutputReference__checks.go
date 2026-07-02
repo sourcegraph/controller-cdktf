@@ -120,7 +120,7 @@ func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewComputeBackendServiceLocalityLbPoliciesOutputReferenceParameters
 
 	return nil
 }
-

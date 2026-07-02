@@ -19,7 +19,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateAddMoveTargetParam
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateMoveFromIdParamete
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateFirebaseAppCheckRecaptchaV3Config_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateFirebaseAppCheckRecaptchaV3Config_IsConstructParameters(x interface{}) error {
+func validateFirebaseAppCheckRecaptchaV3Config_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateFirebaseAppCheckRecaptchaV3Config_IsConstructParameters(x interface
 	return nil
 }
 
-func validateFirebaseAppCheckRecaptchaV3Config_IsTerraformElementParameters(x interface{}) error {
+func validateFirebaseAppCheckRecaptchaV3Config_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateFirebaseAppCheckRecaptchaV3Config_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateFirebaseAppCheckRecaptchaV3Config_IsTerraformResourceParameters(x interface{}) error {
+func validateFirebaseAppCheckRecaptchaV3Config_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetAppIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3Config) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewFirebaseAppCheckRecaptchaV3ConfigParameters(scope constructs.Con
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package privilegedaccessmanagerentitlement
 
-
 type PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess struct {
 	// Name of the resource.
 	//
@@ -13,6 +12,5 @@ type PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess struct {
 	// role_bindings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privileged_access_manager_entitlement#role_bindings PrivilegedAccessManagerEntitlement#role_bindings}
-	RoleBindings interface{} `field:"required" json:"roleBindings" yaml:"roleBindings"`
+	RoleBindings any `field:"required" json:"roleBindings" yaml:"roleBindings"`
 }
-

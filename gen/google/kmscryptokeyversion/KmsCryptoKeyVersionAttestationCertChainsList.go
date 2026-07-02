@@ -36,7 +36,7 @@ type KmsCryptoKeyVersionAttestationCertChainsList interface {
 	Get(index *float64) KmsCryptoKeyVersionAttestationCertChainsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewKmsCryptoKeyVersionAttestationCertChainsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsCryptoKeyVersionAttestationCertChainsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewKmsCryptoKeyVersionAttestationCertChainsList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewKmsCryptoKeyVersionAttestationCertChainsList_Override(k KmsCryptoKeyVers
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) AllWithMapKey(m
 	_jsii_.Invoke(
 		k,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) Get(index *floa
 	_jsii_.Invoke(
 		k,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsList) ToString() *str
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type DataGoogleFilestoreInstanceNetworksPscConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type DataGoogleFilestoreInstanceNetworksPscConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type DataGoogleFilestoreInstanceNetworksPscConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	return returns
 }
 
-
 func NewDataGoogleFilestoreInstanceNetworksPscConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleFilestoreInstanceNetworksPscConfigOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewDataGoogleFilestoreInstanceNetworksPscConfigOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleFilestoreInstance.DataGoogleFilestoreInstanceNetworksPscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewDataGoogleFilestoreInstanceNetworksPscConfigOutputReference_Override(d D
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleFilestoreInstance.DataGoogleFilestoreInstanceNetworksPscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)SetInternalValue(val *DataGoogleFilestoreInstanceNetworksPscConfig) {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) SetInternalValue(val *DataGoogleFilestoreInstanceNetworksPscConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceNetworksPscConfigOutputReference) 
 
 	return returns
 }
-

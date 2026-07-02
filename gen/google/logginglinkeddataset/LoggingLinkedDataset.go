@@ -13,22 +13,22 @@ import (
 type LoggingLinkedDataset interface {
 	cdktf.TerraformResource
 	BigqueryDataset() LoggingLinkedDatasetBigqueryDatasetList
-	BigqueryDatasetInput() interface{}
+	BigqueryDatasetInput() any
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,26 +70,26 @@ type LoggingLinkedDataset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LoggingLinkedDatasetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type LoggingLinkedDataset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,14 +119,14 @@ type LoggingLinkedDataset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBigqueryDataset(value interface{})
+	PutBigqueryDataset(value any)
 	PutTimeouts(value *LoggingLinkedDatasetTimeouts)
 	ResetBigqueryDataset()
 	ResetDescription()
@@ -137,17 +137,17 @@ type LoggingLinkedDataset interface {
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoggingLinkedDataset
@@ -165,8 +165,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) BigqueryDataset() LoggingLinkedDatasetB
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) BigqueryDatasetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) BigqueryDatasetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bigqueryDatasetInput",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_LoggingLinkedDataset) Timeouts() LoggingLinkedDatasetTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLinkedDataset) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_LoggingLinkedDataset) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewLoggingLinkedDataset(scope constructs.Construct, id *string, config *LoggingLinkedDatasetConfig) LoggingLinkedDataset {
@@ -517,7 +516,7 @@ func NewLoggingLinkedDataset(scope constructs.Construct, id *string, config *Log
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewLoggingLinkedDataset_Override(l LoggingLinkedDataset, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetBucket(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetCount(val interface{}) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetId(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetLinkId(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetLinkId(val *string) {
 	if err := j.validateSetLinkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetLinkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetLocation(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetParent(val *string) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_LoggingLinkedDataset)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDataset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoggingLinkedDataset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func LoggingLinkedDataset_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func LoggingLinkedDataset_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoggingLinkedDataset_IsConstruct(x interface{}) *bool {
+func LoggingLinkedDataset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLinkedDataset_IsConstructParameters(x); err != nil {
@@ -716,7 +715,7 @@ func LoggingLinkedDataset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func LoggingLinkedDataset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingLinkedDataset_IsTerraformElement(x interface{}) *bool {
+func LoggingLinkedDataset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLinkedDataset_IsTerraformElementParameters(x); err != nil {
@@ -735,7 +734,7 @@ func LoggingLinkedDataset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func LoggingLinkedDataset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingLinkedDataset_IsTerraformResource(x interface{}) *bool {
+func LoggingLinkedDataset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLinkedDataset_IsTerraformResourceParameters(x); err != nil {
@@ -754,7 +753,7 @@ func LoggingLinkedDataset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,31 +778,31 @@ func (l *jsiiProxy_LoggingLinkedDataset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoggingLinkedDataset) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingLinkedDataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,15 +930,15 @@ func (l *jsiiProxy_LoggingLinkedDataset) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -958,7 +957,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -971,7 +970,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,18 +984,18 @@ func (l *jsiiProxy_LoggingLinkedDataset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoggingLinkedDataset) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1018,18 +1017,18 @@ func (l *jsiiProxy_LoggingLinkedDataset) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) PutBigqueryDataset(value interface{}) {
+func (l *jsiiProxy_LoggingLinkedDataset) PutBigqueryDataset(value any) {
 	if err := l.validatePutBigqueryDatasetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putBigqueryDataset",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (l *jsiiProxy_LoggingLinkedDataset) PutTimeouts(value *LoggingLinkedDataset
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,8 +1099,8 @@ func (l *jsiiProxy_LoggingLinkedDataset) ResetTimeouts() {
 	)
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1113,8 +1112,8 @@ func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1126,8 +1125,8 @@ func (l *jsiiProxy_LoggingLinkedDataset) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1139,8 +1138,8 @@ func (l *jsiiProxy_LoggingLinkedDataset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1165,8 +1164,8 @@ func (l *jsiiProxy_LoggingLinkedDataset) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDataset) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLinkedDataset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1177,4 +1176,3 @@ func (l *jsiiProxy_LoggingLinkedDataset) ToTerraform() interface{} {
 
 	return returns
 }
-

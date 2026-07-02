@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRule",
-		reflect.TypeOf((*ChronicleRule)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,11 +105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnostics",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnostics)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnostics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsList",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnosticsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsOutputReference",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnosticsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,11 +166,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPosition",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPosition)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnosticsPosition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionList",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPositionList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnosticsPositionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionOutputReference",
-		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPositionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleCompilationDiagnosticsPositionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,15 +227,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleConfig",
-		reflect.TypeOf((*ChronicleRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverity",
-		reflect.TypeOf((*ChronicleRuleSeverity)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleSeverity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverityList",
-		reflect.TypeOf((*ChronicleRuleSeverityList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleSeverityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleSeverityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverityOutputReference",
-		reflect.TypeOf((*ChronicleRuleSeverityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleSeverityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleSeverityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleTimeouts",
-		reflect.TypeOf((*ChronicleRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleRule.ChronicleRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

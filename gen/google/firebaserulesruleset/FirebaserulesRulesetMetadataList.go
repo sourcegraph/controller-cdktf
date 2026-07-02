@@ -36,7 +36,7 @@ type FirebaserulesRulesetMetadataList interface {
 	Get(index *float64) FirebaserulesRulesetMetadataOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_FirebaserulesRulesetMetadataList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFirebaserulesRulesetMetadataList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaserulesRulesetMetadataList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewFirebaserulesRulesetMetadataList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewFirebaserulesRulesetMetadataList_Override(f FirebaserulesRulesetMetadata
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetMetadataList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaserulesRulesetMetadataList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_FirebaserulesRulesetMetadataList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetMetadataList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaserulesRulesetMetadataList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_FirebaserulesRulesetMetadataList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetMetadataList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FirebaserulesRulesetMetadataList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (f *jsiiProxy_FirebaserulesRulesetMetadataList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (f *jsiiProxy_FirebaserulesRulesetMetadataList) Get(index *float64) Firebas
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetMetadataList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaserulesRulesetMetadataList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (f *jsiiProxy_FirebaserulesRulesetMetadataList) ToString() *string {
 
 	return returns
 }
-

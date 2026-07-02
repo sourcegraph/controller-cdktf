@@ -14,9 +14,9 @@ type CesExampleMessagesChunksOutputReference interface {
 	AgentTransferInput() *CesExampleMessagesChunksAgentTransfer
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type CesExampleMessagesChunksOutputReference interface {
 	Fqn() *string
 	Image() CesExampleMessagesChunksImageOutputReference
 	ImageInput() *CesExampleMessagesChunksImage
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type CesExampleMessagesChunksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type CesExampleMessagesChunksOutputReference interface {
 	ResetUpdatedVariables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) AgentTransferInput()
 	return returns
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) ImageInput() *CesExa
 	return returns
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) UpdatedVariablesInpu
 	return returns
 }
 
-
 func NewCesExampleMessagesChunksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesExampleMessagesChunksOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewCesExampleMessagesChunksOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewCesExampleMessagesChunksOutputReference_Override(c CesExampleMessagesChu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetText(val *string) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetText(val *string) {
 	if err := j.validateSetTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetText(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference)SetUpdatedVariables(val *string) {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) SetUpdatedVariables(val *string) {
 	if err := j.validateSetUpdatedVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,16 +407,16 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) PutAgentTransfer(val
 	_jsii_.InvokeVoid(
 		c,
 		"putAgentTransfer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -599,7 +598,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) PutImage(value *CesE
 	_jsii_.InvokeVoid(
 		c,
 		"putImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -610,7 +609,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) PutToolCall(value *C
 	_jsii_.InvokeVoid(
 		c,
 		"putToolCall",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) PutToolResponse(valu
 	_jsii_.InvokeVoid(
 		c,
 		"putToolResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) ResetUpdatedVariable
 	)
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGkeonpremVmwareNodePoolConfigTaintsOutputReferenceParameters(ter
 
 	return nil
 }
-

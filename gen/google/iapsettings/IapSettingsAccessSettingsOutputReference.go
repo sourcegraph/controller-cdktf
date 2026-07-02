@@ -14,9 +14,9 @@ type IapSettingsAccessSettingsOutputReference interface {
 	AllowedDomainsSettingsInput() *IapSettingsAccessSettingsAllowedDomainsSettings
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type IapSettingsAccessSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type IapSettingsAccessSettingsOutputReference interface {
 	ResetWorkforceIdentitySettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) AllowedDomainsSetti
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) WorkforceIdentitySe
 	return returns
 }
 
-
 func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewIapSettingsAccessSettingsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewIapSettingsAccessSettingsOutputReference_Override(i IapSettingsAccessSet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetIdentitySources(val *[]*string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetIdentitySources(val *[]*string) {
 	if err := j.validateSetIdentitySourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetIdentitySources(v
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetInternalValue(val *IapSettingsAccessSettings) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetInternalValue(val *IapSettingsAccessSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,16 +420,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutAllowedDomainsSe
 	_jsii_.InvokeVoid(
 		i,
 		"putAllowedDomainsSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,7 +611,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutCorsSettings(val
 	_jsii_.InvokeVoid(
 		i,
 		"putCorsSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -623,7 +622,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutGcipSettings(val
 	_jsii_.InvokeVoid(
 		i,
 		"putGcipSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -634,7 +633,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutOauthSettings(va
 	_jsii_.InvokeVoid(
 		i,
 		"putOauthSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -645,7 +644,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutReauthSettings(v
 	_jsii_.InvokeVoid(
 		i,
 		"putReauthSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -656,7 +655,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) PutWorkforceIdentit
 	_jsii_.InvokeVoid(
 		i,
 		"putWorkforceIdentitySettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) ResetWorkforceIdent
 	)
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) ToString() *string 
 
 	return returns
 }
-

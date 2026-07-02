@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsL
 
 	return nil
 }
-

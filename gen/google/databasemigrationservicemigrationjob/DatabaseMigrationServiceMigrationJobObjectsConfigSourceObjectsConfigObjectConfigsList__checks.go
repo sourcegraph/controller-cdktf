@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObject
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsCo
 
 	return nil
 }
-

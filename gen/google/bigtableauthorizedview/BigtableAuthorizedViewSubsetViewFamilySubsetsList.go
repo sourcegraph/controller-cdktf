@@ -17,8 +17,8 @@ type BigtableAuthorizedViewSubsetViewFamilySubsetsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BigtableAuthorizedViewSubsetViewFamilySubsetsList interface {
 	Get(index *float64) BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) WrapsSet()
 	return returns
 }
 
-
 func NewBigtableAuthorizedViewSubsetViewFamilySubsetsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigtableAuthorizedViewSubsetViewFamilySubsetsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBigtableAuthorizedViewSubsetViewFamilySubsetsList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBigtableAuthorizedViewSubsetViewFamilySubsetsList_Override(b BigtableAut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetInternal
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) AllWithMap
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) Get(index 
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) ToString()
 
 	return returns
 }
-

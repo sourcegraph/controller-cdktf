@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceNetworkInterfaceAliasIpRangeListParameters(terraf
 
 	return nil
 }
-

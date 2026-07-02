@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresho
 
 	return nil
 }
-

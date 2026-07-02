@@ -10,14 +10,14 @@ import (
 
 type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllNamespaces() interface{}
-	SetAllNamespaces(val interface{})
-	AllNamespacesInput() interface{}
+	AllNamespaces() any
+	SetAllNamespaces(val any)
+	AllNamespacesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,17 +32,17 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	EncryptionKeyInput() *GkeBackupBackupPlanBackupConfigEncryptionKey
 	// Experimental.
 	Fqn() *string
-	IncludeSecrets() interface{}
-	SetIncludeSecrets(val interface{})
-	IncludeSecretsInput() interface{}
-	IncludeVolumeData() interface{}
-	SetIncludeVolumeData(val interface{})
-	IncludeVolumeDataInput() interface{}
+	IncludeSecrets() any
+	SetIncludeSecrets(val any)
+	IncludeSecretsInput() any
+	IncludeVolumeData() any
+	SetIncludeVolumeData(val any)
+	IncludeVolumeDataInput() any
 	InternalValue() *GkeBackupBackupPlanBackupConfig
 	SetInternalValue(val *GkeBackupBackupPlanBackupConfig)
-	PermissiveMode() interface{}
-	SetPermissiveMode(val interface{})
-	PermissiveModeInput() interface{}
+	PermissiveMode() any
+	SetPermissiveMode(val any)
+	PermissiveModeInput() any
 	SelectedApplications() GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference
 	SelectedApplicationsInput() *GkeBackupBackupPlanBackupConfigSelectedApplications
 	SelectedNamespaceLabels() GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference
@@ -60,7 +60,7 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	ResetSelectedNamespaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespaces() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespaces() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allNamespaces",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespaces
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allNamespacesInput",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) AllNamespaces
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecrets() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecrets() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSecrets",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecret
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecretsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecretsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSecretsInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeSecret
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeVolumeData() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeVolumeData() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeVolumeData",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeVolume
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeVolumeDataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) IncludeVolumeDataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeVolumeDataInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) InternalValue
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"permissiveMode",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveMod
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"permissiveModeInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewGkeBackupBackupPlanBackupConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeBackupBackupPlanBackupConfigOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewGkeBackupBackupPlanBackupConfigOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewGkeBackupBackupPlanBackupConfigOutputReference_Override(g GkeBackupBacku
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetAllNamespaces(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetAllNamespaces(val any) {
 	if err := j.validateSetAllNamespacesParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetAllNamespac
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetIncludeSecrets(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetIncludeSecrets(val any) {
 	if err := j.validateSetIncludeSecretsParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetIncludeSecr
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetIncludeVolumeData(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetIncludeVolumeData(val any) {
 	if err := j.validateSetIncludeVolumeDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetIncludeVolu
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetInternalValue(val *GkeBackupBackupPlanBackupConfig) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetInternalValue(val *GkeBackupBackupPlanBackupConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetPermissiveMode(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetPermissiveMode(val any) {
 	if err := j.validateSetPermissiveModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetPermissiveM
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,16 +477,16 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutEncryption
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -669,7 +668,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedAp
 	_jsii_.InvokeVoid(
 		g,
 		"putSelectedApplications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,7 +679,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedNa
 	_jsii_.InvokeVoid(
 		g,
 		"putSelectedNamespaceLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -691,7 +690,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PutSelectedNa
 	_jsii_.InvokeVoid(
 		g,
 		"putSelectedNamespaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ResetSelected
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ToString() *s
 
 	return returns
 }
-

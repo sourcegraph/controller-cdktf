@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationO
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterResourceUsageExportConfigBigqueryDestinationOutp
 
 	return nil
 }
-

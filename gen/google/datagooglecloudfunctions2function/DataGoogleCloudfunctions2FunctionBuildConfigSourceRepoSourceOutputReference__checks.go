@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceO
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutp
 
 	return nil
 }
-

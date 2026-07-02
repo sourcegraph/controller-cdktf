@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataplexEntryGroupIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabSchedule",
-		reflect.TypeOf((*ColabSchedule)(nil)).Elem(),
+		reflect.TypeFor[ColabSchedule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabSchedule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,23 +99,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleConfig",
-		reflect.TypeOf((*ColabScheduleConfig)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequest",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequest)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitSha", GoGetter: "CommitSha"},
 			_jsii_.MemberProperty{JsiiProperty: "commitShaInput", GoGetter: "CommitShaInput"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleCreateNotebookExecutionJobRequestOutputReference",
-		reflect.TypeOf((*ColabScheduleCreateNotebookExecutionJobRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleCreateNotebookExecutionJobRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,11 +283,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleTimeouts",
-		reflect.TypeOf((*ColabScheduleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.colabSchedule.ColabScheduleTimeoutsOutputReference",
-		reflect.TypeOf((*ColabScheduleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ColabScheduleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ColabScheduleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

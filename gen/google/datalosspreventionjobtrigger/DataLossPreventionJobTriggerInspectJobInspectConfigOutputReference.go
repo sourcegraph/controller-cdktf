@@ -12,9 +12,9 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,17 +26,17 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	// Experimental.
 	CreationStack() *[]*string
 	CustomInfoTypes() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList
-	CustomInfoTypesInput() interface{}
-	ExcludeInfoTypes() interface{}
-	SetExcludeInfoTypes(val interface{})
-	ExcludeInfoTypesInput() interface{}
+	CustomInfoTypesInput() any
+	ExcludeInfoTypes() any
+	SetExcludeInfoTypes(val any)
+	ExcludeInfoTypesInput() any
 	// Experimental.
 	Fqn() *string
-	IncludeQuote() interface{}
-	SetIncludeQuote(val interface{})
-	IncludeQuoteInput() interface{}
+	IncludeQuote() any
+	SetIncludeQuote(val any)
+	IncludeQuoteInput() any
 	InfoTypes() DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList
-	InfoTypesInput() interface{}
+	InfoTypesInput() any
 	InternalValue() *DataLossPreventionJobTriggerInspectJobInspectConfig
 	SetInternalValue(val *DataLossPreventionJobTriggerInspectJobInspectConfig)
 	Limits() DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference
@@ -45,7 +45,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	SetMinLikelihood(val *string)
 	MinLikelihoodInput() *string
 	RuleSet() DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList
-	RuleSetInput() interface{}
+	RuleSetInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -57,7 +57,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,10 +78,10 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomInfoTypes(value interface{})
-	PutInfoTypes(value interface{})
+	PutCustomInfoTypes(value any)
+	PutInfoTypes(value any)
 	PutLimits(value *DataLossPreventionJobTriggerInspectJobInspectConfigLimits)
-	PutRuleSet(value interface{})
+	PutRuleSet(value any)
 	ResetCustomInfoTypes()
 	ResetExcludeInfoTypes()
 	ResetIncludeQuote()
@@ -91,7 +91,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference interfac
 	ResetRuleSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) CustomInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) CustomInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customInfoTypesInput",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ExcludeInfoTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ExcludeInfoTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypes",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ExcludeInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) ExcludeInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypesInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) IncludeQuote() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) IncludeQuote() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuote",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) IncludeQuoteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) IncludeQuoteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuoteInput",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) InfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) InfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"infoTypesInput",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) RuleSetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) RuleSetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleSetInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-
 func NewDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetExcludeInfoTypes(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetExcludeInfoTypes(val any) {
 	if err := j.validateSetExcludeInfoTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetIncludeQuote(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetIncludeQuote(val any) {
 	if err := j.validateSetIncludeQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetInternalValue(val *DataLossPreventionJobTriggerInspectJobInspectConfig) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetInternalValue(val *DataLossPreventionJobTriggerInspectJobInspectConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetMinLikelihood(val *string) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetMinLikelihood(val *string) {
 	if err := j.validateSetMinLikelihoodParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,16 +442,16 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,32 +608,32 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutCustomInfoTypes(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutCustomInfoTypes(value any) {
 	if err := d.validatePutCustomInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutInfoTypes(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutInfoTypes(value any) {
 	if err := d.validatePutInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -645,18 +644,18 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"putLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutRuleSet(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) PutRuleSet(value any) {
 	if err := d.validatePutRuleSetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRuleSet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 
 	return returns
 }
-

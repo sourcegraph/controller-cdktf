@@ -18,15 +18,15 @@ type ClouddeployAutomation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeliveryPipeline() *string
 	SetDeliveryPipeline(val *string)
@@ -75,39 +75,39 @@ type ClouddeployAutomation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() ClouddeployAutomationRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	Selector() ClouddeployAutomationSelectorOutputReference
 	SelectorInput() *ClouddeployAutomationSelector
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
-	Suspended() interface{}
-	SetSuspended(val interface{})
-	SuspendedInput() interface{}
+	Suspended() any
+	SetSuspended(val any)
+	SuspendedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ClouddeployAutomationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type ClouddeployAutomation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,14 +137,14 @@ type ClouddeployAutomation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRules(value interface{})
+	PutRules(value any)
 	PutSelector(value *ClouddeployAutomationSelector)
 	PutTimeouts(value *ClouddeployAutomationTimeouts)
 	ResetAnnotations()
@@ -157,17 +157,17 @@ type ClouddeployAutomation interface {
 	ResetProject()
 	ResetSuspended()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ClouddeployAutomation
@@ -205,8 +205,8 @@ func (j *jsiiProxy_ClouddeployAutomation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployAutomation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_ClouddeployAutomation) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ClouddeployAutomation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Rules() ClouddeployAutomationRulesList
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_ClouddeployAutomation) ServiceAccountInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) Suspended() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) Suspended() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suspended",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Suspended() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) SuspendedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) SuspendedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"suspendedInput",
@@ -605,8 +605,8 @@ func (j *jsiiProxy_ClouddeployAutomation) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployAutomation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -635,8 +635,8 @@ func (j *jsiiProxy_ClouddeployAutomation) Timeouts() ClouddeployAutomationTimeou
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -665,7 +665,6 @@ func (j *jsiiProxy_ClouddeployAutomation) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_automation google_clouddeploy_automation} Resource.
 func NewClouddeployAutomation(scope constructs.Construct, id *string, config *ClouddeployAutomationConfig) ClouddeployAutomation {
 	_init_.Initialize()
@@ -677,7 +676,7 @@ func NewClouddeployAutomation(scope constructs.Construct, id *string, config *Cl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -690,12 +689,12 @@ func NewClouddeployAutomation_Override(c ClouddeployAutomation, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetAnnotations(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetConnection(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetCount(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetDeliveryPipeline(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetDeliveryPipeline(val *string) {
 	if err := j.validateSetDeliveryPipelineParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetDeliveryPipeline(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -747,7 +746,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetDescription(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ClouddeployAutomation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -766,7 +765,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetId(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ClouddeployAutomation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetLocation(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetName(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetProject(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ClouddeployAutomation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -840,7 +839,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ClouddeployAutomation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetServiceAccount(val *string) {
+func (j *jsiiProxy_ClouddeployAutomation) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_ClouddeployAutomation)SetServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomation)SetSuspended(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomation) SetSuspended(val any) {
 	if err := j.validateSetSuspendedParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func ClouddeployAutomation_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func ClouddeployAutomation_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ClouddeployAutomation_IsConstruct(x interface{}) *bool {
+func ClouddeployAutomation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployAutomation_IsConstructParameters(x); err != nil {
@@ -920,7 +919,7 @@ func ClouddeployAutomation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func ClouddeployAutomation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ClouddeployAutomation_IsTerraformElement(x interface{}) *bool {
+func ClouddeployAutomation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployAutomation_IsTerraformElementParameters(x); err != nil {
@@ -939,7 +938,7 @@ func ClouddeployAutomation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func ClouddeployAutomation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ClouddeployAutomation_IsTerraformResource(x interface{}) *bool {
+func ClouddeployAutomation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployAutomation_IsTerraformResourceParameters(x); err != nil {
@@ -958,7 +957,7 @@ func ClouddeployAutomation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -983,31 +982,31 @@ func (c *jsiiProxy_ClouddeployAutomation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ClouddeployAutomation) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployAutomation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func (c *jsiiProxy_ClouddeployAutomation) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1135,15 +1134,15 @@ func (c *jsiiProxy_ClouddeployAutomation) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployAutomation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1162,7 +1161,7 @@ func (c *jsiiProxy_ClouddeployAutomation) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (c *jsiiProxy_ClouddeployAutomation) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1189,18 +1188,18 @@ func (c *jsiiProxy_ClouddeployAutomation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ClouddeployAutomation) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (c *jsiiProxy_ClouddeployAutomation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1222,18 +1221,18 @@ func (c *jsiiProxy_ClouddeployAutomation) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) PutRules(value interface{}) {
+func (c *jsiiProxy_ClouddeployAutomation) PutRules(value any) {
 	if err := c.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1244,7 +1243,7 @@ func (c *jsiiProxy_ClouddeployAutomation) PutSelector(value *ClouddeployAutomati
 	_jsii_.InvokeVoid(
 		c,
 		"putSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1255,7 +1254,7 @@ func (c *jsiiProxy_ClouddeployAutomation) PutTimeouts(value *ClouddeployAutomati
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,8 +1322,8 @@ func (c *jsiiProxy_ClouddeployAutomation) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployAutomation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1336,8 +1335,8 @@ func (c *jsiiProxy_ClouddeployAutomation) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployAutomation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1349,8 +1348,8 @@ func (c *jsiiProxy_ClouddeployAutomation) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployAutomation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1362,8 +1361,8 @@ func (c *jsiiProxy_ClouddeployAutomation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployAutomation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1388,8 +1387,8 @@ func (c *jsiiProxy_ClouddeployAutomation) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomation) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployAutomation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1400,4 +1399,3 @@ func (c *jsiiProxy_ClouddeployAutomation) ToTerraform() interface{} {
 
 	return returns
 }
-

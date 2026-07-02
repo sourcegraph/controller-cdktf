@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2WorkerPoolTemplateNodeSelectorOutputReferenceParameter
 
 	return nil
 }
-

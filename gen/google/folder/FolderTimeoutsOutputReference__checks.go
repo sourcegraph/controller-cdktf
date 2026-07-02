@@ -98,7 +98,7 @@ func (f *jsiiProxy_FolderTimeoutsOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_FolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FolderTimeoutsOutputReference) validateSetDeleteParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_FolderTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FolderTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFolderTimeoutsOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppClientCertificateSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCesAppClientCertificateSettingsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

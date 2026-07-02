@@ -114,7 +114,7 @@ func (j *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateSetClu
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewEdgecontainerClusterNetworkingOutputReferenceParameters(terrafor
 
 	return nil
 }
-

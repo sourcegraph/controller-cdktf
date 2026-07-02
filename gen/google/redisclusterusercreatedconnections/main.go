@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnections",
-		reflect.TypeOf((*RedisClusterUserCreatedConnections)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnections](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnections{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpoints",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpoints)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpoints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnections",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsConnections)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,7 +196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsList",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -218,7 +218,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,15 +254,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsConfig",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsConfig)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeouts",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsTimeoutsOutputReference",
-		reflect.TypeOf((*RedisClusterUserCreatedConnectionsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RedisClusterUserCreatedConnectionsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

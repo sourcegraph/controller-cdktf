@@ -15,9 +15,9 @@ type CloudRunV2ServiceBuildConfigOutputReference interface {
 	BaseImageInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type CloudRunV2ServiceBuildConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableAutomaticUpdates() interface{}
-	SetEnableAutomaticUpdates(val interface{})
-	EnableAutomaticUpdatesInput() interface{}
+	EnableAutomaticUpdates() any
+	SetEnableAutomaticUpdates(val any)
+	EnableAutomaticUpdatesInput() any
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
@@ -65,7 +65,7 @@ type CloudRunV2ServiceBuildConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type CloudRunV2ServiceBuildConfigOutputReference interface {
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) BaseImageInput()
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) EnableAutomaticUpdates() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) EnableAutomaticUpdates() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutomaticUpdates",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) EnableAutomaticU
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) EnableAutomaticUpdatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) EnableAutomaticUpdatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAutomaticUpdatesInput",
@@ -349,7 +349,6 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) WorkerPoolInput(
 	return returns
 }
 
-
 func NewCloudRunV2ServiceBuildConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2ServiceBuildConfigOutputReference {
 	_init_.Initialize()
 
@@ -360,7 +359,7 @@ func NewCloudRunV2ServiceBuildConfigOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -372,12 +371,12 @@ func NewCloudRunV2ServiceBuildConfigOutputReference_Override(c CloudRunV2Service
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetBaseImage(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetBaseImage(val *string) {
 	if err := j.validateSetBaseImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetBaseImage(val 
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetEnableAutomaticUpdates(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetEnableAutomaticUpdates(val any) {
 	if err := j.validateSetEnableAutomaticUpdatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetEnableAutomati
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetEnvironmentVar
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetFunctionTarget(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetFunctionTarget(val *string) {
 	if err := j.validateSetFunctionTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetFunctionTarget
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetImageUri(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetImageUri(val *string) {
 	if err := j.validateSetImageUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetImageUri(val *
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetInternalValue(val *CloudRunV2ServiceBuildConfig) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetInternalValue(val *CloudRunV2ServiceBuildConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetServiceAccount
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetSourceLocation(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetSourceLocation(val *string) {
 	if err := j.validateSetSourceLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetSourceLocation
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference)SetWorkerPool(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) SetWorkerPool(val *string) {
 	if err := j.validateSetWorkerPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,16 +532,16 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -770,16 +769,16 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) ResetWorkerPool(
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -798,4 +797,3 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) ToString() *stri
 
 	return returns
 }
-

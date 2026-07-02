@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateInterpolatio
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validatePutAncestorsParameters(value interface{}) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validatePutAncestorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -293,4 +293,3 @@ func validateNewDataplexEntryEntrySourceOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

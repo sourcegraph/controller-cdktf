@@ -106,7 +106,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputRefer
 
 	return nil
 }
-

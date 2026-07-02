@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceDnsNamesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceDnsNamesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceDnsNamesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSqlDatabaseInstanceDnsNamesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

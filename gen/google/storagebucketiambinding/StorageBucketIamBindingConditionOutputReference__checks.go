@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketIamBindingConditionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewStorageBucketIamBindingConditionOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIdentityPlatformOauthIdpConfigTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

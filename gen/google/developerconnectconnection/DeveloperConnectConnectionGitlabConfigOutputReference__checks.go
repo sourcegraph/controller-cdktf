@@ -120,7 +120,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewDeveloperConnectConnectionGitlabConfigOutputReferenceParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetDefaultLeaderLocationParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetDefaultLeaderLocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetDefa
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewSpannerInstanceConfigReplicasOutputReferenceParameters(terraform
 
 	return nil
 }
-

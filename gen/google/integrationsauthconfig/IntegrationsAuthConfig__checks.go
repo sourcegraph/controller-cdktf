@@ -19,7 +19,7 @@ func (i *jsiiProxy_IntegrationsAuthConfig) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IntegrationsAuthConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IntegrationsAuthConfig) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IntegrationsAuthConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateIntegrationsAuthConfig_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateIntegrationsAuthConfig_IsConstructParameters(x interface{}) error {
+func validateIntegrationsAuthConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateIntegrationsAuthConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIntegrationsAuthConfig_IsTerraformElementParameters(x interface{}) error {
+func validateIntegrationsAuthConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateIntegrationsAuthConfig_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateIntegrationsAuthConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateIntegrationsAuthConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateIntegrationsAuthConfig_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_IntegrationsAuthConfig) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_IntegrationsAuthConfig) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewIntegrationsAuthConfigParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

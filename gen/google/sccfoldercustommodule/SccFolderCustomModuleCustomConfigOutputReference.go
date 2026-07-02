@@ -12,9 +12,9 @@ type SccFolderCustomModuleCustomConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type SccFolderCustomModuleCustomConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type SccFolderCustomModuleCustomConfigOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewSccFolderCustomModuleCustomConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SccFolderCustomModuleCustomConfigOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewSccFolderCustomModuleCustomConfigOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccFolderCustomModule.SccFolderCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewSccFolderCustomModuleCustomConfigOutputReference_Override(s SccFolderCus
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccFolderCustomModule.SccFolderCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetInternalValue(val *SccFolderCustomModuleCustomConfig) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetInternalValue(val *SccFolderCustomModuleCustomConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetRecommendation(val *string) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetRecommendation(val *string) {
 	if err := j.validateSetRecommendationParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetRecommend
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetSeverity(val *string) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetSeverity(val *string) {
 	if err := j.validateSetSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetSeverity(
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) ComputeFqn(
 	return returns
 }
 
-func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetListAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetStringAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) GetStringMa
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) Interpolati
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) PutCustomOu
 	_jsii_.InvokeVoid(
 		s,
 		"putCustomOutput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -606,7 +605,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) PutPredicat
 	_jsii_.InvokeVoid(
 		s,
 		"putPredicate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -617,7 +616,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) PutResource
 	_jsii_.InvokeVoid(
 		s,
 		"putResourceSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -637,16 +636,16 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) ResetDescri
 	)
 }
 
-func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) ToString() 
 
 	return returns
 }
-

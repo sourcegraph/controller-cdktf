@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEdgenetworkNetworkTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresh
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThreshold
 
 	return nil
 }
-

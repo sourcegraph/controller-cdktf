@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityposturePosturePolicySetsPoliciesListParameters(terraform
 
 	return nil
 }
-

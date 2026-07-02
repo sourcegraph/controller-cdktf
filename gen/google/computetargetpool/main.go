@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
-		reflect.TypeOf((*ComputeTargetPool)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPoolConfig",
-		reflect.TypeOf((*ComputeTargetPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPoolTimeouts",
-		reflect.TypeOf((*ComputeTargetPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPoolTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeTargetPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

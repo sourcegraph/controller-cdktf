@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableAppProfile) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableAppProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableAppProfile) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableAppProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateBigtableAppProfile_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateBigtableAppProfile_IsConstructParameters(x interface{}) error {
+func validateBigtableAppProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateBigtableAppProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigtableAppProfile_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableAppProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateBigtableAppProfile_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateBigtableAppProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableAppProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetAppProfileIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -402,7 +402,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetIgnoreWarningsParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetIgnoreWarningsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetMultiClusterRoutingClusterIdsP
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetMultiClusterRoutingUseAnyParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetMultiClusterRoutingUseAnyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -474,7 +474,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,7 +520,7 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfile) validateSetRowAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfile) validateSetRowAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -558,4 +558,3 @@ func validateNewBigtableAppProfileParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

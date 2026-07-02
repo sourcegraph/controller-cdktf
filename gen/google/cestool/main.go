@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesTool",
-		reflect.TypeOf((*CesTool)(nil)).Elem(),
+		reflect.TypeFor[CesTool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesTool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,11 +104,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolClientFunction",
-		reflect.TypeOf((*CesToolClientFunction)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionOutputReference",
-		reflect.TypeOf((*CesToolClientFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolClientFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionParameters",
-		reflect.TypeOf((*CesToolClientFunctionParameters)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunctionParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionParametersOutputReference",
-		reflect.TypeOf((*CesToolClientFunctionParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunctionParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalPropertiesInput", GoGetter: "AdditionalPropertiesInput"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItemsInput", GoGetter: "UniqueItemsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolClientFunctionParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,11 +245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionResponse",
-		reflect.TypeOf((*CesToolClientFunctionResponse)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunctionResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionResponseOutputReference",
-		reflect.TypeOf((*CesToolClientFunctionResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolClientFunctionResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalPropertiesInput", GoGetter: "AdditionalPropertiesInput"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItemsInput", GoGetter: "UniqueItemsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolClientFunctionResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,19 +337,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolConfig",
-		reflect.TypeOf((*CesToolConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreTool",
-		reflect.TypeOf((*CesToolDataStoreTool)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecs",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecs)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsList",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -371,7 +371,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -408,23 +408,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpec",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpec)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -446,7 +446,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeValue", GoGetter: "AttributeValue"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeValueInput", GoGetter: "AttributeValueInput"},
@@ -476,7 +476,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -484,7 +484,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeType", GoGetter: "AttributeType"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeTypeInput", GoGetter: "AttributeTypeInput"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -529,7 +529,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -543,7 +543,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -551,7 +551,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boost", GoGetter: "Boost"},
 			_jsii_.MemberProperty{JsiiProperty: "boostControlSpec", GoGetter: "BoostControlSpec"},
@@ -584,7 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -592,7 +592,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecList",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -606,7 +606,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -614,7 +614,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolBoostSpecsSpecOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolBoostSpecsSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolBoostSpecsSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -641,7 +641,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolBoostSpecsSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -649,23 +649,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSource",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSource)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSources",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSources)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStore",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesDataStore)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesDataStore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -686,7 +686,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collection", GoGetter: "Collection"},
 			_jsii_.MemberProperty{JsiiProperty: "collectionDisplayName", GoGetter: "CollectionDisplayName"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -721,7 +721,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -752,7 +752,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -760,7 +760,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesList",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -774,7 +774,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -782,7 +782,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -813,7 +813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -821,7 +821,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolEngineSourceOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolEngineSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolEngineSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -854,7 +854,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -862,15 +862,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigs",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigs)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsGroundingConfig",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsGroundingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsGroundingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -900,7 +900,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -908,7 +908,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsList",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsList)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -922,7 +922,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -930,7 +930,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -968,7 +968,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -976,15 +976,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfig",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsRewriterConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsRewriterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsRewriterConfigModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1014,7 +1014,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1022,7 +1022,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1055,7 +1055,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1063,15 +1063,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfig",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsSummarizationConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsSummarizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettings",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1101,7 +1101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1109,7 +1109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1143,7 +1143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1151,7 +1151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolOutputReference",
-		reflect.TypeOf((*CesToolDataStoreToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolDataStoreToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boostSpecs", GoGetter: "BoostSpecs"},
 			_jsii_.MemberProperty{JsiiProperty: "boostSpecsInput", GoGetter: "BoostSpecsInput"},
@@ -1195,7 +1195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolDataStoreToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1203,11 +1203,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolGoogleSearchTool",
-		reflect.TypeOf((*CesToolGoogleSearchTool)(nil)).Elem(),
+		reflect.TypeFor[CesToolGoogleSearchTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolGoogleSearchToolOutputReference",
-		reflect.TypeOf((*CesToolGoogleSearchToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolGoogleSearchToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1245,7 +1245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolGoogleSearchToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1253,19 +1253,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiTool",
-		reflect.TypeOf((*CesToolOpenApiTool)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthentication",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthentication)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthentication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationApiKeyConfig",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationApiKeyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationApiKeyConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationApiKeyConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationApiKeyConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1278,7 +1278,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationApiKeyConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1286,7 +1286,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationApiKeyConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationApiKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationApiKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeySecretVersion", GoGetter: "ApiKeySecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1313,7 +1313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationApiKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1321,11 +1321,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationBearerTokenConfig",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationBearerTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationBearerTokenConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationBearerTokenConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationBearerTokenConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationBearerTokenConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1338,7 +1338,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationBearerTokenConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1346,7 +1346,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationBearerTokenConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationBearerTokenConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationBearerTokenConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1371,7 +1371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationBearerTokenConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1379,7 +1379,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1392,7 +1392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1400,11 +1400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationOauthConfig",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationOauthConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationOauthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationOauthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1417,7 +1417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationOauthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1425,7 +1425,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationOauthConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretVersion", GoGetter: "ClientSecretVersion"},
@@ -1454,7 +1454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpoint", GoGetter: "TokenEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1462,7 +1462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfig", GoGetter: "ApiKeyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bearerTokenConfig", GoGetter: "BearerTokenConfig"},
@@ -1491,7 +1491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1499,11 +1499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfig",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1516,7 +1516,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1524,7 +1524,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1549,7 +1549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1557,11 +1557,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1574,7 +1574,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1582,7 +1582,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1606,7 +1606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1614,7 +1614,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolList",
-		reflect.TypeOf((*CesToolOpenApiToolList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1627,7 +1627,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1635,7 +1635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiAuthentication", GoGetter: "ApiAuthentication"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1667,7 +1667,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1675,11 +1675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolServiceDirectoryConfig",
-		reflect.TypeOf((*CesToolOpenApiToolServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolServiceDirectoryConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolServiceDirectoryConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolServiceDirectoryConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1692,7 +1692,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolServiceDirectoryConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1700,7 +1700,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1725,7 +1725,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1733,15 +1733,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfig",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfig)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfigCaCerts",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfigCaCerts)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfigCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfigCaCertsList",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfigCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfigCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1754,7 +1754,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolTlsConfigCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1762,7 +1762,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfigCaCertsOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfigCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfigCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1788,7 +1788,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolTlsConfigCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1796,7 +1796,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfigList",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1809,7 +1809,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolTlsConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1817,7 +1817,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolOpenApiToolTlsConfigOutputReference",
-		reflect.TypeOf((*CesToolOpenApiToolTlsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolOpenApiToolTlsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1842,7 +1842,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolOpenApiToolTlsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1850,11 +1850,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolPythonFunction",
-		reflect.TypeOf((*CesToolPythonFunction)(nil)).Elem(),
+		reflect.TypeFor[CesToolPythonFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolPythonFunctionOutputReference",
-		reflect.TypeOf((*CesToolPythonFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolPythonFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1885,7 +1885,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolPythonFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1893,11 +1893,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolSystemTool",
-		reflect.TypeOf((*CesToolSystemTool)(nil)).Elem(),
+		reflect.TypeFor[CesToolSystemTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolSystemToolList",
-		reflect.TypeOf((*CesToolSystemToolList)(nil)).Elem(),
+		reflect.TypeFor[CesToolSystemToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1910,7 +1910,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolSystemToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1918,7 +1918,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolSystemToolOutputReference",
-		reflect.TypeOf((*CesToolSystemToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolSystemToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1944,7 +1944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolSystemToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1952,11 +1952,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesTool.CesToolTimeouts",
-		reflect.TypeOf((*CesToolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesToolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesTool.CesToolTimeoutsOutputReference",
-		reflect.TypeOf((*CesToolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesToolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1989,7 +1989,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesToolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

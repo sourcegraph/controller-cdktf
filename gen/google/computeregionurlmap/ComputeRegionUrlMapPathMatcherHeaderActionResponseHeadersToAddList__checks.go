@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAd
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddLi
 
 	return nil
 }
-

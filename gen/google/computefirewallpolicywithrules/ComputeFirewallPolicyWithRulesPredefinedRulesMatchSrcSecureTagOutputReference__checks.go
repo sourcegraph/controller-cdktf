@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagOu
 
 	return nil
 }
-

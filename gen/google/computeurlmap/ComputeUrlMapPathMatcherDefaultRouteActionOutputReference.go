@@ -14,9 +14,9 @@ type ComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	CachePolicyInput() *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,11 +54,11 @@ type ComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	UrlRewrite() ComputeUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference
 	UrlRewriteInput() *ComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite
 	WeightedBackendServices() ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList
-	WeightedBackendServicesInput() interface{}
+	WeightedBackendServicesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	PutRetryPolicy(value *ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy)
 	PutTimeout(value *ComputeUrlMapPathMatcherDefaultRouteActionTimeout)
 	PutUrlRewrite(value *ComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite)
-	PutWeightedBackendServices(value interface{})
+	PutWeightedBackendServices(value any)
 	ResetCachePolicy()
 	ResetCorsPolicy()
 	ResetFaultInjectionPolicy()
@@ -99,7 +99,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionOutputReference interface {
 	ResetWeightedBackendServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ca
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) We
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) WeightedBackendServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) WeightedBackendServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"weightedBackendServicesInput",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) We
 	)
 	return returns
 }
-
 
 func NewComputeUrlMapPathMatcherDefaultRouteActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeUrlMapPathMatcherDefaultRouteActionOutputReference {
 	_init_.Initialize()
@@ -373,7 +372,7 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionOutputReference_Override(c Com
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)SetInternalValue(val *ComputeUrlMapPathMatcherDefaultRouteAction) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) SetInternalValue(val *ComputeUrlMapPathMatcherDefaultRouteAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,16 +457,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Co
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) In
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putCachePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -649,7 +648,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putCorsPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -660,7 +659,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putFaultInjectionPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -671,7 +670,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putMaxStreamDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -682,7 +681,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putRequestMirrorPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -693,7 +692,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putRetryPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -704,7 +703,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeout",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -715,18 +714,18 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putUrlRewrite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) PutWeightedBackendServices(value interface{}) {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) PutWeightedBackendServices(value any) {
 	if err := c.validatePutWeightedBackendServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putWeightedBackendServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Re
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionOutputReference) To
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateInterpola
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutContainersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutContai
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,4 +292,3 @@ func validateNewCloudRunServiceTemplateSpecOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

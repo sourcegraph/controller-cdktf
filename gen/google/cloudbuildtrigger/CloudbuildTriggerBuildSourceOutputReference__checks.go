@@ -120,7 +120,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewCloudbuildTriggerBuildSourceOutputReferenceParameters(terraformR
 
 	return nil
 }
-

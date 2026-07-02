@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDatastreamPrivateConnectionTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewComputeInstanceAdvancedMachineFeaturesOutputReferenceParameters(
 
 	return nil
 }
-

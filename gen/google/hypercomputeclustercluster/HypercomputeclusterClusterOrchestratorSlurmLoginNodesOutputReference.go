@@ -14,9 +14,9 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	BootDiskInput() *HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,12 +30,12 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableOsLogin() interface{}
-	SetEnableOsLogin(val interface{})
-	EnableOsLoginInput() interface{}
-	EnablePublicIps() interface{}
-	SetEnablePublicIps(val interface{})
-	EnablePublicIpsInput() interface{}
+	EnableOsLogin() any
+	SetEnableOsLogin(val any)
+	EnableOsLoginInput() any
+	EnablePublicIps() any
+	SetEnablePublicIps(val any)
+	EnablePublicIpsInput() any
 	// Experimental.
 	Fqn() *string
 	Instances() HypercomputeclusterClusterOrchestratorSlurmLoginNodesInstancesList
@@ -51,7 +51,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	SetStartupScript(val *string)
 	StartupScriptInput() *string
 	StorageConfigs() HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList
-	StorageConfigsInput() interface{}
+	StorageConfigsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +66,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBootDisk(value *HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk)
-	PutStorageConfigs(value interface{})
+	PutStorageConfigs(value any)
 	ResetBootDisk()
 	ResetEnableOsLogin()
 	ResetEnablePublicIps()
@@ -97,7 +97,7 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference interf
 	ResetStorageConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnableOsLogin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnableOsLogin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOsLogin",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnableOsLoginInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnableOsLoginInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOsLoginInput",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnablePublicIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnablePublicIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIps",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnablePublicIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) EnablePublicIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePublicIpsInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) StorageConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) StorageConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageConfigsInput",
@@ -370,7 +370,6 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-
 func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference {
 	_init_.Initialize()
 
@@ -381,7 +380,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -393,12 +392,12 @@ func NewHypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetCount(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetCount(val *string) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetEnableOsLogin(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetEnableOsLogin(val any) {
 	if err := j.validateSetEnableOsLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetEnablePublicIps(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetEnablePublicIps(val any) {
 	if err := j.validateSetEnablePublicIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetInternalValue(val *HypercomputeclusterClusterOrchestratorSlurmLoginNodes) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetInternalValue(val *HypercomputeclusterClusterOrchestratorSlurmLoginNodes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetStartupScript(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetStartupScript(val *string) {
 	if err := j.validateSetStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference)SetZone(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,16 +542,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -723,18 +722,18 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	_jsii_.InvokeVoid(
 		h,
 		"putBootDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) PutStorageConfigs(value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) PutStorageConfigs(value any) {
 	if err := h.validatePutStorageConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putStorageConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -786,16 +785,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -814,4 +813,3 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesOutputRe
 
 	return returns
 }
-

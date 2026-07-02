@@ -1,6 +1,5 @@
 package dataprocworkflowtemplate
 
-
 type DataprocWorkflowTemplateJobsPrestoJob struct {
 	// Optional. Presto client tags to attach to this query.
 	//
@@ -11,7 +10,7 @@ type DataprocWorkflowTemplateJobsPrestoJob struct {
 	// Whether to continue executing queries if a query fails. The default value is `false`. Setting to `true` can be useful when executing independent parallel queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#continue_on_failure DataprocWorkflowTemplate#continue_on_failure}
-	ContinueOnFailure interface{} `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
+	ContinueOnFailure any `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
 	// logging_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#logging_config DataprocWorkflowTemplate#logging_config}
@@ -35,4 +34,3 @@ type DataprocWorkflowTemplateJobsPrestoJob struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#query_list DataprocWorkflowTemplate#query_list}
 	QueryList *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct `field:"optional" json:"queryList" yaml:"queryList"`
 }
-

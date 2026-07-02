@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfig",
-		reflect.TypeOf((*DataLineageConfig)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigConfig",
-		reflect.TypeOf((*DataLineageConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestion",
-		reflect.TypeOf((*DataLineageConfigIngestion)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionOutputReference",
-		reflect.TypeOf((*DataLineageConfigIngestionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigIngestionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,15 +120,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRule",
-		reflect.TypeOf((*DataLineageConfigIngestionRule)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleIntegrationSelector)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleIntegrationSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelectorOutputReference",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleIntegrationSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleIntegrationSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigIngestionRuleIntegrationSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleLineageEnablement)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleLineageEnablement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablementOutputReference",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleLineageEnablementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleLineageEnablementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigIngestionRuleLineageEnablementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleList",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleList)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigIngestionRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -222,7 +222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleOutputReference",
-		reflect.TypeOf((*DataLineageConfigIngestionRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigIngestionRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigIngestionRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigTimeouts",
-		reflect.TypeOf((*DataLineageConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigTimeoutsOutputReference",
-		reflect.TypeOf((*DataLineageConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLineageConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLineageConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerVpnConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEdgecontainerVpnConnectionTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

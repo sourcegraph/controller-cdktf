@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobExtractSourceModelOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobExtractSourceModelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobExtractSourceModelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryJobExtractSourceModelOutputReferenceParameters(terraform
 
 	return nil
 }
-

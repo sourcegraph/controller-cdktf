@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
-		reflect.TypeOf((*IntegrationsClient)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClient](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationsClient{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClientCloudKmsConfig",
-		reflect.TypeOf((*IntegrationsClientCloudKmsConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClientCloudKmsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClientCloudKmsConfigOutputReference",
-		reflect.TypeOf((*IntegrationsClientCloudKmsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClientCloudKmsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,15 +131,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClientConfig",
-		reflect.TypeOf((*IntegrationsClientConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClientConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClientTimeouts",
-		reflect.TypeOf((*IntegrationsClientTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClientTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClientTimeoutsOutputReference",
-		reflect.TypeOf((*IntegrationsClientTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationsClientTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationsClientTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

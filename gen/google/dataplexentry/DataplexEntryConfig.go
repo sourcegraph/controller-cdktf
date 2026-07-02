@@ -6,9 +6,9 @@ import (
 
 type DataplexEntryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataplexEntryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The relative resource name of the entry type that was used to create this entry, in the format projects/{project_number}/locations/{locationId}/entryTypes/{entryTypeId}.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#entry_type DataplexEntry#entry_type}
@@ -26,7 +26,7 @@ type DataplexEntryConfig struct {
 	// aspects block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#aspects DataplexEntry#aspects}
-	Aspects interface{} `field:"optional" json:"aspects" yaml:"aspects"`
+	Aspects any `field:"optional" json:"aspects" yaml:"aspects"`
 	// The entry group id of the entry group the entry will be created in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#entry_group_id DataplexEntry#entry_group_id}
@@ -66,4 +66,3 @@ type DataplexEntryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#timeouts DataplexEntry#timeouts}
 	Timeouts *DataplexEntryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

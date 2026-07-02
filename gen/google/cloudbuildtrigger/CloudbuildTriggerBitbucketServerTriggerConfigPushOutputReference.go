@@ -15,9 +15,9 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference interface 
 	BranchInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference interface 
 	Fqn() *string
 	InternalValue() *CloudbuildTriggerBitbucketServerTriggerConfigPush
 	SetInternalValue(val *CloudbuildTriggerBitbucketServerTriggerConfigPush)
-	InvertRegex() interface{}
-	SetInvertRegex(val interface{})
-	InvertRegexInput() interface{}
+	InvertRegex() any
+	SetInvertRegex(val any)
+	InvertRegexInput() any
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -49,7 +49,7 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference interface 
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) InvertRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) InvertRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) InvertRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) InvertRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegexInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return returns
 }
 
-
 func NewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetInternalValue(val *CloudbuildTriggerBitbucketServerTriggerConfigPush) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetInternalValue(val *CloudbuildTriggerBitbucketServerTriggerConfigPush) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetInvertRegex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetInvertRegex(val any) {
 	if err := j.validateSetInvertRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetTag(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetTag(val *string) {
 	if err := j.validateSetTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 
 	return returns
 }
-

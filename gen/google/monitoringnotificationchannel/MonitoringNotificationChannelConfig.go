@@ -6,9 +6,9 @@ import (
 
 type MonitoringNotificationChannelConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitoringNotificationChannelConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The type of the notification channel.
 	//
 	// This field matches the value of the NotificationChannelDescriptor.type field. See https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of valid values such as "email", "slack", etc...
@@ -42,7 +42,7 @@ type MonitoringNotificationChannelConfig struct {
 	// This makes it possible to disable delivery of notifications to a particular channel without removing the channel from all alerting policies that reference the channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the same set of alerting policies on the channel at some point in the future.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// If true, the notification channel will be deleted regardless of its use in alert policies (the policies will be updated to remove the channel).
 	//
 	// If false, channels that are still
@@ -50,7 +50,7 @@ type MonitoringNotificationChannelConfig struct {
 	// deleted in a delete operation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -85,4 +85,3 @@ type MonitoringNotificationChannelConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_notification_channel#user_labels MonitoringNotificationChannel#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
-

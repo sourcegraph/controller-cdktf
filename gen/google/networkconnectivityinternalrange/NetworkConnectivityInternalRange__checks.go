@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) validateAddMoveTargetParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRange) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) validateMoveFromIdParameter
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRange) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateNetworkConnectivityInternalRange_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateNetworkConnectivityInternalRange_IsConstructParameters(x interface{}) error {
+func validateNetworkConnectivityInternalRange_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateNetworkConnectivityInternalRange_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateNetworkConnectivityInternalRange_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkConnectivityInternalRange_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateNetworkConnectivityInternalRange_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateNetworkConnectivityInternalRange_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkConnectivityInternalRange_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateNetworkConnectivityInternalRange_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -563,4 +563,3 @@ func validateNewNetworkConnectivityInternalRangeParameters(scope constructs.Cons
 
 	return nil
 }
-

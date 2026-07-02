@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) 
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsListParam
 
 	return nil
 }
-

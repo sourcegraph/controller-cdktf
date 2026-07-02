@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateAddMoveTargetParameter
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationAssignment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryReservationAssignment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigqueryReservationAssignment_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateBigqueryReservationAssignment_IsConstructParameters(x interface{}) error {
+func validateBigqueryReservationAssignment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigqueryReservationAssignment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateBigqueryReservationAssignment_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryReservationAssignment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigqueryReservationAssignment_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateBigqueryReservationAssignment_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryReservationAssignment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) validateSetAssigneeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationAssignment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationAssignment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryReservationAssignment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewBigqueryReservationAssignmentParameters(scope constructs.Constru
 
 	return nil
 }
-

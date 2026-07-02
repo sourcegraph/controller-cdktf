@@ -122,7 +122,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewFilestoreInstanceFileSharesNfsExportOptionsOutputReferenceParame
 
 	return nil
 }
-

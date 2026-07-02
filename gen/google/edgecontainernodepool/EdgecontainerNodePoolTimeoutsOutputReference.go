@@ -12,9 +12,9 @@ type EdgecontainerNodePoolTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type EdgecontainerNodePoolTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type EdgecontainerNodePoolTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type EdgecontainerNodePoolTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) UpdateInput() *
 	return returns
 }
 
-
 func NewEdgecontainerNodePoolTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerNodePoolTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEdgecontainerNodePoolTimeoutsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEdgecontainerNodePoolTimeoutsOutputReference_Override(e EdgecontainerNod
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetCreate(val *s
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetDelete(val *s
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) ToString() *str
 
 	return returns
 }
-

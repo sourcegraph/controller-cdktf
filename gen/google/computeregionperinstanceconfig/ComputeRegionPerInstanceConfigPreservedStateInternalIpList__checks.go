@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpList) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionPerInstanceConfigPreservedStateInternalIpListParame
 
 	return nil
 }
-

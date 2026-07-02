@@ -34,7 +34,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIntegrationConnectorsConnectionConfigVariableListParameters(terr
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ApigeeAppGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeAppGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the AppGroup. Characters you can use in the name are restricted to: A-Z0-9._-$ %.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_app_group#name ApigeeAppGroup#name}
@@ -30,7 +30,7 @@ type ApigeeAppGroupConfig struct {
 	// attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_app_group#attributes ApigeeAppGroup#attributes}
-	Attributes interface{} `field:"optional" json:"attributes" yaml:"attributes"`
+	Attributes any `field:"optional" json:"attributes" yaml:"attributes"`
 	// Channel identifier identifies the owner maintaining this grouping.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_app_group#channel_id ApigeeAppGroup#channel_id}
@@ -59,4 +59,3 @@ type ApigeeAppGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_app_group#timeouts ApigeeAppGroup#timeouts}
 	Timeouts *ApigeeAppGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

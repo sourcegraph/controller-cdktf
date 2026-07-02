@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudRunV2ServiceTemplateContainersVolumeMountsOutputReferencePa
 
 	return nil
 }
-

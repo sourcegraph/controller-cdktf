@@ -14,9 +14,9 @@ type VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference interfac
 	BigqueryDestinationInput() *VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *VertexAiEndpointPredictRequestResponseLoggingConfig
@@ -48,7 +48,7 @@ type VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference interfac
 	ResetSamplingRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	return returns
 }
 
-
 func NewVertexAiEndpointPredictRequestResponseLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewVertexAiEndpointPredictRequestResponseLoggingConfigOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewVertexAiEndpointPredictRequestResponseLoggingConfigOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetInternalValue(val *VertexAiEndpointPredictRequestResponseLoggingConfig) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetInternalValue(val *VertexAiEndpointPredictRequestResponseLoggingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetSamplingRate(val *float64) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetSamplingRate(val *float64) {
 	if err := j.validateSetSamplingRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	_jsii_.InvokeVoid(
 		v,
 		"putBigqueryDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigOutputRefe
 
 	return returns
 }
-

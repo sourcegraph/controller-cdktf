@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolOpenApiToolTlsConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CesToolOpenApiToolTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolOpenApiToolTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesToolOpenApiToolTlsConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

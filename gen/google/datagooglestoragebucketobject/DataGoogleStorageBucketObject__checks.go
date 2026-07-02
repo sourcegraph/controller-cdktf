@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleStorageBucketObject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleStorageBucketObject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleStorageBucketObject_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataGoogleStorageBucketObject_IsConstructParameters(x interface{}) error {
+func validateDataGoogleStorageBucketObject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleStorageBucketObject_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataGoogleStorageBucketObject_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleStorageBucketObject_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleStorageBucketObject_IsTerraformDataSourceParameters(x int
 	return nil
 }
 
-func validateDataGoogleStorageBucketObject_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleStorageBucketObject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetBucketParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataGoogleStorageBucketObjectParameters(scope constructs.Constru
 
 	return nil
 }
-

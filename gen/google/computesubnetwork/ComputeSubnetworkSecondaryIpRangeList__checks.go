@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeSubnetworkSecondaryIpRangeListParameters(terraformResourc
 
 	return nil
 }
-

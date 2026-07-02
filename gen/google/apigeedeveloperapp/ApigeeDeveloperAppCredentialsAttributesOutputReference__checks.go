@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeDeveloperAppCredentialsAttributesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeDeveloperAppCredentialsAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeDeveloperAppCredentialsAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApigeeDeveloperAppCredentialsAttributesOutputReferenceParameters
 
 	return nil
 }
-

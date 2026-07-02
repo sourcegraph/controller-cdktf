@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVault)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExascaleDbStorageVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,19 +94,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultConfig",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultProperties",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultProperties)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availableSizeGbs", GoGetter: "AvailableSizeGbs"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalSizeGbs", GoGetter: "TotalSizeGbs"},
 			_jsii_.MemberProperty{JsiiProperty: "totalSizeGbsInput", GoGetter: "TotalSizeGbsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalFlashCachePercent", GoGetter: "AdditionalFlashCachePercent"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalFlashCachePercentInput", GoGetter: "AdditionalFlashCachePercentInput"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmClusterCount", GoGetter: "VmClusterCount"},
 			_jsii_.MemberProperty{JsiiProperty: "vmClusterIds", GoGetter: "VmClusterIds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesTimeZone",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultPropertiesTimeZone)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultPropertiesTimeZone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultTimeouts",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference",
-		reflect.TypeOf((*OracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

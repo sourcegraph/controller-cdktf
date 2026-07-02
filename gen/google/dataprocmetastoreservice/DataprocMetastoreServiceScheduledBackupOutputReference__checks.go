@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewDataprocMetastoreServiceScheduledBackupOutputReferenceParameters
 
 	return nil
 }
-

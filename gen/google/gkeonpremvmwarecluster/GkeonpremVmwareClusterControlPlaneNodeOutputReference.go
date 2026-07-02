@@ -14,9 +14,9 @@ type GkeonpremVmwareClusterControlPlaneNodeOutputReference interface {
 	AutoResizeConfigInput() *GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GkeonpremVmwareClusterControlPlaneNodeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type GkeonpremVmwareClusterControlPlaneNodeOutputReference interface {
 	ResetReplicas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) AutoRe
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) Vspher
 	return returns
 }
 
-
 func NewGkeonpremVmwareClusterControlPlaneNodeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareClusterControlPlaneNodeOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewGkeonpremVmwareClusterControlPlaneNodeOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterControlPlaneNodeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewGkeonpremVmwareClusterControlPlaneNodeOutputReference_Override(g Gkeonpr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterControlPlaneNodeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetCpus(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetCpus(val *float64) {
 	if err := j.validateSetCpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetCpus
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetInternalValue(val *GkeonpremVmwareClusterControlPlaneNode) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetInternalValue(val *GkeonpremVmwareClusterControlPlaneNode) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetMemory(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetMemory(val *float64) {
 	if err := j.validateSetMemoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetMemo
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetReplicas(val *float64) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetReplicas(val *float64) {
 	if err := j.validateSetReplicasParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetRepl
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) PutAut
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoResizeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,16 +597,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) ResetR
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeOutputReference) ToStri
 
 	return returns
 }
-

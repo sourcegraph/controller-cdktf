@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster",
-		reflect.TypeOf((*GkeonpremVmwareAdminCluster)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "addonNode", GoGetter: "AddonNode"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcenter", GoGetter: "Vcenter"},
 			_jsii_.MemberProperty{JsiiProperty: "vcenterInput", GoGetter: "VcenterInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNode",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAddonNode)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAddonNode](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAddonNodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAddonNodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoResizeConfig", GoGetter: "AutoResizeConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autoResizeConfigInput", GoGetter: "AutoResizeConfigInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAddonNodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,11 +225,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroups",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAntiAffinityGroups)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAntiAffinityGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aagConfigDisabled", GoGetter: "AagConfigDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "aagConfigDisabledInput", GoGetter: "AagConfigDisabledInput"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorization",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAuthorization)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAuthorization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAuthorizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAuthorizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "viewerUsers", GoGetter: "ViewerUsers"},
 			_jsii_.MemberProperty{JsiiProperty: "viewerUsersInput", GoGetter: "ViewerUsersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,11 +303,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsers",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAuthorizationViewerUsers)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAuthorizationViewerUsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsersList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAuthorizationViewerUsersList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAuthorizationViewerUsersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationViewerUsersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -329,7 +329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -363,11 +363,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAutoRepairConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAutoRepairConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -393,7 +393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -401,15 +401,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNode",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterControlPlaneNode)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterControlPlaneNode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -450,11 +450,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleet",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterFleet)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterFleet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleetList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterFleetList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterFleetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -467,7 +467,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterFleetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -475,7 +475,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleetOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterFleetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterFleetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -500,7 +500,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterFleetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -508,15 +508,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancer",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancer)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5Config",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerF5Config)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerF5Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -549,7 +549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -557,11 +557,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonsNodePort", GoGetter: "AddonsNodePort"},
 			_jsii_.MemberProperty{JsiiProperty: "addonsNodePortInput", GoGetter: "AddonsNodePortInput"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -608,11 +608,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -647,7 +647,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -686,7 +686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vipConfig", GoGetter: "VipConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vipConfigInput", GoGetter: "VipConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -694,11 +694,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerVipConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerVipConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonsVip", GoGetter: "AddonsVip"},
 			_jsii_.MemberProperty{JsiiProperty: "addonsVipInput", GoGetter: "AddonsVipInput"},
@@ -727,7 +727,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -735,15 +735,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -769,7 +769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -777,19 +777,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -803,7 +803,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -811,7 +811,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -840,7 +840,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -848,7 +848,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -879,7 +879,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -887,7 +887,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -915,7 +915,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -923,11 +923,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHostConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHostConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -960,7 +960,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -968,7 +968,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1015,7 +1015,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vcenterNetwork", GoGetter: "VcenterNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "vcenterNetworkInput", GoGetter: "VcenterNetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1023,19 +1023,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1049,7 +1049,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1057,7 +1057,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1086,7 +1086,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1094,7 +1094,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1108,7 +1108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1116,7 +1116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1147,7 +1147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1155,7 +1155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1183,7 +1183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1191,15 +1191,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundles",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundles)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1212,7 +1212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1220,7 +1220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1246,7 +1246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1254,15 +1254,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1275,7 +1275,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1283,7 +1283,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1312,7 +1312,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1320,7 +1320,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1333,7 +1333,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1341,7 +1341,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1367,7 +1367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1375,7 +1375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundles", GoGetter: "Bundles"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1405,7 +1405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1413,15 +1413,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatus",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatus)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditions",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatusConditions)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatusConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1434,7 +1434,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1442,7 +1442,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1471,7 +1471,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1479,7 +1479,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatusList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1492,7 +1492,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1500,7 +1500,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1526,7 +1526,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1534,11 +1534,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfig",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPrivateRegistryConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPrivateRegistryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -1568,7 +1568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1576,11 +1576,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterProxy",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterProxy)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterProxy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterProxyOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterProxyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterProxyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1609,7 +1609,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterProxyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1617,15 +1617,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatus",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatus)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditions",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatusConditions)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatusConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatusConditionsList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatusConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1638,7 +1638,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1646,7 +1646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatusConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatusConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1675,7 +1675,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1683,7 +1683,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusList",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatusList)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1696,7 +1696,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1704,7 +1704,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1730,7 +1730,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1738,11 +1738,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeouts",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeoutsOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1775,7 +1775,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1783,11 +1783,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenter",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterVcenter)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterVcenter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenterOutputReference",
-		reflect.TypeOf((*GkeonpremVmwareAdminClusterVcenterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeonpremVmwareAdminClusterVcenterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -1838,7 +1838,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

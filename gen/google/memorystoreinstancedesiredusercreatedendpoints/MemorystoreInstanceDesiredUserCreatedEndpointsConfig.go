@@ -6,9 +6,9 @@ import (
 
 type MemorystoreInstanceDesiredUserCreatedEndpointsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MemorystoreInstanceDesiredUserCreatedEndpointsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Memorystore instance these endpoints should be added to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance_desired_user_created_endpoints#name MemorystoreInstanceDesiredUserCreatedEndpoints#name}
@@ -30,7 +30,7 @@ type MemorystoreInstanceDesiredUserCreatedEndpointsConfig struct {
 	// desired_user_created_endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance_desired_user_created_endpoints#desired_user_created_endpoints MemorystoreInstanceDesiredUserCreatedEndpoints#desired_user_created_endpoints}
-	DesiredUserCreatedEndpoints interface{} `field:"optional" json:"desiredUserCreatedEndpoints" yaml:"desiredUserCreatedEndpoints"`
+	DesiredUserCreatedEndpoints any `field:"optional" json:"desiredUserCreatedEndpoints" yaml:"desiredUserCreatedEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance_desired_user_created_endpoints#id MemorystoreInstanceDesiredUserCreatedEndpoints#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,4 +43,3 @@ type MemorystoreInstanceDesiredUserCreatedEndpointsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance_desired_user_created_endpoints#timeouts MemorystoreInstanceDesiredUserCreatedEndpoints#timeouts}
 	Timeouts *MemorystoreInstanceDesiredUserCreatedEndpointsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

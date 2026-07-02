@@ -6,9 +6,9 @@ import (
 
 type PubsubSubscriptionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PubsubSubscriptionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the subscription.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#name PubsubSubscription#name}
@@ -69,14 +69,14 @@ type PubsubSubscriptionConfig struct {
 	// is true if the message was published multiple times by a publisher client. These copies are considered distinct by Pub/Sub and have distinct messageId values
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#enable_exactly_once_delivery PubsubSubscription#enable_exactly_once_delivery}
-	EnableExactlyOnceDelivery interface{} `field:"optional" json:"enableExactlyOnceDelivery" yaml:"enableExactlyOnceDelivery"`
+	EnableExactlyOnceDelivery any `field:"optional" json:"enableExactlyOnceDelivery" yaml:"enableExactlyOnceDelivery"`
 	// If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to the subscribers in the order in which they are received by the Pub/Sub system.
 	//
 	// Otherwise, they
 	// may be delivered in any order.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#enable_message_ordering PubsubSubscription#enable_message_ordering}
-	EnableMessageOrdering interface{} `field:"optional" json:"enableMessageOrdering" yaml:"enableMessageOrdering"`
+	EnableMessageOrdering any `field:"optional" json:"enableMessageOrdering" yaml:"enableMessageOrdering"`
 	// expiration_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#expiration_policy PubsubSubscription#expiration_policy}
@@ -117,7 +117,7 @@ type PubsubSubscriptionConfig struct {
 	// message_transforms block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#message_transforms PubsubSubscription#message_transforms}
-	MessageTransforms interface{} `field:"optional" json:"messageTransforms" yaml:"messageTransforms"`
+	MessageTransforms any `field:"optional" json:"messageTransforms" yaml:"messageTransforms"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// push_config block.
@@ -132,7 +132,7 @@ type PubsubSubscriptionConfig struct {
 	// messageRetentionDuration window.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#retain_acked_messages PubsubSubscription#retain_acked_messages}
-	RetainAckedMessages interface{} `field:"optional" json:"retainAckedMessages" yaml:"retainAckedMessages"`
+	RetainAckedMessages any `field:"optional" json:"retainAckedMessages" yaml:"retainAckedMessages"`
 	// retry_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#retry_policy PubsubSubscription#retry_policy}
@@ -155,4 +155,3 @@ type PubsubSubscriptionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#timeouts PubsubSubscription#timeouts}
 	Timeouts *PubsubSubscriptionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

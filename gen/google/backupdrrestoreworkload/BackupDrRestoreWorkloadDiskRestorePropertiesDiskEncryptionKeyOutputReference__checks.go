@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOut
 
 	return nil
 }
-

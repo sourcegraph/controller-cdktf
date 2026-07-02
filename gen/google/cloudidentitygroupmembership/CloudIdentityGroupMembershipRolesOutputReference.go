@@ -12,9 +12,9 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	ExpiryDetailInput() *CloudIdentityGroupMembershipRolesExpiryDetail
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -45,7 +45,7 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	ResetExpiryDetail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewCloudIdentityGroupMembershipRolesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudIdentityGroupMembershipRolesOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewCloudIdentityGroupMembershipRolesOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewCloudIdentityGroupMembershipRolesOutputReference_Override(c CloudIdentit
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) PutExpiryDe
 	_jsii_.InvokeVoid(
 		c,
 		"putExpiryDetail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ResetExpiry
 	)
 }
 
-func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ToString() 
 
 	return returns
 }
-

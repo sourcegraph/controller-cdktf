@@ -1,18 +1,17 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy struct {
 	// If true, specifies the CORS policy is disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
-	Disabled interface{} `field:"required" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"required" json:"disabled" yaml:"disabled"`
 	// In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 	//
 	// This translates to the Access-
 	// Control-Allow-Credentials header. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
-	AllowCredentials interface{} `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
+	AllowCredentials any `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
 	// Specifies the content for the Access-Control-Allow-Headers header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
@@ -48,4 +47,3 @@ type ComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 	MaxAge *float64 `field:"optional" json:"maxAge" yaml:"maxAge"`
 }
-

@@ -19,11 +19,11 @@ type DataGoogleFolderOrganizationPolicy interface {
 	SetConstraint(val *string)
 	ConstraintInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,20 +55,20 @@ type DataGoogleFolderOrganizationPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestorePolicy() DataGoogleFolderOrganizationPolicyRestorePolicyList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
 	Version() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleFolderOrganizationPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleFolderOrganizationPolicy
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) ConstraintInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) Version() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/folder_organization_policy google_folder_organization_policy} Data Source.
 func NewDataGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, config *DataGoogleFolderOrganizationPolicyConfig) DataGoogleFolderOrganizationPolicy {
 	_init_.Initialize()
@@ -385,7 +384,7 @@ func NewDataGoogleFolderOrganizationPolicy(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -398,12 +397,12 @@ func NewDataGoogleFolderOrganizationPolicy_Override(d DataGoogleFolderOrganizati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetConstraint(val *string) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetConstraint(val *string) {
 	if err := j.validateSetConstraintParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetConstraint(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetFolder(val *string) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -494,7 +493,7 @@ func DataGoogleFolderOrganizationPolicy_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleFolderOrganizationPolicy_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleFolderOrganizationPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolderOrganizationPolicy_IsConstructParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleFolderOrganizationPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolderOrganizationPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func DataGoogleFolderOrganizationPolicy_IsTerraformDataSource(x interface{}) *bo
 }
 
 // Experimental.
-func DataGoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleFolderOrganizationPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleFolderOrganizationPolicy_IsTerraformElementParameters(x); err != nil {
@@ -567,7 +566,7 @@ func DataGoogleFolderOrganizationPolicy_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,27 +584,27 @@ func DataGoogleFolderOrganizationPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -783,8 +782,8 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ResetOverrideLogicalId() 
 	)
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -796,8 +795,8 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -809,8 +808,8 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) SynthesizeHclAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -822,8 +821,8 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToHclTerraform() interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -848,8 +847,8 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -860,4 +859,3 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) ToTerraform() interface{}
 
 	return returns
 }
-

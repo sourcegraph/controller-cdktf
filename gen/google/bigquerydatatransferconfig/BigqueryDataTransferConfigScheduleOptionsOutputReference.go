@@ -12,9 +12,9 @@ type BigqueryDataTransferConfigScheduleOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type BigqueryDataTransferConfigScheduleOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableAutoScheduling() interface{}
-	SetDisableAutoScheduling(val interface{})
-	DisableAutoSchedulingInput() interface{}
+	DisableAutoScheduling() any
+	SetDisableAutoScheduling(val any)
+	DisableAutoSchedulingInput() any
 	EndTime() *string
 	SetEndTime(val *string)
 	EndTimeInput() *string
@@ -49,7 +49,7 @@ type BigqueryDataTransferConfigScheduleOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type BigqueryDataTransferConfigScheduleOptionsOutputReference interface {
 	ResetStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) DisableAutoScheduling() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) DisableAutoScheduling() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoScheduling",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Dis
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) DisableAutoSchedulingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) DisableAutoSchedulingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAutoSchedulingInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Ter
 	return returns
 }
 
-
 func NewBigqueryDataTransferConfigScheduleOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigScheduleOptionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewBigqueryDataTransferConfigScheduleOptionsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewBigqueryDataTransferConfigScheduleOptionsOutputReference_Override(b Bigq
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetDisableAutoScheduling(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetDisableAutoScheduling(val any) {
 	if err := j.validateSetDisableAutoSchedulingParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetEndTime(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetEndTime(val *string) {
 	if err := j.validateSetEndTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetInternalValue(val *BigqueryDataTransferConfigScheduleOptions) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetInternalValue(val *BigqueryDataTransferConfigScheduleOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Com
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Get
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Int
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Res
 	)
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) ToS
 
 	return returns
 }
-

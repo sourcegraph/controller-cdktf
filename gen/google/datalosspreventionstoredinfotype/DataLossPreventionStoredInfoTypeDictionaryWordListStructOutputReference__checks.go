@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListStructOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputRe
 
 	return nil
 }
-

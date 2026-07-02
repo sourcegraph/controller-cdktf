@@ -15,15 +15,15 @@ type AppEngineServiceSplitTraffic interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,9 +43,9 @@ type AppEngineServiceSplitTraffic interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MigrateTraffic() interface{}
-	SetMigrateTraffic(val interface{})
-	MigrateTrafficInput() interface{}
+	MigrateTraffic() any
+	SetMigrateTraffic(val any)
+	MigrateTrafficInput() any
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -56,11 +56,11 @@ type AppEngineServiceSplitTraffic interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -69,18 +69,18 @@ type AppEngineServiceSplitTraffic interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AppEngineServiceSplitTrafficTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type AppEngineServiceSplitTraffic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type AppEngineServiceSplitTraffic interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type AppEngineServiceSplitTraffic interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppEngineServiceSplitTraffic
@@ -154,8 +154,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) MigrateTraffic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) MigrateTraffic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migrateTraffic",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) MigrateTraffic() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) MigrateTrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) MigrateTrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migrateTrafficInput",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) Timeouts() AppEngineServiceSpli
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, config *AppEngineServiceSplitTrafficConfig) AppEngineServiceSplitTraffic {
@@ -436,7 +435,7 @@ func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewAppEngineServiceSplitTraffic_Override(a AppEngineServiceSplitTraffic, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetCount(val interface{}) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetId(val *string) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetMigrateTraffic(val interface{}) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetMigrateTraffic(val any) {
 	if err := j.validateSetMigrateTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetMigrateTraffic(val interface{
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProject(val *string) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetService(val *string) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func AppEngineServiceSplitTraffic_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func AppEngineServiceSplitTraffic_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppEngineServiceSplitTraffic_IsConstruct(x interface{}) *bool {
+func AppEngineServiceSplitTraffic_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineServiceSplitTraffic_IsConstructParameters(x); err != nil {
@@ -613,7 +612,7 @@ func AppEngineServiceSplitTraffic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func AppEngineServiceSplitTraffic_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppEngineServiceSplitTraffic_IsTerraformElement(x interface{}) *bool {
+func AppEngineServiceSplitTraffic_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineServiceSplitTraffic_IsTerraformElementParameters(x); err != nil {
@@ -632,7 +631,7 @@ func AppEngineServiceSplitTraffic_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func AppEngineServiceSplitTraffic_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppEngineServiceSplitTraffic_IsTerraformResource(x interface{}) *bool {
+func AppEngineServiceSplitTraffic_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x); err != nil {
@@ -651,7 +650,7 @@ func AppEngineServiceSplitTraffic_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTraffic",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,31 +675,31 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,15 +827,15 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -855,7 +854,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -868,7 +867,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,18 +881,18 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -904,7 +903,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -915,7 +914,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -926,7 +925,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) PutSplit(value *AppEngineServic
 	_jsii_.InvokeVoid(
 		a,
 		"putSplit",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -937,7 +936,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) PutTimeouts(value *AppEngineSer
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -994,8 +993,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1007,8 +1006,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1020,8 +1019,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1046,8 +1045,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1058,4 +1057,3 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) ToTerraform() interface{} {
 
 	return returns
 }
-

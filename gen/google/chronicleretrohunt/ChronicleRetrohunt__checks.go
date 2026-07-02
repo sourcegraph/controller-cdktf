@@ -19,7 +19,7 @@ func (c *jsiiProxy_ChronicleRetrohunt) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohunt) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ChronicleRetrohunt) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ChronicleRetrohunt) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohunt) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ChronicleRetrohunt) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateChronicleRetrohunt_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateChronicleRetrohunt_IsConstructParameters(x interface{}) error {
+func validateChronicleRetrohunt_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateChronicleRetrohunt_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateChronicleRetrohunt_IsTerraformElementParameters(x interface{}) error {
+func validateChronicleRetrohunt_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateChronicleRetrohunt_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateChronicleRetrohunt_IsTerraformResourceParameters(x interface{}) error {
+func validateChronicleRetrohunt_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateChronicleRetrohunt_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRetrohunt) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRetrohunt) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ChronicleRetrohunt) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRetrohunt) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRetrohunt) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ChronicleRetrohunt) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRetrohunt) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ChronicleRetrohunt) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewChronicleRetrohuntParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

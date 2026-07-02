@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleStorageProjectServiceAccount) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleStorageProjectServiceAccount) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleStorageProjectServiceAccount_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataGoogleStorageProjectServiceAccount_IsConstructParameters(x interface{}) error {
+func validateDataGoogleStorageProjectServiceAccount_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleStorageProjectServiceAccount_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataGoogleStorageProjectServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleStorageProjectServiceAccount_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleStorageProjectServiceAccount_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataGoogleStorageProjectServiceAccount_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleStorageProjectServiceAccount_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleStorageProjectServiceAccount_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageProjectServiceAccount) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageProjectServiceAccount) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataGoogleStorageProjectServiceAccountParameters(scope construct
 
 	return nil
 }
-

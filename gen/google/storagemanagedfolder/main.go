@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageManagedFolder.StorageManagedFolder",
-		reflect.TypeOf((*StorageManagedFolder)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolder](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageManagedFolder{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageManagedFolder.StorageManagedFolderConfig",
-		reflect.TypeOf((*StorageManagedFolderConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageManagedFolder.StorageManagedFolderTimeouts",
-		reflect.TypeOf((*StorageManagedFolderTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference",
-		reflect.TypeOf((*StorageManagedFolderTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageManagedFolderTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

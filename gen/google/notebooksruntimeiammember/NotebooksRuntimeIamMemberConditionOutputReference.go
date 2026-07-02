@@ -12,9 +12,9 @@ type NotebooksRuntimeIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type NotebooksRuntimeIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type NotebooksRuntimeIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) TitleInput
 	return returns
 }
 
-
 func NewNotebooksRuntimeIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksRuntimeIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewNotebooksRuntimeIamMemberConditionOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewNotebooksRuntimeIamMemberConditionOutputReference_Override(n NotebooksRu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetDescript
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetExpressi
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetInternalValue(val *NotebooksRuntimeIamMemberCondition) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetInternalValue(val *NotebooksRuntimeIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) ComputeFqn
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetListAtt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetNumberA
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetNumberL
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetNumberM
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetStringA
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) GetStringM
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) Interpolat
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) ResetDescr
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (n *jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference) ToString()
 
 	return returns
 }
-

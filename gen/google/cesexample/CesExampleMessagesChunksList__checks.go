@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesExampleMessagesChunksListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

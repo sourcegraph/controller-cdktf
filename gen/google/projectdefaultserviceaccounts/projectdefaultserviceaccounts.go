@@ -18,15 +18,15 @@ type ProjectDefaultServiceAccounts interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type ProjectDefaultServiceAccounts interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RestorePolicy() *string
 	SetRestorePolicy(val *string)
 	RestorePolicyInput() *string
@@ -68,18 +68,18 @@ type ProjectDefaultServiceAccounts interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ProjectDefaultServiceAccountsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type ProjectDefaultServiceAccounts interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type ProjectDefaultServiceAccounts interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type ProjectDefaultServiceAccounts interface {
 	ResetOverrideLogicalId()
 	ResetRestorePolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectDefaultServiceAccounts
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) Timeouts() ProjectDefaultServi
 	return returns
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_default_service_accounts google_project_default_service_accounts} Resource.
 func NewProjectDefaultServiceAccounts(scope constructs.Construct, id *string, config *ProjectDefaultServiceAccountsConfig) ProjectDefaultServiceAccounts {
@@ -423,7 +422,7 @@ func NewProjectDefaultServiceAccounts(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewProjectDefaultServiceAccounts_Override(p ProjectDefaultServiceAccounts, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetAction(val *string) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetId(val *string) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProject(val *string) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts)SetRestorePolicy(val *string) {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) SetRestorePolicy(val *string) {
 	if err := j.validateSetRestorePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func ProjectDefaultServiceAccounts_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func ProjectDefaultServiceAccounts_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectDefaultServiceAccounts_IsConstruct(x interface{}) *bool {
+func ProjectDefaultServiceAccounts_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectDefaultServiceAccounts_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func ProjectDefaultServiceAccounts_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func ProjectDefaultServiceAccounts_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectDefaultServiceAccounts_IsTerraformElement(x interface{}) *bool {
+func ProjectDefaultServiceAccounts_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectDefaultServiceAccounts_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func ProjectDefaultServiceAccounts_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func ProjectDefaultServiceAccounts_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectDefaultServiceAccounts_IsTerraformResource(x interface{}) *bool {
+func ProjectDefaultServiceAccounts_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectDefaultServiceAccounts_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func ProjectDefaultServiceAccounts_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -842,7 +841,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) PutTimeouts(value *ProjectDefa
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -962,8 +961,8 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -975,8 +974,8 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -988,8 +987,8 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1014,8 +1013,8 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1026,4 +1025,3 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) ToTerraform() interface{} {
 
 	return returns
 }
-

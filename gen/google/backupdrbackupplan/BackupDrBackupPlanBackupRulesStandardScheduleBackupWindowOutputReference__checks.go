@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutp
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBackupDrBackupPlanBackupRulesStandardScheduleBackupWindowOutputR
 
 	return nil
 }
-

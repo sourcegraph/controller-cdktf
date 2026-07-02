@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeServiceAttachmentConsumerAcceptListsListParameters(terraf
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package oracledatabasedbsystem
 
-
 type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig struct {
 	// If set to true, enables automatic backups on the database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system#auto_backup_enabled OracleDatabaseDbSystem#auto_backup_enabled}
-	AutoBackupEnabled interface{} `field:"optional" json:"autoBackupEnabled" yaml:"autoBackupEnabled"`
+	AutoBackupEnabled any `field:"optional" json:"autoBackupEnabled" yaml:"autoBackupEnabled"`
 	// Possible values: MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY SUNDAY.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system#auto_full_backup_day OracleDatabaseDbSystem#auto_full_backup_day}
@@ -56,7 +55,7 @@ type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig stru
 	// backup_destination_details block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system#backup_destination_details OracleDatabaseDbSystem#backup_destination_details}
-	BackupDestinationDetails interface{} `field:"optional" json:"backupDestinationDetails" yaml:"backupDestinationDetails"`
+	BackupDestinationDetails any `field:"optional" json:"backupDestinationDetails" yaml:"backupDestinationDetails"`
 	// The number of days an automatic backup is retained before being automatically deleted.
 	//
 	// This value determines the earliest point in time to
@@ -65,4 +64,3 @@ type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig stru
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system#retention_period_days OracleDatabaseDbSystem#retention_period_days}
 	RetentionPeriodDays *float64 `field:"optional" json:"retentionPeriodDays" yaml:"retentionPeriodDays"`
 }
-

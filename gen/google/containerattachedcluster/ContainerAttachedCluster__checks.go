@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContainerAttachedCluster) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContainerAttachedCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContainerAttachedCluster) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContainerAttachedCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateContainerAttachedCluster_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateContainerAttachedCluster_IsConstructParameters(x interface{}) error {
+func validateContainerAttachedCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func validateContainerAttachedCluster_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateContainerAttachedCluster_IsTerraformElementParameters(x interface{}) error {
+func validateContainerAttachedCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateContainerAttachedCluster_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateContainerAttachedCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateContainerAttachedCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_ContainerAttachedCluster) validateSetAnnotationsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_ContainerAttachedCluster) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -513,7 +513,7 @@ func (j *jsiiProxy_ContainerAttachedCluster) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContainerAttachedCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -577,4 +577,3 @@ func validateNewContainerAttachedClusterParameters(scope constructs.Construct, i
 
 	return nil
 }
-

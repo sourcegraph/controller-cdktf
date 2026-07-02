@@ -19,7 +19,7 @@ func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateAddMoveTargetParameter
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FirebaseAppCheckServiceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateFirebaseAppCheckServiceConfig_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateFirebaseAppCheckServiceConfig_IsConstructParameters(x interface{}) error {
+func validateFirebaseAppCheckServiceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateFirebaseAppCheckServiceConfig_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateFirebaseAppCheckServiceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateFirebaseAppCheckServiceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateFirebaseAppCheckServiceConfig_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateFirebaseAppCheckServiceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateFirebaseAppCheckServiceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateFirebaseAppCheckServiceConfig_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckServiceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewFirebaseAppCheckServiceConfigParameters(scope constructs.Constru
 
 	return nil
 }
-

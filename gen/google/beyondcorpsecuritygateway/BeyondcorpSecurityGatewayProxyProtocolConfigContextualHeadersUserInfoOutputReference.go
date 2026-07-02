@@ -12,9 +12,9 @@ type BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutput
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutput
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutput
 	ResetOutputType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUser
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return returns
 }
 
-
 func NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetInternalValue(val *BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetInternalValue(val *BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetOutputType(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetOutputType(val *string) {
 	if err := j.validateSetOutputTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 
 	return returns
 }
-

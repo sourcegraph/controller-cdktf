@@ -17,15 +17,15 @@ type KmsCryptoKeyVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CryptoKey() *string
 	SetCryptoKey(val *string)
 	CryptoKeyInput() *string
@@ -60,29 +60,29 @@ type KmsCryptoKeyVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KmsCryptoKeyVersionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type KmsCryptoKeyVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type KmsCryptoKeyVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type KmsCryptoKeyVersion interface {
 	ResetOverrideLogicalId()
 	ResetState()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsCryptoKeyVersion
@@ -176,8 +176,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) Timeouts() KmsCryptoKeyVersionTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -455,7 +455,6 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) KmsCryptoKeyVersion {
@@ -468,7 +467,7 @@ func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewKmsCryptoKeyVersion_Override(k KmsCryptoKeyVersion, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetCryptoKey(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetCryptoKey(val *string) {
 	if err := j.validateSetCryptoKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetCryptoKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -535,7 +534,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetId(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersion)SetState(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyVersion) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func KmsCryptoKeyVersion_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func KmsCryptoKeyVersion_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
+func KmsCryptoKeyVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyVersion_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func KmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func KmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
+func KmsCryptoKeyVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyVersion_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool {
+func KmsCryptoKeyVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyVersion_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func KmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsCryptoKeyVersion) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsCryptoKeyVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -876,7 +875,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsCryptoKeyVersion) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) PutExternalProtectionLevelOptions(value 
 	_jsii_.InvokeVoid(
 		k,
 		"putExternalProtectionLevelOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -958,7 +957,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) PutTimeouts(value *KmsCryptoKeyVersionTi
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1002,8 +1001,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1015,8 +1014,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -1028,8 +1027,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1041,8 +1040,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1067,8 +1066,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1079,4 +1078,3 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

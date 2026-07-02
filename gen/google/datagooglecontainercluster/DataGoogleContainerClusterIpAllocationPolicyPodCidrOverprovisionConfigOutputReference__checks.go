@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovis
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovision
 
 	return nil
 }
-

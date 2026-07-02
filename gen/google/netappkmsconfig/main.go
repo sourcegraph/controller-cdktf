@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappKmsconfig.NetappKmsconfig",
-		reflect.TypeOf((*NetappKmsconfig)(nil)).Elem(),
+		reflect.TypeFor[NetappKmsconfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappKmsconfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappKmsconfig.NetappKmsconfigConfig",
-		reflect.TypeOf((*NetappKmsconfigConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappKmsconfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappKmsconfig.NetappKmsconfigTimeouts",
-		reflect.TypeOf((*NetappKmsconfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappKmsconfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappKmsconfig.NetappKmsconfigTimeoutsOutputReference",
-		reflect.TypeOf((*NetappKmsconfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappKmsconfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappKmsconfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

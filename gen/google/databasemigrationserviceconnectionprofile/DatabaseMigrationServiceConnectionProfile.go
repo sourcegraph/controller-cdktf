@@ -19,18 +19,18 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	Cloudsql() DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference
 	CloudsqlInput() *DatabaseMigrationServiceConnectionProfileCloudsql
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionProfileId() *string
 	SetConnectionProfileId(val *string)
 	ConnectionProfileIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Dbprovider() *string
 	// Experimental.
@@ -80,28 +80,28 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	ResetPostgresql()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DatabaseMigrationServiceConnectionProfile
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) CloudsqlInput() *D
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ConnectionProfileI
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformLabels() 
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Timeouts() Databas
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -645,7 +645,6 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() in
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) DatabaseMigrationServiceConnectionProfile {
@@ -658,7 +657,7 @@ func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewDatabaseMigrationServiceConnectionProfile_Override(d DatabaseMigrationSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetConnectionProfileId(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetConnectionProfileId(val *string) {
 	if err := j.validateSetConnectionProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetConnectionProfil
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetDisplayName(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetDisplayName(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetId(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLabels(val *map[
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLocation(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetLocation(val *st
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetProject(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -799,7 +798,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func DatabaseMigrationServiceConnectionProfile_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func DatabaseMigrationServiceConnectionProfile_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) *bool {
+func DatabaseMigrationServiceConnectionProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServiceConnectionProfile_IsConstructParameters(x); err != nil {
@@ -857,7 +856,7 @@ func DatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func DatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func DatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interface{}) *bool {
+func DatabaseMigrationServiceConnectionProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServiceConnectionProfile_IsTerraformElementParameters(x); err != nil {
@@ -876,7 +875,7 @@ func DatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func DatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func DatabaseMigrationServiceConnectionProfile_IsTerraformResource(x interface{}) *bool {
+func DatabaseMigrationServiceConnectionProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServiceConnectionProfile_IsTerraformResourceParameters(x); err != nil {
@@ -895,7 +894,7 @@ func DatabaseMigrationServiceConnectionProfile_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -920,31 +919,31 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,15 +1071,15 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1099,7 +1098,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1126,18 +1125,18 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1148,7 +1147,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1159,7 +1158,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutAlloydb(value *
 	_jsii_.InvokeVoid(
 		d,
 		"putAlloydb",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutCloudsql(value 
 	_jsii_.InvokeVoid(
 		d,
 		"putCloudsql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutMysql(value *Da
 	_jsii_.InvokeVoid(
 		d,
 		"putMysql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutOracle(value *D
 	_jsii_.InvokeVoid(
 		d,
 		"putOracle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutPostgresql(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putPostgresql",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1325,8 +1324,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1338,8 +1337,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1351,8 +1350,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) SynthesizeHclAttri
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1364,8 +1363,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToHclTerraform() i
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1390,8 +1389,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToString() *string
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1402,4 +1401,3 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ToTerraform() inte
 
 	return returns
 }
-

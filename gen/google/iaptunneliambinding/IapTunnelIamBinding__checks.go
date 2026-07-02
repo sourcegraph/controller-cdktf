@@ -19,7 +19,7 @@ func (i *jsiiProxy_IapTunnelIamBinding) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IapTunnelIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IapTunnelIamBinding) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIapTunnelIamBinding_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateIapTunnelIamBinding_IsConstructParameters(x interface{}) error {
+func validateIapTunnelIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIapTunnelIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIapTunnelIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateIapTunnelIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIapTunnelIamBinding_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateIapTunnelIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateIapTunnelIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIapTunnelIamBinding_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IapTunnelIamBinding) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IapTunnelIamBinding) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IapTunnelIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewIapTunnelIamBindingParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetri
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeCatalog.BiglakeCatalog",
-		reflect.TypeOf((*BiglakeCatalog)(nil)).Elem(),
+		reflect.TypeFor[BiglakeCatalog](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeCatalog{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeCatalog.BiglakeCatalogConfig",
-		reflect.TypeOf((*BiglakeCatalogConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeCatalogConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeCatalog.BiglakeCatalogTimeouts",
-		reflect.TypeOf((*BiglakeCatalogTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BiglakeCatalogTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeCatalog.BiglakeCatalogTimeoutsOutputReference",
-		reflect.TypeOf((*BiglakeCatalogTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeCatalogTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeCatalogTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

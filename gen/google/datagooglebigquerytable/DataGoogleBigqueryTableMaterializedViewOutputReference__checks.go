@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableMaterializedViewOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryTableMaterializedViewOutputReferenceParameters
 
 	return nil
 }
-

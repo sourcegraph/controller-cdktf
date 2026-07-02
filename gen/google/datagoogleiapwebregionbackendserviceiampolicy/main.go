@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIapWebRegionBackendServiceIamPolicy.DataGoogleIapWebRegionBackendServiceIamPolicy",
-		reflect.TypeOf((*DataGoogleIapWebRegionBackendServiceIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIapWebRegionBackendServiceIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webRegionBackendService", GoGetter: "WebRegionBackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "webRegionBackendServiceInput", GoGetter: "WebRegionBackendServiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIapWebRegionBackendServiceIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIapWebRegionBackendServiceIamPolicy.DataGoogleIapWebRegionBackendServiceIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleIapWebRegionBackendServiceIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIapWebRegionBackendServiceIamPolicyConfig](),
 	)
 }

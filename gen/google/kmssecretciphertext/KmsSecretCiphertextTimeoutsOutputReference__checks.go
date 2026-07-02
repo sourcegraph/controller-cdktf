@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewKmsSecretCiphertextTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

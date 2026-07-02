@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputePreviewFeature) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_ComputePreviewFeature) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputePreviewFeature) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputePreviewFeature) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_ComputePreviewFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputePreviewFeature) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputePreviewFeature_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateComputePreviewFeature_IsConstructParameters(x interface{}) error {
+func validateComputePreviewFeature_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputePreviewFeature_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputePreviewFeature_IsTerraformElementParameters(x interface{}) error {
+func validateComputePreviewFeature_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputePreviewFeature_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateComputePreviewFeature_IsTerraformResourceParameters(x interface{}) error {
+func validateComputePreviewFeature_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_ComputePreviewFeature) validateSetActivationStatusParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputePreviewFeature) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePreviewFeature) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_ComputePreviewFeature) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ComputePreviewFeature) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePreviewFeature) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ComputePreviewFeature) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ComputePreviewFeature) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputePreviewFeature) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewComputePreviewFeatureParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

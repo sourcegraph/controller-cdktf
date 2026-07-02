@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableLogicalView) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (b *jsiiProxy_BigtableLogicalView) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableLogicalView) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableLogicalView) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (b *jsiiProxy_BigtableLogicalView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableLogicalView) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigtableLogicalView_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateBigtableLogicalView_IsConstructParameters(x interface{}) error {
+func validateBigtableLogicalView_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigtableLogicalView_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigtableLogicalView_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableLogicalView_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigtableLogicalView_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateBigtableLogicalView_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableLogicalView_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateBigtableLogicalView_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_BigtableLogicalView) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableLogicalView) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BigtableLogicalView) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_BigtableLogicalView) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableLogicalView) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_BigtableLogicalView) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_BigtableLogicalView) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableLogicalView) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_BigtableLogicalView) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_BigtableLogicalView) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableLogicalView) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewBigtableLogicalViewParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

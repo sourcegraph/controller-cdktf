@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataplexEntryEntrySourceAncestorsOutputReferenceParameters(terra
 
 	return nil
 }
-

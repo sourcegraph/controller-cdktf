@@ -1,6 +1,5 @@
 package binaryauthorizationattestor
 
-
 type BinaryAuthorizationAttestorAttestationAuthorityNote struct {
 	// The resource name of a ATTESTATION_AUTHORITY Note, created by the user.
 	//
@@ -18,6 +17,5 @@ type BinaryAuthorizationAttestorAttestationAuthorityNote struct {
 	// public_keys block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor#public_keys BinaryAuthorizationAttestor#public_keys}
-	PublicKeys interface{} `field:"optional" json:"publicKeys" yaml:"publicKeys"`
+	PublicKeys any `field:"optional" json:"publicKeys" yaml:"publicKeys"`
 }
-

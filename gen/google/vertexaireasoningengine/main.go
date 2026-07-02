@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine",
-		reflect.TypeOf((*VertexAiReasoningEngine)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngine](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngine{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig",
-		reflect.TypeOf((*VertexAiReasoningEngineConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecContainerSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecContainerSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecContainerSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecContainerSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecContainerSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnv",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecEnv)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvList",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecEnvList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,15 +304,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -334,7 +334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -372,7 +372,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -403,7 +403,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -411,11 +411,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnv",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecSecretEnv)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecSecretEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -437,7 +437,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -466,7 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -474,11 +474,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,7 +515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentFramework", GoGetter: "AgentFramework"},
 			_jsii_.MemberProperty{JsiiProperty: "agentFrameworkInput", GoGetter: "AgentFrameworkInput"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,11 +576,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecPackageSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecPackageSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecPackageSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecPackageSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -616,7 +616,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecPackageSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -624,19 +624,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -674,7 +674,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -701,7 +701,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -709,11 +709,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecImageSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecImageSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildArgs", GoGetter: "BuildArgs"},
 			_jsii_.MemberProperty{JsiiProperty: "buildArgsInput", GoGetter: "BuildArgsInput"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -748,11 +748,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecInlineSource)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecInlineSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -779,7 +779,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -787,7 +787,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -827,7 +827,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -835,11 +835,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -875,7 +875,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -883,11 +883,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts",
-		reflect.TypeOf((*VertexAiReasoningEngineTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiReasoningEngineTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiReasoningEngineTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -920,7 +920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiReasoningEngineTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

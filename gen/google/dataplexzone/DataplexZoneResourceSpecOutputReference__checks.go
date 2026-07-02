@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexZoneResourceSpecOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

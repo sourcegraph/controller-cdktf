@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBigqueryBiReservationPreferredTablesOutputReferenceParameters(te
 
 	return nil
 }
-

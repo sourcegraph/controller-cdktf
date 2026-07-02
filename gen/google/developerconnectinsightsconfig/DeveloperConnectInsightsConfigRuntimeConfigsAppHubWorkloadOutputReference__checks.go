@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOut
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutput
 
 	return nil
 }
-

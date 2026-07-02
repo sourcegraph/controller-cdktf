@@ -90,7 +90,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutDeployParametersParameters(value interface{}) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutDeployParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -280,4 +280,3 @@ func validateNewClouddeployDeliveryPipelineSerialPipelineStagesOutputReferencePa
 
 	return nil
 }
-

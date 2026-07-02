@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClouddeployTargetAssociatedEntitiesAnthosClustersListParameters(
 
 	return nil
 }
-

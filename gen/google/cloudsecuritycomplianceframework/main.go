@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
-		reflect.TypeOf((*CloudSecurityComplianceFramework)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFramework](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFramework{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,11 +91,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetails",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetails)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsList",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsList)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParameters",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParameters)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersList",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersList)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,15 +220,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValue",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValue)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValue",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValue)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
 			_jsii_.MemberProperty{JsiiProperty: "boolValueInput", GoGetter: "BoolValueInput"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,11 +316,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -346,7 +346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOneofValueParameterValueStringListValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -354,7 +354,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
 			_jsii_.MemberProperty{JsiiProperty: "boolValueInput", GoGetter: "BoolValueInput"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -403,11 +403,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValue",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValue)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValueOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueStringListValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -441,15 +441,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkConfig",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeouts",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkTimeoutsOutputReference",
-		reflect.TypeOf((*CloudSecurityComplianceFrameworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudSecurityComplianceFrameworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudSecurityComplianceFrameworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

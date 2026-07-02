@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapClient.IapClient",
-		reflect.TypeOf((*IapClient)(nil)).Elem(),
+		reflect.TypeFor[IapClient](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapClient{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapClient.IapClientConfig",
-		reflect.TypeOf((*IapClientConfig)(nil)).Elem(),
+		reflect.TypeFor[IapClientConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapClient.IapClientTimeouts",
-		reflect.TypeOf((*IapClientTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IapClientTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapClient.IapClientTimeoutsOutputReference",
-		reflect.TypeOf((*IapClientTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapClientTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapClientTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

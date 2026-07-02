@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeManagedSslCertificate) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeManagedSslCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputeManagedSslCertificate_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateComputeManagedSslCertificate_IsConstructParameters(x interface{}) error {
+func validateComputeManagedSslCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputeManagedSslCertificate_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateComputeManagedSslCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateComputeManagedSslCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputeManagedSslCertificate_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewComputeManagedSslCertificateParameters(scope constructs.Construc
 
 	return nil
 }
-

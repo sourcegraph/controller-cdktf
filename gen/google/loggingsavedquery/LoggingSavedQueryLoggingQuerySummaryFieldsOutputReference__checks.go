@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsOutputReferenceParamet
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectAncestry.DataGoogleProjectAncestry",
-		reflect.TypeOf((*DataGoogleProjectAncestry)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectAncestry](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "ancestors", GoGetter: "Ancestors"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectAncestry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,11 +63,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleProjectAncestry.DataGoogleProjectAncestryAncestors",
-		reflect.TypeOf((*DataGoogleProjectAncestryAncestors)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectAncestryAncestors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectAncestry.DataGoogleProjectAncestryAncestorsList",
-		reflect.TypeOf((*DataGoogleProjectAncestryAncestorsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectAncestryAncestorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectAncestryAncestorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectAncestry.DataGoogleProjectAncestryAncestorsOutputReference",
-		reflect.TypeOf((*DataGoogleProjectAncestryAncestorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectAncestryAncestorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,6 +122,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleProjectAncestry.DataGoogleProjectAncestryConfig",
-		reflect.TypeOf((*DataGoogleProjectAncestryConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectAncestryConfig](),
 	)
 }

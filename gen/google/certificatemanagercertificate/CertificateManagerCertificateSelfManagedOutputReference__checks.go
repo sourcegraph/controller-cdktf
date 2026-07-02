@@ -106,7 +106,7 @@ func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCertificateManagerCertificateSelfManagedOutputReferenceParameter
 
 	return nil
 }
-

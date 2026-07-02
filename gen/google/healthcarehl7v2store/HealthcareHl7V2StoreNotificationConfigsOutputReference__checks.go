@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHealthcareHl7V2StoreNotificationConfigsOutputReferenceParameters
 
 	return nil
 }
-

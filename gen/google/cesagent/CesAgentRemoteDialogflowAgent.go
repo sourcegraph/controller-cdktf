@@ -1,6 +1,5 @@
 package cesagent
 
-
 type CesAgentRemoteDialogflowAgent struct {
 	// The [Dialogflow](https://cloud.google.com/dialogflow/cx/docs/concept/console-conversational-agents agent resource name. Format: 'projects/{project}/locations/{location}/agents/{agent}'.
 	//
@@ -29,6 +28,5 @@ type CesAgentRemoteDialogflowAgent struct {
 	// * If false: all response messages from the Dialogflow agent follow the app-level barge-in settings. * If true: only response messages with ['allow_playback_interruption'](https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#text) set to true will be interruptable, all other messages follow the app-level barge-in settings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#respect_response_interruption_settings CesAgent#respect_response_interruption_settings}
-	RespectResponseInterruptionSettings interface{} `field:"optional" json:"respectResponseInterruptionSettings" yaml:"respectResponseInterruptionSettings"`
+	RespectResponseInterruptionSettings any `field:"optional" json:"respectResponseInterruptionSettings" yaml:"respectResponseInterruptionSettings"`
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppEngineServiceSplitTrafficSplitOutputReferenceParameters(terra
 
 	return nil
 }
-

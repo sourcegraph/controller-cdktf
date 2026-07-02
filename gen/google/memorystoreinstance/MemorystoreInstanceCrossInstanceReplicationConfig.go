@@ -1,6 +1,5 @@
 package memorystoreinstance
 
-
 type MemorystoreInstanceCrossInstanceReplicationConfig struct {
 	// The instance role supports the following values: 1.
 	//
@@ -18,6 +17,5 @@ type MemorystoreInstanceCrossInstanceReplicationConfig struct {
 	// secondary_instances block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
-	SecondaryInstances interface{} `field:"optional" json:"secondaryInstances" yaml:"secondaryInstances"`
+	SecondaryInstances any `field:"optional" json:"secondaryInstances" yaml:"secondaryInstances"`
 }
-

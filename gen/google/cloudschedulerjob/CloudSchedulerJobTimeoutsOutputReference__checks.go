@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudSchedulerJobTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

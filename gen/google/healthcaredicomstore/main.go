@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
-		reflect.TypeOf((*HealthcareDicomStore)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDicomStore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreConfig",
-		reflect.TypeOf((*HealthcareDicomStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfig",
-		reflect.TypeOf((*HealthcareDicomStoreNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStoreNotificationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
-		reflect.TypeOf((*HealthcareDicomStoreNotificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStoreNotificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeouts",
-		reflect.TypeOf((*HealthcareDicomStoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcareDicomStoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDicomStoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDicomStoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

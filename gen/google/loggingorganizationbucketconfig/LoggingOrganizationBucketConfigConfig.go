@@ -6,9 +6,9 @@ import (
 
 type LoggingOrganizationBucketConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingOrganizationBucketConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#bucket_id LoggingOrganizationBucketConfig#bucket_id}
@@ -47,7 +47,7 @@ type LoggingOrganizationBucketConfigConfig struct {
 	// index_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#index_configs LoggingOrganizationBucketConfig#index_configs}
-	IndexConfigs interface{} `field:"optional" json:"indexConfigs" yaml:"indexConfigs"`
+	IndexConfigs any `field:"optional" json:"indexConfigs" yaml:"indexConfigs"`
 	// Logs will be retained by default for this amount of time, after which they will automatically be deleted.
 	//
 	// The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
@@ -55,4 +55,3 @@ type LoggingOrganizationBucketConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_bucket_config#retention_days LoggingOrganizationBucketConfig#retention_days}
 	RetentionDays *float64 `field:"optional" json:"retentionDays" yaml:"retentionDays"`
 }
-

@@ -15,15 +15,15 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
@@ -33,9 +33,9 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DestroyTime() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -47,9 +47,9 @@ type SecretManagerSecretVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsSecretDataBase64() interface{}
-	SetIsSecretDataBase64(val interface{})
-	IsSecretDataBase64Input() interface{}
+	IsSecretDataBase64() any
+	SetIsSecretDataBase64(val any)
+	IsSecretDataBase64Input() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -65,11 +65,11 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	SetSecret(val *string)
 	SecretData() *string
@@ -85,19 +85,19 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SecretManagerSecretVersionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type SecretManagerSecretVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type SecretManagerSecretVersion interface {
 	ResetSecretDataWo()
 	ResetSecretDataWoVersion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecretManagerSecretVersion
@@ -175,8 +175,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) DestroyTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSecretDataBase64",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSecretDataBase64Input",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Timeouts() SecretManagerSecretVer
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerSecretVersion) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) SecretManagerSecretVersion {
 	_init_.Initialize()
@@ -577,7 +576,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetId(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetIsSecretDataBase64(val interface{}) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetIsSecretDataBase64(val any) {
 	if err := j.validateSetIsSecretDataBase64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetIsSecretDataBase64(val interfac
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetProject(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -707,7 +706,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetSecret(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetSecret(val *string) {
 	if err := j.validateSetSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretData(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetSecretData(val *string) {
 	if err := j.validateSetSecretDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWo(val *string) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetSecretDataWo(val *string) {
 	if err := j.validateSetSecretDataWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWoVersion(val *float64) {
+func (j *jsiiProxy_SecretManagerSecretVersion) SetSecretDataWoVersion(val *float64) {
 	if err := j.validateSetSecretDataWoVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func SecretManagerSecretVersion_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func SecretManagerSecretVersion_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
+func SecretManagerSecretVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerSecretVersion_IsConstructParameters(x); err != nil {
@@ -809,7 +808,7 @@ func SecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func SecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool {
+func SecretManagerSecretVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerSecretVersion_IsTerraformElementParameters(x); err != nil {
@@ -828,7 +827,7 @@ func SecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func SecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool {
+func SecretManagerSecretVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerSecretVersion_IsTerraformResourceParameters(x); err != nil {
@@ -847,7 +846,7 @@ func SecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,31 +871,31 @@ func (s *jsiiProxy_SecretManagerSecretVersion) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecretManagerSecretVersion) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecretManagerSecretVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,15 +1023,15 @@ func (s *jsiiProxy_SecretManagerSecretVersion) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1051,7 +1050,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,18 +1077,18 @@ func (s *jsiiProxy_SecretManagerSecretVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecretManagerSecretVersion) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (s *jsiiProxy_SecretManagerSecretVersion) PutTimeouts(value *SecretManagerS
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1219,8 +1218,8 @@ func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1232,8 +1231,8 @@ func (s *jsiiProxy_SecretManagerSecretVersion) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1245,8 +1244,8 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1271,8 +1270,8 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerSecretVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerSecretVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1283,4 +1282,3 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

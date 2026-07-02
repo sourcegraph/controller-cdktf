@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkConnectivitySpokeLinkedVpcNetworkOutputReferenceParameter
 
 	return nil
 }
-

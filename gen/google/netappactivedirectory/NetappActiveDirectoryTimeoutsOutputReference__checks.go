@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappActiveDirectoryTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBiglakeIcebergTablePartitionSpecFieldsListParameters(terraformRe
 
 	return nil
 }
-

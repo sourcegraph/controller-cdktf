@@ -90,7 +90,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validatePutDestinationsParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewDiscoveryEngineDataConnectorDestinationConfigsOutputReferencePar
 
 	return nil
 }
-

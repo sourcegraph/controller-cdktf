@@ -6,9 +6,9 @@ import (
 
 type StorageInsightsReportConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StorageInsightsReportConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the ReportConfig. The source and destination buckets specified in the ReportConfig must be in the same location.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_report_config#location StorageInsightsReportConfig#location}
@@ -34,7 +34,7 @@ type StorageInsightsReportConfigConfig struct {
 	// If set, all the inventory report details associated with this report configuration are deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_report_config#force_destroy StorageInsightsReportConfig#force_destroy}
-	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
+	ForceDestroy any `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// frequency_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_report_config#frequency_options StorageInsightsReportConfig#frequency_options}
@@ -59,4 +59,3 @@ type StorageInsightsReportConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_report_config#timeouts StorageInsightsReportConfig#timeouts}
 	Timeouts *StorageInsightsReportConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

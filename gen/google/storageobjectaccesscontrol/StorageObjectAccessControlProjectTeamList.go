@@ -36,7 +36,7 @@ type StorageObjectAccessControlProjectTeamList interface {
 	Get(index *float64) StorageObjectAccessControlProjectTeamOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewStorageObjectAccessControlProjectTeamList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageObjectAccessControlProjectTeamList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewStorageObjectAccessControlProjectTeamList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewStorageObjectAccessControlProjectTeamList_Override(s StorageObjectAccess
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StorageObjectAccessControlProjectTeamList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) Get(index *float64
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) ToString() *string
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package computesecuritypolicy
 
-
 type ComputeSecurityPolicyRuleRateLimitOptions struct {
 	// Action to take for requests that are under the configured rate limit threshold. Valid option is "allow" only.
 	//
@@ -33,7 +32,7 @@ type ComputeSecurityPolicyRuleRateLimitOptions struct {
 	// enforce_on_key_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_security_policy#enforce_on_key_configs ComputeSecurityPolicy#enforce_on_key_configs}
-	EnforceOnKeyConfigs interface{} `field:"optional" json:"enforceOnKeyConfigs" yaml:"enforceOnKeyConfigs"`
+	EnforceOnKeyConfigs any `field:"optional" json:"enforceOnKeyConfigs" yaml:"enforceOnKeyConfigs"`
 	// Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value.
 	//
 	// HTTP_COOKIE -- Name of the HTTP cookie whose value is taken as the key value.
@@ -45,4 +44,3 @@ type ComputeSecurityPolicyRuleRateLimitOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_security_policy#exceed_redirect_options ComputeSecurityPolicy#exceed_redirect_options}
 	ExceedRedirectOptions *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions `field:"optional" json:"exceedRedirectOptions" yaml:"exceedRedirectOptions"`
 }
-

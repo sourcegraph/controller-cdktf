@@ -17,15 +17,15 @@ type TranscoderJobTemplate interface {
 	Config() TranscoderJobTemplateConfigAOutputReference
 	ConfigInput() *TranscoderJobTemplateConfigA
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,27 +66,27 @@ type TranscoderJobTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() TranscoderJobTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type TranscoderJobTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type TranscoderJobTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type TranscoderJobTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TranscoderJobTemplate
@@ -181,8 +181,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) ConfigInput() *TranscoderJobTemplateCo
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_TranscoderJobTemplate) Timeouts() TranscoderJobTemplateTimeou
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -480,7 +480,6 @@ func (j *jsiiProxy_TranscoderJobTemplate) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/transcoder_job_template google_transcoder_job_template} Resource.
 func NewTranscoderJobTemplate(scope constructs.Construct, id *string, config *TranscoderJobTemplateConfig) TranscoderJobTemplate {
@@ -493,7 +492,7 @@ func NewTranscoderJobTemplate(scope constructs.Construct, id *string, config *Tr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -506,12 +505,12 @@ func NewTranscoderJobTemplate_Override(t TranscoderJobTemplate, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetId(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetJobTemplateId(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetJobTemplateId(val *string) {
 	if err := j.validateSetJobTemplateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetJobTemplateId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetLocation(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetProject(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_TranscoderJobTemplate)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func TranscoderJobTemplate_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func TranscoderJobTemplate_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TranscoderJobTemplate_IsConstruct(x interface{}) *bool {
+func TranscoderJobTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscoderJobTemplate_IsConstructParameters(x); err != nil {
@@ -681,7 +680,7 @@ func TranscoderJobTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func TranscoderJobTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscoderJobTemplate_IsTerraformElement(x interface{}) *bool {
+func TranscoderJobTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscoderJobTemplate_IsTerraformElementParameters(x); err != nil {
@@ -700,7 +699,7 @@ func TranscoderJobTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func TranscoderJobTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TranscoderJobTemplate_IsTerraformResource(x interface{}) *bool {
+func TranscoderJobTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTranscoderJobTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -719,7 +718,7 @@ func TranscoderJobTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,31 +743,31 @@ func (t *jsiiProxy_TranscoderJobTemplate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TranscoderJobTemplate) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscoderJobTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,15 +895,15 @@ func (t *jsiiProxy_TranscoderJobTemplate) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -923,7 +922,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -936,7 +935,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,18 +949,18 @@ func (t *jsiiProxy_TranscoderJobTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TranscoderJobTemplate) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -972,7 +971,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -983,7 +982,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -994,7 +993,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) PutConfig(value *TranscoderJobTemplate
 	_jsii_.InvokeVoid(
 		t,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (t *jsiiProxy_TranscoderJobTemplate) PutTimeouts(value *TranscoderJobTempla
 	_jsii_.InvokeVoid(
 		t,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1057,8 +1056,8 @@ func (t *jsiiProxy_TranscoderJobTemplate) ResetTimeouts() {
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1070,8 +1069,8 @@ func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1083,8 +1082,8 @@ func (t *jsiiProxy_TranscoderJobTemplate) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1096,8 +1095,8 @@ func (t *jsiiProxy_TranscoderJobTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1122,8 +1121,8 @@ func (t *jsiiProxy_TranscoderJobTemplate) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TranscoderJobTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1134,4 +1133,3 @@ func (t *jsiiProxy_TranscoderJobTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManager
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOut
 
 	return nil
 }
-

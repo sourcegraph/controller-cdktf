@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapBrandTimeoutsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_IapBrandTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapBrandTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IapBrandTimeoutsOutputReference) validateSetDeleteParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IapBrandTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IapBrandTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIapBrandTimeoutsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

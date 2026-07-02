@@ -22,15 +22,15 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	SetCertValidityInDays(val *float64)
 	CertValidityInDaysInput() *float64
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,11 +69,11 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SigAlg() *string
 	SetSigAlg(val *string)
 	SigAlgInput() *string
@@ -84,19 +84,19 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type ApigeeKeystoresAliasesSelfSignedCert interface {
 	ResetOverrideLogicalId()
 	ResetSubjectAlternativeDnsNames()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApigeeKeystoresAliasesSelfSignedCert
@@ -222,8 +222,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) CertValidityInDaysInput
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Timeouts() ApigeeKeysto
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -562,7 +562,6 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *string, config *ApigeeKeystoresAliasesSelfSignedCertConfig) ApigeeKeystoresAliasesSelfSignedCert {
 	_init_.Initialize()
@@ -574,7 +573,7 @@ func NewApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -587,12 +586,12 @@ func NewApigeeKeystoresAliasesSelfSignedCert_Override(a ApigeeKeystoresAliasesSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetAlias(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetAlias(val *string) {
 	if err := j.validateSetAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetCertValidityInDays(val *float64) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetCertValidityInDays(val *float64) {
 	if err := j.validateSetCertValidityInDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetCertValidityInDays(va
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetCount(val interface{}) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetEnvironment(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetEnvironment(val *stri
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -663,7 +662,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetId(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetKeySize(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetKeySize(val *string) {
 	if err := j.validateSetKeySizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetKeySize(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetKeystore(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetKeystore(val *string) {
 	if err := j.validateSetKeystoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetKeystore(val *string)
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetOrgId(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -726,7 +725,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert)SetSigAlg(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SetSigAlg(val *string) {
 	if err := j.validateSetSigAlgParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x interface{}) *bool {
+func ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeKeystoresAliasesSelfSignedCert_IsConstructParameters(x); err != nil {
@@ -795,7 +794,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x interface{}) *bool {
+func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformElementParameters(x); err != nil {
@@ -814,7 +813,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformResource(x interface{}) *bool {
+func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformResourceParameters(x); err != nil {
@@ -833,7 +832,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -858,31 +857,31 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetListAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetNumberListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetStringAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,15 +1009,15 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1037,7 +1036,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) InterpolationForAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,18 +1063,18 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1086,7 +1085,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) PutSubject(value *Apige
 	_jsii_.InvokeVoid(
 		a,
 		"putSubject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) PutSubjectAlternativeDn
 	_jsii_.InvokeVoid(
 		a,
 		"putSubjectAlternativeDnsNames",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) PutTimeouts(value *Apig
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1182,8 +1181,8 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1195,8 +1194,8 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeAttributes() 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1208,8 +1207,8 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) SynthesizeHclAttributes
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1221,8 +1220,8 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToHclTerraform() interf
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1247,8 +1246,8 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1259,4 +1258,3 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) ToTerraform() interface
 
 	return returns
 }
-

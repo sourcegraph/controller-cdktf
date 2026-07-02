@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeNetworkEndpointGroup_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateComputeNetworkEndpointGroup_IsConstructParameters(x interface{}) error {
+func validateComputeNetworkEndpointGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeNetworkEndpointGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeNetworkEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+func validateComputeNetworkEndpointGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeNetworkEndpointGroup_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateComputeNetworkEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeNetworkEndpointGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeNetworkEndpointGroup_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeNetworkEndpointGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewComputeNetworkEndpointGroupParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIntegrationConnectorsConnectionEventingRuntimeDataOutputReferenc
 
 	return nil
 }
-

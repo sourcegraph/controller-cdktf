@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspace",
-		reflect.TypeOf((*HealthcareWorkspace)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareWorkspace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspaceConfig",
-		reflect.TypeOf((*HealthcareWorkspaceConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspaceSettings",
-		reflect.TypeOf((*HealthcareWorkspaceSettings)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspaceSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspaceSettingsOutputReference",
-		reflect.TypeOf((*HealthcareWorkspaceSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspaceSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareWorkspaceSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeouts",
-		reflect.TypeOf((*HealthcareWorkspaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareWorkspace.HealthcareWorkspaceTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcareWorkspaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareWorkspaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

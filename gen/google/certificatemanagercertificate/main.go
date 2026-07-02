@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
-		reflect.TypeOf((*CertificateManagerCertificate)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,19 +96,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig",
-		reflect.TypeOf((*CertificateManagerCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManaged",
-		reflect.TypeOf((*CertificateManagerCertificateManaged)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManaged](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfo",
-		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfo)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedAuthorizationAttemptInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoList",
-		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfoList)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedAuthorizationAttemptInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,7 +165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateManagedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationAttemptInfo", GoGetter: "AuthorizationAttemptInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateManagedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssue",
-		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssue)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedProvisioningIssue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueList",
-		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssueList)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedProvisioningIssueList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateManagedProvisioningIssueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,11 +268,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged",
-		reflect.TypeOf((*CertificateManagerCertificateSelfManaged)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateSelfManaged](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManagedOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateSelfManagedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateSelfManagedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificatePem", GoGetter: "CertificatePem"},
 			_jsii_.MemberProperty{JsiiProperty: "certificatePemInput", GoGetter: "CertificatePemInput"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,11 +316,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts",
-		reflect.TypeOf((*CertificateManagerCertificateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeoutsOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

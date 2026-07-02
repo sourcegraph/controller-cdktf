@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersLi
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersListP
 
 	return nil
 }
-

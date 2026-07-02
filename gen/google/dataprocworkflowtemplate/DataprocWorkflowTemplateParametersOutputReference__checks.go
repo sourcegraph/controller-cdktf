@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewDataprocWorkflowTemplateParametersOutputReferenceParameters(terr
 
 	return nil
 }
-

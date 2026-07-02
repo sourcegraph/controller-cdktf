@@ -6,9 +6,9 @@ import (
 
 type HealthcareHl7V2StoreConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type HealthcareHl7V2StoreConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#dataset HealthcareHl7V2Store#dataset}
@@ -60,7 +60,7 @@ type HealthcareHl7V2StoreConfig struct {
 	// notification_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#notification_configs HealthcareHl7V2Store#notification_configs}
-	NotificationConfigs interface{} `field:"optional" json:"notificationConfigs" yaml:"notificationConfigs"`
+	NotificationConfigs any `field:"optional" json:"notificationConfigs" yaml:"notificationConfigs"`
 	// parser_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#parser_config HealthcareHl7V2Store#parser_config}
@@ -68,10 +68,9 @@ type HealthcareHl7V2StoreConfig struct {
 	// Determines whether duplicate messages are allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#reject_duplicate_message HealthcareHl7V2Store#reject_duplicate_message}
-	RejectDuplicateMessage interface{} `field:"optional" json:"rejectDuplicateMessage" yaml:"rejectDuplicateMessage"`
+	RejectDuplicateMessage any `field:"optional" json:"rejectDuplicateMessage" yaml:"rejectDuplicateMessage"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#timeouts HealthcareHl7V2Store#timeouts}
 	Timeouts *HealthcareHl7V2StoreTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

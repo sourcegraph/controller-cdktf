@@ -21,15 +21,15 @@ type CesAppVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	// Experimental.
@@ -72,27 +72,27 @@ type CesAppVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Snapshot() CesAppVersionSnapshotList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CesAppVersionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type CesAppVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type CesAppVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type CesAppVersion interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CesAppVersion
@@ -206,8 +206,8 @@ func (j *jsiiProxy_CesAppVersion) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_CesAppVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAppVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_CesAppVersion) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_CesAppVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CesAppVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_CesAppVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_CesAppVersion) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAppVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_CesAppVersion) Timeouts() CesAppVersionTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersion) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVersion) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -525,7 +525,6 @@ func (j *jsiiProxy_CesAppVersion) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_version google_ces_app_version} Resource.
 func NewCesAppVersion(scope constructs.Construct, id *string, config *CesAppVersionConfig) CesAppVersion {
@@ -538,7 +537,7 @@ func NewCesAppVersion(scope constructs.Construct, id *string, config *CesAppVers
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewCesAppVersion_Override(c CesAppVersion, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetApp(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetApp(val *string) {
 	if err := j.validateSetAppParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_CesAppVersion)SetApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetAppVersionId(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetAppVersionId(val *string) {
 	if err := j.validateSetAppVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_CesAppVersion)SetAppVersionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_CesAppVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CesAppVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_CesAppVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CesAppVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesAppVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_CesAppVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetDescription(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CesAppVersion)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetDisplayName(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CesAppVersion)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesAppVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CesAppVersion)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetId(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CesAppVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesAppVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CesAppVersion)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetLocation(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_CesAppVersion)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetProject(val *string) {
+func (j *jsiiProxy_CesAppVersion) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_CesAppVersion)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesAppVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_CesAppVersion)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CesAppVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesAppVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func CesAppVersion_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func CesAppVersion_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CesAppVersion_IsConstruct(x interface{}) *bool {
+func CesAppVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppVersion_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func CesAppVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func CesAppVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAppVersion_IsTerraformElement(x interface{}) *bool {
+func CesAppVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppVersion_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func CesAppVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func CesAppVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAppVersion_IsTerraformResource(x interface{}) *bool {
+func CesAppVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppVersion_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func CesAppVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (c *jsiiProxy_CesAppVersion) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CesAppVersion) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CesAppVersion) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CesAppVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAppVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (c *jsiiProxy_CesAppVersion) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_CesAppVersion) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (c *jsiiProxy_CesAppVersion) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (c *jsiiProxy_CesAppVersion) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (c *jsiiProxy_CesAppVersion) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (c *jsiiProxy_CesAppVersion) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (c *jsiiProxy_CesAppVersion) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (c *jsiiProxy_CesAppVersion) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -990,7 +989,7 @@ func (c *jsiiProxy_CesAppVersion) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (c *jsiiProxy_CesAppVersion) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (c *jsiiProxy_CesAppVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CesAppVersion) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CesAppVersion) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_CesAppVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_CesAppVersion) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (c *jsiiProxy_CesAppVersion) PutTimeouts(value *CesAppVersionTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,8 +1112,8 @@ func (c *jsiiProxy_CesAppVersion) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CesAppVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAppVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1126,8 +1125,8 @@ func (c *jsiiProxy_CesAppVersion) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAppVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1139,8 +1138,8 @@ func (c *jsiiProxy_CesAppVersion) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1152,8 +1151,8 @@ func (c *jsiiProxy_CesAppVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1178,8 +1177,8 @@ func (c *jsiiProxy_CesAppVersion) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1190,4 +1189,3 @@ func (c *jsiiProxy_CesAppVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

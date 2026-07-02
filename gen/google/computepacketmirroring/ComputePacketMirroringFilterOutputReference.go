@@ -15,9 +15,9 @@ type ComputePacketMirroringFilterOutputReference interface {
 	CidrRangesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ComputePacketMirroringFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputePacketMirroringFilterOutputReference interface {
 	ResetIpProtocols()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) CidrRangesInput(
 	return returns
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewComputePacketMirroringFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputePacketMirroringFilterOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputePacketMirroringFilterOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputePacketMirroringFilterOutputReference_Override(c ComputePacketMirr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetCidrRanges(val *[]*string) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetCidrRanges(val *[]*string) {
 	if err := j.validateSetCidrRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetCidrRanges(val
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetDirection(val *string) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetDirection(val 
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetInternalValue(val *ComputePacketMirroringFilter) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetInternalValue(val *ComputePacketMirroringFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetIpProtocols(val *[]*string) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetIpProtocols(val *[]*string) {
 	if err := j.validateSetIpProtocolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetIpProtocols(va
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePacketMirroringFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) ResetIpProtocols
 	)
 }
 
-func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputePacketMirroringFilterOutputReference) ToString() *stri
 
 	return returns
 }
-

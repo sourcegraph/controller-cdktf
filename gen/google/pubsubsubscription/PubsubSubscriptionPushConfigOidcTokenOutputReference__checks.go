@@ -106,7 +106,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOidcTokenOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubSubscriptionPushConfigOidcTokenOutputReferenceParameters(t
 
 	return nil
 }
-

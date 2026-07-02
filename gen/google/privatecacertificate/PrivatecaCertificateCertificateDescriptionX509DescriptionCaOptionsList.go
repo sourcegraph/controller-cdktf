@@ -36,7 +36,7 @@ type PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList inte
 	Get(index *float64) PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 	return returns
 }
 
-
 func NewPrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewPrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList(t
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewPrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList_O
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionCaOp
 
 	return returns
 }
-

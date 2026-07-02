@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerNodePoolNodeConfigGuestAcceleratorListParameters(terraf
 
 	return nil
 }
-

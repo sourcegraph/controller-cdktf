@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccSourceTimeoutsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_SccSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SccSourceTimeoutsOutputReference) validateSetDeleteParameters
 	return nil
 }
 
-func (j *jsiiProxy_SccSourceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccSourceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSccSourceTimeoutsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

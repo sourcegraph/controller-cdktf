@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validatePutTagConditionsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validatePutTagConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validateSetLowerDataRiskToLowParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesOutputReference) validateSetLowerDataRiskToLowParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewDataLossPreventionDiscoveryConfigActionsTagResourcesOutputRefere
 
 	return nil
 }
-

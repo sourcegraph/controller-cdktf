@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnableHierarchicalResourceQuotaParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnableHierarchicalResourceQuotaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnablePodTreeLabelsParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetEnablePodTreeLabelsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutput
 
 	return nil
 }
-

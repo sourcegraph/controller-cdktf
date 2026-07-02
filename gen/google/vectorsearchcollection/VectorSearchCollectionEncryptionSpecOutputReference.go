@@ -12,9 +12,9 @@ type VectorSearchCollectionEncryptionSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type VectorSearchCollectionEncryptionSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type VectorSearchCollectionEncryptionSpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) Terrafor
 	return returns
 }
 
-
 func NewVectorSearchCollectionEncryptionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionEncryptionSpecOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewVectorSearchCollectionEncryptionSpecOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewVectorSearchCollectionEncryptionSpecOutputReference_Override(v VectorSea
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetCrypto
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetInternalValue(val *VectorSearchCollectionEncryptionSpec) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetInternalValue(val *VectorSearchCollectionEncryptionSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) ComputeF
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetListA
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) Interpol
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (v *jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference) ToString
 
 	return returns
 }
-

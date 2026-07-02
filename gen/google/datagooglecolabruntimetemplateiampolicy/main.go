@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleColabRuntimeTemplateIamPolicy.DataGoogleColabRuntimeTemplateIamPolicy",
-		reflect.TypeOf((*DataGoogleColabRuntimeTemplateIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleColabRuntimeTemplateIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleColabRuntimeTemplateIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleColabRuntimeTemplateIamPolicy.DataGoogleColabRuntimeTemplateIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleColabRuntimeTemplateIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleColabRuntimeTemplateIamPolicyConfig](),
 	)
 }

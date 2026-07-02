@@ -131,7 +131,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -263,4 +263,3 @@ func validateNewCesToolDataStoreToolModalityConfigsOutputReferenceParameters(ter
 
 	return nil
 }
-

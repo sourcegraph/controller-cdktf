@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterProxyOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterProxyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterProxyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeonpremVmwareAdminClusterProxyOutputReferenceParameters(terraf
 
 	return nil
 }
-

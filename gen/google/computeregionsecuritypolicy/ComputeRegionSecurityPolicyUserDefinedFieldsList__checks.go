@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionSecurityPolicyUserDefinedFieldsListParameters(terra
 
 	return nil
 }
-

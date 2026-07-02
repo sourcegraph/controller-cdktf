@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspaceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHealthcareWorkspaceTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type FirebaseAppHostingDefaultDomainTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type FirebaseAppHostingDefaultDomainTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type FirebaseAppHostingDefaultDomainTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type FirebaseAppHostingDefaultDomainTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Updat
 	return returns
 }
 
-
 func NewFirebaseAppHostingDefaultDomainTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingDefaultDomainTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewFirebaseAppHostingDefaultDomainTimeoutsOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingDefaultDomain.FirebaseAppHostingDefaultDomainTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewFirebaseAppHostingDefaultDomainTimeoutsOutputReference_Override(f Fireba
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingDefaultDomain.FirebaseAppHostingDefaultDomainTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetCre
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetDel
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Compu
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetBo
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetLi
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetNu
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) GetSt
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Inter
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Reset
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomainTimeoutsOutputReference) ToStr
 
 	return returns
 }
-

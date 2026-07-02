@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validatePutGkeUpgradeOverridesParameters(value interface{}) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validatePutGkeUpgradeOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewGkeHubFeatureSpecClusterupgradeOutputReferenceParameters(terrafo
 
 	return nil
 }
-

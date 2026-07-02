@@ -15,9 +15,9 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	CloudSqlInstanceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -73,7 +73,7 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	ResetRedisInstance()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
-
 func NewNetworkManagementConnectivityTestDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkManagementConnectivityTestDestinationOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewNetworkManagementConnectivityTestDestinationOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewNetworkManagementConnectivityTestDestinationOutputReference_Override(n N
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTestDestinationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetCloudSqlInstance(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetCloudSqlInstance(val *string) {
 	if err := j.validateSetCloudSqlInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetForwardingRule(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetForwardingRule(val *string) {
 	if err := j.validateSetForwardingRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetFqdn(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetFqdn(val *string) {
 	if err := j.validateSetFqdnParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetGkeMasterCluster(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetGkeMasterCluster(val *string) {
 	if err := j.validateSetGkeMasterClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetInstance(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetInternalValue(val *NetworkManagementConnectivityTestDestination) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetInternalValue(val *NetworkManagementConnectivityTestDestination) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetIpAddress(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetRedisCluster(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetRedisCluster(val *string) {
 	if err := j.validateSetRedisClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetRedisInstance(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetRedisInstance(val *string) {
 	if err := j.validateSetRedisInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 
 	return returns
 }
-

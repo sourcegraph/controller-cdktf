@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesQueryParametersList) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesQueryParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesQueryParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesHttpRouteRulesMatchesQueryParametersListParameter
 
 	return nil
 }
-

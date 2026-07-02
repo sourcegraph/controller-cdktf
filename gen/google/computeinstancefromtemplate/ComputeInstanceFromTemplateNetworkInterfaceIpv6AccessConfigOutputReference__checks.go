@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutpu
 
 	return nil
 }
-

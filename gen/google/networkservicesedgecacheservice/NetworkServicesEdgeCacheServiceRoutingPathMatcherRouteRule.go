@@ -1,11 +1,10 @@
 package networkservicesedgecacheservice
 
-
 type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule struct {
 	// match_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#match_rule NetworkServicesEdgeCacheService#match_rule}
-	MatchRule interface{} `field:"required" json:"matchRule" yaml:"matchRule"`
+	MatchRule any `field:"required" json:"matchRule" yaml:"matchRule"`
 	// The priority of this route rule, where 1 is the highest priority.
 	//
 	// You cannot configure two or more routeRules with the same priority. Priority for each rule must be set to a number between 1 and 999 inclusive.
@@ -44,4 +43,3 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#url_redirect NetworkServicesEdgeCacheService#url_redirect}
 	UrlRedirect *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
-

@@ -18,15 +18,15 @@ type SccEventThreatDetectionCustomModule interface {
 	SetConfig(val *string)
 	ConfigInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,19 +64,19 @@ type SccEventThreatDetectionCustomModule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccEventThreatDetectionCustomModuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -85,9 +85,9 @@ type SccEventThreatDetectionCustomModule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type SccEventThreatDetectionCustomModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type SccEventThreatDetectionCustomModule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type SccEventThreatDetectionCustomModule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccEventThreatDetectionCustomModule
@@ -179,8 +179,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) ConfigInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) Timeouts() SccEventThrea
 	return returns
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -479,7 +479,6 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_event_threat_detection_custom_module google_scc_event_threat_detection_custom_module} Resource.
 func NewSccEventThreatDetectionCustomModule(scope constructs.Construct, id *string, config *SccEventThreatDetectionCustomModuleConfig) SccEventThreatDetectionCustomModule {
 	_init_.Initialize()
@@ -491,7 +490,7 @@ func NewSccEventThreatDetectionCustomModule(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewSccEventThreatDetectionCustomModule_Override(s SccEventThreatDetectionCu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetConfig(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetConfig(val *string) {
 	if err := j.validateSetConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetCount(val interface{}) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetDisplayName(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetDisplayName(val *strin
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetEnablementState(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetEnablementState(val *string) {
 	if err := j.validateSetEnablementStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetEnablementState(val *s
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -580,7 +579,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetId(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetOrganization(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetOrganization(val *stri
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_SccEventThreatDetectionCustomModule)SetType(val *string) {
+func (j *jsiiProxy_SccEventThreatDetectionCustomModule) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func SccEventThreatDetectionCustomModule_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func SccEventThreatDetectionCustomModule_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool {
+func SccEventThreatDetectionCustomModule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccEventThreatDetectionCustomModule_IsConstructParameters(x); err != nil {
@@ -690,7 +689,7 @@ func SccEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func SccEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool {
+func SccEventThreatDetectionCustomModule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccEventThreatDetectionCustomModule_IsTerraformElementParameters(x); err != nil {
@@ -709,7 +708,7 @@ func SccEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func SccEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func SccEventThreatDetectionCustomModule_IsTerraformResource(x interface{}) *bool {
+func SccEventThreatDetectionCustomModule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccEventThreatDetectionCustomModule_IsTerraformResourceParameters(x); err != nil {
@@ -728,7 +727,7 @@ func SccEventThreatDetectionCustomModule_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,31 +752,31 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetStringAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,15 +904,15 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -932,7 +931,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -945,7 +944,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) InterpolationForAttribut
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,18 +958,18 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -992,7 +991,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) PutTimeouts(value *SccEv
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,8 +1038,8 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1052,8 +1051,8 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1065,8 +1064,8 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) SynthesizeHclAttributes(
 	return returns
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1078,8 +1077,8 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToHclTerraform() interfa
 	return returns
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1104,8 +1103,8 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1116,4 +1115,3 @@ func (s *jsiiProxy_SccEventThreatDetectionCustomModule) ToTerraform() interface{
 
 	return returns
 }
-

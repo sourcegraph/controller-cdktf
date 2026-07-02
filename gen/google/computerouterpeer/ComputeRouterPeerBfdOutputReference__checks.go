@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRouterPeerBfdOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

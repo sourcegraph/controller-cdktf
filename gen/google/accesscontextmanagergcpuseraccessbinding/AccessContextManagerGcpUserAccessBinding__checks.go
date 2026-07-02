@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateAddMoveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveFromIdP
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateOverrideLog
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validatePutScopedAccessSettingsParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validatePutScopedAccessSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateAccessContextManagerGcpUserAccessBinding_GenerateConfigForImportPar
 	return nil
 }
 
-func validateAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x in
 	return nil
 }
 
-func validateAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateAccessContextManagerGcpUserAccessBinding_IsTerraformElementParamete
 	return nil
 }
 
-func validateAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetAccessLe
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetOrganiza
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -491,4 +491,3 @@ func validateNewAccessContextManagerGcpUserAccessBindingParameters(scope constru
 
 	return nil
 }
-

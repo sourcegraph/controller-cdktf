@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFile
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFor
 
 	return nil
 }
-

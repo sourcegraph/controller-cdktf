@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAccessContextManagerAccessLevelConditionTimeoutsOutputReferenceP
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecureSourceManagerRepository) validateAddMoveTargetParameter
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepository) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecureSourceManagerRepository) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecureSourceManagerRepository) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecureSourceManagerRepository) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSecureSourceManagerRepository_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateSecureSourceManagerRepository_IsConstructParameters(x interface{}) error {
+func validateSecureSourceManagerRepository_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSecureSourceManagerRepository_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateSecureSourceManagerRepository_IsTerraformElementParameters(x interface{}) error {
+func validateSecureSourceManagerRepository_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSecureSourceManagerRepository_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateSecureSourceManagerRepository_IsTerraformResourceParameters(x interface{}) error {
+func validateSecureSourceManagerRepository_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSecureSourceManagerRepository_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepository) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerRepository) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SecureSourceManagerRepository) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepository) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerRepository) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_SecureSourceManagerRepository) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepository) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerRepository) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewSecureSourceManagerRepositoryParameters(scope constructs.Constru
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IapTunnelDestGroupIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIapTunnelDestGroupIamPolicy_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateIapTunnelDestGroupIamPolicy_IsConstructParameters(x interface{}) error {
+func validateIapTunnelDestGroupIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIapTunnelDestGroupIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateIapTunnelDestGroupIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIapTunnelDestGroupIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIapTunnelDestGroupIamPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateIapTunnelDestGroupIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIapTunnelDestGroupIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIapTunnelDestGroupIamPolicy_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewIapTunnelDestGroupIamPolicyParameters(scope constructs.Construct
 
 	return nil
 }
-

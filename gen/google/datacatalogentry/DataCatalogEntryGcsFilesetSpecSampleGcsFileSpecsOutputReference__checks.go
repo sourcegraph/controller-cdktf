@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReferenceP
 
 	return nil
 }
-

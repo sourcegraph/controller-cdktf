@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeveloperConnectGitRepositoryLinkTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

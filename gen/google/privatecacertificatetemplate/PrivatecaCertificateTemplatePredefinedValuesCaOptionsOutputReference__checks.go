@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetIsCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetIsCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewPrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRefer
 
 	return nil
 }
-

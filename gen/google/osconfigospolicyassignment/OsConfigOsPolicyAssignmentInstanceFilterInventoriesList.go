@@ -17,8 +17,8 @@ type OsConfigOsPolicyAssignmentInstanceFilterInventoriesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type OsConfigOsPolicyAssignmentInstanceFilterInventoriesList interface {
 	Get(index *float64) OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) Wrap
 	return returns
 }
 
-
 func NewOsConfigOsPolicyAssignmentInstanceFilterInventoriesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigOsPolicyAssignmentInstanceFilterInventoriesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInventoriesList(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInventoriesList_Override(o OsCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInventoriesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetIn
 	)
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetTe
 	)
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetTe
 	)
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) AllW
 	_jsii_.Invoke(
 		o,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) Get(
 	_jsii_.Invoke(
 		o,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) ToSt
 
 	return returns
 }
-

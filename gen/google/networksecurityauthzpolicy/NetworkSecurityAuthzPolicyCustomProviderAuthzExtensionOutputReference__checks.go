@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputRefe
 
 	return nil
 }
-

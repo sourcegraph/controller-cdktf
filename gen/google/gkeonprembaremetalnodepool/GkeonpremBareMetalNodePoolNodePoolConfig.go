@@ -1,11 +1,10 @@
 package gkeonprembaremetalnodepool
 
-
 type GkeonpremBareMetalNodePoolNodePoolConfig struct {
 	// node_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_node_pool#node_configs GkeonpremBareMetalNodePool#node_configs}
-	NodeConfigs interface{} `field:"required" json:"nodeConfigs" yaml:"nodeConfigs"`
+	NodeConfigs any `field:"required" json:"nodeConfigs" yaml:"nodeConfigs"`
 	// The map of Kubernetes labels (key/value pairs) to be applied to each node.
 	//
 	// These will added in addition to any default label(s)
@@ -27,6 +26,5 @@ type GkeonpremBareMetalNodePoolNodePoolConfig struct {
 	// taints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_node_pool#taints GkeonpremBareMetalNodePool#taints}
-	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
+	Taints any `field:"optional" json:"taints" yaml:"taints"`
 }
-

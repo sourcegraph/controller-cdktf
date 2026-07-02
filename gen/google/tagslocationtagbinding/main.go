@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBinding",
-		reflect.TypeOf((*TagsLocationTagBinding)(nil)).Elem(),
+		reflect.TypeFor[TagsLocationTagBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TagsLocationTagBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig",
-		reflect.TypeOf((*TagsLocationTagBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[TagsLocationTagBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts",
-		reflect.TypeOf((*TagsLocationTagBindingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TagsLocationTagBindingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
-		reflect.TypeOf((*TagsLocationTagBindingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TagsLocationTagBindingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

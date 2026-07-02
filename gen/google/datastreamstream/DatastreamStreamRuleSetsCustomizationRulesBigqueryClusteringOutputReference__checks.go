@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringO
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutp
 
 	return nil
 }
-

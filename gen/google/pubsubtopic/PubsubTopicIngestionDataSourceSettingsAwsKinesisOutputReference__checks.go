@@ -106,7 +106,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReferenceP
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceSettingsMetadataOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSettingsMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSettingsMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInstanceSettingsMetadataOutputReferenceParameters(terrafo
 
 	return nil
 }
-

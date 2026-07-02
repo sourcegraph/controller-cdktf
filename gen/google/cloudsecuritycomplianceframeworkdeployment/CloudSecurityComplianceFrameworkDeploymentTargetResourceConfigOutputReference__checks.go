@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfi
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigOu
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputRefer
 	AdministrativeAreaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputRefer
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputRefer
 	ResetRecipients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	return returns
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	return returns
 }
 
-
 func NewClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetAddressLines(val *[]*string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetAddressLines(val *[]*string) {
 	if err := j.validateSetAddressLinesParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetAdministrativeArea(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetAdministrativeArea(val *string) {
 	if err := j.validateSetAdministrativeAreaParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetInternalValue(val *ClouddomainsRegistrationContactSettingsAdminContactPostalAddress) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetInternalValue(val *ClouddomainsRegistrationContactSettingsAdminContactPostalAddress) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetLocality(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetLocality(val *string) {
 	if err := j.validateSetLocalityParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetOrganization(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetPostalCode(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetPostalCode(val *string) {
 	if err := j.validateSetPostalCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetRecipients(val *[]*string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetRecipients(val *[]*string) {
 	if err := j.validateSetRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetRegionCode(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetRegionCode(val *string) {
 	if err := j.validateSetRegionCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,16 +485,16 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	return returns
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -707,16 +706,16 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 	)
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsAdminContactPostalAddr
 
 	return returns
 }
-

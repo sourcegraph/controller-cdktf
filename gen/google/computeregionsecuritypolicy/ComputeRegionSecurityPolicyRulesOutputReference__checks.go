@@ -150,7 +150,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesOutputReference) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewComputeRegionSecurityPolicyRulesOutputReferenceParameters(terraf
 
 	return nil
 }
-

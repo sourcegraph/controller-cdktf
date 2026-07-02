@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateAddMoveTargetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateMoveFromIdParameters
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkConnectivityHubIamMember_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateNetworkConnectivityHubIamMember_IsConstructParameters(x interface{}) error {
+func validateNetworkConnectivityHubIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkConnectivityHubIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateNetworkConnectivityHubIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkConnectivityHubIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkConnectivityHubIamMember_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateNetworkConnectivityHubIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkConnectivityHubIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkConnectivityHubIamMember_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewNetworkConnectivityHubIamMemberParameters(scope constructs.Const
 
 	return nil
 }
-

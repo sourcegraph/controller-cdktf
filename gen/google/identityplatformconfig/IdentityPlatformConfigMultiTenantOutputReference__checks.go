@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateSetAllowTenantsParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateSetAllowTenantsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewIdentityPlatformConfigMultiTenantOutputReferenceParameters(terra
 
 	return nil
 }
-

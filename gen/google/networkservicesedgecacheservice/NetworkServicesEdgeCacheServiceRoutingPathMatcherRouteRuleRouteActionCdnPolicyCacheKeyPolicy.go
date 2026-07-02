@@ -1,6 +1,5 @@
 package networkservicesedgecacheservice
 
-
 type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy struct {
 	// Names of query string parameters to exclude from cache keys. All other parameters will be included.
 	//
@@ -13,7 +12,7 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	// Note: this should only be enabled if hosts share the same origin and content. Removing the host from the cache key may inadvertently result in different objects being cached than intended, depending on which route the first user matched.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#exclude_host NetworkServicesEdgeCacheService#exclude_host}
-	ExcludeHost interface{} `field:"optional" json:"excludeHost" yaml:"excludeHost"`
+	ExcludeHost any `field:"optional" json:"excludeHost" yaml:"excludeHost"`
 	// If true, exclude query string parameters from the cache key.
 	//
 	// If false (the default), include the query string parameters in
@@ -23,7 +22,7 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	// included.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#exclude_query_string NetworkServicesEdgeCacheService#exclude_query_string}
-	ExcludeQueryString interface{} `field:"optional" json:"excludeQueryString" yaml:"excludeQueryString"`
+	ExcludeQueryString any `field:"optional" json:"excludeQueryString" yaml:"excludeQueryString"`
 	// Names of Cookies to include in cache keys.
 	//
 	// The cookie name and cookie value of each cookie named will be used as part of the cache key.
@@ -60,6 +59,5 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	// If true, http and https requests will be cached separately.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#include_protocol NetworkServicesEdgeCacheService#include_protocol}
-	IncludeProtocol interface{} `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
+	IncludeProtocol any `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateGuestAcceleratorList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateGuestAcceleratorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateGuestAcceleratorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionInstanceTemplateGuestAcceleratorListParameters(terr
 
 	return nil
 }
-

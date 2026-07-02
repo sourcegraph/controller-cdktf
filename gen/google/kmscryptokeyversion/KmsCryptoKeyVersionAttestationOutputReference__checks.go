@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKmsCryptoKeyVersionAttestationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

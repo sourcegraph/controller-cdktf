@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutput
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutput
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkConnectivityMulticloudDataTransferConfigTimeoutsOutputRef
 
 	return nil
 }
-

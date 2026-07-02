@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutp
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutp
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputR
 
 	return nil
 }
-

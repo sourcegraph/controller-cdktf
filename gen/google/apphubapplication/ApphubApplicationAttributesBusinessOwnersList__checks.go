@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesBusinessOwnersList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesBusinessOwnersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubApplicationAttributesBusinessOwnersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApphubApplicationAttributesBusinessOwnersListParameters(terrafor
 
 	return nil
 }
-

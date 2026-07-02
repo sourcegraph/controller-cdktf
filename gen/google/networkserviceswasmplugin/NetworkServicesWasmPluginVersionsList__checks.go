@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesWasmPluginVersionsListParameters(terraformResourc
 
 	return nil
 }
-

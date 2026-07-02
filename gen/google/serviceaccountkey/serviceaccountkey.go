@@ -15,15 +15,15 @@ type ServiceAccountKey interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,9 +61,9 @@ type ServiceAccountKey interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicKey() *string
 	PublicKeyData() *string
 	SetPublicKeyData(val *string)
@@ -72,14 +72,14 @@ type ServiceAccountKey interface {
 	SetPublicKeyType(val *string)
 	PublicKeyTypeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccountId() *string
 	SetServiceAccountId(val *string)
 	ServiceAccountIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidAfter() *string
@@ -88,9 +88,9 @@ type ServiceAccountKey interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type ServiceAccountKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type ServiceAccountKey interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type ServiceAccountKey interface {
 	ResetPrivateKeyType()
 	ResetPublicKeyData()
 	ResetPublicKeyType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServiceAccountKey
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ServiceAccountKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceAccountKey) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ServiceAccountKey) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceAccountKey) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ServiceAccountKey) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceAccountKey) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ServiceAccountKey) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServiceAccountKey) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_ServiceAccountKey) PublicKeyTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceAccountKey) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_ServiceAccountKey) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceAccountKey) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_ServiceAccountKey) ValidBefore() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_account_key google_service_account_key} Resource.
 func NewServiceAccountKey(scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) ServiceAccountKey {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewServiceAccountKey(scope constructs.Construct, id *string, config *Servic
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewServiceAccountKey_Override(s ServiceAccountKey, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceAccountKey) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetCount(val interface{}) {
+func (j *jsiiProxy_ServiceAccountKey) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceAccountKey) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceAccountKey) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetId(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_ServiceAccountKey) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetKeyAlgorithm(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetKeyAlgorithm(val *string) {
 	if err := j.validateSetKeyAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetKeyAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceAccountKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetPrivateKeyType(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetPrivateKeyType(val *string) {
 	if err := j.validateSetPrivateKeyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetPrivateKeyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceAccountKey) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceAccountKey) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetPublicKeyData(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetPublicKeyData(val *string) {
 	if err := j.validateSetPublicKeyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetPublicKeyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetPublicKeyType(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetPublicKeyType(val *string) {
 	if err := j.validateSetPublicKeyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ServiceAccountKey)SetPublicKeyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetServiceAccountId(val *string) {
+func (j *jsiiProxy_ServiceAccountKey) SetServiceAccountId(val *string) {
 	if err := j.validateSetServiceAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func ServiceAccountKey_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func ServiceAccountKey_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceAccountKey_IsConstruct(x interface{}) *bool {
+func ServiceAccountKey_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceAccountKey_IsConstructParameters(x); err != nil {
@@ -726,7 +725,7 @@ func ServiceAccountKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func ServiceAccountKey_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceAccountKey_IsTerraformElement(x interface{}) *bool {
+func ServiceAccountKey_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceAccountKey_IsTerraformElementParameters(x); err != nil {
@@ -745,7 +744,7 @@ func ServiceAccountKey_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func ServiceAccountKey_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceAccountKey_IsTerraformResource(x interface{}) *bool {
+func ServiceAccountKey_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceAccountKey_IsTerraformResourceParameters(x); err != nil {
@@ -764,7 +763,7 @@ func ServiceAccountKey_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceAccountKey.ServiceAccountKey",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,31 +788,31 @@ func (s *jsiiProxy_ServiceAccountKey) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountKey) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServiceAccountKey) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceAccountKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (s *jsiiProxy_ServiceAccountKey) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,15 +940,15 @@ func (s *jsiiProxy_ServiceAccountKey) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountKey) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceAccountKey) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -968,7 +967,7 @@ func (s *jsiiProxy_ServiceAccountKey) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_ServiceAccountKey) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,18 +994,18 @@ func (s *jsiiProxy_ServiceAccountKey) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountKey) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServiceAccountKey) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_ServiceAccountKey) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (s *jsiiProxy_ServiceAccountKey) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1088,8 +1087,8 @@ func (s *jsiiProxy_ServiceAccountKey) ResetPublicKeyType() {
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountKey) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceAccountKey) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1101,8 +1100,8 @@ func (s *jsiiProxy_ServiceAccountKey) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountKey) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceAccountKey) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1114,8 +1113,8 @@ func (s *jsiiProxy_ServiceAccountKey) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountKey) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceAccountKey) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1127,8 +1126,8 @@ func (s *jsiiProxy_ServiceAccountKey) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountKey) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceAccountKey) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1153,8 +1152,8 @@ func (s *jsiiProxy_ServiceAccountKey) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountKey) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceAccountKey) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1165,4 +1164,3 @@ func (s *jsiiProxy_ServiceAccountKey) ToTerraform() interface{} {
 
 	return returns
 }
-

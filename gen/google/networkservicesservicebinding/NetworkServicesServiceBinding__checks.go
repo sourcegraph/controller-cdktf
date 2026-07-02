@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) validateAddMoveTargetParameter
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesServiceBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesServiceBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkServicesServiceBinding_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateNetworkServicesServiceBinding_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesServiceBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkServicesServiceBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateNetworkServicesServiceBinding_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesServiceBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkServicesServiceBinding_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateNetworkServicesServiceBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesServiceBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkServicesServiceBinding_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesServiceBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewNetworkServicesServiceBindingParameters(scope constructs.Constru
 
 	return nil
 }
-

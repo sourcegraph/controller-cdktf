@@ -12,9 +12,9 @@ type AccessContextManagerAccessLevelBasicConditionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,17 +29,17 @@ type AccessContextManagerAccessLevelBasicConditionsOutputReference interface {
 	DevicePolicyInput() *AccessContextManagerAccessLevelBasicConditionsDevicePolicy
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpSubnetworks() *[]*string
 	SetIpSubnetworks(val *[]*string)
 	IpSubnetworksInput() *[]*string
 	Members() *[]*string
 	SetMembers(val *[]*string)
 	MembersInput() *[]*string
-	Negate() interface{}
-	SetNegate(val interface{})
-	NegateInput() interface{}
+	Negate() any
+	SetNegate(val any)
+	NegateInput() any
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
@@ -55,11 +55,11 @@ type AccessContextManagerAccessLevelBasicConditionsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	VpcNetworkSources() AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList
-	VpcNetworkSourcesInput() interface{}
+	VpcNetworkSourcesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type AccessContextManagerAccessLevelBasicConditionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDevicePolicy(value *AccessContextManagerAccessLevelBasicConditionsDevicePolicy)
-	PutVpcNetworkSources(value interface{})
+	PutVpcNetworkSources(value any)
 	ResetDevicePolicy()
 	ResetIpSubnetworks()
 	ResetMembers()
@@ -91,7 +91,7 @@ type AccessContextManagerAccessLevelBasicConditionsOutputReference interface {
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) Negate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) Negate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negate",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) NegateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) NegateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negateInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) VpcNetworkSourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) VpcNetworkSourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vpcNetworkSourcesInput",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 	return returns
 }
-
 
 func NewAccessContextManagerAccessLevelBasicConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessContextManagerAccessLevelBasicConditionsOutputReference {
 	_init_.Initialize()
@@ -325,7 +324,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewAccessContextManagerAccessLevelBasicConditionsOutputReference_Override(a
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetIpSubnetworks(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetIpSubnetworks(val *[]*string) {
 	if err := j.validateSetIpSubnetworksParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetMembers(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetNegate(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetNegate(val any) {
 	if err := j.validateSetNegateParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetRegions(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetRegions(val *[]*string) {
 	if err := j.validateSetRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetRequiredAccessLevels(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetRequiredAccessLevels(val *[]*string) {
 	if err := j.validateSetRequiredAccessLevelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,16 +464,16 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -645,18 +644,18 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	_jsii_.InvokeVoid(
 		a,
 		"putDevicePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) PutVpcNetworkSources(value interface{}) {
+func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) PutVpcNetworkSources(value any) {
 	if err := a.validatePutVpcNetworkSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putVpcNetworkSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 
 	return returns
 }
-

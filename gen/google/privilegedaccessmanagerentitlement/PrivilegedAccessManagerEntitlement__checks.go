@@ -19,7 +19,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateAddMoveTargetPara
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateMoveFromIdParamet
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validatePutApprovalWorkfl
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validatePutEligibleUsersParameters(value interface{}) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validatePutEligibleUsersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validatePrivilegedAccessManagerEntitlement_GenerateConfigForImportParameter
 	return nil
 }
 
-func validatePrivilegedAccessManagerEntitlement_IsConstructParameters(x interface{}) error {
+func validatePrivilegedAccessManagerEntitlement_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func validatePrivilegedAccessManagerEntitlement_IsConstructParameters(x interfac
 	return nil
 }
 
-func validatePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x interface{}) error {
+func validatePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func validatePrivilegedAccessManagerEntitlement_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validatePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x interface{}) error {
+func validatePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -330,7 +330,7 @@ func validatePrivilegedAccessManagerEntitlement_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -363,7 +363,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -468,7 +468,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetParentParamete
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewPrivilegedAccessManagerEntitlementParameters(scope constructs.Co
 
 	return nil
 }
-

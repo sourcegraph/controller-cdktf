@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngineTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDiscoveryEngineRecommendationEngineTimeoutsOutputReferenceParame
 
 	return nil
 }
-

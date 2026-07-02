@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewComputeInstanceFromTemplateReservationAffinityOutputReferencePar
 
 	return nil
 }
-

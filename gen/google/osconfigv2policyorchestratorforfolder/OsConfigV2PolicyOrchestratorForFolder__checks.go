@@ -19,7 +19,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateAddMoveTargetP
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateMoveFromIdPara
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateOsConfigV2PolicyOrchestratorForFolder_GenerateConfigForImportParame
 	return nil
 }
 
-func validateOsConfigV2PolicyOrchestratorForFolder_IsConstructParameters(x interface{}) error {
+func validateOsConfigV2PolicyOrchestratorForFolder_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateOsConfigV2PolicyOrchestratorForFolder_IsConstructParameters(x inter
 	return nil
 }
 
-func validateOsConfigV2PolicyOrchestratorForFolder_IsTerraformElementParameters(x interface{}) error {
+func validateOsConfigV2PolicyOrchestratorForFolder_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateOsConfigV2PolicyOrchestratorForFolder_IsTerraformElementParameters(
 	return nil
 }
 
-func validateOsConfigV2PolicyOrchestratorForFolder_IsTerraformResourceParameters(x interface{}) error {
+func validateOsConfigV2PolicyOrchestratorForFolder_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetActionParam
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetPolicyOrche
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForFolder) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewOsConfigV2PolicyOrchestratorForFolderParameters(scope constructs
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
-		reflect.TypeOf((*DialogflowFulfillment)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowFulfillment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig",
-		reflect.TypeOf((*DialogflowFulfillmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeatures",
-		reflect.TypeOf((*DialogflowFulfillmentFeatures)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
-		reflect.TypeOf((*DialogflowFulfillmentFeaturesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentFeaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowFulfillmentFeaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
-		reflect.TypeOf((*DialogflowFulfillmentFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowFulfillmentFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -149,11 +149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebService",
-		reflect.TypeOf((*DialogflowFulfillmentGenericWebService)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentGenericWebService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebServiceOutputReference",
-		reflect.TypeOf((*DialogflowFulfillmentGenericWebServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentGenericWebServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowFulfillmentGenericWebServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts",
-		reflect.TypeOf((*DialogflowFulfillmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowFulfillmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowFulfillmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

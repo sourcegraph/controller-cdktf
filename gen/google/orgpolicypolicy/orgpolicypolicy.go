@@ -15,15 +15,15 @@ type OrgPolicyPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,28 +59,28 @@ type OrgPolicyPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() OrgPolicyPolicySpecOutputReference
 	SpecInput() *OrgPolicyPolicySpec
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OrgPolicyPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type OrgPolicyPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type OrgPolicyPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type OrgPolicyPolicy interface {
 	ResetOverrideLogicalId()
 	ResetSpec()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OrgPolicyPolicy
@@ -155,8 +155,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_OrgPolicyPolicy) Timeouts() OrgPolicyPolicyTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_OrgPolicyPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
 func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolicyPolicyConfig) OrgPolicyPolicy {
@@ -447,7 +446,7 @@ func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolic
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewOrgPolicyPolicy_Override(o OrgPolicyPolicy, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetId(val *string) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetName(val *string) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetParent(val *string) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_OrgPolicyPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrgPolicyPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func OrgPolicyPolicy_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func OrgPolicyPolicy_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OrgPolicyPolicy_IsConstruct(x interface{}) *bool {
+func OrgPolicyPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyPolicy_IsConstructParameters(x); err != nil {
@@ -613,7 +612,7 @@ func OrgPolicyPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func OrgPolicyPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OrgPolicyPolicy_IsTerraformElement(x interface{}) *bool {
+func OrgPolicyPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyPolicy_IsTerraformElementParameters(x); err != nil {
@@ -632,7 +631,7 @@ func OrgPolicyPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func OrgPolicyPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OrgPolicyPolicy_IsTerraformResource(x interface{}) *bool {
+func OrgPolicyPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -651,7 +650,7 @@ func OrgPolicyPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,31 +675,31 @@ func (o *jsiiProxy_OrgPolicyPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OrgPolicyPolicy) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrgPolicyPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,15 +827,15 @@ func (o *jsiiProxy_OrgPolicyPolicy) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -855,7 +854,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -868,7 +867,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,18 +881,18 @@ func (o *jsiiProxy_OrgPolicyPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OrgPolicyPolicy) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -904,7 +903,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -915,7 +914,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -926,7 +925,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) PutDryRunSpec(value *OrgPolicyPolicyDryRunSp
 	_jsii_.InvokeVoid(
 		o,
 		"putDryRunSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -937,7 +936,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) PutSpec(value *OrgPolicyPolicySpec) {
 	_jsii_.InvokeVoid(
 		o,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -948,7 +947,7 @@ func (o *jsiiProxy_OrgPolicyPolicy) PutTimeouts(value *OrgPolicyPolicyTimeouts) 
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,8 +991,8 @@ func (o *jsiiProxy_OrgPolicyPolicy) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1005,8 +1004,8 @@ func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1018,8 +1017,8 @@ func (o *jsiiProxy_OrgPolicyPolicy) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1031,8 +1030,8 @@ func (o *jsiiProxy_OrgPolicyPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1057,8 +1056,8 @@ func (o *jsiiProxy_OrgPolicyPolicy) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1069,4 +1068,3 @@ func (o *jsiiProxy_OrgPolicyPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigqueryTableTableReplicationInfoOutputReferenceParameters(terra
 
 	return nil
 }
-

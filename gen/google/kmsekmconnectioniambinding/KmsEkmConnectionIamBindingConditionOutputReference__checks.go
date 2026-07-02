@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewKmsEkmConnectionIamBindingConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

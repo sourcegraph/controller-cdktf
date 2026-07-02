@@ -15,15 +15,15 @@ type WorkloadIdentityServiceAgent interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,27 +53,27 @@ type WorkloadIdentityServiceAgent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAgents() WorkloadIdentityServiceAgentServiceAgentsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() WorkloadIdentityServiceAgentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type WorkloadIdentityServiceAgent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type WorkloadIdentityServiceAgent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -116,17 +116,17 @@ type WorkloadIdentityServiceAgent interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkloadIdentityServiceAgent
@@ -144,8 +144,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) Timeouts() WorkloadIdentityServ
 	return returns
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent} Resource.
 func NewWorkloadIdentityServiceAgent(scope constructs.Construct, id *string, config *WorkloadIdentityServiceAgentConfig) WorkloadIdentityServiceAgent {
@@ -376,7 +375,7 @@ func NewWorkloadIdentityServiceAgent(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewWorkloadIdentityServiceAgent_Override(w WorkloadIdentityServiceAgent, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetId(val *string) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetParent(val *string) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkloadIdentityServiceAgent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func WorkloadIdentityServiceAgent_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func WorkloadIdentityServiceAgent_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkloadIdentityServiceAgent_IsConstruct(x interface{}) *bool {
+func WorkloadIdentityServiceAgent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkloadIdentityServiceAgent_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func WorkloadIdentityServiceAgent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func WorkloadIdentityServiceAgent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkloadIdentityServiceAgent_IsTerraformElement(x interface{}) *bool {
+func WorkloadIdentityServiceAgent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkloadIdentityServiceAgent_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func WorkloadIdentityServiceAgent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func WorkloadIdentityServiceAgent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkloadIdentityServiceAgent_IsTerraformResource(x interface{}) *bool {
+func WorkloadIdentityServiceAgent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkloadIdentityServiceAgent_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func WorkloadIdentityServiceAgent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -773,7 +772,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -844,7 +843,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) PutTimeouts(value *WorkloadIden
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -872,8 +871,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) ResetTimeouts() {
 	)
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -885,8 +884,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -898,8 +897,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -911,8 +910,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -937,8 +936,8 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -949,4 +948,3 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgent) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,11 +1,10 @@
 package dialogflowcxtestcase
 
-
 type DialogflowCxTestCaseTestCaseConversationTurnsUserInput struct {
 	// Whether sentiment analysis is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#enable_sentiment_analysis DialogflowCxTestCase#enable_sentiment_analysis}
-	EnableSentimentAnalysis interface{} `field:"optional" json:"enableSentimentAnalysis" yaml:"enableSentimentAnalysis"`
+	EnableSentimentAnalysis any `field:"optional" json:"enableSentimentAnalysis" yaml:"enableSentimentAnalysis"`
 	// Parameters that need to be injected into the conversation during intent detection.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#injected_parameters DialogflowCxTestCase#injected_parameters}
@@ -19,6 +18,5 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInput struct {
 	// Often if parameters are injected, webhooks should not be enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_test_case#is_webhook_enabled DialogflowCxTestCase#is_webhook_enabled}
-	IsWebhookEnabled interface{} `field:"optional" json:"isWebhookEnabled" yaml:"isWebhookEnabled"`
+	IsWebhookEnabled any `field:"optional" json:"isWebhookEnabled" yaml:"isWebhookEnabled"`
 }
-

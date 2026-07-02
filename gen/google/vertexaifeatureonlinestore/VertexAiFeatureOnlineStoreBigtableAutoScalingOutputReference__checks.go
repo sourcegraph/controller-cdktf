@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewVertexAiFeatureOnlineStoreBigtableAutoScalingOutputReferencePara
 
 	return nil
 }
-

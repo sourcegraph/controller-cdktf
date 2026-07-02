@@ -6,9 +6,9 @@ import (
 
 type CloudRunV2ServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudRunV2ServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the cloud run service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
@@ -71,7 +71,7 @@ type CloudRunV2ServiceConfig struct {
 	// Disables public resolution of the default URI of this service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#default_uri_disabled CloudRunV2Service#default_uri_disabled}
-	DefaultUriDisabled interface{} `field:"optional" json:"defaultUriDisabled" yaml:"defaultUriDisabled"`
+	DefaultUriDisabled any `field:"optional" json:"defaultUriDisabled" yaml:"defaultUriDisabled"`
 	// Whether Terraform will be prevented from destroying the service.
 	//
 	// Defaults to true.
@@ -82,7 +82,7 @@ type CloudRunV2ServiceConfig struct {
 	// When the field is set to false, deleting the service is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// User-provided description of the Service. This field currently has a 512-character limit.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
@@ -90,7 +90,7 @@ type CloudRunV2ServiceConfig struct {
 	// Used to enable/disable IAP for the cloud-run service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#iap_enabled CloudRunV2Service#iap_enabled}
-	IapEnabled interface{} `field:"optional" json:"iapEnabled" yaml:"iapEnabled"`
+	IapEnabled any `field:"optional" json:"iapEnabled" yaml:"iapEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -105,7 +105,7 @@ type CloudRunV2ServiceConfig struct {
 	// Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
-	InvokerIamDisabled interface{} `field:"optional" json:"invokerIamDisabled" yaml:"invokerIamDisabled"`
+	InvokerIamDisabled any `field:"optional" json:"invokerIamDisabled" yaml:"invokerIamDisabled"`
 	// Unstructured key value map that can be used to organize and categorize objects.
 	//
 	// User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component,
@@ -142,6 +142,5 @@ type CloudRunV2ServiceConfig struct {
 	// traffic block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
-	Traffic interface{} `field:"optional" json:"traffic" yaml:"traffic"`
+	Traffic any `field:"optional" json:"traffic" yaml:"traffic"`
 }
-

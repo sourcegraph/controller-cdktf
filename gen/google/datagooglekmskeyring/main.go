@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
-		reflect.TypeOf((*DataGoogleKmsKeyRing)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyRing](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleKmsKeyRing{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRingConfig",
-		reflect.TypeOf((*DataGoogleKmsKeyRingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyRingConfig](),
 	)
 }

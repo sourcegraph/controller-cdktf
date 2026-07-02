@@ -12,9 +12,9 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	IncludeImportRangesInput() *[]*string
 	InternalValue() *NetworkConnectivitySpokeLinkedVpnTunnels
 	SetInternalValue(val *NetworkConnectivitySpokeLinkedVpnTunnels)
-	SiteToSiteDataTransfer() interface{}
-	SetSiteToSiteDataTransfer(val interface{})
-	SiteToSiteDataTransferInput() interface{}
+	SiteToSiteDataTransfer() any
+	SetSiteToSiteDataTransfer(val any)
+	SiteToSiteDataTransferInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SiteToSiteDataTransfer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SiteToSiteDataTransfer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransfer",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Site
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SiteToSiteDataTransferInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SiteToSiteDataTransferInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"siteToSiteDataTransferInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Uris
 	return returns
 }
 
-
 func NewNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference_Override(n Netwo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetExcludeExportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetExcludeExportRanges(val *[]*string) {
 	if err := j.validateSetExcludeExportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetExcludeImportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetExcludeImportRanges(val *[]*string) {
 	if err := j.validateSetExcludeImportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIncludeExportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetIncludeExportRanges(val *[]*string) {
 	if err := j.validateSetIncludeExportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIncludeImportRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetIncludeImportRanges(val *[]*string) {
 	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetInternalValue(val *NetworkConnectivitySpokeLinkedVpnTunnels) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetInternalValue(val *NetworkConnectivitySpokeLinkedVpnTunnels) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetSiteToSiteDataTransfer(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetSiteToSiteDataTransfer(val any) {
 	if err := j.validateSetSiteToSiteDataTransferParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetSi
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetUris(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) SetUris(val *[]*string) {
 	if err := j.validateSetUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Comp
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetL
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Inte
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) ToSt
 
 	return returns
 }
-

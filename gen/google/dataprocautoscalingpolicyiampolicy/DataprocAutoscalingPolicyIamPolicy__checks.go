@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateAddMoveTargetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateMoveFromIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDataprocAutoscalingPolicyIamPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataprocAutoscalingPolicyIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataprocAutoscalingPolicyIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDataprocAutoscalingPolicyIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewDataprocAutoscalingPolicyIamPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

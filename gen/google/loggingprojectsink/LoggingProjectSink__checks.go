@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingProjectSink) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSink) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingProjectSink) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingProjectSink) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingProjectSink) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingProjectSink) validatePutBigqueryOptionsParameters(valu
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSink) validatePutExclusionsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingProjectSink) validatePutExclusionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingProjectSink_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateLoggingProjectSink_IsConstructParameters(x interface{}) error {
+func validateLoggingProjectSink_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingProjectSink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoggingProjectSink_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingProjectSink_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingProjectSink_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateLoggingProjectSink_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingProjectSink_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateLoggingProjectSink_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectSink) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectSink) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectSink) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectSink) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetDestinationParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectSink) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectSink) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectSink) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingProjectSink) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -506,7 +506,7 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectSink) validateSetUniqueWriterIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectSink) validateSetUniqueWriterIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -544,4 +544,3 @@ func validateNewLoggingProjectSinkParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

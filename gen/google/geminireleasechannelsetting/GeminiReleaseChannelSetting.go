@@ -15,15 +15,15 @@ type GeminiReleaseChannelSetting interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,11 +62,11 @@ type GeminiReleaseChannelSetting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -77,19 +77,19 @@ type GeminiReleaseChannelSetting interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GeminiReleaseChannelSettingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type GeminiReleaseChannelSetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type GeminiReleaseChannelSetting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type GeminiReleaseChannelSetting interface {
 	ResetProject()
 	ResetReleaseChannel()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GeminiReleaseChannelSetting
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) Timeouts() GeminiReleaseChannelS
 	return returns
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiReleaseChannelSetting) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -503,7 +503,6 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_release_channel_setting google_gemini_release_channel_setting} Resource.
 func NewGeminiReleaseChannelSetting(scope constructs.Construct, id *string, config *GeminiReleaseChannelSettingConfig) GeminiReleaseChannelSetting {
 	_init_.Initialize()
@@ -515,7 +514,7 @@ func NewGeminiReleaseChannelSetting(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -528,12 +527,12 @@ func NewGeminiReleaseChannelSetting_Override(g GeminiReleaseChannelSetting, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetConnection(val interface{}) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetCount(val interface{}) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetId(val *string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLocation(val *string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProject(val *string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSetting)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSetting)SetReleaseChannelSettingId(val *string) {
+func (j *jsiiProxy_GeminiReleaseChannelSetting) SetReleaseChannelSettingId(val *string) {
 	if err := j.validateSetReleaseChannelSettingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func GeminiReleaseChannelSetting_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func GeminiReleaseChannelSetting_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GeminiReleaseChannelSetting_IsConstruct(x interface{}) *bool {
+func GeminiReleaseChannelSetting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiReleaseChannelSetting_IsConstructParameters(x); err != nil {
@@ -714,7 +713,7 @@ func GeminiReleaseChannelSetting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func GeminiReleaseChannelSetting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GeminiReleaseChannelSetting_IsTerraformElement(x interface{}) *bool {
+func GeminiReleaseChannelSetting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiReleaseChannelSetting_IsTerraformElementParameters(x); err != nil {
@@ -733,7 +732,7 @@ func GeminiReleaseChannelSetting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func GeminiReleaseChannelSetting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GeminiReleaseChannelSetting_IsTerraformResource(x interface{}) *bool {
+func GeminiReleaseChannelSetting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiReleaseChannelSetting_IsTerraformResourceParameters(x); err != nil {
@@ -752,7 +751,7 @@ func GeminiReleaseChannelSetting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,31 +776,31 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GeminiReleaseChannelSetting) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GeminiReleaseChannelSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,15 +928,15 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -969,7 +968,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,18 +982,18 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GeminiReleaseChannelSetting) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) PutTimeouts(value *GeminiRelease
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,8 +1078,8 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1092,8 +1091,8 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1105,8 +1104,8 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1118,8 +1117,8 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1144,8 +1143,8 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSetting) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiReleaseChannelSetting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1156,4 +1155,3 @@ func (g *jsiiProxy_GeminiReleaseChannelSetting) ToTerraform() interface{} {
 
 	return returns
 }
-

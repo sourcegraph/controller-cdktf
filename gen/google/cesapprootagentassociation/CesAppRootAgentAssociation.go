@@ -21,15 +21,15 @@ type CesAppRootAgentAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,26 +62,26 @@ type CesAppRootAgentAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CesAppRootAgentAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type CesAppRootAgentAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type CesAppRootAgentAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type CesAppRootAgentAssociation interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CesAppRootAgentAssociation
@@ -193,8 +193,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) Timeouts() CesAppRootAgentAssocia
 	return returns
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppRootAgentAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -422,7 +422,6 @@ func (j *jsiiProxy_CesAppRootAgentAssociation) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app_root_agent_association google_ces_app_root_agent_association} Resource.
 func NewCesAppRootAgentAssociation(scope constructs.Construct, id *string, config *CesAppRootAgentAssociationConfig) CesAppRootAgentAssociation {
@@ -435,7 +434,7 @@ func NewCesAppRootAgentAssociation(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewCesAppRootAgentAssociation_Override(c CesAppRootAgentAssociation, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetAgentId(val *string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetAgentId(val *string) {
 	if err := j.validateSetAgentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetAgentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetAppId(val *string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetId(val *string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetLocation(val *string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetProject(val *string) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociation)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesAppRootAgentAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func CesAppRootAgentAssociation_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func CesAppRootAgentAssociation_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CesAppRootAgentAssociation_IsConstruct(x interface{}) *bool {
+func CesAppRootAgentAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppRootAgentAssociation_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func CesAppRootAgentAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func CesAppRootAgentAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAppRootAgentAssociation_IsTerraformElement(x interface{}) *bool {
+func CesAppRootAgentAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppRootAgentAssociation_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func CesAppRootAgentAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func CesAppRootAgentAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CesAppRootAgentAssociation_IsTerraformResource(x interface{}) *bool {
+func CesAppRootAgentAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesAppRootAgentAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func CesAppRootAgentAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesAppRootAgentAssociation.CesAppRootAgentAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CesAppRootAgentAssociation) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAppRootAgentAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -865,7 +864,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CesAppRootAgentAssociation) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,7 +924,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) PutTimeouts(value *CesAppRootAgen
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,8 +971,8 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -985,8 +984,8 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -998,8 +997,8 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1011,8 +1010,8 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1037,8 +1036,8 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesAppRootAgentAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesAppRootAgentAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1049,4 +1048,3 @@ func (c *jsiiProxy_CesAppRootAgentAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

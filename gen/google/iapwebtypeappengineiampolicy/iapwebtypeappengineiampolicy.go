@@ -18,15 +18,15 @@ type IapWebTypeAppEngineIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type IapWebTypeAppEngineIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type IapWebTypeAppEngineIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type IapWebTypeAppEngineIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type IapWebTypeAppEngineIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebTypeAppEngineIamPolicy
@@ -167,8 +167,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
 func NewIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamPolicyConfig) IapWebTypeAppEngineIamPolicy {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewIapWebTypeAppEngineIamPolicy_Override(i IapWebTypeAppEngineIamPolicy, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetAppId(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -466,7 +465,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func IapWebTypeAppEngineIamPolicy_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func IapWebTypeAppEngineIamPolicy_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebTypeAppEngineIamPolicy_IsConstruct(x interface{}) *bool {
+func IapWebTypeAppEngineIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamPolicy_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func IapWebTypeAppEngineIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func IapWebTypeAppEngineIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebTypeAppEngineIamPolicy_IsTerraformElement(x interface{}) *bool {
+func IapWebTypeAppEngineIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func IapWebTypeAppEngineIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func IapWebTypeAppEngineIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebTypeAppEngineIamPolicy_IsTerraformResource(x interface{}) *bool {
+func IapWebTypeAppEngineIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func IapWebTypeAppEngineIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -818,7 +817,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -919,8 +918,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -932,8 +931,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -945,8 +944,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -971,8 +970,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -983,4 +982,3 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,9 +15,9 @@ type ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference in
 	BottomInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference in
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Left() *float64
 	SetLeft(val *float64)
 	LeftInput() *float64
@@ -50,9 +50,9 @@ type ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference in
 	Right() *float64
 	SetRight(val *float64)
 	RightInput() *float64
-	Show() interface{}
-	SetShow(val interface{})
-	ShowInput() interface{}
+	Show() any
+	SetShow(val any)
+	ShowInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +73,7 @@ type ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference in
 	ResetZLevel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) Show() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) Show() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"show",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) ShowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) ShowInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-
 func NewChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetBottom(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetBottom(val *float64) {
 	if err := j.validateSetBottomParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetLeft(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetLeft(val *float64) {
 	if err := j.validateSetLeftParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetLegendAlign(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetLegendAlign(val *string) {
 	if err := j.validateSetLegendAlignParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetLegendOrient(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetLegendOrient(val *string) {
 	if err := j.validateSetLegendOrientParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetPadding(val *[]*float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetPadding(val *[]*float64) {
 	if err := j.validateSetPaddingParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetRight(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetRight(val *float64) {
 	if err := j.validateSetRightParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetShow(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetShow(val any) {
 	if err := j.validateSetShowParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetTop(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetTop(val *float64) {
 	if err := j.validateSetTopParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetZ(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetZ(val *float64) {
 	if err := j.validateSetZParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)SetZLevel(val *float64) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) SetZLevel(val *float64) {
 	if err := j.validateSetZLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutp
 
 	return returns
 }
-

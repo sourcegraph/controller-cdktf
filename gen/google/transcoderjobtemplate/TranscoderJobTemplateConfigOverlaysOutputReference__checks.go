@@ -90,7 +90,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateI
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validatePutAnimationsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validatePutAnimationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewTranscoderJobTemplateConfigOverlaysOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -197,7 +197,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -345,4 +345,3 @@ func validateNewDataprocWorkflowTemplateJobsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

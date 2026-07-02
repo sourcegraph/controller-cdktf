@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeReservationResourceStatusSpecificSkuAllocationOutputRefer
 
 	return nil
 }
-

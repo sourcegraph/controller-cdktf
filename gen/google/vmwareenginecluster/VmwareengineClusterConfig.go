@@ -6,9 +6,9 @@ import (
 
 type VmwareengineClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VmwareengineClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#name VmwareengineCluster#name}
@@ -37,7 +37,7 @@ type VmwareengineClusterConfig struct {
 	// datastore_mount_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#datastore_mount_config VmwareengineCluster#datastore_mount_config}
-	DatastoreMountConfig interface{} `field:"optional" json:"datastoreMountConfig" yaml:"datastoreMountConfig"`
+	DatastoreMountConfig any `field:"optional" json:"datastoreMountConfig" yaml:"datastoreMountConfig"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#id VmwareengineCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -46,10 +46,9 @@ type VmwareengineClusterConfig struct {
 	// node_type_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#node_type_configs VmwareengineCluster#node_type_configs}
-	NodeTypeConfigs interface{} `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
+	NodeTypeConfigs any `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#timeouts VmwareengineCluster#timeouts}
 	Timeouts *VmwareengineClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

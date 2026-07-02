@@ -109,7 +109,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfi
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOu
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBinding",
-		reflect.TypeOf((*ServiceDirectoryServiceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryServiceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryServiceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingCondition",
-		reflect.TypeOf((*ServiceDirectoryServiceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryServiceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConditionOutputReference",
-		reflect.TypeOf((*ServiceDirectoryServiceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryServiceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryServiceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryServiceIamBinding.ServiceDirectoryServiceIamBindingConfig",
-		reflect.TypeOf((*ServiceDirectoryServiceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryServiceIamBindingConfig](),
 	)
 }

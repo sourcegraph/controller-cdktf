@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServiceAccountIamPolicy) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAccountIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServiceAccountIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServiceAccountIamPolicy) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAccountIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServiceAccountIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateServiceAccountIamPolicy_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateServiceAccountIamPolicy_IsConstructParameters(x interface{}) error {
+func validateServiceAccountIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateServiceAccountIamPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateServiceAccountIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateServiceAccountIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateServiceAccountIamPolicy_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateServiceAccountIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateServiceAccountIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateServiceAccountIamPolicy_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetPolicyDataParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServiceAccountIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewServiceAccountIamPolicyParameters(scope constructs.Construct, id
 
 	return nil
 }
-

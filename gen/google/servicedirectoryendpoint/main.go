@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpoint",
-		reflect.TypeOf((*ServiceDirectoryEndpoint)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointConfig",
-		reflect.TypeOf((*ServiceDirectoryEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeouts",
-		reflect.TypeOf((*ServiceDirectoryEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryEndpoint.ServiceDirectoryEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*ServiceDirectoryEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

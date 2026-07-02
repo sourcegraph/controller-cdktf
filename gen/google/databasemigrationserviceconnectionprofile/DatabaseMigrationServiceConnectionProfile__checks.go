@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateAddMoveTar
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMoveFromId
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateDatabaseMigrationServiceConnectionProfile_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDatabaseMigrationServiceConnectionProfile_IsConstructParameters(x interface{}) error {
+func validateDatabaseMigrationServiceConnectionProfile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateDatabaseMigrationServiceConnectionProfile_IsConstructParameters(x i
 	return nil
 }
 
-func validateDatabaseMigrationServiceConnectionProfile_IsTerraformElementParameters(x interface{}) error {
+func validateDatabaseMigrationServiceConnectionProfile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateDatabaseMigrationServiceConnectionProfile_IsTerraformElementParamet
 	return nil
 }
 
-func validateDatabaseMigrationServiceConnectionProfile_IsTerraformResourceParameters(x interface{}) error {
+func validateDatabaseMigrationServiceConnectionProfile_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func validateDatabaseMigrationServiceConnectionProfile_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileParameters(scope constr
 
 	return nil
 }
-

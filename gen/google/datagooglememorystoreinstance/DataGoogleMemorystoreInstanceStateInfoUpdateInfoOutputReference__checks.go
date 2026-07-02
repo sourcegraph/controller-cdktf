@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceStateInfoUpdateInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleMemorystoreInstanceStateInfoUpdateInfoOutputReferenceP
 
 	return nil
 }
-

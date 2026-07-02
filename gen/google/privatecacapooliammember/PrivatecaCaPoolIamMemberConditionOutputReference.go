@@ -12,9 +12,9 @@ type PrivatecaCaPoolIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type PrivatecaCaPoolIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type PrivatecaCaPoolIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) TitleInput(
 	return returns
 }
 
-
 func NewPrivatecaCaPoolIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewPrivatecaCaPoolIamMemberConditionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewPrivatecaCaPoolIamMemberConditionOutputReference_Override(p PrivatecaCaP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetExpressio
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetInternalValue(val *PrivatecaCaPoolIamMemberCondition) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetInternalValue(val *PrivatecaCaPoolIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) Interpolati
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) ResetDescri
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference) ToString() 
 
 	return returns
 }
-

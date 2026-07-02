@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewFilestoreInstanceInitialReplicationReplicasOutputReferenceParame
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageBucketIpFilterPublicNetworkSourceOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterPublicNetworkSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIpFilterPublicNetworkSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageBucketIpFilterPublicNetworkSourceOutputReferenceParameter
 
 	return nil
 }
-

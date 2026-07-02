@@ -12,9 +12,9 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference in
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-
 func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewHealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetInternalValue(val *HealthcarePipelineJobReconciliationPipelineJobMergeConfig) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetInternalValue(val *HealthcarePipelineJobReconciliationPipelineJobMergeConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	return returns
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	_jsii_.InvokeVoid(
 		h,
 		"putWhistleConfigSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 	)
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigOutp
 
 	return returns
 }
-

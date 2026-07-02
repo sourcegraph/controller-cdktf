@@ -17,15 +17,15 @@ type IapWebForwardingRuleServiceIamBinding interface {
 	Condition() IapWebForwardingRuleServiceIamBindingConditionOutputReference
 	ConditionInput() *IapWebForwardingRuleServiceIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type IapWebForwardingRuleServiceIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IapWebForwardingRuleServiceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IapWebForwardingRuleServiceIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type IapWebForwardingRuleServiceIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebForwardingRuleServiceIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ConditionInput() *IapW
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_forwarding_rule_service_iam_binding google_iap_web_forwarding_rule_service_iam_binding} Resource.
 func NewIapWebForwardingRuleServiceIamBinding(scope constructs.Construct, id *string, config *IapWebForwardingRuleServiceIamBindingConfig) IapWebForwardingRuleServiceIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewIapWebForwardingRuleServiceIamBinding(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIapWebForwardingRuleServiceIamBinding_Override(i IapWebForwardingRuleSer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetForwardingRuleServiceName(val *string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetForwardingRuleServiceName(val *string) {
 	if err := j.validateSetForwardingRuleServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetForwardingRuleServic
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetId(val *string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetMembers(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func IapWebForwardingRuleServiceIamBinding_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func IapWebForwardingRuleServiceIamBinding_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebForwardingRuleServiceIamBinding_IsConstruct(x interface{}) *bool {
+func IapWebForwardingRuleServiceIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebForwardingRuleServiceIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func IapWebForwardingRuleServiceIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func IapWebForwardingRuleServiceIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebForwardingRuleServiceIamBinding_IsTerraformElement(x interface{}) *bool {
+func IapWebForwardingRuleServiceIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebForwardingRuleServiceIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func IapWebForwardingRuleServiceIamBinding_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func IapWebForwardingRuleServiceIamBinding_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func IapWebForwardingRuleServiceIamBinding_IsTerraformResource(x interface{}) *bool {
+func IapWebForwardingRuleServiceIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebForwardingRuleServiceIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func IapWebForwardingRuleServiceIamBinding_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamBinding.IapWebForwardingRuleServiceIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetListAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetNumberListAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetStringAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) GetStringMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) InterpolationForAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) PutCondition(value *Ia
 	_jsii_.InvokeVoid(
 		i,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeAttributes()
 	return returns
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) SynthesizeHclAttribute
 	return returns
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1022,8 +1021,8 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToHclTerraform() inter
 	return returns
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1048,8 +1047,8 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1060,4 +1059,3 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBinding) ToTerraform() interfac
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeInstanceNetworkInterfaceAccessConfigOutputReferenceParame
 
 	return nil
 }
-

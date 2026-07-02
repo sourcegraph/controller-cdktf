@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterPscConfigsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterPscConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleRedisClusterPscConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleRedisClusterPscConfigsOutputReferenceParameters(terraf
 
 	return nil
 }
-

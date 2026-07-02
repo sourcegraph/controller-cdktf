@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputRe
 
 	return nil
 }
-

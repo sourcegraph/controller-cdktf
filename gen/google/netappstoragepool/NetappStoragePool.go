@@ -15,9 +15,9 @@ type NetappStoragePool interface {
 	ActiveDirectory() *string
 	SetActiveDirectory(val *string)
 	ActiveDirectoryInput() *string
-	AllowAutoTiering() interface{}
-	SetAllowAutoTiering(val interface{})
-	AllowAutoTieringInput() interface{}
+	AllowAutoTiering() any
+	SetAllowAutoTiering(val any)
+	AllowAutoTieringInput() any
 	AvailableThroughputMibps() *float64
 	CapacityGib() *string
 	SetCapacityGib(val *string)
@@ -26,18 +26,18 @@ type NetappStoragePool interface {
 	CdktfStack() cdktf.TerraformStack
 	ColdTierSizeUsedGib() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CustomPerformanceEnabled() interface{}
-	SetCustomPerformanceEnabled(val interface{})
-	CustomPerformanceEnabledInput() interface{}
+	SetCount(val any)
+	CustomPerformanceEnabled() any
+	SetCustomPerformanceEnabled(val any)
+	CustomPerformanceEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,9 +46,9 @@ type NetappStoragePool interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EnableHotTierAutoResize() interface{}
-	SetEnableHotTierAutoResize(val interface{})
-	EnableHotTierAutoResizeInput() interface{}
+	EnableHotTierAutoResize() any
+	SetEnableHotTierAutoResize(val any)
+	EnableHotTierAutoResizeInput() any
 	EncryptionType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -71,9 +71,9 @@ type NetappStoragePool interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
-	LdapEnabled() interface{}
-	SetLdapEnabled(val interface{})
-	LdapEnabledInput() interface{}
+	LdapEnabled() any
+	SetLdapEnabled(val any)
+	LdapEnabledInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -100,14 +100,14 @@ type NetappStoragePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QosType() *string
 	SetQosType(val *string)
 	QosTypeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicaZone() *string
 	SetReplicaZone(val *string)
 	ReplicaZoneInput() *string
@@ -121,11 +121,11 @@ type NetappStoragePool interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetappStoragePoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TotalIops() *string
 	SetTotalIops(val *string)
 	TotalIopsInput() *string
@@ -144,9 +144,9 @@ type NetappStoragePool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -164,7 +164,7 @@ type NetappStoragePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -176,7 +176,7 @@ type NetappStoragePool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -207,17 +207,17 @@ type NetappStoragePool interface {
 	ResetTotalThroughputMibps()
 	ResetType()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetappStoragePool
@@ -245,8 +245,8 @@ func (j *jsiiProxy_NetappStoragePool) ActiveDirectoryInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) AllowAutoTiering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTiering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAutoTiering",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_NetappStoragePool) AllowAutoTiering() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) AllowAutoTieringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTieringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAutoTieringInput",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_NetappStoragePool) ColdTierSizeUsedGib() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_NetappStoragePool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappStoragePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_NetappStoragePool) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_NetappStoragePool) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customPerformanceEnabled",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) CustomPerformanceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customPerformanceEnabledInput",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_NetappStoragePool) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) EnableHotTierAutoResize() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) EnableHotTierAutoResize() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHotTierAutoResize",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_NetappStoragePool) EnableHotTierAutoResize() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) EnableHotTierAutoResizeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) EnableHotTierAutoResizeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHotTierAutoResizeInput",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_NetappStoragePool) LabelsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) LdapEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) LdapEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapEnabled",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_NetappStoragePool) LdapEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) LdapEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) LdapEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapEnabledInput",
@@ -705,8 +705,8 @@ func (j *jsiiProxy_NetappStoragePool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetappStoragePool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -735,8 +735,8 @@ func (j *jsiiProxy_NetappStoragePool) QosTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -825,8 +825,8 @@ func (j *jsiiProxy_NetappStoragePool) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappStoragePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -855,8 +855,8 @@ func (j *jsiiProxy_NetappStoragePool) Timeouts() NetappStoragePoolTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_NetappStoragePool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappStoragePool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -965,7 +965,6 @@ func (j *jsiiProxy_NetappStoragePool) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool(scope constructs.Construct, id *string, config *NetappStoragePoolConfig) NetappStoragePool {
 	_init_.Initialize()
@@ -977,7 +976,7 @@ func NewNetappStoragePool(scope constructs.Construct, id *string, config *Netapp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -990,12 +989,12 @@ func NewNetappStoragePool_Override(n NetappStoragePool, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetActiveDirectory(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetActiveDirectory(val *string) {
 	if err := j.validateSetActiveDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_NetappStoragePool)SetActiveDirectory(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetAllowAutoTiering(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetAllowAutoTiering(val any) {
 	if err := j.validateSetAllowAutoTieringParameters(val); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1016,7 @@ func (j *jsiiProxy_NetappStoragePool)SetAllowAutoTiering(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetCapacityGib(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetCapacityGib(val *string) {
 	if err := j.validateSetCapacityGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1027,7 @@ func (j *jsiiProxy_NetappStoragePool)SetCapacityGib(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1039,7 +1038,7 @@ func (j *jsiiProxy_NetappStoragePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetCount(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1050,7 +1049,7 @@ func (j *jsiiProxy_NetappStoragePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetCustomPerformanceEnabled(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetCustomPerformanceEnabled(val any) {
 	if err := j.validateSetCustomPerformanceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1061,7 +1060,7 @@ func (j *jsiiProxy_NetappStoragePool)SetCustomPerformanceEnabled(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetappStoragePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_NetappStoragePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetDescription(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_NetappStoragePool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetEnableHotTierAutoResize(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetEnableHotTierAutoResize(val any) {
 	if err := j.validateSetEnableHotTierAutoResizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_NetappStoragePool)SetEnableHotTierAutoResize(val interface{})
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetappStoragePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_NetappStoragePool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetHotTierSizeGib(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetHotTierSizeGib(val *string) {
 	if err := j.validateSetHotTierSizeGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -1110,7 +1109,7 @@ func (j *jsiiProxy_NetappStoragePool)SetHotTierSizeGib(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetId(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_NetappStoragePool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetKmsConfig(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetKmsConfig(val *string) {
 	if err := j.validateSetKmsConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_NetappStoragePool)SetKmsConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappStoragePool) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1143,7 +1142,7 @@ func (j *jsiiProxy_NetappStoragePool)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetLdapEnabled(val interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetLdapEnabled(val any) {
 	if err := j.validateSetLdapEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1154,7 +1153,7 @@ func (j *jsiiProxy_NetappStoragePool)SetLdapEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetappStoragePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1165,7 +1164,7 @@ func (j *jsiiProxy_NetappStoragePool)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetLocation(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1176,7 +1175,7 @@ func (j *jsiiProxy_NetappStoragePool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetMode(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1187,7 +1186,7 @@ func (j *jsiiProxy_NetappStoragePool)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetName(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1198,7 +1197,7 @@ func (j *jsiiProxy_NetappStoragePool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetNetwork(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1209,7 +1208,7 @@ func (j *jsiiProxy_NetappStoragePool)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetProject(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1220,7 +1219,7 @@ func (j *jsiiProxy_NetappStoragePool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetappStoragePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1228,7 +1227,7 @@ func (j *jsiiProxy_NetappStoragePool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetappStoragePool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1239,7 +1238,7 @@ func (j *jsiiProxy_NetappStoragePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetQosType(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetQosType(val *string) {
 	if err := j.validateSetQosTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1250,7 +1249,7 @@ func (j *jsiiProxy_NetappStoragePool)SetQosType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetReplicaZone(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetReplicaZone(val *string) {
 	if err := j.validateSetReplicaZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1261,7 +1260,7 @@ func (j *jsiiProxy_NetappStoragePool)SetReplicaZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetScaleType(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetScaleType(val *string) {
 	if err := j.validateSetScaleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1272,7 +1271,7 @@ func (j *jsiiProxy_NetappStoragePool)SetScaleType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetServiceLevel(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetServiceLevel(val *string) {
 	if err := j.validateSetServiceLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1283,7 +1282,7 @@ func (j *jsiiProxy_NetappStoragePool)SetServiceLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetTotalIops(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetTotalIops(val *string) {
 	if err := j.validateSetTotalIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1294,7 +1293,7 @@ func (j *jsiiProxy_NetappStoragePool)SetTotalIops(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetTotalThroughputMibps(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetTotalThroughputMibps(val *string) {
 	if err := j.validateSetTotalThroughputMibpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1305,7 +1304,7 @@ func (j *jsiiProxy_NetappStoragePool)SetTotalThroughputMibps(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetType(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1316,7 +1315,7 @@ func (j *jsiiProxy_NetappStoragePool)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappStoragePool)SetZone(val *string) {
+func (j *jsiiProxy_NetappStoragePool) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1339,7 +1338,7 @@ func NetappStoragePool_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1363,7 +1362,7 @@ func NetappStoragePool_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetappStoragePool_IsConstruct(x interface{}) *bool {
+func NetappStoragePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappStoragePool_IsConstructParameters(x); err != nil {
@@ -1374,7 +1373,7 @@ func NetappStoragePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1382,7 +1381,7 @@ func NetappStoragePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappStoragePool_IsTerraformElement(x interface{}) *bool {
+func NetappStoragePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappStoragePool_IsTerraformElementParameters(x); err != nil {
@@ -1393,7 +1392,7 @@ func NetappStoragePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1401,7 +1400,7 @@ func NetappStoragePool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappStoragePool_IsTerraformResource(x interface{}) *bool {
+func NetappStoragePool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappStoragePool_IsTerraformResourceParameters(x); err != nil {
@@ -1412,7 +1411,7 @@ func NetappStoragePool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1437,31 +1436,31 @@ func (n *jsiiProxy_NetappStoragePool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetappStoragePool) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetappStoragePool) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetappStoragePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappStoragePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1477,7 +1476,7 @@ func (n *jsiiProxy_NetappStoragePool) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1493,7 +1492,7 @@ func (n *jsiiProxy_NetappStoragePool) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1509,7 +1508,7 @@ func (n *jsiiProxy_NetappStoragePool) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1525,7 +1524,7 @@ func (n *jsiiProxy_NetappStoragePool) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1541,7 +1540,7 @@ func (n *jsiiProxy_NetappStoragePool) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1557,7 +1556,7 @@ func (n *jsiiProxy_NetappStoragePool) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1573,7 +1572,7 @@ func (n *jsiiProxy_NetappStoragePool) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1589,15 +1588,15 @@ func (n *jsiiProxy_NetappStoragePool) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappStoragePool) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappStoragePool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1616,7 +1615,7 @@ func (n *jsiiProxy_NetappStoragePool) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1629,7 +1628,7 @@ func (n *jsiiProxy_NetappStoragePool) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1643,18 +1642,18 @@ func (n *jsiiProxy_NetappStoragePool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetappStoragePool) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetappStoragePool) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1665,7 +1664,7 @@ func (n *jsiiProxy_NetappStoragePool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1676,7 +1675,7 @@ func (n *jsiiProxy_NetappStoragePool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1687,7 +1686,7 @@ func (n *jsiiProxy_NetappStoragePool) PutTimeouts(value *NetappStoragePoolTimeou
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1859,8 +1858,8 @@ func (n *jsiiProxy_NetappStoragePool) ResetZone() {
 	)
 }
 
-func (n *jsiiProxy_NetappStoragePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappStoragePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1872,8 +1871,8 @@ func (n *jsiiProxy_NetappStoragePool) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (n *jsiiProxy_NetappStoragePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappStoragePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1885,8 +1884,8 @@ func (n *jsiiProxy_NetappStoragePool) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (n *jsiiProxy_NetappStoragePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappStoragePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1898,8 +1897,8 @@ func (n *jsiiProxy_NetappStoragePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetappStoragePool) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappStoragePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1924,8 +1923,8 @@ func (n *jsiiProxy_NetappStoragePool) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetappStoragePool) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappStoragePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1936,4 +1935,3 @@ func (n *jsiiProxy_NetappStoragePool) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validatePutOperationConfigsParameters(value interface{}) error {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validatePutOperationConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewApigeeApiProductGraphqlOperationGroupOutputReferenceParameters(t
 
 	return nil
 }
-

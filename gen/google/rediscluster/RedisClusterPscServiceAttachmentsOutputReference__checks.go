@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterPscServiceAttachmentsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterPscServiceAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterPscServiceAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterPscServiceAttachmentsOutputReferenceParameters(terra
 
 	return nil
 }
-

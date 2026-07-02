@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSqlDatabaseInstanceSettingsMaintenanceWindowOutputReferenceParam
 
 	return nil
 }
-

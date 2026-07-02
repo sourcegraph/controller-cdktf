@@ -128,7 +128,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateSetAttri
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewPubsubSubscriptionPushConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validatePutExtensionsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validatePutExtensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -272,4 +272,3 @@ func validateNewNetworkServicesLbRouteExtensionExtensionChainsOutputReferencePar
 
 	return nil
 }
-

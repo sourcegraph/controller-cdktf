@@ -98,7 +98,7 @@ func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBillingAccountIamBindingConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

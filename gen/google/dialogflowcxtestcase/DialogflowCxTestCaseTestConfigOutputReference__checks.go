@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxTestCaseTestConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDialogflowCxTestCaseTestConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

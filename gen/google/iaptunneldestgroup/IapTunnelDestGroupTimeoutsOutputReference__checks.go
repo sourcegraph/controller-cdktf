@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIapTunnelDestGroupTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

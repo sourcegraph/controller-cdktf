@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSecureSourceManagerInstanceIamMemberConditionOutputReferencePara
 
 	return nil
 }
-

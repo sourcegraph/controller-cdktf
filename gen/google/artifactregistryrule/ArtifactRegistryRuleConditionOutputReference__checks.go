@@ -98,7 +98,7 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewArtifactRegistryRuleConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

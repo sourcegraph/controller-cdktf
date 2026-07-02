@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfunctionsFunctionSecretVolumesListParameters(terraformResou
 
 	return nil
 }
-

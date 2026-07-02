@@ -90,7 +90,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateI
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validatePutAnthosClustersParameters(value interface{}) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validatePutAnthosClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validatePutGkeClustersParameters(value interface{}) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validatePutGkeClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewClouddeployTargetAssociatedEntitiesOutputReferenceParameters(ter
 
 	return nil
 }
-

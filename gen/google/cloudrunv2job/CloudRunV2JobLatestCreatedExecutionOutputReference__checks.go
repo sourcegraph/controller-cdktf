@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2JobLatestCreatedExecutionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobLatestCreatedExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobLatestCreatedExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2JobLatestCreatedExecutionOutputReferenceParameters(ter
 
 	return nil
 }
-

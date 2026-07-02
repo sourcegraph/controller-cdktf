@@ -112,7 +112,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validatePutBargeI
 	return nil
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validatePutSynthesizeSpeechConfigsParameters(value interface{}) error {
+func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validatePutSynthesizeSpeechConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewCesAppAudioProcessingConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

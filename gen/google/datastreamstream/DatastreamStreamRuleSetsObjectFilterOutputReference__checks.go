@@ -109,7 +109,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsObjectFilterOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsObjectFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsObjectFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDatastreamStreamRuleSetsObjectFilterOutputReferenceParameters(te
 
 	return nil
 }
-

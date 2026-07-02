@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusConditionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremBareMetalNodePoolStatusConditionsOutputReferenceParamet
 
 	return nil
 }
-

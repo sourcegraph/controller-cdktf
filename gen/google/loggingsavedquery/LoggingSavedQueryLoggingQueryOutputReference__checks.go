@@ -90,7 +90,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateInterpo
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validatePutSummaryFieldsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validatePutSummaryFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraform
 
 	return nil
 }
-

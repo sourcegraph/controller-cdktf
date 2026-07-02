@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceSignedUrlKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeBackendServiceSignedUrlKeyTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

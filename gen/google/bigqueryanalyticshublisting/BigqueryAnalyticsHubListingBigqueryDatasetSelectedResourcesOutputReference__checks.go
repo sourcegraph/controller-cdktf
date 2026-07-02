@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOu
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutpu
 
 	return nil
 }
-

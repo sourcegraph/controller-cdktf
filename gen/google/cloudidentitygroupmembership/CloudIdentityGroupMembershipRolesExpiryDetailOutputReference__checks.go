@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesExpiryDetailOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesExpiryDetailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudIdentityGroupMembershipRolesExpiryDetailOutputReferencePara
 
 	return nil
 }
-

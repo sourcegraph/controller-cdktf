@@ -109,7 +109,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReferen
 
 	return nil
 }
-

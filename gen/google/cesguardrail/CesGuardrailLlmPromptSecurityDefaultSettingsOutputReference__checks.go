@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewCesGuardrailLlmPromptSecurityDefaultSettingsOutputReferenceParam
 
 	return nil
 }
-

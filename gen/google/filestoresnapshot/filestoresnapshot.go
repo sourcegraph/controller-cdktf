@@ -15,15 +15,15 @@ type FilestoreSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,28 +71,28 @@ type FilestoreSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FilestoreSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type FilestoreSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type FilestoreSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type FilestoreSnapshot interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FilestoreSnapshot
@@ -166,8 +166,8 @@ func (j *jsiiProxy_FilestoreSnapshot) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_FilestoreSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FilestoreSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_FilestoreSnapshot) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_FilestoreSnapshot) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FilestoreSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_FilestoreSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_FilestoreSnapshot) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FilestoreSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_FilestoreSnapshot) Timeouts() FilestoreSnapshotTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -525,7 +525,6 @@ func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) FilestoreSnapshot {
@@ -538,7 +537,7 @@ func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *Filest
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewFilestoreSnapshot_Override(f FilestoreSnapshot, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_FilestoreSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_FilestoreSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetDescription(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FilestoreSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -605,7 +604,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetId(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetInstance(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FilestoreSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetLocation(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetName(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetProject(val *string) {
+func (j *jsiiProxy_FilestoreSnapshot) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FilestoreSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_FilestoreSnapshot)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FilestoreSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func FilestoreSnapshot_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func FilestoreSnapshot_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FilestoreSnapshot_IsConstruct(x interface{}) *bool {
+func FilestoreSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFilestoreSnapshot_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func FilestoreSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func FilestoreSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FilestoreSnapshot_IsTerraformElement(x interface{}) *bool {
+func FilestoreSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFilestoreSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func FilestoreSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func FilestoreSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FilestoreSnapshot_IsTerraformResource(x interface{}) *bool {
+func FilestoreSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFilestoreSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func FilestoreSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.filestoreSnapshot.FilestoreSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (f *jsiiProxy_FilestoreSnapshot) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FilestoreSnapshot) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FilestoreSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (f *jsiiProxy_FilestoreSnapshot) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (f *jsiiProxy_FilestoreSnapshot) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FilestoreSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -990,7 +989,7 @@ func (f *jsiiProxy_FilestoreSnapshot) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (f *jsiiProxy_FilestoreSnapshot) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (f *jsiiProxy_FilestoreSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FilestoreSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (f *jsiiProxy_FilestoreSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (f *jsiiProxy_FilestoreSnapshot) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (f *jsiiProxy_FilestoreSnapshot) PutTimeouts(value *FilestoreSnapshotTimeou
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,8 +1112,8 @@ func (f *jsiiProxy_FilestoreSnapshot) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FilestoreSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1126,8 +1125,8 @@ func (f *jsiiProxy_FilestoreSnapshot) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FilestoreSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1139,8 +1138,8 @@ func (f *jsiiProxy_FilestoreSnapshot) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FilestoreSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1152,8 +1151,8 @@ func (f *jsiiProxy_FilestoreSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FilestoreSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1178,8 +1177,8 @@ func (f *jsiiProxy_FilestoreSnapshot) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FilestoreSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1190,4 +1189,3 @@ func (f *jsiiProxy_FilestoreSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

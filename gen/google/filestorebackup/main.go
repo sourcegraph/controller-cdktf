@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
-		reflect.TypeOf((*FilestoreBackup)(nil)).Elem(),
+		reflect.TypeFor[FilestoreBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreBackup.FilestoreBackupConfig",
-		reflect.TypeOf((*FilestoreBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[FilestoreBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeouts",
-		reflect.TypeOf((*FilestoreBackupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FilestoreBackupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreBackup.FilestoreBackupTimeoutsOutputReference",
-		reflect.TypeOf((*FilestoreBackupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreBackupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreBackupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

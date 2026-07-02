@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNotebooksEnvironmentContainerImageOutputReferenceParameters(terr
 
 	return nil
 }
-

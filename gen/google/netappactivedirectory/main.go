@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
-		reflect.TypeOf((*NetappActiveDirectory)(nil)).Elem(),
+		reflect.TypeFor[NetappActiveDirectory](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappActiveDirectory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig",
-		reflect.TypeOf((*NetappActiveDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappActiveDirectoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts",
-		reflect.TypeOf((*NetappActiveDirectoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappActiveDirectoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference",
-		reflect.TypeOf((*NetappActiveDirectoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappActiveDirectoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

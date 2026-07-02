@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigO
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutp
 
 	return nil
 }
-

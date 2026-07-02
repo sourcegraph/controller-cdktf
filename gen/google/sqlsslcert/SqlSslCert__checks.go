@@ -19,7 +19,7 @@ func (s *jsiiProxy_SqlSslCert) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (s *jsiiProxy_SqlSslCert) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SqlSslCert) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SqlSslCert) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlSslCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SqlSslCert) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSqlSslCert_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateSqlSslCert_IsConstructParameters(x interface{}) error {
+func validateSqlSslCert_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSqlSslCert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSqlSslCert_IsTerraformElementParameters(x interface{}) error {
+func validateSqlSslCert_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSqlSslCert_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSqlSslCert_IsTerraformResourceParameters(x interface{}) error {
+func validateSqlSslCert_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_SqlSslCert) validateSetCommonNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_SqlSslCert) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SqlSslCert) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SqlSslCert) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_SqlSslCert) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SqlSslCert) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_SqlSslCert) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SqlSslCert) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SqlSslCert) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewSqlSslCertParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

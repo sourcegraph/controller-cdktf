@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
-		reflect.TypeOf((*DataCatalogPolicyTag)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogPolicyTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogPolicyTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig",
-		reflect.TypeOf((*DataCatalogPolicyTagConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogPolicyTagConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts",
-		reflect.TypeOf((*DataCatalogPolicyTagTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogPolicyTagTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeoutsOutputReference",
-		reflect.TypeOf((*DataCatalogPolicyTagTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogPolicyTagTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogPolicyTagTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

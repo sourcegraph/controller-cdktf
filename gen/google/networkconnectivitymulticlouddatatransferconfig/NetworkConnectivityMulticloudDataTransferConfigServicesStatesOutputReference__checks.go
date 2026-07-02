@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStates
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkConnectivityMulticloudDataTransferConfigServicesStatesOut
 
 	return nil
 }
-

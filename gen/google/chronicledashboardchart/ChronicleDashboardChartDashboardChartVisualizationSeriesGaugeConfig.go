@@ -1,6 +1,5 @@
 package chronicledashboardchart
 
-
 type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfig struct {
 	// base_value block.
 	//
@@ -13,6 +12,5 @@ type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfig struct 
 	// threshold_values block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#threshold_values ChronicleDashboardChart#threshold_values}
-	ThresholdValues interface{} `field:"optional" json:"thresholdValues" yaml:"thresholdValues"`
+	ThresholdValues any `field:"optional" json:"thresholdValues" yaml:"thresholdValues"`
 }
-

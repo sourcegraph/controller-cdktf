@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting",
-		reflect.TypeOf((*GeminiCodeToolsSetting)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSetting](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSetting{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,19 +87,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig",
-		reflect.TypeOf((*GeminiCodeToolsSettingConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledTool",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledTool)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfig",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledToolConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledToolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigList",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledToolConfigList)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledToolConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -121,7 +121,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigOutputReference",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledToolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledToolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolList",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledToolList)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSettingEnabledToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -179,7 +179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolOutputReference",
-		reflect.TypeOf((*GeminiCodeToolsSettingEnabledToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingEnabledToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountConnector", GoGetter: "AccountConnector"},
 			_jsii_.MemberProperty{JsiiProperty: "accountConnectorInput", GoGetter: "AccountConnectorInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriOverride", GoGetter: "UriOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "uriOverrideInput", GoGetter: "UriOverrideInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSettingEnabledToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,11 +225,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts",
-		reflect.TypeOf((*GeminiCodeToolsSettingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeoutsOutputReference",
-		reflect.TypeOf((*GeminiCodeToolsSettingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeToolsSettingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeToolsSettingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

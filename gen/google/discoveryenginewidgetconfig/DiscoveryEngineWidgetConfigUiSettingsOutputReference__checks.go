@@ -90,7 +90,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validatePutDataStoreUiConfigsParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validatePutDataStoreUiConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetDisableUserEventsCollectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetDisableUserEventsCollectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableAutocompleteParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableAutocompleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableCreateAgentButtonParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableCreateAgentButtonParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnablePeopleSearchParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnablePeopleSearchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableQualityFeedbackParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableQualityFeedbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSafeSearchParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSafeSearchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSearchAsYouTypeParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableSearchAsYouTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableVisualContentSummaryParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsOutputReference) validateSetEnableVisualContentSummaryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,4 +424,3 @@ func validateNewDiscoveryEngineWidgetConfigUiSettingsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputRefe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReferencePara
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitoringUptimeCheckConfigContentMatchersListParameters(terrafo
 
 	return nil
 }
-

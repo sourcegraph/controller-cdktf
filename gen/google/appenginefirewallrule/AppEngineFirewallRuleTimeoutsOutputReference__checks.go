@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppEngineFirewallRuleTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

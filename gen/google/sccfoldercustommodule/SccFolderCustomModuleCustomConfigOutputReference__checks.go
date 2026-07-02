@@ -131,7 +131,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewSccFolderCustomModuleCustomConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

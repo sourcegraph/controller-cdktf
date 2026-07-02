@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesAppAudioProcessingConfigSynthesizeSpeechConfigsListParameters
 
 	return nil
 }
-

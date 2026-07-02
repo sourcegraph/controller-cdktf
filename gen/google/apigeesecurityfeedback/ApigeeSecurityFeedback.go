@@ -18,15 +18,15 @@ type ApigeeSecurityFeedback interface {
 	SetComment(val *string)
 	CommentInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type ApigeeSecurityFeedback interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	FeedbackContexts() ApigeeSecurityFeedbackFeedbackContextsList
-	FeedbackContextsInput() interface{}
+	FeedbackContextsInput() any
 	FeedbackId() *string
 	SetFeedbackId(val *string)
 	FeedbackIdInput() *string
@@ -69,30 +69,30 @@ type ApigeeSecurityFeedback interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reason() *string
 	SetReason(val *string)
 	ReasonInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ApigeeSecurityFeedbackTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ApigeeSecurityFeedback interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,14 +122,14 @@ type ApigeeSecurityFeedback interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFeedbackContexts(value interface{})
+	PutFeedbackContexts(value any)
 	PutTimeouts(value *ApigeeSecurityFeedbackTimeouts)
 	ResetComment()
 	ResetDisplayName()
@@ -139,17 +139,17 @@ type ApigeeSecurityFeedback interface {
 	ResetOverrideLogicalId()
 	ResetReason()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApigeeSecurityFeedback
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) CommentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) FeedbackContexts() ApigeeSecurityFeed
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) FeedbackContextsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) FeedbackContextsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"feedbackContextsInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) Timeouts() ApigeeSecurityFeedbackTime
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityFeedback) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_ApigeeSecurityFeedback) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_feedback google_apigee_security_feedback} Resource.
 func NewApigeeSecurityFeedback(scope constructs.Construct, id *string, config *ApigeeSecurityFeedbackConfig) ApigeeSecurityFeedback {
 	_init_.Initialize()
@@ -539,7 +538,7 @@ func NewApigeeSecurityFeedback(scope constructs.Construct, id *string, config *A
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewApigeeSecurityFeedback_Override(a ApigeeSecurityFeedback, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetComment(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetComment(val *string) {
 	if err := j.validateSetCommentParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetComment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetCount(val interface{}) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetDisplayName(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetFeedbackId(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetFeedbackId(val *string) {
 	if err := j.validateSetFeedbackIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetFeedbackId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetFeedbackType(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetFeedbackType(val *string) {
 	if err := j.validateSetFeedbackTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetFeedbackType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetId(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetOrgId(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ApigeeSecurityFeedback)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityFeedback)SetReason(val *string) {
+func (j *jsiiProxy_ApigeeSecurityFeedback) SetReason(val *string) {
 	if err := j.validateSetReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func ApigeeSecurityFeedback_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func ApigeeSecurityFeedback_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApigeeSecurityFeedback_IsConstruct(x interface{}) *bool {
+func ApigeeSecurityFeedback_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeSecurityFeedback_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func ApigeeSecurityFeedback_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func ApigeeSecurityFeedback_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeSecurityFeedback_IsTerraformElement(x interface{}) *bool {
+func ApigeeSecurityFeedback_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeSecurityFeedback_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func ApigeeSecurityFeedback_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func ApigeeSecurityFeedback_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeSecurityFeedback_IsTerraformResource(x interface{}) *bool {
+func ApigeeSecurityFeedback_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeSecurityFeedback_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func ApigeeSecurityFeedback_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApigeeSecurityFeedback) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeSecurityFeedback) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -991,7 +990,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApigeeSecurityFeedback) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,18 +1050,18 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) PutFeedbackContexts(value interface{}) {
+func (a *jsiiProxy_ApigeeSecurityFeedback) PutFeedbackContexts(value any) {
 	if err := a.validatePutFeedbackContextsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putFeedbackContexts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) PutTimeouts(value *ApigeeSecurityFeed
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1125,8 +1124,8 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1138,8 +1137,8 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1151,8 +1150,8 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1164,8 +1163,8 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1190,8 +1189,8 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityFeedback) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeSecurityFeedback) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1202,4 +1201,3 @@ func (a *jsiiProxy_ApigeeSecurityFeedback) ToTerraform() interface{} {
 
 	return returns
 }
-

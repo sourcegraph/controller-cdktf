@@ -18,9 +18,9 @@ type ComputeWireGroupWirePropertiesOutputReference interface {
 	BandwidthUnmeteredInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ComputeWireGroupWirePropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ComputeWireGroupWirePropertiesOutputReference interface {
 	ResetFaultResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) BandwidthUnmet
 	return returns
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewComputeWireGroupWirePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeWireGroupWirePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewComputeWireGroupWirePropertiesOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewComputeWireGroupWirePropertiesOutputReference_Override(c ComputeWireGrou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetBandwidthAllocation(val *string) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetBandwidthAllocation(val *string) {
 	if err := j.validateSetBandwidthAllocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetBandwidthAll
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetBandwidthUnmetered(val *float64) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetBandwidthUnmetered(val *float64) {
 	if err := j.validateSetBandwidthUnmeteredParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetBandwidthUnm
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetFaultResponse(val *string) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetFaultResponse(val *string) {
 	if err := j.validateSetFaultResponseParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetFaultRespons
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetInternalValue(val *ComputeWireGroupWireProperties) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetInternalValue(val *ComputeWireGroupWireProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) ResetFaultResp
 	)
 }
 
-func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ComputeWireGroupWirePropertiesOutputReference) ToString() *st
 
 	return returns
 }
-

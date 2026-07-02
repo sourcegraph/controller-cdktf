@@ -6,9 +6,9 @@ import (
 
 type ComputeRegionCommitmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRegionCommitmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// The name must be 1-63 characters long and match
@@ -42,7 +42,7 @@ type ComputeRegionCommitmentConfig struct {
 	// one or three years according to the terms of the existing commitment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_commitment#auto_renew ComputeRegionCommitment#auto_renew}
-	AutoRenew interface{} `field:"optional" json:"autoRenew" yaml:"autoRenew"`
+	AutoRenew any `field:"optional" json:"autoRenew" yaml:"autoRenew"`
 	// The category of the commitment.
 	//
 	// Category MACHINE specifies commitments composed of
@@ -82,7 +82,7 @@ type ComputeRegionCommitmentConfig struct {
 	// resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_commitment#resources ComputeRegionCommitment#resources}
-	Resources interface{} `field:"optional" json:"resources" yaml:"resources"`
+	Resources any `field:"optional" json:"resources" yaml:"resources"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_commitment#timeouts ComputeRegionCommitment#timeouts}
@@ -97,4 +97,3 @@ type ComputeRegionCommitmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_commitment#type ComputeRegionCommitment#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

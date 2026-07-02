@@ -32,18 +32,18 @@ type ApigeeOrganization interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlaneEncryptionKeyName() *string
 	SetControlPlaneEncryptionKeyName(val *string)
 	ControlPlaneEncryptionKeyNameInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,9 +51,9 @@ type ApigeeOrganization interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableVpcPeering() interface{}
-	SetDisableVpcPeering(val interface{})
-	DisableVpcPeeringInput() interface{}
+	DisableVpcPeering() any
+	SetDisableVpcPeering(val any)
+	DisableVpcPeeringInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -85,11 +85,11 @@ type ApigeeOrganization interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Retention() *string
 	SetRetention(val *string)
 	RetentionInput() *string
@@ -103,18 +103,18 @@ type ApigeeOrganization interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ApigeeOrganizationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,7 +132,7 @@ type ApigeeOrganization interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -144,7 +144,7 @@ type ApigeeOrganization interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -171,17 +171,17 @@ type ApigeeOrganization interface {
 	ResetRuntimeDatabaseEncryptionKeyName()
 	ResetRuntimeType()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApigeeOrganization
@@ -319,8 +319,8 @@ func (j *jsiiProxy_ApigeeOrganization) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_ApigeeOrganization) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeOrganization) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_ApigeeOrganization) ControlPlaneEncryptionKeyNameInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_ApigeeOrganization) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableVpcPeering",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeering() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeeringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) DisableVpcPeeringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableVpcPeeringInput",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_ApigeeOrganization) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApigeeOrganization) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_ApigeeOrganization) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -669,8 +669,8 @@ func (j *jsiiProxy_ApigeeOrganization) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeOrganization) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -699,8 +699,8 @@ func (j *jsiiProxy_ApigeeOrganization) Timeouts() ApigeeOrganizationTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeOrganization) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeOrganization) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -708,7 +708,6 @@ func (j *jsiiProxy_ApigeeOrganization) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_organization google_apigee_organization} Resource.
 func NewApigeeOrganization(scope constructs.Construct, id *string, config *ApigeeOrganizationConfig) ApigeeOrganization {
@@ -721,7 +720,7 @@ func NewApigeeOrganization(scope constructs.Construct, id *string, config *Apige
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -734,12 +733,12 @@ func NewApigeeOrganization_Override(a ApigeeOrganization, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetAnalyticsRegion(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetAnalyticsRegion(val *string) {
 	if err := j.validateSetAnalyticsRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetAnalyticsRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetApiConsumerDataEncryptionKeyName(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetApiConsumerDataEncryptionKeyName(val *string) {
 	if err := j.validateSetApiConsumerDataEncryptionKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetApiConsumerDataEncryptionKeyName(val *s
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetApiConsumerDataLocation(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetApiConsumerDataLocation(val *string) {
 	if err := j.validateSetApiConsumerDataLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetApiConsumerDataLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetAuthorizedNetwork(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetAuthorizedNetwork(val *string) {
 	if err := j.validateSetAuthorizedNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetAuthorizedNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetBillingType(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetBillingType(val *string) {
 	if err := j.validateSetBillingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetBillingType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApigeeOrganization) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetControlPlaneEncryptionKeyName(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetControlPlaneEncryptionKeyName(val *string) {
 	if err := j.validateSetControlPlaneEncryptionKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetControlPlaneEncryptionKeyName(val *stri
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetCount(val interface{}) {
+func (j *jsiiProxy_ApigeeOrganization) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApigeeOrganization) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -835,7 +834,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetDescription(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetDisableVpcPeering(val interface{}) {
+func (j *jsiiProxy_ApigeeOrganization) SetDisableVpcPeering(val any) {
 	if err := j.validateSetDisableVpcPeeringParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetDisableVpcPeering(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetDisplayName(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApigeeOrganization) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -876,7 +875,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetId(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApigeeOrganization) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetProjectId(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApigeeOrganization) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -917,7 +916,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApigeeOrganization) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetRetention(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetRetention(val *string) {
 	if err := j.validateSetRetentionParameters(val); err != nil {
 		panic(err)
 	}
@@ -939,7 +938,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetRetention(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetRuntimeDatabaseEncryptionKeyName(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetRuntimeDatabaseEncryptionKeyName(val *string) {
 	if err := j.validateSetRuntimeDatabaseEncryptionKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -950,7 +949,7 @@ func (j *jsiiProxy_ApigeeOrganization)SetRuntimeDatabaseEncryptionKeyName(val *s
 	)
 }
 
-func (j *jsiiProxy_ApigeeOrganization)SetRuntimeType(val *string) {
+func (j *jsiiProxy_ApigeeOrganization) SetRuntimeType(val *string) {
 	if err := j.validateSetRuntimeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func ApigeeOrganization_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func ApigeeOrganization_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApigeeOrganization_IsConstruct(x interface{}) *bool {
+func ApigeeOrganization_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeOrganization_IsConstructParameters(x); err != nil {
@@ -1008,7 +1007,7 @@ func ApigeeOrganization_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func ApigeeOrganization_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeOrganization_IsTerraformElement(x interface{}) *bool {
+func ApigeeOrganization_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeOrganization_IsTerraformElementParameters(x); err != nil {
@@ -1027,7 +1026,7 @@ func ApigeeOrganization_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func ApigeeOrganization_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeOrganization_IsTerraformResource(x interface{}) *bool {
+func ApigeeOrganization_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeOrganization_IsTerraformResourceParameters(x); err != nil {
@@ -1046,7 +1045,7 @@ func ApigeeOrganization_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganization",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1071,31 +1070,31 @@ func (a *jsiiProxy_ApigeeOrganization) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApigeeOrganization) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApigeeOrganization) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApigeeOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1143,7 +1142,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1175,7 +1174,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1191,7 +1190,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1207,7 +1206,7 @@ func (a *jsiiProxy_ApigeeOrganization) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1223,15 +1222,15 @@ func (a *jsiiProxy_ApigeeOrganization) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeOrganization) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeOrganization) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1250,7 +1249,7 @@ func (a *jsiiProxy_ApigeeOrganization) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1263,7 +1262,7 @@ func (a *jsiiProxy_ApigeeOrganization) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1277,18 +1276,18 @@ func (a *jsiiProxy_ApigeeOrganization) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApigeeOrganization) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApigeeOrganization) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1299,7 +1298,7 @@ func (a *jsiiProxy_ApigeeOrganization) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1310,7 +1309,7 @@ func (a *jsiiProxy_ApigeeOrganization) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1321,7 +1320,7 @@ func (a *jsiiProxy_ApigeeOrganization) PutProperties(value *ApigeeOrganizationPr
 	_jsii_.InvokeVoid(
 		a,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1332,7 +1331,7 @@ func (a *jsiiProxy_ApigeeOrganization) PutTimeouts(value *ApigeeOrganizationTime
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1464,8 +1463,8 @@ func (a *jsiiProxy_ApigeeOrganization) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeOrganization) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeOrganization) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1477,8 +1476,8 @@ func (a *jsiiProxy_ApigeeOrganization) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeOrganization) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeOrganization) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1490,8 +1489,8 @@ func (a *jsiiProxy_ApigeeOrganization) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeOrganization) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeOrganization) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1503,8 +1502,8 @@ func (a *jsiiProxy_ApigeeOrganization) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeOrganization) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeOrganization) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1529,8 +1528,8 @@ func (a *jsiiProxy_ApigeeOrganization) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeOrganization) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeOrganization) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1541,4 +1540,3 @@ func (a *jsiiProxy_ApigeeOrganization) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validatePutTargetMetricsParameters(value interface{}) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validatePutTargetMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetDisableScaleInParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetDisableScaleInParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -301,4 +301,3 @@ func validateNewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReferenc
 
 	return nil
 }
-

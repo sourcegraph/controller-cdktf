@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMonitoredProjectTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewMonitoringMonitoredProjectTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SiteVerificationWebResource) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SiteVerificationWebResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SiteVerificationWebResource) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SiteVerificationWebResource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSiteVerificationWebResource_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateSiteVerificationWebResource_IsConstructParameters(x interface{}) error {
+func validateSiteVerificationWebResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSiteVerificationWebResource_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateSiteVerificationWebResource_IsTerraformElementParameters(x interface{}) error {
+func validateSiteVerificationWebResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSiteVerificationWebResource_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateSiteVerificationWebResource_IsTerraformResourceParameters(x interface{}) error {
+func validateSiteVerificationWebResource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSiteVerificationWebResource_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SiteVerificationWebResource) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_SiteVerificationWebResource) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -444,4 +444,3 @@ func validateNewSiteVerificationWebResourceParameters(scope constructs.Construct
 
 	return nil
 }
-

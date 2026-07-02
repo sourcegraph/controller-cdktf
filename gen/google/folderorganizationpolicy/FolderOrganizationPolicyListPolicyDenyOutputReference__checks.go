@@ -98,7 +98,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewFolderOrganizationPolicyListPolicyDenyOutputReferenceParameters(
 
 	return nil
 }
-

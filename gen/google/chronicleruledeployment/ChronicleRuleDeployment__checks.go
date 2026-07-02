@@ -19,7 +19,7 @@ func (c *jsiiProxy_ChronicleRuleDeployment) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ChronicleRuleDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ChronicleRuleDeployment) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ChronicleRuleDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateChronicleRuleDeployment_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateChronicleRuleDeployment_IsConstructParameters(x interface{}) error {
+func validateChronicleRuleDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateChronicleRuleDeployment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateChronicleRuleDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateChronicleRuleDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateChronicleRuleDeployment_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateChronicleRuleDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateChronicleRuleDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateChronicleRuleDeployment_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetAlertingParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetAlertingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_ChronicleRuleDeployment) validateSetAlertingParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetArchivedParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetArchivedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_ChronicleRuleDeployment) validateSetArchivedParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_ChronicleRuleDeployment) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ChronicleRuleDeployment) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_ChronicleRuleDeployment) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ChronicleRuleDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -525,4 +525,3 @@ func validateNewChronicleRuleDeploymentParameters(scope constructs.Construct, id
 
 	return nil
 }
-

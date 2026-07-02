@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSecretManagerSecretsSecretsReplicationOutputReferenceP
 
 	return nil
 }
-

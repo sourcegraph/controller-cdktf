@@ -1,6 +1,5 @@
 package networkservicesedgecacheorigin
 
-
 type NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd struct {
 	// The name of the header to add.
 	//
@@ -20,6 +19,5 @@ type NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeader
 	// To overwrite existing values, set 'replace' to 'true'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_origin#replace NetworkServicesEdgeCacheOrigin#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

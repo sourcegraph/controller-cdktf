@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeResourcePolicy) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeResourcePolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeResourcePolicy) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeResourcePolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateComputeResourcePolicy_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateComputeResourcePolicy_IsConstructParameters(x interface{}) error {
+func validateComputeResourcePolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateComputeResourcePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeResourcePolicy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeResourcePolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateComputeResourcePolicy_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateComputeResourcePolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeResourcePolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func validateComputeResourcePolicy_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_ComputeResourcePolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -440,7 +440,7 @@ func (j *jsiiProxy_ComputeResourcePolicy) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewComputeResourcePolicyParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

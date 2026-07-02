@@ -109,7 +109,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewHypercomputeclusterClusterStorageResourcesOutputReferenceParamet
 
 	return nil
 }
-

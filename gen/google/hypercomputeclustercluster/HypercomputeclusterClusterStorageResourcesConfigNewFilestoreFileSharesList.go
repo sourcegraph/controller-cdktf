@@ -17,8 +17,8 @@ type HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList 
 	Get(index *float64) HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	return returns
 }
 
-
 func NewHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesLi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewHypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesLi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	_jsii_.Invoke(
 		h,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 	_jsii_.Invoke(
 		h,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreFileSharesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreF
 
 	return returns
 }
-

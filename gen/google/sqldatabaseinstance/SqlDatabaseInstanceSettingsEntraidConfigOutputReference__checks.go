@@ -106,7 +106,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsEntraidConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsEntraidConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsEntraidConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSqlDatabaseInstanceSettingsEntraidConfigOutputReferenceParameter
 
 	return nil
 }
-

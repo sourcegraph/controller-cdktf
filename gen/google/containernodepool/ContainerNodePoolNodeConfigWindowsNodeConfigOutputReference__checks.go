@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigWindowsNodeConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigWindowsNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigWindowsNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerNodePoolNodeConfigWindowsNodeConfigOutputReferenceParam
 
 	return nil
 }
-

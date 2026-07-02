@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageTransferJobEventStreamOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobEventStreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobEventStreamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewStorageTransferJobEventStreamOutputReferenceParameters(terraform
 
 	return nil
 }
-

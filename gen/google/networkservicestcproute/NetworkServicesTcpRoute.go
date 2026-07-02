@@ -15,15 +15,15 @@ type NetworkServicesTcpRoute interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,31 +70,31 @@ type NetworkServicesTcpRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() NetworkServicesTcpRouteRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesTcpRouteTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkServicesTcpRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type NetworkServicesTcpRoute interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRules(value interface{})
+	PutRules(value any)
 	PutTimeouts(value *NetworkServicesTcpRouteTimeouts)
 	ResetDescription()
 	ResetGateways()
@@ -143,17 +143,17 @@ type NetworkServicesTcpRoute interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesTcpRoute
@@ -171,8 +171,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) Rules() NetworkServicesTcpRouteRules
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) Timeouts() NetworkServicesTcpRouteTi
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRoute) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -551,7 +551,6 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *NetworkServicesTcpRouteConfig) NetworkServicesTcpRoute {
 	_init_.Initialize()
@@ -563,7 +562,7 @@ func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -576,12 +575,12 @@ func NewNetworkServicesTcpRoute_Override(n NetworkServicesTcpRoute, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetGateways(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetGateways(val *[]*string) {
 	if err := j.validateSetGatewaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetGateways(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetMeshes(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetMeshes(val *[]*string) {
 	if err := j.validateSetMeshesParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetMeshes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -715,7 +714,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRoute)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesTcpRoute) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func NetworkServicesTcpRoute_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func NetworkServicesTcpRoute_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesTcpRoute_IsConstruct(x interface{}) *bool {
+func NetworkServicesTcpRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesTcpRoute_IsConstructParameters(x); err != nil {
@@ -773,7 +772,7 @@ func NetworkServicesTcpRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func NetworkServicesTcpRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesTcpRoute_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesTcpRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesTcpRoute_IsTerraformElementParameters(x); err != nil {
@@ -792,7 +791,7 @@ func NetworkServicesTcpRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func NetworkServicesTcpRoute_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesTcpRoute_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesTcpRoute_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesTcpRoute_IsTerraformResourceParameters(x); err != nil {
@@ -811,7 +810,7 @@ func NetworkServicesTcpRoute_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,31 +835,31 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesTcpRoute) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesTcpRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,15 +987,15 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1015,7 +1014,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,18 +1041,18 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesTcpRoute) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1075,18 +1074,18 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) PutRules(value interface{}) {
+func (n *jsiiProxy_NetworkServicesTcpRoute) PutRules(value any) {
 	if err := n.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) PutTimeouts(value *NetworkServicesTc
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,8 +1164,8 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1178,8 +1177,8 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1191,8 +1190,8 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1204,8 +1203,8 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1230,8 +1229,8 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesTcpRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1242,4 +1241,3 @@ func (n *jsiiProxy_NetworkServicesTcpRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

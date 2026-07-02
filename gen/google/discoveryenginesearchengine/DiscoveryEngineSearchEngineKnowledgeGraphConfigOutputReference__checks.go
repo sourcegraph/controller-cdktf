@@ -117,7 +117,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetEnableCloudKnowledgeGraphParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetEnableCloudKnowledgeGraphParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetEnablePrivateKnowledgeGraphParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) validateSetEnablePrivateKnowledgeGraphParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewDiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferencePa
 
 	return nil
 }
-

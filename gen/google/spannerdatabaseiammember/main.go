@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
-		reflect.TypeOf((*SpannerDatabaseIamMember)(nil)).Elem(),
+		reflect.TypeFor[SpannerDatabaseIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerDatabaseIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,11 +80,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition",
-		reflect.TypeOf((*SpannerDatabaseIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[SpannerDatabaseIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConditionOutputReference",
-		reflect.TypeOf((*SpannerDatabaseIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerDatabaseIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerDatabaseIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,6 +123,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig",
-		reflect.TypeOf((*SpannerDatabaseIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[SpannerDatabaseIamMemberConfig](),
 	)
 }

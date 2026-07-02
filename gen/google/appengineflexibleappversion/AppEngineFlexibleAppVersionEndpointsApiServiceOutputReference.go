@@ -12,9 +12,9 @@ type AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableTraceSampling() interface{}
-	SetDisableTraceSampling(val interface{})
-	DisableTraceSamplingInput() interface{}
+	DisableTraceSampling() any
+	SetDisableTraceSampling(val any)
+	DisableTraceSamplingInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppEngineFlexibleAppVersionEndpointsApiService
@@ -52,7 +52,7 @@ type AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference interface {
 	ResetRolloutStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) DisableTraceSampling() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) DisableTraceSampling() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTraceSampling",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) DisableTraceSamplingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) DisableTraceSamplingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTraceSamplingInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return returns
 }
 
-
 func NewAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference_Override(a
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetConfigId(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetConfigId(val *string) {
 	if err := j.validateSetConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetDisableTraceSampling(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetDisableTraceSampling(val any) {
 	if err := j.validateSetDisableTraceSamplingParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetInternalValue(val *AppEngineFlexibleAppVersionEndpointsApiService) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetInternalValue(val *AppEngineFlexibleAppVersionEndpointsApiService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetRolloutStrategy(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetRolloutStrategy(val *string) {
 	if err := j.validateSetRolloutStrategyParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 
 	return returns
 }
-

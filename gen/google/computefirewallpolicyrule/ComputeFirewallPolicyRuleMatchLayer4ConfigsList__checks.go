@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchLayer4ConfigsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchLayer4ConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchLayer4ConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeFirewallPolicyRuleMatchLayer4ConfigsListParameters(terraf
 
 	return nil
 }
-

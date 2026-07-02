@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificat
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificat
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesO
 
 	return nil
 }
-

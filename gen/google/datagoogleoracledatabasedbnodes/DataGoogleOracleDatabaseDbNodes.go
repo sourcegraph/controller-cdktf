@@ -18,11 +18,11 @@ type DataGoogleOracleDatabaseDbNodes interface {
 	SetCloudVmCluster(val *string)
 	CloudVmClusterInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DbNodes() DataGoogleOracleDatabaseDbNodesDbNodesList
 	// Experimental.
 	DependsOn() *[]*string
@@ -56,17 +56,17 @@ type DataGoogleOracleDatabaseDbNodes interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataGoogleOracleDatabaseDbNodes interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleOracleDatabaseDbNodes
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) CloudVmClusterInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -342,7 +342,6 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes} Data Source.
 func NewDataGoogleOracleDatabaseDbNodes(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseDbNodesConfig) DataGoogleOracleDatabaseDbNodes {
 	_init_.Initialize()
@@ -354,7 +353,7 @@ func NewDataGoogleOracleDatabaseDbNodes(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -367,12 +366,12 @@ func NewDataGoogleOracleDatabaseDbNodes_Override(d DataGoogleOracleDatabaseDbNod
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetCloudVmCluster(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetCloudVmCluster(val *string) {
 	if err := j.validateSetCloudVmClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetCloudVmCluster(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -402,7 +401,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func DataGoogleOracleDatabaseDbNodes_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func DataGoogleOracleDatabaseDbNodes_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleOracleDatabaseDbNodes_IsConstruct(x interface{}) *bool {
+func DataGoogleOracleDatabaseDbNodes_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseDbNodes_IsConstructParameters(x); err != nil {
@@ -509,7 +508,7 @@ func DataGoogleOracleDatabaseDbNodes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func DataGoogleOracleDatabaseDbNodes_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseDbNodes_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleOracleDatabaseDbNodes_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseDbNodes_IsTerraformDataSourceParameters(x); err != nil {
@@ -528,7 +527,7 @@ func DataGoogleOracleDatabaseDbNodes_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func DataGoogleOracleDatabaseDbNodes_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseDbNodes_IsTerraformElement(x interface{}) *bool {
+func DataGoogleOracleDatabaseDbNodes_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseDbNodes_IsTerraformElementParameters(x); err != nil {
@@ -547,7 +546,7 @@ func DataGoogleOracleDatabaseDbNodes_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseDbNodes.DataGoogleOracleDatabaseDbNodes",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -565,27 +564,27 @@ func DataGoogleOracleDatabaseDbNodes_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -771,8 +770,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -784,8 +783,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -797,8 +796,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -810,8 +809,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -836,8 +835,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -848,4 +847,3 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodes) ToTerraform() interface{} {
 
 	return returns
 }
-

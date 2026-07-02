@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicyIamMember.BigqueryDatapolicyv2DataPolicyIamMember",
-		reflect.TypeOf((*BigqueryDatapolicyv2DataPolicyIamMember)(nil)).Elem(),
+		reflect.TypeFor[BigqueryDatapolicyv2DataPolicyIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicyIamMember.BigqueryDatapolicyv2DataPolicyIamMemberCondition",
-		reflect.TypeOf((*BigqueryDatapolicyv2DataPolicyIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[BigqueryDatapolicyv2DataPolicyIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicyIamMember.BigqueryDatapolicyv2DataPolicyIamMemberConditionOutputReference",
-		reflect.TypeOf((*BigqueryDatapolicyv2DataPolicyIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryDatapolicyv2DataPolicyIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicyIamMember.BigqueryDatapolicyv2DataPolicyIamMemberConfig",
-		reflect.TypeOf((*BigqueryDatapolicyv2DataPolicyIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryDatapolicyv2DataPolicyIamMemberConfig](),
 	)
 }

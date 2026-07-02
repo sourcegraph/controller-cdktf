@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetAllowJaggedRowsParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetAllowJaggedRowsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetAllowQuotedNewlinesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetAllowQuotedNewlinesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationCsvOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -278,4 +278,3 @@ func validateNewBigqueryTableExternalDataConfigurationCsvOptionsOutputReferenceP
 
 	return nil
 }
-

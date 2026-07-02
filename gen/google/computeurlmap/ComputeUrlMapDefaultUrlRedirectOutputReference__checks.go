@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetHo
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewComputeUrlMapDefaultUrlRedirectOutputReferenceParameters(terrafo
 
 	return nil
 }
-

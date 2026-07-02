@@ -1,6 +1,5 @@
 package networksecurityauthzpolicy
 
-
 type NetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// header_set block.
 	//
@@ -9,7 +8,7 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// hosts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
-	Hosts interface{} `field:"optional" json:"hosts" yaml:"hosts"`
+	Hosts any `field:"optional" json:"hosts" yaml:"hosts"`
 	// mcp block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#mcp NetworkSecurityAuthzPolicy#mcp}
@@ -23,6 +22,5 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// paths block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
-	Paths interface{} `field:"optional" json:"paths" yaml:"paths"`
+	Paths any `field:"optional" json:"paths" yaml:"paths"`
 }
-

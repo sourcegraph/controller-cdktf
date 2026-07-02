@@ -1,6 +1,5 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettingsIpConfigurationPscConfig struct {
 	// List of consumer projects that are allow-listed for PSC connections to this instance.
 	//
@@ -17,10 +16,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationPscConfig struct {
 	// psc_auto_connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#psc_auto_connections SqlDatabaseInstance#psc_auto_connections}
-	PscAutoConnections interface{} `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
+	PscAutoConnections any `field:"optional" json:"pscAutoConnections" yaml:"pscAutoConnections"`
 	// Whether PSC connectivity is enabled for this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#psc_enabled SqlDatabaseInstance#psc_enabled}
-	PscEnabled interface{} `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
+	PscEnabled any `field:"optional" json:"pscEnabled" yaml:"pscEnabled"`
 }
-

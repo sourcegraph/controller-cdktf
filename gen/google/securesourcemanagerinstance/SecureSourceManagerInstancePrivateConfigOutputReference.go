@@ -15,9 +15,9 @@ type SecureSourceManagerInstancePrivateConfigOutputReference interface {
 	CaPoolInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type SecureSourceManagerInstancePrivateConfigOutputReference interface {
 	HttpServiceAttachment() *string
 	InternalValue() *SecureSourceManagerInstancePrivateConfig
 	SetInternalValue(val *SecureSourceManagerInstancePrivateConfig)
-	IsPrivate() interface{}
-	SetIsPrivate(val interface{})
-	IsPrivateInput() interface{}
+	IsPrivate() any
+	SetIsPrivate(val any)
+	IsPrivateInput() any
 	SshServiceAttachment() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -50,7 +50,7 @@ type SecureSourceManagerInstancePrivateConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type SecureSourceManagerInstancePrivateConfigOutputReference interface {
 	ResetCustomHostConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) CaPo
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) IsPrivate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) IsPrivate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivate",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) IsPr
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) IsPrivateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) IsPrivateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivateInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewSecureSourceManagerInstancePrivateConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SecureSourceManagerInstancePrivateConfigOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewSecureSourceManagerInstancePrivateConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerInstance.SecureSourceManagerInstancePrivateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewSecureSourceManagerInstancePrivateConfigOutputReference_Override(s Secur
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerInstance.SecureSourceManagerInstancePrivateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetCaPool(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetCaPool(val *string) {
 	if err := j.validateSetCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetCa
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetInternalValue(val *SecureSourceManagerInstancePrivateConfig) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetInternalValue(val *SecureSourceManagerInstancePrivateConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetIsPrivate(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetIsPrivate(val any) {
 	if err := j.validateSetIsPrivateParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetIs
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,16 +356,16 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Comp
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetL
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Inte
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) PutC
 	_jsii_.InvokeVoid(
 		s,
 		"putCustomHostConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -557,16 +556,16 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Rese
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -585,4 +584,3 @@ func (s *jsiiProxy_SecureSourceManagerInstancePrivateConfigOutputReference) ToSt
 
 	return returns
 }
-

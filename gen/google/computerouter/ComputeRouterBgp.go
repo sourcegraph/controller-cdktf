@@ -1,6 +1,5 @@
 package computerouter
 
-
 type ComputeRouterBgp struct {
 	// Local BGP Autonomous System Number (ASN).
 	//
@@ -25,7 +24,7 @@ type ComputeRouterBgp struct {
 	// advertised_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#advertised_ip_ranges ComputeRouter#advertised_ip_ranges}
-	AdvertisedIpRanges interface{} `field:"optional" json:"advertisedIpRanges" yaml:"advertisedIpRanges"`
+	AdvertisedIpRanges any `field:"optional" json:"advertisedIpRanges" yaml:"advertisedIpRanges"`
 	// User-specified flag to indicate which mode to use for advertisement. Default value: "DEFAULT" Possible values: ["DEFAULT", "CUSTOM"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#advertise_mode ComputeRouter#advertise_mode}
@@ -54,4 +53,3 @@ type ComputeRouterBgp struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#keepalive_interval ComputeRouter#keepalive_interval}
 	KeepaliveInterval *float64 `field:"optional" json:"keepaliveInterval" yaml:"keepaliveInterval"`
 }
-

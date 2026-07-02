@@ -1,6 +1,5 @@
 package computeinterconnect
 
-
 type ComputeInterconnectMacsecPreSharedKeys struct {
 	// A name for this pre-shared key.
 	//
@@ -19,7 +18,7 @@ type ComputeInterconnectMacsecPreSharedKeys struct {
 	// if the MKA session cannot be established with your router.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// A RFC3339 timestamp on or after which the key is valid.
 	//
 	// startTime can be in the
@@ -31,4 +30,3 @@ type ComputeInterconnectMacsecPreSharedKeys struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
-

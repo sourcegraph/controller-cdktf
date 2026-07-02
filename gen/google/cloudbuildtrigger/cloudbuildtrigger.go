@@ -21,15 +21,15 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -40,9 +40,9 @@ type CloudbuildTrigger interface {
 	DescriptionInput() *string
 	DeveloperConnectEventConfig() CloudbuildTriggerDeveloperConnectEventConfigOutputReference
 	DeveloperConnectEventConfigInput() *CloudbuildTriggerDeveloperConnectEventConfig
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Filename() *string
 	SetFilename(val *string)
 	FilenameInput() *string
@@ -93,13 +93,13 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PubsubConfig() CloudbuildTriggerPubsubConfigOutputReference
 	PubsubConfigInput() *CloudbuildTriggerPubsubConfig
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryEventConfig() CloudbuildTriggerRepositoryEventConfigOutputReference
 	RepositoryEventConfigInput() *CloudbuildTriggerRepositoryEventConfig
 	ServiceAccount() *string
@@ -116,11 +116,11 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudbuildTriggerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TriggerId() *string
 	TriggerTemplate() CloudbuildTriggerTriggerTemplateOutputReference
 	TriggerTemplateInput() *CloudbuildTriggerTriggerTemplate
@@ -130,9 +130,9 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -150,7 +150,7 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -162,7 +162,7 @@ type CloudbuildTrigger interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -210,17 +210,17 @@ type CloudbuildTrigger interface {
 	ResetTimeouts()
 	ResetTriggerTemplate()
 	ResetWebhookConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudbuildTrigger
@@ -298,8 +298,8 @@ func (j *jsiiProxy_CloudbuildTrigger) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_CloudbuildTrigger) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_CloudbuildTrigger) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_CloudbuildTrigger) DeveloperConnectEventConfigInput() *Cloudb
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_CloudbuildTrigger) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -688,8 +688,8 @@ func (j *jsiiProxy_CloudbuildTrigger) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudbuildTrigger) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -718,8 +718,8 @@ func (j *jsiiProxy_CloudbuildTrigger) PubsubConfigInput() *CloudbuildTriggerPubs
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -838,8 +838,8 @@ func (j *jsiiProxy_CloudbuildTrigger) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -868,8 +868,8 @@ func (j *jsiiProxy_CloudbuildTrigger) Timeouts() CloudbuildTriggerTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTrigger) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTrigger) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -928,7 +928,6 @@ func (j *jsiiProxy_CloudbuildTrigger) WebhookConfigInput() *CloudbuildTriggerWeb
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger google_cloudbuild_trigger} Resource.
 func NewCloudbuildTrigger(scope constructs.Construct, id *string, config *CloudbuildTriggerConfig) CloudbuildTrigger {
 	_init_.Initialize()
@@ -940,7 +939,7 @@ func NewCloudbuildTrigger(scope constructs.Construct, id *string, config *Cloudb
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -953,12 +952,12 @@ func NewCloudbuildTrigger_Override(c CloudbuildTrigger, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudbuildTrigger) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +968,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudbuildTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +979,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -988,7 +987,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetDescription(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetDisabled(val interface{}) {
+func (j *jsiiProxy_CloudbuildTrigger) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetFilename(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetFilename(val *string) {
 	if err := j.validateSetFilenameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetFilename(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetFilter(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudbuildTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetId(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetIgnoredFiles(val *[]*string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetIgnoredFiles(val *[]*string) {
 	if err := j.validateSetIgnoredFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetIgnoredFiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetIncludeBuildLogs(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetIncludeBuildLogs(val *string) {
 	if err := j.validateSetIncludeBuildLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetIncludeBuildLogs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetIncludedFiles(val *[]*string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetIncludedFiles(val *[]*string) {
 	if err := j.validateSetIncludedFilesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetIncludedFiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudbuildTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetLocation(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetName(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetProject(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudbuildTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudbuildTrigger) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetServiceAccount(val *string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetSubstitutions(val *map[string]*string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetSubstitutions(val *map[string]*string) {
 	if err := j.validateSetSubstitutionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_CloudbuildTrigger)SetSubstitutions(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTrigger)SetTags(val *[]*string) {
+func (j *jsiiProxy_CloudbuildTrigger) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func CloudbuildTrigger_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1216,7 +1215,7 @@ func CloudbuildTrigger_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudbuildTrigger_IsConstruct(x interface{}) *bool {
+func CloudbuildTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildTrigger_IsConstructParameters(x); err != nil {
@@ -1227,7 +1226,7 @@ func CloudbuildTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1235,7 +1234,7 @@ func CloudbuildTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
+func CloudbuildTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildTrigger_IsTerraformElementParameters(x); err != nil {
@@ -1246,7 +1245,7 @@ func CloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1254,7 +1253,7 @@ func CloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildTrigger_IsTerraformResource(x interface{}) *bool {
+func CloudbuildTrigger_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildTrigger_IsTerraformResourceParameters(x); err != nil {
@@ -1265,7 +1264,7 @@ func CloudbuildTrigger_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1290,31 +1289,31 @@ func (c *jsiiProxy_CloudbuildTrigger) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudbuildTrigger) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1330,7 +1329,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1346,7 +1345,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1362,7 +1361,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1378,7 +1377,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1394,7 +1393,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1410,7 +1409,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1426,7 +1425,7 @@ func (c *jsiiProxy_CloudbuildTrigger) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1442,15 +1441,15 @@ func (c *jsiiProxy_CloudbuildTrigger) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildTrigger) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1469,7 +1468,7 @@ func (c *jsiiProxy_CloudbuildTrigger) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1482,7 +1481,7 @@ func (c *jsiiProxy_CloudbuildTrigger) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1496,18 +1495,18 @@ func (c *jsiiProxy_CloudbuildTrigger) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudbuildTrigger) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1518,7 +1517,7 @@ func (c *jsiiProxy_CloudbuildTrigger) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1529,7 +1528,7 @@ func (c *jsiiProxy_CloudbuildTrigger) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1540,7 +1539,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutApprovalConfig(value *CloudbuildTrigger
 	_jsii_.InvokeVoid(
 		c,
 		"putApprovalConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1551,7 +1550,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutBitbucketServerTriggerConfig(value *Clo
 	_jsii_.InvokeVoid(
 		c,
 		"putBitbucketServerTriggerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1562,7 +1561,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutBuildAttribute(value *CloudbuildTrigger
 	_jsii_.InvokeVoid(
 		c,
 		"putBuildAttribute",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1573,7 +1572,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutDeveloperConnectEventConfig(value *Clou
 	_jsii_.InvokeVoid(
 		c,
 		"putDeveloperConnectEventConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1584,7 +1583,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutGitFileSource(value *CloudbuildTriggerG
 	_jsii_.InvokeVoid(
 		c,
 		"putGitFileSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1595,7 +1594,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutGithub(value *CloudbuildTriggerGithub) 
 	_jsii_.InvokeVoid(
 		c,
 		"putGithub",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1606,7 +1605,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutPubsubConfig(value *CloudbuildTriggerPu
 	_jsii_.InvokeVoid(
 		c,
 		"putPubsubConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1617,7 +1616,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutRepositoryEventConfig(value *Cloudbuild
 	_jsii_.InvokeVoid(
 		c,
 		"putRepositoryEventConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1628,7 +1627,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutSourceToBuild(value *CloudbuildTriggerS
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceToBuild",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1639,7 +1638,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutTimeouts(value *CloudbuildTriggerTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1650,7 +1649,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutTriggerTemplate(value *CloudbuildTrigge
 	_jsii_.InvokeVoid(
 		c,
 		"putTriggerTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1661,7 +1660,7 @@ func (c *jsiiProxy_CloudbuildTrigger) PutWebhookConfig(value *CloudbuildTriggerW
 	_jsii_.InvokeVoid(
 		c,
 		"putWebhookConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1881,8 +1880,8 @@ func (c *jsiiProxy_CloudbuildTrigger) ResetWebhookConfig() {
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1894,8 +1893,8 @@ func (c *jsiiProxy_CloudbuildTrigger) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1907,8 +1906,8 @@ func (c *jsiiProxy_CloudbuildTrigger) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1920,8 +1919,8 @@ func (c *jsiiProxy_CloudbuildTrigger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1946,8 +1945,8 @@ func (c *jsiiProxy_CloudbuildTrigger) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1958,4 +1957,3 @@ func (c *jsiiProxy_CloudbuildTrigger) ToTerraform() interface{} {
 
 	return returns
 }
-

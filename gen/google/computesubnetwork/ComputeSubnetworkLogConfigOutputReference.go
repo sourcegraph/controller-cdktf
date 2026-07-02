@@ -15,9 +15,9 @@ type ComputeSubnetworkLogConfigOutputReference interface {
 	AggregationIntervalInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type ComputeSubnetworkLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ComputeSubnetworkLogConfigOutputReference interface {
 	ResetMetadataFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) AggregationInterva
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewComputeSubnetworkLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSubnetworkLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewComputeSubnetworkLogConfigOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewComputeSubnetworkLogConfigOutputReference_Override(c ComputeSubnetworkLo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetAggregationInterval(val *string) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetAggregationInterval(val *string) {
 	if err := j.validateSetAggregationIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetAggregationInter
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetFilterExpr(val *string) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetFilterExpr(val *string) {
 	if err := j.validateSetFilterExprParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetFilterExpr(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetFlowSampling(val *float64) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetFlowSampling(val *float64) {
 	if err := j.validateSetFlowSamplingParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetFlowSampling(val
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetInternalValue(val *ComputeSubnetworkLogConfig) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetInternalValue(val *ComputeSubnetworkLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetMetadata(val *string) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetMetadata(val *string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetMetadata(val *st
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetMetadataFields(val *[]*string) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetMetadataFields(val *[]*string) {
 	if err := j.validateSetMetadataFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetMetadataFields(v
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) ResetMetadataField
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_ComputeSubnetworkLogConfigOutputReference) ToString() *string
 
 	return returns
 }
-

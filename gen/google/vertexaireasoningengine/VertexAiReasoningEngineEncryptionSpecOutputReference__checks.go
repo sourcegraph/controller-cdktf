@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineEncryptionSpecOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiReasoningEngineEncryptionSpecOutputReferenceParameters(t
 
 	return nil
 }
-

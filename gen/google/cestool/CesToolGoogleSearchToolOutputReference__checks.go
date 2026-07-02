@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolGoogleSearchToolOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_CesToolGoogleSearchToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolGoogleSearchToolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCesToolGoogleSearchToolOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

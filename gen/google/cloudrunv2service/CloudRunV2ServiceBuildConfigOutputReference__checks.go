@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetBaseI
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetEnableAutomaticUpdatesParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetEnableAutomaticUpdatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewCloudRunV2ServiceBuildConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

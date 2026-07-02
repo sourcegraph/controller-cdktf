@@ -6,9 +6,9 @@ import (
 
 type ComputeInstanceFromTemplateConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeInstanceFromTemplateConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the instance. One of name or self_link must be provided.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#name ComputeInstanceFromTemplate#name}
@@ -36,11 +36,11 @@ type ComputeInstanceFromTemplateConfig struct {
 	// If you try to update a property that requires stopping the instance without setting this field, the update will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#allow_stopping_for_update ComputeInstanceFromTemplate#allow_stopping_for_update}
-	AllowStoppingForUpdate interface{} `field:"optional" json:"allowStoppingForUpdate" yaml:"allowStoppingForUpdate"`
+	AllowStoppingForUpdate any `field:"optional" json:"allowStoppingForUpdate" yaml:"allowStoppingForUpdate"`
 	// attached_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#attached_disk ComputeInstanceFromTemplate#attached_disk}
-	AttachedDisk interface{} `field:"optional" json:"attachedDisk" yaml:"attachedDisk"`
+	AttachedDisk any `field:"optional" json:"attachedDisk" yaml:"attachedDisk"`
 	// boot_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#boot_disk ComputeInstanceFromTemplate#boot_disk}
@@ -48,7 +48,7 @@ type ComputeInstanceFromTemplateConfig struct {
 	// Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#can_ip_forward ComputeInstanceFromTemplate#can_ip_forward}
-	CanIpForward interface{} `field:"optional" json:"canIpForward" yaml:"canIpForward"`
+	CanIpForward any `field:"optional" json:"canIpForward" yaml:"canIpForward"`
 	// confidential_instance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#confidential_instance_config ComputeInstanceFromTemplate#confidential_instance_config}
@@ -56,7 +56,7 @@ type ComputeInstanceFromTemplateConfig struct {
 	// Whether deletion protection is enabled on this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#deletion_protection ComputeInstanceFromTemplate#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// A brief description of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#description ComputeInstanceFromTemplate#description}
@@ -68,11 +68,11 @@ type ComputeInstanceFromTemplateConfig struct {
 	// Whether the instance has virtual displays enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#enable_display ComputeInstanceFromTemplate#enable_display}
-	EnableDisplay interface{} `field:"optional" json:"enableDisplay" yaml:"enableDisplay"`
+	EnableDisplay any `field:"optional" json:"enableDisplay" yaml:"enableDisplay"`
 	// guest_accelerator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#guest_accelerator ComputeInstanceFromTemplate#guest_accelerator}
-	GuestAccelerator interface{} `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
+	GuestAccelerator any `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
 	// A custom hostname for the instance.
 	//
 	// Must be a fully qualified DNS name and RFC-1035-valid. Valid format is a series of labels 1-63 characters long matching the regular expression [a-z]([-a-z0-9]*[a-z0-9]), concatenated with periods. The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
@@ -120,7 +120,7 @@ type ComputeInstanceFromTemplateConfig struct {
 	// network_interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#network_interface ComputeInstanceFromTemplate#network_interface}
-	NetworkInterface interface{} `field:"optional" json:"networkInterface" yaml:"networkInterface"`
+	NetworkInterface any `field:"optional" json:"networkInterface" yaml:"networkInterface"`
 	// network_performance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#network_performance_config ComputeInstanceFromTemplate#network_performance_config}
@@ -152,7 +152,7 @@ type ComputeInstanceFromTemplateConfig struct {
 	// scratch_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#scratch_disk ComputeInstanceFromTemplate#scratch_disk}
-	ScratchDisk interface{} `field:"optional" json:"scratchDisk" yaml:"scratchDisk"`
+	ScratchDisk any `field:"optional" json:"scratchDisk" yaml:"scratchDisk"`
 	// service_account block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#service_account ComputeInstanceFromTemplate#service_account}
@@ -176,4 +176,3 @@ type ComputeInstanceFromTemplateConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#zone ComputeInstanceFromTemplate#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

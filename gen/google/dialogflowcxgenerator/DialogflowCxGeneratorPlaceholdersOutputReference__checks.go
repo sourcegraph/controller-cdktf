@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGeneratorPlaceholdersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxGeneratorPlaceholdersOutputReferenceParameters(terra
 
 	return nil
 }
-

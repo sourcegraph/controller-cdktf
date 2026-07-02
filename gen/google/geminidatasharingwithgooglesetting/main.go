@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiDataSharingWithGoogleSetting.GeminiDataSharingWithGoogleSetting",
-		reflect.TypeOf((*GeminiDataSharingWithGoogleSetting)(nil)).Elem(),
+		reflect.TypeFor[GeminiDataSharingWithGoogleSetting](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiDataSharingWithGoogleSetting{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiDataSharingWithGoogleSetting.GeminiDataSharingWithGoogleSettingConfig",
-		reflect.TypeOf((*GeminiDataSharingWithGoogleSettingConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiDataSharingWithGoogleSettingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiDataSharingWithGoogleSetting.GeminiDataSharingWithGoogleSettingTimeouts",
-		reflect.TypeOf((*GeminiDataSharingWithGoogleSettingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GeminiDataSharingWithGoogleSettingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiDataSharingWithGoogleSetting.GeminiDataSharingWithGoogleSettingTimeoutsOutputReference",
-		reflect.TypeOf((*GeminiDataSharingWithGoogleSettingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiDataSharingWithGoogleSettingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiDataSharingWithGoogleSettingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

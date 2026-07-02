@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetStrictMaxEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetStrictMaxEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetStrictMinEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference) validateSetStrictMinEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewDataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOut
 
 	return nil
 }
-

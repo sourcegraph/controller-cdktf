@@ -17,8 +17,8 @@ type IntegrationConnectorsConnectionDestinationConfigDestinationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IntegrationConnectorsConnectionDestinationConfigDestinationList interface {
 	Get(index *float64) IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	return returns
 }
 
-
 func NewIntegrationConnectorsConnectionDestinationConfigDestinationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationConnectorsConnectionDestinationConfigDestinationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIntegrationConnectorsConnectionDestinationConfigDestinationList(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIntegrationConnectorsConnectionDestinationConfigDestinationList_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationLi
 
 	return returns
 }
-

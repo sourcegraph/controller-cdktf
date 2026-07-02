@@ -6,9 +6,9 @@ import (
 
 type DeploymentManagerDeploymentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DeploymentManagerDeploymentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name for the deployment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
@@ -59,7 +59,7 @@ type DeploymentManagerDeploymentConfig struct {
 	// labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
-	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
+	Labels any `field:"optional" json:"labels" yaml:"labels"`
 	// If set to true, a deployment is created with "shell" resources that are not actually instantiated.
 	//
 	// This allows you to preview a
@@ -71,7 +71,7 @@ type DeploymentManagerDeploymentConfig struct {
 	// to true or if other fields are updated while preview is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
-	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
+	Preview any `field:"optional" json:"preview" yaml:"preview"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -79,4 +79,3 @@ type DeploymentManagerDeploymentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
 	Timeouts *DeploymentManagerDeploymentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

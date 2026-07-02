@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutp
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputR
 
 	return nil
 }
-

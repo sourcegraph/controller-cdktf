@@ -1,6 +1,5 @@
 package iapsettings
 
-
 type IapSettingsAccessSettingsAllowedDomainsSettings struct {
 	// List of trusted domains.
 	//
@@ -9,6 +8,5 @@ type IapSettingsAccessSettingsAllowedDomainsSettings struct {
 	// Configuration for customers to opt in for the feature.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings#enable IapSettings#enable}
-	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
+	Enable any `field:"optional" json:"enable" yaml:"enable"`
 }
-

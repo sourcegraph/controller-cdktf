@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterEnableK8SBetaApisOutputReferenceParame
 
 	return nil
 }
-

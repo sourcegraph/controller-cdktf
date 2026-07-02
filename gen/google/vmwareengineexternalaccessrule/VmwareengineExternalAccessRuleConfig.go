@@ -6,9 +6,9 @@ import (
 
 type VmwareengineExternalAccessRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VmwareengineExternalAccessRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The action that the external access rule performs. Possible values: ["ALLOW", "DENY"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#action VmwareengineExternalAccessRule#action}
@@ -26,7 +26,7 @@ type VmwareengineExternalAccessRuleConfig struct {
 	// destination_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
-	DestinationIpRanges interface{} `field:"required" json:"destinationIpRanges" yaml:"destinationIpRanges"`
+	DestinationIpRanges any `field:"required" json:"destinationIpRanges" yaml:"destinationIpRanges"`
 	// A list of destination ports to which the external access rule applies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#destination_ports VmwareengineExternalAccessRule#destination_ports}
@@ -50,7 +50,7 @@ type VmwareengineExternalAccessRuleConfig struct {
 	// source_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
-	SourceIpRanges interface{} `field:"required" json:"sourceIpRanges" yaml:"sourceIpRanges"`
+	SourceIpRanges any `field:"required" json:"sourceIpRanges" yaml:"sourceIpRanges"`
 	// A list of source ports to which the external access rule applies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#source_ports VmwareengineExternalAccessRule#source_ports}
@@ -69,4 +69,3 @@ type VmwareengineExternalAccessRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule#timeouts VmwareengineExternalAccessRule#timeouts}
 	Timeouts *VmwareengineExternalAccessRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

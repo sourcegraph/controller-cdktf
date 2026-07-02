@@ -120,7 +120,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewEdgecontainerClusterControlPlaneOutputReferenceParameters(terraf
 
 	return nil
 }
-

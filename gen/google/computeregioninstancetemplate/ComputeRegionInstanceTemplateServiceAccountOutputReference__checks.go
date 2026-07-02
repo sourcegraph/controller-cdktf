@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateServiceAccountOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionInstanceTemplateServiceAccountOutputReferenceParame
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewNetappVolumeReplicationDestinationVolumeParametersOutputReferenc
 
 	return nil
 }
-

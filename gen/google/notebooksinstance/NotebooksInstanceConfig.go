@@ -6,9 +6,9 @@ import (
 
 type NotebooksInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NotebooksInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A reference to the zone where the machine resides.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#location NotebooksInstance#location}
@@ -92,7 +92,7 @@ type NotebooksInstanceConfig struct {
 	// won't be installed. Only applicable to instances with GPUs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#install_gpu_driver NotebooksInstance#install_gpu_driver}
-	InstallGpuDriver interface{} `field:"optional" json:"installGpuDriver" yaml:"installGpuDriver"`
+	InstallGpuDriver any `field:"optional" json:"installGpuDriver" yaml:"installGpuDriver"`
 	// The list of owners of this instance after creation.
 	//
 	// Format: alias@example.com.
@@ -134,15 +134,15 @@ type NotebooksInstanceConfig struct {
 	// The notebook instance will not register with the proxy..
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#no_proxy_access NotebooksInstance#no_proxy_access}
-	NoProxyAccess interface{} `field:"optional" json:"noProxyAccess" yaml:"noProxyAccess"`
+	NoProxyAccess any `field:"optional" json:"noProxyAccess" yaml:"noProxyAccess"`
 	// No public IP will be assigned to this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#no_public_ip NotebooksInstance#no_public_ip}
-	NoPublicIp interface{} `field:"optional" json:"noPublicIp" yaml:"noPublicIp"`
+	NoPublicIp any `field:"optional" json:"noPublicIp" yaml:"noPublicIp"`
 	// If true, the data disk will not be auto deleted when deleting the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#no_remove_data_disk NotebooksInstance#no_remove_data_disk}
-	NoRemoveDataDisk interface{} `field:"optional" json:"noRemoveDataDisk" yaml:"noRemoveDataDisk"`
+	NoRemoveDataDisk any `field:"optional" json:"noRemoveDataDisk" yaml:"noRemoveDataDisk"`
 	// Path to a Bash script that automatically runs after a notebook instance fully boots up.
 	//
 	// The path must be a URL
@@ -199,4 +199,3 @@ type NotebooksInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance#vm_image NotebooksInstance#vm_image}
 	VmImage *NotebooksInstanceVmImage `field:"optional" json:"vmImage" yaml:"vmImage"`
 }
-

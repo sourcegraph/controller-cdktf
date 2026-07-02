@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthen
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthentic
 
 	return nil
 }
-

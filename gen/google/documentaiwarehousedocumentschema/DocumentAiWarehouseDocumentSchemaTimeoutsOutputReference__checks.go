@@ -98,7 +98,7 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDocumentAiWarehouseDocumentSchemaTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

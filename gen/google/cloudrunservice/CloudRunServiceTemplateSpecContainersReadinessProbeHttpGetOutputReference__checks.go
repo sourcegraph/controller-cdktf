@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersReadinessProbeHttpGetOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersReadinessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersReadinessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudRunServiceTemplateSpecContainersReadinessProbeHttpGetOutput
 
 	return nil
 }
-

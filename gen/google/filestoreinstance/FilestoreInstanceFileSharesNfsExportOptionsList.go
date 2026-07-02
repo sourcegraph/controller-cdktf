@@ -17,8 +17,8 @@ type FilestoreInstanceFileSharesNfsExportOptionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type FilestoreInstanceFileSharesNfsExportOptionsList interface {
 	Get(index *float64) FilestoreInstanceFileSharesNfsExportOptionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) WrapsSet() *
 	return returns
 }
 
-
 func NewFilestoreInstanceFileSharesNfsExportOptionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FilestoreInstanceFileSharesNfsExportOptionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsList_Override(f FilestoreInst
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) AllWithMapKe
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) Get(index *f
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) ToString() *
 
 	return returns
 }
-

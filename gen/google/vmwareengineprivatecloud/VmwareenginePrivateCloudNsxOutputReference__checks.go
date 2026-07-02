@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudNsxOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudNsxOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudNsxOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVmwareenginePrivateCloudNsxOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

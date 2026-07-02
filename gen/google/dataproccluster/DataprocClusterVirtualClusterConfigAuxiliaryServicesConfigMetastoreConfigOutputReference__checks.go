@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMet
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetast
 
 	return nil
 }
-

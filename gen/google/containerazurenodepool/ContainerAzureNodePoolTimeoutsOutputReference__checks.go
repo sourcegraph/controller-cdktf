@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAzureNodePoolTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

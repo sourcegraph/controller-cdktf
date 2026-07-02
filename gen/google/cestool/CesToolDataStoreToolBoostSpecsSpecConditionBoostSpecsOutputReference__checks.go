@@ -117,7 +117,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewCesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputRefer
 
 	return nil
 }
-

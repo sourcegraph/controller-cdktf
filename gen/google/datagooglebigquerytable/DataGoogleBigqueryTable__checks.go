@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleBigqueryTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleBigqueryTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleBigqueryTable_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateDataGoogleBigqueryTable_IsConstructParameters(x interface{}) error {
+func validateDataGoogleBigqueryTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleBigqueryTable_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataGoogleBigqueryTable_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleBigqueryTable_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleBigqueryTable_IsTerraformDataSourceParameters(x interface
 	return nil
 }
 
-func validateDataGoogleBigqueryTable_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleBigqueryTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleBigqueryTable_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleBigqueryTableParameters(scope constructs.Construct, id
 
 	return nil
 }
-

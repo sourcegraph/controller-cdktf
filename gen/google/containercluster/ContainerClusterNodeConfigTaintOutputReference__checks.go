@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateSetEf
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerClusterNodeConfigTaintOutputReferenceParameters(terrafo
 
 	return nil
 }
-

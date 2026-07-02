@@ -1,6 +1,5 @@
 package cesguardrail
 
-
 type CesGuardrailContentFilter struct {
 	// Match type for the content filter. Possible values: SIMPLE_STRING_MATCH WORD_BOUNDARY_STRING_MATCH REGEXP_MATCH.
 	//
@@ -21,6 +20,5 @@ type CesGuardrailContentFilter struct {
 	// If true, diacritics are ignored during matching.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
-	DisregardDiacritics interface{} `field:"optional" json:"disregardDiacritics" yaml:"disregardDiacritics"`
+	DisregardDiacritics any `field:"optional" json:"disregardDiacritics" yaml:"disregardDiacritics"`
 }
-

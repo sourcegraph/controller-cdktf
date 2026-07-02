@@ -15,9 +15,9 @@ type PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference interfa
 	ClientIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference interfa
 	ResetTenantId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	return returns
 }
 
-
 func NewPubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewPubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewPubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetClientId(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetEventHub(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetEventHub(val *string) {
 	if err := j.validateSetEventHubParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetGcpServiceAccount(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetGcpServiceAccount(val *string) {
 	if err := j.validateSetGcpServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetInternalValue(val *PubsubTopicIngestionDataSourceSettingsAzureEventHubs) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetInternalValue(val *PubsubTopicIngestionDataSourceSettingsAzureEventHubs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetResourceGroup(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetResourceGroup(val *string) {
 	if err := j.validateSetResourceGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetSubscriptionId(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetSubscriptionId(val *string) {
 	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetTenantId(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetTenantId(val *string) {
 	if err := j.validateSetTenantIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 
 	return returns
 }
-

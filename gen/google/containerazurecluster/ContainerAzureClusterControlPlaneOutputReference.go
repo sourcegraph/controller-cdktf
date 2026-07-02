@@ -12,9 +12,9 @@ type ContainerAzureClusterControlPlaneOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type ContainerAzureClusterControlPlaneOutputReference interface {
 	ProxyConfig() ContainerAzureClusterControlPlaneProxyConfigOutputReference
 	ProxyConfigInput() *ContainerAzureClusterControlPlaneProxyConfig
 	ReplicaPlacements() ContainerAzureClusterControlPlaneReplicaPlacementsList
-	ReplicaPlacementsInput() interface{}
+	ReplicaPlacementsInput() any
 	RootVolume() ContainerAzureClusterControlPlaneRootVolumeOutputReference
 	RootVolumeInput() *ContainerAzureClusterControlPlaneRootVolume
 	SshConfig() ContainerAzureClusterControlPlaneSshConfigOutputReference
@@ -64,7 +64,7 @@ type ContainerAzureClusterControlPlaneOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type ContainerAzureClusterControlPlaneOutputReference interface {
 	PutDatabaseEncryption(value *ContainerAzureClusterControlPlaneDatabaseEncryption)
 	PutMainVolume(value *ContainerAzureClusterControlPlaneMainVolume)
 	PutProxyConfig(value *ContainerAzureClusterControlPlaneProxyConfig)
-	PutReplicaPlacements(value interface{})
+	PutReplicaPlacements(value any)
 	PutRootVolume(value *ContainerAzureClusterControlPlaneRootVolume)
 	PutSshConfig(value *ContainerAzureClusterControlPlaneSshConfig)
 	ResetDatabaseEncryption()
@@ -100,7 +100,7 @@ type ContainerAzureClusterControlPlaneOutputReference interface {
 	ResetVmSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ type jsiiProxy_ContainerAzureClusterControlPlaneOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ReplicaPlac
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ReplicaPlacementsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ReplicaPlacementsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"replicaPlacementsInput",
@@ -383,7 +383,6 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) VmSizeInput
 	return returns
 }
 
-
 func NewContainerAzureClusterControlPlaneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneOutputReference {
 	_init_.Initialize()
 
@@ -394,7 +393,7 @@ func NewContainerAzureClusterControlPlaneOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -406,12 +405,12 @@ func NewContainerAzureClusterControlPlaneOutputReference_Override(c ContainerAzu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetInternalValue(val *ContainerAzureClusterControlPlane) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetInternalValue(val *ContainerAzureClusterControlPlane) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetSubnetId(val *string) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetSubnetId(val *string) {
 	if err := j.validateSetSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetSubnetId(
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTags(val 
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetVersion(v
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference)SetVmSize(val *string) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) SetVmSize(val *string) {
 	if err := j.validateSetVmSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,16 +522,16 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutDatabase
 	_jsii_.InvokeVoid(
 		c,
 		"putDatabaseEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -714,7 +713,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutMainVolu
 	_jsii_.InvokeVoid(
 		c,
 		"putMainVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -725,18 +724,18 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutProxyCon
 	_jsii_.InvokeVoid(
 		c,
 		"putProxyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutReplicaPlacements(value interface{}) {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutReplicaPlacements(value any) {
 	if err := c.validatePutReplicaPlacementsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putReplicaPlacements",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -747,7 +746,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutRootVolu
 	_jsii_.InvokeVoid(
 		c,
 		"putRootVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -758,7 +757,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) PutSshConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putSshConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -818,16 +817,16 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ResetVmSize
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -846,4 +845,3 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) ToString() 
 
 	return returns
 }
-

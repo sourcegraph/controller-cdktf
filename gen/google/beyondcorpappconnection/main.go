@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
-		reflect.TypeOf((*BeyondcorpAppConnection)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpAppConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,11 +97,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint",
-		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpoint)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionApplicationEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpointOutputReference",
-		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionApplicationEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpAppConnectionApplicationEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,15 +137,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig",
-		reflect.TypeOf((*BeyondcorpAppConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway",
-		reflect.TypeOf((*BeyondcorpAppConnectionGateway)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionGateway](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
-		reflect.TypeOf((*BeyondcorpAppConnectionGatewayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionGatewayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appGateway", GoGetter: "AppGateway"},
 			_jsii_.MemberProperty{JsiiProperty: "appGatewayInput", GoGetter: "AppGatewayInput"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,11 +184,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts",
-		reflect.TypeOf((*BeyondcorpAppConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*BeyondcorpAppConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpAppConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpAppConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

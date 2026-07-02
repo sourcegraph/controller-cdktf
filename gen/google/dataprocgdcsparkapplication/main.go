@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
-		reflect.TypeOf((*DataprocGdcSparkApplication)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -129,15 +129,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig",
-		reflect.TypeOf((*DataprocGdcSparkApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfig",
-		reflect.TypeOf((*DataprocGdcSparkApplicationPysparkApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationPysparkApplicationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfig",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkApplicationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfigOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkApplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkApplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationSparkApplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,11 +240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfig",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkRApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkRApplicationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -287,11 +287,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfig",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkSqlApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkSqlApplicationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,11 +374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts",
-		reflect.TypeOf((*DataprocGdcSparkApplicationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocGdcSparkApplicationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcSparkApplicationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeNodeGroupAutoscalingPolicyOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupAutoscalingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeGroupAutoscalingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeNodeGroupAutoscalingPolicyOutputReferenceParameters(terra
 
 	return nil
 }
-

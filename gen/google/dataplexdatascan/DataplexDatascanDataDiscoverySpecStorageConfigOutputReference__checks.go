@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewDataplexDatascanDataDiscoverySpecStorageConfigOutputReferencePar
 
 	return nil
 }
-

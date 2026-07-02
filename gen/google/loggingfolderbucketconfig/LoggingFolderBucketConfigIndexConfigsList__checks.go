@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingFolderBucketConfigIndexConfigsListParameters(terraformRes
 
 	return nil
 }
-

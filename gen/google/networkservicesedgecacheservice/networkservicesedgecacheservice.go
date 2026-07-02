@@ -15,15 +15,15 @@ type NetworkServicesEdgeCacheService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,12 +31,12 @@ type NetworkServicesEdgeCacheService interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableHttp2() interface{}
-	SetDisableHttp2(val interface{})
-	DisableHttp2Input() interface{}
-	DisableQuic() interface{}
-	SetDisableQuic(val interface{})
-	DisableQuicInput() interface{}
+	DisableHttp2() any
+	SetDisableHttp2(val any)
+	DisableHttp2Input() any
+	DisableQuic() any
+	SetDisableQuic(val any)
+	DisableQuicInput() any
 	EdgeSecurityPolicy() *string
 	SetEdgeSecurityPolicy(val *string)
 	EdgeSecurityPolicyInput() *string
@@ -79,14 +79,14 @@ type NetworkServicesEdgeCacheService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RequireTls() interface{}
-	SetRequireTls(val interface{})
-	RequireTlsInput() interface{}
+	RawOverrides() any
+	RequireTls() any
+	SetRequireTls(val any)
+	RequireTlsInput() any
 	Routing() NetworkServicesEdgeCacheServiceRoutingOutputReference
 	RoutingInput() *NetworkServicesEdgeCacheServiceRouting
 	SslPolicy() *string
@@ -96,18 +96,18 @@ type NetworkServicesEdgeCacheService interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesEdgeCacheServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type NetworkServicesEdgeCacheService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type NetworkServicesEdgeCacheService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type NetworkServicesEdgeCacheService interface {
 	ResetRequireTls()
 	ResetSslPolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesEdgeCacheService
@@ -190,8 +190,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableHttp2",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableHttp2Input",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableHttp2Input() interfac
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableQuic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableQuic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableQuic",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableQuic() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableQuicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) DisableQuicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableQuicInput",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) RequireTls() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) RequireTls() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireTls",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) RequireTls() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) RequireTlsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) RequireTlsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireTlsInput",
@@ -620,8 +620,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) TerraformLabels() cdktf.Stri
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -650,8 +650,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) Timeouts() NetworkServicesEd
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -659,7 +659,6 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) TimeoutsInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
 func NewNetworkServicesEdgeCacheService(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheServiceConfig) NetworkServicesEdgeCacheService {
@@ -672,7 +671,7 @@ func NewNetworkServicesEdgeCacheService(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -685,12 +684,12 @@ func NewNetworkServicesEdgeCacheService_Override(n NetworkServicesEdgeCacheServi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -720,7 +719,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDisableHttp2(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetDisableHttp2(val any) {
 	if err := j.validateSetDisableHttp2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDisableHttp2(val interface
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDisableQuic(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetDisableQuic(val any) {
 	if err := j.validateSetDisableQuicParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetDisableQuic(val interface{
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetEdgeSecurityPolicy(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetEdgeSecurityPolicy(val *string) {
 	if err := j.validateSetEdgeSecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetEdgeSecurityPolicy(val *st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetEdgeSslCertificates(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetEdgeSslCertificates(val *[]*string) {
 	if err := j.validateSetEdgeSslCertificatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetEdgeSslCertificates(val *[
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetLabels(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -846,7 +845,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetRequireTls(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetRequireTls(val any) {
 	if err := j.validateSetRequireTlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetRequireTls(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheService)SetSslPolicy(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) SetSslPolicy(val *string) {
 	if err := j.validateSetSslPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func NetworkServicesEdgeCacheService_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func NetworkServicesEdgeCacheService_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesEdgeCacheService_IsConstruct(x interface{}) *bool {
+func NetworkServicesEdgeCacheService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheService_IsConstructParameters(x); err != nil {
@@ -926,7 +925,7 @@ func NetworkServicesEdgeCacheService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func NetworkServicesEdgeCacheService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEdgeCacheService_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesEdgeCacheService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheService_IsTerraformElementParameters(x); err != nil {
@@ -945,7 +944,7 @@ func NetworkServicesEdgeCacheService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func NetworkServicesEdgeCacheService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEdgeCacheService_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesEdgeCacheService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheService_IsTerraformResourceParameters(x); err != nil {
@@ -964,7 +963,7 @@ func NetworkServicesEdgeCacheService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -989,31 +988,31 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,7 +1124,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,15 +1140,15 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1168,7 +1167,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,18 +1194,18 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) PutLogConfig(value *NetworkS
 	_jsii_.InvokeVoid(
 		n,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) PutRouting(value *NetworkSer
 	_jsii_.InvokeVoid(
 		n,
 		"putRouting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1261,7 +1260,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) PutTimeouts(value *NetworkSe
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1369,8 +1368,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1382,8 +1381,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1395,8 +1394,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1408,8 +1407,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToHclTerraform() interface{}
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1434,8 +1433,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1446,4 +1445,3 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) ToTerraform() interface{} {
 
 	return returns
 }
-

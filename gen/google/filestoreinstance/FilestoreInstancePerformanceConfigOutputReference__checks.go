@@ -120,7 +120,7 @@ func (f *jsiiProxy_FilestoreInstancePerformanceConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstancePerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstancePerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewFilestoreInstancePerformanceConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

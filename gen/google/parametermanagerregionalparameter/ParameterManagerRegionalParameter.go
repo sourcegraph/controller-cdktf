@@ -15,15 +15,15 @@ type ParameterManagerRegionalParameter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -72,28 +72,28 @@ type ParameterManagerRegionalParameter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ParameterManagerRegionalParameterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type ParameterManagerRegionalParameter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type ParameterManagerRegionalParameter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type ParameterManagerRegionalParameter interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ParameterManagerRegionalParameter
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) Timeouts() ParameterManage
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerRegionalParameter) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -538,7 +538,6 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
 func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterConfig) ParameterManagerRegionalParameter {
 	_init_.Initialize()
@@ -550,7 +549,7 @@ func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -563,12 +562,12 @@ func NewParameterManagerRegionalParameter_Override(p ParameterManagerRegionalPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetConnection(val interface{}) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetCount(val interface{}) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetFormat(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetFormat(val *string) {
 	if err := j.validateSetFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetId(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetKmsKey(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLocation(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetParameterId(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetParameterId(val *string) {
 	if err := j.validateSetParameterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetParameterId(val *string)
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetProject(val *string) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ParameterManagerRegionalParameter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func ParameterManagerRegionalParameter_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func ParameterManagerRegionalParameter_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ParameterManagerRegionalParameter_IsConstruct(x interface{}) *bool {
+func ParameterManagerRegionalParameter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerRegionalParameter_IsConstructParameters(x); err != nil {
@@ -760,7 +759,7 @@ func ParameterManagerRegionalParameter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func ParameterManagerRegionalParameter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ParameterManagerRegionalParameter_IsTerraformElement(x interface{}) *bool {
+func ParameterManagerRegionalParameter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerRegionalParameter_IsTerraformElementParameters(x); err != nil {
@@ -779,7 +778,7 @@ func ParameterManagerRegionalParameter_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func ParameterManagerRegionalParameter_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ParameterManagerRegionalParameter_IsTerraformResource(x interface{}) *bool {
+func ParameterManagerRegionalParameter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerRegionalParameter_IsTerraformResourceParameters(x); err != nil {
@@ -798,7 +797,7 @@ func ParameterManagerRegionalParameter_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerRegionalParameter.ParameterManagerRegionalParameter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -823,31 +822,31 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ParameterManagerRegionalParameter) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ParameterManagerRegionalParameter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetListAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,15 +974,15 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1002,7 +1001,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) InterpolationForAttribute(
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,18 +1028,18 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ParameterManagerRegionalParameter) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) PutTimeouts(value *Paramet
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,8 +1132,8 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1146,8 +1145,8 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1159,8 +1158,8 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1172,8 +1171,8 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ToHclTerraform() interface
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1198,8 +1197,8 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameter) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerRegionalParameter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1210,4 +1209,3 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ToTerraform() interface{} 
 
 	return returns
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOut
 
 	return nil
 }
-

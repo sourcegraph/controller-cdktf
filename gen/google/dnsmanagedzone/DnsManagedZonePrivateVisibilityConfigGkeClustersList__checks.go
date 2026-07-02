@@ -34,7 +34,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDnsManagedZonePrivateVisibilityConfigGkeClustersListParameters(t
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocClusterClusterConfigMasterConfigAcceleratorsOutputRefere
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceTemplateSchedulingOnInstanceStopActionO
 
 	return nil
 }
-

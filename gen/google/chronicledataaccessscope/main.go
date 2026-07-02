@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope",
-		reflect.TypeOf((*ChronicleDataAccessScope)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScope](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScope{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels",
-		reflect.TypeOf((*ChronicleDataAccessScopeAllowedDataAccessLabels)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeAllowedDataAccessLabels](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel",
-		reflect.TypeOf((*ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,7 +142,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList",
-		reflect.TypeOf((*ChronicleDataAccessScopeAllowedDataAccessLabelsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeAllowedDataAccessLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assetNamespace", GoGetter: "AssetNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "assetNamespaceInput", GoGetter: "AssetNamespaceInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,19 +210,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig",
-		reflect.TypeOf((*ChronicleDataAccessScopeConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels",
-		reflect.TypeOf((*ChronicleDataAccessScopeDeniedDataAccessLabels)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeDeniedDataAccessLabels](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel",
-		reflect.TypeOf((*ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,7 +259,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList",
-		reflect.TypeOf((*ChronicleDataAccessScopeDeniedDataAccessLabelsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeDeniedDataAccessLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -281,7 +281,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assetNamespace", GoGetter: "AssetNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "assetNamespaceInput", GoGetter: "AssetNamespaceInput"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts",
-		reflect.TypeOf((*ChronicleDataAccessScopeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessScopeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessScopeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -364,7 +364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessScopeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package alloydbinstance
 
-
 type AlloydbInstanceNetworkConfig struct {
 	// Name of the allocated IP range for the private IP AlloyDB instance, for example: "google-managed-services-default".
 	//
@@ -12,11 +11,11 @@ type AlloydbInstanceNetworkConfig struct {
 	// authorized_external_networks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
-	AuthorizedExternalNetworks interface{} `field:"optional" json:"authorizedExternalNetworks" yaml:"authorizedExternalNetworks"`
+	AuthorizedExternalNetworks any `field:"optional" json:"authorizedExternalNetworks" yaml:"authorizedExternalNetworks"`
 	// Enabling outbound public ip for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
-	EnableOutboundPublicIp interface{} `field:"optional" json:"enableOutboundPublicIp" yaml:"enableOutboundPublicIp"`
+	EnableOutboundPublicIp any `field:"optional" json:"enableOutboundPublicIp" yaml:"enableOutboundPublicIp"`
 	// Enabling public ip for the instance.
 	//
 	// If a user wishes to disable this,
@@ -24,6 +23,5 @@ type AlloydbInstanceNetworkConfig struct {
 	// the same instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
-	EnablePublicIp interface{} `field:"optional" json:"enablePublicIp" yaml:"enablePublicIp"`
+	EnablePublicIp any `field:"optional" json:"enablePublicIp" yaml:"enablePublicIp"`
 }
-

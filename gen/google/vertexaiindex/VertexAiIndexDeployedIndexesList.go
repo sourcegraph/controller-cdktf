@@ -36,7 +36,7 @@ type VertexAiIndexDeployedIndexesList interface {
 	Get(index *float64) VertexAiIndexDeployedIndexesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_VertexAiIndexDeployedIndexesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewVertexAiIndexDeployedIndexesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiIndexDeployedIndexesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewVertexAiIndexDeployedIndexesList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewVertexAiIndexDeployedIndexesList_Override(v VertexAiIndexDeployedIndexes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexDeployedIndexesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiIndexDeployedIndexesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_VertexAiIndexDeployedIndexesList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexDeployedIndexesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiIndexDeployedIndexesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_VertexAiIndexDeployedIndexesList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexDeployedIndexesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VertexAiIndexDeployedIndexesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (v *jsiiProxy_VertexAiIndexDeployedIndexesList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (v *jsiiProxy_VertexAiIndexDeployedIndexesList) Get(index *float64) VertexA
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexDeployedIndexesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiIndexDeployedIndexesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (v *jsiiProxy_VertexAiIndexDeployedIndexesList) ToString() *string {
 
 	return returns
 }
-

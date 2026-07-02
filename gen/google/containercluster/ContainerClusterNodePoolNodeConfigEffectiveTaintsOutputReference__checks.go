@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference
 
 	return nil
 }
-

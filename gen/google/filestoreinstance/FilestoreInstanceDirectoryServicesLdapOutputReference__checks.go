@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesLdapOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceDirectoryServicesLdapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceDirectoryServicesLdapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewFilestoreInstanceDirectoryServicesLdapOutputReferenceParameters(
 
 	return nil
 }
-

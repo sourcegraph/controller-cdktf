@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccProjectCustomModuleCustomConfigResourceSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SccProjectCustomModuleCustomConfigResourceSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccProjectCustomModuleCustomConfigResourceSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSccProjectCustomModuleCustomConfigResourceSelectorOutputReferenc
 
 	return nil
 }
-

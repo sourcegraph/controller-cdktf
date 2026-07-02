@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamMemberConditionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewKmsCryptoKeyIamMemberConditionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

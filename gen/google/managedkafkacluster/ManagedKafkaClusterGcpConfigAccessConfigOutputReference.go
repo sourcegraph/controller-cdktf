@@ -12,9 +12,9 @@ type ManagedKafkaClusterGcpConfigAccessConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type ManagedKafkaClusterGcpConfigAccessConfigOutputReference interface {
 	InternalValue() *ManagedKafkaClusterGcpConfigAccessConfig
 	SetInternalValue(val *ManagedKafkaClusterGcpConfigAccessConfig)
 	NetworkConfigs() ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList
-	NetworkConfigsInput() interface{}
+	NetworkConfigsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type ManagedKafkaClusterGcpConfigAccessConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type ManagedKafkaClusterGcpConfigAccessConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNetworkConfigs(value interface{})
+	PutNetworkConfigs(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Netw
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) NetworkConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) NetworkConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkConfigsInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewManagedKafkaClusterGcpConfigAccessConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManagedKafkaClusterGcpConfigAccessConfigOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewManagedKafkaClusterGcpConfigAccessConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewManagedKafkaClusterGcpConfigAccessConfigOutputReference_Override(m Manag
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetInternalValue(val *ManagedKafkaClusterGcpConfigAccessConfig) {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) SetInternalValue(val *ManagedKafkaClusterGcpConfigAccessConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Comp
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetB
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetB
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetL
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetN
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetN
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetN
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetS
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) GetS
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Inte
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) PutNetworkConfigs(value interface{}) {
+func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) PutNetworkConfigs(value any) {
 	if err := m.validatePutNetworkConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putNetworkConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigOutputReference) ToSt
 
 	return returns
 }
-

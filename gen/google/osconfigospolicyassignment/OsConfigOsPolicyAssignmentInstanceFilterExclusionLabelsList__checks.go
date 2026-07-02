@@ -34,7 +34,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) 
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsListParam
 
 	return nil
 }
-

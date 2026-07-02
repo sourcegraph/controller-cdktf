@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppAudioProcessingConfig struct {
 	// ambient_sound_config block.
 	//
@@ -20,6 +19,5 @@ type CesAppAudioProcessingConfig struct {
 	// synthesize_speech_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
-	SynthesizeSpeechConfigs interface{} `field:"optional" json:"synthesizeSpeechConfigs" yaml:"synthesizeSpeechConfigs"`
+	SynthesizeSpeechConfigs any `field:"optional" json:"synthesizeSpeechConfigs" yaml:"synthesizeSpeechConfigs"`
 }
-

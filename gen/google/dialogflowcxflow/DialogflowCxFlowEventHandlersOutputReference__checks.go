@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateSetEven
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewDialogflowCxFlowEventHandlersOutputReferenceParameters(terraform
 
 	return nil
 }
-

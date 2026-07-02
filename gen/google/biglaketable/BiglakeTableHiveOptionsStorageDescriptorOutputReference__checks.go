@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeTableHiveOptionsStorageDescriptorOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeTableHiveOptionsStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeTableHiveOptionsStorageDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBiglakeTableHiveOptionsStorageDescriptorOutputReferenceParameter
 
 	return nil
 }
-

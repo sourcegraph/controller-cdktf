@@ -98,7 +98,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLookerInstanceEncryptionConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

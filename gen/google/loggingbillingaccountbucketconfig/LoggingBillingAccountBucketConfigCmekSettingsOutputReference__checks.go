@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLoggingBillingAccountBucketConfigCmekSettingsOutputReferencePara
 
 	return nil
 }
-

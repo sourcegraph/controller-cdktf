@@ -12,9 +12,9 @@ type DatastreamStreamBackfillAllOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type DatastreamStreamBackfillAllOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type DatastreamStreamBackfillAllOutputReference interface {
 	ResetSqlServerExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_DatastreamStreamBackfillAllOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewDatastreamStreamBackfillAllOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamStreamBackfillAllOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewDatastreamStreamBackfillAllOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewDatastreamStreamBackfillAllOutputReference_Override(d DatastreamStreamBa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetInternalValue(val *DatastreamStreamBackfillAll) {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) SetInternalValue(val *DatastreamStreamBackfillAll) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,16 +409,16 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutMongodbExclude
 	_jsii_.InvokeVoid(
 		d,
 		"putMongodbExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -601,7 +600,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutMysqlExcludedO
 	_jsii_.InvokeVoid(
 		d,
 		"putMysqlExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutOracleExcluded
 	_jsii_.InvokeVoid(
 		d,
 		"putOracleExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -623,7 +622,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutPostgresqlExcl
 	_jsii_.InvokeVoid(
 		d,
 		"putPostgresqlExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutSalesforceExcl
 	_jsii_.InvokeVoid(
 		d,
 		"putSalesforceExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutSpannerExclude
 	_jsii_.InvokeVoid(
 		d,
 		"putSpannerExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutSqlServerExclu
 	_jsii_.InvokeVoid(
 		d,
 		"putSqlServerExcludedObjects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ResetSqlServerExc
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ToString() *strin
 
 	return returns
 }
-

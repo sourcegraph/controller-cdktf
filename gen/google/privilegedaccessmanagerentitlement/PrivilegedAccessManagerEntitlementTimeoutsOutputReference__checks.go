@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPrivilegedAccessManagerEntitlementTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

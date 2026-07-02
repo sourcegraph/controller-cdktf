@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceDirectoryServicesLdapOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceDirectoryServicesLdapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleFilestoreInstanceDirectoryServicesLdapOutputReferenceP
 
 	return nil
 }
-

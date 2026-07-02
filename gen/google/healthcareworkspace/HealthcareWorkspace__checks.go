@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareWorkspace) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareWorkspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareWorkspace) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareWorkspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateHealthcareWorkspace_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateHealthcareWorkspace_IsConstructParameters(x interface{}) error {
+func validateHealthcareWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateHealthcareWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateHealthcareWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateHealthcareWorkspace_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateHealthcareWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateHealthcareWorkspace_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_HealthcareWorkspace) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_HealthcareWorkspace) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewHealthcareWorkspaceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

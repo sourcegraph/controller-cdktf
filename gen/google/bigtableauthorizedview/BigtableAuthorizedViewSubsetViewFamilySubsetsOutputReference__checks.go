@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReferencePara
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateAddMoveTargetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateMoveFromIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDataprocMetastoreServiceIamPolicy_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataprocMetastoreServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataprocMetastoreServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDataprocMetastoreServiceIamPolicy_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataprocMetastoreServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocMetastoreServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDataprocMetastoreServiceIamPolicy_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateDataprocMetastoreServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocMetastoreServiceIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDataprocMetastoreServiceIamPolicy_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewDataprocMetastoreServiceIamPolicyParameters(scope constructs.Con
 
 	return nil
 }
-

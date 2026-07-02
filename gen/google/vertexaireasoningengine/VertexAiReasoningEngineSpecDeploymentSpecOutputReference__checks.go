@@ -90,7 +90,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validatePutEnvParameters(value interface{}) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validatePutSecretEnvParameters(value interface{}) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validatePutSecretEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -303,4 +303,3 @@ func validateNewVertexAiReasoningEngineSpecDeploymentSpecOutputReferenceParamete
 
 	return nil
 }
-

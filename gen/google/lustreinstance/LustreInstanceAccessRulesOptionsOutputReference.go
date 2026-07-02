@@ -11,12 +11,12 @@ import (
 type LustreInstanceAccessRulesOptionsOutputReference interface {
 	cdktf.ComplexObject
 	AccessRules() LustreInstanceAccessRulesOptionsAccessRulesList
-	AccessRulesInput() interface{}
+	AccessRulesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type LustreInstanceAccessRulesOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,13 +72,13 @@ type LustreInstanceAccessRulesOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAccessRules(value interface{})
+	PutAccessRules(value any)
 	ResetAccessRules()
 	ResetDefaultSquashGid()
 	ResetDefaultSquashUid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) AccessRules(
 	return returns
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) AccessRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) AccessRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessRulesInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) AccessRulesI
 	return returns
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LustreInstanceAccessRulesOptionsOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewLustreInstanceAccessRulesOptionsOutputReference_Override(l LustreInstanc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSquashGid(val *float64) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetDefaultSquashGid(val *float64) {
 	if err := j.validateSetDefaultSquashGidParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSqu
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSquashMode(val *string) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetDefaultSquashMode(val *string) {
 	if err := j.validateSetDefaultSquashModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSqu
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSquashUid(val *float64) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetDefaultSquashUid(val *float64) {
 	if err := j.validateSetDefaultSquashUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetDefaultSqu
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetInternalValue(val *LustreInstanceAccessRulesOptions) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetInternalValue(val *LustreInstanceAccessRulesOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,21 +535,21 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) PutAccessRules(value interface{}) {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) PutAccessRules(value any) {
 	if err := l.validatePutAccessRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putAccessRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ResetDefault
 	)
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ToString() *
 
 	return returns
 }
-

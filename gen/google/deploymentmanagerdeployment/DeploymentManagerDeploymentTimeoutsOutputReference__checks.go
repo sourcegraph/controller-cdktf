@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeploymentManagerDeploymentTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

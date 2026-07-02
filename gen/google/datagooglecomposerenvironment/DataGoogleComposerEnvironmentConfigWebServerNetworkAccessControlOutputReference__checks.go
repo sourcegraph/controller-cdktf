@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessCont
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComposerEnvironmentConfigWebServerNetworkAccessControl
 
 	return nil
 }
-

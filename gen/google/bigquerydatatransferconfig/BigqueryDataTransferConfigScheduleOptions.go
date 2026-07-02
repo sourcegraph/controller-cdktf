@@ -1,6 +1,5 @@
 package bigquerydatatransferconfig
 
-
 type BigqueryDataTransferConfigScheduleOptions struct {
 	// If true, automatic scheduling of data transfer runs for this configuration will be disabled.
 	//
@@ -10,7 +9,7 @@ type BigqueryDataTransferConfigScheduleOptions struct {
 	// be ignored.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
-	DisableAutoScheduling interface{} `field:"optional" json:"disableAutoScheduling" yaml:"disableAutoScheduling"`
+	DisableAutoScheduling any `field:"optional" json:"disableAutoScheduling" yaml:"disableAutoScheduling"`
 	// Defines time to stop scheduling transfer runs.
 	//
 	// A transfer run cannot be
@@ -31,4 +30,3 @@ type BigqueryDataTransferConfigScheduleOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
-

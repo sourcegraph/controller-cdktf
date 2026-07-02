@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetAutoDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetAutoDelete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetDiskEncryp
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetForceAttachParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -321,4 +321,3 @@ func validateNewComputeInstanceBootDiskOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

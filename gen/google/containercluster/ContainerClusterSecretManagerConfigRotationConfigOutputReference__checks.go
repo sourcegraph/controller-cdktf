@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewContainerClusterSecretManagerConfigRotationConfigOutputReference
 
 	return nil
 }
-

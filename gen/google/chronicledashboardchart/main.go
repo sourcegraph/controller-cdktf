@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChart",
-		reflect.TypeOf((*ChronicleDashboardChart)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChart](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChart{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,11 +91,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartChartLayout",
-		reflect.TypeOf((*ChronicleDashboardChartChartLayout)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartChartLayout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartChartLayoutOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartChartLayoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartChartLayoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartChartLayoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,19 +137,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartConfig",
-		reflect.TypeOf((*ChronicleDashboardChartConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChart",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChart)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChart](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartChartDatasource",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartChartDatasource)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartChartDatasource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartChartDatasourceOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartChartDatasourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartChartDatasourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartChartDatasourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,23 +185,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfig",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDowns",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDowns)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDowns](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLink",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLink)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLink](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,19 +238,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilter",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilter)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFilters",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFilters)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -272,7 +272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -310,7 +310,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -324,7 +324,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -332,7 +332,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterDashboardFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,7 +369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,7 +404,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -445,7 +445,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -453,11 +453,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQuery",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQuery)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQueryOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -483,7 +483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -491,11 +491,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsDefaultSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -529,7 +529,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -543,7 +543,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -551,7 +551,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -587,7 +587,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -595,7 +595,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,19 +635,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDowns",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDowns)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDowns](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLink",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLink)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLink](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLinkOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLinkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLinkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -676,7 +676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsExternalLinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -684,19 +684,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilter",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilter)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFilters",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFilters)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -710,7 +710,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -718,7 +718,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersFilterOperatorAndValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,7 +756,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -778,7 +778,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -807,7 +807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterDashboardFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -815,7 +815,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -842,7 +842,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -850,7 +850,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -888,7 +888,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -896,11 +896,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQuery",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQuery)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQueryOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -926,7 +926,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -934,11 +934,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -964,7 +964,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsDefaultSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -972,7 +972,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -986,7 +986,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -994,7 +994,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1030,7 +1030,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1038,7 +1038,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chartDatasource", GoGetter: "ChartDatasource"},
 			_jsii_.MemberProperty{JsiiProperty: "chartDatasourceInput", GoGetter: "ChartDatasourceInput"},
@@ -1083,7 +1083,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visualization", GoGetter: "Visualization"},
 			_jsii_.MemberProperty{JsiiProperty: "visualizationInput", GoGetter: "VisualizationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1091,15 +1091,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualization",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualization)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualization](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationButton",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationButton)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationButton](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1145,11 +1145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationButtonProperties",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationButtonProperties)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationButtonProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationButtonPropertiesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationButtonPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationButtonPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buttonStyle", GoGetter: "ButtonStyle"},
 			_jsii_.MemberProperty{JsiiProperty: "buttonStyleInput", GoGetter: "ButtonStyleInput"},
@@ -1179,7 +1179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationButtonPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1187,11 +1187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationColumnDefs",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationColumnDefs)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationColumnDefs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationColumnDefsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationColumnDefsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationColumnDefsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1205,7 +1205,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1213,7 +1213,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1243,7 +1243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1251,15 +1251,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfig",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1292,7 +1292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1300,11 +1300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPosition",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPosition)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPosition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPositionOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPositionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPositionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1340,7 +1340,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoomScaleValue", GoGetter: "ZoomScaleValue"},
 			_jsii_.MemberProperty{JsiiProperty: "zoomScaleValueInput", GoGetter: "ZoomScaleValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigMapPositionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1348,7 +1348,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1387,7 +1387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1395,11 +1395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -1429,7 +1429,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigPointSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1437,11 +1437,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationLegends",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationLegends)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationLegends](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationLegendsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationLegendsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationLegendsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1455,7 +1455,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1463,7 +1463,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bottom", GoGetter: "Bottom"},
 			_jsii_.MemberProperty{JsiiProperty: "bottomInput", GoGetter: "BottomInput"},
@@ -1520,7 +1520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zLevel", GoGetter: "ZLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "zLevelInput", GoGetter: "ZLevelInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1528,11 +1528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationMarkdown",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationMarkdown)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationMarkdown](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationMarkdownOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationMarkdownOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationMarkdownOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1562,7 +1562,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationMarkdownOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1570,11 +1570,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationMarkdownProperties",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationMarkdownProperties)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationMarkdownProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationMarkdownPropertiesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationMarkdownPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationMarkdownPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColorInput", GoGetter: "BackgroundColorInput"},
@@ -1601,7 +1601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationMarkdownPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1609,7 +1609,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "button", GoGetter: "Button"},
 			_jsii_.MemberProperty{JsiiProperty: "buttonInput", GoGetter: "ButtonInput"},
@@ -1686,7 +1686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yAxes", GoGetter: "YAxes"},
 			_jsii_.MemberProperty{JsiiProperty: "yAxesInput", GoGetter: "YAxesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1694,15 +1694,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeries",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeries)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeries](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyle",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyle)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyleOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -1747,7 +1747,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesAreaStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1755,11 +1755,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabel",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabel)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabelOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1786,7 +1786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesDataLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1794,11 +1794,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesEncode",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesEncode)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesEncode](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1834,7 +1834,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "y", GoGetter: "Y"},
 			_jsii_.MemberProperty{JsiiProperty: "yInput", GoGetter: "YInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1842,15 +1842,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfig",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValue",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValue)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValueOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -1880,7 +1880,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigBaseValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1888,11 +1888,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValue",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValue)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -1922,7 +1922,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1930,7 +1930,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseValue", GoGetter: "BaseValue"},
 			_jsii_.MemberProperty{JsiiProperty: "baseValueInput", GoGetter: "BaseValueInput"},
@@ -1966,7 +1966,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdValuesInput", GoGetter: "ThresholdValuesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1974,11 +1974,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1992,7 +1992,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2000,7 +2000,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -2030,7 +2030,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2038,15 +2038,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColors",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColors)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColors](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColors",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColors)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2060,7 +2060,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2068,7 +2068,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2099,7 +2099,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2107,11 +2107,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValue",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValue)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValueOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -2141,7 +2141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsColorsValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2149,7 +2149,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "colors", GoGetter: "Colors"},
 			_jsii_.MemberProperty{JsiiProperty: "colorsInput", GoGetter: "ColorsInput"},
@@ -2177,7 +2177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2185,11 +2185,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyle",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyle)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyleOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "borderColor", GoGetter: "BorderColor"},
 			_jsii_.MemberProperty{JsiiProperty: "borderColorInput", GoGetter: "BorderColorInput"},
@@ -2222,7 +2222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemStyleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2230,7 +2230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2244,7 +2244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2252,11 +2252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfig",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfigOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2292,7 +2292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesMetricTrendConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2300,7 +2300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "areaStyle", GoGetter: "AreaStyle"},
 			_jsii_.MemberProperty{JsiiProperty: "areaStyleInput", GoGetter: "AreaStyleInput"},
@@ -2382,7 +2382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2390,15 +2390,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfig",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2412,7 +2412,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2420,7 +2420,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnRenderType", GoGetter: "ColumnRenderType"},
 			_jsii_.MemberProperty{JsiiProperty: "columnRenderTypeInput", GoGetter: "ColumnRenderTypeInput"},
@@ -2450,7 +2450,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2458,11 +2458,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettings",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettings)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2476,7 +2476,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2484,7 +2484,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cellTooltipText", GoGetter: "CellTooltipText"},
 			_jsii_.MemberProperty{JsiiProperty: "cellTooltipTextInput", GoGetter: "CellTooltipTextInput"},
@@ -2516,7 +2516,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2524,7 +2524,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnRenderTypeSettings", GoGetter: "ColumnRenderTypeSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "columnRenderTypeSettingsInput", GoGetter: "ColumnRenderTypeSettingsInput"},
@@ -2559,7 +2559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2567,11 +2567,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTooltip",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTooltip)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTooltip](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTooltipOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationTooltipOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationTooltipOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2601,7 +2601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tooltipTriggerInput", GoGetter: "TooltipTriggerInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTooltipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2609,11 +2609,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMaps",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMaps)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMaps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMapsList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMapsList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMapsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2627,7 +2627,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2635,7 +2635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMapsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMapsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMapsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2666,7 +2666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visualMapType", GoGetter: "VisualMapType"},
 			_jsii_.MemberProperty{JsiiProperty: "visualMapTypeInput", GoGetter: "VisualMapTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2674,11 +2674,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMapsPieces",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMapsPieces)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMapsPieces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2692,7 +2692,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2700,7 +2700,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "color", GoGetter: "Color"},
 			_jsii_.MemberProperty{JsiiProperty: "colorInput", GoGetter: "ColorInput"},
@@ -2736,7 +2736,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2744,11 +2744,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationXAxes",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationXAxes)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationXAxes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationXAxesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationXAxesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationXAxesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2762,7 +2762,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationXAxesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2770,7 +2770,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "axisType", GoGetter: "AxisType"},
 			_jsii_.MemberProperty{JsiiProperty: "axisTypeInput", GoGetter: "AxisTypeInput"},
@@ -2806,7 +2806,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2814,11 +2814,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationYAxes",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationYAxes)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationYAxes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationYAxesList",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationYAxesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationYAxesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2832,7 +2832,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationYAxesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2840,7 +2840,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationYAxesOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardChartVisualizationYAxesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardChartVisualizationYAxesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "axisType", GoGetter: "AxisType"},
 			_jsii_.MemberProperty{JsiiProperty: "axisTypeInput", GoGetter: "AxisTypeInput"},
@@ -2876,7 +2876,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationYAxesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2884,15 +2884,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQuery",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQuery)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQuery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInput",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInput)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInputOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2924,7 +2924,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeWindowInput", GoGetter: "TimeWindowInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardQueryInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2932,11 +2932,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInputRelativeTime",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInputRelativeTime)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInputRelativeTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2964,7 +2964,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeUnitInput", GoGetter: "TimeUnitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2972,11 +2972,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInputTimeWindow",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInputTimeWindow)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInputTimeWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryInputTimeWindowOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryInputTimeWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryInputTimeWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3006,7 +3006,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardQueryInputTimeWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3014,7 +3014,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardQueryOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartDashboardQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartDashboardQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3046,7 +3046,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartDashboardQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3054,11 +3054,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeouts",
-		reflect.TypeOf((*ChronicleDashboardChartTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleDashboardChartTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDashboardChartTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3091,7 +3091,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

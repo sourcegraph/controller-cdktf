@@ -153,7 +153,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateSetIdP
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewTranscoderJobConfigEncryptionsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamWorkloadIdentityPoolNamespaceTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMember) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PubsubSubscriptionIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePubsubSubscriptionIamMember_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validatePubsubSubscriptionIamMember_IsConstructParameters(x interface{}) error {
+func validatePubsubSubscriptionIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePubsubSubscriptionIamMember_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validatePubsubSubscriptionIamMember_IsTerraformElementParameters(x interface{}) error {
+func validatePubsubSubscriptionIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePubsubSubscriptionIamMember_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validatePubsubSubscriptionIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validatePubsubSubscriptionIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validatePubsubSubscriptionIamMember_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewPubsubSubscriptionIamMemberParameters(scope constructs.Construct
 
 	return nil
 }
-

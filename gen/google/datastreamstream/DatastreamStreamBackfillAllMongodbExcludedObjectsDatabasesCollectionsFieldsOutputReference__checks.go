@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCol
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCol
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollec
 
 	return nil
 }
-

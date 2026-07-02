@@ -1,11 +1,10 @@
 package dataprocworkflowtemplate
 
-
 type DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#accelerators DataprocWorkflowTemplate#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// disk_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#disk_config DataprocWorkflowTemplate#disk_config}
@@ -39,4 +38,3 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#preemptibility DataprocWorkflowTemplate#preemptibility}
 	Preemptibility *string `field:"optional" json:"preemptibility" yaml:"preemptibility"`
 }
-

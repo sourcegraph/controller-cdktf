@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntellig
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageControlOrganizationIntelligenceConfigEffectiveIntelligenc
 
 	return nil
 }
-

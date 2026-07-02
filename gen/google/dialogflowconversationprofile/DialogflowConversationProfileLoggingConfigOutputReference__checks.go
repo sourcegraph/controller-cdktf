@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileLoggingConfigOutputReference) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewDialogflowConversationProfileLoggingConfigOutputReferenceParamet
 
 	return nil
 }
-

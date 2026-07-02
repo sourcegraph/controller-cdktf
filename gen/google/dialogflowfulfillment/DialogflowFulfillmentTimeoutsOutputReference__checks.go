@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowFulfillmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowFulfillmentTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

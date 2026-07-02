@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMemorystoreInstanceDesiredAutoCreatedEndpointsOutputReferencePar
 
 	return nil
 }
-

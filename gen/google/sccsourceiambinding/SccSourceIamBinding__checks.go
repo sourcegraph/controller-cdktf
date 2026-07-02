@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccSourceIamBinding) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (s *jsiiProxy_SccSourceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccSourceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccSourceIamBinding) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (s *jsiiProxy_SccSourceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccSourceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSccSourceIamBinding_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateSccSourceIamBinding_IsConstructParameters(x interface{}) error {
+func validateSccSourceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSccSourceIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSccSourceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateSccSourceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSccSourceIamBinding_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateSccSourceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateSccSourceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSccSourceIamBinding_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_SccSourceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccSourceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SccSourceIamBinding) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SccSourceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccSourceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SccSourceIamBinding) validateSetOrganizationParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_SccSourceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccSourceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewSccSourceIamBindingParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

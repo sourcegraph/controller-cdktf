@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsO
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsO
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDialogflowGeneratorSummarizationContextSummarizationSectionsOutp
 
 	return nil
 }
-

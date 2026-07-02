@@ -12,9 +12,9 @@ type VmwareengineDatastoreNfsDatastoreOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type VmwareengineDatastoreNfsDatastoreOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type VmwareengineDatastoreNfsDatastoreOutputReference interface {
 	ResetThirdPartyFileService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ThirdPartyF
 	return returns
 }
 
-
 func NewVmwareengineDatastoreNfsDatastoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewVmwareengineDatastoreNfsDatastoreOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewVmwareengineDatastoreNfsDatastoreOutputReference_Override(v Vmwareengine
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetInternalValue(val *VmwareengineDatastoreNfsDatastore) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) SetInternalValue(val *VmwareengineDatastoreNfsDatastore) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ComputeFqn(
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetListAttr
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetStringAt
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) GetStringMa
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) Interpolati
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) PutGoogleFi
 	_jsii_.InvokeVoid(
 		v,
 		"putGoogleFileService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) PutThirdPar
 	_jsii_.InvokeVoid(
 		v,
 		"putThirdPartyFileService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ResetThirdP
 	)
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) ToString() 
 
 	return returns
 }
-

@@ -1,11 +1,10 @@
 package datastreamconnectionprofile
 
-
 type DatastreamConnectionProfileMongodbProfile struct {
 	// host_addresses block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_connection_profile#host_addresses DatastreamConnectionProfile#host_addresses}
-	HostAddresses interface{} `field:"required" json:"hostAddresses" yaml:"hostAddresses"`
+	HostAddresses any `field:"required" json:"hostAddresses" yaml:"hostAddresses"`
 	// Username for the MongoDB connection.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
@@ -35,4 +34,3 @@ type DatastreamConnectionProfileMongodbProfile struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_connection_profile#standard_connection_format DatastreamConnectionProfile#standard_connection_format}
 	StandardConnectionFormat *DatastreamConnectionProfileMongodbProfileStandardConnectionFormat `field:"optional" json:"standardConnectionFormat" yaml:"standardConnectionFormat"`
 }
-

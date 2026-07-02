@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetCertific
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetForceOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunDomainMappingSpecOutputReference) validateSetForceOverrideParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudRunDomainMappingSpecOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

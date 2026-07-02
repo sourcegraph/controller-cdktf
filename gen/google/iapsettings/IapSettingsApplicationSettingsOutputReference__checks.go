@@ -131,7 +131,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsApplicationSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -239,4 +239,3 @@ func validateNewIapSettingsApplicationSettingsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

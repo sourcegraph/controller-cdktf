@@ -6,9 +6,9 @@ import (
 
 type NetappVolumeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetappVolumeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Capacity of the volume (in GiB).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
@@ -50,7 +50,7 @@ type NetappVolumeConfig struct {
 	// block_devices block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#block_devices NetappVolume#block_devices}
-	BlockDevices interface{} `field:"optional" json:"blockDevices" yaml:"blockDevices"`
+	BlockDevices any `field:"optional" json:"blockDevices" yaml:"blockDevices"`
 	// cache_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#cache_parameters NetappVolume#cache_parameters}
@@ -83,7 +83,7 @@ type NetappVolumeConfig struct {
 	// Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
-	KerberosEnabled interface{} `field:"optional" json:"kerberosEnabled" yaml:"kerberosEnabled"`
+	KerberosEnabled any `field:"optional" json:"kerberosEnabled" yaml:"kerberosEnabled"`
 	// Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -94,7 +94,7 @@ type NetappVolumeConfig struct {
 	// Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
-	LargeCapacity interface{} `field:"optional" json:"largeCapacity" yaml:"largeCapacity"`
+	LargeCapacity any `field:"optional" json:"largeCapacity" yaml:"largeCapacity"`
 	// large_capacity_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#large_capacity_config NetappVolume#large_capacity_config}
@@ -105,7 +105,7 @@ type NetappVolumeConfig struct {
 	// Only the volume with largeCapacity will be allowed to have multiple endpoints.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
-	MultipleEndpoints interface{} `field:"optional" json:"multipleEndpoints" yaml:"multipleEndpoints"`
+	MultipleEndpoints any `field:"optional" json:"multipleEndpoints" yaml:"multipleEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#project NetappVolume#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// restore_parameters block.
@@ -134,7 +134,7 @@ type NetappVolumeConfig struct {
 	// If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
-	SnapshotDirectory interface{} `field:"optional" json:"snapshotDirectory" yaml:"snapshotDirectory"`
+	SnapshotDirectory any `field:"optional" json:"snapshotDirectory" yaml:"snapshotDirectory"`
 	// snapshot_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
@@ -156,4 +156,3 @@ type NetappVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
 	UnixPermissions *string `field:"optional" json:"unixPermissions" yaml:"unixPermissions"`
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerd
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeIn
 
 	return nil
 }
-

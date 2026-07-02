@@ -1,6 +1,5 @@
 package bigquerytable
 
-
 type BigqueryTableExternalDataConfigurationCsvOptions struct {
 	// The value that is used to quote data sections in a CSV file.
 	//
@@ -11,13 +10,13 @@ type BigqueryTableExternalDataConfigurationCsvOptions struct {
 	// Indicates if BigQuery should accept rows that are missing trailing optional columns.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#allow_jagged_rows BigqueryTable#allow_jagged_rows}
-	AllowJaggedRows interface{} `field:"optional" json:"allowJaggedRows" yaml:"allowJaggedRows"`
+	AllowJaggedRows any `field:"optional" json:"allowJaggedRows" yaml:"allowJaggedRows"`
 	// Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file.
 	//
 	// The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#allow_quoted_newlines BigqueryTable#allow_quoted_newlines}
-	AllowQuotedNewlines interface{} `field:"optional" json:"allowQuotedNewlines" yaml:"allowQuotedNewlines"`
+	AllowQuotedNewlines any `field:"optional" json:"allowQuotedNewlines" yaml:"allowQuotedNewlines"`
 	// The character encoding of the data. The supported values are UTF-8 or ISO-8859-1.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#encoding BigqueryTable#encoding}
@@ -37,4 +36,3 @@ type BigqueryTableExternalDataConfigurationCsvOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#source_column_match BigqueryTable#source_column_match}
 	SourceColumnMatch *string `field:"optional" json:"sourceColumnMatch" yaml:"sourceColumnMatch"`
 }
-

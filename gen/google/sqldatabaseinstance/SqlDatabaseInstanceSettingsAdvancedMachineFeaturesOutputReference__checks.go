@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReferenc
 
 	return nil
 }
-

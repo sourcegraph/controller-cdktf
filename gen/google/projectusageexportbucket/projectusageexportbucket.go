@@ -18,15 +18,15 @@ type ProjectUsageExportBucket interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,26 +59,26 @@ type ProjectUsageExportBucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ProjectUsageExportBucketTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type ProjectUsageExportBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type ProjectUsageExportBucket interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type ProjectUsageExportBucket interface {
 	ResetPrefix()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectUsageExportBucket
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_ProjectUsageExportBucket) Timeouts() ProjectUsageExportBucket
 	return returns
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectUsageExportBucket) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_ProjectUsageExportBucket) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket} Resource.
 func NewProjectUsageExportBucket(scope constructs.Construct, id *string, config *ProjectUsageExportBucketConfig) ProjectUsageExportBucket {
@@ -413,7 +412,7 @@ func NewProjectUsageExportBucket(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -426,12 +425,12 @@ func NewProjectUsageExportBucket_Override(p ProjectUsageExportBucket, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetBucketName(val *string) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetBucketName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetId(val *string) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetPrefix(val *string) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetProject(val *string) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucket)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectUsageExportBucket) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func ProjectUsageExportBucket_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func ProjectUsageExportBucket_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectUsageExportBucket_IsConstruct(x interface{}) *bool {
+func ProjectUsageExportBucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectUsageExportBucket_IsConstructParameters(x); err != nil {
@@ -590,7 +589,7 @@ func ProjectUsageExportBucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func ProjectUsageExportBucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool {
+func ProjectUsageExportBucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectUsageExportBucket_IsTerraformElementParameters(x); err != nil {
@@ -609,7 +608,7 @@ func ProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func ProjectUsageExportBucket_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectUsageExportBucket_IsTerraformResource(x interface{}) *bool {
+func ProjectUsageExportBucket_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectUsageExportBucket_IsTerraformResourceParameters(x); err != nil {
@@ -628,7 +627,7 @@ func ProjectUsageExportBucket_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectUsageExportBucket.ProjectUsageExportBucket",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,31 +652,31 @@ func (p *jsiiProxy_ProjectUsageExportBucket) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectUsageExportBucket) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectUsageExportBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,15 +804,15 @@ func (p *jsiiProxy_ProjectUsageExportBucket) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -832,7 +831,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -845,7 +844,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,18 +858,18 @@ func (p *jsiiProxy_ProjectUsageExportBucket) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectUsageExportBucket) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -881,7 +880,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -892,7 +891,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -903,7 +902,7 @@ func (p *jsiiProxy_ProjectUsageExportBucket) PutTimeouts(value *ProjectUsageExpo
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,8 +946,8 @@ func (p *jsiiProxy_ProjectUsageExportBucket) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -960,8 +959,8 @@ func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -973,8 +972,8 @@ func (p *jsiiProxy_ProjectUsageExportBucket) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -986,8 +985,8 @@ func (p *jsiiProxy_ProjectUsageExportBucket) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1012,8 +1011,8 @@ func (p *jsiiProxy_ProjectUsageExportBucket) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectUsageExportBucket) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectUsageExportBucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1024,4 +1023,3 @@ func (p *jsiiProxy_ProjectUsageExportBucket) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateAddMoveTarget
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateMoveFromIdPar
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateOverrideLogic
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validatePutAttestationRulesParameters(value interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validatePutAttestationRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateIamWorkloadIdentityPoolManagedIdentity_GenerateConfigForImportParam
 	return nil
 }
 
-func validateIamWorkloadIdentityPoolManagedIdentity_IsConstructParameters(x interface{}) error {
+func validateIamWorkloadIdentityPoolManagedIdentity_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateIamWorkloadIdentityPoolManagedIdentity_IsConstructParameters(x inte
 	return nil
 }
 
-func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformElementParameters(x interface{}) error {
+func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformElementParameters
 	return nil
 }
 
-func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformResourceParameters(x interface{}) error {
+func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateIamWorkloadIdentityPoolManagedIdentity_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -384,7 +384,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetDescriptio
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentity) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -516,4 +516,3 @@ func validateNewIamWorkloadIdentityPoolManagedIdentityParameters(scope construct
 
 	return nil
 }
-

@@ -17,15 +17,15 @@ type IamWorkforcePool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,9 +33,9 @@ type IamWorkforcePool interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -68,11 +68,11 @@ type IamWorkforcePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SessionDuration() *string
 	SetSessionDuration(val *string)
 	SessionDurationInput() *string
@@ -80,11 +80,11 @@ type IamWorkforcePool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IamWorkforcePoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WorkforcePoolId() *string
 	SetWorkforcePoolId(val *string)
 	WorkforcePoolIdInput() *string
@@ -92,9 +92,9 @@ type IamWorkforcePool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type IamWorkforcePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type IamWorkforcePool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type IamWorkforcePool interface {
 	ResetOverrideLogicalId()
 	ResetSessionDuration()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamWorkforcePool
@@ -191,8 +191,8 @@ func (j *jsiiProxy_IamWorkforcePool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_IamWorkforcePool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamWorkforcePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_IamWorkforcePool) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_IamWorkforcePool) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_IamWorkforcePool) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_IamWorkforcePool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamWorkforcePool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_IamWorkforcePool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_IamWorkforcePool) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamWorkforcePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_IamWorkforcePool) Timeouts() IamWorkforcePoolTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -541,7 +541,6 @@ func (j *jsiiProxy_IamWorkforcePool) WorkforcePoolIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWorkforcePoolConfig) IamWorkforcePool {
 	_init_.Initialize()
@@ -553,7 +552,7 @@ func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWork
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -566,12 +565,12 @@ func NewIamWorkforcePool_Override(i IamWorkforcePool, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetCount(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamWorkforcePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetDescription(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetDisabled(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePool) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetDisplayName(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamWorkforcePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetId(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamWorkforcePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetLocation(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetParent(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamWorkforcePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamWorkforcePool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetSessionDuration(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetSessionDuration(val *string) {
 	if err := j.validateSetSessionDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_IamWorkforcePool)SetSessionDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetWorkforcePoolId(val *string) {
+func (j *jsiiProxy_IamWorkforcePool) SetWorkforcePoolId(val *string) {
 	if err := j.validateSetWorkforcePoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func IamWorkforcePool_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func IamWorkforcePool_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamWorkforcePool_IsConstruct(x interface{}) *bool {
+func IamWorkforcePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamWorkforcePool_IsConstructParameters(x); err != nil {
@@ -774,7 +773,7 @@ func IamWorkforcePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func IamWorkforcePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamWorkforcePool_IsTerraformElement(x interface{}) *bool {
+func IamWorkforcePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamWorkforcePool_IsTerraformElementParameters(x); err != nil {
@@ -793,7 +792,7 @@ func IamWorkforcePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func IamWorkforcePool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamWorkforcePool_IsTerraformResource(x interface{}) *bool {
+func IamWorkforcePool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamWorkforcePool_IsTerraformResourceParameters(x); err != nil {
@@ -812,7 +811,7 @@ func IamWorkforcePool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,31 +836,31 @@ func (i *jsiiProxy_IamWorkforcePool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePool) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamWorkforcePool) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamWorkforcePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (i *jsiiProxy_IamWorkforcePool) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,15 +988,15 @@ func (i *jsiiProxy_IamWorkforcePool) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePool) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamWorkforcePool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1016,7 +1015,7 @@ func (i *jsiiProxy_IamWorkforcePool) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (i *jsiiProxy_IamWorkforcePool) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,18 +1042,18 @@ func (i *jsiiProxy_IamWorkforcePool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePool) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamWorkforcePool) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (i *jsiiProxy_IamWorkforcePool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (i *jsiiProxy_IamWorkforcePool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (i *jsiiProxy_IamWorkforcePool) PutAccessRestrictions(value *IamWorkforcePo
 	_jsii_.InvokeVoid(
 		i,
 		"putAccessRestrictions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (i *jsiiProxy_IamWorkforcePool) PutTimeouts(value *IamWorkforcePoolTimeouts
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,8 +1165,8 @@ func (i *jsiiProxy_IamWorkforcePool) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamWorkforcePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1179,8 +1178,8 @@ func (i *jsiiProxy_IamWorkforcePool) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamWorkforcePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1192,8 +1191,8 @@ func (i *jsiiProxy_IamWorkforcePool) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamWorkforcePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1205,8 +1204,8 @@ func (i *jsiiProxy_IamWorkforcePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePool) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamWorkforcePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1231,8 +1230,8 @@ func (i *jsiiProxy_IamWorkforcePool) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePool) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamWorkforcePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1243,4 +1242,3 @@ func (i *jsiiProxy_IamWorkforcePool) ToTerraform() interface{} {
 
 	return returns
 }
-

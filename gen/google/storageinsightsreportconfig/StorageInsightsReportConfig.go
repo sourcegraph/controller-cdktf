@@ -15,15 +15,15 @@ type StorageInsightsReportConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CsvOptions() StorageInsightsReportConfigCsvOptionsOutputReference
 	CsvOptionsInput() *StorageInsightsReportConfigCsvOptions
 	// Experimental.
@@ -33,9 +33,9 @@ type StorageInsightsReportConfig interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,26 +71,26 @@ type StorageInsightsReportConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StorageInsightsReportConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type StorageInsightsReportConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type StorageInsightsReportConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type StorageInsightsReportConfig interface {
 	ResetParquetOptions()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageInsightsReportConfig
@@ -172,8 +172,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_StorageInsightsReportConfig) Timeouts() StorageInsightsReport
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageInsightsReportConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_StorageInsightsReportConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource.
 func NewStorageInsightsReportConfig(scope constructs.Construct, id *string, config *StorageInsightsReportConfigConfig) StorageInsightsReportConfig {
@@ -544,7 +543,7 @@ func NewStorageInsightsReportConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -557,12 +556,12 @@ func NewStorageInsightsReportConfig_Override(s StorageInsightsReportConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -592,7 +591,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetDisplayName(val *string) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetForceDestroy(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetId(val *string) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetLocation(val *string) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetProject(val *string) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -674,7 +673,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageInsightsReportConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func StorageInsightsReportConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func StorageInsightsReportConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageInsightsReportConfig_IsConstruct(x interface{}) *bool {
+func StorageInsightsReportConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageInsightsReportConfig_IsConstructParameters(x); err != nil {
@@ -732,7 +731,7 @@ func StorageInsightsReportConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func StorageInsightsReportConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageInsightsReportConfig_IsTerraformElement(x interface{}) *bool {
+func StorageInsightsReportConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageInsightsReportConfig_IsTerraformElementParameters(x); err != nil {
@@ -751,7 +750,7 @@ func StorageInsightsReportConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func StorageInsightsReportConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageInsightsReportConfig_IsTerraformResource(x interface{}) *bool {
+func StorageInsightsReportConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageInsightsReportConfig_IsTerraformResourceParameters(x); err != nil {
@@ -770,7 +769,7 @@ func StorageInsightsReportConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -795,31 +794,31 @@ func (s *jsiiProxy_StorageInsightsReportConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageInsightsReportConfig) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageInsightsReportConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,15 +946,15 @@ func (s *jsiiProxy_StorageInsightsReportConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -974,7 +973,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -987,7 +986,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,18 +1000,18 @@ func (s *jsiiProxy_StorageInsightsReportConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageInsightsReportConfig) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1023,7 +1022,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1034,7 +1033,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1045,7 +1044,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) PutCsvOptions(value *StorageInsi
 	_jsii_.InvokeVoid(
 		s,
 		"putCsvOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1056,7 +1055,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) PutFrequencyOptions(value *Stora
 	_jsii_.InvokeVoid(
 		s,
 		"putFrequencyOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1067,7 +1066,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) PutObjectMetadataReportOptions(v
 	_jsii_.InvokeVoid(
 		s,
 		"putObjectMetadataReportOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) PutParquetOptions(value *Storage
 	_jsii_.InvokeVoid(
 		s,
 		"putParquetOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) PutTimeouts(value *StorageInsigh
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1173,8 +1172,8 @@ func (s *jsiiProxy_StorageInsightsReportConfig) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1186,8 +1185,8 @@ func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1199,8 +1198,8 @@ func (s *jsiiProxy_StorageInsightsReportConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1212,8 +1211,8 @@ func (s *jsiiProxy_StorageInsightsReportConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1238,8 +1237,8 @@ func (s *jsiiProxy_StorageInsightsReportConfig) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageInsightsReportConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1250,4 +1249,3 @@ func (s *jsiiProxy_StorageInsightsReportConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

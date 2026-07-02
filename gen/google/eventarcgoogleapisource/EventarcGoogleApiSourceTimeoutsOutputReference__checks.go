@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEventarcGoogleApiSourceTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

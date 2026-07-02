@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDiscoveryEngineCmekConfigTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

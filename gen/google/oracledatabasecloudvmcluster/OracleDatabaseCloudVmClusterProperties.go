@@ -1,6 +1,5 @@
 package oracledatabasecloudvmcluster
 
-
 type OracleDatabaseCloudVmClusterProperties struct {
 	// Number of enabled CPU cores.
 	//
@@ -45,7 +44,7 @@ type OracleDatabaseCloudVmClusterProperties struct {
 	// Use local backup.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_vm_cluster#local_backup_enabled OracleDatabaseCloudVmCluster#local_backup_enabled}
-	LocalBackupEnabled interface{} `field:"optional" json:"localBackupEnabled" yaml:"localBackupEnabled"`
+	LocalBackupEnabled any `field:"optional" json:"localBackupEnabled" yaml:"localBackupEnabled"`
 	// Memory allocated in GBs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_vm_cluster#memory_size_gb OracleDatabaseCloudVmCluster#memory_size_gb}
@@ -61,7 +60,7 @@ type OracleDatabaseCloudVmClusterProperties struct {
 	// Use exadata sparse snapshots.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_vm_cluster#sparse_diskgroup_enabled OracleDatabaseCloudVmCluster#sparse_diskgroup_enabled}
-	SparseDiskgroupEnabled interface{} `field:"optional" json:"sparseDiskgroupEnabled" yaml:"sparseDiskgroupEnabled"`
+	SparseDiskgroupEnabled any `field:"optional" json:"sparseDiskgroupEnabled" yaml:"sparseDiskgroupEnabled"`
 	// SSH public keys to be stored with cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_vm_cluster#ssh_public_keys OracleDatabaseCloudVmCluster#ssh_public_keys}
@@ -71,4 +70,3 @@ type OracleDatabaseCloudVmClusterProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_vm_cluster#time_zone OracleDatabaseCloudVmCluster#time_zone}
 	TimeZone *OracleDatabaseCloudVmClusterPropertiesTimeZone `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

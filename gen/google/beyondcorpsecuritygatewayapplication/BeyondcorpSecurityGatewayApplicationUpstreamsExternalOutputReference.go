@@ -12,9 +12,9 @@ type BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference interf
 	// Experimental.
 	CreationStack() *[]*string
 	Endpoints() BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsList
-	EndpointsInput() interface{}
+	EndpointsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BeyondcorpSecurityGatewayApplicationUpstreamsExternal
@@ -42,7 +42,7 @@ type BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,10 +63,10 @@ type BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEndpoints(value interface{})
+	PutEndpoints(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) EndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) EndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointsInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return returns
 }
 
-
 func NewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayApplication.BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayApplication.BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetInternalValue(val *BeyondcorpSecurityGatewayApplicationUpstreamsExternal) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) SetInternalValue(val *BeyondcorpSecurityGatewayApplicationUpstreamsExternal) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,34 +430,34 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) PutEndpoints(value interface{}) {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) PutEndpoints(value any) {
 	if err := b.validatePutEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 
 	return returns
 }
-

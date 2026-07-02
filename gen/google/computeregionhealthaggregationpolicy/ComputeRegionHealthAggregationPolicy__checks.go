@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateAddMoveTargetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateMoveFromIdParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionHealthAggregationPolicy_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateComputeRegionHealthAggregationPolicy_IsConstructParameters(x interface{}) error {
+func validateComputeRegionHealthAggregationPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionHealthAggregationPolicy_IsConstructParameters(x interf
 	return nil
 }
 
-func validateComputeRegionHealthAggregationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionHealthAggregationPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionHealthAggregationPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateComputeRegionHealthAggregationPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionHealthAggregationPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeRegionHealthAggregationPolicy_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthAggregationPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewComputeRegionHealthAggregationPolicyParameters(scope constructs.
 
 	return nil
 }
-

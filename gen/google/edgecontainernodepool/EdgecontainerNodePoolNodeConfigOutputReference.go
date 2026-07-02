@@ -12,9 +12,9 @@ type EdgecontainerNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type EdgecontainerNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type EdgecontainerNodePoolNodeConfigOutputReference interface {
 	ResetLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewEdgecontainerNodePoolNodeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerNodePoolNodeConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewEdgecontainerNodePoolNodeConfigOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewEdgecontainerNodePoolNodeConfigOutputReference_Override(e EdgecontainerN
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetInternalValue(val *EdgecontainerNodePoolNodeConfig) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetInternalValue(val *EdgecontainerNodePoolNodeConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetLabels(val 
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetNumberList
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) Interpolation
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) ResetLabels()
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) ToString() *s
 
 	return returns
 }
-

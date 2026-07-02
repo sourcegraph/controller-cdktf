@@ -12,9 +12,9 @@ type EdgecontainerClusterControlPlaneLocalOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type EdgecontainerClusterControlPlaneLocalOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type EdgecontainerClusterControlPlaneLocalOutputReference interface {
 	ResetSharedDeploymentPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) Terrafo
 	return returns
 }
 
-
 func NewEdgecontainerClusterControlPlaneLocalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerClusterControlPlaneLocalOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewEdgecontainerClusterControlPlaneLocalOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterControlPlaneLocalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewEdgecontainerClusterControlPlaneLocalOutputReference_Override(e Edgecont
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterControlPlaneLocalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetInternalValue(val *EdgecontainerClusterControlPlaneLocal) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetInternalValue(val *EdgecontainerClusterControlPlaneLocal) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetMachineFilter(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetMachineFilter(val *string) {
 	if err := j.validateSetMachineFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetMachi
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetNodeCount(val *float64) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetNodeC
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetNodeLocation(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetNodeLocation(val *string) {
 	if err := j.validateSetNodeLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetNodeL
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetSharedDeploymentPolicy(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetSharedDeploymentPolicy(val *string) {
 	if err := j.validateSetSharedDeploymentPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetShare
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) Compute
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetBool
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetBool
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetList
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetNumb
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetStri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) GetStri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) Interpo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) ResetSh
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) ToStrin
 
 	return returns
 }
-

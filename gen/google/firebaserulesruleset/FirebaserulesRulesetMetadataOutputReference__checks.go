@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaserulesRulesetMetadataOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesRulesetMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirebaserulesRulesetMetadataOutputReferenceParameters(terraformR
 
 	return nil
 }
-

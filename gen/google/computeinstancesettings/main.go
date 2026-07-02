@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettings",
-		reflect.TypeOf((*ComputeInstanceSettings)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig",
-		reflect.TypeOf((*ComputeInstanceSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettingsMetadata",
-		reflect.TypeOf((*ComputeInstanceSettingsMetadata)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettingsMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettingsMetadataOutputReference",
-		reflect.TypeOf((*ComputeInstanceSettingsMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettingsMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceSettingsMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,11 +121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts",
-		reflect.TypeOf((*ComputeInstanceSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeInstanceSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

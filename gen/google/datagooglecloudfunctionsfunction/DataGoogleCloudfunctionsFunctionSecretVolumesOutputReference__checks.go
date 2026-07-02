@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudfunctionsFunctionSecretVolumesOutputReferencePara
 
 	return nil
 }
-

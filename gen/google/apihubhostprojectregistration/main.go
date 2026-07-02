@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration",
-		reflect.TypeOf((*ApihubHostProjectRegistration)(nil)).Elem(),
+		reflect.TypeFor[ApihubHostProjectRegistration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubHostProjectRegistration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig",
-		reflect.TypeOf((*ApihubHostProjectRegistrationConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubHostProjectRegistrationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts",
-		reflect.TypeOf((*ApihubHostProjectRegistrationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApihubHostProjectRegistrationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeoutsOutputReference",
-		reflect.TypeOf((*ApihubHostProjectRegistrationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubHostProjectRegistrationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

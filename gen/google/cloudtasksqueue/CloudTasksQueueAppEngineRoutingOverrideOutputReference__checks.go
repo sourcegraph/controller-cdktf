@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudTasksQueueAppEngineRoutingOverrideOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueAppEngineRoutingOverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueAppEngineRoutingOverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudTasksQueueAppEngineRoutingOverrideOutputReferenceParameters
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent",
-		reflect.TypeOf((*WorkloadIdentityServiceAgent)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkloadIdentityServiceAgent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgents",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentServiceAgents)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentServiceAgents](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgentsList",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentServiceAgentsList)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentServiceAgentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkloadIdentityServiceAgentServiceAgentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -100,7 +100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgentsOutputReference",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentServiceAgentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentServiceAgentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkloadIdentityServiceAgentServiceAgentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference",
-		reflect.TypeOf((*WorkloadIdentityServiceAgentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkloadIdentityServiceAgentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkloadIdentityServiceAgentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIntegrationConnectorsManagedZoneTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeHubFeatureMembershipTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

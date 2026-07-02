@@ -17,15 +17,15 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DedicatedServingEndpoint() VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference
 	DedicatedServingEndpointInput() *VertexAiFeatureOnlineStoreDedicatedServingEndpoint
@@ -37,9 +37,9 @@ type VertexAiFeatureOnlineStore interface {
 	EncryptionSpec() VertexAiFeatureOnlineStoreEncryptionSpecOutputReference
 	EncryptionSpecInput() *VertexAiFeatureOnlineStoreEncryptionSpec
 	Etag() *string
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,11 +73,11 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -86,19 +86,19 @@ type VertexAiFeatureOnlineStore interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VertexAiFeatureOnlineStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type VertexAiFeatureOnlineStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type VertexAiFeatureOnlineStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type VertexAiFeatureOnlineStore interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VertexAiFeatureOnlineStore
@@ -201,8 +201,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) Timeouts() VertexAiFeatureOnlineS
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -611,7 +611,6 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) VertexAiFeatureOnlineStore {
 	_init_.Initialize()
@@ -623,7 +622,7 @@ func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewVertexAiFeatureOnlineStore_Override(v VertexAiFeatureOnlineStore, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetCount(val interface{}) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -671,7 +670,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetId(val *string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetName(val *string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProject(val *string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore)SetRegion(val *string) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func VertexAiFeatureOnlineStore_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func VertexAiFeatureOnlineStore_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VertexAiFeatureOnlineStore_IsConstruct(x interface{}) *bool {
+func VertexAiFeatureOnlineStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeatureOnlineStore_IsConstructParameters(x); err != nil {
@@ -822,7 +821,7 @@ func VertexAiFeatureOnlineStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func VertexAiFeatureOnlineStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiFeatureOnlineStore_IsTerraformElement(x interface{}) *bool {
+func VertexAiFeatureOnlineStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeatureOnlineStore_IsTerraformElementParameters(x); err != nil {
@@ -841,7 +840,7 @@ func VertexAiFeatureOnlineStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func VertexAiFeatureOnlineStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiFeatureOnlineStore_IsTerraformResource(x interface{}) *bool {
+func VertexAiFeatureOnlineStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeatureOnlineStore_IsTerraformResourceParameters(x); err != nil {
@@ -860,7 +859,7 @@ func VertexAiFeatureOnlineStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,31 +884,31 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,15 +1036,15 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1064,7 +1063,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,18 +1090,18 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutBigtable(value *VertexAiFeatur
 	_jsii_.InvokeVoid(
 		v,
 		"putBigtable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutDedicatedServingEndpoint(value
 	_jsii_.InvokeVoid(
 		v,
 		"putDedicatedServingEndpoint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutEncryptionSpec(value *VertexAi
 	_jsii_.InvokeVoid(
 		v,
 		"putEncryptionSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutOptimized(value *VertexAiFeatu
 	_jsii_.InvokeVoid(
 		v,
 		"putOptimized",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) PutTimeouts(value *VertexAiFeatur
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1271,8 +1270,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1284,8 +1283,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1297,8 +1296,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1310,8 +1309,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1336,8 +1335,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1348,4 +1347,3 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) ToTerraform() interface{} {
 
 	return returns
 }
-

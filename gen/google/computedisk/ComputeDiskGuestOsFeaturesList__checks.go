@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeDiskGuestOsFeaturesListParameters(terraformResource cdktf
 
 	return nil
 }
-

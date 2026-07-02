@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicy",
-		reflect.TypeOf((*PubsubTopicIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubTopicIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubTopicIamPolicy.PubsubTopicIamPolicyConfig",
-		reflect.TypeOf((*PubsubTopicIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamPolicyConfig](),
 	)
 }

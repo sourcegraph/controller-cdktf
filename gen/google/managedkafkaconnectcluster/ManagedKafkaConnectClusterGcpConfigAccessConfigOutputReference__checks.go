@@ -90,7 +90,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReferenc
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReference) validatePutNetworkConfigsParameters(value interface{}) error {
+func (m *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReference) validatePutNetworkConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectClusterGcpConfigAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewManagedKafkaConnectClusterGcpConfigAccessConfigOutputReferencePa
 
 	return nil
 }
-

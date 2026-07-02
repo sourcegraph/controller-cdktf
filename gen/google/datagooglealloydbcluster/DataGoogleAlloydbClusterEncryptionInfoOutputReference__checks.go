@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAlloydbClusterEncryptionInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleAlloydbClusterEncryptionInfoOutputReferenceParameters(
 
 	return nil
 }
-

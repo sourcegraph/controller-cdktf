@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamAccessBoundaryPolicyTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

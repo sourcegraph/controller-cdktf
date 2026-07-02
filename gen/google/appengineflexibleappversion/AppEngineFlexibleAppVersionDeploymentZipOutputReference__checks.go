@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppEngineFlexibleAppVersionDeploymentZipOutputReferenceParameter
 
 	return nil
 }
-

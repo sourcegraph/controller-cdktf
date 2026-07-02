@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreOutputReferenceParame
 
 	return nil
 }
-

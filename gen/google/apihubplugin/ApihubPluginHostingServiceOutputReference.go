@@ -12,9 +12,9 @@ type ApihubPluginHostingServiceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ApihubPluginHostingServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ApihubPluginHostingServiceOutputReference interface {
 	ResetServiceUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ApihubPluginHostingServiceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewApihubPluginHostingServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApihubPluginHostingServiceOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewApihubPluginHostingServiceOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPluginHostingServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewApihubPluginHostingServiceOutputReference_Override(a ApihubPluginHosting
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPluginHostingServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetInternalValue(val *ApihubPluginHostingService) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetInternalValue(val *ApihubPluginHostingService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetServiceUri(val *string) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetServiceUri(val *string) {
 	if err := j.validateSetServiceUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetServiceUri(val *
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) ResetServiceUri() 
 	)
 }
 
-func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) ToString() *string
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApigeeDeveloperAttributesList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeDeveloperAttributesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeDeveloperAttributesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigeeDeveloperAttributesListParameters(terraformResource cdktf.
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NotebooksRuntimeIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNotebooksRuntimeIamMember_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateNotebooksRuntimeIamMember_IsConstructParameters(x interface{}) error {
+func validateNotebooksRuntimeIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNotebooksRuntimeIamMember_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateNotebooksRuntimeIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateNotebooksRuntimeIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNotebooksRuntimeIamMember_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateNotebooksRuntimeIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateNotebooksRuntimeIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNotebooksRuntimeIamMember_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewNotebooksRuntimeIamMemberParameters(scope constructs.Construct, 
 
 	return nil
 }
-

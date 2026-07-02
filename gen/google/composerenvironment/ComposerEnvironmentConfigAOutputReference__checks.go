@@ -230,7 +230,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,7 +295,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnableP
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -394,4 +394,3 @@ func validateNewComposerEnvironmentConfigAOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

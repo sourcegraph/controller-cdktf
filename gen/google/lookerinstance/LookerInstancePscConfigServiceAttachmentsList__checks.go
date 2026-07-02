@@ -34,7 +34,7 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLookerInstancePscConfigServiceAttachmentsListParameters(terrafor
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxTestCaseTestCaseConversationTurnsListParameters(terr
 
 	return nil
 }
-

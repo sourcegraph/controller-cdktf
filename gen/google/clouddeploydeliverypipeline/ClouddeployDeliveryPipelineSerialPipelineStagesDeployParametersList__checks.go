@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParamete
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersL
 
 	return nil
 }
-

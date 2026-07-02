@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateAddMoveTargetParame
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateMoveFromIdParameter
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccOrganizationSccBigQueryExport) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSccOrganizationSccBigQueryExport_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateSccOrganizationSccBigQueryExport_IsConstructParameters(x interface{}) error {
+func validateSccOrganizationSccBigQueryExport_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSccOrganizationSccBigQueryExport_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateSccOrganizationSccBigQueryExport_IsTerraformElementParameters(x interface{}) error {
+func validateSccOrganizationSccBigQueryExport_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSccOrganizationSccBigQueryExport_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateSccOrganizationSccBigQueryExport_IsTerraformResourceParameters(x interface{}) error {
+func validateSccOrganizationSccBigQueryExport_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetBigQueryExportId
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetOrganizationPara
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccOrganizationSccBigQueryExport) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewSccOrganizationSccBigQueryExportParameters(scope constructs.Cons
 
 	return nil
 }
-

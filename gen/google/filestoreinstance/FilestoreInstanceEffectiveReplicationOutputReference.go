@@ -12,9 +12,9 @@ type FilestoreInstanceEffectiveReplicationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type FilestoreInstanceEffectiveReplicationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type FilestoreInstanceEffectiveReplicationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Terrafo
 	return returns
 }
 
-
 func NewFilestoreInstanceEffectiveReplicationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FilestoreInstanceEffectiveReplicationOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewFilestoreInstanceEffectiveReplicationOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewFilestoreInstanceEffectiveReplicationOutputReference_Override(f Filestor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetInternalValue(val *FilestoreInstanceEffectiveReplication) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) SetInternalValue(val *FilestoreInstanceEffectiveReplication) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Compute
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetList
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Interpo
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) ToStrin
 
 	return returns
 }
-

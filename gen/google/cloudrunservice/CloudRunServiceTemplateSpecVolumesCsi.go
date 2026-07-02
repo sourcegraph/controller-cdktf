@@ -1,6 +1,5 @@
 package cloudrunservice
 
-
 type CloudRunServiceTemplateSpecVolumesCsi struct {
 	// Unique name representing the type of file system to be created.
 	//
@@ -13,7 +12,7 @@ type CloudRunServiceTemplateSpecVolumesCsi struct {
 	// If true, all mounts created from this volume will be read-only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#read_only CloudRunService#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Driver-specific attributes.
 	//
 	// The following options are supported for available drivers:
@@ -23,4 +22,3 @@ type CloudRunServiceTemplateSpecVolumesCsi struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#volume_attributes CloudRunService#volume_attributes}
 	VolumeAttributes *map[string]*string `field:"optional" json:"volumeAttributes" yaml:"volumeAttributes"`
 }
-

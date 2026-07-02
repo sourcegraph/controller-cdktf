@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleProjectIamCustomRolesRolesOutputReferenceParameters(te
 
 	return nil
 }
-

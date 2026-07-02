@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewDialogflowConversationProfileTtsConfigOutputReferenceParameters(
 
 	return nil
 }
-

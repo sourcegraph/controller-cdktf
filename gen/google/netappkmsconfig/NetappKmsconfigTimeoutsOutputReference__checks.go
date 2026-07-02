@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappKmsconfigTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

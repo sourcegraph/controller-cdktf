@@ -17,8 +17,8 @@ type VectorSearchCollectionVectorSchemaList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type VectorSearchCollectionVectorSchemaList interface {
 	Get(index *float64) VectorSearchCollectionVectorSchemaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewVectorSearchCollectionVectorSchemaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchCollectionVectorSchemaList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewVectorSearchCollectionVectorSchemaList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewVectorSearchCollectionVectorSchemaList_Override(v VectorSearchCollection
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) Get(index *float64) V
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) ToString() *string {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type FolderIamAuditConfigAuditLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type FolderIamAuditConfigAuditLogConfigOutputReference interface {
 	ExemptedMembersInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LogType() *string
 	SetLogType(val *string)
 	LogTypeInput() *string
@@ -46,7 +46,7 @@ type FolderIamAuditConfigAuditLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type FolderIamAuditConfigAuditLogConfigOutputReference interface {
 	ResetExemptedMembers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewFolderIamAuditConfigAuditLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FolderIamAuditConfigAuditLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewFolderIamAuditConfigAuditLogConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewFolderIamAuditConfigAuditLogConfigOutputReference_Override(f FolderIamAu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetExemptedMembers(val *[]*string) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetExemptedMembers(val *[]*string) {
 	if err := j.validateSetExemptedMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetExempted
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetLogType(val *string) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetLogType(val *string) {
 	if err := j.validateSetLogTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetLogType(
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) ResetExemp
 	)
 }
 
-func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference) ToString()
 
 	return returns
 }
-

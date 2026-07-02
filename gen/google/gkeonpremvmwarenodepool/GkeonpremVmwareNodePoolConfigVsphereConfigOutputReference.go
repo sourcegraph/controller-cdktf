@@ -12,9 +12,9 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	InternalValue() *GkeonpremVmwareNodePoolConfigVsphereConfig
 	SetInternalValue(val *GkeonpremVmwareNodePoolConfigVsphereConfig)
 	Tags() GkeonpremVmwareNodePoolConfigVsphereConfigTagsList
-	TagsInput() interface{}
+	TagsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTags(value interface{})
+	PutTags(value any)
 	ResetDatastore()
 	ResetHostGroups()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ta
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) TagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) TagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tagsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Te
 	return returns
 }
 
-
 func NewGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareNodePool.GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference_Override(g Gke
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareNodePool.GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetDatastore(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetDatastore(val *string) {
 	if err := j.validateSetDatastoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetHostGroups(val *[]*string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetHostGroups(val *[]*string) {
 	if err := j.validateSetHostGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetInternalValue(val *GkeonpremVmwareNodePoolConfigVsphereConfig) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetInternalValue(val *GkeonpremVmwareNodePoolConfigVsphereConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) PutTags(value interface{}) {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) PutTags(value any) {
 	if err := g.validatePutTagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) To
 
 	return returns
 }
-

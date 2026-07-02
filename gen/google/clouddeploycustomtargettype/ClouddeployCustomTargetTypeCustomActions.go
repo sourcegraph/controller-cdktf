@@ -1,6 +1,5 @@
 package clouddeploycustomtargettype
 
-
 type ClouddeployCustomTargetTypeCustomActions struct {
 	// The Skaffold custom action responsible for deploy operations.
 	//
@@ -9,7 +8,7 @@ type ClouddeployCustomTargetTypeCustomActions struct {
 	// include_skaffold_modules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_custom_target_type#include_skaffold_modules ClouddeployCustomTargetType#include_skaffold_modules}
-	IncludeSkaffoldModules interface{} `field:"optional" json:"includeSkaffoldModules" yaml:"includeSkaffoldModules"`
+	IncludeSkaffoldModules any `field:"optional" json:"includeSkaffoldModules" yaml:"includeSkaffoldModules"`
 	// The Skaffold custom action responsible for render operations.
 	//
 	// If not provided then Cloud Deploy will perform the render operations via 'skaffold render'.
@@ -17,4 +16,3 @@ type ClouddeployCustomTargetTypeCustomActions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_custom_target_type#render_action ClouddeployCustomTargetType#render_action}
 	RenderAction *string `field:"optional" json:"renderAction" yaml:"renderAction"`
 }
-

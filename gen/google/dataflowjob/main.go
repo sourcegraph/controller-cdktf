@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataflowJob.DataflowJob",
-		reflect.TypeOf((*DataflowJob)(nil)).Elem(),
+		reflect.TypeFor[DataflowJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataflowJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -130,15 +130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataflowJob.DataflowJobConfig",
-		reflect.TypeOf((*DataflowJobConfig)(nil)).Elem(),
+		reflect.TypeFor[DataflowJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataflowJob.DataflowJobTimeouts",
-		reflect.TypeOf((*DataflowJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataflowJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataflowJob.DataflowJobTimeoutsOutputReference",
-		reflect.TypeOf((*DataflowJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataflowJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataflowJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

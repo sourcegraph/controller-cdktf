@@ -90,7 +90,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreO
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validatePutFileSharesParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validatePutFileSharesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreO
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutp
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytype)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytype](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytype{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeConfig",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfig",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anomalyDetectionBaseline", GoGetter: "AnomalyDetectionBaseline"},
 			_jsii_.MemberProperty{JsiiProperty: "anomalyDetectionBaselineInput", GoGetter: "AnomalyDetectionBaselineInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,7 +215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "categoricalThresholdConfig", GoGetter: "CategoricalThresholdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "categoricalThresholdConfigInput", GoGetter: "CategoricalThresholdConfigInput"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeouts",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeaturestoreEntitytypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeaturestoreEntitytypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

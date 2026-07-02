@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryTableRangePartitioningRangeOutputReferenceParameters(ter
 
 	return nil
 }
-

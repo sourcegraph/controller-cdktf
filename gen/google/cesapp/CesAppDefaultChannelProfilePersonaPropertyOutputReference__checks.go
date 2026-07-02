@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfilePersonaPropertyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppDefaultChannelProfilePersonaPropertyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppDefaultChannelProfilePersonaPropertyOutputReferenceParamet
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ComputeWireGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeWireGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required cross site network to which wire group belongs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#cross_site_network ComputeWireGroup#cross_site_network}
@@ -36,7 +36,7 @@ type ComputeWireGroupConfig struct {
 	// Indicates whether the wire group is administratively enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#admin_enabled ComputeWireGroup#admin_enabled}
-	AdminEnabled interface{} `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
+	AdminEnabled any `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#description ComputeWireGroup#description}
@@ -44,7 +44,7 @@ type ComputeWireGroupConfig struct {
 	// endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#endpoints ComputeWireGroup#endpoints}
-	Endpoints interface{} `field:"optional" json:"endpoints" yaml:"endpoints"`
+	Endpoints any `field:"optional" json:"endpoints" yaml:"endpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#id ComputeWireGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -61,4 +61,3 @@ type ComputeWireGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_wire_group#wire_properties ComputeWireGroup#wire_properties}
 	WireProperties *ComputeWireGroupWireProperties `field:"optional" json:"wireProperties" yaml:"wireProperties"`
 }
-

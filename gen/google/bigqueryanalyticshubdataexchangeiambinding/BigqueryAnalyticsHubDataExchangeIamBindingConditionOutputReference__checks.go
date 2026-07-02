@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBindingConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReferen
 
 	return nil
 }
-

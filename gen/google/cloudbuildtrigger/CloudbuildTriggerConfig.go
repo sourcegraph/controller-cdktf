@@ -6,9 +6,9 @@ import (
 
 type CloudbuildTriggerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudbuildTriggerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// approval_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#approval_config CloudbuildTrigger#approval_config}
@@ -42,7 +42,7 @@ type CloudbuildTriggerConfig struct {
 	// Whether the trigger is disabled or not. If true, the trigger will never result in a build.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#disabled CloudbuildTrigger#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Path, from the source root, to a file whose contents is used for the template.
 	//
 	// Either a filename or build template must be provided. Set this only when using trigger_template or github.
@@ -150,4 +150,3 @@ type CloudbuildTriggerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#webhook_config CloudbuildTrigger#webhook_config}
 	WebhookConfig *CloudbuildTriggerWebhookConfig `field:"optional" json:"webhookConfig" yaml:"webhookConfig"`
 }
-

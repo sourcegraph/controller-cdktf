@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInstanceGroupManagerStatusOutputReferenceParameters(terra
 
 	return nil
 }
-

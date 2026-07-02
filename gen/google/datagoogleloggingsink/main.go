@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink",
-		reflect.TypeOf((*DataGoogleLoggingSink)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryOptions", GoGetter: "BigqueryOptions"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLoggingSink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,11 +63,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptions",
-		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptions)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkBigqueryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
-		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptionsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkBigqueryOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsOutputReference",
-		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkBigqueryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTables", GoGetter: "UsePartitionedTables"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,15 +121,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig",
-		reflect.TypeOf((*DataGoogleLoggingSinkConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusions",
-		reflect.TypeOf((*DataGoogleLoggingSinkExclusions)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkExclusions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
-		reflect.TypeOf((*DataGoogleLoggingSinkExclusionsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkExclusionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLoggingSinkExclusionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -150,7 +150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsOutputReference",
-		reflect.TypeOf((*DataGoogleLoggingSinkExclusionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLoggingSinkExclusionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLoggingSinkExclusionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

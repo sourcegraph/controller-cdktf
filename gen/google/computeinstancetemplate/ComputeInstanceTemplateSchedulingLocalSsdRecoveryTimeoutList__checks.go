@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutListPara
 
 	return nil
 }
-

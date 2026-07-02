@@ -1,6 +1,5 @@
 package osconfigv2policyorchestratorforfolder
 
-
 type OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignmentV1Payload struct {
 	// instance_filter block.
 	//
@@ -9,7 +8,7 @@ type OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignment
 	// os_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#os_policies OsConfigV2PolicyOrchestratorForFolder#os_policies}
-	OsPolicies interface{} `field:"required" json:"osPolicies" yaml:"osPolicies"`
+	OsPolicies any `field:"required" json:"osPolicies" yaml:"osPolicies"`
 	// rollout block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#rollout OsConfigV2PolicyOrchestratorForFolder#rollout}
@@ -28,4 +27,3 @@ type OsConfigV2PolicyOrchestratorForFolderOrchestratedResourceOsPolicyAssignment
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator_for_folder#name OsConfigV2PolicyOrchestratorForFolder#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

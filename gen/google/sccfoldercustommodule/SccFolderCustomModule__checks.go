@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccFolderCustomModule) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (s *jsiiProxy_SccFolderCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccFolderCustomModule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccFolderCustomModule) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (s *jsiiProxy_SccFolderCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccFolderCustomModule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSccFolderCustomModule_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateSccFolderCustomModule_IsConstructParameters(x interface{}) error {
+func validateSccFolderCustomModule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSccFolderCustomModule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSccFolderCustomModule_IsTerraformElementParameters(x interface{}) error {
+func validateSccFolderCustomModule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSccFolderCustomModule_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateSccFolderCustomModule_IsTerraformResourceParameters(x interface{}) error {
+func validateSccFolderCustomModule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSccFolderCustomModule_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderCustomModule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderCustomModule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SccFolderCustomModule) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderCustomModule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderCustomModule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_SccFolderCustomModule) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderCustomModule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccFolderCustomModule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewSccFolderCustomModuleParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRolloutOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentRolloutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentRolloutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewOsConfigPatchDeploymentRolloutOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunDomainMappingStatusConditionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunDomainMappingStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunDomainMappingStatusConditionsOutputReferenceParameters(t
 
 	return nil
 }
-

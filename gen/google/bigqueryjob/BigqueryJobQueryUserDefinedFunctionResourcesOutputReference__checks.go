@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigqueryJobQueryUserDefinedFunctionResourcesOutputReferenceParam
 
 	return nil
 }
-

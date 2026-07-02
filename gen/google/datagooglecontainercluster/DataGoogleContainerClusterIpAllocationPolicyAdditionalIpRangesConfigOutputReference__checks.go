@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRange
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesCo
 
 	return nil
 }
-

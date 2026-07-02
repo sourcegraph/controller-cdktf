@@ -19,7 +19,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateAddMoveTargetParameters
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateOracleDatabaseExadbVmCluster_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateOracleDatabaseExadbVmCluster_IsConstructParameters(x interface{}) error {
+func validateOracleDatabaseExadbVmCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateOracleDatabaseExadbVmCluster_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateOracleDatabaseExadbVmCluster_IsTerraformElementParameters(x interface{}) error {
+func validateOracleDatabaseExadbVmCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateOracleDatabaseExadbVmCluster_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateOracleDatabaseExadbVmCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateOracleDatabaseExadbVmCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetBackupOdbSubnetParam
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewOracleDatabaseExadbVmClusterParameters(scope constructs.Construc
 
 	return nil
 }
-

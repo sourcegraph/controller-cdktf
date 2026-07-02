@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCertificateManagerTrustConfigAllowlistedCertificatesOutputRefere
 
 	return nil
 }
-

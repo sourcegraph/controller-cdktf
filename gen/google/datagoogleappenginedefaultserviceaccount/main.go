@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
-		reflect.TypeOf((*DataGoogleAppEngineDefaultServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAppEngineDefaultServiceAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAppEngineDefaultServiceAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccountConfig",
-		reflect.TypeOf((*DataGoogleAppEngineDefaultServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAppEngineDefaultServiceAccountConfig](),
 	)
 }

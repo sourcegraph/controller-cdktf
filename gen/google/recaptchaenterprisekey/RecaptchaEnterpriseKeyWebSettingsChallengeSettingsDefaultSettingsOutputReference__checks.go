@@ -98,7 +98,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsDefaultSett
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsDefaultSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsChallengeSettingsDefaultSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRecaptchaEnterpriseKeyWebSettingsChallengeSettingsDefaultSetting
 
 	return nil
 }
-

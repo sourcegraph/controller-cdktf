@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewOsLoginSshPublicKeyTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

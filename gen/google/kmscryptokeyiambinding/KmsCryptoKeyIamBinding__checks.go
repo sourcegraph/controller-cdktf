@@ -19,7 +19,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateKmsCryptoKeyIamBinding_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateKmsCryptoKeyIamBinding_IsConstructParameters(x interface{}) error {
+func validateKmsCryptoKeyIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateKmsCryptoKeyIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsCryptoKeyIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateKmsCryptoKeyIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateKmsCryptoKeyIamBinding_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetMembersParameters(val *[]*
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewKmsCryptoKeyIamBindingParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

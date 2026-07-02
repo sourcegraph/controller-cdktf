@@ -12,12 +12,12 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network google_compute_network}.
 type ComputeNetwork interface {
 	cdktf.TerraformResource
-	AutoCreateSubnetworks() interface{}
-	SetAutoCreateSubnetworks(val interface{})
-	AutoCreateSubnetworksInput() interface{}
-	BgpAlwaysCompareMed() interface{}
-	SetBgpAlwaysCompareMed(val interface{})
-	BgpAlwaysCompareMedInput() interface{}
+	AutoCreateSubnetworks() any
+	SetAutoCreateSubnetworks(val any)
+	AutoCreateSubnetworksInput() any
+	BgpAlwaysCompareMed() any
+	SetBgpAlwaysCompareMed(val any)
+	BgpAlwaysCompareMedInput() any
 	BgpBestPathSelectionMode() *string
 	SetBgpBestPathSelectionMode(val *string)
 	BgpBestPathSelectionModeInput() *string
@@ -27,21 +27,21 @@ type ComputeNetwork interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeleteBgpAlwaysCompareMed() interface{}
-	SetDeleteBgpAlwaysCompareMed(val interface{})
-	DeleteBgpAlwaysCompareMedInput() interface{}
-	DeleteDefaultRoutesOnCreate() interface{}
-	SetDeleteDefaultRoutesOnCreate(val interface{})
-	DeleteDefaultRoutesOnCreateInput() interface{}
+	SetCount(val any)
+	DeleteBgpAlwaysCompareMed() any
+	SetDeleteBgpAlwaysCompareMed(val any)
+	DeleteBgpAlwaysCompareMedInput() any
+	DeleteDefaultRoutesOnCreate() any
+	SetDeleteDefaultRoutesOnCreate(val any)
+	DeleteDefaultRoutesOnCreateInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,9 +49,9 @@ type ComputeNetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	EnableUlaInternalIpv6() interface{}
-	SetEnableUlaInternalIpv6(val interface{})
-	EnableUlaInternalIpv6Input() interface{}
+	EnableUlaInternalIpv6() any
+	SetEnableUlaInternalIpv6(val any)
+	EnableUlaInternalIpv6Input() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -97,11 +97,11 @@ type ComputeNetwork interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoutingMode() *string
 	SetRoutingMode(val *string)
 	RoutingModeInput() *string
@@ -109,18 +109,18 @@ type ComputeNetwork interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeNetworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type ComputeNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,7 +150,7 @@ type ComputeNetwork interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -179,17 +179,17 @@ type ComputeNetwork interface {
 	ResetProject()
 	ResetRoutingMode()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeNetwork
@@ -197,8 +197,8 @@ type jsiiProxy_ComputeNetwork struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCreateSubnetworks",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworks() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCreateSubnetworksInput",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ComputeNetwork) AutoCreateSubnetworksInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) BgpAlwaysCompareMed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) BgpAlwaysCompareMed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bgpAlwaysCompareMed",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ComputeNetwork) BgpAlwaysCompareMed() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) BgpAlwaysCompareMedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) BgpAlwaysCompareMedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bgpAlwaysCompareMedInput",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_ComputeNetwork) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_ComputeNetwork) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeNetwork) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_ComputeNetwork) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_ComputeNetwork) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteBgpAlwaysCompareMed",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMed() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteBgpAlwaysCompareMedInput",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMedInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) DeleteDefaultRoutesOnCreate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) DeleteDefaultRoutesOnCreate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteDefaultRoutesOnCreate",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_ComputeNetwork) DeleteDefaultRoutesOnCreate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) DeleteDefaultRoutesOnCreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) DeleteDefaultRoutesOnCreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteDefaultRoutesOnCreateInput",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ComputeNetwork) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) EnableUlaInternalIpv6() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) EnableUlaInternalIpv6() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUlaInternalIpv6",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_ComputeNetwork) EnableUlaInternalIpv6() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) EnableUlaInternalIpv6Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) EnableUlaInternalIpv6Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUlaInternalIpv6Input",
@@ -657,8 +657,8 @@ func (j *jsiiProxy_ComputeNetwork) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeNetwork) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_ComputeNetwork) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_ComputeNetwork) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeNetwork) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -747,8 +747,8 @@ func (j *jsiiProxy_ComputeNetwork) Timeouts() ComputeNetworkTimeoutsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -756,7 +756,6 @@ func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNetworkConfig) ComputeNetwork {
@@ -769,7 +768,7 @@ func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -782,12 +781,12 @@ func NewComputeNetwork_Override(c ComputeNetwork, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetAutoCreateSubnetworks(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetAutoCreateSubnetworks(val any) {
 	if err := j.validateSetAutoCreateSubnetworksParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ComputeNetwork)SetAutoCreateSubnetworks(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetBgpAlwaysCompareMed(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetBgpAlwaysCompareMed(val any) {
 	if err := j.validateSetBgpAlwaysCompareMedParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ComputeNetwork)SetBgpAlwaysCompareMed(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetBgpBestPathSelectionMode(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetBgpBestPathSelectionMode(val *string) {
 	if err := j.validateSetBgpBestPathSelectionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_ComputeNetwork)SetBgpBestPathSelectionMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetBgpInterRegionCost(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetBgpInterRegionCost(val *string) {
 	if err := j.validateSetBgpInterRegionCostParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_ComputeNetwork)SetBgpInterRegionCost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_ComputeNetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_ComputeNetwork)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetDeleteBgpAlwaysCompareMed(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetDeleteBgpAlwaysCompareMed(val any) {
 	if err := j.validateSetDeleteBgpAlwaysCompareMedParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_ComputeNetwork)SetDeleteBgpAlwaysCompareMed(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetDeleteDefaultRoutesOnCreate(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetDeleteDefaultRoutesOnCreate(val any) {
 	if err := j.validateSetDeleteDefaultRoutesOnCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_ComputeNetwork)SetDeleteDefaultRoutesOnCreate(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeNetwork) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -883,7 +882,7 @@ func (j *jsiiProxy_ComputeNetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -894,7 +893,7 @@ func (j *jsiiProxy_ComputeNetwork)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetEnableUlaInternalIpv6(val interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetEnableUlaInternalIpv6(val any) {
 	if err := j.validateSetEnableUlaInternalIpv6Parameters(val); err != nil {
 		panic(err)
 	}
@@ -905,7 +904,7 @@ func (j *jsiiProxy_ComputeNetwork)SetEnableUlaInternalIpv6(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeNetwork) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -913,7 +912,7 @@ func (j *jsiiProxy_ComputeNetwork)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetId(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_ComputeNetwork)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetInternalIpv6Range(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetInternalIpv6Range(val *string) {
 	if err := j.validateSetInternalIpv6RangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -935,7 +934,7 @@ func (j *jsiiProxy_ComputeNetwork)SetInternalIpv6Range(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeNetwork) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -946,7 +945,7 @@ func (j *jsiiProxy_ComputeNetwork)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetMtu(val *float64) {
+func (j *jsiiProxy_ComputeNetwork) SetMtu(val *float64) {
 	if err := j.validateSetMtuParameters(val); err != nil {
 		panic(err)
 	}
@@ -957,7 +956,7 @@ func (j *jsiiProxy_ComputeNetwork)SetMtu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetName(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -968,7 +967,7 @@ func (j *jsiiProxy_ComputeNetwork)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetNetworkFirewallPolicyEnforcementOrder(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetNetworkFirewallPolicyEnforcementOrder(val *string) {
 	if err := j.validateSetNetworkFirewallPolicyEnforcementOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -979,7 +978,7 @@ func (j *jsiiProxy_ComputeNetwork)SetNetworkFirewallPolicyEnforcementOrder(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetNetworkProfile(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetNetworkProfile(val *string) {
 	if err := j.validateSetNetworkProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -990,7 +989,7 @@ func (j *jsiiProxy_ComputeNetwork)SetNetworkProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetProject(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func (j *jsiiProxy_ComputeNetwork)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeNetwork) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_ComputeNetwork)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeNetwork) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_ComputeNetwork)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetwork)SetRoutingMode(val *string) {
+func (j *jsiiProxy_ComputeNetwork) SetRoutingMode(val *string) {
 	if err := j.validateSetRoutingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1043,7 +1042,7 @@ func ComputeNetwork_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func ComputeNetwork_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeNetwork_IsConstruct(x interface{}) *bool {
+func ComputeNetwork_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNetwork_IsConstructParameters(x); err != nil {
@@ -1078,7 +1077,7 @@ func ComputeNetwork_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func ComputeNetwork_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeNetwork_IsTerraformElement(x interface{}) *bool {
+func ComputeNetwork_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNetwork_IsTerraformElementParameters(x); err != nil {
@@ -1097,7 +1096,7 @@ func ComputeNetwork_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1105,7 +1104,7 @@ func ComputeNetwork_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeNetwork_IsTerraformResource(x interface{}) *bool {
+func ComputeNetwork_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNetwork_IsTerraformResourceParameters(x); err != nil {
@@ -1116,7 +1115,7 @@ func ComputeNetwork_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1141,31 +1140,31 @@ func (c *jsiiProxy_ComputeNetwork) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeNetwork) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeNetwork) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,7 +1180,7 @@ func (c *jsiiProxy_ComputeNetwork) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1197,7 +1196,7 @@ func (c *jsiiProxy_ComputeNetwork) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,7 +1212,7 @@ func (c *jsiiProxy_ComputeNetwork) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1229,7 +1228,7 @@ func (c *jsiiProxy_ComputeNetwork) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1245,7 +1244,7 @@ func (c *jsiiProxy_ComputeNetwork) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1261,7 +1260,7 @@ func (c *jsiiProxy_ComputeNetwork) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func (c *jsiiProxy_ComputeNetwork) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1293,15 +1292,15 @@ func (c *jsiiProxy_ComputeNetwork) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetwork) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNetwork) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1320,7 +1319,7 @@ func (c *jsiiProxy_ComputeNetwork) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1333,7 +1332,7 @@ func (c *jsiiProxy_ComputeNetwork) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1347,18 +1346,18 @@ func (c *jsiiProxy_ComputeNetwork) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeNetwork) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeNetwork) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1369,7 +1368,7 @@ func (c *jsiiProxy_ComputeNetwork) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1380,7 +1379,7 @@ func (c *jsiiProxy_ComputeNetwork) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1391,7 +1390,7 @@ func (c *jsiiProxy_ComputeNetwork) PutParams(value *ComputeNetworkParams) {
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1402,7 +1401,7 @@ func (c *jsiiProxy_ComputeNetwork) PutTimeouts(value *ComputeNetworkTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1550,8 +1549,8 @@ func (c *jsiiProxy_ComputeNetwork) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeNetwork) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeNetwork) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1563,8 +1562,8 @@ func (c *jsiiProxy_ComputeNetwork) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetwork) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeNetwork) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1576,8 +1575,8 @@ func (c *jsiiProxy_ComputeNetwork) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetwork) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNetwork) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1589,8 +1588,8 @@ func (c *jsiiProxy_ComputeNetwork) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetwork) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNetwork) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1615,8 +1614,8 @@ func (c *jsiiProxy_ComputeNetwork) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetwork) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNetwork) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1627,4 +1626,3 @@ func (c *jsiiProxy_ComputeNetwork) ToTerraform() interface{} {
 
 	return returns
 }
-

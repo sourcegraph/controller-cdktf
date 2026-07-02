@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleArtifactRegistryMavenArtifacts_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryMavenArtifacts_IsConstructParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryMavenArtifacts_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleArtifactRegistryMavenArtifacts_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleArtifactRegistryMavenArtifacts_IsTerraformElementParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleArtifactRegistryMavenArtifactsParameters(scope constru
 
 	return nil
 }
-

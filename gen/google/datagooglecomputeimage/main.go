@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleComputeImage.DataGoogleComputeImage",
-		reflect.TypeOf((*DataGoogleComputeImage)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeImage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveSizeBytes", GoGetter: "ArchiveSizeBytes"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeImage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -86,6 +86,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleComputeImage.DataGoogleComputeImageConfig",
-		reflect.TypeOf((*DataGoogleComputeImageConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeImageConfig](),
 	)
 }

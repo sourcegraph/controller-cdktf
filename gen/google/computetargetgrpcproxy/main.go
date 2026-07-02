@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxy",
-		reflect.TypeOf((*ComputeTargetGrpcProxy)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetGrpcProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateForProxyless", GoGetter: "ValidateForProxyless"},
 			_jsii_.MemberProperty{JsiiProperty: "validateForProxylessInput", GoGetter: "ValidateForProxylessInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetGrpcProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyConfig",
-		reflect.TypeOf((*ComputeTargetGrpcProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetGrpcProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeouts",
-		reflect.TypeOf((*ComputeTargetGrpcProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetGrpcProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetGrpcProxy.ComputeTargetGrpcProxyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeTargetGrpcProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetGrpcProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetGrpcProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

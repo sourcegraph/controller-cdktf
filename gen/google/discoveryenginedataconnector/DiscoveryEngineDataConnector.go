@@ -15,9 +15,9 @@ type DiscoveryEngineDataConnector interface {
 	ActionConfig() DiscoveryEngineDataConnectorActionConfigOutputReference
 	ActionConfigInput() *DiscoveryEngineDataConnectorActionConfig
 	ActionState() *string
-	AutoRunDisabled() interface{}
-	SetAutoRunDisabled(val interface{})
-	AutoRunDisabledInput() interface{}
+	AutoRunDisabled() any
+	SetAutoRunDisabled(val any)
+	AutoRunDisabledInput() any
 	BapConfig() DiscoveryEngineDataConnectorBapConfigOutputReference
 	BapConfigInput() *DiscoveryEngineDataConnectorBapConfig
 	BlockingReasons() *[]*string
@@ -30,19 +30,19 @@ type DiscoveryEngineDataConnector interface {
 	SetCollectionId(val *string)
 	CollectionIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectorModes() *[]*string
 	SetConnectorModes(val *[]*string)
 	ConnectorModesInput() *[]*string
 	ConnectorType() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataSource() *string
 	SetDataSource(val *string)
@@ -55,9 +55,9 @@ type DiscoveryEngineDataConnector interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DestinationConfigs() DiscoveryEngineDataConnectorDestinationConfigsList
-	DestinationConfigsInput() interface{}
+	DestinationConfigsInput() any
 	Entities() DiscoveryEngineDataConnectorEntitiesList
-	EntitiesInput() interface{}
+	EntitiesInput() any
 	Errors() DiscoveryEngineDataConnectorErrorsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -73,9 +73,9 @@ type DiscoveryEngineDataConnector interface {
 	IncrementalRefreshInterval() *string
 	SetIncrementalRefreshInterval(val *string)
 	IncrementalRefreshIntervalInput() *string
-	IncrementalSyncDisabled() interface{}
-	SetIncrementalSyncDisabled(val interface{})
-	IncrementalSyncDisabledInput() interface{}
+	IncrementalSyncDisabled() any
+	SetIncrementalSyncDisabled(val any)
+	IncrementalSyncDisabledInput() any
 	JsonParams() *string
 	SetJsonParams(val *string)
 	JsonParamsInput() *string
@@ -106,39 +106,39 @@ type DiscoveryEngineDataConnector interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RealtimeState() *string
 	RefreshInterval() *string
 	SetRefreshInterval(val *string)
 	RefreshIntervalInput() *string
 	State() *string
 	StaticIpAddresses() *[]*string
-	StaticIpEnabled() interface{}
-	SetStaticIpEnabled(val interface{})
-	StaticIpEnabledInput() interface{}
+	StaticIpEnabled() any
+	SetStaticIpEnabled(val any)
+	StaticIpEnabledInput() any
 	SyncMode() *string
 	SetSyncMode(val *string)
 	SyncModeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DiscoveryEngineDataConnectorTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -156,7 +156,7 @@ type DiscoveryEngineDataConnector interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -168,7 +168,7 @@ type DiscoveryEngineDataConnector interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -177,8 +177,8 @@ type DiscoveryEngineDataConnector interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutActionConfig(value *DiscoveryEngineDataConnectorActionConfig)
 	PutBapConfig(value *DiscoveryEngineDataConnectorBapConfig)
-	PutDestinationConfigs(value interface{})
-	PutEntities(value interface{})
+	PutDestinationConfigs(value any)
+	PutEntities(value any)
 	PutTimeouts(value *DiscoveryEngineDataConnectorTimeouts)
 	ResetActionConfig()
 	ResetAutoRunDisabled()
@@ -200,17 +200,17 @@ type DiscoveryEngineDataConnector interface {
 	ResetStaticIpEnabled()
 	ResetSyncMode()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DiscoveryEngineDataConnector
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) ActionState() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) AutoRunDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) AutoRunDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRunDisabled",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) AutoRunDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) AutoRunDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) AutoRunDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRunDisabledInput",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) CollectionIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) ConnectorType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) DestinationConfigs() DiscoveryE
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) DestinationConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) DestinationConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"destinationConfigsInput",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) Entities() DiscoveryEngineDataC
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) EntitiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) EntitiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"entitiesInput",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalRefreshIntervalInput
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalSyncDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalSyncDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incrementalSyncDisabled",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalSyncDisabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalSyncDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) IncrementalSyncDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incrementalSyncDisabledInput",
@@ -778,8 +778,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -788,8 +788,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -848,8 +848,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpAddresses() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticIpEnabled",
@@ -858,8 +858,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) StaticIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"staticIpEnabledInput",
@@ -898,8 +898,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -928,8 +928,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) Timeouts() DiscoveryEngineDataC
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnector) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -948,7 +948,6 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector google_discovery_engine_data_connector} Resource.
 func NewDiscoveryEngineDataConnector(scope constructs.Construct, id *string, config *DiscoveryEngineDataConnectorConfig) DiscoveryEngineDataConnector {
 	_init_.Initialize()
@@ -960,7 +959,7 @@ func NewDiscoveryEngineDataConnector(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -973,12 +972,12 @@ func NewDiscoveryEngineDataConnector_Override(d DiscoveryEngineDataConnector, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetAutoRunDisabled(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetAutoRunDisabled(val any) {
 	if err := j.validateSetAutoRunDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetAutoRunDisabled(val interface
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCollectionDisplayName(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetCollectionDisplayName(val *string) {
 	if err := j.validateSetCollectionDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCollectionDisplayName(val *st
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCollectionId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetCollectionId(val *string) {
 	if err := j.validateSetCollectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCollectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetConnection(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetConnectorModes(val *[]*string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetConnectorModes(val *[]*string) {
 	if err := j.validateSetConnectorModesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetConnectorModes(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCount(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDataSource(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetDataSource(val *string) {
 	if err := j.validateSetDataSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDataSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDataSourceVersion(val *float64) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetDataSourceVersion(val *float64) {
 	if err := j.validateSetDataSourceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDataSourceVersion(val *float6
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetIncrementalRefreshInterval(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetIncrementalRefreshInterval(val *string) {
 	if err := j.validateSetIncrementalRefreshIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetIncrementalRefreshInterval(va
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetIncrementalSyncDisabled(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetIncrementalSyncDisabled(val any) {
 	if err := j.validateSetIncrementalSyncDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetIncrementalSyncDisabled(val i
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetJsonParams(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetJsonParams(val *string) {
 	if err := j.validateSetJsonParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetJsonParams(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetLocation(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetParams(val *map[string]*string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetParams(val *map[string]*string) {
 	if err := j.validateSetParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetParams(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProject(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetRefreshInterval(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetRefreshInterval(val *string) {
 	if err := j.validateSetRefreshIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetRefreshInterval(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetStaticIpEnabled(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetStaticIpEnabled(val any) {
 	if err := j.validateSetStaticIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector)SetStaticIpEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector)SetSyncMode(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) SetSyncMode(val *string) {
 	if err := j.validateSetSyncModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1245,7 +1244,7 @@ func DiscoveryEngineDataConnector_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1269,7 +1268,7 @@ func DiscoveryEngineDataConnector_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DiscoveryEngineDataConnector_IsConstruct(x interface{}) *bool {
+func DiscoveryEngineDataConnector_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineDataConnector_IsConstructParameters(x); err != nil {
@@ -1280,7 +1279,7 @@ func DiscoveryEngineDataConnector_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1288,7 +1287,7 @@ func DiscoveryEngineDataConnector_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineDataConnector_IsTerraformElement(x interface{}) *bool {
+func DiscoveryEngineDataConnector_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineDataConnector_IsTerraformElementParameters(x); err != nil {
@@ -1299,7 +1298,7 @@ func DiscoveryEngineDataConnector_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1307,7 +1306,7 @@ func DiscoveryEngineDataConnector_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineDataConnector_IsTerraformResource(x interface{}) *bool {
+func DiscoveryEngineDataConnector_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineDataConnector_IsTerraformResourceParameters(x); err != nil {
@@ -1318,7 +1317,7 @@ func DiscoveryEngineDataConnector_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1343,31 +1342,31 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineDataConnector) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineDataConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1383,7 +1382,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1399,7 +1398,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1415,7 +1414,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1431,7 +1430,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1447,7 +1446,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1463,7 +1462,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1479,7 +1478,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1495,15 +1494,15 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1522,7 +1521,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1535,7 +1534,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1549,18 +1548,18 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DiscoveryEngineDataConnector) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1571,7 +1570,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1582,7 +1581,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1593,7 +1592,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) PutActionConfig(value *Discover
 	_jsii_.InvokeVoid(
 		d,
 		"putActionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1604,29 +1603,29 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) PutBapConfig(value *DiscoveryEn
 	_jsii_.InvokeVoid(
 		d,
 		"putBapConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) PutDestinationConfigs(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineDataConnector) PutDestinationConfigs(value any) {
 	if err := d.validatePutDestinationConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDestinationConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) PutEntities(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineDataConnector) PutEntities(value any) {
 	if err := d.validatePutEntitiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putEntities",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1637,7 +1636,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) PutTimeouts(value *DiscoveryEng
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1785,8 +1784,8 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1798,8 +1797,8 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1811,8 +1810,8 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1824,8 +1823,8 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1850,8 +1849,8 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnector) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineDataConnector) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1862,4 +1861,3 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) ToTerraform() interface{} {
 
 	return returns
 }
-

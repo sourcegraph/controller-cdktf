@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherRouteRulesMatchRules struct {
 	// For satisfying the matchRule condition, the path of the request must exactly match the value specified in fullPathMatch after removing any query parameters and anchor that may be part of the original URL.
 	//
@@ -13,15 +12,15 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRules struct {
 	// header_matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#header_matches ComputeRegionUrlMap#header_matches}
-	HeaderMatches interface{} `field:"optional" json:"headerMatches" yaml:"headerMatches"`
+	HeaderMatches any `field:"optional" json:"headerMatches" yaml:"headerMatches"`
 	// Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#ignore_case ComputeRegionUrlMap#ignore_case}
-	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
+	IgnoreCase any `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// metadata_filters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#metadata_filters ComputeRegionUrlMap#metadata_filters}
-	MetadataFilters interface{} `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
+	MetadataFilters any `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
 	// For satisfying the matchRule condition, the path of the request must match the wildcard pattern specified in pathTemplateMatch after removing any query parameters and anchor that may be part of the original URL.
 	//
 	// pathTemplateMatch must be between 1 and 255 characters
@@ -42,7 +41,7 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRules struct {
 	// query_parameter_matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#query_parameter_matches ComputeRegionUrlMap#query_parameter_matches}
-	QueryParameterMatches interface{} `field:"optional" json:"queryParameterMatches" yaml:"queryParameterMatches"`
+	QueryParameterMatches any `field:"optional" json:"queryParameterMatches" yaml:"queryParameterMatches"`
 	// For satisfying the matchRule condition, the path of the request must satisfy the regular expression specified in regexMatch after removing any query parameters and anchor supplied with the original URL.
 	//
 	// For regular expression grammar please
@@ -52,4 +51,3 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#regex_match ComputeRegionUrlMap#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 }
-

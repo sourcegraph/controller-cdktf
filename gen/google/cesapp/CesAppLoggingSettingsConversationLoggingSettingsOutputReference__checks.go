@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetDisableConversationLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetDisableConversationLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewCesAppLoggingSettingsConversationLoggingSettingsOutputReferenceP
 
 	return nil
 }
-

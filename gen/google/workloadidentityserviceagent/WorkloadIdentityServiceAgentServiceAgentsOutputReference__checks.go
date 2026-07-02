@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkloadIdentityServiceAgentServiceAgentsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkloadIdentityServiceAgentServiceAgentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkloadIdentityServiceAgentServiceAgentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkloadIdentityServiceAgentServiceAgentsOutputReferenceParamete
 
 	return nil
 }
-

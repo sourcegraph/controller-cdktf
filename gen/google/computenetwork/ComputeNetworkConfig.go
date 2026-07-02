@@ -6,9 +6,9 @@ import (
 
 type ComputeNetworkConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeNetworkConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -37,13 +37,13 @@ type ComputeNetworkConfig struct {
 	// the user can explicitly connect subnetwork resources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#auto_create_subnetworks ComputeNetwork#auto_create_subnetworks}
-	AutoCreateSubnetworks interface{} `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
+	AutoCreateSubnetworks any `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
 	// Enables/disables the comparison of MED across routes with different Neighbor ASNs.
 	//
 	// This value can only be set if the --bgp-best-path-selection-mode is STANDARD
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#bgp_always_compare_med ComputeNetwork#bgp_always_compare_med}
-	BgpAlwaysCompareMed interface{} `field:"optional" json:"bgpAlwaysCompareMed" yaml:"bgpAlwaysCompareMed"`
+	BgpAlwaysCompareMed any `field:"optional" json:"bgpAlwaysCompareMed" yaml:"bgpAlwaysCompareMed"`
 	// The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#bgp_best_path_selection_mode ComputeNetwork#bgp_best_path_selection_mode}
@@ -57,11 +57,11 @@ type ComputeNetworkConfig struct {
 	// If set to 'false' (the default), 'bgp_always_compare_med' will be set to the value specified in the configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#delete_bgp_always_compare_med ComputeNetwork#delete_bgp_always_compare_med}
-	DeleteBgpAlwaysCompareMed interface{} `field:"optional" json:"deleteBgpAlwaysCompareMed" yaml:"deleteBgpAlwaysCompareMed"`
+	DeleteBgpAlwaysCompareMed any `field:"optional" json:"deleteBgpAlwaysCompareMed" yaml:"deleteBgpAlwaysCompareMed"`
 	// If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#delete_default_routes_on_create ComputeNetwork#delete_default_routes_on_create}
-	DeleteDefaultRoutesOnCreate interface{} `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
+	DeleteDefaultRoutesOnCreate any `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
 	// An optional description of this resource. The resource must be recreated to modify this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#description ComputeNetwork#description}
@@ -69,7 +69,7 @@ type ComputeNetworkConfig struct {
 	// Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#enable_ula_internal_ipv6 ComputeNetwork#enable_ula_internal_ipv6}
-	EnableUlaInternalIpv6 interface{} `field:"optional" json:"enableUlaInternalIpv6" yaml:"enableUlaInternalIpv6"`
+	EnableUlaInternalIpv6 any `field:"optional" json:"enableUlaInternalIpv6" yaml:"enableUlaInternalIpv6"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#id ComputeNetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -128,4 +128,3 @@ type ComputeNetworkConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network#timeouts ComputeNetwork#timeouts}
 	Timeouts *ComputeNetworkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

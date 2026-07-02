@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingMetric) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetric) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingMetric) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingMetric) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetric) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingMetric) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateLoggingMetric_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateLoggingMetric_IsConstructParameters(x interface{}) error {
+func validateLoggingMetric_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateLoggingMetric_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoggingMetric_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingMetric_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateLoggingMetric_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoggingMetric_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingMetric_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LoggingMetric) validateSetBucketNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetric) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetric) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_LoggingMetric) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetric) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetric) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -383,7 +383,7 @@ func (j *jsiiProxy_LoggingMetric) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetric) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetric) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_LoggingMetric) validateSetProjectParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetric) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingMetric) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -523,4 +523,3 @@ func validateNewLoggingMetricParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeSubnetworkIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

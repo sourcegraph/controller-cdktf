@@ -90,7 +90,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validateInter
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validatePutSplitsParameters(value interface{}) error {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validatePutSplitsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewFirebaseAppHostingTrafficTargetOutputReferenceParameters(terrafo
 
 	return nil
 }
-

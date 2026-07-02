@@ -120,7 +120,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,4 +248,3 @@ func validateNewProjectOrganizationPolicyListPolicyOutputReferenceParameters(ter
 
 	return nil
 }
-

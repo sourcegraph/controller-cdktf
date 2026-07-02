@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigeeSecurityProfileV2ProfileAssessmentConfigsListParameters(te
 
 	return nil
 }
-

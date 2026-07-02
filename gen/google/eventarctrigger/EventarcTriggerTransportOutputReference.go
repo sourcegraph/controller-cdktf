@@ -12,9 +12,9 @@ type EventarcTriggerTransportOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type EventarcTriggerTransportOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type EventarcTriggerTransportOutputReference interface {
 	ResetPubsub()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_EventarcTriggerTransportOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewEventarcTriggerTransportOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcTriggerTransportOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewEventarcTriggerTransportOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewEventarcTriggerTransportOutputReference_Override(e EventarcTriggerTransp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetInternalValue(val *EventarcTriggerTransport) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) SetInternalValue(val *EventarcTriggerTransport) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) PutPubsub(value *Eve
 	_jsii_.InvokeVoid(
 		e,
 		"putPubsub",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) ResetPubsub() {
 	)
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) ToString() *string {
 
 	return returns
 }
-

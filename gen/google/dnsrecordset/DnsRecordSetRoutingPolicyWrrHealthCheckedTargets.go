@@ -1,6 +1,5 @@
 package dnsrecordset
 
-
 type DnsRecordSetRoutingPolicyWrrHealthCheckedTargets struct {
 	// The Internet IP addresses to be health checked.
 	//
@@ -9,6 +8,5 @@ type DnsRecordSetRoutingPolicyWrrHealthCheckedTargets struct {
 	// internal_load_balancers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
-	InternalLoadBalancers interface{} `field:"optional" json:"internalLoadBalancers" yaml:"internalLoadBalancers"`
+	InternalLoadBalancers any `field:"optional" json:"internalLoadBalancers" yaml:"internalLoadBalancers"`
 }
-

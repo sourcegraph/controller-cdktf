@@ -13,12 +13,12 @@ type ChronicleDashboardChartDashboardChartVisualizationOutputReference interface
 	Button() ChronicleDashboardChartDashboardChartVisualizationButtonOutputReference
 	ButtonInput() *ChronicleDashboardChartDashboardChartVisualizationButton
 	ColumnDefs() ChronicleDashboardChartDashboardChartVisualizationColumnDefsList
-	ColumnDefsInput() interface{}
+	ColumnDefsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,14 +39,14 @@ type ChronicleDashboardChartDashboardChartVisualizationOutputReference interface
 	InternalValue() *ChronicleDashboardChartDashboardChartVisualization
 	SetInternalValue(val *ChronicleDashboardChartDashboardChartVisualization)
 	Legends() ChronicleDashboardChartDashboardChartVisualizationLegendsList
-	LegendsInput() interface{}
+	LegendsInput() any
 	Markdown() ChronicleDashboardChartDashboardChartVisualizationMarkdownOutputReference
 	MarkdownInput() *ChronicleDashboardChartDashboardChartVisualizationMarkdown
 	Series() ChronicleDashboardChartDashboardChartVisualizationSeriesList
 	SeriesColumn() *[]*string
 	SetSeriesColumn(val *[]*string)
 	SeriesColumnInput() *[]*string
-	SeriesInput() interface{}
+	SeriesInput() any
 	TableConfig() ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference
 	TableConfigInput() *ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	// Experimental.
@@ -57,21 +57,21 @@ type ChronicleDashboardChartDashboardChartVisualizationOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	ThresholdColoringEnabled() interface{}
-	SetThresholdColoringEnabled(val interface{})
-	ThresholdColoringEnabledInput() interface{}
+	ThresholdColoringEnabled() any
+	SetThresholdColoringEnabled(val any)
+	ThresholdColoringEnabledInput() any
 	Tooltip() ChronicleDashboardChartDashboardChartVisualizationTooltipOutputReference
 	TooltipInput() *ChronicleDashboardChartDashboardChartVisualizationTooltip
 	VisualMaps() ChronicleDashboardChartDashboardChartVisualizationVisualMapsList
-	VisualMapsInput() interface{}
+	VisualMapsInput() any
 	XAxes() ChronicleDashboardChartDashboardChartVisualizationXAxesList
-	XAxesInput() interface{}
+	XAxesInput() any
 	YAxes() ChronicleDashboardChartDashboardChartVisualizationYAxesList
-	YAxesInput() interface{}
+	YAxesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,16 +93,16 @@ type ChronicleDashboardChartDashboardChartVisualizationOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutButton(value *ChronicleDashboardChartDashboardChartVisualizationButton)
-	PutColumnDefs(value interface{})
+	PutColumnDefs(value any)
 	PutGoogleMapsConfig(value *ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfig)
-	PutLegends(value interface{})
+	PutLegends(value any)
 	PutMarkdown(value *ChronicleDashboardChartDashboardChartVisualizationMarkdown)
-	PutSeries(value interface{})
+	PutSeries(value any)
 	PutTableConfig(value *ChronicleDashboardChartDashboardChartVisualizationTableConfig)
 	PutTooltip(value *ChronicleDashboardChartDashboardChartVisualizationTooltip)
-	PutVisualMaps(value interface{})
-	PutXAxes(value interface{})
-	PutYAxes(value interface{})
+	PutVisualMaps(value any)
+	PutXAxes(value any)
+	PutYAxes(value any)
 	ResetButton()
 	ResetColumnDefs()
 	ResetGoogleMapsConfig()
@@ -119,7 +119,7 @@ type ChronicleDashboardChartDashboardChartVisualizationOutputReference interface
 	ResetYAxes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ColumnDefsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ColumnDefsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"columnDefsInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) LegendsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) LegendsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"legendsInput",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SeriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SeriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"seriesInput",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ThresholdColoringEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ThresholdColoringEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thresholdColoringEnabled",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ThresholdColoringEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) ThresholdColoringEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thresholdColoringEnabledInput",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) VisualMapsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) VisualMapsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"visualMapsInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) XAxesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) XAxesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"xAxesInput",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) YAxesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) YAxesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"yAxesInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 	return returns
 }
-
 
 func NewChronicleDashboardChartDashboardChartVisualizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartVisualizationOutputReference {
 	_init_.Initialize()
@@ -493,7 +492,7 @@ func NewChronicleDashboardChartDashboardChartVisualizationOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewChronicleDashboardChartDashboardChartVisualizationOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetGroupingType(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetGroupingType(val *string) {
 	if err := j.validateSetGroupingTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetInternalValue(val *ChronicleDashboardChartDashboardChartVisualization) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetInternalValue(val *ChronicleDashboardChartDashboardChartVisualization) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetSeriesColumn(val *[]*string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetSeriesColumn(val *[]*string) {
 	if err := j.validateSetSeriesColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference)SetThresholdColoringEnabled(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) SetThresholdColoringEnabled(val any) {
 	if err := j.validateSetThresholdColoringEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,16 +610,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -791,18 +790,18 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putButton",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutColumnDefs(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutColumnDefs(value any) {
 	if err := c.validatePutColumnDefsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putColumnDefs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,18 +812,18 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putGoogleMapsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutLegends(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutLegends(value any) {
 	if err := c.validatePutLegendsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLegends",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -835,18 +834,18 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putMarkdown",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutSeries(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutSeries(value any) {
 	if err := c.validatePutSeriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSeries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putTableConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,40 +867,40 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putTooltip",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutVisualMaps(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutVisualMaps(value any) {
 	if err := c.validatePutVisualMapsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVisualMaps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutXAxes(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutXAxes(value any) {
 	if err := c.validatePutXAxesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putXAxes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutYAxes(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) PutYAxes(value any) {
 	if err := c.validatePutYAxesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putYAxes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,16 +1016,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 
 	return returns
 }
-

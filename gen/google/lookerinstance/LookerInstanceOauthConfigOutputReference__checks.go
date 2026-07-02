@@ -114,7 +114,7 @@ func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) validateSetClientSe
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLookerInstanceOauthConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

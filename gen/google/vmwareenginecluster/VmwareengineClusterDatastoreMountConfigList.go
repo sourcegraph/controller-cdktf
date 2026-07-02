@@ -17,8 +17,8 @@ type VmwareengineClusterDatastoreMountConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type VmwareengineClusterDatastoreMountConfigList interface {
 	Get(index *float64) VmwareengineClusterDatastoreMountConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewVmwareengineClusterDatastoreMountConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwareengineClusterDatastoreMountConfigList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewVmwareengineClusterDatastoreMountConfigList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewVmwareengineClusterDatastoreMountConfigList_Override(v VmwareengineClust
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) Get(index *float
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) ToString() *stri
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package computeinstancefromtemplate
 
-
 type ComputeInstanceFromTemplateBootDiskInitializeParams struct {
 	// The architecture of the disk. One of "X86_64" or "ARM64".
 	//
@@ -9,7 +8,7 @@ type ComputeInstanceFromTemplateBootDiskInitializeParams struct {
 	// A flag to enable confidential compute mode on boot disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#enable_confidential_compute ComputeInstanceFromTemplate#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 	// The image from which this disk was initialised.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#image ComputeInstanceFromTemplate#image}
@@ -71,4 +70,3 @@ type ComputeInstanceFromTemplateBootDiskInitializeParams struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#type ComputeInstanceFromTemplate#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

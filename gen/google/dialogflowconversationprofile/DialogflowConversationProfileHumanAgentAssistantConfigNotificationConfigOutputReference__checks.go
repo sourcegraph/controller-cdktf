@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigNotific
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowConversationProfileHumanAgentAssistantConfigNotificati
 
 	return nil
 }
-

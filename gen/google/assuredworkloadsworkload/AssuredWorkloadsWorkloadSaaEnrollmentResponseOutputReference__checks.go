@@ -98,7 +98,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReferencePara
 
 	return nil
 }
-

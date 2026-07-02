@@ -158,7 +158,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetClassM
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -274,4 +274,3 @@ func validateNewVertexAiReasoningEngineSpecOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

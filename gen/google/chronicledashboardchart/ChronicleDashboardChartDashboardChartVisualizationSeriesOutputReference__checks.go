@@ -175,7 +175,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -320,7 +320,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetShowBackgroundParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetShowBackgroundParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetShowSymbolParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesOutputReference) validateSetShowSymbolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -403,4 +403,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationSeriesOutputRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApphubServiceProjectAttachmentTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

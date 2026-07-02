@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecureSourceManagerHookTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataCatalogTaxonomyIamBindingConditionOutputReferenceParameters(
 
 	return nil
 }
-

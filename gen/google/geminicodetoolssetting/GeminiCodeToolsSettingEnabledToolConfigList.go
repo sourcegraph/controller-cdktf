@@ -17,8 +17,8 @@ type GeminiCodeToolsSettingEnabledToolConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GeminiCodeToolsSettingEnabledToolConfigList interface {
 	Get(index *float64) GeminiCodeToolsSettingEnabledToolConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewGeminiCodeToolsSettingEnabledToolConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiCodeToolsSettingEnabledToolConfigList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGeminiCodeToolsSettingEnabledToolConfigList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGeminiCodeToolsSettingEnabledToolConfigList_Override(g GeminiCodeToolsSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) Get(index *float
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) ToString() *stri
 
 	return returns
 }
-

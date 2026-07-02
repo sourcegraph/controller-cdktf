@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewIdentityPlatformConfigSignInPhoneNumberOutputReferenceParameters
 
 	return nil
 }
-

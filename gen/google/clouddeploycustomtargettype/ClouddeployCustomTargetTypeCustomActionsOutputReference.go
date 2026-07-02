@@ -12,9 +12,9 @@ type ClouddeployCustomTargetTypeCustomActionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type ClouddeployCustomTargetTypeCustomActionsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	IncludeSkaffoldModules() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList
-	IncludeSkaffoldModulesInput() interface{}
+	IncludeSkaffoldModulesInput() any
 	InternalValue() *ClouddeployCustomTargetTypeCustomActions
 	SetInternalValue(val *ClouddeployCustomTargetTypeCustomActions)
 	RenderAction() *string
@@ -48,7 +48,7 @@ type ClouddeployCustomTargetTypeCustomActionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type ClouddeployCustomTargetTypeCustomActionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIncludeSkaffoldModules(value interface{})
+	PutIncludeSkaffoldModules(value any)
 	ResetIncludeSkaffoldModules()
 	ResetRenderAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Incl
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) IncludeSkaffoldModulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) IncludeSkaffoldModulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSkaffoldModulesInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Terr
 	return returns
 }
 
-
 func NewClouddeployCustomTargetTypeCustomActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClouddeployCustomTargetTypeCustomActionsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewClouddeployCustomTargetTypeCustomActionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewClouddeployCustomTargetTypeCustomActionsOutputReference_Override(c Cloud
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetDeployAction(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetDeployAction(val *string) {
 	if err := j.validateSetDeployActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetDe
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetInternalValue(val *ClouddeployCustomTargetTypeCustomActions) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetInternalValue(val *ClouddeployCustomTargetTypeCustomActions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetRenderAction(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetRenderAction(val *string) {
 	if err := j.validateSetRenderActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) PutIncludeSkaffoldModules(value interface{}) {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) PutIncludeSkaffoldModules(value any) {
 	if err := c.validatePutIncludeSkaffoldModulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putIncludeSkaffoldModules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference) ToSt
 
 	return returns
 }
-

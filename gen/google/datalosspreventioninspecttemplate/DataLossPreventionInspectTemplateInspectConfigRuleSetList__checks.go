@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) va
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigRuleSetListParamet
 
 	return nil
 }
-

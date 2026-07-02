@@ -17,8 +17,8 @@ type LookerInstancePscConfigServiceAttachmentsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LookerInstancePscConfigServiceAttachmentsList interface {
 	Get(index *float64) LookerInstancePscConfigServiceAttachmentsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewLookerInstancePscConfigServiceAttachmentsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LookerInstancePscConfigServiceAttachmentsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLookerInstancePscConfigServiceAttachmentsList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLookerInstancePscConfigServiceAttachmentsList_Override(l LookerInstanceP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) AllWithMapKey(
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) Get(index *flo
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) ToString() *st
 
 	return returns
 }
-

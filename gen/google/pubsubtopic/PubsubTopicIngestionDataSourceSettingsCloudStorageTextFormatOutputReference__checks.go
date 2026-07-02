@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatO
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutp
 
 	return nil
 }
-

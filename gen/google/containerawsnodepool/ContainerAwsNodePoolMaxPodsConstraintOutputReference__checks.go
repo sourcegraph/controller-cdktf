@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAwsNodePoolMaxPodsConstraintOutputReferenceParameters(t
 
 	return nil
 }
-

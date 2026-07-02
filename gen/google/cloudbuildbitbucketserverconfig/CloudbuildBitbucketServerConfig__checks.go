@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateAddMoveTargetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateMoveFromIdParameters
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateOverrideLogicalIdPar
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validatePutConnectedRepositoriesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validatePutConnectedRepositoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateCloudbuildBitbucketServerConfig_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateCloudbuildBitbucketServerConfig_IsConstructParameters(x interface{}) error {
+func validateCloudbuildBitbucketServerConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateCloudbuildBitbucketServerConfig_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x interface{}) error {
+func validateCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateCloudbuildBitbucketServerConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudbuildBitbucketServerConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetConfigIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -451,7 +451,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,4 +531,3 @@ func validateNewCloudbuildBitbucketServerConfigParameters(scope constructs.Const
 
 	return nil
 }
-

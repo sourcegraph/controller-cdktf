@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables struct {
 	// Table name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables struct {
 	// columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#columns DatastreamStream#columns}
-	Columns interface{} `field:"optional" json:"columns" yaml:"columns"`
+	Columns any `field:"optional" json:"columns" yaml:"columns"`
 }
-

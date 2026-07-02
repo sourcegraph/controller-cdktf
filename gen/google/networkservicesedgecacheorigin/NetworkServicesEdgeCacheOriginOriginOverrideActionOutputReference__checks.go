@@ -120,7 +120,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReferenc
 
 	return nil
 }
-

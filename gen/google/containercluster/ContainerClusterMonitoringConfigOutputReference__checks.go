@@ -120,7 +120,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewContainerClusterMonitoringConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineDataStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateDiscoveryEngineDataStore_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDiscoveryEngineDataStore_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineDataStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateDiscoveryEngineDataStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDiscoveryEngineDataStore_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineDataStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateDiscoveryEngineDataStore_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDiscoveryEngineDataStore_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineDataStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateDiscoveryEngineDataStore_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetContentConfigParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetCountParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetCreateAdvancedSiteSearchParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetCreateAdvancedSiteSearchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -505,7 +505,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetSkipDefaultSchemaCreationParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetSkipDefaultSchemaCreationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -551,4 +551,3 @@ func validateNewDiscoveryEngineDataStoreParameters(scope constructs.Construct, i
 
 	return nil
 }
-

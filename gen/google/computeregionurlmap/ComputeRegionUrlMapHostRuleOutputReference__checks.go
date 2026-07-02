@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetHostsP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeRegionUrlMapHostRuleOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

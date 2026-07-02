@@ -128,7 +128,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputRefer
 
 	return nil
 }
-

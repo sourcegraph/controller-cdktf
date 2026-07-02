@@ -17,8 +17,8 @@ type DialogflowCxEntityTypeEntitiesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DialogflowCxEntityTypeEntitiesList interface {
 	Get(index *float64) DialogflowCxEntityTypeEntitiesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDialogflowCxEntityTypeEntitiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxEntityTypeEntitiesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDialogflowCxEntityTypeEntitiesList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDialogflowCxEntityTypeEntitiesList_Override(d DialogflowCxEntityTypeEnti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesList) Get(index *float64) Dialo
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesList) ToString() *string {
 
 	return returns
 }
-

@@ -1,11 +1,10 @@
 package databasemigrationservicemigrationjob
 
-
 type DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig struct {
 	// object_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_migration_job#object_configs DatabaseMigrationServiceMigrationJob#object_configs}
-	ObjectConfigs interface{} `field:"optional" json:"objectConfigs" yaml:"objectConfigs"`
+	ObjectConfigs any `field:"optional" json:"objectConfigs" yaml:"objectConfigs"`
 	// The objects selection type of the migration job.
 	//
 	// When set to
@@ -16,4 +15,3 @@ type DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig struct
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_migration_job#objects_selection_type DatabaseMigrationServiceMigrationJob#objects_selection_type}
 	ObjectsSelectionType *string `field:"optional" json:"objectsSelectionType" yaml:"objectsSelectionType"`
 }
-

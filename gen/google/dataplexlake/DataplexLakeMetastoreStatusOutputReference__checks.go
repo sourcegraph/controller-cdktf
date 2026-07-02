@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexLakeMetastoreStatusOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLakeMetastoreStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexLakeMetastoreStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexLakeMetastoreStatusOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
-		reflect.TypeOf((*KmsKeyRing)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRing](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRing{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingConfig",
-		reflect.TypeOf((*KmsKeyRingConfig)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeouts",
-		reflect.TypeOf((*KmsKeyRingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
-		reflect.TypeOf((*KmsKeyRingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

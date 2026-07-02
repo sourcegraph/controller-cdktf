@@ -1,6 +1,5 @@
 package cestool
 
-
 type CesToolDataStoreToolBoostSpecs struct {
 	// The Data Store where the boosting configuration is applied. Full resource name of DataStore, such as projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
 	//
@@ -9,6 +8,5 @@ type CesToolDataStoreToolBoostSpecs struct {
 	// spec block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#spec CesTool#spec}
-	Spec interface{} `field:"required" json:"spec" yaml:"spec"`
+	Spec any `field:"required" json:"spec" yaml:"spec"`
 }
-

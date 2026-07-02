@@ -114,7 +114,7 @@ func (j *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputRefer
 
 	return nil
 }
-

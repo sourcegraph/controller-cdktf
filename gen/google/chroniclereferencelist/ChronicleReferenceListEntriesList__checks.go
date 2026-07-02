@@ -34,7 +34,7 @@ func (c *jsiiProxy_ChronicleReferenceListEntriesList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceListEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceListEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewChronicleReferenceListEntriesListParameters(terraformResource cd
 
 	return nil
 }
-

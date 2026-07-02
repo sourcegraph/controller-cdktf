@@ -125,7 +125,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -257,4 +257,3 @@ func validateNewDatabaseMigrationServiceConnectionProfilePostgresqlOutputReferen
 
 	return nil
 }
-

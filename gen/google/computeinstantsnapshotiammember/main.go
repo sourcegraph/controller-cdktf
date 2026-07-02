@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMember",
-		reflect.TypeOf((*ComputeInstantSnapshotIamMember)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstantSnapshotIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberCondition",
-		reflect.TypeOf((*ComputeInstantSnapshotIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberConditionOutputReference",
-		reflect.TypeOf((*ComputeInstantSnapshotIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstantSnapshotIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstantSnapshotIamMember.ComputeInstantSnapshotIamMemberConfig",
-		reflect.TypeOf((*ComputeInstantSnapshotIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamMemberConfig](),
 	)
 }

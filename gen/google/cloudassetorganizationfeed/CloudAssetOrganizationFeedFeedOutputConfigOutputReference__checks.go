@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewCloudAssetOrganizationFeedFeedOutputConfigOutputReferenceParamet
 
 	return nil
 }
-

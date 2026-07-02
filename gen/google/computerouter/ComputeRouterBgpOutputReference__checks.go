@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateInterpolationForAttr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) validatePutAdvertisedIpRangesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) validatePutAdvertisedIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -153,7 +153,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetAsnParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -269,4 +269,3 @@ func validateNewComputeRouterBgpOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

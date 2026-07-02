@@ -109,7 +109,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewFirestoreIndexFieldsVectorConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

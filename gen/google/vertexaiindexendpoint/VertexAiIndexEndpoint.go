@@ -15,15 +15,15 @@ type VertexAiIndexEndpoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,15 +73,15 @@ type VertexAiIndexEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicEndpointDomainName() *string
-	PublicEndpointEnabled() interface{}
-	SetPublicEndpointEnabled(val interface{})
-	PublicEndpointEnabledInput() interface{}
+	PublicEndpointEnabled() any
+	SetPublicEndpointEnabled(val any)
+	PublicEndpointEnabledInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -89,19 +89,19 @@ type VertexAiIndexEndpoint interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VertexAiIndexEndpointTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type VertexAiIndexEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type VertexAiIndexEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type VertexAiIndexEndpoint interface {
 	ResetPublicEndpointEnabled()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VertexAiIndexEndpoint
@@ -182,8 +182,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointDomainName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicEndpointEnabled",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicEndpointEnabledInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) PublicEndpointEnabledInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) Timeouts() VertexAiIndexEndpointTimeou
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexEndpoint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -622,7 +622,6 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) VertexAiIndexEndpoint {
 	_init_.Initialize()
@@ -634,7 +633,7 @@ func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *Ve
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -647,12 +646,12 @@ func NewVertexAiIndexEndpoint_Override(v VertexAiIndexEndpoint, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetDescription(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetDisplayName(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetId(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetNetwork(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetProject(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetPublicEndpointEnabled(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetPublicEndpointEnabled(val any) {
 	if err := j.validateSetPublicEndpointEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint)SetPublicEndpointEnabled(val interface{
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint)SetRegion(val *string) {
+func (j *jsiiProxy_VertexAiIndexEndpoint) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func VertexAiIndexEndpoint_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func VertexAiIndexEndpoint_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VertexAiIndexEndpoint_IsConstruct(x interface{}) *bool {
+func VertexAiIndexEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiIndexEndpoint_IsConstructParameters(x); err != nil {
@@ -855,7 +854,7 @@ func VertexAiIndexEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func VertexAiIndexEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiIndexEndpoint_IsTerraformElement(x interface{}) *bool {
+func VertexAiIndexEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiIndexEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -874,7 +873,7 @@ func VertexAiIndexEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func VertexAiIndexEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiIndexEndpoint_IsTerraformResource(x interface{}) *bool {
+func VertexAiIndexEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiIndexEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -893,7 +892,7 @@ func VertexAiIndexEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -918,31 +917,31 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VertexAiIndexEndpoint) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiIndexEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,15 +1069,15 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1097,7 +1096,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,18 +1123,18 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VertexAiIndexEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) PutEncryptionSpec(value *VertexAiIndex
 	_jsii_.InvokeVoid(
 		v,
 		"putEncryptionSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) PutPrivateServiceConnectConfig(value *
 	_jsii_.InvokeVoid(
 		v,
 		"putPrivateServiceConnectConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) PutTimeouts(value *VertexAiIndexEndpoi
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1282,8 +1281,8 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1295,8 +1294,8 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1308,8 +1307,8 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1321,8 +1320,8 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1347,8 +1346,8 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiIndexEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1359,4 +1358,3 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

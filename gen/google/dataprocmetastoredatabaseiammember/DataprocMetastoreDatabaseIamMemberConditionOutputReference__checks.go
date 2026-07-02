@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreDatabaseIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreDatabaseIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreDatabaseIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocMetastoreDatabaseIamMemberConditionOutputReferenceParame
 
 	return nil
 }
-

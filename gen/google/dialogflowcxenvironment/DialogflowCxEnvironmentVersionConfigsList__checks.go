@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxEnvironmentVersionConfigsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxEnvironmentVersionConfigsListParameters(terraformRes
 
 	return nil
 }
-

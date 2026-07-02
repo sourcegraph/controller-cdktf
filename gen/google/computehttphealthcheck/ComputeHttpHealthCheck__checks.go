@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeHttpHealthCheck) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHttpHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeHttpHealthCheck_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateComputeHttpHealthCheck_IsConstructParameters(x interface{}) error {
+func validateComputeHttpHealthCheck_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeHttpHealthCheck_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeHttpHealthCheck_IsTerraformElementParameters(x interface{}) error {
+func validateComputeHttpHealthCheck_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeHttpHealthCheck_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeHttpHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeHttpHealthCheck_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetCheckIntervalSecParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeHttpHealthCheck) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -505,4 +505,3 @@ func validateNewComputeHttpHealthCheckParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validatePutAcceleratorsParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewDataprocClusterClusterConfigWorkerConfigOutputReferenceParameter
 
 	return nil
 }
-

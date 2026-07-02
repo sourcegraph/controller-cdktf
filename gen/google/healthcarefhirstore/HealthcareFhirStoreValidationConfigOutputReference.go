@@ -12,9 +12,9 @@ type HealthcareFhirStoreValidationConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,18 +25,18 @@ type HealthcareFhirStoreValidationConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableFhirpathValidation() interface{}
-	SetDisableFhirpathValidation(val interface{})
-	DisableFhirpathValidationInput() interface{}
-	DisableProfileValidation() interface{}
-	SetDisableProfileValidation(val interface{})
-	DisableProfileValidationInput() interface{}
-	DisableReferenceTypeValidation() interface{}
-	SetDisableReferenceTypeValidation(val interface{})
-	DisableReferenceTypeValidationInput() interface{}
-	DisableRequiredFieldValidation() interface{}
-	SetDisableRequiredFieldValidation(val interface{})
-	DisableRequiredFieldValidationInput() interface{}
+	DisableFhirpathValidation() any
+	SetDisableFhirpathValidation(val any)
+	DisableFhirpathValidationInput() any
+	DisableProfileValidation() any
+	SetDisableProfileValidation(val any)
+	DisableProfileValidationInput() any
+	DisableReferenceTypeValidation() any
+	SetDisableReferenceTypeValidation(val any)
+	DisableReferenceTypeValidationInput() any
+	DisableRequiredFieldValidation() any
+	SetDisableRequiredFieldValidation(val any)
+	DisableRequiredFieldValidationInput() any
 	EnabledImplementationGuides() *[]*string
 	SetEnabledImplementationGuides(val *[]*string)
 	EnabledImplementationGuidesInput() *[]*string
@@ -55,7 +55,7 @@ type HealthcareFhirStoreValidationConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type HealthcareFhirStoreValidationConfigOutputReference interface {
 	ResetEnabledImplementationGuides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFhirpathValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFhirpathValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableFhirpathValidation",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFh
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFhirpathValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFhirpathValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableFhirpathValidationInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableFh
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableProfileValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableProfileValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProfileValidation",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisablePr
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableProfileValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableProfileValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProfileValidationInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisablePr
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableReferenceTypeValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableReferenceTypeValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableReferenceTypeValidation",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRe
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableReferenceTypeValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableReferenceTypeValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableReferenceTypeValidationInput",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRe
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRequiredFieldValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRequiredFieldValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableRequiredFieldValidation",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRe
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRequiredFieldValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) DisableRequiredFieldValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableRequiredFieldValidationInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) Terraform
 	return returns
 }
 
-
 func NewHealthcareFhirStoreValidationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareFhirStoreValidationConfigOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewHealthcareFhirStoreValidationConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewHealthcareFhirStoreValidationConfigOutputReference_Override(h Healthcare
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisableFhirpathValidation(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetDisableFhirpathValidation(val any) {
 	if err := j.validateSetDisableFhirpathValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisable
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisableProfileValidation(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetDisableProfileValidation(val any) {
 	if err := j.validateSetDisableProfileValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisable
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisableReferenceTypeValidation(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetDisableReferenceTypeValidation(val any) {
 	if err := j.validateSetDisableReferenceTypeValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisable
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisableRequiredFieldValidation(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetDisableRequiredFieldValidation(val any) {
 	if err := j.validateSetDisableRequiredFieldValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetDisable
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetEnabledImplementationGuides(val *[]*string) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetEnabledImplementationGuides(val *[]*string) {
 	if err := j.validateSetEnabledImplementationGuidesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetEnabled
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetInternalValue(val *HealthcareFhirStoreValidationConfig) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetInternalValue(val *HealthcareFhirStoreValidationConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetString
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) GetString
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) ResetEnab
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) ToString(
 
 	return returns
 }
-

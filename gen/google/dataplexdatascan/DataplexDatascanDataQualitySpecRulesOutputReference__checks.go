@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetIgnoreNullParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetIgnoreNullParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -420,4 +420,3 @@ func validateNewDataplexDatascanDataQualitySpecRulesOutputReferenceParameters(te
 
 	return nil
 }
-

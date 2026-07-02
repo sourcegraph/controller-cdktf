@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkConnectivityGroup) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkConnectivityGroup) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetworkConnectivityGroup_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateNetworkConnectivityGroup_IsConstructParameters(x interface{}) error {
+func validateNetworkConnectivityGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetworkConnectivityGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateNetworkConnectivityGroup_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkConnectivityGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetworkConnectivityGroup_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateNetworkConnectivityGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkConnectivityGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateNetworkConnectivityGroup_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_NetworkConnectivityGroup) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_NetworkConnectivityGroup) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewNetworkConnectivityGroupParameters(scope constructs.Construct, i
 
 	return nil
 }
-

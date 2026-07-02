@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBackupDrManagementServerManagementUriOutputReferenceParameters(t
 
 	return nil
 }
-

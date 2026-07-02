@@ -12,9 +12,9 @@ type AppEngineApplicationFeatureSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type AppEngineApplicationFeatureSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppEngineApplicationFeatureSettings
 	SetInternalValue(val *AppEngineApplicationFeatureSettings)
-	SplitHealthChecks() interface{}
-	SetSplitHealthChecks(val interface{})
-	SplitHealthChecksInput() interface{}
+	SplitHealthChecks() any
+	SetSplitHealthChecks(val any)
+	SplitHealthChecksInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type AppEngineApplicationFeatureSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type AppEngineApplicationFeatureSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SplitHealthChecks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SplitHealthChecks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splitHealthChecks",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SplitHeal
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SplitHealthChecksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SplitHealthChecksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"splitHealthChecksInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) Terraform
 	return returns
 }
 
-
 func NewAppEngineApplicationFeatureSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineApplicationFeatureSettingsOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewAppEngineApplicationFeatureSettingsOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewAppEngineApplicationFeatureSettingsOutputReference_Override(a AppEngineA
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetInternalValue(val *AppEngineApplicationFeatureSettings) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetInternalValue(val *AppEngineApplicationFeatureSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetSplitHealthChecks(val interface{}) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetSplitHealthChecks(val any) {
 	if err := j.validateSetSplitHealthChecksParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetSplitHe
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) ComputeFq
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetListAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) Interpola
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (a *jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference) ToString(
 
 	return returns
 }
-

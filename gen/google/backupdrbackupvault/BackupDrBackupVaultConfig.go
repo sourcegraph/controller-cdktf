@@ -6,9 +6,9 @@ import (
 
 type BackupDrBackupVaultConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BackupDrBackupVaultConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required.
 	//
 	// The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
@@ -42,7 +42,7 @@ type BackupDrBackupVaultConfig struct {
 	// Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
-	AllowMissing interface{} `field:"optional" json:"allowMissing" yaml:"allowMissing"`
+	AllowMissing any `field:"optional" json:"allowMissing" yaml:"allowMissing"`
 	// Optional. User annotations. See https://google.aip.dev/128#annotations Stores small amounts of arbitrary data.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
@@ -73,7 +73,7 @@ type BackupDrBackupVaultConfig struct {
 	// * deletion of a backup vault instance that is being referenced by an active backup plan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// If set, allow update to extend the minimum enforced retention for backup vault.
 	//
 	// This overrides
@@ -82,7 +82,7 @@ type BackupDrBackupVaultConfig struct {
 	//  retention set by the backup vault.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
-	ForceUpdate interface{} `field:"optional" json:"forceUpdate" yaml:"forceUpdate"`
+	ForceUpdate any `field:"optional" json:"forceUpdate" yaml:"forceUpdate"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -91,11 +91,11 @@ type BackupDrBackupVaultConfig struct {
 	// If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
-	IgnoreBackupPlanReferences interface{} `field:"optional" json:"ignoreBackupPlanReferences" yaml:"ignoreBackupPlanReferences"`
+	IgnoreBackupPlanReferences any `field:"optional" json:"ignoreBackupPlanReferences" yaml:"ignoreBackupPlanReferences"`
 	// If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
-	IgnoreInactiveDatasources interface{} `field:"optional" json:"ignoreInactiveDatasources" yaml:"ignoreInactiveDatasources"`
+	IgnoreInactiveDatasources any `field:"optional" json:"ignoreInactiveDatasources" yaml:"ignoreInactiveDatasources"`
 	// Optional. Resource labels to represent user provided metadata.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -110,4 +110,3 @@ type BackupDrBackupVaultConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
 	Timeouts *BackupDrBackupVaultTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

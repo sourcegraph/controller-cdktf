@@ -131,7 +131,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -271,4 +271,3 @@ func validateNewComputeUrlMapPathMatcherPathRuleOutputReferenceParameters(terraf
 
 	return nil
 }
-

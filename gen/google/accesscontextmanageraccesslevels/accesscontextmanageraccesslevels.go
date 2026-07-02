@@ -13,19 +13,19 @@ import (
 type AccessContextManagerAccessLevels interface {
 	cdktf.TerraformResource
 	AccessLevels() AccessContextManagerAccessLevelsAccessLevelsList
-	AccessLevelsInput() interface{}
+	AccessLevelsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,26 +55,26 @@ type AccessContextManagerAccessLevels interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AccessContextManagerAccessLevelsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type AccessContextManagerAccessLevels interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,14 +104,14 @@ type AccessContextManagerAccessLevels interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAccessLevels(value interface{})
+	PutAccessLevels(value any)
 	PutTimeouts(value *AccessContextManagerAccessLevelsTimeouts)
 	ResetAccessLevels()
 	ResetId()
@@ -119,17 +119,17 @@ type AccessContextManagerAccessLevels interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccessContextManagerAccessLevels
@@ -147,8 +147,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) AccessLevels() AccessContex
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) AccessLevelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) AccessLevelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessLevelsInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) Timeouts() AccessContextMan
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAccessLevels) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) TimeoutsInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
 func NewAccessContextManagerAccessLevels(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelsConfig) AccessContextManagerAccessLevels {
@@ -389,7 +388,7 @@ func NewAccessContextManagerAccessLevels(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewAccessContextManagerAccessLevels_Override(a AccessContextManagerAccessLe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetCount(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetId(val *string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetParent(val *string) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevels)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessContextManagerAccessLevels) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func AccessContextManagerAccessLevels_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func AccessContextManagerAccessLevels_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccessContextManagerAccessLevels_IsConstruct(x interface{}) *bool {
+func AccessContextManagerAccessLevels_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAccessLevels_IsConstructParameters(x); err != nil {
@@ -544,7 +543,7 @@ func AccessContextManagerAccessLevels_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func AccessContextManagerAccessLevels_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessContextManagerAccessLevels_IsTerraformElement(x interface{}) *bool {
+func AccessContextManagerAccessLevels_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAccessLevels_IsTerraformElementParameters(x); err != nil {
@@ -563,7 +562,7 @@ func AccessContextManagerAccessLevels_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func AccessContextManagerAccessLevels_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessContextManagerAccessLevels_IsTerraformResource(x interface{}) *bool {
+func AccessContextManagerAccessLevels_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAccessLevels_IsTerraformResourceParameters(x); err != nil {
@@ -582,7 +581,7 @@ func AccessContextManagerAccessLevels_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevels",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,31 +606,31 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,15 +758,15 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -786,7 +785,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -799,7 +798,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,18 +812,18 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -835,7 +834,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -846,18 +845,18 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) PutAccessLevels(value interface{}) {
+func (a *jsiiProxy_AccessContextManagerAccessLevels) PutAccessLevels(value any) {
 	if err := a.validatePutAccessLevelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAccessLevels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) PutTimeouts(value *AccessCo
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -904,8 +903,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -917,8 +916,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeAttributes() *map
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -930,8 +929,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -943,8 +942,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) ToHclTerraform() interface{
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -969,8 +968,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevels) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAccessLevels) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -981,4 +980,3 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) ToTerraform() interface{} {
 
 	return returns
 }
-

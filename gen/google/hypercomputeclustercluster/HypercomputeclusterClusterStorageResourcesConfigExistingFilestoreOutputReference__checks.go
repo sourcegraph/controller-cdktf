@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingFiles
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingFilestoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewHypercomputeclusterClusterStorageResourcesConfigExistingFilestor
 
 	return nil
 }
-

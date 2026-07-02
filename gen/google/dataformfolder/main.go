@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataformFolder.DataformFolder",
-		reflect.TypeOf((*DataformFolder)(nil)).Elem(),
+		reflect.TypeFor[DataformFolder](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataformFolder{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataformFolder.DataformFolderConfig",
-		reflect.TypeOf((*DataformFolderConfig)(nil)).Elem(),
+		reflect.TypeFor[DataformFolderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataformFolder.DataformFolderTimeouts",
-		reflect.TypeOf((*DataformFolderTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataformFolderTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataformFolder.DataformFolderTimeoutsOutputReference",
-		reflect.TypeOf((*DataformFolderTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataformFolderTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataformFolderTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

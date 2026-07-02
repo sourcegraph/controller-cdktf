@@ -18,15 +18,15 @@ type NetworkServicesAuthzExtension interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,9 +36,9 @@ type NetworkServicesAuthzExtension interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	FailOpen() interface{}
-	SetFailOpen(val interface{})
-	FailOpenInput() interface{}
+	FailOpen() any
+	SetFailOpen(val any)
+	FailOpenInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,11 +82,11 @@ type NetworkServicesAuthzExtension interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -94,14 +94,14 @@ type NetworkServicesAuthzExtension interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
 	Timeouts() NetworkServicesAuthzExtensionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	WireFormat() *string
 	SetWireFormat(val *string)
@@ -110,9 +110,9 @@ type NetworkServicesAuthzExtension interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -130,7 +130,7 @@ type NetworkServicesAuthzExtension interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -142,7 +142,7 @@ type NetworkServicesAuthzExtension interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type NetworkServicesAuthzExtension interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetWireFormat()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesAuthzExtension
@@ -212,8 +212,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) EffectiveLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) FailOpen() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) FailOpen() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpen",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) FailOpen() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) FailOpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) FailOpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpenInput",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) Timeouts() NetworkServicesAuth
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesAuthzExtension) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -682,7 +682,6 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension) WireFormatInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_authz_extension google_network_services_authz_extension} Resource.
 func NewNetworkServicesAuthzExtension(scope constructs.Construct, id *string, config *NetworkServicesAuthzExtensionConfig) NetworkServicesAuthzExtension {
 	_init_.Initialize()
@@ -694,7 +693,7 @@ func NewNetworkServicesAuthzExtension(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -707,12 +706,12 @@ func NewNetworkServicesAuthzExtension_Override(n NetworkServicesAuthzExtension, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetAuthority(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetAuthority(val *string) {
 	if err := j.validateSetAuthorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetAuthority(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetFailOpen(val interface{}) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetFailOpen(val any) {
 	if err := j.validateSetFailOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetFailOpen(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetForwardHeaders(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetForwardHeaders(val *[]*string) {
 	if err := j.validateSetForwardHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetForwardHeaders(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLoadBalancingScheme(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetMetadata(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -890,7 +889,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetService(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetTimeout(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetTimeout(val *string) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_NetworkServicesAuthzExtension)SetTimeout(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesAuthzExtension)SetWireFormat(val *string) {
+func (j *jsiiProxy_NetworkServicesAuthzExtension) SetWireFormat(val *string) {
 	if err := j.validateSetWireFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -946,7 +945,7 @@ func NetworkServicesAuthzExtension_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func NetworkServicesAuthzExtension_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesAuthzExtension_IsConstruct(x interface{}) *bool {
+func NetworkServicesAuthzExtension_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesAuthzExtension_IsConstructParameters(x); err != nil {
@@ -981,7 +980,7 @@ func NetworkServicesAuthzExtension_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func NetworkServicesAuthzExtension_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesAuthzExtension_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesAuthzExtension_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesAuthzExtension_IsTerraformElementParameters(x); err != nil {
@@ -1000,7 +999,7 @@ func NetworkServicesAuthzExtension_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func NetworkServicesAuthzExtension_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesAuthzExtension_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesAuthzExtension_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesAuthzExtension_IsTerraformResourceParameters(x); err != nil {
@@ -1019,7 +1018,7 @@ func NetworkServicesAuthzExtension_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1044,31 +1043,31 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesAuthzExtension) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesAuthzExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,7 +1131,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,7 +1147,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1180,7 +1179,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1196,15 +1195,15 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1223,7 +1222,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1236,7 +1235,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1250,18 +1249,18 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesAuthzExtension) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1283,7 +1282,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1294,7 +1293,7 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) PutTimeouts(value *NetworkServ
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1394,8 +1393,8 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) ResetWireFormat() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1407,8 +1406,8 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1420,8 +1419,8 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1433,8 +1432,8 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1459,8 +1458,8 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesAuthzExtension) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesAuthzExtension) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1471,4 +1470,3 @@ func (n *jsiiProxy_NetworkServicesAuthzExtension) ToTerraform() interface{} {
 
 	return returns
 }
-

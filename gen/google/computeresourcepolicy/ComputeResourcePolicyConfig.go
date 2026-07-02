@@ -6,9 +6,9 @@ import (
 
 type ComputeResourcePolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeResourcePolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the resource, provided by the client when initially creating the resource.
 	//
 	// The resource name must be 1-63 characters long, and comply
@@ -70,4 +70,3 @@ type ComputeResourcePolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resource_policy#workload_policy ComputeResourcePolicy#workload_policy}
 	WorkloadPolicy *ComputeResourcePolicyWorkloadPolicy `field:"optional" json:"workloadPolicy" yaml:"workloadPolicy"`
 }
-

@@ -15,15 +15,15 @@ type NotebooksRuntimeIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,27 +60,27 @@ type NotebooksRuntimeIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuntimeName() *string
 	SetRuntimeName(val *string)
 	RuntimeNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type NotebooksRuntimeIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type NotebooksRuntimeIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type NotebooksRuntimeIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NotebooksRuntimeIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
 func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config *NotebooksRuntimeIamPolicyConfig) NotebooksRuntimeIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewNotebooksRuntimeIamPolicy_Override(n NotebooksRuntimeIamPolicy, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetRuntimeName(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) SetRuntimeName(val *string) {
 	if err := j.validateSetRuntimeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func NotebooksRuntimeIamPolicy_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func NotebooksRuntimeIamPolicy_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool {
+func NotebooksRuntimeIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func NotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func NotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool {
+func NotebooksRuntimeIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func NotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func NotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksRuntimeIamPolicy_IsTerraformResource(x interface{}) *bool {
+func NotebooksRuntimeIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func NotebooksRuntimeIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -853,7 +852,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ResetProject() {
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -962,8 +961,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -975,8 +974,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -988,8 +987,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1014,8 +1013,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1026,4 +1025,3 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

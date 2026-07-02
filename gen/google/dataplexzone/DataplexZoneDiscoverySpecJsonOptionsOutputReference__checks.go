@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validateSetDisableTypeInferenceParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecJsonOptionsOutputReference) validateSetDisableTypeInferenceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDataplexZoneDiscoverySpecJsonOptionsOutputReferenceParameters(te
 
 	return nil
 }
-

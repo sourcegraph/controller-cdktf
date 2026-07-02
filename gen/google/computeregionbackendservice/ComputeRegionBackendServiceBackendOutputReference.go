@@ -18,9 +18,9 @@ type ComputeRegionBackendServiceBackendOutputReference interface {
 	CapacityScalerInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,20 +32,20 @@ type ComputeRegionBackendServiceBackendOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomMetrics() ComputeRegionBackendServiceBackendCustomMetricsList
-	CustomMetricsInput() interface{}
+	CustomMetricsInput() any
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Failover() interface{}
-	SetFailover(val interface{})
-	FailoverInput() interface{}
+	Failover() any
+	SetFailover(val any)
+	FailoverInput() any
 	// Experimental.
 	Fqn() *string
 	Group() *string
 	SetGroup(val *string)
 	GroupInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxConnections() *float64
 	SetMaxConnections(val *float64)
 	MaxConnectionsInput() *float64
@@ -78,7 +78,7 @@ type ComputeRegionBackendServiceBackendOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type ComputeRegionBackendServiceBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomMetrics(value interface{})
+	PutCustomMetrics(value any)
 	ResetBalancingMode()
 	ResetCapacityScaler()
 	ResetCustomMetrics()
@@ -114,7 +114,7 @@ type ComputeRegionBackendServiceBackendOutputReference interface {
 	ResetMaxUtilization()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) CapacitySc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) CustomMetr
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) CustomMetricsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) CustomMetricsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customMetricsInput",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Descriptio
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Failover() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Failover() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failover",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Failover()
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) FailoverInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) FailoverInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failoverInput",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GroupInput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) TerraformR
 	return returns
 }
 
-
 func NewComputeRegionBackendServiceBackendOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeRegionBackendServiceBackendOutputReference {
 	_init_.Initialize()
 
@@ -468,7 +467,7 @@ func NewComputeRegionBackendServiceBackendOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -480,12 +479,12 @@ func NewComputeRegionBackendServiceBackendOutputReference_Override(c ComputeRegi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetBalancingMode(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetBalancingMode(val *string) {
 	if err := j.validateSetBalancingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetBalancin
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetCapacityScaler(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetCapacityScaler(val *float64) {
 	if err := j.validateSetCapacityScalerParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetCapacity
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetDescript
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetFailover(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetFailover(val any) {
 	if err := j.validateSetFailoverParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetFailover
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetGroup(va
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConnections(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxConnections(val *float64) {
 	if err := j.validateSetMaxConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConne
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConnectionsPerEndpoint(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxConnectionsPerEndpoint(val *float64) {
 	if err := j.validateSetMaxConnectionsPerEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConne
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConnectionsPerInstance(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxConnectionsPerInstance(val *float64) {
 	if err := j.validateSetMaxConnectionsPerInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxConne
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRate(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxRate(val *float64) {
 	if err := j.validateSetMaxRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRate(
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRatePerEndpoint(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxRatePerEndpoint(val *float64) {
 	if err := j.validateSetMaxRatePerEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRateP
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRatePerInstance(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxRatePerInstance(val *float64) {
 	if err := j.validateSetMaxRatePerInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxRateP
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxUtilization(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetMaxUtilization(val *float64) {
 	if err := j.validateSetMaxUtilizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetMaxUtili
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,16 +684,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,21 +850,21 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) PutCustomMetrics(value interface{}) {
+func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) PutCustomMetrics(value any) {
 	if err := c.validatePutCustomMetricsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCustomMetrics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -965,16 +964,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) ResetMaxUt
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -993,4 +992,3 @@ func (c *jsiiProxy_ComputeRegionBackendServiceBackendOutputReference) ToString()
 
 	return returns
 }
-

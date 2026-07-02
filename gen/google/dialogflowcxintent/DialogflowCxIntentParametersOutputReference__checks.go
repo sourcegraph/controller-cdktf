@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetIdPar
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetIsListParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetIsListParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetIsLis
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetRedactParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentParametersOutputReference) validateSetRedactParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDialogflowCxIntentParametersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

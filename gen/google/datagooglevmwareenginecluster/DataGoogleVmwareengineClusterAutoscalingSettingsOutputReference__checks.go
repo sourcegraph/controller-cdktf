@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineClusterAutoscalingSettingsOutputReferenceP
 
 	return nil
 }
-

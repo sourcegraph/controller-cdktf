@@ -122,7 +122,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileOracleSslOutputReferenc
 
 	return nil
 }
-

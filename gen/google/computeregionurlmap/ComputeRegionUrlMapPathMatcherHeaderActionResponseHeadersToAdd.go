@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd struct {
 	// The name of the header.
 	//
@@ -16,6 +15,5 @@ type ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd struct {
 	// The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#replace ComputeRegionUrlMap#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

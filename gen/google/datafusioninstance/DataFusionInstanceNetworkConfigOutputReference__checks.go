@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewDataFusionInstanceNetworkConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

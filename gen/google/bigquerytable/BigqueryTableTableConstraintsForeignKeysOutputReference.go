@@ -14,9 +14,9 @@ type BigqueryTableTableConstraintsForeignKeysOutputReference interface {
 	ColumnReferencesInput() *BigqueryTableTableConstraintsForeignKeysColumnReferences
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type BigqueryTableTableConstraintsForeignKeysOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -47,7 +47,7 @@ type BigqueryTableTableConstraintsForeignKeysOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type BigqueryTableTableConstraintsForeignKeysOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Colu
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Terr
 	return returns
 }
 
-
 func NewBigqueryTableTableConstraintsForeignKeysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryTableTableConstraintsForeignKeysOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewBigqueryTableTableConstraintsForeignKeysOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewBigqueryTableTableConstraintsForeignKeysOutputReference_Override(b Bigqu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetName(val *string) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetNa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Comp
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetB
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetB
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetL
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetN
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetN
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetN
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetS
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) GetS
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Inte
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) PutC
 	_jsii_.InvokeVoid(
 		b,
 		"putColumnReferences",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -514,7 +513,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) PutR
 	_jsii_.InvokeVoid(
 		b,
 		"putReferencedTable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Rese
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) ToSt
 
 	return returns
 }
-

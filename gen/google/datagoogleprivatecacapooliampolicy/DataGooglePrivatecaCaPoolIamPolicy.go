@@ -18,11 +18,11 @@ type DataGooglePrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,17 +57,17 @@ type DataGooglePrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGooglePrivatecaCaPoolIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGooglePrivatecaCaPoolIamPolicy
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Data Source.
 func NewDataGooglePrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, config *DataGooglePrivatecaCaPoolIamPolicyConfig) DataGooglePrivatecaCaPoolIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGooglePrivatecaCaPoolIamPolicy(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGooglePrivatecaCaPoolIamPolicy_Override(d DataGooglePrivatecaCaPoolI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetCaPool(val *string) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetCaPool(val *string) {
 	if err := j.validateSetCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetCaPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePrivatecaCaPoolIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformDataSource(x interface{}) *bo
 }
 
 // Experimental.
-func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGooglePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGooglePrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGooglePrivatecaCaPoolIamPolicy.DataGooglePrivatecaCaPoolIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGooglePrivatecaCaPoolIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) SynthesizeHclAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToHclTerraform() interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) ToTerraform() interface{}
 
 	return returns
 }
-

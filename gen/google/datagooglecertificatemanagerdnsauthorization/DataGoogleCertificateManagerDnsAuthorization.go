@@ -15,11 +15,11 @@ type DataGoogleCertificateManagerDnsAuthorization interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,19 +62,19 @@ type DataGoogleCertificateManagerDnsAuthorization interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataGoogleCertificateManagerDnsAuthorization interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCertificateManagerDnsAuthorization
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) CdktfStack() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) Provider() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) TerraformLabels
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -421,7 +421,6 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) Type() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Data Source.
 func NewDataGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id *string, config *DataGoogleCertificateManagerDnsAuthorizationConfig) DataGoogleCertificateManagerDnsAuthorization {
 	_init_.Initialize()
@@ -433,7 +432,7 @@ func NewDataGoogleCertificateManagerDnsAuthorization(scope constructs.Construct,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewDataGoogleCertificateManagerDnsAuthorization_Override(d DataGoogleCertif
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetCount(val int
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetDomain(val *string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetDomain(val *s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetLocation(val 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetProject(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func DataGoogleCertificateManagerDnsAuthorization_GenerateConfigForImport(scope 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func DataGoogleCertificateManagerDnsAuthorization_GenerateConfigForImport(scope 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCertificateManagerDnsAuthorization_IsConstruct(x interface{}) *bool {
+func DataGoogleCertificateManagerDnsAuthorization_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCertificateManagerDnsAuthorization_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func DataGoogleCertificateManagerDnsAuthorization_IsConstruct(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func DataGoogleCertificateManagerDnsAuthorization_IsConstruct(x interface{}) *bo
 }
 
 // Experimental.
-func DataGoogleCertificateManagerDnsAuthorization_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCertificateManagerDnsAuthorization_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCertificateManagerDnsAuthorization_IsTerraformDataSourceParameters(x); err != nil {
@@ -618,7 +617,7 @@ func DataGoogleCertificateManagerDnsAuthorization_IsTerraformDataSource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func DataGoogleCertificateManagerDnsAuthorization_IsTerraformDataSource(x interf
 }
 
 // Experimental.
-func DataGoogleCertificateManagerDnsAuthorization_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCertificateManagerDnsAuthorization_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCertificateManagerDnsAuthorization_IsTerraformElementParameters(x); err != nil {
@@ -637,7 +636,7 @@ func DataGoogleCertificateManagerDnsAuthorization_IsTerraformElement(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCertificateManagerDnsAuthorization.DataGoogleCertificateManagerDnsAuthorization",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,27 +654,27 @@ func DataGoogleCertificateManagerDnsAuthorization_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) OverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -869,8 +868,8 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ResetProject() 
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -895,8 +894,8 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) SynthesizeHclAt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -908,8 +907,8 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToHclTerraform(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,8 +933,8 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToString() *str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -946,4 +945,3 @@ func (d *jsiiProxy_DataGoogleCertificateManagerDnsAuthorization) ToTerraform() i
 
 	return returns
 }
-

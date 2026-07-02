@@ -15,15 +15,15 @@ type GeminiLoggingSetting interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -54,12 +54,12 @@ type GeminiLoggingSetting interface {
 	LoggingSettingId() *string
 	SetLoggingSettingId(val *string)
 	LoggingSettingIdInput() *string
-	LogMetadata() interface{}
-	SetLogMetadata(val interface{})
-	LogMetadataInput() interface{}
-	LogPromptsAndResponses() interface{}
-	SetLogPromptsAndResponses(val interface{})
-	LogPromptsAndResponsesInput() interface{}
+	LogMetadata() any
+	SetLogMetadata(val any)
+	LogMetadataInput() any
+	LogPromptsAndResponses() any
+	SetLogPromptsAndResponses(val any)
+	LogPromptsAndResponsesInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -71,28 +71,28 @@ type GeminiLoggingSetting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GeminiLoggingSettingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GeminiLoggingSetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GeminiLoggingSetting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type GeminiLoggingSetting interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GeminiLoggingSetting
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) LoggingSettingIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) LogMetadata() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) LogMetadata() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logMetadata",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) LogMetadata() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) LogMetadataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) LogMetadataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logMetadataInput",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) LogMetadataInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) LogPromptsAndResponses() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) LogPromptsAndResponses() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logPromptsAndResponses",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) LogPromptsAndResponses() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) LogPromptsAndResponsesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) LogPromptsAndResponsesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logPromptsAndResponsesInput",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_GeminiLoggingSetting) Timeouts() GeminiLoggingSettingTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GeminiLoggingSetting) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_GeminiLoggingSetting) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting google_gemini_logging_setting} Resource.
 func NewGeminiLoggingSetting(scope constructs.Construct, id *string, config *GeminiLoggingSettingConfig) GeminiLoggingSetting {
 	_init_.Initialize()
@@ -539,7 +538,7 @@ func NewGeminiLoggingSetting(scope constructs.Construct, id *string, config *Gem
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewGeminiLoggingSetting_Override(g GeminiLoggingSetting, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetConnection(val interface{}) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetCount(val interface{}) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetId(val *string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLocation(val *string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLoggingSettingId(val *string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLoggingSettingId(val *string) {
 	if err := j.validateSetLoggingSettingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLoggingSettingId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLogMetadata(val interface{}) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLogMetadata(val any) {
 	if err := j.validateSetLogMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLogMetadata(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetLogPromptsAndResponses(val interface{}) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetLogPromptsAndResponses(val any) {
 	if err := j.validateSetLogPromptsAndResponsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetLogPromptsAndResponses(val interface{
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetProject(val *string) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_GeminiLoggingSetting)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GeminiLoggingSetting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func GeminiLoggingSetting_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func GeminiLoggingSetting_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GeminiLoggingSetting_IsConstruct(x interface{}) *bool {
+func GeminiLoggingSetting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiLoggingSetting_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func GeminiLoggingSetting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func GeminiLoggingSetting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GeminiLoggingSetting_IsTerraformElement(x interface{}) *bool {
+func GeminiLoggingSetting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiLoggingSetting_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func GeminiLoggingSetting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func GeminiLoggingSetting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GeminiLoggingSetting_IsTerraformResource(x interface{}) *bool {
+func GeminiLoggingSetting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGeminiLoggingSetting_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func GeminiLoggingSetting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (g *jsiiProxy_GeminiLoggingSetting) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GeminiLoggingSetting) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GeminiLoggingSetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (g *jsiiProxy_GeminiLoggingSetting) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -991,7 +990,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (g *jsiiProxy_GeminiLoggingSetting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GeminiLoggingSetting) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) PutTimeouts(value *GeminiLoggingSetting
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,8 +1121,8 @@ func (g *jsiiProxy_GeminiLoggingSetting) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1135,8 +1134,8 @@ func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1148,8 +1147,8 @@ func (g *jsiiProxy_GeminiLoggingSetting) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1161,8 +1160,8 @@ func (g *jsiiProxy_GeminiLoggingSetting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1187,8 +1186,8 @@ func (g *jsiiProxy_GeminiLoggingSetting) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GeminiLoggingSetting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1199,4 +1198,3 @@ func (g *jsiiProxy_GeminiLoggingSetting) ToTerraform() interface{} {
 
 	return returns
 }
-

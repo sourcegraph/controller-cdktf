@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomation
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomation
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationCon
 
 	return nil
 }
-

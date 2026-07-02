@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTargetResourceOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBackupDrRestoreWorkloadTargetResourceOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -17,18 +17,18 @@ type IntegrationsClient interface {
 	CloudKmsConfig() IntegrationsClientCloudKmsConfigOutputReference
 	CloudKmsConfigInput() *IntegrationsClientCloudKmsConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CreateSampleIntegrations() interface{}
-	SetCreateSampleIntegrations(val interface{})
-	CreateSampleIntegrationsInput() interface{}
+	SetCount(val any)
+	CreateSampleIntegrations() any
+	SetCreateSampleIntegrations(val any)
+	CreateSampleIntegrationsInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,29 +61,29 @@ type IntegrationsClient interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RunAsServiceAccount() *string
 	SetRunAsServiceAccount(val *string)
 	RunAsServiceAccountInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IntegrationsClientTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type IntegrationsClient interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type IntegrationsClient interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type IntegrationsClient interface {
 	ResetProject()
 	ResetRunAsServiceAccount()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IntegrationsClient
@@ -179,8 +179,8 @@ func (j *jsiiProxy_IntegrationsClient) CloudKmsConfigInput() *IntegrationsClient
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_IntegrationsClient) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationsClient) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_IntegrationsClient) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_IntegrationsClient) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createSampleIntegrations",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrations() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createSampleIntegrationsInput",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_IntegrationsClient) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IntegrationsClient) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_IntegrationsClient) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_IntegrationsClient) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationsClient) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_IntegrationsClient) Timeouts() IntegrationsClientTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsClient) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_IntegrationsClient) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integrations_client google_integrations_client} Resource.
 func NewIntegrationsClient(scope constructs.Construct, id *string, config *IntegrationsClientConfig) IntegrationsClient {
@@ -461,7 +460,7 @@ func NewIntegrationsClient(scope constructs.Construct, id *string, config *Integ
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -474,12 +473,12 @@ func NewIntegrationsClient_Override(i IntegrationsClient, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationsClient) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_IntegrationsClient)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetCount(val interface{}) {
+func (j *jsiiProxy_IntegrationsClient) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_IntegrationsClient)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetCreateSampleIntegrations(val interface{}) {
+func (j *jsiiProxy_IntegrationsClient) SetCreateSampleIntegrations(val any) {
 	if err := j.validateSetCreateSampleIntegrationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_IntegrationsClient)SetCreateSampleIntegrations(val interface{
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationsClient) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_IntegrationsClient)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationsClient) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_IntegrationsClient)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetId(val *string) {
+func (j *jsiiProxy_IntegrationsClient) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_IntegrationsClient)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationsClient) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_IntegrationsClient)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetLocation(val *string) {
+func (j *jsiiProxy_IntegrationsClient) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_IntegrationsClient)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetProject(val *string) {
+func (j *jsiiProxy_IntegrationsClient) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_IntegrationsClient)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationsClient) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -580,7 +579,7 @@ func (j *jsiiProxy_IntegrationsClient)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationsClient) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_IntegrationsClient)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationsClient)SetRunAsServiceAccount(val *string) {
+func (j *jsiiProxy_IntegrationsClient) SetRunAsServiceAccount(val *string) {
 	if err := j.validateSetRunAsServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func IntegrationsClient_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func IntegrationsClient_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IntegrationsClient_IsConstruct(x interface{}) *bool {
+func IntegrationsClient_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationsClient_IsConstructParameters(x); err != nil {
@@ -649,7 +648,7 @@ func IntegrationsClient_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func IntegrationsClient_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IntegrationsClient_IsTerraformElement(x interface{}) *bool {
+func IntegrationsClient_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationsClient_IsTerraformElementParameters(x); err != nil {
@@ -668,7 +667,7 @@ func IntegrationsClient_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func IntegrationsClient_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IntegrationsClient_IsTerraformResource(x interface{}) *bool {
+func IntegrationsClient_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationsClient_IsTerraformResourceParameters(x); err != nil {
@@ -687,7 +686,7 @@ func IntegrationsClient_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationsClient.IntegrationsClient",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,31 +711,31 @@ func (i *jsiiProxy_IntegrationsClient) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClient) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IntegrationsClient) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClient) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationsClient) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (i *jsiiProxy_IntegrationsClient) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (i *jsiiProxy_IntegrationsClient) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (i *jsiiProxy_IntegrationsClient) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (i *jsiiProxy_IntegrationsClient) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (i *jsiiProxy_IntegrationsClient) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (i *jsiiProxy_IntegrationsClient) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (i *jsiiProxy_IntegrationsClient) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,15 +863,15 @@ func (i *jsiiProxy_IntegrationsClient) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClient) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationsClient) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -891,7 +890,7 @@ func (i *jsiiProxy_IntegrationsClient) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -904,7 +903,7 @@ func (i *jsiiProxy_IntegrationsClient) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,18 +917,18 @@ func (i *jsiiProxy_IntegrationsClient) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClient) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IntegrationsClient) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -940,7 +939,7 @@ func (i *jsiiProxy_IntegrationsClient) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -951,7 +950,7 @@ func (i *jsiiProxy_IntegrationsClient) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -962,7 +961,7 @@ func (i *jsiiProxy_IntegrationsClient) PutCloudKmsConfig(value *IntegrationsClie
 	_jsii_.InvokeVoid(
 		i,
 		"putCloudKmsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (i *jsiiProxy_IntegrationsClient) PutTimeouts(value *IntegrationsClientTime
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1033,8 +1032,8 @@ func (i *jsiiProxy_IntegrationsClient) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClient) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationsClient) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1046,8 +1045,8 @@ func (i *jsiiProxy_IntegrationsClient) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClient) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationsClient) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1059,8 +1058,8 @@ func (i *jsiiProxy_IntegrationsClient) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClient) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationsClient) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1072,8 +1071,8 @@ func (i *jsiiProxy_IntegrationsClient) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClient) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationsClient) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1098,8 +1097,8 @@ func (i *jsiiProxy_IntegrationsClient) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClient) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationsClient) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1110,4 +1109,3 @@ func (i *jsiiProxy_IntegrationsClient) ToTerraform() interface{} {
 
 	return returns
 }
-

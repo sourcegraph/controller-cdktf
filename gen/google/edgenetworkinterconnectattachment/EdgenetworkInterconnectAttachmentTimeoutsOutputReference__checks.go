@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEdgenetworkInterconnectAttachmentTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

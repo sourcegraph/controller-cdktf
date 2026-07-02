@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBiglakeIcebergTablePartitionSpecFieldsOutputReferenceParameters(
 
 	return nil
 }
-

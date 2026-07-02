@@ -15,9 +15,9 @@ type ApihubPluginInstanceActionsOutputReference interface {
 	ActionIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ApihubPluginInstanceActionsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HubInstanceAction() ApihubPluginInstanceActionsHubInstanceActionList
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ScheduleCronExpression() *string
 	SetScheduleCronExpression(val *string)
 	ScheduleCronExpressionInput() *string
@@ -53,7 +53,7 @@ type ApihubPluginInstanceActionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type ApihubPluginInstanceActionsOutputReference interface {
 	ResetScheduleTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ActionIdInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) HubInstanceAction
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewApihubPluginInstanceActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApihubPluginInstanceActionsOutputReference {
 	_init_.Initialize()
 
@@ -274,7 +273,7 @@ func NewApihubPluginInstanceActionsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -286,12 +285,12 @@ func NewApihubPluginInstanceActionsOutputReference_Override(a ApihubPluginInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetActionId(val *string) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetActionId(val *string) {
 	if err := j.validateSetActionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetActionId(val *s
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetScheduleCronExpression(val *string) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetScheduleCronExpression(val *string) {
 	if err := j.validateSetScheduleCronExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetScheduleCronExp
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetScheduleTimeZone(val *string) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetScheduleTimeZone(val *string) {
 	if err := j.validateSetScheduleTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetScheduleTimeZon
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubPluginInstanceActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,16 +391,16 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) PutCurationConfig
 	_jsii_.InvokeVoid(
 		a,
 		"putCurationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -600,16 +599,16 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ResetScheduleTime
 	)
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -628,4 +627,3 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsOutputReference) ToString() *strin
 
 	return returns
 }
-

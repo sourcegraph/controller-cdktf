@@ -18,15 +18,15 @@ type EdgecontainerNodePool interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -81,28 +81,28 @@ type EdgecontainerNodePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EdgecontainerNodePoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type EdgecontainerNodePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type EdgecontainerNodePool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type EdgecontainerNodePool interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EdgecontainerNodePool
@@ -200,8 +200,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_EdgecontainerNodePool) Timeouts() EdgecontainerNodePoolTimeou
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerNodePool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -620,7 +620,6 @@ func (j *jsiiProxy_EdgecontainerNodePool) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_node_pool google_edgecontainer_node_pool} Resource.
 func NewEdgecontainerNodePool(scope constructs.Construct, id *string, config *EdgecontainerNodePoolConfig) EdgecontainerNodePool {
 	_init_.Initialize()
@@ -632,7 +631,7 @@ func NewEdgecontainerNodePool(scope constructs.Construct, id *string, config *Ed
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -645,12 +644,12 @@ func NewEdgecontainerNodePool_Override(e EdgecontainerNodePool, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetCluster(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetConnection(val interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetCount(val interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -699,7 +698,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetId(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetLocation(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetMachineFilter(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetMachineFilter(val *string) {
 	if err := j.validateSetMachineFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetMachineFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetName(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetNodeCount(val *float64) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetNodeLocation(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetNodeLocation(val *string) {
 	if err := j.validateSetNodeLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetNodeLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetProject(val *string) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -806,7 +805,7 @@ func (j *jsiiProxy_EdgecontainerNodePool)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EdgecontainerNodePool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func EdgecontainerNodePool_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func EdgecontainerNodePool_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EdgecontainerNodePool_IsConstruct(x interface{}) *bool {
+func EdgecontainerNodePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerNodePool_IsConstructParameters(x); err != nil {
@@ -864,7 +863,7 @@ func EdgecontainerNodePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func EdgecontainerNodePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerNodePool_IsTerraformElement(x interface{}) *bool {
+func EdgecontainerNodePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerNodePool_IsTerraformElementParameters(x); err != nil {
@@ -883,7 +882,7 @@ func EdgecontainerNodePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func EdgecontainerNodePool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerNodePool_IsTerraformResource(x interface{}) *bool {
+func EdgecontainerNodePool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerNodePool_IsTerraformResourceParameters(x); err != nil {
@@ -902,7 +901,7 @@ func EdgecontainerNodePool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -927,31 +926,31 @@ func (e *jsiiProxy_EdgecontainerNodePool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EdgecontainerNodePool) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,15 +1078,15 @@ func (e *jsiiProxy_EdgecontainerNodePool) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1106,7 +1105,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,18 +1132,18 @@ func (e *jsiiProxy_EdgecontainerNodePool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EdgecontainerNodePool) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) PutLocalDiskEncryption(value *Edgecont
 	_jsii_.InvokeVoid(
 		e,
 		"putLocalDiskEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) PutNodeConfig(value *EdgecontainerNode
 	_jsii_.InvokeVoid(
 		e,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (e *jsiiProxy_EdgecontainerNodePool) PutTimeouts(value *EdgecontainerNodePo
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1267,8 +1266,8 @@ func (e *jsiiProxy_EdgecontainerNodePool) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1280,8 +1279,8 @@ func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1293,8 +1292,8 @@ func (e *jsiiProxy_EdgecontainerNodePool) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1306,8 +1305,8 @@ func (e *jsiiProxy_EdgecontainerNodePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1332,8 +1331,8 @@ func (e *jsiiProxy_EdgecontainerNodePool) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePool) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerNodePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1344,4 +1343,3 @@ func (e *jsiiProxy_EdgecontainerNodePool) ToTerraform() interface{} {
 
 	return returns
 }
-

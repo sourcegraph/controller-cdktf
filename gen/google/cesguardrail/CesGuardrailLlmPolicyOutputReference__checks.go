@@ -109,7 +109,7 @@ func (c *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetAllowShortUtteranceParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetAllowShortUtteranceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetAllowShortUt
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPolicyOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,4 +273,3 @@ func validateNewCesGuardrailLlmPolicyOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

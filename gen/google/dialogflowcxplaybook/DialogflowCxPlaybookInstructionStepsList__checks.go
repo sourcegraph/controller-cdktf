@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPlaybookInstructionStepsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPlaybookInstructionStepsListParameters(terraformReso
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetEnableNetworkEgressMeteringParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetEnableNetworkEgressMeteringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetEnableResourceConsumptionMeteringParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateSetEnableResourceConsumptionMeteringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewContainerClusterResourceUsageExportConfigOutputReferenceParamete
 
 	return nil
 }
-

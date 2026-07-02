@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerNodePoolLocalDiskEncryptionOutputReferenceParameter
 
 	return nil
 }
-

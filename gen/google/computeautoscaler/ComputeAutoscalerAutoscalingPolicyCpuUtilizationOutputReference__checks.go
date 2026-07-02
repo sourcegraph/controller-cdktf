@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReferenceP
 
 	return nil
 }
-

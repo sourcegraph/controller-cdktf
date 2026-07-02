@@ -36,7 +36,7 @@ type ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList interface {
 	Get(index *float64) ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) WrapsSet()
 	return returns
 }
 
-
 func NewApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList_Override(a ApigeeKeyst
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) AllWithMap
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) Get(index 
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList) ToString()
 
 	return returns
 }
-

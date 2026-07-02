@@ -109,7 +109,7 @@ func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDnsManagedZonePeeringConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

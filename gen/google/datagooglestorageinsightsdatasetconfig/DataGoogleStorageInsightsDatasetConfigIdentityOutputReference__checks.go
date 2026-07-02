@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigIdentityOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageInsightsDatasetConfigIdentityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageInsightsDatasetConfigIdentityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageInsightsDatasetConfigIdentityOutputReferencePar
 
 	return nil
 }
-

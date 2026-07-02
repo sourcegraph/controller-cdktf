@@ -15,11 +15,11 @@ type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,20 +57,20 @@ type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleServiceNetworkingPeeredDnsDomain
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformResource
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
 func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string, config *DataGoogleServiceNetworkingPeeredDnsDomainConfig) DataGoogleServiceNetworkingPeeredDnsDomain {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain_Override(d DataGoogleServiceN
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetNetwork(val *string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetNetwork(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetProject(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetService(val *string) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool {
+func DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceNetworkingPeeredDnsDomain_IsConstructParameters(x); err != nil {
@@ -553,7 +552,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSourceParameters(x); err != nil {
@@ -572,7 +571,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x interfac
 }
 
 // Experimental.
-func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool {
+func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElementParameters(x); err != nil {
@@ -591,7 +590,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -609,27 +608,27 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ResetOverrideLogi
 	)
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -833,8 +832,8 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) SynthesizeHclAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,8 +845,8 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToHclTerraform() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -872,8 +871,8 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToString() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -884,4 +883,3 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ToTerraform() int
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleMonitoringUptimeCheckIps_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleMonitoringUptimeCheckIps_IsConstructParameters(x interface{}) error {
+func validateDataGoogleMonitoringUptimeCheckIps_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleMonitoringUptimeCheckIps_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -239,4 +239,3 @@ func validateNewDataGoogleMonitoringUptimeCheckIpsParameters(scope constructs.Co
 
 	return nil
 }
-

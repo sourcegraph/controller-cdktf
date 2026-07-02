@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocClusterIamMember) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocClusterIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocClusterIamMember) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocClusterIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataprocClusterIamMember_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataprocClusterIamMember_IsConstructParameters(x interface{}) error {
+func validateDataprocClusterIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataprocClusterIamMember_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataprocClusterIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocClusterIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataprocClusterIamMember_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDataprocClusterIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocClusterIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataprocClusterIamMember) validateSetClusterParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataprocClusterIamMember) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataprocClusterIamMember) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocClusterIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDataprocClusterIamMemberParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateAddMoveTarg
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveFromIdP
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkSecurityGatewaySecurityPolicyRule_GenerateConfigForImportPar
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicyRule_IsConstructParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicyRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkSecurityGatewaySecurityPolicyRule_IsConstructParameters(x in
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkSecurityGatewaySecurityPolicyRule_IsTerraformElementParamete
 	return nil
 }
 
-func validateNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkSecurityGatewaySecurityPolicyRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetBasicPro
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetDescript
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetProjectP
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -499,7 +499,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetSessionM
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetTlsInspectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) validateSetTlsInspectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -537,4 +537,3 @@ func validateNewNetworkSecurityGatewaySecurityPolicyRuleParameters(scope constru
 
 	return nil
 }
-

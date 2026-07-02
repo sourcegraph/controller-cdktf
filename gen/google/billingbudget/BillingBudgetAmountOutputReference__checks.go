@@ -109,7 +109,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference) validateSetInternalValueP
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference) validateSetLastPeriodAmountParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) validateSetLastPeriodAmountParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewBillingBudgetAmountOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

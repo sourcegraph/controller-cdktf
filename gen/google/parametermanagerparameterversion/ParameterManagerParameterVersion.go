@@ -15,23 +15,23 @@ type ParameterManagerParameterVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,27 +65,27 @@ type ParameterManagerParameterVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ParameterManagerParameterVersionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ParameterManagerParameterVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ParameterManagerParameterVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type ParameterManagerParameterVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ParameterManagerParameterVersion
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) Timeouts() ParameterManager
 	return returns
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ParameterManagerParameterVersion) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -467,7 +467,6 @@ func (j *jsiiProxy_ParameterManagerParameterVersion) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/parameter_manager_parameter_version google_parameter_manager_parameter_version} Resource.
 func NewParameterManagerParameterVersion(scope constructs.Construct, id *string, config *ParameterManagerParameterVersionConfig) ParameterManagerParameterVersion {
 	_init_.Initialize()
@@ -479,7 +478,7 @@ func NewParameterManagerParameterVersion(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -492,12 +491,12 @@ func NewParameterManagerParameterVersion_Override(p ParameterManagerParameterVer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetDisabled(val interface{}) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetDisabled(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetId(val *string) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameter(val *string) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetParameter(val *string) {
 	if err := j.validateSetParameterParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameterData(val *string) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetParameterData(val *string) {
 	if err := j.validateSetParameterDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameterData(val *string
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameterVersionId(val *string) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetParameterVersionId(val *string) {
 	if err := j.validateSetParameterVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetParameterVersionId(val *s
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_ParameterManagerParameterVersion)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ParameterManagerParameterVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func ParameterManagerParameterVersion_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func ParameterManagerParameterVersion_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ParameterManagerParameterVersion_IsConstruct(x interface{}) *bool {
+func ParameterManagerParameterVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerParameterVersion_IsConstructParameters(x); err != nil {
@@ -667,7 +666,7 @@ func ParameterManagerParameterVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func ParameterManagerParameterVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool {
+func ParameterManagerParameterVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerParameterVersion_IsTerraformElementParameters(x); err != nil {
@@ -686,7 +685,7 @@ func ParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func ParameterManagerParameterVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ParameterManagerParameterVersion_IsTerraformResource(x interface{}) *bool {
+func ParameterManagerParameterVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateParameterManagerParameterVersion_IsTerraformResourceParameters(x); err != nil {
@@ -705,7 +704,7 @@ func ParameterManagerParameterVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,31 +729,31 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ParameterManagerParameterVersion) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ParameterManagerParameterVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,15 +881,15 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -909,7 +908,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -922,7 +921,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,18 +935,18 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ParameterManagerParameterVersion) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -958,7 +957,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -969,7 +968,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -980,7 +979,7 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) PutTimeouts(value *Paramete
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1016,8 +1015,8 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1029,8 +1028,8 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeAttributes() *map
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1042,8 +1041,8 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1055,8 +1054,8 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) ToHclTerraform() interface{
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1081,8 +1080,8 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ParameterManagerParameterVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1093,4 +1092,3 @@ func (p *jsiiProxy_ParameterManagerParameterVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

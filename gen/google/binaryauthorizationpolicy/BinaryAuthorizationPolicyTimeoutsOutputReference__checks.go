@@ -98,7 +98,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBinaryAuthorizationPolicyTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

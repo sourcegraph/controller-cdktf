@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentManagerDeploymentLabelsListParameters(terraformResourc
 
 	return nil
 }
-

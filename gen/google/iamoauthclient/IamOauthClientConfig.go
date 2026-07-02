@@ -6,9 +6,9 @@ import (
 
 type IamOauthClientConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IamOauthClientConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The list of OAuth grant types is allowed for the OauthClient.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#allowed_grant_types IamOauthClient#allowed_grant_types}
@@ -76,7 +76,7 @@ type IamOauthClientConfig struct {
 	// Whether the OauthClient is disabled. You cannot use a disabled OAuth client.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#disabled IamOauthClient#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// A user-specified display name of the OauthClient.
 	//
 	// Cannot exceed 32 characters.
@@ -95,4 +95,3 @@ type IamOauthClientConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_oauth_client#timeouts IamOauthClient#timeouts}
 	Timeouts *IamOauthClientTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

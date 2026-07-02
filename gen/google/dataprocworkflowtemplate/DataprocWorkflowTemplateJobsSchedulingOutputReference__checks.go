@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocWorkflowTemplateJobsSchedulingOutputReferenceParameters(
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewDeveloperConnectConnectionBitbucketCloudConfigOutputReferencePar
 
 	return nil
 }
-

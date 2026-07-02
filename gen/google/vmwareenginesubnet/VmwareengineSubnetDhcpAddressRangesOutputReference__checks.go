@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineSubnetDhcpAddressRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineSubnetDhcpAddressRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVmwareengineSubnetDhcpAddressRangesOutputReferenceParameters(ter
 
 	return nil
 }
-

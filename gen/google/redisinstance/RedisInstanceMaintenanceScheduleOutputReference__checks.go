@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraf
 
 	return nil
 }
-

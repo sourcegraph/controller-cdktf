@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleAccessContextManagerSupportedService_GenerateConfigForImp
 	return nil
 }
 
-func validateDataGoogleAccessContextManagerSupportedService_IsConstructParameters(x interface{}) error {
+func validateDataGoogleAccessContextManagerSupportedService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleAccessContextManagerSupportedService_IsConstructParameter
 	return nil
 }
 
-func validateDataGoogleAccessContextManagerSupportedService_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleAccessContextManagerSupportedService_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleAccessContextManagerSupportedService_IsTerraformDataSourc
 	return nil
 }
 
-func validateDataGoogleAccessContextManagerSupportedService_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleAccessContextManagerSupportedService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleAccessContextManagerSupportedService_IsTerraformElementPa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleAccessContextManagerSupportedServiceParameters(scope c
 
 	return nil
 }
-

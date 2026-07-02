@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollections struct {
 	// Collection name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollections struc
 	// fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#fields DatastreamStream#fields}
-	Fields interface{} `field:"optional" json:"fields" yaml:"fields"`
+	Fields any `field:"optional" json:"fields" yaml:"fields"`
 }
-

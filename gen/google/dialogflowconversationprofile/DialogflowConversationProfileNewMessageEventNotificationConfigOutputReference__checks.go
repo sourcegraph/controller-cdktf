@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfi
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowConversationProfileNewMessageEventNotificationConfigOu
 
 	return nil
 }
-

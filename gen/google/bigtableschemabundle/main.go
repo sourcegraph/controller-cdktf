@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundle",
-		reflect.TypeOf((*BigtableSchemaBundle)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundle](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableSchemaBundle{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig",
-		reflect.TypeOf((*BigtableSchemaBundleConfig)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundleProtoSchema",
-		reflect.TypeOf((*BigtableSchemaBundleProtoSchema)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundleProtoSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundleProtoSchemaOutputReference",
-		reflect.TypeOf((*BigtableSchemaBundleProtoSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundleProtoSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableSchemaBundleProtoSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -129,11 +129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts",
-		reflect.TypeOf((*BigtableSchemaBundleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeoutsOutputReference",
-		reflect.TypeOf((*BigtableSchemaBundleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableSchemaBundleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableSchemaBundleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -17,8 +17,8 @@ type ContainerAzureClusterAuthorizationAdminGroupsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ContainerAzureClusterAuthorizationAdminGroupsList interface {
 	Get(index *float64) ContainerAzureClusterAuthorizationAdminGroupsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) WrapsSet()
 	return returns
 }
 
-
 func NewContainerAzureClusterAuthorizationAdminGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerAzureClusterAuthorizationAdminGroupsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewContainerAzureClusterAuthorizationAdminGroupsList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewContainerAzureClusterAuthorizationAdminGroupsList_Override(c ContainerAz
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterAuthorizationAdminGroupsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) AllWithMap
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) Get(index 
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) ToString()
 
 	return returns
 }
-

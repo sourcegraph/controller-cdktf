@@ -19,15 +19,15 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,11 +70,11 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	SelfLink() *string
 	State() *string
@@ -82,19 +82,19 @@ type NetworkSecurityFirewallEndpoint interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkSecurityFirewallEndpointTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type NetworkSecurityFirewallEndpoint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type NetworkSecurityFirewallEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkSecurityFirewallEndpoint
@@ -199,8 +199,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) TerraformLabels() cdktf.Stri
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -539,8 +539,8 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) Timeouts() NetworkSecurityFi
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -559,7 +559,6 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, config *NetworkSecurityFirewallEndpointConfig) NetworkSecurityFirewallEndpoint {
 	_init_.Initialize()
@@ -571,7 +570,7 @@ func NewNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -584,12 +583,12 @@ func NewNetworkSecurityFirewallEndpoint_Override(n NetworkSecurityFirewallEndpoi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetBillingProjectId(val *string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetBillingProjectId(val *string) {
 	if err := j.validateSetBillingProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetBillingProjectId(val *stri
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetId(val *string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLabels(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetName(val *string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetParent(val *string) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityFirewallEndpoint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkSecurityFirewallEndpoint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func NetworkSecurityFirewallEndpoint_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func NetworkSecurityFirewallEndpoint_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkSecurityFirewallEndpoint_IsConstruct(x interface{}) *bool {
+func NetworkSecurityFirewallEndpoint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityFirewallEndpoint_IsConstructParameters(x); err != nil {
@@ -770,7 +769,7 @@ func NetworkSecurityFirewallEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func NetworkSecurityFirewallEndpoint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkSecurityFirewallEndpoint_IsTerraformElement(x interface{}) *bool {
+func NetworkSecurityFirewallEndpoint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityFirewallEndpoint_IsTerraformElementParameters(x); err != nil {
@@ -789,7 +788,7 @@ func NetworkSecurityFirewallEndpoint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func NetworkSecurityFirewallEndpoint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkSecurityFirewallEndpoint_IsTerraformResource(x interface{}) *bool {
+func NetworkSecurityFirewallEndpoint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityFirewallEndpoint_IsTerraformResourceParameters(x); err != nil {
@@ -808,7 +807,7 @@ func NetworkSecurityFirewallEndpoint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityFirewallEndpoint.NetworkSecurityFirewallEndpoint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -833,31 +832,31 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,15 +984,15 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1012,7 +1011,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1025,7 +1024,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,18 +1038,18 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) PutEndpointSettings(value *N
 	_jsii_.InvokeVoid(
 		n,
 		"putEndpointSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) PutTimeouts(value *NetworkSe
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,8 +1145,8 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1159,8 +1158,8 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1172,8 +1171,8 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1185,8 +1184,8 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToHclTerraform() interface{}
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1211,8 +1210,8 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1223,4 +1222,3 @@ func (n *jsiiProxy_NetworkSecurityFirewallEndpoint) ToTerraform() interface{} {
 
 	return returns
 }
-

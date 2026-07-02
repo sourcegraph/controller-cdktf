@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkstationsWorkstationConfigAllowedPortsOutputReferenceParamete
 
 	return nil
 }
-

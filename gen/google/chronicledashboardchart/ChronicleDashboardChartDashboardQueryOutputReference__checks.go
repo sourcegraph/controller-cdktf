@@ -109,7 +109,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewChronicleDashboardChartDashboardQueryOutputReferenceParameters(t
 
 	return nil
 }
-

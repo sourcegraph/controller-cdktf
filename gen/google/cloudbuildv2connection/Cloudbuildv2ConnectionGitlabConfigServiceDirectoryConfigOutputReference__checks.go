@@ -98,7 +98,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputRe
 
 	return nil
 }
-

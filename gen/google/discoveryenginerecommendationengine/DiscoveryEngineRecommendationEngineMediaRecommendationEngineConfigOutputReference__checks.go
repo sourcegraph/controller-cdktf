@@ -120,7 +120,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineC
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewDiscoveryEngineRecommendationEngineMediaRecommendationEngineConf
 
 	return nil
 }
-

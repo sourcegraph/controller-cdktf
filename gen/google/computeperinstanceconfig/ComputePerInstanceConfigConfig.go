@@ -6,9 +6,9 @@ import (
 
 type ComputePerInstanceConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputePerInstanceConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The instance group manager this instance config is part of.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_per_instance_config#instance_group_manager ComputePerInstanceConfig#instance_group_manager}
@@ -63,14 +63,14 @@ type ComputePerInstanceConfigConfig struct {
 	// When false, deleting this config will use the behavior as determined by remove_instance_on_destroy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_per_instance_config#remove_instance_on_destroy ComputePerInstanceConfig#remove_instance_on_destroy}
-	RemoveInstanceOnDestroy interface{} `field:"optional" json:"removeInstanceOnDestroy" yaml:"removeInstanceOnDestroy"`
+	RemoveInstanceOnDestroy any `field:"optional" json:"removeInstanceOnDestroy" yaml:"removeInstanceOnDestroy"`
 	// When true, deleting this config will immediately remove any specified state from the underlying instance.
 	//
 	// When false, deleting this config will *not* immediately remove any state from the underlying instance.
 	// State will be removed on the next instance recreation or update.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_per_instance_config#remove_instance_state_on_destroy ComputePerInstanceConfig#remove_instance_state_on_destroy}
-	RemoveInstanceStateOnDestroy interface{} `field:"optional" json:"removeInstanceStateOnDestroy" yaml:"removeInstanceStateOnDestroy"`
+	RemoveInstanceStateOnDestroy any `field:"optional" json:"removeInstanceStateOnDestroy" yaml:"removeInstanceStateOnDestroy"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_per_instance_config#timeouts ComputePerInstanceConfig#timeouts}
@@ -80,4 +80,3 @@ type ComputePerInstanceConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_per_instance_config#zone ComputePerInstanceConfig#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

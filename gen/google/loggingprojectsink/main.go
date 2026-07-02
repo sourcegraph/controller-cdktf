@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSink",
-		reflect.TypeOf((*LoggingProjectSink)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueWriterIdentityInput", GoGetter: "UniqueWriterIdentityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectSink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,11 +95,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptions",
-		reflect.TypeOf((*LoggingProjectSinkBigqueryOptions)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkBigqueryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkBigqueryOptionsOutputReference",
-		reflect.TypeOf((*LoggingProjectSinkBigqueryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkBigqueryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTables", GoGetter: "UsePartitionedTables"},
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTablesInput", GoGetter: "UsePartitionedTablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkConfig",
-		reflect.TypeOf((*LoggingProjectSinkConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusions",
-		reflect.TypeOf((*LoggingProjectSinkExclusions)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkExclusions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsList",
-		reflect.TypeOf((*LoggingProjectSinkExclusionsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkExclusionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectSinkExclusionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsOutputReference",
-		reflect.TypeOf((*LoggingProjectSinkExclusionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectSinkExclusionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectSinkExclusionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

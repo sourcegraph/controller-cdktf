@@ -12,9 +12,9 @@ type SpannerBackupScheduleSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type SpannerBackupScheduleSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type SpannerBackupScheduleSpecOutputReference interface {
 	ResetCronSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_SpannerBackupScheduleSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewSpannerBackupScheduleSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpannerBackupScheduleSpecOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewSpannerBackupScheduleSpecOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewSpannerBackupScheduleSpecOutputReference_Override(s SpannerBackupSchedul
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetInternalValue(val *SpannerBackupScheduleSpec) {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) SetInternalValue(val *SpannerBackupScheduleSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) PutCronSpec(value *
 	_jsii_.InvokeVoid(
 		s,
 		"putCronSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) ResetCronSpec() {
 	)
 }
 
-func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) ToString() *string 
 
 	return returns
 }
-

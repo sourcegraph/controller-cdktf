@@ -18,15 +18,15 @@ type ComputeRegionTargetHttpsProxy interface {
 	SetCertificateManagerCertificates(val *[]*string)
 	CertificateManagerCertificatesInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -66,12 +66,12 @@ type ComputeRegionTargetHttpsProxy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProxyId() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -88,11 +88,11 @@ type ComputeRegionTargetHttpsProxy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionTargetHttpsProxyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UrlMap() *string
 	SetUrlMap(val *string)
 	UrlMapInput() *string
@@ -100,9 +100,9 @@ type ComputeRegionTargetHttpsProxy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type ComputeRegionTargetHttpsProxy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type ComputeRegionTargetHttpsProxy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type ComputeRegionTargetHttpsProxy interface {
 	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionTargetHttpsProxy
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) CertificateManagerCertificates
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) ProxyId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) Timeouts() ComputeRegionTarget
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -601,7 +601,6 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) UrlMapInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewComputeRegionTargetHttpsProxy(scope constructs.Construct, id *string, config *ComputeRegionTargetHttpsProxyConfig) ComputeRegionTargetHttpsProxy {
 	_init_.Initialize()
@@ -613,7 +612,7 @@ func NewComputeRegionTargetHttpsProxy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -626,12 +625,12 @@ func NewComputeRegionTargetHttpsProxy_Override(c ComputeRegionTargetHttpsProxy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetCertificateManagerCertificates(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetCertificateManagerCertificates(val *[]*string) {
 	if err := j.validateSetCertificateManagerCertificatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetCertificateManagerCertificat
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetHttpKeepAliveTimeoutSec(val *float64) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetHttpKeepAliveTimeoutSec(val *float64) {
 	if err := j.validateSetHttpKeepAliveTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetHttpKeepAliveTimeoutSec(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -754,7 +753,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetServerTlsPolicy(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetServerTlsPolicy(val *string) {
 	if err := j.validateSetServerTlsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetServerTlsPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetSslCertificates(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetSslCertificates(val *[]*string) {
 	if err := j.validateSetSslCertificatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetSslCertificates(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetSslPolicy(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetSslPolicy(val *string) {
 	if err := j.validateSetSslPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetSslPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpsProxy)SetUrlMap(val *string) {
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) SetUrlMap(val *string) {
 	if err := j.validateSetUrlMapParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func ComputeRegionTargetHttpsProxy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func ComputeRegionTargetHttpsProxy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionTargetHttpsProxy_IsConstruct(x interface{}) *bool {
+func ComputeRegionTargetHttpsProxy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionTargetHttpsProxy_IsConstructParameters(x); err != nil {
@@ -867,7 +866,7 @@ func ComputeRegionTargetHttpsProxy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func ComputeRegionTargetHttpsProxy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionTargetHttpsProxy_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionTargetHttpsProxy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionTargetHttpsProxy_IsTerraformElementParameters(x); err != nil {
@@ -886,7 +885,7 @@ func ComputeRegionTargetHttpsProxy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func ComputeRegionTargetHttpsProxy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionTargetHttpsProxy_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionTargetHttpsProxy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x); err != nil {
@@ -905,7 +904,7 @@ func ComputeRegionTargetHttpsProxy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -930,31 +929,31 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,15 +1081,15 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1109,7 +1108,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,18 +1135,18 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) PutTimeouts(value *ComputeRegi
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,8 +1271,8 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1285,8 +1284,8 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1298,8 +1297,8 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1311,8 +1310,8 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1337,8 +1336,8 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1349,4 +1348,3 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) ToTerraform() interface{} {
 
 	return returns
 }
-

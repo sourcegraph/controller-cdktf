@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateInt
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validatePutPartsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validatePutPartsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDialogflowCxIntentTrainingPhrasesOutputReferenceParameters(terra
 
 	return nil
 }
-

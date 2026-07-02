@@ -12,9 +12,9 @@ type AlloydbClusterPscConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type AlloydbClusterPscConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *AlloydbClusterPscConfig
 	SetInternalValue(val *AlloydbClusterPscConfig)
-	PscEnabled() interface{}
-	SetPscEnabled(val interface{})
-	PscEnabledInput() interface{}
+	PscEnabled() any
+	SetPscEnabled(val any)
+	PscEnabledInput() any
 	ServiceOwnedProjectNumber() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -44,7 +44,7 @@ type AlloydbClusterPscConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type AlloydbClusterPscConfigOutputReference interface {
 	ResetPscEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,8 +81,8 @@ type jsiiProxy_AlloydbClusterPscConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) InternalValue() *Allo
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabled",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabled() interfac
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabledInput",
@@ -181,7 +181,6 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewAlloydbClusterPscConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbClusterPscConfigOutputReference {
 	_init_.Initialize()
 
@@ -192,7 +191,7 @@ func NewAlloydbClusterPscConfigOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterPscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -204,12 +203,12 @@ func NewAlloydbClusterPscConfigOutputReference_Override(a AlloydbClusterPscConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbCluster.AlloydbClusterPscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetInternalValue(val *AlloydbClusterPscConfig) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetInternalValue(val *AlloydbClusterPscConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetPscEnabled(val interface{}) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetPscEnabled(val any) {
 	if err := j.validateSetPscEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetPscEnabled(val inte
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -469,16 +468,16 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) ResetPscEnabled() {
 	)
 }
 
-func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -497,4 +496,3 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

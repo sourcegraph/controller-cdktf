@@ -1,6 +1,5 @@
 package computeregioninstancetemplate
 
-
 type ComputeRegionInstanceTemplateDisk struct {
 	// The architecture of the image. Allowed values are ARM64 or X86_64.
 	//
@@ -9,11 +8,11 @@ type ComputeRegionInstanceTemplateDisk struct {
 	// Whether or not the disk should be auto-deleted. This defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#auto_delete ComputeRegionInstanceTemplate#auto_delete}
-	AutoDelete interface{} `field:"optional" json:"autoDelete" yaml:"autoDelete"`
+	AutoDelete any `field:"optional" json:"autoDelete" yaml:"autoDelete"`
 	// Indicates that this is a boot disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#boot ComputeRegionInstanceTemplate#boot}
-	Boot interface{} `field:"optional" json:"boot" yaml:"boot"`
+	Boot any `field:"optional" json:"boot" yaml:"boot"`
 	// A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
 	//
 	// If not specified, the server chooses a default device name to apply to this disk.
@@ -118,4 +117,3 @@ type ComputeRegionInstanceTemplateDisk struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#type ComputeRegionInstanceTemplate#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

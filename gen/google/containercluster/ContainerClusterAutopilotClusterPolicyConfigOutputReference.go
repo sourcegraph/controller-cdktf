@@ -12,9 +12,9 @@ type ContainerClusterAutopilotClusterPolicyConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,18 +29,18 @@ type ContainerClusterAutopilotClusterPolicyConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterAutopilotClusterPolicyConfig
 	SetInternalValue(val *ContainerClusterAutopilotClusterPolicyConfig)
-	NoStandardNodePools() interface{}
-	SetNoStandardNodePools(val interface{})
-	NoStandardNodePoolsInput() interface{}
-	NoSystemImpersonation() interface{}
-	SetNoSystemImpersonation(val interface{})
-	NoSystemImpersonationInput() interface{}
-	NoSystemMutation() interface{}
-	SetNoSystemMutation(val interface{})
-	NoSystemMutationInput() interface{}
-	NoUnsafeWebhooks() interface{}
-	SetNoUnsafeWebhooks(val interface{})
-	NoUnsafeWebhooksInput() interface{}
+	NoStandardNodePools() any
+	SetNoStandardNodePools(val any)
+	NoStandardNodePoolsInput() any
+	NoSystemImpersonation() any
+	SetNoSystemImpersonation(val any)
+	NoSystemImpersonationInput() any
+	NoSystemMutation() any
+	SetNoSystemMutation(val any)
+	NoSystemMutationInput() any
+	NoUnsafeWebhooks() any
+	SetNoUnsafeWebhooks(val any)
+	NoUnsafeWebhooksInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type ContainerClusterAutopilotClusterPolicyConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ContainerClusterAutopilotClusterPolicyConfigOutputReference interface {
 	ResetNoUnsafeWebhooks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoStandardNodePools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoStandardNodePools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noStandardNodePools",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoStandardNodePoolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoStandardNodePoolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noStandardNodePoolsInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemImpersonation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemImpersonation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noSystemImpersonation",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemImpersonationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemImpersonationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noSystemImpersonationInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemMutation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemMutation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noSystemMutation",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemMutationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoSystemMutationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noSystemMutationInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoUnsafeWebhooks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoUnsafeWebhooks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noUnsafeWebhooks",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoUnsafeWebhooksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) NoUnsafeWebhooksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noUnsafeWebhooksInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-
 func NewContainerClusterAutopilotClusterPolicyConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterAutopilotClusterPolicyConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewContainerClusterAutopilotClusterPolicyConfigOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAutopilotClusterPolicyConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewContainerClusterAutopilotClusterPolicyConfigOutputReference_Override(c C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAutopilotClusterPolicyConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetInternalValue(val *ContainerClusterAutopilotClusterPolicyConfig) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetInternalValue(val *ContainerClusterAutopilotClusterPolicyConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetNoStandardNodePools(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetNoStandardNodePools(val any) {
 	if err := j.validateSetNoStandardNodePoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetNoSystemImpersonation(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetNoSystemImpersonation(val any) {
 	if err := j.validateSetNoSystemImpersonationParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetNoSystemMutation(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetNoSystemMutation(val any) {
 	if err := j.validateSetNoSystemMutationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetNoUnsafeWebhooks(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetNoUnsafeWebhooks(val any) {
 	if err := j.validateSetNoUnsafeWebhooksParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 
 	return returns
 }
-

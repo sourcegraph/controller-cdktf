@@ -90,7 +90,7 @@ func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateInterpolation
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validatePutServiceAttachmentsParameters(value interface{}) error {
+func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validatePutServiceAttachmentsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_LookerInstancePscConfigOutputReference) validateSetAllowedVpc
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstancePscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstancePscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewLookerInstancePscConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

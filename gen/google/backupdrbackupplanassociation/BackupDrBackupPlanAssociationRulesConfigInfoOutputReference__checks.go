@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBackupDrBackupPlanAssociationRulesConfigInfoOutputReferenceParam
 
 	return nil
 }
-

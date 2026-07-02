@@ -12,15 +12,15 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
-	AllowGlobalAccess() interface{}
-	SetAllowGlobalAccess(val interface{})
-	AllowGlobalAccessInput() interface{}
-	AllowPscGlobalAccess() interface{}
-	SetAllowPscGlobalAccess(val interface{})
-	AllowPscGlobalAccessInput() interface{}
-	AllPorts() interface{}
-	SetAllPorts(val interface{})
-	AllPortsInput() interface{}
+	AllowGlobalAccess() any
+	SetAllowGlobalAccess(val any)
+	AllowGlobalAccessInput() any
+	AllowPscGlobalAccess() any
+	SetAllowPscGlobalAccess(val any)
+	AllowPscGlobalAccessInput() any
+	AllPorts() any
+	SetAllPorts(val any)
+	AllPortsInput() any
 	BackendService() *string
 	SetBackendService(val *string)
 	BackendServiceInput() *string
@@ -28,15 +28,15 @@ type ComputeForwardingRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,9 +70,9 @@ type ComputeForwardingRule interface {
 	IpVersion() *string
 	SetIpVersion(val *string)
 	IpVersionInput() *string
-	IsMirroringCollector() interface{}
-	SetIsMirroringCollector(val interface{})
-	IsMirroringCollectorInput() interface{}
+	IsMirroringCollector() any
+	SetIsMirroringCollector(val any)
+	IsMirroringCollectorInput() any
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -93,9 +93,9 @@ type ComputeForwardingRule interface {
 	NetworkTier() *string
 	SetNetworkTier(val *string)
 	NetworkTierInput() *string
-	NoAutomateDnsZone() interface{}
-	SetNoAutomateDnsZone(val interface{})
-	NoAutomateDnsZoneInput() interface{}
+	NoAutomateDnsZone() any
+	SetNoAutomateDnsZone(val any)
+	NoAutomateDnsZoneInput() any
 	// The tree node.
 	Node() constructs.Node
 	PortRange() *string
@@ -112,16 +112,16 @@ type ComputeForwardingRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConnectionId() *string
 	PscConnectionStatus() *string
 	// Experimental.
-	RawOverrides() interface{}
-	RecreateClosedPsc() interface{}
-	SetRecreateClosedPsc(val interface{})
-	RecreateClosedPscInput() interface{}
+	RawOverrides() any
+	RecreateClosedPsc() any
+	SetRecreateClosedPsc(val any)
+	RecreateClosedPscInput() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -145,18 +145,18 @@ type ComputeForwardingRule interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeForwardingRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -174,7 +174,7 @@ type ComputeForwardingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -186,7 +186,7 @@ type ComputeForwardingRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -225,17 +225,17 @@ type ComputeForwardingRule interface {
 	ResetSubnetwork()
 	ResetTarget()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeForwardingRule
@@ -243,8 +243,8 @@ type jsiiProxy_ComputeForwardingRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowGlobalAccess",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowGlobalAccessInput",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccessInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPscGlobalAccess",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPscGlobalAccessInput",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccessInput() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllPorts() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllPorts() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allPorts",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ComputeForwardingRule) AllPorts() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) AllPortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) AllPortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allPortsInput",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_ComputeForwardingRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_ComputeForwardingRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeForwardingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_ComputeForwardingRule) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_ComputeForwardingRule) IpVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) IsMirroringCollector() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) IsMirroringCollector() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMirroringCollector",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_ComputeForwardingRule) IsMirroringCollector() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) IsMirroringCollectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) IsMirroringCollectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMirroringCollectorInput",
@@ -703,8 +703,8 @@ func (j *jsiiProxy_ComputeForwardingRule) NetworkTierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) NoAutomateDnsZone() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) NoAutomateDnsZone() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noAutomateDnsZone",
@@ -713,8 +713,8 @@ func (j *jsiiProxy_ComputeForwardingRule) NoAutomateDnsZone() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) NoAutomateDnsZoneInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) NoAutomateDnsZoneInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noAutomateDnsZoneInput",
@@ -803,8 +803,8 @@ func (j *jsiiProxy_ComputeForwardingRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeForwardingRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -833,8 +833,8 @@ func (j *jsiiProxy_ComputeForwardingRule) PscConnectionStatus() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -843,8 +843,8 @@ func (j *jsiiProxy_ComputeForwardingRule) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) RecreateClosedPsc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) RecreateClosedPsc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recreateClosedPsc",
@@ -853,8 +853,8 @@ func (j *jsiiProxy_ComputeForwardingRule) RecreateClosedPsc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) RecreateClosedPscInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) RecreateClosedPscInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recreateClosedPscInput",
@@ -1023,8 +1023,8 @@ func (j *jsiiProxy_ComputeForwardingRule) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeForwardingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1053,8 +1053,8 @@ func (j *jsiiProxy_ComputeForwardingRule) Timeouts() ComputeForwardingRuleTimeou
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1062,7 +1062,6 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
@@ -1075,7 +1074,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1088,12 +1087,12 @@ func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetAllowGlobalAccess(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetAllowGlobalAccess(val any) {
 	if err := j.validateSetAllowGlobalAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetAllowGlobalAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetAllowPscGlobalAccess(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetAllowPscGlobalAccess(val any) {
 	if err := j.validateSetAllowPscGlobalAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetAllowPscGlobalAccess(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetAllPorts(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetAllPorts(val any) {
 	if err := j.validateSetAllPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetAllPorts(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetBackendService(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetBackendService(val *string) {
 	if err := j.validateSetBackendServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetBackendService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeForwardingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1186,7 +1185,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetId(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1197,7 +1196,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetIpAddress(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1208,7 +1207,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIpAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetIpCollection(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetIpCollection(val *string) {
 	if err := j.validateSetIpCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1219,7 +1218,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIpCollection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetIpProtocol(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetIpProtocol(val *string) {
 	if err := j.validateSetIpProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1230,7 +1229,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIpProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetIpVersion(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetIpVersion(val *string) {
 	if err := j.validateSetIpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1241,7 +1240,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIpVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetIsMirroringCollector(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetIsMirroringCollector(val any) {
 	if err := j.validateSetIsMirroringCollectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1252,7 +1251,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetIsMirroringCollector(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1263,7 +1262,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeForwardingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1274,7 +1273,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1285,7 +1284,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetLoadBalancingScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetName(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1296,7 +1295,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetNetwork(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1307,7 +1306,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetNetworkTier(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetNetworkTier(val *string) {
 	if err := j.validateSetNetworkTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1318,7 +1317,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetNetworkTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetNoAutomateDnsZone(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetNoAutomateDnsZone(val any) {
 	if err := j.validateSetNoAutomateDnsZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1329,7 +1328,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetNoAutomateDnsZone(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetPortRange(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetPortRange(val *string) {
 	if err := j.validateSetPortRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1340,7 +1339,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetPortRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetPorts(val *[]*string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetPorts(val *[]*string) {
 	if err := j.validateSetPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1351,7 +1350,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetPorts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetProject(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1362,7 +1361,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeForwardingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1370,7 +1369,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1381,7 +1380,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetRecreateClosedPsc(val interface{}) {
+func (j *jsiiProxy_ComputeForwardingRule) SetRecreateClosedPsc(val any) {
 	if err := j.validateSetRecreateClosedPscParameters(val); err != nil {
 		panic(err)
 	}
@@ -1392,7 +1391,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetRecreateClosedPsc(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1403,7 +1402,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetServiceLabel(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetServiceLabel(val *string) {
 	if err := j.validateSetServiceLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1414,7 +1413,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetServiceLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetSourceIpRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetSourceIpRanges(val *[]*string) {
 	if err := j.validateSetSourceIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1425,7 +1424,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetSourceIpRanges(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetSubnetwork(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1436,7 +1435,7 @@ func (j *jsiiProxy_ComputeForwardingRule)SetSubnetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeForwardingRule)SetTarget(val *string) {
+func (j *jsiiProxy_ComputeForwardingRule) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1459,7 +1458,7 @@ func ComputeForwardingRule_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1483,7 +1482,7 @@ func ComputeForwardingRule_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeForwardingRule_IsConstruct(x interface{}) *bool {
+func ComputeForwardingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeForwardingRule_IsConstructParameters(x); err != nil {
@@ -1494,7 +1493,7 @@ func ComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1502,7 +1501,7 @@ func ComputeForwardingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
+func ComputeForwardingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeForwardingRule_IsTerraformElementParameters(x); err != nil {
@@ -1513,7 +1512,7 @@ func ComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1521,7 +1520,7 @@ func ComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
+func ComputeForwardingRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeForwardingRule_IsTerraformResourceParameters(x); err != nil {
@@ -1532,7 +1531,7 @@ func ComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1557,31 +1556,31 @@ func (c *jsiiProxy_ComputeForwardingRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeForwardingRule) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1597,7 +1596,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1613,7 +1612,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1629,7 +1628,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1645,7 +1644,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1661,7 +1660,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1677,7 +1676,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1693,7 +1692,7 @@ func (c *jsiiProxy_ComputeForwardingRule) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1709,15 +1708,15 @@ func (c *jsiiProxy_ComputeForwardingRule) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeForwardingRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1736,7 +1735,7 @@ func (c *jsiiProxy_ComputeForwardingRule) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1749,7 +1748,7 @@ func (c *jsiiProxy_ComputeForwardingRule) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1763,18 +1762,18 @@ func (c *jsiiProxy_ComputeForwardingRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeForwardingRule) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1785,7 +1784,7 @@ func (c *jsiiProxy_ComputeForwardingRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1796,7 +1795,7 @@ func (c *jsiiProxy_ComputeForwardingRule) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1807,7 +1806,7 @@ func (c *jsiiProxy_ComputeForwardingRule) PutServiceDirectoryRegistrations(value
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceDirectoryRegistrations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1818,7 +1817,7 @@ func (c *jsiiProxy_ComputeForwardingRule) PutTimeouts(value *ComputeForwardingRu
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2046,8 +2045,8 @@ func (c *jsiiProxy_ComputeForwardingRule) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeForwardingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2059,8 +2058,8 @@ func (c *jsiiProxy_ComputeForwardingRule) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeForwardingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2072,8 +2071,8 @@ func (c *jsiiProxy_ComputeForwardingRule) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeForwardingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2085,8 +2084,8 @@ func (c *jsiiProxy_ComputeForwardingRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeForwardingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2111,8 +2110,8 @@ func (c *jsiiProxy_ComputeForwardingRule) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeForwardingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2123,4 +2122,3 @@ func (c *jsiiProxy_ComputeForwardingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutput
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutGuestAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutput
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validatePutLocalSsdsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewComputeReservationSpecificReservationInstancePropertiesOutputRef
 
 	return nil
 }
-

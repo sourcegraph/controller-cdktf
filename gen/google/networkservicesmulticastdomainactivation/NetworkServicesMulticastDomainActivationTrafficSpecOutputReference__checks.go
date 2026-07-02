@@ -122,7 +122,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkServicesMulticastDomainActivationTrafficSpecOutputReferen
 
 	return nil
 }
-

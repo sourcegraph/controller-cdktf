@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputePacketMirroringTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

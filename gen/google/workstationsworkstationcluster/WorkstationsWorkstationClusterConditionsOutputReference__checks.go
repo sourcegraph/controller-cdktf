@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkstationsWorkstationClusterConditionsOutputReferenceParameter
 
 	return nil
 }
-

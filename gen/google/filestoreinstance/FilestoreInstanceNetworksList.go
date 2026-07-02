@@ -17,8 +17,8 @@ type FilestoreInstanceNetworksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type FilestoreInstanceNetworksList interface {
 	Get(index *float64) FilestoreInstanceNetworksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_FilestoreInstanceNetworksList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FilestoreInstanceNetworksList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_FilestoreInstanceNetworksList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFilestoreInstanceNetworksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FilestoreInstanceNetworksList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewFilestoreInstanceNetworksList(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewFilestoreInstanceNetworksList_Override(f FilestoreInstanceNetworksList, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FilestoreInstanceNetworksList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_FilestoreInstanceNetworksList)SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FilestoreInstanceNetworksList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_FilestoreInstanceNetworksList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FilestoreInstanceNetworksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_FilestoreInstanceNetworksList)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FilestoreInstanceNetworksList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (f *jsiiProxy_FilestoreInstanceNetworksList) AllWithMapKey(mapKeyAttributeN
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (f *jsiiProxy_FilestoreInstanceNetworksList) Get(index *float64) FilestoreI
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FilestoreInstanceNetworksList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FilestoreInstanceNetworksList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (f *jsiiProxy_FilestoreInstanceNetworksList) ToString() *string {
 
 	return returns
 }
-

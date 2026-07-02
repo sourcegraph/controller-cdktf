@@ -16,9 +16,9 @@ type CesToolsetOpenApiToolsetApiAuthenticationOutputReference interface {
 	BearerTokenConfigInput() *CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type CesToolsetOpenApiToolsetApiAuthenticationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type CesToolsetOpenApiToolsetApiAuthenticationOutputReference interface {
 	ResetServiceAgentIdTokenAuthConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Bea
 	return returns
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Ter
 	return returns
 }
 
-
 func NewCesToolsetOpenApiToolsetApiAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolsetOpenApiToolsetApiAuthenticationOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewCesToolsetOpenApiToolsetApiAuthenticationOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesToolset.CesToolsetOpenApiToolsetApiAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewCesToolsetOpenApiToolsetApiAuthenticationOutputReference_Override(c CesT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesToolset.CesToolsetOpenApiToolsetApiAuthenticationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetInternalValue(val *CesToolsetOpenApiToolsetApiAuthentication) {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) SetInternalValue(val *CesToolsetOpenApiToolsetApiAuthentication) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,16 +361,16 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putApiKeyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -553,7 +552,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putBearerTokenConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -564,7 +563,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putOauthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceAccountAuthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceAgentIdTokenAuthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationOutputReference) ToS
 
 	return returns
 }
-

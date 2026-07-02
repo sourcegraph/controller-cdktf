@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReferencePara
 
 	return nil
 }
-

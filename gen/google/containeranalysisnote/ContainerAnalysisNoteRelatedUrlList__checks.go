@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerAnalysisNoteRelatedUrlListParameters(terraformResource 
 
 	return nil
 }
-

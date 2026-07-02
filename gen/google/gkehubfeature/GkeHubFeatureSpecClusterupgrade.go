@@ -1,6 +1,5 @@
 package gkehubfeature
 
-
 type GkeHubFeatureSpecClusterupgrade struct {
 	// Specified if other fleet should be considered as a source of upgrades.
 	//
@@ -11,10 +10,9 @@ type GkeHubFeatureSpecClusterupgrade struct {
 	// gke_upgrade_overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature#gke_upgrade_overrides GkeHubFeature#gke_upgrade_overrides}
-	GkeUpgradeOverrides interface{} `field:"optional" json:"gkeUpgradeOverrides" yaml:"gkeUpgradeOverrides"`
+	GkeUpgradeOverrides any `field:"optional" json:"gkeUpgradeOverrides" yaml:"gkeUpgradeOverrides"`
 	// post_conditions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature#post_conditions GkeHubFeature#post_conditions}
 	PostConditions *GkeHubFeatureSpecClusterupgradePostConditions `field:"optional" json:"postConditions" yaml:"postConditions"`
 }
-

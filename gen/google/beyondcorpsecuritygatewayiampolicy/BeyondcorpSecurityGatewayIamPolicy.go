@@ -15,15 +15,15 @@ type BeyondcorpSecurityGatewayIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,27 +60,27 @@ type BeyondcorpSecurityGatewayIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGatewayId() *string
 	SetSecurityGatewayId(val *string)
 	SecurityGatewayIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type BeyondcorpSecurityGatewayIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type BeyondcorpSecurityGatewayIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type BeyondcorpSecurityGatewayIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BeyondcorpSecurityGatewayIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy} Resource.
 func NewBeyondcorpSecurityGatewayIamPolicy(scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayIamPolicyConfig) BeyondcorpSecurityGatewayIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewBeyondcorpSecurityGatewayIamPolicy(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewBeyondcorpSecurityGatewayIamPolicy_Override(b BeyondcorpSecurityGatewayI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetPolicyData(val *string)
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy)SetSecurityGatewayId(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SetSecurityGatewayId(val *string) {
 	if err := j.validateSetSecurityGatewayIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func BeyondcorpSecurityGatewayIamPolicy_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func BeyondcorpSecurityGatewayIamPolicy_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BeyondcorpSecurityGatewayIamPolicy_IsConstruct(x interface{}) *bool {
+func BeyondcorpSecurityGatewayIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpSecurityGatewayIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func BeyondcorpSecurityGatewayIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func BeyondcorpSecurityGatewayIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BeyondcorpSecurityGatewayIamPolicy_IsTerraformElement(x interface{}) *bool {
+func BeyondcorpSecurityGatewayIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpSecurityGatewayIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func BeyondcorpSecurityGatewayIamPolicy_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func BeyondcorpSecurityGatewayIamPolicy_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func BeyondcorpSecurityGatewayIamPolicy_IsTerraformResource(x interface{}) *bool {
+func BeyondcorpSecurityGatewayIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpSecurityGatewayIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func BeyondcorpSecurityGatewayIamPolicy_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamPolicy.BeyondcorpSecurityGatewayIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -853,7 +852,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) InterpolationForAttribute
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ResetProject() {
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -962,8 +961,8 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeAttributes() *m
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -975,8 +974,8 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) SynthesizeHclAttributes()
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -988,8 +987,8 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToHclTerraform() interfac
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1014,8 +1013,8 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1026,4 +1025,3 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamPolicy) ToTerraform() interface{}
 
 	return returns
 }
-

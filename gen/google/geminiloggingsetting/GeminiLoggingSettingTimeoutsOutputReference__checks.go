@@ -98,7 +98,7 @@ func (g *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGeminiLoggingSettingTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

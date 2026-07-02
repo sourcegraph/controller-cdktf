@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateSetInternalVa
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateSetPscEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) validateSetPscEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewAlloydbClusterPscConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

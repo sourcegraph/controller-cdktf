@@ -17,15 +17,15 @@ type BinaryAuthorizationAttestor interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,26 +61,26 @@ type BinaryAuthorizationAttestor interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BinaryAuthorizationAttestorTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type BinaryAuthorizationAttestor interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type BinaryAuthorizationAttestor interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type BinaryAuthorizationAttestor interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BinaryAuthorizationAttestor
@@ -174,8 +174,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) Timeouts() BinaryAuthorizationAt
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationAttestor) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_attestor google_binary_authorization_attestor} Resource.
 func NewBinaryAuthorizationAttestor(scope constructs.Construct, id *string, config *BinaryAuthorizationAttestorConfig) BinaryAuthorizationAttestor {
@@ -436,7 +435,7 @@ func NewBinaryAuthorizationAttestor(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewBinaryAuthorizationAttestor_Override(b BinaryAuthorizationAttestor, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetConnection(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetCount(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetDescription(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetId(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetName(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetProject(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestor)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationAttestor) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func BinaryAuthorizationAttestor_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func BinaryAuthorizationAttestor_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BinaryAuthorizationAttestor_IsConstruct(x interface{}) *bool {
+func BinaryAuthorizationAttestor_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationAttestor_IsConstructParameters(x); err != nil {
@@ -613,7 +612,7 @@ func BinaryAuthorizationAttestor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func BinaryAuthorizationAttestor_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BinaryAuthorizationAttestor_IsTerraformElement(x interface{}) *bool {
+func BinaryAuthorizationAttestor_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationAttestor_IsTerraformElementParameters(x); err != nil {
@@ -632,7 +631,7 @@ func BinaryAuthorizationAttestor_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func BinaryAuthorizationAttestor_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BinaryAuthorizationAttestor_IsTerraformResource(x interface{}) *bool {
+func BinaryAuthorizationAttestor_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationAttestor_IsTerraformResourceParameters(x); err != nil {
@@ -651,7 +650,7 @@ func BinaryAuthorizationAttestor_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,31 +675,31 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationAttestor) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BinaryAuthorizationAttestor) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,15 +827,15 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -855,7 +854,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -868,7 +867,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,18 +881,18 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationAttestor) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -904,7 +903,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -915,7 +914,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -926,7 +925,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) PutAttestationAuthorityNote(valu
 	_jsii_.InvokeVoid(
 		b,
 		"putAttestationAuthorityNote",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -937,7 +936,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) PutTimeouts(value *BinaryAuthori
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -994,8 +993,8 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1007,8 +1006,8 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1020,8 +1019,8 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1046,8 +1045,8 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestor) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationAttestor) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1058,4 +1057,3 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) ToTerraform() interface{} {
 
 	return returns
 }
-

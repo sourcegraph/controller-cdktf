@@ -1,6 +1,5 @@
 package artifactregistryrepository
 
-
 type ArtifactRegistryRepositoryRemoteRepositoryConfig struct {
 	// apt_repository block.
 	//
@@ -17,7 +16,7 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfig struct {
 	// If true, the remote repository upstream and upstream credentials will not be validated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/artifact_registry_repository#disable_upstream_validation ArtifactRegistryRepository#disable_upstream_validation}
-	DisableUpstreamValidation interface{} `field:"optional" json:"disableUpstreamValidation" yaml:"disableUpstreamValidation"`
+	DisableUpstreamValidation any `field:"optional" json:"disableUpstreamValidation" yaml:"disableUpstreamValidation"`
 	// docker_repository block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/artifact_registry_repository#docker_repository ArtifactRegistryRepository#docker_repository}
@@ -43,4 +42,3 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/artifact_registry_repository#yum_repository ArtifactRegistryRepository#yum_repository}
 	YumRepository *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository `field:"optional" json:"yumRepository" yaml:"yumRepository"`
 }
-

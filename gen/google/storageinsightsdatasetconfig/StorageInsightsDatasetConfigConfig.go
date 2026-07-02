@@ -6,9 +6,9 @@ import (
 
 type StorageInsightsDatasetConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type StorageInsightsDatasetConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The user-defined ID of the DatasetConfig.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
@@ -69,7 +69,7 @@ type StorageInsightsDatasetConfigConfig struct {
 	// If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
-	IncludeNewlyCreatedBuckets interface{} `field:"optional" json:"includeNewlyCreatedBuckets" yaml:"includeNewlyCreatedBuckets"`
+	IncludeNewlyCreatedBuckets any `field:"optional" json:"includeNewlyCreatedBuckets" yaml:"includeNewlyCreatedBuckets"`
 	// A boolean terraform only flag to link/unlink dataset.
 	//
 	// Setting this field to true while creation will automatically link the created dataset as an additional functionality.
@@ -77,7 +77,7 @@ type StorageInsightsDatasetConfigConfig struct {
 	// so users must set this field to false to unlink the dataset and destroy the dataset config resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
-	LinkDataset interface{} `field:"optional" json:"linkDataset" yaml:"linkDataset"`
+	LinkDataset any `field:"optional" json:"linkDataset" yaml:"linkDataset"`
 	// Organization resource ID that the source projects should belong to.
 	//
 	// Projects that do not belong to the provided organization are not considered when creating the dataset.
@@ -87,7 +87,7 @@ type StorageInsightsDatasetConfigConfig struct {
 	// Defines the options for providing a source organization for the DatasetConfig.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
-	OrganizationScope interface{} `field:"optional" json:"organizationScope" yaml:"organizationScope"`
+	OrganizationScope any `field:"optional" json:"organizationScope" yaml:"organizationScope"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// source_folders block.
@@ -103,4 +103,3 @@ type StorageInsightsDatasetConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
 	Timeouts *StorageInsightsDatasetConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

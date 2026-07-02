@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplate",
-		reflect.TypeOf((*TranscoderJobTemplate)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfig",
-		reflect.TypeOf((*TranscoderJobTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigA",
-		reflect.TypeOf((*TranscoderJobTemplateConfigA)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adBreaks", GoGetter: "AdBreaks"},
 			_jsii_.MemberProperty{JsiiProperty: "adBreaksInput", GoGetter: "AdBreaksInput"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAdBreaks",
-		reflect.TypeOf((*TranscoderJobTemplateConfigAdBreaks)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigAdBreaks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAdBreaksList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigAdBreaksList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigAdBreaksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigAdBreaksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigAdBreaksOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigAdBreaksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigAdBreaksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEditListStruct",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEditListStruct)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEditListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEditListStructList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEditListStructList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEditListStructList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEditListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -252,7 +252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEditListStructOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEditListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEditListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEditListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,15 +293,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreams",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreams)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreams](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsAudioStream",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsAudioStream)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsAudioStream](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrateBps", GoGetter: "BitrateBps"},
 			_jsii_.MemberProperty{JsiiProperty: "bitrateBpsInput", GoGetter: "BitrateBpsInput"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsAudioStreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,7 +347,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -369,7 +369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioStream", GoGetter: "AudioStream"},
 			_jsii_.MemberProperty{JsiiProperty: "audioStreamInput", GoGetter: "AudioStreamInput"},
@@ -404,7 +404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "videoStream", GoGetter: "VideoStream"},
 			_jsii_.MemberProperty{JsiiProperty: "videoStreamInput", GoGetter: "VideoStreamInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -412,19 +412,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStream",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStream)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStream](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Hlg](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264HlgOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,7 +456,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrateBps", GoGetter: "BitrateBps"},
 			_jsii_.MemberProperty{JsiiProperty: "bitrateBpsInput", GoGetter: "BitrateBpsInput"},
@@ -525,7 +525,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widthPixels", GoGetter: "WidthPixels"},
 			_jsii_.MemberProperty{JsiiProperty: "widthPixelsInput", GoGetter: "WidthPixelsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -533,11 +533,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Sdr](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -561,7 +561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264SdrOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -569,7 +569,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -597,7 +597,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -605,15 +605,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptions",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptions)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsAes128)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsAes128](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128OutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsAes128OutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsAes128OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -637,7 +637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -645,15 +645,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystems",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystems)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystems](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -677,7 +677,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsClearkeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -685,11 +685,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -721,7 +721,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clearkey", GoGetter: "Clearkey"},
 			_jsii_.MemberProperty{JsiiProperty: "clearkeyInput", GoGetter: "ClearkeyInput"},
@@ -761,7 +761,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widevine", GoGetter: "Widevine"},
 			_jsii_.MemberProperty{JsiiProperty: "widevineInput", GoGetter: "WidevineInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -769,11 +769,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayready](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -797,7 +797,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsPlayreadyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -805,11 +805,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevine](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -833,7 +833,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsWidevineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -841,7 +841,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -855,7 +855,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -863,11 +863,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsMpegCenc",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsMpegCenc)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsMpegCenc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -893,7 +893,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -901,7 +901,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aes128", GoGetter: "Aes128"},
 			_jsii_.MemberProperty{JsiiProperty: "aes128Input", GoGetter: "Aes128Input"},
@@ -947,7 +947,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -955,11 +955,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsSampleAes",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsSampleAes)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsSampleAes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -983,7 +983,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -991,11 +991,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsSecretManagerKeySource",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsSecretManagerKeySource)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsSecretManagerKeySource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1021,7 +1021,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1029,11 +1029,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigInputs",
-		reflect.TypeOf((*TranscoderJobTemplateConfigInputs)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigInputs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigInputsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigInputsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigInputsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1047,7 +1047,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigInputsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1055,7 +1055,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigInputsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigInputsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigInputsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1085,7 +1085,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1093,11 +1093,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigManifests",
-		reflect.TypeOf((*TranscoderJobTemplateConfigManifests)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigManifests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigManifestsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigManifestsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigManifestsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1111,7 +1111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigManifestsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1119,7 +1119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigManifestsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigManifestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigManifestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1152,7 +1152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigManifestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1160,11 +1160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigMuxStreams",
-		reflect.TypeOf((*TranscoderJobTemplateConfigMuxStreams)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigMuxStreams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigMuxStreamsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigMuxStreamsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigMuxStreamsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1178,7 +1178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigMuxStreamsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1186,7 +1186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigMuxStreamsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigMuxStreamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigMuxStreamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1229,7 +1229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigMuxStreamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1237,11 +1237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigMuxStreamsSegmentSettings",
-		reflect.TypeOf((*TranscoderJobTemplateConfigMuxStreamsSegmentSettings)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigMuxStreamsSegmentSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1268,7 +1268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1276,11 +1276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutput",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOutput)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOutput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOutputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOutputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1307,7 +1307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1315,19 +1315,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlays",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlays)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlays](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimations",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimations)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimations](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsAnimationFade",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsAnimationFade)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsAnimationFade](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1363,7 +1363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "xy", GoGetter: "Xy"},
 			_jsii_.MemberProperty{JsiiProperty: "xyInput", GoGetter: "XyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1371,11 +1371,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1405,7 +1405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "y", GoGetter: "Y"},
 			_jsii_.MemberProperty{JsiiProperty: "yInput", GoGetter: "YInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1413,7 +1413,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1427,7 +1427,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1435,7 +1435,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysAnimationsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysAnimationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysAnimationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "animationFade", GoGetter: "AnimationFade"},
 			_jsii_.MemberProperty{JsiiProperty: "animationFadeInput", GoGetter: "AnimationFadeInput"},
@@ -1463,7 +1463,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1471,11 +1471,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysImage",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysImage)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysImageOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1501,7 +1501,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1509,7 +1509,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysList",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysList)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1523,7 +1523,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1531,7 +1531,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOverlaysOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigOverlaysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigOverlaysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "animations", GoGetter: "Animations"},
 			_jsii_.MemberProperty{JsiiProperty: "animationsInput", GoGetter: "AnimationsInput"},
@@ -1563,7 +1563,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigOverlaysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1571,11 +1571,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigPubsubDestination",
-		reflect.TypeOf((*TranscoderJobTemplateConfigPubsubDestination)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigPubsubDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigPubsubDestinationOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateConfigPubsubDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateConfigPubsubDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1602,7 +1602,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateConfigPubsubDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1610,11 +1610,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateTimeouts",
-		reflect.TypeOf((*TranscoderJobTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*TranscoderJobTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TranscoderJobTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1647,7 +1647,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TranscoderJobTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

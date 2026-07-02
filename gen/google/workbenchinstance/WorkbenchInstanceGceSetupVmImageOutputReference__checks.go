@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewWorkbenchInstanceGceSetupVmImageOutputReferenceParameters(terraf
 
 	return nil
 }
-

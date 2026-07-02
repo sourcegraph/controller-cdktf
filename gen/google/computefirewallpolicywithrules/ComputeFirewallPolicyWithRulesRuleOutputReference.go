@@ -15,9 +15,9 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	ActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,16 +34,16 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	Direction() *string
 	SetDirection(val *string)
 	DirectionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
-	EnableLogging() interface{}
-	SetEnableLogging(val interface{})
-	EnableLoggingInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
+	EnableLogging() any
+	SetEnableLogging(val any)
+	EnableLoggingInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Match() ComputeFirewallPolicyWithRulesRuleMatchOutputReference
 	MatchInput() *ComputeFirewallPolicyWithRulesRuleMatch
 	Priority() *float64
@@ -59,7 +59,7 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
 	TargetSecureTag() ComputeFirewallPolicyWithRulesRuleTargetSecureTagList
-	TargetSecureTagInput() interface{}
+	TargetSecureTagInput() any
 	TargetServiceAccounts() *[]*string
 	SetTargetServiceAccounts(val *[]*string)
 	TargetServiceAccountsInput() *[]*string
@@ -71,13 +71,13 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TlsInspect() interface{}
-	SetTlsInspect(val interface{})
-	TlsInspectInput() interface{}
+	TlsInspect() any
+	SetTlsInspect(val any)
+	TlsInspectInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatch(value *ComputeFirewallPolicyWithRulesRuleMatch)
-	PutTargetSecureTag(value interface{})
+	PutTargetSecureTag(value any)
 	ResetDescription()
 	ResetDirection()
 	ResetDisabled()
@@ -112,7 +112,7 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	ResetTlsInspect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ActionInpu
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) DirectionI
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Disabled()
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) DisabledIn
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) EnableLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) EnableLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLogging",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) EnableLogg
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) EnableLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) EnableLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLoggingInput",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetSecu
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetSecureTagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetSecureTagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetSecureTagInput",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TerraformR
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspect() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspect() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsInspect",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspect
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsInspectInput",
@@ -454,7 +454,6 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TlsInspect
 	)
 	return returns
 }
-
 
 func NewComputeFirewallPolicyWithRulesRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeFirewallPolicyWithRulesRuleOutputReference {
 	_init_.Initialize()
@@ -466,7 +465,7 @@ func NewComputeFirewallPolicyWithRulesRuleOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -478,12 +477,12 @@ func NewComputeFirewallPolicyWithRulesRuleOutputReference_Override(c ComputeFire
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeFirewallPolicyWithRules.ComputeFirewallPolicyWithRulesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetAction(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetAction(v
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDescript
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDirection(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetDirection(val *string) {
 	if err := j.validateSetDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDirectio
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetDisabled
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetEnableLogging(val interface{}) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetEnableLogging(val any) {
 	if err := j.validateSetEnableLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetEnableLo
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetPriority(val *float64) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetPriority
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetRuleName(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetRuleName(val *string) {
 	if err := j.validateSetRuleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetRuleName
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetSecurityProfileGroup(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetSecurityProfileGroup(val *string) {
 	if err := j.validateSetSecurityProfileGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetSecurity
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTargetResources(val *[]*string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetTargetResources(val *[]*string) {
 	if err := j.validateSetTargetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTargetRe
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTargetServiceAccounts(val *[]*string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetTargetServiceAccounts(val *[]*string) {
 	if err := j.validateSetTargetServiceAccountsParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTargetSe
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference)SetTlsInspect(val interface{}) {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) SetTlsInspect(val any) {
 	if err := j.validateSetTlsInspectParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,16 +671,16 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -852,18 +851,18 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) PutMatch(v
 	_jsii_.InvokeVoid(
 		c,
 		"putMatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) PutTargetSecureTag(value interface{}) {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) PutTargetSecureTag(value any) {
 	if err := c.validatePutTargetSecureTagParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTargetSecureTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,16 +946,16 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ResetTlsIn
 	)
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -975,4 +974,3 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ToString()
 
 	return returns
 }
-

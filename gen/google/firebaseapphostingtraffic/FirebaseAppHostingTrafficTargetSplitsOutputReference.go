@@ -15,9 +15,9 @@ type FirebaseAppHostingTrafficTargetSplitsOutputReference interface {
 	BuildAttributeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type FirebaseAppHostingTrafficTargetSplitsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Percent() *float64
 	SetPercent(val *float64)
 	PercentInput() *float64
@@ -46,7 +46,7 @@ type FirebaseAppHostingTrafficTargetSplitsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type FirebaseAppHostingTrafficTargetSplitsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) BuildAt
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewFirebaseAppHostingTrafficTargetSplitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FirebaseAppHostingTrafficTargetSplitsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewFirebaseAppHostingTrafficTargetSplitsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewFirebaseAppHostingTrafficTargetSplitsOutputReference_Override(f Firebase
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetBuildAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetBuildAttribute(val *string) {
 	if err := j.validateSetBuildAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetBuild
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetPercent(val *float64) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetPercent(val *float64) {
 	if err := j.validateSetPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetPerce
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Compute
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetBool
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetList
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetNumb
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) GetStri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Interpo
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference) ToStrin
 
 	return returns
 }
-

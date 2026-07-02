@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeNetworkEndpointGroupsNetworkEndpointGroupsOutpu
 
 	return nil
 }
-

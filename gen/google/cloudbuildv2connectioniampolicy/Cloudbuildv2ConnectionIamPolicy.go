@@ -15,15 +15,15 @@ type Cloudbuildv2ConnectionIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type Cloudbuildv2ConnectionIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type Cloudbuildv2ConnectionIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type Cloudbuildv2ConnectionIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type Cloudbuildv2ConnectionIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Cloudbuildv2ConnectionIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Resource.
 func NewCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionIamPolicyConfig) Cloudbuildv2ConnectionIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewCloudbuildv2ConnectionIamPolicy_Override(c Cloudbuildv2ConnectionIamPoli
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func Cloudbuildv2ConnectionIamPolicy_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func Cloudbuildv2ConnectionIamPolicy_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Cloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool {
+func Cloudbuildv2ConnectionIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildv2ConnectionIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func Cloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func Cloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bool {
+func Cloudbuildv2ConnectionIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildv2ConnectionIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func Cloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func Cloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Cloudbuildv2ConnectionIamPolicy_IsTerraformResource(x interface{}) *bool {
+func Cloudbuildv2ConnectionIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildv2ConnectionIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func Cloudbuildv2ConnectionIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildv2ConnectionIamPolicy.Cloudbuildv2ConnectionIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -853,7 +852,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -962,8 +961,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -975,8 +974,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -988,8 +987,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToHclTerraform() interface{}
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1014,8 +1013,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1026,4 +1025,3 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

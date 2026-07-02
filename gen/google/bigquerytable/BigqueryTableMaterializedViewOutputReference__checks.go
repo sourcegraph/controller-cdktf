@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetEnableRefreshParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetEnableRefreshParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewBigqueryTableMaterializedViewOutputReferenceParameters(terraform
 
 	return nil
 }
-

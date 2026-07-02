@@ -14,9 +14,9 @@ type ComputeRegionBackendServiceOutlierDetectionOutputReference interface {
 	BaseEjectionTimeInput() *ComputeRegionBackendServiceOutlierDetectionBaseEjectionTime
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -71,7 +71,7 @@ type ComputeRegionBackendServiceOutlierDetectionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ComputeRegionBackendServiceOutlierDetectionOutputReference interface {
 	ResetSuccessRateStdevFactor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) B
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) T
 	return returns
 }
 
-
 func NewComputeRegionBackendServiceOutlierDetectionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionBackendServiceOutlierDetectionOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewComputeRegionBackendServiceOutlierDetectionOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewComputeRegionBackendServiceOutlierDetectionOutputReference_Override(c Co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetConsecutiveErrors(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetConsecutiveErrors(val *float64) {
 	if err := j.validateSetConsecutiveErrorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetConsecutiveGatewayFailure(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetConsecutiveGatewayFailure(val *float64) {
 	if err := j.validateSetConsecutiveGatewayFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetEnforcingConsecutiveErrors(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetEnforcingConsecutiveErrors(val *float64) {
 	if err := j.validateSetEnforcingConsecutiveErrorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetEnforcingConsecutiveGatewayFailure(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetEnforcingConsecutiveGatewayFailure(val *float64) {
 	if err := j.validateSetEnforcingConsecutiveGatewayFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetEnforcingSuccessRate(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetEnforcingSuccessRate(val *float64) {
 	if err := j.validateSetEnforcingSuccessRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetInternalValue(val *ComputeRegionBackendServiceOutlierDetection) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetInternalValue(val *ComputeRegionBackendServiceOutlierDetection) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetMaxEjectionPercent(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetMaxEjectionPercent(val *float64) {
 	if err := j.validateSetMaxEjectionPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetSuccessRateMinimumHosts(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetSuccessRateMinimumHosts(val *float64) {
 	if err := j.validateSetSuccessRateMinimumHostsParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetSuccessRateRequestVolume(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetSuccessRateRequestVolume(val *float64) {
 	if err := j.validateSetSuccessRateRequestVolumeParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetSuccessRateStdevFactor(val *float64) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetSuccessRateStdevFactor(val *float64) {
 	if err := j.validateSetSuccessRateStdevFactorParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,16 +604,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) C
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) P
 	_jsii_.InvokeVoid(
 		c,
 		"putBaseEjectionTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -796,7 +795,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) P
 	_jsii_.InvokeVoid(
 		c,
 		"putInterval",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -888,16 +887,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) T
 
 	return returns
 }
-

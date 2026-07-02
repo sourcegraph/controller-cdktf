@@ -17,15 +17,15 @@ type PubsubSchemaIamBinding interface {
 	Condition() PubsubSchemaIamBindingConditionOutputReference
 	ConditionInput() *PubsubSchemaIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type PubsubSchemaIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,16 +73,16 @@ type PubsubSchemaIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type PubsubSchemaIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type PubsubSchemaIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type PubsubSchemaIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PubsubSchemaIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) ConditionInput() *PubsubSchemaIamBind
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubSchemaIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_PubsubSchemaIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_schema_iam_binding google_pubsub_schema_iam_binding} Resource.
 func NewPubsubSchemaIamBinding(scope constructs.Construct, id *string, config *PubsubSchemaIamBindingConfig) PubsubSchemaIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewPubsubSchemaIamBinding(scope constructs.Construct, id *string, config *P
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewPubsubSchemaIamBinding_Override(p PubsubSchemaIamBinding, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetId(val *string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_PubsubSchemaIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBinding)SetSchema(val *string) {
+func (j *jsiiProxy_PubsubSchemaIamBinding) SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func PubsubSchemaIamBinding_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func PubsubSchemaIamBinding_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PubsubSchemaIamBinding_IsConstruct(x interface{}) *bool {
+func PubsubSchemaIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSchemaIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func PubsubSchemaIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func PubsubSchemaIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubSchemaIamBinding_IsTerraformElement(x interface{}) *bool {
+func PubsubSchemaIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSchemaIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func PubsubSchemaIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func PubsubSchemaIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubSchemaIamBinding_IsTerraformResource(x interface{}) *bool {
+func PubsubSchemaIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSchemaIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func PubsubSchemaIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PubsubSchemaIamBinding) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubSchemaIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -876,7 +875,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PubsubSchemaIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) PutCondition(value *PubsubSchemaIamBi
 	_jsii_.InvokeVoid(
 		p,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) ResetProject() {
 	)
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -996,8 +995,8 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1009,8 +1008,8 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1022,8 +1021,8 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1048,8 +1047,8 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSchemaIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1060,4 +1059,3 @@ func (p *jsiiProxy_PubsubSchemaIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

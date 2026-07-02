@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccOrganizationCustomModule) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccOrganizationCustomModule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSccOrganizationCustomModule_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateSccOrganizationCustomModule_IsConstructParameters(x interface{}) error {
+func validateSccOrganizationCustomModule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSccOrganizationCustomModule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateSccOrganizationCustomModule_IsTerraformElementParameters(x interface{}) error {
+func validateSccOrganizationCustomModule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSccOrganizationCustomModule_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateSccOrganizationCustomModule_IsTerraformResourceParameters(x interface{}) error {
+func validateSccOrganizationCustomModule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSccOrganizationCustomModule_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SccOrganizationCustomModule) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_SccOrganizationCustomModule) validateSetOrganizationParameter
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewSccOrganizationCustomModuleParameters(scope constructs.Construct
 
 	return nil
 }
-

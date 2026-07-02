@@ -120,7 +120,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewSecretManagerSecretReplicationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

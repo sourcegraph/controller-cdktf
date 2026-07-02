@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewComputeRouterRoutePolicyTermsActionsOutputReferenceParameters(te
 
 	return nil
 }
-

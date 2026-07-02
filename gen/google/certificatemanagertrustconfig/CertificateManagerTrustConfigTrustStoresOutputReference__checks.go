@@ -90,7 +90,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validatePutIntermediateCasParameters(value interface{}) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validatePutIntermediateCasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validatePutTrustAnchorsParameters(value interface{}) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validatePutTrustAnchorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewCertificateManagerTrustConfigTrustStoresOutputReferenceParameter
 
 	return nil
 }
-

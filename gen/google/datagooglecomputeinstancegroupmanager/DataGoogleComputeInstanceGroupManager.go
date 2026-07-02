@@ -18,11 +18,11 @@ type DataGoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,7 +64,7 @@ type DataGoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourcePolicies() DataGoogleComputeInstanceGroupManagerResourcePoliciesList
 	SelfLink() *string
 	SetSelfLink(val *string)
@@ -82,7 +82,7 @@ type DataGoogleComputeInstanceGroupManager interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatePolicy() DataGoogleComputeInstanceGroupManagerUpdatePolicyList
@@ -93,9 +93,9 @@ type DataGoogleComputeInstanceGroupManager interface {
 	SetZone(val *string)
 	ZoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,18 +125,18 @@ type DataGoogleComputeInstanceGroupManager interface {
 	ResetProject()
 	ResetSelfLink()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeInstanceGroupManager
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -654,7 +654,6 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_instance_group_manager google_compute_instance_group_manager} Data Source.
 func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGroupManagerConfig) DataGoogleComputeInstanceGroupManager {
 	_init_.Initialize()
@@ -666,7 +665,7 @@ func NewDataGoogleComputeInstanceGroupManager(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -679,12 +678,12 @@ func NewDataGoogleComputeInstanceGroupManager_Override(d DataGoogleComputeInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -703,7 +702,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetSelfLink(val *string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetSelfLink(val *string) {
 	if err := j.validateSetSelfLinkParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetSelfLink(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager)SetZone(val *string) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManager) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func DataGoogleComputeInstanceGroupManager_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func DataGoogleComputeInstanceGroupManager_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeInstanceGroupManager_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeInstanceGroupManager_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func DataGoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func DataGoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeInstanceGroupManager_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeInstanceGroupManager_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeInstanceGroupManager_IsTerraformDataSourceParameters(x); err != nil {
@@ -851,7 +850,7 @@ func DataGoogleComputeInstanceGroupManager_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func DataGoogleComputeInstanceGroupManager_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataGoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeInstanceGroupManager_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeInstanceGroupManager_IsTerraformElementParameters(x); err != nil {
@@ -870,7 +869,7 @@ func DataGoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -888,27 +887,27 @@ func DataGoogleComputeInstanceGroupManager_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1118,8 +1117,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ResetZone() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1131,8 +1130,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1144,8 +1143,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1157,8 +1156,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1183,8 +1182,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1195,4 +1194,3 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManager) ToTerraform() interfac
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
-		reflect.TypeOf((*AlloydbBackup)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -112,15 +112,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupConfig",
-		reflect.TypeOf((*AlloydbBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionConfig",
-		reflect.TypeOf((*AlloydbBackupEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionConfigOutputReference",
-		reflect.TypeOf((*AlloydbBackupEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfo",
-		reflect.TypeOf((*AlloydbBackupEncryptionInfo)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupEncryptionInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoList",
-		reflect.TypeOf((*AlloydbBackupEncryptionInfoList)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupEncryptionInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupEncryptionInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupEncryptionInfoOutputReference",
-		reflect.TypeOf((*AlloydbBackupEncryptionInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupEncryptionInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupEncryptionInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,11 +214,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupExpiryQuantity",
-		reflect.TypeOf((*AlloydbBackupExpiryQuantity)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupExpiryQuantity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupExpiryQuantityList",
-		reflect.TypeOf((*AlloydbBackupExpiryQuantityList)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupExpiryQuantityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupExpiryQuantityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -239,7 +239,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupExpiryQuantityOutputReference",
-		reflect.TypeOf((*AlloydbBackupExpiryQuantityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupExpiryQuantityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalRetentionCount", GoGetter: "TotalRetentionCount"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupExpiryQuantityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,11 +273,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupTimeouts",
-		reflect.TypeOf((*AlloydbBackupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackupTimeoutsOutputReference",
-		reflect.TypeOf((*AlloydbBackupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbBackupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbBackupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

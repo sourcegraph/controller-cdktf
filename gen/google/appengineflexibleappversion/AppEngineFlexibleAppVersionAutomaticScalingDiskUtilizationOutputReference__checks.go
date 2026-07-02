@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOut
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutput
 
 	return nil
 }
-

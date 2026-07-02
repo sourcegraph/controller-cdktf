@@ -12,9 +12,9 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type TranscoderJobTemplateConfigOutputOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) UriInput() 
 	return returns
 }
 
-
 func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigOutputOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewTranscoderJobTemplateConfigOutputOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewTranscoderJobTemplateConfigOutputOutputReference_Override(t TranscoderJo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigOutputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetInternalValue(val *TranscoderJobTemplateConfigOutput) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetInternalValue(val *TranscoderJobTemplateConfigOutput) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ComputeFqn(
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetListAttr
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetStringAt
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) GetStringMa
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Interpolati
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ResetUri() 
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOutputOutputReference) ToString() 
 
 	return returns
 }
-

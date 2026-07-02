@@ -1,6 +1,5 @@
 package pubsubtopic
 
-
 type PubsubTopicMessageTransforms struct {
 	// ai_inference block.
 	//
@@ -12,10 +11,9 @@ type PubsubTopicMessageTransforms struct {
 	// the transform will be applied to messages. Default: 'true'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic#disabled PubsubTopic#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// javascript_udf block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic#javascript_udf PubsubTopic#javascript_udf}
 	JavascriptUdf *PubsubTopicMessageTransformsJavascriptUdf `field:"optional" json:"javascriptUdf" yaml:"javascriptUdf"`
 }
-

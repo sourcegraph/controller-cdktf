@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKmsCryptoKeyVersionAttestationCertChainsOutputReferenceParameter
 
 	return nil
 }
-

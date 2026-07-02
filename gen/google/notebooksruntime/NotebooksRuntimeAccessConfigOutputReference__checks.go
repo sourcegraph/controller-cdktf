@@ -106,7 +106,7 @@ func (j *jsiiProxy_NotebooksRuntimeAccessConfigOutputReference) validateSetAcces
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeAccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNotebooksRuntimeAccessConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

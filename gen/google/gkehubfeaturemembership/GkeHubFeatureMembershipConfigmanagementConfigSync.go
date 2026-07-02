@@ -1,17 +1,16 @@
 package gkehubfeaturemembership
 
-
 type GkeHubFeatureMembershipConfigmanagementConfigSync struct {
 	// deployment_overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#deployment_overrides GkeHubFeatureMembership#deployment_overrides}
-	DeploymentOverrides interface{} `field:"optional" json:"deploymentOverrides" yaml:"deploymentOverrides"`
+	DeploymentOverrides any `field:"optional" json:"deploymentOverrides" yaml:"deploymentOverrides"`
 	// Enables the installation of ConfigSync.
 	//
 	// If set to true, ConfigSync resources will be created and the other ConfigSync fields will be applied if exist. If set to false, all other ConfigSync fields will be ignored, ConfigSync resources will be deleted. If omitted, ConfigSync resources will be managed depends on the presence of the git or oci field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#enabled GkeHubFeatureMembership#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// git block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#git GkeHubFeatureMembership#git}
@@ -29,7 +28,7 @@ type GkeHubFeatureMembershipConfigmanagementConfigSync struct {
 	// If set to `false`, disables the Config Sync admission webhook and does not prevent drifts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#prevent_drift GkeHubFeatureMembership#prevent_drift}
-	PreventDrift interface{} `field:"optional" json:"preventDrift" yaml:"preventDrift"`
+	PreventDrift any `field:"optional" json:"preventDrift" yaml:"preventDrift"`
 	// Specifies whether the Config Sync Repo is in "hierarchical" or "unstructured" mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#source_format GkeHubFeatureMembership#source_format}
@@ -37,6 +36,5 @@ type GkeHubFeatureMembershipConfigmanagementConfigSync struct {
 	// Set to true to stop syncing configs for a single cluster. Default: false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#stop_syncing GkeHubFeatureMembership#stop_syncing}
-	StopSyncing interface{} `field:"optional" json:"stopSyncing" yaml:"stopSyncing"`
+	StopSyncing any `field:"optional" json:"stopSyncing" yaml:"stopSyncing"`
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -286,4 +286,3 @@ func validateNewNetworkManagementConnectivityTestDestinationOutputReferenceParam
 
 	return nil
 }
-

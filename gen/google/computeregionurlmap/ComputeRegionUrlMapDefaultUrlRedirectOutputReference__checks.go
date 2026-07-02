@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewComputeRegionUrlMapDefaultUrlRedirectOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetDescri
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetDisabl
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAgentAfterModelCallbacksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewCesAgentAfterModelCallbacksOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

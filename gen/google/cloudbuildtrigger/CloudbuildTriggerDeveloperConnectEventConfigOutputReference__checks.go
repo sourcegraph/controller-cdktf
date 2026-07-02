@@ -120,7 +120,7 @@ func (c *jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewCloudbuildTriggerDeveloperConnectEventConfigOutputReferenceParam
 
 	return nil
 }
-

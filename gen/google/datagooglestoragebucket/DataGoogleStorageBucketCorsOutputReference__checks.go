@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketCorsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketCorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketCorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageBucketCorsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

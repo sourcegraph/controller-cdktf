@@ -20,15 +20,15 @@ type ApphubApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -69,31 +69,31 @@ type ApphubApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scope() ApphubApplicationScopeOutputReference
 	ScopeInput() *ApphubApplicationScope
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ApphubApplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type ApphubApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type ApphubApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type ApphubApplication interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApphubApplication
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ApphubApplication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ApphubApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApphubApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_ApphubApplication) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_ApphubApplication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApphubApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_ApphubApplication) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_ApphubApplication) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApphubApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_ApphubApplication) Timeouts() ApphubApplicationTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_ApphubApplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubApplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -550,7 +550,6 @@ func (j *jsiiProxy_ApphubApplication) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_application google_apphub_application} Resource.
 func NewApphubApplication(scope constructs.Construct, id *string, config *ApphubApplicationConfig) ApphubApplication {
 	_init_.Initialize()
@@ -562,7 +561,7 @@ func NewApphubApplication(scope constructs.Construct, id *string, config *Apphub
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -575,12 +574,12 @@ func NewApphubApplication_Override(a ApphubApplication, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetApplicationId(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_ApphubApplication)SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApphubApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_ApphubApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_ApphubApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_ApphubApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApphubApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_ApphubApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetDescription(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_ApphubApplication)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetDisplayName(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_ApphubApplication)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApphubApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ApphubApplication)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetId(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ApphubApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApphubApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ApphubApplication)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetLocation(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_ApphubApplication)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetProject(val *string) {
+func (j *jsiiProxy_ApphubApplication) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_ApphubApplication)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApphubApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -703,7 +702,7 @@ func (j *jsiiProxy_ApphubApplication)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApphubApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApphubApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -726,7 +725,7 @@ func ApphubApplication_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func ApphubApplication_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApphubApplication_IsConstruct(x interface{}) *bool {
+func ApphubApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApphubApplication_IsConstructParameters(x); err != nil {
@@ -761,7 +760,7 @@ func ApphubApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func ApphubApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApphubApplication_IsTerraformElement(x interface{}) *bool {
+func ApphubApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApphubApplication_IsTerraformElementParameters(x); err != nil {
@@ -780,7 +779,7 @@ func ApphubApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func ApphubApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApphubApplication_IsTerraformResource(x interface{}) *bool {
+func ApphubApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApphubApplication_IsTerraformResourceParameters(x); err != nil {
@@ -799,7 +798,7 @@ func ApphubApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apphubApplication.ApphubApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -824,31 +823,31 @@ func (a *jsiiProxy_ApphubApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApphubApplication) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApphubApplication) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApphubApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApphubApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (a *jsiiProxy_ApphubApplication) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (a *jsiiProxy_ApphubApplication) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (a *jsiiProxy_ApphubApplication) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (a *jsiiProxy_ApphubApplication) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (a *jsiiProxy_ApphubApplication) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (a *jsiiProxy_ApphubApplication) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (a *jsiiProxy_ApphubApplication) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,15 +975,15 @@ func (a *jsiiProxy_ApphubApplication) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApphubApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1003,7 +1002,7 @@ func (a *jsiiProxy_ApphubApplication) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (a *jsiiProxy_ApphubApplication) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,18 +1029,18 @@ func (a *jsiiProxy_ApphubApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApphubApplication) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApphubApplication) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (a *jsiiProxy_ApphubApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (a *jsiiProxy_ApphubApplication) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (a *jsiiProxy_ApphubApplication) PutAttributes(value *ApphubApplicationAttr
 	_jsii_.InvokeVoid(
 		a,
 		"putAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (a *jsiiProxy_ApphubApplication) PutScope(value *ApphubApplicationScope) {
 	_jsii_.InvokeVoid(
 		a,
 		"putScope",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (a *jsiiProxy_ApphubApplication) PutTimeouts(value *ApphubApplicationTimeou
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,8 +1155,8 @@ func (a *jsiiProxy_ApphubApplication) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_ApphubApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApphubApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1169,8 +1168,8 @@ func (a *jsiiProxy_ApphubApplication) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApphubApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1182,8 +1181,8 @@ func (a *jsiiProxy_ApphubApplication) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApphubApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1195,8 +1194,8 @@ func (a *jsiiProxy_ApphubApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApphubApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1221,8 +1220,8 @@ func (a *jsiiProxy_ApphubApplication) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApphubApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1233,4 +1232,3 @@ func (a *jsiiProxy_ApphubApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

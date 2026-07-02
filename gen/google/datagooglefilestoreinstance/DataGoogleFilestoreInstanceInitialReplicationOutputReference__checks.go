@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceInitialReplicationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceInitialReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceInitialReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleFilestoreInstanceInitialReplicationOutputReferencePara
 
 	return nil
 }
-

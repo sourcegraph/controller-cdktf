@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstanceProper
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeReservationSpecificReservationInstancePropertie
 
 	return nil
 }
-

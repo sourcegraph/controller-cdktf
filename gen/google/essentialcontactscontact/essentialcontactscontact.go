@@ -15,15 +15,15 @@ type EssentialContactsContact interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,26 +63,26 @@ type EssentialContactsContact interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EssentialContactsContactTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type EssentialContactsContact interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type EssentialContactsContact interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type EssentialContactsContact interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EssentialContactsContact
@@ -153,8 +153,8 @@ func (j *jsiiProxy_EssentialContactsContact) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EssentialContactsContact) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_EssentialContactsContact) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EssentialContactsContact) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_EssentialContactsContact) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EssentialContactsContact) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_EssentialContactsContact) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EssentialContactsContact) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_EssentialContactsContact) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EssentialContactsContact) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_EssentialContactsContact) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EssentialContactsContact) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_EssentialContactsContact) Timeouts() EssentialContactsContact
 	return returns
 }
 
-func (j *jsiiProxy_EssentialContactsContact) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EssentialContactsContact) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -432,7 +432,6 @@ func (j *jsiiProxy_EssentialContactsContact) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/essential_contacts_contact google_essential_contacts_contact} Resource.
 func NewEssentialContactsContact(scope constructs.Construct, id *string, config *EssentialContactsContactConfig) EssentialContactsContact {
@@ -445,7 +444,7 @@ func NewEssentialContactsContact(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewEssentialContactsContact_Override(e EssentialContactsContact, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetConnection(val interface{}) {
+func (j *jsiiProxy_EssentialContactsContact) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetCount(val interface{}) {
+func (j *jsiiProxy_EssentialContactsContact) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EssentialContactsContact) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetEmail(val *string) {
+func (j *jsiiProxy_EssentialContactsContact) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EssentialContactsContact) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetId(val *string) {
+func (j *jsiiProxy_EssentialContactsContact) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetLanguageTag(val *string) {
+func (j *jsiiProxy_EssentialContactsContact) SetLanguageTag(val *string) {
 	if err := j.validateSetLanguageTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetLanguageTag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EssentialContactsContact) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetNotificationCategorySubscriptions(val *[]*string) {
+func (j *jsiiProxy_EssentialContactsContact) SetNotificationCategorySubscriptions(val *[]*string) {
 	if err := j.validateSetNotificationCategorySubscriptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetNotificationCategorySubscriptions
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetParent(val *string) {
+func (j *jsiiProxy_EssentialContactsContact) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EssentialContactsContact) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_EssentialContactsContact)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_EssentialContactsContact)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EssentialContactsContact) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func EssentialContactsContact_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func EssentialContactsContact_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EssentialContactsContact_IsConstruct(x interface{}) *bool {
+func EssentialContactsContact_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEssentialContactsContact_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func EssentialContactsContact_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func EssentialContactsContact_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EssentialContactsContact_IsTerraformElement(x interface{}) *bool {
+func EssentialContactsContact_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEssentialContactsContact_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func EssentialContactsContact_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func EssentialContactsContact_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EssentialContactsContact_IsTerraformResource(x interface{}) *bool {
+func EssentialContactsContact_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEssentialContactsContact_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func EssentialContactsContact_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.essentialContactsContact.EssentialContactsContact",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (e *jsiiProxy_EssentialContactsContact) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EssentialContactsContact) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EssentialContactsContact) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EssentialContactsContact) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EssentialContactsContact) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (e *jsiiProxy_EssentialContactsContact) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (e *jsiiProxy_EssentialContactsContact) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EssentialContactsContact) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EssentialContactsContact) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -875,7 +874,7 @@ func (e *jsiiProxy_EssentialContactsContact) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (e *jsiiProxy_EssentialContactsContact) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (e *jsiiProxy_EssentialContactsContact) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EssentialContactsContact) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EssentialContactsContact) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (e *jsiiProxy_EssentialContactsContact) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (e *jsiiProxy_EssentialContactsContact) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (e *jsiiProxy_EssentialContactsContact) PutTimeouts(value *EssentialContact
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (e *jsiiProxy_EssentialContactsContact) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EssentialContactsContact) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EssentialContactsContact) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -987,8 +986,8 @@ func (e *jsiiProxy_EssentialContactsContact) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (e *jsiiProxy_EssentialContactsContact) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EssentialContactsContact) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1000,8 +999,8 @@ func (e *jsiiProxy_EssentialContactsContact) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (e *jsiiProxy_EssentialContactsContact) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EssentialContactsContact) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1013,8 +1012,8 @@ func (e *jsiiProxy_EssentialContactsContact) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EssentialContactsContact) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EssentialContactsContact) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1039,8 +1038,8 @@ func (e *jsiiProxy_EssentialContactsContact) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EssentialContactsContact) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EssentialContactsContact) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1051,4 +1050,3 @@ func (e *jsiiProxy_EssentialContactsContact) ToTerraform() interface{} {
 
 	return returns
 }
-

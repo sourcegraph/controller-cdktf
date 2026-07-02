@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulDiskList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionInstanceGroupManagerStatefulDiskListParameters(terr
 
 	return nil
 }
-

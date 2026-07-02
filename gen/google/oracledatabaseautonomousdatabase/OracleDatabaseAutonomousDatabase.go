@@ -24,22 +24,22 @@ type OracleDatabaseAutonomousDatabase interface {
 	SetCidr(val *string)
 	CidrInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -94,29 +94,29 @@ type OracleDatabaseAutonomousDatabase interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceConfig() OracleDatabaseAutonomousDatabaseSourceConfigOutputReference
 	SourceConfigInput() *OracleDatabaseAutonomousDatabaseSourceConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseAutonomousDatabaseTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type OracleDatabaseAutonomousDatabase interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -146,7 +146,7 @@ type OracleDatabaseAutonomousDatabase interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -173,17 +173,17 @@ type OracleDatabaseAutonomousDatabase interface {
 	ResetProperties()
 	ResetSourceConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseAutonomousDatabase
@@ -261,8 +261,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) CidrInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DatabaseInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DeletionProtection() interf
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -651,8 +651,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -701,8 +701,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TerraformLabels() cdktf.Str
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -731,8 +731,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Timeouts() OracleDatabaseAu
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -740,7 +740,6 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TimeoutsInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string, config *OracleDatabaseAutonomousDatabaseConfig) OracleDatabaseAutonomousDatabase {
@@ -753,7 +752,7 @@ func NewOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -766,12 +765,12 @@ func NewOracleDatabaseAutonomousDatabase_Override(o OracleDatabaseAutonomousData
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetAdminPassword(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetAdminPassword(val *string) {
 	if err := j.validateSetAdminPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetAdminPassword(val *string
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetAutonomousDatabaseId(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetAutonomousDatabaseId(val *string) {
 	if err := j.validateSetAutonomousDatabaseIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetAutonomousDatabaseId(val 
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetCidr(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetCidr(val *string) {
 	if err := j.validateSetCidrParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDatabase(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDeletionProtection(val in
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -856,7 +855,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetDisplayName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -875,7 +874,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLabels(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetOdbNetwork(val *string) {
 	if err := j.validateSetOdbNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -941,7 +940,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbSubnet(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetOdbSubnet(val *string) {
 	if err := j.validateSetOdbSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -952,7 +951,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbSubnet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -971,7 +970,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func OracleDatabaseAutonomousDatabase_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func OracleDatabaseAutonomousDatabase_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
+func OracleDatabaseAutonomousDatabase_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseAutonomousDatabase_IsConstructParameters(x); err != nil {
@@ -1029,7 +1028,7 @@ func OracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1037,7 +1036,7 @@ func OracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseAutonomousDatabase_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseAutonomousDatabase_IsTerraformElementParameters(x); err != nil {
@@ -1048,7 +1047,7 @@ func OracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func OracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseAutonomousDatabase_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseAutonomousDatabase_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseAutonomousDatabase_IsTerraformResourceParameters(x); err != nil {
@@ -1067,7 +1066,7 @@ func OracleDatabaseAutonomousDatabase_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1092,31 +1091,31 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,7 +1131,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,7 +1147,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1180,7 +1179,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1196,7 +1195,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1212,7 +1211,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1228,7 +1227,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1244,15 +1243,15 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1271,7 +1270,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1284,7 +1283,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1298,18 +1297,18 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1320,7 +1319,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1331,7 +1330,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1342,7 +1341,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) PutProperties(value *Oracle
 	_jsii_.InvokeVoid(
 		o,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1353,7 +1352,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) PutSourceConfig(value *Orac
 	_jsii_.InvokeVoid(
 		o,
 		"putSourceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1364,7 +1363,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) PutTimeouts(value *OracleDa
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1488,8 +1487,8 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1501,8 +1500,8 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeAttributes() *map
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1514,8 +1513,8 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1527,8 +1526,8 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToHclTerraform() interface{
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1553,8 +1552,8 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1565,4 +1564,3 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ToTerraform() interface{} {
 
 	return returns
 }
-

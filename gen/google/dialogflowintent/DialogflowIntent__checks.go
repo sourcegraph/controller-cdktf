@@ -19,7 +19,7 @@ func (d *jsiiProxy_DialogflowIntent) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowIntent) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DialogflowIntent) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DialogflowIntent) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DialogflowIntent) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDialogflowIntent_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDialogflowIntent_IsConstructParameters(x interface{}) error {
+func validateDialogflowIntent_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDialogflowIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDialogflowIntent_IsTerraformElementParameters(x interface{}) error {
+func validateDialogflowIntent_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDialogflowIntent_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateDialogflowIntent_IsTerraformResourceParameters(x interface{}) error {
+func validateDialogflowIntent_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetActionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetInputContextNamesParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetIsFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetIsFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetMlDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetMlDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DialogflowIntent) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowIntent) validateSetResetContextsParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowIntent) validateSetResetContextsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -557,4 +557,3 @@ func validateNewDialogflowIntentParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

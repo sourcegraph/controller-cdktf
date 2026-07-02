@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterManagedServerCaCaCertsOutputReferenceParameters(terr
 
 	return nil
 }
-

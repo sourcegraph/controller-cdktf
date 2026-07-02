@@ -15,15 +15,15 @@ type ComputeProjectMetadataItem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,19 +56,19 @@ type ComputeProjectMetadataItem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeProjectMetadataItemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -76,9 +76,9 @@ type ComputeProjectMetadataItem interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type ComputeProjectMetadataItem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type ComputeProjectMetadataItem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type ComputeProjectMetadataItem interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeProjectMetadataItem
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) Timeouts() ComputeProjectMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectMetadataItem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_ComputeProjectMetadataItem) ValueInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_metadata_item google_compute_project_metadata_item} Resource.
 func NewComputeProjectMetadataItem(scope constructs.Construct, id *string, config *ComputeProjectMetadataItemConfig) ComputeProjectMetadataItem {
 	_init_.Initialize()
@@ -412,7 +411,7 @@ func NewComputeProjectMetadataItem(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewComputeProjectMetadataItem_Override(c ComputeProjectMetadataItem, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetId(val *string) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetKey(val *string) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetProject(val *string) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItem)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItem)SetValue(val *string) {
+func (j *jsiiProxy_ComputeProjectMetadataItem) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func ComputeProjectMetadataItem_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func ComputeProjectMetadataItem_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeProjectMetadataItem_IsConstruct(x interface{}) *bool {
+func ComputeProjectMetadataItem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectMetadataItem_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func ComputeProjectMetadataItem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func ComputeProjectMetadataItem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool {
+func ComputeProjectMetadataItem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectMetadataItem_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func ComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func ComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeProjectMetadataItem_IsTerraformResource(x interface{}) *bool {
+func ComputeProjectMetadataItem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectMetadataItem_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func ComputeProjectMetadataItem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeProjectMetadataItem) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeProjectMetadataItem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -831,7 +830,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeProjectMetadataItem) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,7 +890,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) PutTimeouts(value *ComputeProject
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -951,8 +950,8 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -964,8 +963,8 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -977,8 +976,8 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1003,8 +1002,8 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectMetadataItem) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectMetadataItem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1015,4 +1014,3 @@ func (c *jsiiProxy_ComputeProjectMetadataItem) ToTerraform() interface{} {
 
 	return returns
 }
-

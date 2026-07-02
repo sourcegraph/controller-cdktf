@@ -139,7 +139,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetBootParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,7 +292,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -439,4 +439,3 @@ func validateNewComputeRegionInstanceTemplateDiskOutputReferenceParameters(terra
 
 	return nil
 }
-

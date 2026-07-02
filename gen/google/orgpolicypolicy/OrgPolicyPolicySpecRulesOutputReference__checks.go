@@ -128,7 +128,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetAllowAllP
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetEnforcePa
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -276,4 +276,3 @@ func validateNewOrgPolicyPolicySpecRulesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type AppEngineFlexibleAppVersionHandlersOutputReference interface {
 	AuthFailActionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AppEngineFlexibleAppVersionHandlersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Login() *string
 	SetLogin(val *string)
 	LoginInput() *string
@@ -59,7 +59,7 @@ type AppEngineFlexibleAppVersionHandlersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AppEngineFlexibleAppVersionHandlersOutputReference interface {
 	ResetUrlRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) AuthFailA
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) UrlRegexI
 	return returns
 }
 
-
 func NewAppEngineFlexibleAppVersionHandlersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppEngineFlexibleAppVersionHandlersOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewAppEngineFlexibleAppVersionHandlersOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewAppEngineFlexibleAppVersionHandlersOutputReference_Override(a AppEngineF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetAuthFailAction(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetAuthFailAction(val *string) {
 	if err := j.validateSetAuthFailActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetAuthFai
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetLogin(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetLogin(val *string) {
 	if err := j.validateSetLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetLogin(v
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetRedirectHttpResponseCode(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetRedirectHttpResponseCode(val *string) {
 	if err := j.validateSetRedirectHttpResponseCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetRedirec
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetSecurityLevel(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetSecurityLevel(val *string) {
 	if err := j.validateSetSecurityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetSecurit
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference)SetUrlRegex(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) SetUrlRegex(val *string) {
 	if err := j.validateSetUrlRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,16 +464,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) ComputeFq
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetListAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) Interpola
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) PutScript
 	_jsii_.InvokeVoid(
 		a,
 		"putScript",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -656,7 +655,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) PutStatic
 	_jsii_.InvokeVoid(
 		a,
 		"putStaticFiles",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) ResetUrlR
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) ToString(
 
 	return returns
 }
-

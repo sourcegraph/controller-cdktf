@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageBucketIamBinding) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageBucketIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageBucketIamBinding) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageBucketIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateStorageBucketIamBinding_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateStorageBucketIamBinding_IsConstructParameters(x interface{}) error {
+func validateStorageBucketIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateStorageBucketIamBinding_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateStorageBucketIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateStorageBucketIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateStorageBucketIamBinding_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateStorageBucketIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageBucketIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_StorageBucketIamBinding) validateSetBucketParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_StorageBucketIamBinding) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_StorageBucketIamBinding) validateSetMembersParameters(val *[]
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageBucketIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -460,4 +460,3 @@ func validateNewStorageBucketIamBindingParameters(scope constructs.Construct, id
 
 	return nil
 }
-

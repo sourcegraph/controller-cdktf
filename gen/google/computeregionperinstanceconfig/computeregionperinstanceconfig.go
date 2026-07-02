@@ -15,15 +15,15 @@ type ComputeRegionPerInstanceConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,38 +64,38 @@ type ComputeRegionPerInstanceConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	RegionInstanceGroupManager() *string
 	SetRegionInstanceGroupManager(val *string)
 	RegionInstanceGroupManagerInput() *string
-	RemoveInstanceOnDestroy() interface{}
-	SetRemoveInstanceOnDestroy(val interface{})
-	RemoveInstanceOnDestroyInput() interface{}
-	RemoveInstanceStateOnDestroy() interface{}
-	SetRemoveInstanceStateOnDestroy(val interface{})
-	RemoveInstanceStateOnDestroyInput() interface{}
+	RemoveInstanceOnDestroy() any
+	SetRemoveInstanceOnDestroy(val any)
+	RemoveInstanceOnDestroyInput() any
+	RemoveInstanceStateOnDestroy() any
+	SetRemoveInstanceStateOnDestroy(val any)
+	RemoveInstanceStateOnDestroyInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionPerInstanceConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type ComputeRegionPerInstanceConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type ComputeRegionPerInstanceConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -146,17 +146,17 @@ type ComputeRegionPerInstanceConfig interface {
 	ResetRemoveInstanceOnDestroy()
 	ResetRemoveInstanceStateOnDestroy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionPerInstanceConfig
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RegionInstanceGroupManagerInp
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeInstanceOnDestroy",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroy() int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeInstanceOnDestroyInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroyInput(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeInstanceStateOnDestroy",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroy(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"removeInstanceStateOnDestroyInput",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) Timeouts() ComputeRegionPerIn
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -543,7 +543,6 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, config *ComputeRegionPerInstanceConfigConfig) ComputeRegionPerInstanceConfig {
@@ -556,7 +555,7 @@ func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -569,12 +568,12 @@ func NewComputeRegionPerInstanceConfig_Override(c ComputeRegionPerInstanceConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetMinimalAction(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetMinimalAction(val *string) {
 	if err := j.validateSetMinimalActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetMinimalAction(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetMostDisruptiveAllowedAction(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetMostDisruptiveAllowedAction(val *string) {
 	if err := j.validateSetMostDisruptiveAllowedActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetMostDisruptiveAllowedAction
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRegionInstanceGroupManager(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetRegionInstanceGroupManager(val *string) {
 	if err := j.validateSetRegionInstanceGroupManagerParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRegionInstanceGroupManager(
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRemoveInstanceOnDestroy(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetRemoveInstanceOnDestroy(val any) {
 	if err := j.validateSetRemoveInstanceOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRemoveInstanceOnDestroy(val
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRemoveInstanceStateOnDestroy(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) SetRemoveInstanceStateOnDestroy(val any) {
 	if err := j.validateSetRemoveInstanceStateOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func ComputeRegionPerInstanceConfig_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func ComputeRegionPerInstanceConfig_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionPerInstanceConfig_IsConstruct(x interface{}) *bool {
+func ComputeRegionPerInstanceConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionPerInstanceConfig_IsConstructParameters(x); err != nil {
@@ -788,7 +787,7 @@ func ComputeRegionPerInstanceConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func ComputeRegionPerInstanceConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionPerInstanceConfig_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionPerInstanceConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionPerInstanceConfig_IsTerraformElementParameters(x); err != nil {
@@ -807,7 +806,7 @@ func ComputeRegionPerInstanceConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func ComputeRegionPerInstanceConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionPerInstanceConfig_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionPerInstanceConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionPerInstanceConfig_IsTerraformResourceParameters(x); err != nil {
@@ -826,7 +825,7 @@ func ComputeRegionPerInstanceConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -851,31 +850,31 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,15 +1002,15 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1030,7 +1029,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,18 +1056,18 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1079,7 +1078,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) PutPreservedState(value *Comp
 	_jsii_.InvokeVoid(
 		c,
 		"putPreservedState",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) PutTimeouts(value *ComputeReg
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1196,8 +1195,8 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1209,8 +1208,8 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1222,8 +1221,8 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1235,8 +1234,8 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1261,8 +1260,8 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1273,4 +1272,3 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

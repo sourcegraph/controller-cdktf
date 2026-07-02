@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutp
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeReservationSpecificReservationInstancePropertiesLocalSsds
 
 	return nil
 }
-

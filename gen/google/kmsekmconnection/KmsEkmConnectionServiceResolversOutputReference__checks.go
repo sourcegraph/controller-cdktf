@@ -90,7 +90,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateInte
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validatePutServerCertificatesParameters(value interface{}) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validatePutServerCertificatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetH
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewKmsEkmConnectionServiceResolversOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotebooksInstanceTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

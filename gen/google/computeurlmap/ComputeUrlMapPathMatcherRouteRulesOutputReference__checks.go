@@ -112,7 +112,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutMatchRulesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutMatchRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,7 +238,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -313,4 +313,3 @@ func validateNewComputeUrlMapPathMatcherRouteRulesOutputReferenceParameters(terr
 
 	return nil
 }
-

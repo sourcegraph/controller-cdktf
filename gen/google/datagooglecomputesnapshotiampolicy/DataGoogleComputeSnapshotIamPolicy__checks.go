@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleComputeSnapshotIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleComputeSnapshotIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleComputeSnapshotIamPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleComputeSnapshotIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleComputeSnapshotIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleComputeSnapshotIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleComputeSnapshotIamPolicy_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSnapshotIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeSnapshotIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleComputeSnapshotIamPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

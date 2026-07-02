@@ -1,6 +1,5 @@
 package identityplatformconfig
 
-
 type IdentityPlatformConfigMfa struct {
 	// A list of usable second factors for this project. Possible values: ["PHONE_SMS"].
 	//
@@ -9,10 +8,9 @@ type IdentityPlatformConfigMfa struct {
 	// provider_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_config#provider_configs IdentityPlatformConfig#provider_configs}
-	ProviderConfigs interface{} `field:"optional" json:"providerConfigs" yaml:"providerConfigs"`
+	ProviderConfigs any `field:"optional" json:"providerConfigs" yaml:"providerConfigs"`
 	// Whether MultiFactor Authentication has been enabled for this project. Possible values: ["DISABLED", "ENABLED", "MANDATORY"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_config#state IdentityPlatformConfig#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
-

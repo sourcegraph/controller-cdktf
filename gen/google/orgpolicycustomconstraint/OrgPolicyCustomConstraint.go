@@ -21,15 +21,15 @@ type OrgPolicyCustomConstraint interface {
 	SetCondition(val *string)
 	ConditionInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,30 +71,30 @@ type OrgPolicyCustomConstraint interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OrgPolicyCustomConstraintTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type OrgPolicyCustomConstraint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type OrgPolicyCustomConstraint interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type OrgPolicyCustomConstraint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OrgPolicyCustomConstraint
@@ -207,8 +207,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) ConditionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) Timeouts() OrgPolicyCustomConstrai
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyCustomConstraint) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/org_policy_custom_constraint google_org_policy_custom_constraint} Resource.
 func NewOrgPolicyCustomConstraint(scope constructs.Construct, id *string, config *OrgPolicyCustomConstraintConfig) OrgPolicyCustomConstraint {
 	_init_.Initialize()
@@ -539,7 +538,7 @@ func NewOrgPolicyCustomConstraint(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewOrgPolicyCustomConstraint_Override(o OrgPolicyCustomConstraint, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetActionType(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetActionType(val *string) {
 	if err := j.validateSetActionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetActionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetCondition(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetCondition(val *string) {
 	if err := j.validateSetConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetCondition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetConnection(val interface{}) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetCount(val interface{}) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDescription(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDisplayName(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetId(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetMethodTypes(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetMethodTypes(val *[]*string) {
 	if err := j.validateSetMethodTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetMethodTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetName(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetParent(val *string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -702,7 +701,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_OrgPolicyCustomConstraint)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyCustomConstraint)SetResourceTypes(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyCustomConstraint) SetResourceTypes(val *[]*string) {
 	if err := j.validateSetResourceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func OrgPolicyCustomConstraint_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func OrgPolicyCustomConstraint_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OrgPolicyCustomConstraint_IsConstruct(x interface{}) *bool {
+func OrgPolicyCustomConstraint_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyCustomConstraint_IsConstructParameters(x); err != nil {
@@ -771,7 +770,7 @@ func OrgPolicyCustomConstraint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func OrgPolicyCustomConstraint_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OrgPolicyCustomConstraint_IsTerraformElement(x interface{}) *bool {
+func OrgPolicyCustomConstraint_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyCustomConstraint_IsTerraformElementParameters(x); err != nil {
@@ -790,7 +789,7 @@ func OrgPolicyCustomConstraint_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func OrgPolicyCustomConstraint_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OrgPolicyCustomConstraint_IsTerraformResource(x interface{}) *bool {
+func OrgPolicyCustomConstraint_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrgPolicyCustomConstraint_IsTerraformResourceParameters(x); err != nil {
@@ -809,7 +808,7 @@ func OrgPolicyCustomConstraint_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.orgPolicyCustomConstraint.OrgPolicyCustomConstraint",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -834,31 +833,31 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OrgPolicyCustomConstraint) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrgPolicyCustomConstraint) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,15 +985,15 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1013,7 +1012,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1026,7 +1025,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,18 +1039,18 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OrgPolicyCustomConstraint) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1073,7 +1072,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1084,7 +1083,7 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) PutTimeouts(value *OrgPolicyCustom
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1128,8 +1127,8 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1141,8 +1140,8 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1154,8 +1153,8 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1167,8 +1166,8 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1193,8 +1192,8 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyCustomConstraint) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrgPolicyCustomConstraint) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1205,4 +1204,3 @@ func (o *jsiiProxy_OrgPolicyCustomConstraint) ToTerraform() interface{} {
 
 	return returns
 }
-

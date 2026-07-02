@@ -34,7 +34,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesListPar
 
 	return nil
 }
-

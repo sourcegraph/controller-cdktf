@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfile",
-		reflect.TypeOf((*NetworkSecuritySecurityProfile)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlFilteringProfile", GoGetter: "UrlFilteringProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "urlFilteringProfileInput", GoGetter: "UrlFilteringProfileInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,15 +106,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileConfig",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileCustomInterceptProfile",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileCustomInterceptProfile)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileCustomInterceptProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileCustomMirroringProfile",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileCustomMirroringProfile)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileCustomMirroringProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,15 +190,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfile",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfile)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfile](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -220,7 +220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "antivirusOverrides", GoGetter: "AntivirusOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "antivirusOverridesInput", GoGetter: "AntivirusOverridesInput"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "threatOverridesInput", GoGetter: "ThreatOverridesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,11 +300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -326,7 +326,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -354,7 +354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -362,11 +362,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -388,7 +388,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -417,7 +417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -425,11 +425,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileTimeouts",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -462,7 +462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -470,11 +470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfile",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileUrlFilteringProfile)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileUrlFilteringProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlFilters", GoGetter: "UrlFilters"},
 			_jsii_.MemberProperty{JsiiProperty: "urlFiltersInput", GoGetter: "UrlFiltersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -510,11 +510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -528,7 +528,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -536,7 +536,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference",
-		reflect.TypeOf((*NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -567,7 +567,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urls", GoGetter: "Urls"},
 			_jsii_.MemberProperty{JsiiProperty: "urlsInput", GoGetter: "UrlsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

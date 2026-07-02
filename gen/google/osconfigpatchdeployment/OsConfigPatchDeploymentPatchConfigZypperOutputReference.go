@@ -15,9 +15,9 @@ type OsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	CategoriesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,16 +49,16 @@ type OsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WithOptional() interface{}
-	SetWithOptional(val interface{})
-	WithOptionalInput() interface{}
-	WithUpdate() interface{}
-	SetWithUpdate(val interface{})
-	WithUpdateInput() interface{}
+	WithOptional() any
+	SetWithOptional(val any)
+	WithOptionalInput() any
+	WithUpdate() any
+	SetWithUpdate(val any)
+	WithUpdateInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type OsConfigPatchDeploymentPatchConfigZypperOutputReference interface {
 	ResetWithUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Cate
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithOptional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithOptional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withOptional",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) With
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithOptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithOptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withOptionalInput",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) With
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithUpdate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithUpdate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withUpdate",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) With
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithUpdateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) WithUpdateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"withUpdateInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) With
 	)
 	return returns
 }
-
 
 func NewOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigZypperOutputReference {
 	_init_.Initialize()
@@ -301,7 +300,7 @@ func NewOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewOsConfigPatchDeploymentPatchConfigZypperOutputReference_Override(o OsCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetCategories(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetCategories(val *[]*string) {
 	if err := j.validateSetCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetCa
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetExcludes(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetExcludes(val *[]*string) {
 	if err := j.validateSetExcludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetExclusivePatches(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetExclusivePatches(val *[]*string) {
 	if err := j.validateSetExclusivePatchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetEx
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetInternalValue(val *OsConfigPatchDeploymentPatchConfigZypper) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetInternalValue(val *OsConfigPatchDeploymentPatchConfigZypper) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetSeverities(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetSeverities(val *[]*string) {
 	if err := j.validateSetSeveritiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetSe
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetWithOptional(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetWithOptional(val any) {
 	if err := j.validateSetWithOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetWi
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference)SetWithUpdate(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) SetWithUpdate(val any) {
 	if err := j.validateSetWithUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Comp
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetB
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetB
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetL
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetN
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetN
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetN
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetS
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) GetS
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Inte
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Rese
 	)
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) ToSt
 
 	return returns
 }
-

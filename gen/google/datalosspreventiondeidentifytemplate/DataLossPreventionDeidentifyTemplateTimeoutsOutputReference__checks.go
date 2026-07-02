@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataLossPreventionDeidentifyTemplateTimeoutsOutputReferenceParam
 
 	return nil
 }
-

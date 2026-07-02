@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_license_config google_discovery_engine_license_config}.
 type DiscoveryEngineLicenseConfig interface {
 	cdktf.TerraformResource
-	AutoRenew() interface{}
-	SetAutoRenew(val interface{})
-	AutoRenewInput() interface{}
+	AutoRenew() any
+	SetAutoRenew(val any)
+	AutoRenewInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type DiscoveryEngineLicenseConfig interface {
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
-	FreeTrial() interface{}
-	SetFreeTrial(val interface{})
-	FreeTrialInput() interface{}
+	FreeTrial() any
+	SetFreeTrial(val any)
+	FreeTrialInput() any
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
@@ -71,11 +71,11 @@ type DiscoveryEngineLicenseConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StartDate() DiscoveryEngineLicenseConfigStartDateOutputReference
 	StartDateInput() *DiscoveryEngineLicenseConfigStartDate
 	SubscriptionTerm() *string
@@ -87,18 +87,18 @@ type DiscoveryEngineLicenseConfig interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DiscoveryEngineLicenseConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type DiscoveryEngineLicenseConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type DiscoveryEngineLicenseConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type DiscoveryEngineLicenseConfig interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DiscoveryEngineLicenseConfig
@@ -165,8 +165,8 @@ type jsiiProxy_DiscoveryEngineLicenseConfig struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) AutoRenew() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) AutoRenew() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRenew",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) AutoRenew() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) AutoRenewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) AutoRenewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoRenewInput",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) FreeTrial() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) FreeTrial() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"freeTrial",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) FreeTrial() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) FreeTrialInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) FreeTrialInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"freeTrialInput",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) Timeouts() DiscoveryEngineLicen
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -574,7 +574,6 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_license_config google_discovery_engine_license_config} Resource.
 func NewDiscoveryEngineLicenseConfig(scope constructs.Construct, id *string, config *DiscoveryEngineLicenseConfigConfig) DiscoveryEngineLicenseConfig {
@@ -587,7 +586,7 @@ func NewDiscoveryEngineLicenseConfig(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -600,12 +599,12 @@ func NewDiscoveryEngineLicenseConfig_Override(d DiscoveryEngineLicenseConfig, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetAutoRenew(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetAutoRenew(val any) {
 	if err := j.validateSetAutoRenewParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetAutoRenew(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetFreeTrial(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetFreeTrial(val any) {
 	if err := j.validateSetFreeTrialParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetFreeTrial(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLicenseConfigId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetLicenseConfigId(val *string) {
 	if err := j.validateSetLicenseConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLicenseConfigId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLicenseCount(val *float64) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetLicenseCount(val *float64) {
 	if err := j.validateSetLicenseCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLicenseCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLocation(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProject(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -739,7 +738,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetSubscriptionTerm(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetSubscriptionTerm(val *string) {
 	if err := j.validateSetSubscriptionTermParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetSubscriptionTerm(val *string)
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfig)SetSubscriptionTier(val *string) {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfig) SetSubscriptionTier(val *string) {
 	if err := j.validateSetSubscriptionTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func DiscoveryEngineLicenseConfig_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func DiscoveryEngineLicenseConfig_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DiscoveryEngineLicenseConfig_IsConstruct(x interface{}) *bool {
+func DiscoveryEngineLicenseConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineLicenseConfig_IsConstructParameters(x); err != nil {
@@ -819,7 +818,7 @@ func DiscoveryEngineLicenseConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func DiscoveryEngineLicenseConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineLicenseConfig_IsTerraformElement(x interface{}) *bool {
+func DiscoveryEngineLicenseConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineLicenseConfig_IsTerraformElementParameters(x); err != nil {
@@ -838,7 +837,7 @@ func DiscoveryEngineLicenseConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func DiscoveryEngineLicenseConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineLicenseConfig_IsTerraformResource(x interface{}) *bool {
+func DiscoveryEngineLicenseConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineLicenseConfig_IsTerraformResourceParameters(x); err != nil {
@@ -857,7 +856,7 @@ func DiscoveryEngineLicenseConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -882,31 +881,31 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,15 +1033,15 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1061,7 +1060,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1088,18 +1087,18 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) PutEndDate(value *DiscoveryEngi
 	_jsii_.InvokeVoid(
 		d,
 		"putEndDate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) PutStartDate(value *DiscoveryEn
 	_jsii_.InvokeVoid(
 		d,
 		"putStartDate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) PutTimeouts(value *DiscoveryEng
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1214,8 +1213,8 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1227,8 +1226,8 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1240,8 +1239,8 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1253,8 +1252,8 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1279,8 +1278,8 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1291,4 +1290,3 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

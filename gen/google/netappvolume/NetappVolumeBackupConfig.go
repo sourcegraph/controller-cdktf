@@ -1,6 +1,5 @@
 package netappvolume
 
-
 type NetappVolumeBackupConfig struct {
 	// Specify a single backup policy ID for scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupPolicies/{{backupPolicyName}}'.
 	//
@@ -13,6 +12,5 @@ type NetappVolumeBackupConfig struct {
 	// When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
-	ScheduledBackupEnabled interface{} `field:"optional" json:"scheduledBackupEnabled" yaml:"scheduledBackupEnabled"`
+	ScheduledBackupEnabled any `field:"optional" json:"scheduledBackupEnabled" yaml:"scheduledBackupEnabled"`
 }
-

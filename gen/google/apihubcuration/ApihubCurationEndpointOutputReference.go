@@ -14,9 +14,9 @@ type ApihubCurationEndpointOutputReference interface {
 	ApplicationIntegrationEndpointDetailsInput() *ApihubCurationEndpointApplicationIntegrationEndpointDetails
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type ApihubCurationEndpointOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ApihubCurationEndpointOutputReference interface {
 	PutApplicationIntegrationEndpointDetails(value *ApihubCurationEndpointApplicationIntegrationEndpointDetails)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference) ApplicationIntegration
 	return returns
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewApihubCurationEndpointOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApihubCurationEndpointOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewApihubCurationEndpointOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubCuration.ApihubCurationEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewApihubCurationEndpointOutputReference_Override(a ApihubCurationEndpointO
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubCuration.ApihubCurationEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetInternalValue(val *ApihubCurationEndpoint) {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) SetInternalValue(val *ApihubCurationEndpoint) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetInternalValue(val *A
 	)
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,16 +264,16 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -290,7 +289,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -322,7 +321,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -445,20 +444,20 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) PutApplicationIntegrat
 	_jsii_.InvokeVoid(
 		a,
 		"putApplicationIntegrationEndpointDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) ToString() *string {
 
 	return returns
 }
-

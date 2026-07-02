@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodes",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodes)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodes](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodes{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,19 +91,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConfig",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConfig)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfo",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfo)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfo",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfo)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoList",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoList)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "websocketsApiEndpoint", GoGetter: "WebsocketsApiEndpoint"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoEndpointInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,7 +158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfoList",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfoList)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -179,7 +179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,15 +213,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetails",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetails)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpoints",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpoints)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -242,7 +242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "beaconApiEndpoint", GoGetter: "BeaconApiEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "beaconPrometheusMetricsApiEndpoint", GoGetter: "BeaconPrometheusMetricsApiEndpoint"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetails",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetails)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetailsOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsGethDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,7 +316,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalEndpoints", GoGetter: "AdditionalEndpoints"},
 			_jsii_.MemberProperty{JsiiProperty: "apiEnableAdmin", GoGetter: "ApiEnableAdmin"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validatorConfig", GoGetter: "ValidatorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "validatorConfigInput", GoGetter: "ValidatorConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,11 +375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfig",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfig)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "beaconFeeRecipient", GoGetter: "BeaconFeeRecipient"},
 			_jsii_.MemberProperty{JsiiProperty: "beaconFeeRecipientInput", GoGetter: "BeaconFeeRecipientInput"},
@@ -409,7 +409,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -417,11 +417,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesTimeouts",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference",
-		reflect.TypeOf((*BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

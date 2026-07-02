@@ -12,9 +12,9 @@ type NotebooksRuntimeSoftwareConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,24 +28,24 @@ type NotebooksRuntimeSoftwareConfigOutputReference interface {
 	CustomGpuDriverPath() *string
 	SetCustomGpuDriverPath(val *string)
 	CustomGpuDriverPathInput() *string
-	EnableHealthMonitoring() interface{}
-	SetEnableHealthMonitoring(val interface{})
-	EnableHealthMonitoringInput() interface{}
+	EnableHealthMonitoring() any
+	SetEnableHealthMonitoring(val any)
+	EnableHealthMonitoringInput() any
 	// Experimental.
 	Fqn() *string
-	IdleShutdown() interface{}
-	SetIdleShutdown(val interface{})
-	IdleShutdownInput() interface{}
+	IdleShutdown() any
+	SetIdleShutdown(val any)
+	IdleShutdownInput() any
 	IdleShutdownTimeout() *float64
 	SetIdleShutdownTimeout(val *float64)
 	IdleShutdownTimeoutInput() *float64
-	InstallGpuDriver() interface{}
-	SetInstallGpuDriver(val interface{})
-	InstallGpuDriverInput() interface{}
+	InstallGpuDriver() any
+	SetInstallGpuDriver(val any)
+	InstallGpuDriverInput() any
 	InternalValue() *NotebooksRuntimeSoftwareConfig
 	SetInternalValue(val *NotebooksRuntimeSoftwareConfig)
 	Kernels() NotebooksRuntimeSoftwareConfigKernelsList
-	KernelsInput() interface{}
+	KernelsInput() any
 	NotebookUpgradeSchedule() *string
 	SetNotebookUpgradeSchedule(val *string)
 	NotebookUpgradeScheduleInput() *string
@@ -67,7 +67,7 @@ type NotebooksRuntimeSoftwareConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type NotebooksRuntimeSoftwareConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutKernels(value interface{})
+	PutKernels(value any)
 	ResetCustomGpuDriverPath()
 	ResetEnableHealthMonitoring()
 	ResetIdleShutdown()
@@ -100,7 +100,7 @@ type NotebooksRuntimeSoftwareConfigOutputReference interface {
 	ResetPostStartupScriptBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ type jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) CustomGpuDrive
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHealthMonitoring",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMo
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHealthMonitoringInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdown() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdown() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idleShutdown",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdown()
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idleShutdownInput",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) IdleShutdownTi
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriver() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriver() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriver",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriv
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriverInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriverInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriverInput",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) Kernels() Note
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) KernelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) KernelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kernelsInput",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) Upgradeable() 
 	return returns
 }
 
-
 func NewNotebooksRuntimeSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksRuntimeSoftwareConfigOutputReference {
 	_init_.Initialize()
 
@@ -384,7 +383,7 @@ func NewNotebooksRuntimeSoftwareConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -396,12 +395,12 @@ func NewNotebooksRuntimeSoftwareConfigOutputReference_Override(n NotebooksRuntim
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetCustomGpuDriverPath(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetCustomGpuDriverPath(val *string) {
 	if err := j.validateSetCustomGpuDriverPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetCustomGpuDri
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetEnableHealthMonitoring(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetEnableHealthMonitoring(val any) {
 	if err := j.validateSetEnableHealthMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetEnableHealth
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdown(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetIdleShutdown(val any) {
 	if err := j.validateSetIdleShutdownParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdown
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdownTimeout(val *float64) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetIdleShutdownTimeout(val *float64) {
 	if err := j.validateSetIdleShutdownTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdown
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetInstallGpuDriver(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetInstallGpuDriver(val any) {
 	if err := j.validateSetInstallGpuDriverParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetInstallGpuDr
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetInternalValue(val *NotebooksRuntimeSoftwareConfig) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetInternalValue(val *NotebooksRuntimeSoftwareConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetNotebookUpgradeSchedule(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetNotebookUpgradeSchedule(val *string) {
 	if err := j.validateSetNotebookUpgradeScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetNotebookUpgr
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupScript(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetPostStartupScript(val *string) {
 	if err := j.validateSetPostStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupS
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupScriptBehavior(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetPostStartupScriptBehavior(val *string) {
 	if err := j.validateSetPostStartupScriptBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupS
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,21 +722,21 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) PutKernels(value interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) PutKernels(value any) {
 	if err := n.validatePutKernelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putKernels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,16 +812,16 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) ResetPostStart
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -841,4 +840,3 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference) ToString() *st
 
 	return returns
 }
-

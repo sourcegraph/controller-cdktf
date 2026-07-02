@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetEnableCloudLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetEnableCloudLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetInspectAndBlockParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetInspectAndBlockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetInspectOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingAiPlatformFloorSettingOutputReference) validateSetInspectOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewModelArmorFloorsettingAiPlatformFloorSettingOutputReferenceParam
 
 	return nil
 }
-

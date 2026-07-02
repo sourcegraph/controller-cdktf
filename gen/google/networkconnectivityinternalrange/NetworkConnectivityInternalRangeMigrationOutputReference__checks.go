@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkConnectivityInternalRangeMigrationOutputReferenceParamete
 
 	return nil
 }
-

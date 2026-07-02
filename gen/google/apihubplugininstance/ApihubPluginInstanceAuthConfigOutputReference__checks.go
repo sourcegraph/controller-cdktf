@@ -150,7 +150,7 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateSetAut
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewApihubPluginInstanceAuthConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

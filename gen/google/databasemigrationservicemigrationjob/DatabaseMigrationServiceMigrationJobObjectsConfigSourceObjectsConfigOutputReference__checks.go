@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObject
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference) validatePutObjectConfigsParameters(value interface{}) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference) validatePutObjectConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObject
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsCo
 
 	return nil
 }
-

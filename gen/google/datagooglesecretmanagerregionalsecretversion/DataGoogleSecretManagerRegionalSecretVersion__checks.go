@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleSecretManagerRegionalSecretVersion_GenerateConfigForImpor
 	return nil
 }
 
-func validateDataGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(x interface{}) error {
+func validateDataGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleSecretManagerRegionalSecretVersion_IsConstructParameters(
 	return nil
 }
 
-func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformDataSourceP
 	return nil
 }
 
-func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleSecretManagerRegionalSecretVersion_IsTerraformElementPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateSetIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewDataGoogleSecretManagerRegionalSecretVersionParameters(scope con
 
 	return nil
 }
-

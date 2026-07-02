@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetInter
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetIsLockedParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketRetentionPolicyOutputReference) validateSetIsLockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewStorageBucketRetentionPolicyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewModelArmorTemplateFilterConfigRaiSettingsRaiFiltersListParameter
 
 	return nil
 }
-

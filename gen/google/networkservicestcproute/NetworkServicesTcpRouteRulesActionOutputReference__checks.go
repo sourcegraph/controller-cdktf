@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateIn
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validatePutDestinationsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validatePutDestinationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateSetOriginalDestinationParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference) validateSetOriginalDestinationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewNetworkServicesTcpRouteRulesActionOutputReferenceParameters(terr
 
 	return nil
 }
-

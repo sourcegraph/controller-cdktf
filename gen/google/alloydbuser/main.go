@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbUser.AlloydbUser",
-		reflect.TypeOf((*AlloydbUser)(nil)).Elem(),
+		reflect.TypeFor[AlloydbUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeInput", GoGetter: "UserTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbUser.AlloydbUserConfig",
-		reflect.TypeOf((*AlloydbUserConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbUser.AlloydbUserTimeouts",
-		reflect.TypeOf((*AlloydbUserTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AlloydbUserTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbUser.AlloydbUserTimeoutsOutputReference",
-		reflect.TypeOf((*AlloydbUserTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbUserTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbUserTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

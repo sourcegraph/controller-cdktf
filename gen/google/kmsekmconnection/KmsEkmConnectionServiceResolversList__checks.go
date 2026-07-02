@@ -34,7 +34,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKmsEkmConnectionServiceResolversListParameters(terraformResource
 
 	return nil
 }
-

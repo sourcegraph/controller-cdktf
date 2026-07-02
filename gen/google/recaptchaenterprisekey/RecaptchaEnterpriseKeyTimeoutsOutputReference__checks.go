@@ -98,7 +98,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRecaptchaEnterpriseKeyTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

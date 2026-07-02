@@ -17,15 +17,15 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,11 +73,11 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	ShareSettings() ComputeNodeGroupShareSettingsOutputReference
 	ShareSettingsInput() *ComputeNodeGroupShareSettings
@@ -85,11 +85,11 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeNodeGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -97,9 +97,9 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type ComputeNodeGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type ComputeNodeGroup interface {
 	ResetShareSettings()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeNodeGroup
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ComputeNodeGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNodeGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ComputeNodeGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeNodeGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_ComputeNodeGroup) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNodeGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_ComputeNodeGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeNodeGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_ComputeNodeGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNodeGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_ComputeNodeGroup) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeNodeGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_ComputeNodeGroup) Timeouts() ComputeNodeGroupTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNodeGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNodeGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -601,7 +601,6 @@ func (j *jsiiProxy_ComputeNodeGroup) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_node_group google_compute_node_group} Resource.
 func NewComputeNodeGroup(scope constructs.Construct, id *string, config *ComputeNodeGroupConfig) ComputeNodeGroup {
 	_init_.Initialize()
@@ -613,7 +612,7 @@ func NewComputeNodeGroup(scope constructs.Construct, id *string, config *Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -626,12 +625,12 @@ func NewComputeNodeGroup_Override(c ComputeNodeGroup, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeNodeGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeNodeGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeNodeGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetId(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetInitialSize(val *float64) {
+func (j *jsiiProxy_ComputeNodeGroup) SetInitialSize(val *float64) {
 	if err := j.validateSetInitialSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetInitialSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeNodeGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetMaintenancePolicy(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetMaintenancePolicy(val *string) {
 	if err := j.validateSetMaintenancePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetMaintenancePolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetName(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetNodeTemplate(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetNodeTemplate(val *string) {
 	if err := j.validateSetNodeTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetNodeTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetProject(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeNodeGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeNodeGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ComputeNodeGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNodeGroup)SetZone(val *string) {
+func (j *jsiiProxy_ComputeNodeGroup) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func ComputeNodeGroup_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func ComputeNodeGroup_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeNodeGroup_IsConstruct(x interface{}) *bool {
+func ComputeNodeGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNodeGroup_IsConstructParameters(x); err != nil {
@@ -834,7 +833,7 @@ func ComputeNodeGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func ComputeNodeGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeNodeGroup_IsTerraformElement(x interface{}) *bool {
+func ComputeNodeGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNodeGroup_IsTerraformElementParameters(x); err != nil {
@@ -853,7 +852,7 @@ func ComputeNodeGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func ComputeNodeGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeNodeGroup_IsTerraformResource(x interface{}) *bool {
+func ComputeNodeGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeNodeGroup_IsTerraformResourceParameters(x); err != nil {
@@ -872,7 +871,7 @@ func ComputeNodeGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -897,31 +896,31 @@ func (c *jsiiProxy_ComputeNodeGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeNodeGroup) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeNodeGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (c *jsiiProxy_ComputeNodeGroup) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,15 +1048,15 @@ func (c *jsiiProxy_ComputeNodeGroup) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNodeGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1076,7 +1075,7 @@ func (c *jsiiProxy_ComputeNodeGroup) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (c *jsiiProxy_ComputeNodeGroup) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,18 +1102,18 @@ func (c *jsiiProxy_ComputeNodeGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeNodeGroup) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (c *jsiiProxy_ComputeNodeGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (c *jsiiProxy_ComputeNodeGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (c *jsiiProxy_ComputeNodeGroup) PutAutoscalingPolicy(value *ComputeNodeGrou
 	_jsii_.InvokeVoid(
 		c,
 		"putAutoscalingPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (c *jsiiProxy_ComputeNodeGroup) PutMaintenanceWindow(value *ComputeNodeGrou
 	_jsii_.InvokeVoid(
 		c,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (c *jsiiProxy_ComputeNodeGroup) PutShareSettings(value *ComputeNodeGroupSha
 	_jsii_.InvokeVoid(
 		c,
 		"putShareSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (c *jsiiProxy_ComputeNodeGroup) PutTimeouts(value *ComputeNodeGroupTimeouts
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,8 +1271,8 @@ func (c *jsiiProxy_ComputeNodeGroup) ResetZone() {
 	)
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeNodeGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1285,8 +1284,8 @@ func (c *jsiiProxy_ComputeNodeGroup) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeNodeGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1298,8 +1297,8 @@ func (c *jsiiProxy_ComputeNodeGroup) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNodeGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1311,8 +1310,8 @@ func (c *jsiiProxy_ComputeNodeGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNodeGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1337,8 +1336,8 @@ func (c *jsiiProxy_ComputeNodeGroup) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNodeGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeNodeGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1349,4 +1348,3 @@ func (c *jsiiProxy_ComputeNodeGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

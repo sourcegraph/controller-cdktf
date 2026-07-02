@@ -1,6 +1,5 @@
 package filestoreinstance
 
-
 type FilestoreInstanceFileShares struct {
 	// File share capacity in GiB.
 	//
@@ -16,7 +15,7 @@ type FilestoreInstanceFileShares struct {
 	// nfs_export_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
-	NfsExportOptions interface{} `field:"optional" json:"nfsExportOptions" yaml:"nfsExportOptions"`
+	NfsExportOptions any `field:"optional" json:"nfsExportOptions" yaml:"nfsExportOptions"`
 	// The resource name of the backup, in the format projects/{projectId}/locations/{locationId}/backups/{backupId}, that this file share has been restored from.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
@@ -26,4 +25,3 @@ type FilestoreInstanceFileShares struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_instance#source_backupdr_backup FilestoreInstance#source_backupdr_backup}
 	SourceBackupdrBackup *string `field:"optional" json:"sourceBackupdrBackup" yaml:"sourceBackupdrBackup"`
 }
-

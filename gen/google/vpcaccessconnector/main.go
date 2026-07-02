@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
-		reflect.TypeOf((*VpcAccessConnector)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcAccessConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorConfig",
-		reflect.TypeOf((*VpcAccessConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnet",
-		reflect.TypeOf((*VpcAccessConnectorSubnet)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnectorSubnet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
-		reflect.TypeOf((*VpcAccessConnectorSubnetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnectorSubnetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcAccessConnectorSubnetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeouts",
-		reflect.TypeOf((*VpcAccessConnectorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnectorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
-		reflect.TypeOf((*VpcAccessConnectorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VpcAccessConnectorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VpcAccessConnectorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

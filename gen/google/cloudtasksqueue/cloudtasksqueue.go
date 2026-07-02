@@ -17,15 +17,15 @@ type CloudTasksQueue interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,13 +66,13 @@ type CloudTasksQueue interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RateLimits() CloudTasksQueueRateLimitsOutputReference
 	RateLimitsInput() *CloudTasksQueueRateLimits
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetryConfig() CloudTasksQueueRetryConfigOutputReference
 	RetryConfigInput() *CloudTasksQueueRetryConfig
 	StackdriverLoggingConfig() CloudTasksQueueStackdriverLoggingConfigOutputReference
@@ -81,18 +81,18 @@ type CloudTasksQueue interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudTasksQueueTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type CloudTasksQueue interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type CloudTasksQueue interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type CloudTasksQueue interface {
 	ResetRetryConfig()
 	ResetStackdriverLoggingConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudTasksQueue
@@ -195,8 +195,8 @@ func (j *jsiiProxy_CloudTasksQueue) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueue) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_CloudTasksQueue) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudTasksQueue) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_CloudTasksQueue) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueue) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_CloudTasksQueue) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudTasksQueue) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_CloudTasksQueue) RateLimitsInput() *CloudTasksQueueRateLimits
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueue) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_CloudTasksQueue) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudTasksQueue) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_CloudTasksQueue) Timeouts() CloudTasksQueueTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueue) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueue) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_CloudTasksQueue) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTasksQueueConfig) CloudTasksQueue {
@@ -567,7 +566,7 @@ func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTas
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewCloudTasksQueue_Override(c CloudTasksQueue, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudTasksQueue) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudTasksQueue) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudTasksQueue) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -615,7 +614,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetDesiredState(val *string) {
+func (j *jsiiProxy_CloudTasksQueue) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudTasksQueue) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetId(val *string) {
+func (j *jsiiProxy_CloudTasksQueue) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudTasksQueue) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetLocation(val *string) {
+func (j *jsiiProxy_CloudTasksQueue) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetName(val *string) {
+func (j *jsiiProxy_CloudTasksQueue) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetProject(val *string) {
+func (j *jsiiProxy_CloudTasksQueue) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudTasksQueue) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_CloudTasksQueue)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueue)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudTasksQueue) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func CloudTasksQueue_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func CloudTasksQueue_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudTasksQueue_IsConstruct(x interface{}) *bool {
+func CloudTasksQueue_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueue_IsConstructParameters(x); err != nil {
@@ -755,7 +754,7 @@ func CloudTasksQueue_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func CloudTasksQueue_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudTasksQueue_IsTerraformElement(x interface{}) *bool {
+func CloudTasksQueue_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueue_IsTerraformElementParameters(x); err != nil {
@@ -774,7 +773,7 @@ func CloudTasksQueue_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func CloudTasksQueue_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudTasksQueue_IsTerraformResource(x interface{}) *bool {
+func CloudTasksQueue_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueue_IsTerraformResourceParameters(x); err != nil {
@@ -793,7 +792,7 @@ func CloudTasksQueue_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -818,31 +817,31 @@ func (c *jsiiProxy_CloudTasksQueue) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueue) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudTasksQueue) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueue) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudTasksQueue) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (c *jsiiProxy_CloudTasksQueue) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,15 +969,15 @@ func (c *jsiiProxy_CloudTasksQueue) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueue) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueue) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -997,7 +996,7 @@ func (c *jsiiProxy_CloudTasksQueue) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (c *jsiiProxy_CloudTasksQueue) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,18 +1023,18 @@ func (c *jsiiProxy_CloudTasksQueue) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueue) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudTasksQueue) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1046,7 +1045,7 @@ func (c *jsiiProxy_CloudTasksQueue) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (c *jsiiProxy_CloudTasksQueue) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutAppEngineRoutingOverride(value *CloudTask
 	_jsii_.InvokeVoid(
 		c,
 		"putAppEngineRoutingOverride",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,7 +1078,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutHttpTarget(value *CloudTasksQueueHttpTarg
 	_jsii_.InvokeVoid(
 		c,
 		"putHttpTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutRateLimits(value *CloudTasksQueueRateLimi
 	_jsii_.InvokeVoid(
 		c,
 		"putRateLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutRetryConfig(value *CloudTasksQueueRetryCo
 	_jsii_.InvokeVoid(
 		c,
 		"putRetryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutStackdriverLoggingConfig(value *CloudTask
 	_jsii_.InvokeVoid(
 		c,
 		"putStackdriverLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (c *jsiiProxy_CloudTasksQueue) PutTimeouts(value *CloudTasksQueueTimeouts) 
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (c *jsiiProxy_CloudTasksQueue) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueue) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudTasksQueue) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1220,8 +1219,8 @@ func (c *jsiiProxy_CloudTasksQueue) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueue) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudTasksQueue) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1233,8 +1232,8 @@ func (c *jsiiProxy_CloudTasksQueue) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueue) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueue) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1246,8 +1245,8 @@ func (c *jsiiProxy_CloudTasksQueue) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueue) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueue) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1272,8 +1271,8 @@ func (c *jsiiProxy_CloudTasksQueue) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueue) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueue) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1284,4 +1283,3 @@ func (c *jsiiProxy_CloudTasksQueue) ToTerraform() interface{} {
 
 	return returns
 }
-

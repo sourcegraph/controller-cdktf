@@ -98,7 +98,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntimeTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewColabRuntimeTemplateTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterFleetOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremVmwareClusterFleetOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

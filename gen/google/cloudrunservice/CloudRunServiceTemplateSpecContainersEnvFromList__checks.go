@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunServiceTemplateSpecContainersEnvFromListParameters(terra
 
 	return nil
 }
-

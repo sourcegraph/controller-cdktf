@@ -15,22 +15,22 @@ type OracleDatabaseDbSystem interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DbSystemId() *string
 	SetDbSystemId(val *string)
 	DbSystemIdInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,27 +84,27 @@ type OracleDatabaseDbSystem interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseDbSystemTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type OracleDatabaseDbSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type OracleDatabaseDbSystem interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type OracleDatabaseDbSystem interface {
 	ResetProject()
 	ResetProperties()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseDbSystem
@@ -182,8 +182,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) DbSystemIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) Timeouts() OracleDatabaseDbSystemTime
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystem) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -631,7 +631,6 @@ func (j *jsiiProxy_OracleDatabaseDbSystem) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system google_oracle_database_db_system} Resource.
 func NewOracleDatabaseDbSystem(scope constructs.Construct, id *string, config *OracleDatabaseDbSystemConfig) OracleDatabaseDbSystem {
@@ -644,7 +643,7 @@ func NewOracleDatabaseDbSystem(scope constructs.Construct, id *string, config *O
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -657,12 +656,12 @@ func NewOracleDatabaseDbSystem_Override(o OracleDatabaseDbSystem, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetDbSystemId(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetDbSystemId(val *string) {
 	if err := j.validateSetDbSystemIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetDbSystemId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetDeletionProtection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetGcpOracleZone(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetGcpOracleZone(val *string) {
 	if err := j.validateSetGcpOracleZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetGcpOracleZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetOdbNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetOdbNetwork(val *string) {
 	if err := j.validateSetOdbNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetOdbNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetOdbSubnet(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetOdbSubnet(val *string) {
 	if err := j.validateSetOdbSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetOdbSubnet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -829,7 +828,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystem)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystem)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystem) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func OracleDatabaseDbSystem_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func OracleDatabaseDbSystem_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseDbSystem_IsConstruct(x interface{}) *bool {
+func OracleDatabaseDbSystem_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseDbSystem_IsConstructParameters(x); err != nil {
@@ -887,7 +886,7 @@ func OracleDatabaseDbSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func OracleDatabaseDbSystem_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseDbSystem_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseDbSystem_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseDbSystem_IsTerraformElementParameters(x); err != nil {
@@ -906,7 +905,7 @@ func OracleDatabaseDbSystem_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func OracleDatabaseDbSystem_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseDbSystem_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseDbSystem_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseDbSystem_IsTerraformResourceParameters(x); err != nil {
@@ -925,7 +924,7 @@ func OracleDatabaseDbSystem_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -950,31 +949,31 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseDbSystem) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseDbSystem) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,7 +1069,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,15 +1101,15 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1129,7 +1128,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1142,7 +1141,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1156,18 +1155,18 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseDbSystem) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1189,7 +1188,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1200,7 +1199,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) PutProperties(value *OracleDatabaseDb
 	_jsii_.InvokeVoid(
 		o,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) PutTimeouts(value *OracleDatabaseDbSy
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,8 +1286,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1300,8 +1299,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1313,8 +1312,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1326,8 +1325,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1352,8 +1351,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystem) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseDbSystem) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1364,4 +1363,3 @@ func (o *jsiiProxy_OracleDatabaseDbSystem) ToTerraform() interface{} {
 
 	return returns
 }
-

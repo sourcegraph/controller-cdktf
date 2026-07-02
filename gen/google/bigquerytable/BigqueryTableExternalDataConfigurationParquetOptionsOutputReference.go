@@ -12,9 +12,9 @@ type BigqueryTableExternalDataConfigurationParquetOptionsOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type BigqueryTableExternalDataConfigurationParquetOptionsOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableListInference() interface{}
-	SetEnableListInference(val interface{})
-	EnableListInferenceInput() interface{}
-	EnumAsString() interface{}
-	SetEnumAsString(val interface{})
-	EnumAsStringInput() interface{}
+	EnableListInference() any
+	SetEnableListInference(val any)
+	EnableListInferenceInput() any
+	EnumAsString() any
+	SetEnumAsString(val any)
+	EnumAsStringInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BigqueryTableExternalDataConfigurationParquetOptions
@@ -46,7 +46,7 @@ type BigqueryTableExternalDataConfigurationParquetOptionsOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type BigqueryTableExternalDataConfigurationParquetOptionsOutputReference interfa
 	ResetEnumAsString()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnableListInference() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnableListInference() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableListInference",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnableListInferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnableListInferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableListInferenceInput",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnumAsString() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnumAsString() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enumAsString",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnumAsStringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) EnumAsStringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enumAsStringInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-
 func NewBigqueryTableExternalDataConfigurationParquetOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableExternalDataConfigurationParquetOptionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBigqueryTableExternalDataConfigurationParquetOptionsOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBigqueryTableExternalDataConfigurationParquetOptionsOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetEnableListInference(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetEnableListInference(val any) {
 	if err := j.validateSetEnableListInferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetEnumAsString(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetEnumAsString(val any) {
 	if err := j.validateSetEnumAsStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetInternalValue(val *BigqueryTableExternalDataConfigurationParquetOptions) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetInternalValue(val *BigqueryTableExternalDataConfigurationParquetOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputRef
 
 	return returns
 }
-

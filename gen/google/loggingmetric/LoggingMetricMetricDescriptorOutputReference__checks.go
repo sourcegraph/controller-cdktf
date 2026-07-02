@@ -90,7 +90,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateInterpo
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validatePutLabelsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validatePutLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewLoggingMetricMetricDescriptorOutputReferenceParameters(terraform
 
 	return nil
 }
-

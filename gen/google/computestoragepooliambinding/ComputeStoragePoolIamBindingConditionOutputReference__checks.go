@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeStoragePoolIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeStoragePoolIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeStoragePoolIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeStoragePoolIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

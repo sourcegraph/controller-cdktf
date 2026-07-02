@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamWorkforcePoolIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateIamWorkforcePoolIamPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateIamWorkforcePoolIamPolicy_IsConstructParameters(x interface{}) error {
+func validateIamWorkforcePoolIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateIamWorkforcePoolIamPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateIamWorkforcePoolIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIamWorkforcePoolIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateIamWorkforcePoolIamPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateIamWorkforcePoolIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIamWorkforcePoolIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateIamWorkforcePoolIamPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetPolicyDataParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewIamWorkforcePoolIamPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

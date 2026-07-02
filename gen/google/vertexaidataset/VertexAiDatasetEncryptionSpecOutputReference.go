@@ -12,9 +12,9 @@ type VertexAiDatasetEncryptionSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type VertexAiDatasetEncryptionSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type VertexAiDatasetEncryptionSpecOutputReference interface {
 	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewVertexAiDatasetEncryptionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiDatasetEncryptionSpecOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewVertexAiDatasetEncryptionSpecOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewVertexAiDatasetEncryptionSpecOutputReference_Override(v VertexAiDatasetE
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiDataset.VertexAiDatasetEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetInternalValue(val *VertexAiDatasetEncryptionSpec) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetInternalValue(val *VertexAiDatasetEncryptionSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetKmsKeyName(va
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) ResetKmsKeyName
 	)
 }
 
-func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) ToString() *str
 
 	return returns
 }
-

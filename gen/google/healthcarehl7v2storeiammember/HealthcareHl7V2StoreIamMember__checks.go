@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateAddMoveTargetParameter
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateHealthcareHl7V2StoreIamMember_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateHealthcareHl7V2StoreIamMember_IsConstructParameters(x interface{}) error {
+func validateHealthcareHl7V2StoreIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateHealthcareHl7V2StoreIamMember_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateHealthcareHl7V2StoreIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareHl7V2StoreIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateHealthcareHl7V2StoreIamMember_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateHealthcareHl7V2StoreIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareHl7V2StoreIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateHealthcareHl7V2StoreIamMember_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetMemberParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewHealthcareHl7V2StoreIamMemberParameters(scope constructs.Constru
 
 	return nil
 }
-

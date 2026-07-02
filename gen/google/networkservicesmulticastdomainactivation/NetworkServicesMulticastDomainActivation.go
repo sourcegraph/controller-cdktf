@@ -16,15 +16,15 @@ type NetworkServicesMulticastDomainActivation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -33,9 +33,9 @@ type NetworkServicesMulticastDomainActivation interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisablePlacementPolicy() interface{}
-	SetDisablePlacementPolicy(val interface{})
-	DisablePlacementPolicyInput() interface{}
+	DisablePlacementPolicy() any
+	SetDisablePlacementPolicy(val any)
+	DisablePlacementPolicyInput() any
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -75,21 +75,21 @@ type NetworkServicesMulticastDomainActivation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() NetworkServicesMulticastDomainActivationStateList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesMulticastDomainActivationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrafficSpec() NetworkServicesMulticastDomainActivationTrafficSpecOutputReference
 	TrafficSpecInput() *NetworkServicesMulticastDomainActivationTrafficSpec
 	UniqueId() *string
@@ -98,9 +98,9 @@ type NetworkServicesMulticastDomainActivation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type NetworkServicesMulticastDomainActivation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type NetworkServicesMulticastDomainActivation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type NetworkServicesMulticastDomainActivation interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTrafficSpec()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesMulticastDomainActivation
@@ -187,8 +187,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DescriptionInput() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DisablePlacementPolicy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DisablePlacementPolicy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePlacementPolicy",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DisablePlacementPol
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DisablePlacementPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) DisablePlacementPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePlacementPolicyInput",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) TerraformLabels() c
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) Timeouts() NetworkS
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -607,7 +607,6 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) UpdateTime() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_domain_activation google_network_services_multicast_domain_activation} Resource.
 func NewNetworkServicesMulticastDomainActivation(scope constructs.Construct, id *string, config *NetworkServicesMulticastDomainActivationConfig) NetworkServicesMulticastDomainActivation {
 	_init_.Initialize()
@@ -619,7 +618,7 @@ func NewNetworkServicesMulticastDomainActivation(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -632,12 +631,12 @@ func NewNetworkServicesMulticastDomainActivation_Override(n NetworkServicesMulti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDescription(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDisablePlacementPolicy(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetDisablePlacementPolicy(val any) {
 	if err := j.validateSetDisablePlacementPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetDisablePlacementP
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLabels(val *map[s
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetMulticastDomain(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetMulticastDomain(val *string) {
 	if err := j.validateSetMulticastDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetMulticastDomain(v
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetMulticastDomainActivationId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetMulticastDomainActivationId(val *string) {
 	if err := j.validateSetMulticastDomainActivationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetMulticastDomainAc
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetProject(val *stri
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -782,7 +781,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func NetworkServicesMulticastDomainActivation_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func NetworkServicesMulticastDomainActivation_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesMulticastDomainActivation_IsConstruct(x interface{}) *bool {
+func NetworkServicesMulticastDomainActivation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastDomainActivation_IsConstructParameters(x); err != nil {
@@ -840,7 +839,7 @@ func NetworkServicesMulticastDomainActivation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func NetworkServicesMulticastDomainActivation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesMulticastDomainActivation_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesMulticastDomainActivation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastDomainActivation_IsTerraformElementParameters(x); err != nil {
@@ -859,7 +858,7 @@ func NetworkServicesMulticastDomainActivation_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func NetworkServicesMulticastDomainActivation_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func NetworkServicesMulticastDomainActivation_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesMulticastDomainActivation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastDomainActivation_IsTerraformResourceParameters(x); err != nil {
@@ -878,7 +877,7 @@ func NetworkServicesMulticastDomainActivation_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -903,31 +902,31 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetBooleanAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetNumberAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetNumberListAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,7 +1022,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetNumberMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetStringAttribute(
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,15 +1054,15 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) GetStringMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1082,7 +1081,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) InterpolationForAtt
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,18 +1108,18 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1131,7 +1130,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1142,7 +1141,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) PutTimeouts(value *
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) PutTrafficSpec(valu
 	_jsii_.InvokeVoid(
 		n,
 		"putTrafficSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,8 +1231,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ResetTrafficSpec() 
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1245,8 +1244,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1258,8 +1257,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) SynthesizeHclAttrib
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1271,8 +1270,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToHclTerraform() in
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1297,8 +1296,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToString() *string 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1309,4 +1308,3 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivation) ToTerraform() inter
 
 	return returns
 }
-

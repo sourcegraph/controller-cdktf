@@ -1,10 +1,8 @@
 package redisclusterusercreatedconnections
 
-
 type RedisClusterUserCreatedConnectionsClusterEndpoints struct {
 	// connections block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster_user_created_connections#connections RedisClusterUserCreatedConnections#connections}
-	Connections interface{} `field:"optional" json:"connections" yaml:"connections"`
+	Connections any `field:"optional" json:"connections" yaml:"connections"`
 }
-

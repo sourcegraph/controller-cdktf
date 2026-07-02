@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkstationsWorkstationTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

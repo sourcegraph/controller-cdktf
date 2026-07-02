@@ -1,6 +1,5 @@
 package cloudrunv2service
 
-
 type CloudRunV2ServiceTemplateVpcAccess struct {
 	// VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 	//
@@ -13,6 +12,5 @@ type CloudRunV2ServiceTemplateVpcAccess struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#network_interfaces CloudRunV2Service#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 }
-

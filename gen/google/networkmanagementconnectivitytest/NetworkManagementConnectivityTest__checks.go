@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) validateAddMoveTargetParam
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkManagementConnectivityTest) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) validateMoveFromIdParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkManagementConnectivityTest) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateNetworkManagementConnectivityTest_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateNetworkManagementConnectivityTest_IsConstructParameters(x interface{}) error {
+func validateNetworkManagementConnectivityTest_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateNetworkManagementConnectivityTest_IsConstructParameters(x interface
 	return nil
 }
 
-func validateNetworkManagementConnectivityTest_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkManagementConnectivityTest_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateNetworkManagementConnectivityTest_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetBypassFirewallC
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetProtocolParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,7 +497,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetRelatedProjects
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetRoundTripParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetRoundTripParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -535,4 +535,3 @@ func validateNewNetworkManagementConnectivityTestParameters(scope constructs.Con
 
 	return nil
 }
-

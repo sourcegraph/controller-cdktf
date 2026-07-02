@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetDisableAutomaticRefreshParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetDisableAutomaticRefreshParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetDisableInitialIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetDisableInitialIndexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferenceP
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRouterNatNat64SubnetworkList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNatNat64SubnetworkList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNatNat64SubnetworkList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRouterNatNat64SubnetworkListParameters(terraformResource 
 
 	return nil
 }
-

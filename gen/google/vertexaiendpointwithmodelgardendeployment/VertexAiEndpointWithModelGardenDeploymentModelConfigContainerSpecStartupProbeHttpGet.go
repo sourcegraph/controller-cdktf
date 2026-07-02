@@ -1,6 +1,5 @@
 package vertexaiendpointwithmodelgardendeployment
 
-
 type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet struct {
 	// Host name to connect to, defaults to the model serving container's IP.
 	//
@@ -11,7 +10,7 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupPro
 	// http_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#http_headers VertexAiEndpointWithModelGardenDeployment#http_headers}
-	HttpHeaders interface{} `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
+	HttpHeaders any `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#path VertexAiEndpointWithModelGardenDeployment#path}
@@ -25,4 +24,3 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupPro
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#scheme VertexAiEndpointWithModelGardenDeployment#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

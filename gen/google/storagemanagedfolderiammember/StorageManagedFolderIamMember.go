@@ -20,15 +20,15 @@ type StorageManagedFolderIamMember interface {
 	Condition() StorageManagedFolderIamMemberConditionOutputReference
 	ConditionInput() *StorageManagedFolderIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type StorageManagedFolderIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type StorageManagedFolderIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type StorageManagedFolderIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type StorageManagedFolderIamMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageManagedFolderIamMember
@@ -193,8 +193,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) ConditionInput() *StorageManag
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageManagedFolderIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_StorageManagedFolderIamMember) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_managed_folder_iam_member google_storage_managed_folder_iam_member} Resource.
 func NewStorageManagedFolderIamMember(scope constructs.Construct, id *string, config *StorageManagedFolderIamMemberConfig) StorageManagedFolderIamMember {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewStorageManagedFolderIamMember(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewStorageManagedFolderIamMember_Override(s StorageManagedFolderIamMember, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetBucket(val *string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetId(val *string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetManagedFolder(val *string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetManagedFolder(val *string) {
 	if err := j.validateSetManagedFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetManagedFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetMember(val *string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_StorageManagedFolderIamMember)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamMember)SetRole(val *string) {
+func (j *jsiiProxy_StorageManagedFolderIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func StorageManagedFolderIamMember_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func StorageManagedFolderIamMember_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageManagedFolderIamMember_IsConstruct(x interface{}) *bool {
+func StorageManagedFolderIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageManagedFolderIamMember_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func StorageManagedFolderIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func StorageManagedFolderIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageManagedFolderIamMember_IsTerraformElement(x interface{}) *bool {
+func StorageManagedFolderIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageManagedFolderIamMember_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func StorageManagedFolderIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func StorageManagedFolderIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageManagedFolderIamMember_IsTerraformResource(x interface{}) *bool {
+func StorageManagedFolderIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageManagedFolderIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func StorageManagedFolderIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageManagedFolderIamMember) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageManagedFolderIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -875,7 +874,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageManagedFolderIamMember) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) PutCondition(value *StorageMan
 	_jsii_.InvokeVoid(
 		s,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -987,8 +986,8 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1000,8 +999,8 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1013,8 +1012,8 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1039,8 +1038,8 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageManagedFolderIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1051,4 +1050,3 @@ func (s *jsiiProxy_StorageManagedFolderIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -122,7 +122,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference
 
 	return nil
 }
-

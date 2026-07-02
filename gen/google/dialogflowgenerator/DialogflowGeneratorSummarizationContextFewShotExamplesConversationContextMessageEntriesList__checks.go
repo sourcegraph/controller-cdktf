@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConvers
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowGeneratorSummarizationContextFewShotExamplesConversati
 
 	return nil
 }
-

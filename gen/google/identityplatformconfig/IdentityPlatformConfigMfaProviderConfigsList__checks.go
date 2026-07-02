@@ -34,7 +34,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIdentityPlatformConfigMfaProviderConfigsListParameters(terraform
 
 	return nil
 }
-

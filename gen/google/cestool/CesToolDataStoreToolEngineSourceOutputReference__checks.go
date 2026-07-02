@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validateInte
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validatePutDataStoreSourcesParameters(value interface{}) error {
+func (c *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validatePutDataStoreSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolEngineSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewCesToolDataStoreToolEngineSourceOutputReferenceParameters(terraf
 
 	return nil
 }
-

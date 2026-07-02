@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateAddMoveTarget
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateMoveFromIdPar
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateWorkstationsWorkstationConfigIamPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x interface{}) error {
+func validateWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters
 	return nil
 }
 
-func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateWorkstationsWorkstationConfigIamPolicy_IsTerraformResourceParameter
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewWorkstationsWorkstationConfigIamPolicyParameters(scope construct
 
 	return nil
 }
-

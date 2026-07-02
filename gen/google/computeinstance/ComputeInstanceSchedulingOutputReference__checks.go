@@ -112,7 +112,7 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutMaxRunDu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutNodeAffinitiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAutomaticRestartParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAutomaticRestartParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetAvailabi
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetOnHostMa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -350,4 +350,3 @@ func validateNewComputeInstanceSchedulingOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

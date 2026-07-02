@@ -34,7 +34,7 @@ func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBigqueryBiReservationPreferredTablesListParameters(terraformReso
 
 	return nil
 }
-

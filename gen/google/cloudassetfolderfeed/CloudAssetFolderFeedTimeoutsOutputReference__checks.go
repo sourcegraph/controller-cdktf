@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudAssetFolderFeedTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

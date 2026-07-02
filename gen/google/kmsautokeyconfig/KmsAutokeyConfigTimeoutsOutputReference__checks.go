@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsAutokeyConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKmsAutokeyConfigTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type HealthcareConsentStore interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
@@ -35,9 +35,9 @@ type HealthcareConsentStore interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
-	EnableConsentCreateOnUpdate() interface{}
-	SetEnableConsentCreateOnUpdate(val interface{})
-	EnableConsentCreateOnUpdateInput() interface{}
+	EnableConsentCreateOnUpdate() any
+	SetEnableConsentCreateOnUpdate(val any)
+	EnableConsentCreateOnUpdateInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,27 +66,27 @@ type HealthcareConsentStore interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() HealthcareConsentStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type HealthcareConsentStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type HealthcareConsentStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type HealthcareConsentStore interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for HealthcareConsentStore
@@ -160,8 +160,8 @@ func (j *jsiiProxy_HealthcareConsentStore) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_HealthcareConsentStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareConsentStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_HealthcareConsentStore) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_HealthcareConsentStore) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) EnableConsentCreateOnUpdate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) EnableConsentCreateOnUpdate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConsentCreateOnUpdate",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_HealthcareConsentStore) EnableConsentCreateOnUpdate() interfa
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) EnableConsentCreateOnUpdateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) EnableConsentCreateOnUpdateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConsentCreateOnUpdateInput",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_HealthcareConsentStore) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_HealthcareConsentStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_HealthcareConsentStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_HealthcareConsentStore) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareConsentStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_HealthcareConsentStore) Timeouts() HealthcareConsentStoreTime
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareConsentStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_HealthcareConsentStore) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_consent_store google_healthcare_consent_store} Resource.
 func NewHealthcareConsentStore(scope constructs.Construct, id *string, config *HealthcareConsentStoreConfig) HealthcareConsentStore {
@@ -482,7 +481,7 @@ func NewHealthcareConsentStore(scope constructs.Construct, id *string, config *H
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewHealthcareConsentStore_Override(h HealthcareConsentStore, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_HealthcareConsentStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetCount(val interface{}) {
+func (j *jsiiProxy_HealthcareConsentStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetDataset(val *string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetDefaultConsentTtl(val *string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetDefaultConsentTtl(val *string) {
 	if err := j.validateSetDefaultConsentTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetDefaultConsentTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetEnableConsentCreateOnUpdate(val interface{}) {
+func (j *jsiiProxy_HealthcareConsentStore) SetEnableConsentCreateOnUpdate(val any) {
 	if err := j.validateSetEnableConsentCreateOnUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetEnableConsentCreateOnUpdate(val int
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HealthcareConsentStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetId(val *string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HealthcareConsentStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetName(val *string) {
+func (j *jsiiProxy_HealthcareConsentStore) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HealthcareConsentStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_HealthcareConsentStore)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_HealthcareConsentStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func HealthcareConsentStore_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func HealthcareConsentStore_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func HealthcareConsentStore_IsConstruct(x interface{}) *bool {
+func HealthcareConsentStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareConsentStore_IsConstructParameters(x); err != nil {
@@ -681,7 +680,7 @@ func HealthcareConsentStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func HealthcareConsentStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareConsentStore_IsTerraformElement(x interface{}) *bool {
+func HealthcareConsentStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareConsentStore_IsTerraformElementParameters(x); err != nil {
@@ -700,7 +699,7 @@ func HealthcareConsentStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func HealthcareConsentStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareConsentStore_IsTerraformResource(x interface{}) *bool {
+func HealthcareConsentStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareConsentStore_IsTerraformResourceParameters(x); err != nil {
@@ -719,7 +718,7 @@ func HealthcareConsentStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,31 +743,31 @@ func (h *jsiiProxy_HealthcareConsentStore) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_HealthcareConsentStore) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareConsentStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (h *jsiiProxy_HealthcareConsentStore) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,15 +895,15 @@ func (h *jsiiProxy_HealthcareConsentStore) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareConsentStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -923,7 +922,7 @@ func (h *jsiiProxy_HealthcareConsentStore) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -936,7 +935,7 @@ func (h *jsiiProxy_HealthcareConsentStore) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,18 +949,18 @@ func (h *jsiiProxy_HealthcareConsentStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_HealthcareConsentStore) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -972,7 +971,7 @@ func (h *jsiiProxy_HealthcareConsentStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -983,7 +982,7 @@ func (h *jsiiProxy_HealthcareConsentStore) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -994,7 +993,7 @@ func (h *jsiiProxy_HealthcareConsentStore) PutTimeouts(value *HealthcareConsentS
 	_jsii_.InvokeVoid(
 		h,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1046,8 +1045,8 @@ func (h *jsiiProxy_HealthcareConsentStore) ResetTimeouts() {
 	)
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareConsentStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1059,8 +1058,8 @@ func (h *jsiiProxy_HealthcareConsentStore) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareConsentStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1072,8 +1071,8 @@ func (h *jsiiProxy_HealthcareConsentStore) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareConsentStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1085,8 +1084,8 @@ func (h *jsiiProxy_HealthcareConsentStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareConsentStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1111,8 +1110,8 @@ func (h *jsiiProxy_HealthcareConsentStore) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareConsentStore) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareConsentStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1123,4 +1122,3 @@ func (h *jsiiProxy_HealthcareConsentStore) ToTerraform() interface{} {
 
 	return returns
 }
-

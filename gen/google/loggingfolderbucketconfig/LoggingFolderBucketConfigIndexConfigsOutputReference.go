@@ -12,9 +12,9 @@ type LoggingFolderBucketConfigIndexConfigsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type LoggingFolderBucketConfigIndexConfigsOutputReference interface {
 	FieldPathInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type LoggingFolderBucketConfigIndexConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type LoggingFolderBucketConfigIndexConfigsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) TypeInp
 	return returns
 }
 
-
 func NewLoggingFolderBucketConfigIndexConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoggingFolderBucketConfigIndexConfigsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewLoggingFolderBucketConfigIndexConfigsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewLoggingFolderBucketConfigIndexConfigsOutputReference_Override(l LoggingF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetFieldPath(val *string) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetFieldPath(val *string) {
 	if err := j.validateSetFieldPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetField
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) Compute
 	return returns
 }
 
-func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetBool
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetBool
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetList
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetNumb
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetStri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) GetStri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) Interpo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference) ToStrin
 
 	return returns
 }
-

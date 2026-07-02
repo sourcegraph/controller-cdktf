@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataprocBatchPysparkBatchOutputReference) validateSetArgsPara
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchPysparkBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchPysparkBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataprocBatchPysparkBatchOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

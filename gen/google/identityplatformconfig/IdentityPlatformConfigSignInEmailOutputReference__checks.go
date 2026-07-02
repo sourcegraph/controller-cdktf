@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetPasswordRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateSetPasswordRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewIdentityPlatformConfigSignInEmailOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validatePutInfoTypesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validatePutInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validatePutRulesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigRuleSetOutputRefer
 
 	return nil
 }
-

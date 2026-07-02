@@ -14,12 +14,12 @@ type ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference interf
 	SetApiSource(val *string)
 	ApiSourceInput() *string
 	Attributes() ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList
-	AttributesInput() interface{}
+	AttributesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,10 +32,10 @@ type ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference interf
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operations() ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList
-	OperationsInput() interface{}
+	OperationsInput() any
 	Quota() ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference
 	QuotaInput() *ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota
 	// Experimental.
@@ -49,7 +49,7 @@ type ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,8 +70,8 @@ type ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAttributes(value interface{})
-	PutOperations(value interface{})
+	PutAttributes(value any)
+	PutOperations(value any)
 	PutQuota(value *ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota)
 	ResetApiSource()
 	ResetAttributes()
@@ -79,7 +79,7 @@ type ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference interf
 	ResetQuota()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) AttributesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) AttributesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attributesInput",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) OperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) OperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operationsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-
 func NewApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetApiSource(val *string) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetApiSource(val *string) {
 	if err := j.validateSetApiSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,32 +514,32 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) PutAttributes(value interface{}) {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) PutAttributes(value any) {
 	if err := a.validatePutAttributesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAttributes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) PutOperations(value interface{}) {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) PutOperations(value any) {
 	if err := a.validatePutOperationsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOperations",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	_jsii_.InvokeVoid(
 		a,
 		"putQuota",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 	)
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputRe
 
 	return returns
 }
-

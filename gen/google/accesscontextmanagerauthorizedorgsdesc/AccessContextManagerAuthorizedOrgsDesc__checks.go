@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateAddMoveTarget
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateMoveFromIdPar
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAccessContextManagerAuthorizedOrgsDesc_GenerateConfigForImportParam
 	return nil
 }
 
-func validateAccessContextManagerAuthorizedOrgsDesc_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerAuthorizedOrgsDesc_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAccessContextManagerAuthorizedOrgsDesc_IsConstructParameters(x inte
 	return nil
 }
 
-func validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformElementParameters
 	return nil
 }
 
-func validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetAuthorizat
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetParentPara
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewAccessContextManagerAuthorizedOrgsDescParameters(scope construct
 
 	return nil
 }
-

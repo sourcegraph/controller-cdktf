@@ -1,10 +1,8 @@
 package dataproccluster
 
-
 type DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig struct {
 	// Defines whether the instance should have confidential compute enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#enable_confidential_compute DataprocCluster#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 }
-

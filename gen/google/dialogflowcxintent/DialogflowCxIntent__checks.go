@@ -19,7 +19,7 @@ func (d *jsiiProxy_DialogflowCxIntent) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntent) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DialogflowCxIntent) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DialogflowCxIntent) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DialogflowCxIntent) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DialogflowCxIntent) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntent) validatePutParametersParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxIntent) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (d *jsiiProxy_DialogflowCxIntent) validatePutTimeoutsParameters(value *Dial
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntent) validatePutTrainingPhrasesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxIntent) validatePutTrainingPhrasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateDialogflowCxIntent_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDialogflowCxIntent_IsConstructParameters(x interface{}) error {
+func validateDialogflowCxIntent_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateDialogflowCxIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDialogflowCxIntent_IsTerraformElementParameters(x interface{}) error {
+func validateDialogflowCxIntent_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateDialogflowCxIntent_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDialogflowCxIntent_IsTerraformResourceParameters(x interface{}) error {
+func validateDialogflowCxIntent_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateDialogflowCxIntent_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultNegativeIntentParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultNegativeIntentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultNegativeIntentParamet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultWelcomeIntentParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultWelcomeIntentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultWelcomeIntentParamete
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetIsFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetIsFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -531,7 +531,7 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetPriorityParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntent) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntent) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -595,4 +595,3 @@ func validateNewDialogflowCxIntentParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

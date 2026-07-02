@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapWebForwardingRuleServiceIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IapWebForwardingRuleServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebForwardingRuleServiceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapWebForwardingRuleServiceIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

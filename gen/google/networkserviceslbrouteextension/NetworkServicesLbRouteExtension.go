@@ -15,15 +15,15 @@ type NetworkServicesLbRouteExtension interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,7 +33,7 @@ type NetworkServicesLbRouteExtension interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	ExtensionChains() NetworkServicesLbRouteExtensionExtensionChainsList
-	ExtensionChainsInput() interface{}
+	ExtensionChainsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,27 +74,27 @@ type NetworkServicesLbRouteExtension interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesLbRouteExtensionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkServicesLbRouteExtension interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,14 +124,14 @@ type NetworkServicesLbRouteExtension interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutExtensionChains(value interface{})
+	PutExtensionChains(value any)
 	PutTimeouts(value *NetworkServicesLbRouteExtensionTimeouts)
 	ResetDescription()
 	ResetId()
@@ -141,17 +141,17 @@ type NetworkServicesLbRouteExtension interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesLbRouteExtension
@@ -169,8 +169,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) ExtensionChains() NetworkSer
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) ExtensionChainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) ExtensionChainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"extensionChainsInput",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) TerraformLabels() cdktf.Stri
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) Timeouts() NetworkServicesLb
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -538,7 +538,6 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension) TimeoutsInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension} Resource.
 func NewNetworkServicesLbRouteExtension(scope constructs.Construct, id *string, config *NetworkServicesLbRouteExtensionConfig) NetworkServicesLbRouteExtension {
@@ -551,7 +550,7 @@ func NewNetworkServicesLbRouteExtension(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -564,12 +563,12 @@ func NewNetworkServicesLbRouteExtension_Override(n NetworkServicesLbRouteExtensi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetForwardingRules(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetForwardingRules(val *[]*string) {
 	if err := j.validateSetForwardingRulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetForwardingRules(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLabels(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLoadBalancingScheme(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetLoadBalancingScheme(val *string) {
 	if err := j.validateSetLoadBalancingSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLoadBalancingScheme(val *s
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtension)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesLbRouteExtension) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func NetworkServicesLbRouteExtension_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func NetworkServicesLbRouteExtension_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
+func NetworkServicesLbRouteExtension_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbRouteExtension_IsConstructParameters(x); err != nil {
@@ -772,7 +771,7 @@ func NetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func NetworkServicesLbRouteExtension_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesLbRouteExtension_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbRouteExtension_IsTerraformElementParameters(x); err != nil {
@@ -791,7 +790,7 @@ func NetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func NetworkServicesLbRouteExtension_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesLbRouteExtension_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesLbRouteExtension_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesLbRouteExtension_IsTerraformResourceParameters(x); err != nil {
@@ -810,7 +809,7 @@ func NetworkServicesLbRouteExtension_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesLbRouteExtension.NetworkServicesLbRouteExtension",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -835,31 +834,31 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,15 +986,15 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1014,7 +1013,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,18 +1040,18 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1074,18 +1073,18 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) PutExtensionChains(value interface{}) {
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) PutExtensionChains(value any) {
 	if err := n.validatePutExtensionChainsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putExtensionChains",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) PutTimeouts(value *NetworkSe
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1148,8 +1147,8 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1161,8 +1160,8 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1174,8 +1173,8 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1187,8 +1186,8 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToHclTerraform() interface{}
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1213,8 +1212,8 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1225,4 +1224,3 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtension) ToTerraform() interface{} {
 
 	return returns
 }
-

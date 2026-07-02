@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneRemoteOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneRemoteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneRemoteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerClusterControlPlaneRemoteOutputReferenceParameters(
 
 	return nil
 }
-

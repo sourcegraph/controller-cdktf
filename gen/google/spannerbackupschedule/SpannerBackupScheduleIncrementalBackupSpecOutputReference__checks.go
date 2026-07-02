@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerBackupScheduleIncrementalBackupSpecOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleIncrementalBackupSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerBackupScheduleIncrementalBackupSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewSpannerBackupScheduleIncrementalBackupSpecOutputReferenceParamet
 
 	return nil
 }
-

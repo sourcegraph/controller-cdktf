@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHook",
-		reflect.TypeOf((*SecureSourceManagerHook)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerHook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHookConfig",
-		reflect.TypeOf((*SecureSourceManagerHookConfig)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHookConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHookPushOption",
-		reflect.TypeOf((*SecureSourceManagerHookPushOption)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHookPushOption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHookPushOptionOutputReference",
-		reflect.TypeOf((*SecureSourceManagerHookPushOptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHookPushOptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchFilter", GoGetter: "BranchFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "branchFilterInput", GoGetter: "BranchFilterInput"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerHookPushOptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,11 +139,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHookTimeouts",
-		reflect.TypeOf((*SecureSourceManagerHookTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHookTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerHook.SecureSourceManagerHookTimeoutsOutputReference",
-		reflect.TypeOf((*SecureSourceManagerHookTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerHookTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerHookTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

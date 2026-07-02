@@ -19,7 +19,7 @@ func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateAddMoveTargetParame
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateMoveFromIdParameter
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsManagedZone) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIntegrationConnectorsManagedZone_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateIntegrationConnectorsManagedZone_IsConstructParameters(x interface{}) error {
+func validateIntegrationConnectorsManagedZone_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIntegrationConnectorsManagedZone_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateIntegrationConnectorsManagedZone_IsTerraformElementParameters(x interface{}) error {
+func validateIntegrationConnectorsManagedZone_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIntegrationConnectorsManagedZone_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateIntegrationConnectorsManagedZone_IsTerraformResourceParameters(x interface{}) error {
+func validateIntegrationConnectorsManagedZone_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIntegrationConnectorsManagedZone_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsManagedZone) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewIntegrationConnectorsManagedZoneParameters(scope constructs.Cons
 
 	return nil
 }
-

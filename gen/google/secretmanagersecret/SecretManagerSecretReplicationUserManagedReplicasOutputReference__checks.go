@@ -109,7 +109,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewSecretManagerSecretReplicationUserManagedReplicasOutputReference
 
 	return nil
 }
-

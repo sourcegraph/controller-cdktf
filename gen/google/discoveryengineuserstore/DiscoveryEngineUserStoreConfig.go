@@ -6,9 +6,9 @@ import (
 
 type DiscoveryEngineUserStoreConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DiscoveryEngineUserStoreConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#location DiscoveryEngineUserStore#location}
@@ -41,14 +41,14 @@ type DiscoveryEngineUserStoreConfig struct {
 	// remaining license seats.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_expired_license_auto_update DiscoveryEngineUserStore#enable_expired_license_auto_update}
-	EnableExpiredLicenseAutoUpdate interface{} `field:"optional" json:"enableExpiredLicenseAutoUpdate" yaml:"enableExpiredLicenseAutoUpdate"`
+	EnableExpiredLicenseAutoUpdate any `field:"optional" json:"enableExpiredLicenseAutoUpdate" yaml:"enableExpiredLicenseAutoUpdate"`
 	// Whether to enable automatic license registration for new users created in this user store.
 	//
 	// If enabled, new users will automatically register under
 	// the default subscription.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#enable_license_auto_register DiscoveryEngineUserStore#enable_license_auto_register}
-	EnableLicenseAutoRegister interface{} `field:"optional" json:"enableLicenseAutoRegister" yaml:"enableLicenseAutoRegister"`
+	EnableLicenseAutoRegister any `field:"optional" json:"enableLicenseAutoRegister" yaml:"enableLicenseAutoRegister"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#id DiscoveryEngineUserStore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -65,4 +65,3 @@ type DiscoveryEngineUserStoreConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_user_store#user_store_id DiscoveryEngineUserStore#user_store_id}
 	UserStoreId *string `field:"optional" json:"userStoreId" yaml:"userStoreId"`
 }
-

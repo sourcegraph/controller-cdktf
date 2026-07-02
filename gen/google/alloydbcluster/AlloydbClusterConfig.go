@@ -6,9 +6,9 @@ import (
 
 type AlloydbClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AlloydbClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the alloydb cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#cluster_id AlloydbCluster#cluster_id}
@@ -76,7 +76,7 @@ type AlloydbClusterConfig struct {
 	// When the field is set to false, deleting the cluster is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#deletion_protection AlloydbCluster#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// User-settable and human-readable display name for the Cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#display_name AlloydbCluster#display_name}
@@ -142,7 +142,7 @@ type AlloydbClusterConfig struct {
 	// Set to true to skip awaiting on the major version upgrade of the cluster. Possible values: true, false Default value: "true".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#skip_await_major_version_upgrade AlloydbCluster#skip_await_major_version_upgrade}
-	SkipAwaitMajorVersionUpgrade interface{} `field:"optional" json:"skipAwaitMajorVersionUpgrade" yaml:"skipAwaitMajorVersionUpgrade"`
+	SkipAwaitMajorVersionUpgrade any `field:"optional" json:"skipAwaitMajorVersionUpgrade" yaml:"skipAwaitMajorVersionUpgrade"`
 	// The subscrition type of cluster. Possible values: ["TRIAL", "STANDARD"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#subscription_type AlloydbCluster#subscription_type}
@@ -152,4 +152,3 @@ type AlloydbClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_cluster#timeouts AlloydbCluster#timeouts}
 	Timeouts *AlloydbClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

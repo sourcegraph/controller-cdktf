@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutAutos
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -176,7 +176,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutGceCl
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutInitializationActionParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutInitializationActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetClust
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -432,4 +432,3 @@ func validateNewDataprocClusterClusterConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

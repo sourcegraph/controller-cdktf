@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateAddMoveTar
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateMoveFromId
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateVertexAiEndpointWithModelGardenDeployment_GenerateConfigForImportPa
 	return nil
 }
 
-func validateVertexAiEndpointWithModelGardenDeployment_IsConstructParameters(x interface{}) error {
+func validateVertexAiEndpointWithModelGardenDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateVertexAiEndpointWithModelGardenDeployment_IsConstructParameters(x i
 	return nil
 }
 
-func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformElementParamet
 	return nil
 }
 
-func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateVertexAiEndpointWithModelGardenDeployment_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -418,7 +418,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -490,4 +490,3 @@ func validateNewVertexAiEndpointWithModelGardenDeploymentParameters(scope constr
 
 	return nil
 }
-

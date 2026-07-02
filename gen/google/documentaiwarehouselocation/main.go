@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
-		reflect.TypeOf((*DocumentAiWarehouseLocation)(nil)).Elem(),
+		reflect.TypeFor[DocumentAiWarehouseLocation](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessControlMode", GoGetter: "AccessControlMode"},
 			_jsii_.MemberProperty{JsiiProperty: "accessControlModeInput", GoGetter: "AccessControlModeInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocumentAiWarehouseLocation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationConfig",
-		reflect.TypeOf((*DocumentAiWarehouseLocationConfig)(nil)).Elem(),
+		reflect.TypeFor[DocumentAiWarehouseLocationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeouts",
-		reflect.TypeOf((*DocumentAiWarehouseLocationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DocumentAiWarehouseLocationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeoutsOutputReference",
-		reflect.TypeOf((*DocumentAiWarehouseLocationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DocumentAiWarehouseLocationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

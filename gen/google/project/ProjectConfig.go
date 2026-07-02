@@ -6,9 +6,9 @@ import (
 
 type ProjectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProjectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name of the project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project#name Project#name}
@@ -32,7 +32,7 @@ type ProjectConfig struct {
 	// Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project#auto_create_network Project#auto_create_network}
-	AutoCreateNetwork interface{} `field:"optional" json:"autoCreateNetwork" yaml:"autoCreateNetwork"`
+	AutoCreateNetwork any `field:"optional" json:"autoCreateNetwork" yaml:"autoCreateNetwork"`
 	// The alphanumeric ID of the billing account this project belongs to.
 	//
 	// The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
@@ -81,4 +81,3 @@ type ProjectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project#timeouts Project#timeouts}
 	Timeouts *ProjectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

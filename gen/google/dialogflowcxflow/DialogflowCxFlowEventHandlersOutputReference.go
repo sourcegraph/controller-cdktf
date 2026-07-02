@@ -12,9 +12,9 @@ type DialogflowCxFlowEventHandlersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DialogflowCxFlowEventHandlersOutputReference interface {
 	EventInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	TargetFlow() *string
 	SetTargetFlow(val *string)
@@ -52,7 +52,7 @@ type DialogflowCxFlowEventHandlersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type DialogflowCxFlowEventHandlersOutputReference interface {
 	ResetTriggerFulfillment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ type jsiiProxy_DialogflowCxFlowEventHandlersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) TriggerFulfillm
 	return returns
 }
 
-
 func NewDialogflowCxFlowEventHandlersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DialogflowCxFlowEventHandlersOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewDialogflowCxFlowEventHandlersOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewDialogflowCxFlowEventHandlersOutputReference_Override(d DialogflowCxFlow
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetEvent(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetEvent(val *string) {
 	if err := j.validateSetEventParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetEvent(val *st
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTargetFlow(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetTargetFlow(val *string) {
 	if err := j.validateSetTargetFlowParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTargetFlow(va
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTargetPage(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetTargetPage(val *string) {
 	if err := j.validateSetTargetPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTargetPage(va
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) PutTriggerFulfi
 	_jsii_.InvokeVoid(
 		d,
 		"putTriggerFulfillment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,16 +597,16 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) ResetTriggerFul
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) ToString() *str
 
 	return returns
 }
-

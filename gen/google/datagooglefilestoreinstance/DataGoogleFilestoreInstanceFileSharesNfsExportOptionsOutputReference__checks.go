@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleFilestoreInstanceFileSharesNfsExportOptionsOutputRefer
 
 	return nil
 }
-

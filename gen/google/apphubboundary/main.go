@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apphubBoundary.ApphubBoundary",
-		reflect.TypeOf((*ApphubBoundary)(nil)).Elem(),
+		reflect.TypeFor[ApphubBoundary](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApphubBoundary{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apphubBoundary.ApphubBoundaryConfig",
-		reflect.TypeOf((*ApphubBoundaryConfig)(nil)).Elem(),
+		reflect.TypeFor[ApphubBoundaryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apphubBoundary.ApphubBoundaryTimeouts",
-		reflect.TypeOf((*ApphubBoundaryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApphubBoundaryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apphubBoundary.ApphubBoundaryTimeoutsOutputReference",
-		reflect.TypeOf((*ApphubBoundaryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApphubBoundaryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApphubBoundaryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

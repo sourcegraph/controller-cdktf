@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleOrganizationsOrganizationsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOrganizationsOrganizationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOrganizationsOrganizationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleOrganizationsOrganizationsOutputReferenceParameters(te
 
 	return nil
 }
-

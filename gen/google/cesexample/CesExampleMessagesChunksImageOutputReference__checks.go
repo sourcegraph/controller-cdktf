@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCesExampleMessagesChunksImageOutputReferenceParameters(terraform
 
 	return nil
 }
-

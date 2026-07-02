@@ -14,9 +14,9 @@ type MemorystoreInstancePersistenceConfigOutputReference interface {
 	AofConfigInput() *MemorystoreInstancePersistenceConfigAofConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type MemorystoreInstancePersistenceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type MemorystoreInstancePersistenceConfigOutputReference interface {
 	ResetRdbConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) AofConfi
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewMemorystoreInstancePersistenceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MemorystoreInstancePersistenceConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewMemorystoreInstancePersistenceConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewMemorystoreInstancePersistenceConfigOutputReference_Override(m Memorysto
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetInternalValue(val *MemorystoreInstancePersistenceConfig) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetInternalValue(val *MemorystoreInstancePersistenceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetMode(v
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,16 +324,16 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) ComputeF
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) PutAofCo
 	_jsii_.InvokeVoid(
 		m,
 		"putAofConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -516,7 +515,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) PutRdbCo
 	_jsii_.InvokeVoid(
 		m,
 		"putRdbConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) ResetRdb
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference) ToString
 
 	return returns
 }
-

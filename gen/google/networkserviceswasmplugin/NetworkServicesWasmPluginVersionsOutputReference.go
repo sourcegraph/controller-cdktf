@@ -12,9 +12,9 @@ type NetworkServicesWasmPluginVersionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type NetworkServicesWasmPluginVersionsOutputReference interface {
 	ImageUri() *string
 	SetImageUri(val *string)
 	ImageUriInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -62,7 +62,7 @@ type NetworkServicesWasmPluginVersionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type NetworkServicesWasmPluginVersionsOutputReference interface {
 	ResetPluginConfigUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ type jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ImageUriInp
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -333,7 +333,6 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) VersionName
 	return returns
 }
 
-
 func NewNetworkServicesWasmPluginVersionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkServicesWasmPluginVersionsOutputReference {
 	_init_.Initialize()
 
@@ -344,7 +343,7 @@ func NewNetworkServicesWasmPluginVersionsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -356,12 +355,12 @@ func NewNetworkServicesWasmPluginVersionsOutputReference_Override(n NetworkServi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetImageUri(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetImageUri(val *string) {
 	if err := j.validateSetImageUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetImageUri(
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetLabels(va
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetPluginConfigData(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetPluginConfigData(val *string) {
 	if err := j.validateSetPluginConfigDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetPluginCon
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetPluginConfigUri(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetPluginConfigUri(val *string) {
 	if err := j.validateSetPluginConfigUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetPluginCon
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference)SetVersionName(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) SetVersionName(val *string) {
 	if err := j.validateSetVersionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,16 +494,16 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -708,16 +707,16 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ResetPlugin
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -736,4 +735,3 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) ToString() 
 
 	return returns
 }
-

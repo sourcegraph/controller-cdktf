@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJob",
-		reflect.TypeOf((*DataprocJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForCompletion", GoGetter: "WaitForCompletion"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForCompletionInput", GoGetter: "WaitForCompletionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -127,19 +127,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobConfig",
-		reflect.TypeOf((*DataprocJobConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfig",
-		reflect.TypeOf((*DataprocJobHadoopConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHadoopConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHadoopConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHadoopConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHadoopConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHadoopConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHadoopConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHadoopConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobHadoopConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHiveConfig",
-		reflect.TypeOf((*DataprocJobHiveConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHiveConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobHiveConfigOutputReference",
-		reflect.TypeOf((*DataprocJobHiveConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobHiveConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobHiveConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,15 +284,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfig",
-		reflect.TypeOf((*DataprocJobPigConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPigConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPigConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPigConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPigConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -326,7 +326,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPigConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPigConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPigConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -380,11 +380,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPlacement",
-		reflect.TypeOf((*DataprocJobPlacement)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPlacement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPlacementOutputReference",
-		reflect.TypeOf((*DataprocJobPlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterNameInput", GoGetter: "ClusterNameInput"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,15 +419,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfig",
-		reflect.TypeOf((*DataprocJobPrestoConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPrestoConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPrestoConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPrestoConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPrestoConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPrestoConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPrestoConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPrestoConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientTags", GoGetter: "ClientTags"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTagsInput", GoGetter: "ClientTagsInput"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPrestoConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,15 +515,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfig",
-		reflect.TypeOf((*DataprocJobPysparkConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPysparkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPysparkConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPysparkConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPysparkConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -549,7 +549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPysparkConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -557,7 +557,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobPysparkConfigOutputReference",
-		reflect.TypeOf((*DataprocJobPysparkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobPysparkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -605,7 +605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobPysparkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -613,11 +613,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobReference",
-		reflect.TypeOf((*DataprocJobReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobReference](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobReferenceOutputReference",
-		reflect.TypeOf((*DataprocJobReferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobReferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -644,7 +644,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobReferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -652,11 +652,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobScheduling",
-		reflect.TypeOf((*DataprocJobScheduling)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobScheduling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
-		reflect.TypeOf((*DataprocJobSchedulingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSchedulingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -684,7 +684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobSchedulingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -692,15 +692,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfig",
-		reflect.TypeOf((*DataprocJobSparkConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparkConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparkConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparkConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobSparkConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -734,7 +734,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -783,7 +783,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobSparkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -791,15 +791,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfig",
-		reflect.TypeOf((*DataprocJobSparksqlConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparksqlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfig",
-		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparksqlConfigLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparksqlConfigLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparksqlConfigLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -825,7 +825,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobSparksqlConfigLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -833,7 +833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
-		reflect.TypeOf((*DataprocJobSparksqlConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobSparksqlConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -876,7 +876,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobSparksqlConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -884,11 +884,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobStatus",
-		reflect.TypeOf((*DataprocJobStatus)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobStatusList",
-		reflect.TypeOf((*DataprocJobStatusList)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -901,7 +901,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -909,7 +909,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobStatusOutputReference",
-		reflect.TypeOf((*DataprocJobStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -937,7 +937,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -945,11 +945,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocJob.DataprocJobTimeouts",
-		reflect.TypeOf((*DataprocJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocJob.DataprocJobTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -979,7 +979,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

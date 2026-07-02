@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamWorkloadIdentityPoolAttestationRulesOutputReferenceParameters
 
 	return nil
 }
-

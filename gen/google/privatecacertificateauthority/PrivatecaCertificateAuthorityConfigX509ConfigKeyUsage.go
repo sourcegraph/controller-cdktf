@@ -1,6 +1,5 @@
 package privatecacertificateauthority
 
-
 type PrivatecaCertificateAuthorityConfigX509ConfigKeyUsage struct {
 	// base_key_usage block.
 	//
@@ -13,6 +12,5 @@ type PrivatecaCertificateAuthorityConfigX509ConfigKeyUsage struct {
 	// unknown_extended_key_usages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_authority#unknown_extended_key_usages PrivatecaCertificateAuthority#unknown_extended_key_usages}
-	UnknownExtendedKeyUsages interface{} `field:"optional" json:"unknownExtendedKeyUsages" yaml:"unknownExtendedKeyUsages"`
+	UnknownExtendedKeyUsages any `field:"optional" json:"unknownExtendedKeyUsages" yaml:"unknownExtendedKeyUsages"`
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDialogflowGeneratorInferenceParameterOutputReferenceParameters(t
 
 	return nil
 }
-

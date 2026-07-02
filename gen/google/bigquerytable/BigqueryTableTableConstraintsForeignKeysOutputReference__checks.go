@@ -120,7 +120,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewBigqueryTableTableConstraintsForeignKeysOutputReferenceParameter
 
 	return nil
 }
-

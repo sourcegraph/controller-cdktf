@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionNetworkEndpointGroupPscDataOutputReferenceParameter
 
 	return nil
 }
-

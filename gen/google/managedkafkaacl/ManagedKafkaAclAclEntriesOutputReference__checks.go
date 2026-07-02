@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateSetHostPara
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewManagedKafkaAclAclEntriesOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList interface {
 	Get(index *float64) DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	return returns
 }
 
-
 func NewDataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesLi
 
 	return returns
 }
-

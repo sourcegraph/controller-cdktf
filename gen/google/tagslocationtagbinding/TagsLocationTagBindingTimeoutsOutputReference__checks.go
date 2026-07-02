@@ -98,7 +98,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewTagsLocationTagBindingTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

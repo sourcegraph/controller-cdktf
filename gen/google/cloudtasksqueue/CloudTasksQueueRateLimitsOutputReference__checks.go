@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudTasksQueueRateLimitsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueRateLimitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueRateLimitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudTasksQueueRateLimitsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

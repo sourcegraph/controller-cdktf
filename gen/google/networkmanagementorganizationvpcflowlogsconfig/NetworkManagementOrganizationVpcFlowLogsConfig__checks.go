@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateAddMo
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateMoveF
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkManagementOrganizationVpcFlowLogsConfig_GenerateConfigForImp
 	return nil
 }
 
-func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsConstructParameters(x interface{}) error {
+func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsConstructParameter
 	return nil
 }
 
-func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElementPa
 	return nil
 }
 
-func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetAg
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetOr
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -521,4 +521,3 @@ func validateNewNetworkManagementOrganizationVpcFlowLogsConfigParameters(scope c
 
 	return nil
 }
-

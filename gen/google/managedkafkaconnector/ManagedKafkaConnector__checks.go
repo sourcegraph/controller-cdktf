@@ -19,7 +19,7 @@ func (m *jsiiProxy_ManagedKafkaConnector) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaConnector) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_ManagedKafkaConnector) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_ManagedKafkaConnector) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_ManagedKafkaConnector) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateManagedKafkaConnector_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateManagedKafkaConnector_IsConstructParameters(x interface{}) error {
+func validateManagedKafkaConnector_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateManagedKafkaConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateManagedKafkaConnector_IsTerraformElementParameters(x interface{}) error {
+func validateManagedKafkaConnector_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateManagedKafkaConnector_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateManagedKafkaConnector_IsTerraformResourceParameters(x interface{}) error {
+func validateManagedKafkaConnector_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_ManagedKafkaConnector) validateSetConnectClusterParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnector) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnector) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_ManagedKafkaConnector) validateSetConnectorIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnector) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnector) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ManagedKafkaConnector) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnector) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnector) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewManagedKafkaConnectorParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

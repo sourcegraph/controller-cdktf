@@ -6,9 +6,9 @@ import (
 
 type ComputeRouterPeerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRouterPeerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the interface the BGP peer is associated with.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#interface ComputeRouterPeer#interface}
@@ -59,7 +59,7 @@ type ComputeRouterPeerConfig struct {
 	// advertised_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#advertised_ip_ranges ComputeRouterPeer#advertised_ip_ranges}
-	AdvertisedIpRanges interface{} `field:"optional" json:"advertisedIpRanges" yaml:"advertisedIpRanges"`
+	AdvertisedIpRanges any `field:"optional" json:"advertisedIpRanges" yaml:"advertisedIpRanges"`
 	// The priority of routes advertised to this BGP peer.
 	//
 	// Where there is more than one matching route of maximum
@@ -80,7 +80,7 @@ type ComputeRouterPeerConfig struct {
 	// custom_learned_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#custom_learned_ip_ranges ComputeRouterPeer#custom_learned_ip_ranges}
-	CustomLearnedIpRanges interface{} `field:"optional" json:"customLearnedIpRanges" yaml:"customLearnedIpRanges"`
+	CustomLearnedIpRanges any `field:"optional" json:"customLearnedIpRanges" yaml:"customLearnedIpRanges"`
 	// The user-defined custom learned route priority for a BGP session.
 	//
 	// This value is applied to all custom learned route ranges for the session. You can choose a value
@@ -96,15 +96,15 @@ type ComputeRouterPeerConfig struct {
 	// The default is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#enable ComputeRouterPeer#enable}
-	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
+	Enable any `field:"optional" json:"enable" yaml:"enable"`
 	// Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#enable_ipv4 ComputeRouterPeer#enable_ipv4}
-	EnableIpv4 interface{} `field:"optional" json:"enableIpv4" yaml:"enableIpv4"`
+	EnableIpv4 any `field:"optional" json:"enableIpv4" yaml:"enableIpv4"`
 	// Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#enable_ipv6 ComputeRouterPeer#enable_ipv6}
-	EnableIpv6 interface{} `field:"optional" json:"enableIpv6" yaml:"enableIpv6"`
+	EnableIpv6 any `field:"optional" json:"enableIpv6" yaml:"enableIpv6"`
 	// routers.list of export policies applied to this peer, in the order they must be evaluated.  The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_EXPORT type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#export_policies ComputeRouterPeer#export_policies}
@@ -174,10 +174,9 @@ type ComputeRouterPeerConfig struct {
 	// Force the advertised_route_priority to be 0.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#zero_advertised_route_priority ComputeRouterPeer#zero_advertised_route_priority}
-	ZeroAdvertisedRoutePriority interface{} `field:"optional" json:"zeroAdvertisedRoutePriority" yaml:"zeroAdvertisedRoutePriority"`
+	ZeroAdvertisedRoutePriority any `field:"optional" json:"zeroAdvertisedRoutePriority" yaml:"zeroAdvertisedRoutePriority"`
 	// Force the custom_learned_route_priority to be 0.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router_peer#zero_custom_learned_route_priority ComputeRouterPeer#zero_custom_learned_route_priority}
-	ZeroCustomLearnedRoutePriority interface{} `field:"optional" json:"zeroCustomLearnedRoutePriority" yaml:"zeroCustomLearnedRoutePriority"`
+	ZeroCustomLearnedRoutePriority any `field:"optional" json:"zeroCustomLearnedRoutePriority" yaml:"zeroCustomLearnedRoutePriority"`
 }
-

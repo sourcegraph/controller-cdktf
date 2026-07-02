@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocMetastoreFederationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

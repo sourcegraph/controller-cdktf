@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappBackup.NetappBackup",
-		reflect.TypeOf((*NetappBackup)(nil)).Elem(),
+		reflect.TypeFor[NetappBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeRegion", GoGetter: "VolumeRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeUsageBytes", GoGetter: "VolumeUsageBytes"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappBackup.NetappBackupConfig",
-		reflect.TypeOf((*NetappBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappBackup.NetappBackupTimeouts",
-		reflect.TypeOf((*NetappBackupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappBackup.NetappBackupTimeoutsOutputReference",
-		reflect.TypeOf((*NetappBackupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappBackupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGeminiCodeToolsSettingEnabledToolConfigListParameters(terraformR
 
 	return nil
 }
-

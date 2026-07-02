@@ -1,13 +1,12 @@
 package dataprocjob
 
-
 type DataprocJobPigConfig struct {
 	// Whether to continue executing queries if a query fails.
 	//
 	// The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#continue_on_failure DataprocJob#continue_on_failure}
-	ContinueOnFailure interface{} `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
+	ContinueOnFailure any `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
 	// HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapReduce (MR) tasks.
 	//
 	// Can contain Pig UDFs.
@@ -37,4 +36,3 @@ type DataprocJobPigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#script_variables DataprocJob#script_variables}
 	ScriptVariables *map[string]*string `field:"optional" json:"scriptVariables" yaml:"scriptVariables"`
 }
-

@@ -17,8 +17,8 @@ type AppEngineStandardAppVersionHandlersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type AppEngineStandardAppVersionHandlersList interface {
 	Get(index *float64) AppEngineStandardAppVersionHandlersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewAppEngineStandardAppVersionHandlersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineStandardAppVersionHandlersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewAppEngineStandardAppVersionHandlersList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewAppEngineStandardAppVersionHandlersList_Override(a AppEngineStandardAppV
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) Get(index *float64) 
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) ToString() *string {
 
 	return returns
 }
-

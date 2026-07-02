@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKmsEkmConnectionTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

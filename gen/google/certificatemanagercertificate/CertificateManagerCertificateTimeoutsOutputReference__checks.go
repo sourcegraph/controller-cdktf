@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCertificateManagerCertificateTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

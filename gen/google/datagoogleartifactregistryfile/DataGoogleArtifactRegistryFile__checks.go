@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryFile) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataGoogleArtifactRegistryFile_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryFile_IsConstructParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryFile_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataGoogleArtifactRegistryFile_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryFile_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryFile_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataGoogleArtifactRegistryFile_IsTerraformDataSourceParameters(x in
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryFile_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryFile_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func validateDataGoogleArtifactRegistryFile_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -259,7 +259,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetOutputPathParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetOverwriteParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetOverwriteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,4 +313,3 @@ func validateNewDataGoogleArtifactRegistryFileParameters(scope constructs.Constr
 
 	return nil
 }
-

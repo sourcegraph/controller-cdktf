@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcMessageBusLoggingConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EventarcMessageBusLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcMessageBusLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEventarcMessageBusLoggingConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

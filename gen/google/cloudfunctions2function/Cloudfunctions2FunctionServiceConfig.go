@@ -1,13 +1,12 @@
 package cloudfunctions2function
 
-
 type Cloudfunctions2FunctionServiceConfig struct {
 	// Whether 100% of traffic is routed to the latest revision.
 	//
 	// Defaults to true. When false, GCF honors the existing traffic configuration of the underlying Cloud Run service. If that configuration is set to route to LATEST (the default), the new deployment will become LATEST and intercept the traffic. To prevent traffic from shifting, you must manually pin the existing service to a specific revision name in Cloud Run before deploying.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#all_traffic_on_latest_revision Cloudfunctions2Function#all_traffic_on_latest_revision}
-	AllTrafficOnLatestRevision interface{} `field:"optional" json:"allTrafficOnLatestRevision" yaml:"allTrafficOnLatestRevision"`
+	AllTrafficOnLatestRevision any `field:"optional" json:"allTrafficOnLatestRevision" yaml:"allTrafficOnLatestRevision"`
 	// The number of CPUs used in a single container instance. Default value is calculated from available memory.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#available_cpu Cloudfunctions2Function#available_cpu}
@@ -30,7 +29,7 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	// direct_vpc_network_interface block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#direct_vpc_network_interface Cloudfunctions2Function#direct_vpc_network_interface}
-	DirectVpcNetworkInterface interface{} `field:"optional" json:"directVpcNetworkInterface" yaml:"directVpcNetworkInterface"`
+	DirectVpcNetworkInterface any `field:"optional" json:"directVpcNetworkInterface" yaml:"directVpcNetworkInterface"`
 	// Environment variables that shall be available during function execution.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#environment_variables Cloudfunctions2Function#environment_variables}
@@ -54,11 +53,11 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	// secret_environment_variables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#secret_environment_variables Cloudfunctions2Function#secret_environment_variables}
-	SecretEnvironmentVariables interface{} `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
+	SecretEnvironmentVariables any `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
 	// secret_volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#secret_volumes Cloudfunctions2Function#secret_volumes}
-	SecretVolumes interface{} `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
+	SecretVolumes any `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
 	// The email of the service account for this function.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#service_account_email Cloudfunctions2Function#service_account_email}
@@ -80,4 +79,3 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions2_function#vpc_connector_egress_settings Cloudfunctions2Function#vpc_connector_egress_settings}
 	VpcConnectorEgressSettings *string `field:"optional" json:"vpcConnectorEgressSettings" yaml:"vpcConnectorEgressSettings"`
 }
-

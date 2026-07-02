@@ -1,11 +1,10 @@
 package networkserviceshttproute
 
-
 type NetworkServicesHttpRouteRulesActionCorsPolicy struct {
 	// In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
-	AllowCredentials interface{} `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
+	AllowCredentials any `field:"optional" json:"allowCredentials" yaml:"allowCredentials"`
 	// Specifies the content for Access-Control-Allow-Headers header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
@@ -27,7 +26,7 @@ type NetworkServicesHttpRouteRulesActionCorsPolicy struct {
 	// The default value is false, which indicates that the CORS policy is in effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Specifies the content for Access-Control-Expose-Headers header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
@@ -37,4 +36,3 @@ type NetworkServicesHttpRouteRulesActionCorsPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
 	MaxAge *string `field:"optional" json:"maxAge" yaml:"maxAge"`
 }
-

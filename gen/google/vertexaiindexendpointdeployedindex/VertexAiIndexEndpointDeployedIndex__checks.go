@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateAddMoveTargetPara
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateMoveFromIdParamet
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateVertexAiIndexEndpointDeployedIndex_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x interface{}) error {
+func validateVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateVertexAiIndexEndpointDeployedIndex_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateVertexAiIndexEndpointDeployedIndex_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiIndexEndpointDeployedIndex_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateVertexAiIndexEndpointDeployedIndex_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateVertexAiIndexEndpointDeployedIndex_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -402,7 +402,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetDisplayNamePar
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetEnableAccessLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetEnableAccessLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -454,7 +454,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -534,4 +534,3 @@ func validateNewVertexAiIndexEndpointDeployedIndexParameters(scope constructs.Co
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateMachineSpecOutputReference) validateSetAc
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntimeTemplateMachineSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewColabRuntimeTemplateMachineSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

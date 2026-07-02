@@ -36,7 +36,7 @@ type HypercomputeclusterClusterStorageResourcesFilestoreList interface {
 	Get(index *float64) HypercomputeclusterClusterStorageResourcesFilestoreOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) Wrap
 	return returns
 }
 
-
 func NewHypercomputeclusterClusterStorageResourcesFilestoreList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HypercomputeclusterClusterStorageResourcesFilestoreList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewHypercomputeclusterClusterStorageResourcesFilestoreList(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewHypercomputeclusterClusterStorageResourcesFilestoreList_Override(h Hyper
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList)SetTe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList)SetTe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) AllW
 	_jsii_.Invoke(
 		h,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) Get(
 	_jsii_.Invoke(
 		h,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreList) ToSt
 
 	return returns
 }
-

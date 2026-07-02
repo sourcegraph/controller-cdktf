@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVmwareengineExternalAccessRuleSourceIpRangesOutputReferenceParam
 
 	return nil
 }
-

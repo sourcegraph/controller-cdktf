@@ -23,18 +23,18 @@ type ComputeDisk interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CreateSnapshotBeforeDestroy() interface{}
-	SetCreateSnapshotBeforeDestroy(val interface{})
-	CreateSnapshotBeforeDestroyInput() interface{}
+	SetCount(val any)
+	CreateSnapshotBeforeDestroy() any
+	SetCreateSnapshotBeforeDestroy(val any)
+	CreateSnapshotBeforeDestroyInput() any
 	CreateSnapshotBeforeDestroyPrefix() *string
 	SetCreateSnapshotBeforeDestroyPrefix(val *string)
 	CreateSnapshotBeforeDestroyPrefixInput() *string
@@ -50,9 +50,9 @@ type ComputeDisk interface {
 	DiskEncryptionKeyInput() *ComputeDiskDiskEncryptionKey
 	DiskId() *string
 	EffectiveLabels() cdktf.StringMap
-	EnableConfidentialCompute() interface{}
-	SetEnableConfidentialCompute(val interface{})
-	EnableConfidentialComputeInput() interface{}
+	EnableConfidentialCompute() any
+	SetEnableConfidentialCompute(val any)
+	EnableConfidentialComputeInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,7 +62,7 @@ type ComputeDisk interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GuestOsFeatures() ComputeDiskGuestOsFeaturesList
-	GuestOsFeaturesInput() interface{}
+	GuestOsFeaturesInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -106,11 +106,11 @@ type ComputeDisk interface {
 	SetProvisionedThroughput(val *float64)
 	ProvisionedThroughputInput() *float64
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	Size() *float64
 	SetSize(val *float64)
@@ -142,11 +142,11 @@ type ComputeDisk interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeDiskTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -158,9 +158,9 @@ type ComputeDisk interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -178,7 +178,7 @@ type ComputeDisk interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -190,7 +190,7 @@ type ComputeDisk interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -199,7 +199,7 @@ type ComputeDisk interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAsyncPrimaryDisk(value *ComputeDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *ComputeDiskDiskEncryptionKey)
-	PutGuestOsFeatures(value interface{})
+	PutGuestOsFeatures(value any)
 	PutParams(value *ComputeDiskParams)
 	PutSourceImageEncryptionKey(value *ComputeDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeDiskSourceSnapshotEncryptionKey)
@@ -236,17 +236,17 @@ type ComputeDisk interface {
 	ResetTimeouts()
 	ResetType()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeDisk
@@ -324,8 +324,8 @@ func (j *jsiiProxy_ComputeDisk) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_ComputeDisk) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeDisk) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_ComputeDisk) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ComputeDisk) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createSnapshotBeforeDestroy",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createSnapshotBeforeDestroyInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_ComputeDisk) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) EnableConfidentialCompute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) EnableConfidentialCompute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_ComputeDisk) EnableConfidentialCompute() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) EnableConfidentialComputeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) EnableConfidentialComputeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialComputeInput",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_ComputeDisk) GuestOsFeatures() ComputeDiskGuestOsFeaturesList
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) GuestOsFeaturesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) GuestOsFeaturesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestOsFeaturesInput",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_ComputeDisk) ProvisionedThroughputInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeDisk) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -814,8 +814,8 @@ func (j *jsiiProxy_ComputeDisk) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1054,8 +1054,8 @@ func (j *jsiiProxy_ComputeDisk) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeDisk) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1084,8 +1084,8 @@ func (j *jsiiProxy_ComputeDisk) Timeouts() ComputeDiskTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDisk) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDisk) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1144,7 +1144,6 @@ func (j *jsiiProxy_ComputeDisk) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskConfig) ComputeDisk {
 	_init_.Initialize()
@@ -1156,7 +1155,7 @@ func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1169,12 +1168,12 @@ func NewComputeDisk_Override(c ComputeDisk, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetAccessMode(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetAccessMode(val *string) {
 	if err := j.validateSetAccessModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1185,7 +1184,7 @@ func (j *jsiiProxy_ComputeDisk)SetAccessMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetArchitecture(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -1196,7 +1195,7 @@ func (j *jsiiProxy_ComputeDisk)SetArchitecture(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeDisk) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1207,7 +1206,7 @@ func (j *jsiiProxy_ComputeDisk)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeDisk) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1218,7 +1217,7 @@ func (j *jsiiProxy_ComputeDisk)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroy(val interface{}) {
+func (j *jsiiProxy_ComputeDisk) SetCreateSnapshotBeforeDestroy(val any) {
 	if err := j.validateSetCreateSnapshotBeforeDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1229,7 +1228,7 @@ func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroyPrefix(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetCreateSnapshotBeforeDestroyPrefix(val *string) {
 	if err := j.validateSetCreateSnapshotBeforeDestroyPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1240,7 +1239,7 @@ func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroyPrefix(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeDisk) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1248,7 +1247,7 @@ func (j *jsiiProxy_ComputeDisk)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1259,7 +1258,7 @@ func (j *jsiiProxy_ComputeDisk)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetEnableConfidentialCompute(val interface{}) {
+func (j *jsiiProxy_ComputeDisk) SetEnableConfidentialCompute(val any) {
 	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1270,7 +1269,7 @@ func (j *jsiiProxy_ComputeDisk)SetEnableConfidentialCompute(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeDisk) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1278,7 +1277,7 @@ func (j *jsiiProxy_ComputeDisk)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetId(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1289,7 +1288,7 @@ func (j *jsiiProxy_ComputeDisk)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetImage(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1300,7 +1299,7 @@ func (j *jsiiProxy_ComputeDisk)SetImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeDisk) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1311,7 +1310,7 @@ func (j *jsiiProxy_ComputeDisk)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetLicenses(val *[]*string) {
+func (j *jsiiProxy_ComputeDisk) SetLicenses(val *[]*string) {
 	if err := j.validateSetLicensesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1322,7 +1321,7 @@ func (j *jsiiProxy_ComputeDisk)SetLicenses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeDisk) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1333,7 +1332,7 @@ func (j *jsiiProxy_ComputeDisk)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetName(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1344,7 +1343,7 @@ func (j *jsiiProxy_ComputeDisk)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetPhysicalBlockSizeBytes(val *float64) {
+func (j *jsiiProxy_ComputeDisk) SetPhysicalBlockSizeBytes(val *float64) {
 	if err := j.validateSetPhysicalBlockSizeBytesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1355,7 +1354,7 @@ func (j *jsiiProxy_ComputeDisk)SetPhysicalBlockSizeBytes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetProject(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1366,7 +1365,7 @@ func (j *jsiiProxy_ComputeDisk)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeDisk) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1374,7 +1373,7 @@ func (j *jsiiProxy_ComputeDisk)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetProvisionedIops(val *float64) {
+func (j *jsiiProxy_ComputeDisk) SetProvisionedIops(val *float64) {
 	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1385,7 +1384,7 @@ func (j *jsiiProxy_ComputeDisk)SetProvisionedIops(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetProvisionedThroughput(val *float64) {
+func (j *jsiiProxy_ComputeDisk) SetProvisionedThroughput(val *float64) {
 	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -1396,7 +1395,7 @@ func (j *jsiiProxy_ComputeDisk)SetProvisionedThroughput(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeDisk) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1407,7 +1406,7 @@ func (j *jsiiProxy_ComputeDisk)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetSize(val *float64) {
+func (j *jsiiProxy_ComputeDisk) SetSize(val *float64) {
 	if err := j.validateSetSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1418,7 +1417,7 @@ func (j *jsiiProxy_ComputeDisk)SetSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetSnapshot(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetSnapshot(val *string) {
 	if err := j.validateSetSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1429,7 +1428,7 @@ func (j *jsiiProxy_ComputeDisk)SetSnapshot(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetSourceDisk(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetSourceDisk(val *string) {
 	if err := j.validateSetSourceDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -1440,7 +1439,7 @@ func (j *jsiiProxy_ComputeDisk)SetSourceDisk(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetSourceInstantSnapshot(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetSourceInstantSnapshot(val *string) {
 	if err := j.validateSetSourceInstantSnapshotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1451,7 +1450,7 @@ func (j *jsiiProxy_ComputeDisk)SetSourceInstantSnapshot(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetSourceStorageObject(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetSourceStorageObject(val *string) {
 	if err := j.validateSetSourceStorageObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1462,7 +1461,7 @@ func (j *jsiiProxy_ComputeDisk)SetSourceStorageObject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetStoragePool(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetStoragePool(val *string) {
 	if err := j.validateSetStoragePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1473,7 +1472,7 @@ func (j *jsiiProxy_ComputeDisk)SetStoragePool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetType(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1484,7 +1483,7 @@ func (j *jsiiProxy_ComputeDisk)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDisk)SetZone(val *string) {
+func (j *jsiiProxy_ComputeDisk) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1507,7 +1506,7 @@ func ComputeDisk_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1531,7 +1530,7 @@ func ComputeDisk_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeDisk_IsConstruct(x interface{}) *bool {
+func ComputeDisk_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeDisk_IsConstructParameters(x); err != nil {
@@ -1542,7 +1541,7 @@ func ComputeDisk_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1550,7 +1549,7 @@ func ComputeDisk_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeDisk_IsTerraformElement(x interface{}) *bool {
+func ComputeDisk_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeDisk_IsTerraformElementParameters(x); err != nil {
@@ -1561,7 +1560,7 @@ func ComputeDisk_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1569,7 +1568,7 @@ func ComputeDisk_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeDisk_IsTerraformResource(x interface{}) *bool {
+func ComputeDisk_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeDisk_IsTerraformResourceParameters(x); err != nil {
@@ -1580,7 +1579,7 @@ func ComputeDisk_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1605,31 +1604,31 @@ func (c *jsiiProxy_ComputeDisk) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeDisk) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeDisk) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeDisk) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeDisk) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1645,7 +1644,7 @@ func (c *jsiiProxy_ComputeDisk) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1661,7 +1660,7 @@ func (c *jsiiProxy_ComputeDisk) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1677,7 +1676,7 @@ func (c *jsiiProxy_ComputeDisk) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1693,7 +1692,7 @@ func (c *jsiiProxy_ComputeDisk) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1709,7 +1708,7 @@ func (c *jsiiProxy_ComputeDisk) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1725,7 +1724,7 @@ func (c *jsiiProxy_ComputeDisk) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1741,7 +1740,7 @@ func (c *jsiiProxy_ComputeDisk) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1757,15 +1756,15 @@ func (c *jsiiProxy_ComputeDisk) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDisk) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeDisk) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1784,7 +1783,7 @@ func (c *jsiiProxy_ComputeDisk) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1797,7 +1796,7 @@ func (c *jsiiProxy_ComputeDisk) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1811,18 +1810,18 @@ func (c *jsiiProxy_ComputeDisk) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeDisk) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeDisk) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1833,7 +1832,7 @@ func (c *jsiiProxy_ComputeDisk) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1844,7 +1843,7 @@ func (c *jsiiProxy_ComputeDisk) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1855,7 +1854,7 @@ func (c *jsiiProxy_ComputeDisk) PutAsyncPrimaryDisk(value *ComputeDiskAsyncPrima
 	_jsii_.InvokeVoid(
 		c,
 		"putAsyncPrimaryDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1866,18 +1865,18 @@ func (c *jsiiProxy_ComputeDisk) PutDiskEncryptionKey(value *ComputeDiskDiskEncry
 	_jsii_.InvokeVoid(
 		c,
 		"putDiskEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeDisk) PutGuestOsFeatures(value interface{}) {
+func (c *jsiiProxy_ComputeDisk) PutGuestOsFeatures(value any) {
 	if err := c.validatePutGuestOsFeaturesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putGuestOsFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1888,7 +1887,7 @@ func (c *jsiiProxy_ComputeDisk) PutParams(value *ComputeDiskParams) {
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1899,7 +1898,7 @@ func (c *jsiiProxy_ComputeDisk) PutSourceImageEncryptionKey(value *ComputeDiskSo
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceImageEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1910,7 +1909,7 @@ func (c *jsiiProxy_ComputeDisk) PutSourceSnapshotEncryptionKey(value *ComputeDis
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceSnapshotEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1921,7 +1920,7 @@ func (c *jsiiProxy_ComputeDisk) PutTimeouts(value *ComputeDiskTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2165,8 +2164,8 @@ func (c *jsiiProxy_ComputeDisk) ResetZone() {
 	)
 }
 
-func (c *jsiiProxy_ComputeDisk) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeDisk) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2178,8 +2177,8 @@ func (c *jsiiProxy_ComputeDisk) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDisk) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeDisk) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2191,8 +2190,8 @@ func (c *jsiiProxy_ComputeDisk) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDisk) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeDisk) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2204,8 +2203,8 @@ func (c *jsiiProxy_ComputeDisk) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDisk) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeDisk) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2230,8 +2229,8 @@ func (c *jsiiProxy_ComputeDisk) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDisk) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeDisk) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2242,4 +2241,3 @@ func (c *jsiiProxy_ComputeDisk) ToTerraform() interface{} {
 
 	return returns
 }
-

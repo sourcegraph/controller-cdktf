@@ -1,6 +1,5 @@
 package datacatalogtagtemplate
 
-
 type DataCatalogTagTemplateFields struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag_template#field_id DataCatalogTagTemplate#field_id}.
 	FieldId *string `field:"required" json:"fieldId" yaml:"fieldId"`
@@ -19,7 +18,7 @@ type DataCatalogTagTemplateFields struct {
 	// Whether this is a required field. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag_template#is_required DataCatalogTagTemplate#is_required}
-	IsRequired interface{} `field:"optional" json:"isRequired" yaml:"isRequired"`
+	IsRequired any `field:"optional" json:"isRequired" yaml:"isRequired"`
 	// The order of this field with respect to other fields in this tag template.
 	//
 	// A higher value indicates a more important field. The value can be negative.
@@ -28,4 +27,3 @@ type DataCatalogTagTemplateFields struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag_template#order DataCatalogTagTemplate#order}
 	Order *float64 `field:"optional" json:"order" yaml:"order"`
 }
-

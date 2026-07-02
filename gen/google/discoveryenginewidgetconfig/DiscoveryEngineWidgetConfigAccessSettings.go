@@ -1,6 +1,5 @@
 package discoveryenginewidgetconfig
 
-
 type DiscoveryEngineWidgetConfigAccessSettings struct {
 	// List of domains that are allowed to integrate the search widget.
 	//
@@ -9,11 +8,11 @@ type DiscoveryEngineWidgetConfigAccessSettings struct {
 	// Whether public unauthenticated access is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#allow_public_access DiscoveryEngineWidgetConfig#allow_public_access}
-	AllowPublicAccess interface{} `field:"optional" json:"allowPublicAccess" yaml:"allowPublicAccess"`
+	AllowPublicAccess any `field:"optional" json:"allowPublicAccess" yaml:"allowPublicAccess"`
 	// Whether web app access is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#enable_web_app DiscoveryEngineWidgetConfig#enable_web_app}
-	EnableWebApp interface{} `field:"optional" json:"enableWebApp" yaml:"enableWebApp"`
+	EnableWebApp any `field:"optional" json:"enableWebApp" yaml:"enableWebApp"`
 	// Language code for user interface. Use language tags defined by [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the default language code is "en-US".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#language_code DiscoveryEngineWidgetConfig#language_code}
@@ -23,4 +22,3 @@ type DiscoveryEngineWidgetConfigAccessSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#workforce_identity_pool_provider DiscoveryEngineWidgetConfig#workforce_identity_pool_provider}
 	WorkforceIdentityPoolProvider *string `field:"optional" json:"workforceIdentityPoolProvider" yaml:"workforceIdentityPoolProvider"`
 }
-

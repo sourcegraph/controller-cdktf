@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksInstanceReservationAffinityOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNotebooksInstanceReservationAffinityOutputReferenceParameters(te
 
 	return nil
 }
-

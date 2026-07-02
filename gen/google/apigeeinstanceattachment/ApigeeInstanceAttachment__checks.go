@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeInstanceAttachment) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeInstanceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeInstanceAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeInstanceAttachment) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeInstanceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeInstanceAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApigeeInstanceAttachment_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateApigeeInstanceAttachment_IsConstructParameters(x interface{}) error {
+func validateApigeeInstanceAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApigeeInstanceAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateApigeeInstanceAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeInstanceAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApigeeInstanceAttachment_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateApigeeInstanceAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeInstanceAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateApigeeInstanceAttachment_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeInstanceAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewApigeeInstanceAttachmentParameters(scope constructs.Construct, i
 
 	return nil
 }
-

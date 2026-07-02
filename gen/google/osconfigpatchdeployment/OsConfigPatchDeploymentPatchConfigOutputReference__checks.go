@@ -175,7 +175,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetMigInstancesAllowedParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetMigInstancesAllowedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetSkipUnpatchableVmsParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateSetSkipUnpatchableVmsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,4 +323,3 @@ func validateNewOsConfigPatchDeploymentPatchConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

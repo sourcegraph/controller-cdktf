@@ -14,7 +14,7 @@ type ComputeRouterBgpOutputReference interface {
 	SetAdvertisedGroups(val *[]*string)
 	AdvertisedGroupsInput() *[]*string
 	AdvertisedIpRanges() ComputeRouterBgpAdvertisedIpRangesList
-	AdvertisedIpRangesInput() interface{}
+	AdvertisedIpRangesInput() any
 	AdvertiseMode() *string
 	SetAdvertiseMode(val *string)
 	AdvertiseModeInput() *string
@@ -23,9 +23,9 @@ type ComputeRouterBgpOutputReference interface {
 	AsnInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -57,7 +57,7 @@ type ComputeRouterBgpOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type ComputeRouterBgpOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdvertisedIpRanges(value interface{})
+	PutAdvertisedIpRanges(value any)
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
 	ResetAdvertiseMode()
@@ -86,7 +86,7 @@ type ComputeRouterBgpOutputReference interface {
 	ResetKeepaliveInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) AdvertisedIpRanges() Compute
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference) AdvertisedIpRangesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) AdvertisedIpRangesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"advertisedIpRangesInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) AsnInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) TerraformResource() cdktf.II
 	return returns
 }
 
-
 func NewComputeRouterBgpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRouterBgpOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewComputeRouterBgpOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewComputeRouterBgpOutputReference_Override(c ComputeRouterBgpOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAdvertisedGroups(val *[]*string) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetAdvertisedGroups(val *[]*string) {
 	if err := j.validateSetAdvertisedGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAdvertisedGroups(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAdvertiseMode(val *string) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetAdvertiseMode(val *string) {
 	if err := j.validateSetAdvertiseModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAdvertiseMode(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAsn(val *float64) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetAsn(val *float64) {
 	if err := j.validateSetAsnParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetAsn(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetIdentifierRange(val *string) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetIdentifierRange(val *string) {
 	if err := j.validateSetIdentifierRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetIdentifierRange(val *strin
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetInternalValue(val *ComputeRouterBgp) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetInternalValue(val *ComputeRouterBgp) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetInternalValue(val *Compute
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetKeepaliveInterval(val *float64) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetKeepaliveInterval(val *float64) {
 	if err := j.validateSetKeepaliveIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetKeepaliveInterval(val *flo
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,16 +439,16 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,21 +605,21 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) PutAdvertisedIpRanges(value interface{}) {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) PutAdvertisedIpRanges(value any) {
 	if err := c.validatePutAdvertisedIpRangesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAdvertisedIpRanges",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) ResetKeepaliveInterval() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) ToString() *string {
 
 	return returns
 }
-

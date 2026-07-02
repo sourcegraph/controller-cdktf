@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingMetricMetricDescriptorLabelsListParameters(terraformResou
 
 	return nil
 }
-

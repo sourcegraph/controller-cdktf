@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeNodeTemplateDisksList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateDisksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeTemplateDisksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeNodeTemplateDisksListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

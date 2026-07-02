@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolic
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBi
 
 	return nil
 }
-

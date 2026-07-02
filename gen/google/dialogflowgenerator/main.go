@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGenerator",
-		reflect.TypeOf((*DialogflowGenerator)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGenerator](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerEvent", GoGetter: "TriggerEvent"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerEventInput", GoGetter: "TriggerEventInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGenerator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorConfig",
-		reflect.TypeOf((*DialogflowGeneratorConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameter",
-		reflect.TypeOf((*DialogflowGeneratorInferenceParameter)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorInferenceParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorInferenceParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorInferenceParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topPInput", GoGetter: "TopPInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,23 +145,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContext)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamples",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamples)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamples](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -183,7 +183,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,7 +227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,7 +263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesList",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -277,7 +277,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -285,11 +285,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutput",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -317,7 +317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -325,7 +325,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -371,11 +371,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -402,7 +402,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -410,11 +410,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -436,7 +436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -464,7 +464,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -472,11 +472,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -512,11 +512,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -538,7 +538,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,7 +579,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -617,7 +617,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -625,11 +625,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSections",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextSummarizationSections)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextSummarizationSections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSectionsList",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextSummarizationSectionsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextSummarizationSectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -643,7 +643,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -651,7 +651,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -684,7 +684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorSummarizationContextSummarizationSectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -692,11 +692,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts",
-		reflect.TypeOf((*DialogflowGeneratorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowGeneratorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowGeneratorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -729,7 +729,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowGeneratorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

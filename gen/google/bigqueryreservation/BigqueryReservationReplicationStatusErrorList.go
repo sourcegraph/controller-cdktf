@@ -36,7 +36,7 @@ type BigqueryReservationReplicationStatusErrorList interface {
 	Get(index *float64) BigqueryReservationReplicationStatusErrorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewBigqueryReservationReplicationStatusErrorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryReservationReplicationStatusErrorList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewBigqueryReservationReplicationStatusErrorList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusErrorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewBigqueryReservationReplicationStatusErrorList_Override(b BigqueryReserva
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusErrorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigqueryReservationReplicationStatusErrorList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) AllWithMapKey(
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) Get(index *flo
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) ToString() *st
 
 	return returns
 }
-

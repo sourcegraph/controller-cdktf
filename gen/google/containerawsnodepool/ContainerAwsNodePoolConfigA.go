@@ -1,6 +1,5 @@
 package containerawsnodepool
 
-
 type ContainerAwsNodePoolConfigA struct {
 	// config_encryption block.
 	//
@@ -51,6 +50,5 @@ type ContainerAwsNodePoolConfigA struct {
 	// taints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_aws_node_pool#taints ContainerAwsNodePool#taints}
-	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
+	Taints any `field:"optional" json:"taints" yaml:"taints"`
 }
-

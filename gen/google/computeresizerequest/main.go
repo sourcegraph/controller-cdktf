@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
-		reflect.TypeOf((*ComputeResizeRequest)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequest](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestConfig",
-		reflect.TypeOf((*ComputeResizeRequestConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestRequestedRunDuration",
-		reflect.TypeOf((*ComputeResizeRequestRequestedRunDuration)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestRequestedRunDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestRequestedRunDurationOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestRequestedRunDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestRequestedRunDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestRequestedRunDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,27 +135,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatus",
-		reflect.TypeOf((*ComputeResizeRequestStatus)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusError",
-		reflect.TypeOf((*ComputeResizeRequestStatusError)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusError](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrors",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrors)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrors](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetails",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetails)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -176,7 +176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsErrorInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,15 +211,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -240,7 +240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpLinksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,7 +274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -295,7 +295,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -349,11 +349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -374,7 +374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -408,7 +408,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -436,7 +436,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -444,11 +444,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -461,7 +461,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -469,7 +469,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -499,7 +499,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -507,7 +507,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -528,7 +528,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -564,7 +564,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorList",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -577,7 +577,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -585,7 +585,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -610,7 +610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -618,27 +618,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttempt",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttempt)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttempt](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptError",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptError)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptError](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrors",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrors)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrors](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -651,7 +651,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -659,7 +659,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -686,7 +686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsErrorInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -694,15 +694,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -715,7 +715,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -723,7 +723,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -749,7 +749,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpLinksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -757,7 +757,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -778,7 +778,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -803,7 +803,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsHelpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -811,7 +811,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -824,7 +824,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -832,11 +832,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -849,7 +849,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -857,7 +857,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -883,7 +883,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsLocalizedMessageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -891,7 +891,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -919,7 +919,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -927,11 +927,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -944,7 +944,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -952,7 +952,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -982,7 +982,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsQuotaInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -990,7 +990,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1003,7 +1003,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1011,7 +1011,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorErrorsOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1039,7 +1039,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1047,7 +1047,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1060,7 +1060,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1068,7 +1068,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1093,7 +1093,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1101,7 +1101,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptList",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1114,7 +1114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1122,7 +1122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusLastAttemptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusLastAttemptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1147,7 +1147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusLastAttemptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1155,7 +1155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusList",
-		reflect.TypeOf((*ComputeResizeRequestStatusList)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1168,7 +1168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1176,7 +1176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1202,7 +1202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1210,11 +1210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestTimeouts",
-		reflect.TypeOf((*ComputeResizeRequestTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeResizeRequestTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeResizeRequestTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1244,7 +1244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeResizeRequestTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

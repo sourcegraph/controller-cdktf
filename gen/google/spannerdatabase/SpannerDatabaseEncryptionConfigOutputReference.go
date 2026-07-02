@@ -12,9 +12,9 @@ type SpannerDatabaseEncryptionConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type SpannerDatabaseEncryptionConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type SpannerDatabaseEncryptionConfigOutputReference interface {
 	ResetKmsKeyNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewSpannerDatabaseEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SpannerDatabaseEncryptionConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewSpannerDatabaseEncryptionConfigOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewSpannerDatabaseEncryptionConfigOutputReference_Override(s SpannerDatabas
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetInternalValue(val *SpannerDatabaseEncryptionConfig) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetInternalValue(val *SpannerDatabaseEncryptionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyName(
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyNames(val *[]*string) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetKmsKeyNames(val *[]*string) {
 	if err := j.validateSetKmsKeyNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyNames
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ResetKmsKeyNa
 	)
 }
 
-func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ToString() *s
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewDataprocMetastoreServiceScalingConfigOutputReferenceParameters(t
 
 	return nil
 }
-

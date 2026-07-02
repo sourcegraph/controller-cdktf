@@ -131,7 +131,7 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewGkeHubFeatureFleetDefaultMemberConfigOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -178,7 +178,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validatePutUr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validatePutWeightedBackendServicesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validatePutWeightedBackendServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -217,7 +217,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -317,4 +317,3 @@ func validateNewComputeUrlMapDefaultRouteActionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

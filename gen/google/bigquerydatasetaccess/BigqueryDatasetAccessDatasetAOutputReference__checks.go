@@ -109,7 +109,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessDatasetAOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessDatasetAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatasetAccessDatasetAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewBigqueryDatasetAccessDatasetAOutputReferenceParameters(terraform
 
 	return nil
 }
-

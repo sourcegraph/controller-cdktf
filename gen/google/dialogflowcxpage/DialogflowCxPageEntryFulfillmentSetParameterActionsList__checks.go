@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentSetParameterActionsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentSetParameterActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentSetParameterActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPageEntryFulfillmentSetParameterActionsListParameter
 
 	return nil
 }
-

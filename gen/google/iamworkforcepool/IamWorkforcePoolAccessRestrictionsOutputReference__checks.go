@@ -90,7 +90,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateIn
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validatePutAllowedServicesParameters(value interface{}) error {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validatePutAllowedServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateSetDisableProgrammaticSigninParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateSetDisableProgrammaticSigninParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewIamWorkforcePoolAccessRestrictionsOutputReferenceParameters(terr
 
 	return nil
 }
-

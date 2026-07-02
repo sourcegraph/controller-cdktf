@@ -109,7 +109,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewVectorSearchCollectionVectorSchemaDenseVectorOutputReferencePara
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetArgumentK
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetDataTypeP
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineArgumentsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewBigqueryRoutineArgumentsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

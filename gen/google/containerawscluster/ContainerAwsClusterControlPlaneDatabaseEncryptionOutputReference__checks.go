@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference
 
 	return nil
 }
-

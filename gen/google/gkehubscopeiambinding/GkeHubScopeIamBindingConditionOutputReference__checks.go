@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGkeHubScopeIamBindingConditionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

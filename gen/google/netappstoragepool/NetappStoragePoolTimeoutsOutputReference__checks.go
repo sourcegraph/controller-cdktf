@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappStoragePoolTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

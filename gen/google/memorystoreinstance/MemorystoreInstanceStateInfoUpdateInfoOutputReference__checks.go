@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstanceStateInfoUpdateInfoOutputReferenceParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysReferencedTableOutput
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryTableTableConstraintsForeignKeysReferencedTableOutputRef
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataprocBatchSparkRBatchOutputReference) validateSetArgsParam
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchSparkRBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchSparkRBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataprocBatchSparkRBatchOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

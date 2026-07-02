@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.edgenetworkSubnet.EdgenetworkSubnet",
-		reflect.TypeOf((*EdgenetworkSubnet)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkSubnet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EdgenetworkSubnet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.edgenetworkSubnet.EdgenetworkSubnetConfig",
-		reflect.TypeOf((*EdgenetworkSubnetConfig)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkSubnetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.edgenetworkSubnet.EdgenetworkSubnetTimeouts",
-		reflect.TypeOf((*EdgenetworkSubnetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkSubnetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.edgenetworkSubnet.EdgenetworkSubnetTimeoutsOutputReference",
-		reflect.TypeOf((*EdgenetworkSubnetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkSubnetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

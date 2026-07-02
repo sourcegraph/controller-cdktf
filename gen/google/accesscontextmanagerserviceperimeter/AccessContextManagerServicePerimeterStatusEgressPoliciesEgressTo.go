@@ -1,6 +1,5 @@
 package accesscontextmanagerserviceperimeter
 
-
 type AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo struct {
 	// A list of external resources that are allowed to be accessed.
 	//
@@ -13,7 +12,7 @@ type AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo struct {
 	// operations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#operations AccessContextManagerServicePerimeter#operations}
-	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
+	Operations any `field:"optional" json:"operations" yaml:"operations"`
 	// A list of resources, currently only projects in the form 'projects/<projectnumber>', that match this to stanza.
 	//
 	// A request matches
@@ -28,4 +27,3 @@ type AccessContextManagerServicePerimeterStatusEgressPoliciesEgressTo struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#roles AccessContextManagerServicePerimeter#roles}
 	Roles *[]*string `field:"optional" json:"roles" yaml:"roles"`
 }
-

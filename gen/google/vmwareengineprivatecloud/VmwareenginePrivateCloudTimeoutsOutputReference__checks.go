@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVmwareenginePrivateCloudTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

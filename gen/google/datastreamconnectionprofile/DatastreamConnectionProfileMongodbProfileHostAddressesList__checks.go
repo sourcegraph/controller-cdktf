@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) v
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatastreamConnectionProfileMongodbProfileHostAddressesListParame
 
 	return nil
 }
-

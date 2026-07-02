@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitment",
-		reflect.TypeOf((*ComputeRegionCommitment)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -112,15 +112,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig",
-		reflect.TypeOf((*ComputeRegionCommitmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource",
-		reflect.TypeOf((*ComputeRegionCommitmentLicenseResource)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentLicenseResource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference",
-		reflect.TypeOf((*ComputeRegionCommitmentLicenseResourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentLicenseResourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amount", GoGetter: "Amount"},
 			_jsii_.MemberProperty{JsiiProperty: "amountInput", GoGetter: "AmountInput"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams",
-		reflect.TypeOf((*ComputeRegionCommitmentParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference",
-		reflect.TypeOf((*ComputeRegionCommitmentParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitmentParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResources",
-		reflect.TypeOf((*ComputeRegionCommitmentResources)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
-		reflect.TypeOf((*ComputeRegionCommitmentResourcesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitmentResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
-		reflect.TypeOf((*ComputeRegionCommitmentResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypeInput", GoGetter: "AcceleratorTypeInput"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitmentResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts",
-		reflect.TypeOf((*ComputeRegionCommitmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionCommitmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionCommitmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionCommitmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

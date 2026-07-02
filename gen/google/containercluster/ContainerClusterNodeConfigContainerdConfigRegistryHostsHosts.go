@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts struct {
 	// Configures the registry host/mirror.
 	//
@@ -9,7 +8,7 @@ type ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts struct {
 	// ca block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ca ContainerCluster#ca}
-	Ca interface{} `field:"optional" json:"ca" yaml:"ca"`
+	Ca any `field:"optional" json:"ca" yaml:"ca"`
 	// Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
@@ -17,7 +16,7 @@ type ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts struct {
 	// client block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#client ContainerCluster#client}
-	Client interface{} `field:"optional" json:"client" yaml:"client"`
+	Client any `field:"optional" json:"client" yaml:"client"`
 	// Specifies the maximum duration allowed for a connection attempt to complete.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
@@ -25,10 +24,9 @@ type ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts struct {
 	// header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#header ContainerCluster#header}
-	Header interface{} `field:"optional" json:"header" yaml:"header"`
+	Header any `field:"optional" json:"header" yaml:"header"`
 	// Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
-	OverridePath interface{} `field:"optional" json:"overridePath" yaml:"overridePath"`
+	OverridePath any `field:"optional" json:"overridePath" yaml:"overridePath"`
 }
-

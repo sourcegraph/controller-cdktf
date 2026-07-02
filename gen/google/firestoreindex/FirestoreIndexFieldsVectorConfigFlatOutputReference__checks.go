@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigFlatOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigFlatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsVectorConfigFlatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewFirestoreIndexFieldsVectorConfigFlatOutputReferenceParameters(te
 
 	return nil
 }
-

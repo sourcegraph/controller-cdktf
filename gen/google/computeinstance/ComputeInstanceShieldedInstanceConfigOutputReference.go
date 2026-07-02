@@ -12,9 +12,9 @@ type ComputeInstanceShieldedInstanceConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type ComputeInstanceShieldedInstanceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableIntegrityMonitoring() interface{}
-	SetEnableIntegrityMonitoring(val interface{})
-	EnableIntegrityMonitoringInput() interface{}
-	EnableSecureBoot() interface{}
-	SetEnableSecureBoot(val interface{})
-	EnableSecureBootInput() interface{}
-	EnableVtpm() interface{}
-	SetEnableVtpm(val interface{})
-	EnableVtpmInput() interface{}
+	EnableIntegrityMonitoring() any
+	SetEnableIntegrityMonitoring(val any)
+	EnableIntegrityMonitoringInput() any
+	EnableSecureBoot() any
+	SetEnableSecureBoot(val any)
+	EnableSecureBootInput() any
+	EnableVtpm() any
+	SetEnableVtpm(val any)
+	EnableVtpmInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeInstanceShieldedInstanceConfig
@@ -49,7 +49,7 @@ type ComputeInstanceShieldedInstanceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeInstanceShieldedInstanceConfigOutputReference interface {
 	ResetEnableVtpm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoring",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableI
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoringInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableI
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableSecureBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableSecureBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBoot",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableSecureBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableSecureBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBootInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableVtpm() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableVtpm() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpm",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableV
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableVtpmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) EnableVtpmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpmInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Terrafo
 	return returns
 }
 
-
 func NewComputeInstanceShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeInstanceShieldedInstanceConfigOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeInstanceShieldedInstanceConfigOutputReference_Override(c ComputeI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnableIntegrityMonitoring(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetEnableIntegrityMonitoring(val any) {
 	if err := j.validateSetEnableIntegrityMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnableSecureBoot(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetEnableSecureBoot(val any) {
 	if err := j.validateSetEnableSecureBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnableVtpm(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetEnableVtpm(val any) {
 	if err := j.validateSetEnableVtpmParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetInternalValue(val *ComputeInstanceShieldedInstanceConfig) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetInternalValue(val *ComputeInstanceShieldedInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) ResetEn
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeInstanceShieldedInstanceConfigOutputReference) ToStrin
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) validateSetDataCacheEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) validateSetDataCacheEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewSqlDatabaseInstanceSettingsDataCacheConfigOutputReferenceParamet
 
 	return nil
 }
-

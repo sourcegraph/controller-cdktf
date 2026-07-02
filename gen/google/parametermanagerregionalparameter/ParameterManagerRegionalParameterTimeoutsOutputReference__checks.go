@@ -98,7 +98,7 @@ func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewParameterManagerRegionalParameterTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

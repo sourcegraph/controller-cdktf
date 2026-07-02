@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) vali
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) vali
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_GenerateCon
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstruct
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraform
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) vali
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) vali
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -463,4 +463,3 @@ func validateNewAccessContextManagerServicePerimeterDryRunIngressPolicyParameter
 
 	return nil
 }
-

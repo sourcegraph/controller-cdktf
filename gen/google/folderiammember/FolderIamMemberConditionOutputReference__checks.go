@@ -98,7 +98,7 @@ func (f *jsiiProxy_FolderIamMemberConditionOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FolderIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewFolderIamMemberConditionOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

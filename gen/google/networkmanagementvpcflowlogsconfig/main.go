@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkManagementVpcFlowLogsConfig.NetworkManagementVpcFlowLogsConfig",
-		reflect.TypeOf((*NetworkManagementVpcFlowLogsConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkManagementVpcFlowLogsConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnel", GoGetter: "VpnTunnel"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnelInput", GoGetter: "VpnTunnelInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkManagementVpcFlowLogsConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,15 +117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkManagementVpcFlowLogsConfig.NetworkManagementVpcFlowLogsConfigConfig",
-		reflect.TypeOf((*NetworkManagementVpcFlowLogsConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkManagementVpcFlowLogsConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkManagementVpcFlowLogsConfig.NetworkManagementVpcFlowLogsConfigTimeouts",
-		reflect.TypeOf((*NetworkManagementVpcFlowLogsConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkManagementVpcFlowLogsConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkManagementVpcFlowLogsConfig.NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunV2WorkerPoolInstanceSplitsListParameters(terraformResour
 
 	return nil
 }
-

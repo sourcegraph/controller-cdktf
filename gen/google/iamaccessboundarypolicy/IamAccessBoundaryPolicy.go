@@ -15,15 +15,15 @@ type IamAccessBoundaryPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,28 +60,28 @@ type IamAccessBoundaryPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() IamAccessBoundaryPolicyRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IamAccessBoundaryPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type IamAccessBoundaryPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,14 +111,14 @@ type IamAccessBoundaryPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRules(value interface{})
+	PutRules(value any)
 	PutTimeouts(value *IamAccessBoundaryPolicyTimeouts)
 	ResetDisplayName()
 	ResetId()
@@ -126,17 +126,17 @@ type IamAccessBoundaryPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamAccessBoundaryPolicy
@@ -154,8 +154,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) Rules() IamAccessBoundaryPolicyRules
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) Timeouts() IamAccessBoundaryPolicyTi
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy} Resource.
 func NewIamAccessBoundaryPolicy(scope constructs.Construct, id *string, config *IamAccessBoundaryPolicyConfig) IamAccessBoundaryPolicy {
@@ -446,7 +445,7 @@ func NewIamAccessBoundaryPolicy(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIamAccessBoundaryPolicy_Override(i IamAccessBoundaryPolicy, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetDisplayName(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetId(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetName(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetParent(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamAccessBoundaryPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func IamAccessBoundaryPolicy_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func IamAccessBoundaryPolicy_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
+func IamAccessBoundaryPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessBoundaryPolicy_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func IamAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func IamAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
+func IamAccessBoundaryPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessBoundaryPolicy_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func IamAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func IamAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool {
+func IamAccessBoundaryPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamAccessBoundaryPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func IamAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamAccessBoundaryPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamAccessBoundaryPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -865,7 +864,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamAccessBoundaryPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,18 +924,18 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) PutRules(value interface{}) {
+func (i *jsiiProxy_IamAccessBoundaryPolicy) PutRules(value any) {
 	if err := i.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) PutTimeouts(value *IamAccessBoundary
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1022,8 +1021,8 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1048,8 +1047,8 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamAccessBoundaryPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1060,4 +1059,3 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReferen
 
 	return nil
 }
-

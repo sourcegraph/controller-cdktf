@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudRunV2ServiceTemplateVolumesNfsOutputReferenceParameters(ter
 
 	return nil
 }
-

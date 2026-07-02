@@ -19,7 +19,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validateAddMoveTargetParamete
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveFromIdParameters(
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutDestinationIpRangesParameters(value interface{}) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutDestinationIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutDestinationIpRange
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutSourceIpRangesParameters(value interface{}) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) validatePutSourceIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateVmwareengineExternalAccessRule_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateVmwareengineExternalAccessRule_IsConstructParameters(x interface{}) error {
+func validateVmwareengineExternalAccessRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateVmwareengineExternalAccessRule_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateVmwareengineExternalAccessRule_IsTerraformElementParameters(x interface{}) error {
+func validateVmwareengineExternalAccessRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateVmwareengineExternalAccessRule_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateVmwareengineExternalAccessRule_IsTerraformResourceParameters(x interface{}) error {
+func validateVmwareengineExternalAccessRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetActionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -479,7 +479,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetPriorityParameters
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -551,4 +551,3 @@ func validateNewVmwareengineExternalAccessRuleParameters(scope constructs.Constr
 
 	return nil
 }
-

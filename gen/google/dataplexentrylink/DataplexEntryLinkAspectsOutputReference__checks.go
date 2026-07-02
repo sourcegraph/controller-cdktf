@@ -117,7 +117,7 @@ func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetAspectKey
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryLinkAspectsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewDataplexEntryLinkAspectsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -13,7 +13,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	AllowedIssuanceModes() PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference
 	AllowedIssuanceModesInput() *PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes
 	AllowedKeyTypes() PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList
-	AllowedKeyTypesInput() interface{}
+	AllowedKeyTypesInput() any
 	BackdateDuration() *string
 	SetBackdateDuration(val *string)
 	BackdateDurationInput() *string
@@ -21,9 +21,9 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	BaselineValuesInput() *PrivatecaCaPoolIssuancePolicyBaselineValues
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAllowedIssuanceModes(value *PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes)
-	PutAllowedKeyTypes(value interface{})
+	PutAllowedKeyTypes(value any)
 	PutBaselineValues(value *PrivatecaCaPoolIssuancePolicyBaselineValues)
 	PutIdentityConstraints(value *PrivatecaCaPoolIssuancePolicyIdentityConstraints)
 	ResetAllowedIssuanceModes()
@@ -87,7 +87,7 @@ type PrivatecaCaPoolIssuancePolicyOutputReference interface {
 	ResetMaximumLifetime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) AllowedKeyTypes
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) AllowedKeyTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) AllowedKeyTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedKeyTypesInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) BaselineValuesI
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolIssuancePolicyOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewPrivatecaCaPoolIssuancePolicyOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewPrivatecaCaPoolIssuancePolicyOutputReference_Override(p PrivatecaCaPoolI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetBackdateDuration(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetBackdateDuration(val *string) {
 	if err := j.validateSetBackdateDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetBackdateDurat
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetInternalValue(val *PrivatecaCaPoolIssuancePolicy) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetInternalValue(val *PrivatecaCaPoolIssuancePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetMaximumLifetime(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetMaximumLifetime(val *string) {
 	if err := j.validateSetMaximumLifetimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetMaximumLifeti
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,16 +407,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -588,18 +587,18 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) PutAllowedIssua
 	_jsii_.InvokeVoid(
 		p,
 		"putAllowedIssuanceModes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) PutAllowedKeyTypes(value interface{}) {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) PutAllowedKeyTypes(value any) {
 	if err := p.validatePutAllowedKeyTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAllowedKeyTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -610,7 +609,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) PutBaselineValu
 	_jsii_.InvokeVoid(
 		p,
 		"putBaselineValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) PutIdentityCons
 	_jsii_.InvokeVoid(
 		p,
 		"putIdentityConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ResetMaximumLif
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) ToString() *str
 
 	return returns
 }
-

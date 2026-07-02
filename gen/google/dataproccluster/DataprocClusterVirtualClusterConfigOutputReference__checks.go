@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterVirtualClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterVirtualClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewDataprocClusterVirtualClusterConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

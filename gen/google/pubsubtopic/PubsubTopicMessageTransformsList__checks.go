@@ -34,7 +34,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicMessageTransformsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPubsubTopicMessageTransformsListParameters(terraformResource cdk
 
 	return nil
 }
-

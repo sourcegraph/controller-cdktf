@@ -1,6 +1,5 @@
 package bigqueryjob
 
-
 type BigqueryJobLoad struct {
 	// destination_table block.
 	//
@@ -23,17 +22,17 @@ type BigqueryJobLoad struct {
 	// an invalid error is returned in the job result. The default value is false. Only applicable to CSV, ignored for other formats.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#allow_jagged_rows BigqueryJob#allow_jagged_rows}
-	AllowJaggedRows interface{} `field:"optional" json:"allowJaggedRows" yaml:"allowJaggedRows"`
+	AllowJaggedRows any `field:"optional" json:"allowJaggedRows" yaml:"allowJaggedRows"`
 	// Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file.
 	//
 	// The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#allow_quoted_newlines BigqueryJob#allow_quoted_newlines}
-	AllowQuotedNewlines interface{} `field:"optional" json:"allowQuotedNewlines" yaml:"allowQuotedNewlines"`
+	AllowQuotedNewlines any `field:"optional" json:"allowQuotedNewlines" yaml:"allowQuotedNewlines"`
 	// Indicates if we should automatically infer the options and schema for CSV and JSON sources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#autodetect BigqueryJob#autodetect}
-	Autodetect interface{} `field:"optional" json:"autodetect" yaml:"autodetect"`
+	Autodetect any `field:"optional" json:"autodetect" yaml:"autodetect"`
 	// Specifies whether the job is allowed to create new tables.
 	//
 	// The following values are supported:
@@ -74,7 +73,7 @@ type BigqueryJobLoad struct {
 	// JSON: Named values that don't match any column names
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#ignore_unknown_values BigqueryJob#ignore_unknown_values}
-	IgnoreUnknownValues interface{} `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
+	IgnoreUnknownValues any `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
 	// If sourceFormat is set to newline-delimited JSON, indicates whether it should be processed as a JSON variant such as GeoJSON.
 	//
 	// For a sourceFormat other than JSON, omit this field. If the sourceFormat is newline-delimited JSON: - for newline-delimited
@@ -165,4 +164,3 @@ type BigqueryJobLoad struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#write_disposition BigqueryJob#write_disposition}
 	WriteDisposition *string `field:"optional" json:"writeDisposition" yaml:"writeDisposition"`
 }
-

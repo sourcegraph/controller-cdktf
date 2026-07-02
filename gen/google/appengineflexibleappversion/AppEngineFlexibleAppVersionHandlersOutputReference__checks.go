@@ -128,7 +128,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewAppEngineFlexibleAppVersionHandlersOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOut
 
 	return nil
 }
-

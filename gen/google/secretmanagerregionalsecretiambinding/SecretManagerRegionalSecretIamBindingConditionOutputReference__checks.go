@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSecretManagerRegionalSecretIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

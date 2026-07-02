@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2JobIamBindingConditionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudRunV2JobIamBindingConditionOutputReferenceParameters(terraf
 
 	return nil
 }
-

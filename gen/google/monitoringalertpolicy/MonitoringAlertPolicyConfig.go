@@ -6,9 +6,9 @@ import (
 
 type MonitoringAlertPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitoringAlertPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// How to combine the results of multiple conditions to determine if an incident should be opened.
 	//
 	// Possible values: ["AND", "OR", "AND_WITH_MATCHING_RESOURCE"]
@@ -28,7 +28,7 @@ type MonitoringAlertPolicyConfig struct {
 	// conditions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#conditions MonitoringAlertPolicy#conditions}
-	Conditions interface{} `field:"required" json:"conditions" yaml:"conditions"`
+	Conditions any `field:"required" json:"conditions" yaml:"conditions"`
 	// A short name or phrase used to identify the policy in dashboards, notifications, and incidents.
 	//
 	// To avoid confusion, don't use
@@ -48,7 +48,7 @@ type MonitoringAlertPolicyConfig struct {
 	// Whether or not the policy is enabled. The default is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#enabled MonitoringAlertPolicy#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#id MonitoringAlertPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -82,4 +82,3 @@ type MonitoringAlertPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#user_labels MonitoringAlertPolicy#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
-

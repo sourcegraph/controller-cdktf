@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputR
 
 	return nil
 }
-

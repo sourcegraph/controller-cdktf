@@ -12,9 +12,9 @@ type PrivilegedAccessManagerEntitlementEligibleUsersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PrivilegedAccessManagerEntitlementEligibleUsersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Principals() *[]*string
 	SetPrincipals(val *[]*string)
 	PrincipalsInput() *[]*string
@@ -43,7 +43,7 @@ type PrivilegedAccessManagerEntitlementEligibleUsersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type PrivilegedAccessManagerEntitlementEligibleUsersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	return returns
 }
 
-
 func NewPrivilegedAccessManagerEntitlementEligibleUsersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PrivilegedAccessManagerEntitlementEligibleUsersOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewPrivilegedAccessManagerEntitlementEligibleUsersOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementEligibleUsersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewPrivilegedAccessManagerEntitlementEligibleUsersOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementEligibleUsersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetPrincipals(val *[]*string) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetPrincipals(val *[]*string) {
 	if err := j.validateSetPrincipalsParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 
 	return returns
 }
-

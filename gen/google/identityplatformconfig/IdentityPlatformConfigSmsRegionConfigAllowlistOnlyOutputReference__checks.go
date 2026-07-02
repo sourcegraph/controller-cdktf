@@ -106,7 +106,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReferenc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPrivatecaCaPoolTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

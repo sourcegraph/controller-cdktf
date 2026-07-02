@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryPackages) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryPackages) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleArtifactRegistryPackages_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryPackages_IsConstructParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryPackages_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleArtifactRegistryPackages_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryPackages_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryPackages_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleArtifactRegistryPackages_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryPackages_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryPackages_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleArtifactRegistryPackages_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryPackages) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryPackages) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleArtifactRegistryPackagesParameters(scope constructs.Co
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBinaryAuthorizationAttestorIamMemberConditionOutputReferencePara
 
 	return nil
 }
-

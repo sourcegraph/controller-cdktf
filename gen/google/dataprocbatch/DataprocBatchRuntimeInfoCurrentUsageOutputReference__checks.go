@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocBatchRuntimeInfoCurrentUsageOutputReferenceParameters(te
 
 	return nil
 }
-

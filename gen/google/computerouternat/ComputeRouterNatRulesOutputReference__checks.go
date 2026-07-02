@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNatRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesOutputReference) validateSetDescriptionP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNatRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewComputeRouterNatRulesOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

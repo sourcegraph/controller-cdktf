@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryDatasetAccessConditionOutputReferenceParameter
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReferenceParam
 
 	return nil
 }
-

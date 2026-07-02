@@ -24,15 +24,15 @@ type AccessContextManagerAuthorizedOrgsDesc interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -69,27 +69,27 @@ type AccessContextManagerAuthorizedOrgsDesc interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type AccessContextManagerAuthorizedOrgsDesc interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type AccessContextManagerAuthorizedOrgsDesc interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type AccessContextManagerAuthorizedOrgsDesc interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccessContextManagerAuthorizedOrgsDesc
@@ -224,8 +224,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Connection() interfac
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Provisioners() *[]int
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) Timeouts() AccessCont
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -494,7 +494,6 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) UpdateTime() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc} Resource.
 func NewAccessContextManagerAuthorizedOrgsDesc(scope constructs.Construct, id *string, config *AccessContextManagerAuthorizedOrgsDescConfig) AccessContextManagerAuthorizedOrgsDesc {
 	_init_.Initialize()
@@ -506,7 +505,7 @@ func NewAccessContextManagerAuthorizedOrgsDesc(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -519,12 +518,12 @@ func NewAccessContextManagerAuthorizedOrgsDesc_Override(a AccessContextManagerAu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAssetType(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetAssetType(val *string) {
 	if err := j.validateSetAssetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAssetType(val *stri
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAuthorizationDirection(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetAuthorizationDirection(val *string) {
 	if err := j.validateSetAuthorizationDirectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAuthorizationDirect
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAuthorizationType(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetAuthorizationType(val *string) {
 	if err := j.validateSetAuthorizationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetAuthorizationType(v
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetCount(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetId(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetName(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetOrgs(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetOrgs(val *[]*string) {
 	if err := j.validateSetOrgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetOrgs(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetParent(val *string) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetParent(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func AccessContextManagerAuthorizedOrgsDesc_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func AccessContextManagerAuthorizedOrgsDesc_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x interface{}) *bool {
+func AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAuthorizedOrgsDesc_IsConstructParameters(x); err != nil {
@@ -716,7 +715,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x interface{}) *bool {
+func AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformElementParameters(x); err != nil {
@@ -735,7 +734,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsTerraformElement(x interface{}) *b
 }
 
 // Experimental.
-func AccessContextManagerAuthorizedOrgsDesc_IsTerraformResource(x interface{}) *bool {
+func AccessContextManagerAuthorizedOrgsDesc_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerAuthorizedOrgsDesc_IsTerraformResourceParameters(x); err != nil {
@@ -754,7 +753,7 @@ func AccessContextManagerAuthorizedOrgsDesc_IsTerraformResource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDesc",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,31 +778,31 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) AddMoveTarget(moveTar
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetListAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetNumberAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetNumberListAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetNumberMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetStringAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,15 +930,15 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) GetStringMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -958,7 +957,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ImportFrom(id *string
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -971,7 +970,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) InterpolationForAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,18 +984,18 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) MoveFromId(id *string
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) MoveToId(id *string) 
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) PutTimeouts(value *Ac
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,8 +1088,8 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1102,8 +1101,8 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeAttributes(
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1115,8 +1114,8 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) SynthesizeHclAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1128,8 +1127,8 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToHclTerraform() inte
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1154,8 +1153,8 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1166,4 +1165,3 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) ToTerraform() interfa
 
 	return returns
 }
-

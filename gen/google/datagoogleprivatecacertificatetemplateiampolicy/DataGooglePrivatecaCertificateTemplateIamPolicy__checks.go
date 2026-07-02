@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGooglePrivatecaCertificateTemplateIamPolicy_GenerateConfigForIm
 	return nil
 }
 
-func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsConstructParamete
 	return nil
 }
 
-func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformDataSour
 	return nil
 }
 
-func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGooglePrivatecaCertificateTemplateIamPolicyParameters(scope 
 
 	return nil
 }
-

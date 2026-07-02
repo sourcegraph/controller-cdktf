@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeDiskAsyncReplicationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

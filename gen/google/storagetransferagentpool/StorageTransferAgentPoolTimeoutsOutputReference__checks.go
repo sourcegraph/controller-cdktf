@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageTransferAgentPoolTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareFhirStore) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareFhirStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareFhirStore) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareFhirStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigParameters(
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigsParameters(value interface{}) error {
+func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutNotificationConfigsParameters
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStore) validatePutStreamConfigsParameters(value interface{}) error {
+func (h *jsiiProxy_HealthcareFhirStore) validatePutStreamConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateHealthcareFhirStore_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateHealthcareFhirStore_IsConstructParameters(x interface{}) error {
+func validateHealthcareFhirStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateHealthcareFhirStore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateHealthcareFhirStore_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareFhirStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateHealthcareFhirStore_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateHealthcareFhirStore_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareFhirStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -347,7 +347,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetComplexDataTypeReferenceParsi
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -445,7 +445,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetDatasetParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -465,7 +465,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetDefaultSearchHandlingStrictPa
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableReferentialIntegrityParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableReferentialIntegrityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,7 +485,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableReferentialIntegrityPa
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableResourceVersioningParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableResourceVersioningParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -505,7 +505,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableResourceVersioningPara
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetEnableHistoryImportParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetEnableHistoryImportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -525,7 +525,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetEnableHistoryImportParameters
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetEnableUpdateCreateParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetEnableUpdateCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -577,7 +577,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -649,4 +649,3 @@ func validateNewHealthcareFhirStoreParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

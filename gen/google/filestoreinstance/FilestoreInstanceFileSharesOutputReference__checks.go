@@ -90,7 +90,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateInterpola
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validatePutNfsExportOptionsParameters(value interface{}) error {
+func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validatePutNfsExportOptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetCapaci
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewFilestoreInstanceFileSharesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

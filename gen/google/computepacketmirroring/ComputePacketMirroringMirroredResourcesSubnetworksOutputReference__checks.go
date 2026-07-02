@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputePacketMirroringMirroredResourcesSubnetworksOutputReferenc
 
 	return nil
 }
-

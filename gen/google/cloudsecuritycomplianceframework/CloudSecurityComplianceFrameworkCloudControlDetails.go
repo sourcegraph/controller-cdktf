@@ -1,6 +1,5 @@
 package cloudsecuritycomplianceframework
 
-
 type CloudSecurityComplianceFrameworkCloudControlDetails struct {
 	// Major revision of cloudcontrol.
 	//
@@ -13,6 +12,5 @@ type CloudSecurityComplianceFrameworkCloudControlDetails struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_framework#parameters CloudSecurityComplianceFramework#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 }
-

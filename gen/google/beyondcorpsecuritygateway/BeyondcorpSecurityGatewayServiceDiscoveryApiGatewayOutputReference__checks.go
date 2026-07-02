@@ -109,7 +109,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReferen
 
 	return nil
 }
-

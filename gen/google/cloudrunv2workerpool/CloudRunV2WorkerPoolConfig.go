@@ -6,9 +6,9 @@ import (
 
 type CloudRunV2WorkerPoolConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudRunV2WorkerPoolConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the cloud run worker pool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
@@ -74,7 +74,7 @@ type CloudRunV2WorkerPoolConfig struct {
 	// When the field is set to false, deleting the WorkerPool is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// User-provided description of the WorkerPool. This field currently has a 512-character limit.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
@@ -87,7 +87,7 @@ type CloudRunV2WorkerPoolConfig struct {
 	// instance_splits block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
-	InstanceSplits interface{} `field:"optional" json:"instanceSplits" yaml:"instanceSplits"`
+	InstanceSplits any `field:"optional" json:"instanceSplits" yaml:"instanceSplits"`
 	// Unstructured key value map that can be used to organize and categorize objects.
 	//
 	// User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component,
@@ -118,4 +118,3 @@ type CloudRunV2WorkerPoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
 	Timeouts *CloudRunV2WorkerPoolTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

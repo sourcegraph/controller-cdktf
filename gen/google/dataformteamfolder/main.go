@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataformTeamFolder.DataformTeamFolder",
-		reflect.TypeOf((*DataformTeamFolder)(nil)).Elem(),
+		reflect.TypeFor[DataformTeamFolder](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataformTeamFolder{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataformTeamFolder.DataformTeamFolderConfig",
-		reflect.TypeOf((*DataformTeamFolderConfig)(nil)).Elem(),
+		reflect.TypeFor[DataformTeamFolderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts",
-		reflect.TypeOf((*DataformTeamFolderTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataformTeamFolderTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataformTeamFolder.DataformTeamFolderTimeoutsOutputReference",
-		reflect.TypeOf((*DataformTeamFolderTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataformTeamFolderTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataformTeamFolderTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,9 +12,9 @@ type OracleDatabaseDbSystemPropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -93,7 +93,7 @@ type OracleDatabaseDbSystemPropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,7 +132,7 @@ type OracleDatabaseDbSystemPropertiesOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -145,8 +145,8 @@ type jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -605,7 +605,6 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) TimeZoneInpu
 	return returns
 }
 
-
 func NewOracleDatabaseDbSystemPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -616,7 +615,7 @@ func NewOracleDatabaseDbSystemPropertiesOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -628,12 +627,12 @@ func NewOracleDatabaseDbSystemPropertiesOutputReference_Override(o OracleDatabas
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComputeCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetComputeCount(val *float64) {
 	if err := j.validateSetComputeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComputeCou
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComputeModel(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetComputeModel(val *string) {
 	if err := j.validateSetComputeModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetComputeMod
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDatabaseEdition(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetDatabaseEdition(val *string) {
 	if err := j.validateSetDatabaseEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDatabaseEd
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDataStorageSizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetDataStorageSizeGb(val *float64) {
 	if err := j.validateSetDataStorageSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDataStorag
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDomain(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetDomain(val
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetHostnamePrefix(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetHostnamePrefix(val *string) {
 	if err := j.validateSetHostnamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetHostnamePr
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetInitialDataStorageSizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetInitialDataStorageSizeGb(val *float64) {
 	if err := j.validateSetInitialDataStorageSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetInitialDat
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetInternalValue(val *OracleDatabaseDbSystemProperties) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetInternalValue(val *OracleDatabaseDbSystemProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetLicenseModel(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetLicenseModel(val *string) {
 	if err := j.validateSetLicenseModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetLicenseMod
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetMemorySizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetMemorySizeGb(val *float64) {
 	if err := j.validateSetMemorySizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetMemorySize
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetNodeCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetNodeCount(
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetPrivateIp(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetPrivateIp(val *string) {
 	if err := j.validateSetPrivateIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetPrivateIp(
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetRecoStorageSizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetRecoStorageSizeGb(val *float64) {
 	if err := j.validateSetRecoStorageSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetRecoStorag
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetShape(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetShape(val *string) {
 	if err := j.validateSetShapeParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetShape(val 
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetSshPublicKeys(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetSshPublicKeys(val *[]*string) {
 	if err := j.validateSetSshPublicKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetSshPublicK
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,16 +854,16 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) ComputeFqn()
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetListAttri
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) GetStringMap
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) Interpolatio
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) PutDataColle
 	_jsii_.InvokeVoid(
 		o,
 		"putDataCollectionOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1046,7 +1045,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) PutDbHome(va
 	_jsii_.InvokeVoid(
 		o,
 		"putDbHome",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) PutDbSystemO
 	_jsii_.InvokeVoid(
 		o,
 		"putDbSystemOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) PutTimeZone(
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeZone",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,16 +1167,16 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) ResetTimeZon
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1196,4 +1195,3 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference) ToString() *
 
 	return returns
 }
-

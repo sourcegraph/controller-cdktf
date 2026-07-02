@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsDiagnosticsEventsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsDiagnosticsEventsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsHealthMonitoringEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsHealthMonitoringEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsIncidentLogsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference) validateSetIsIncidentLogsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutpu
 
 	return nil
 }
-

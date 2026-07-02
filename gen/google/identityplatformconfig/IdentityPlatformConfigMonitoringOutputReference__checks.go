@@ -109,7 +109,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewIdentityPlatformConfigMonitoringOutputReferenceParameters(terraf
 
 	return nil
 }
-

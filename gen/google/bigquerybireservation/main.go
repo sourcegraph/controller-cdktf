@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation",
-		reflect.TypeOf((*BigqueryBiReservation)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryBiReservation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig",
-		reflect.TypeOf((*BigqueryBiReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables",
-		reflect.TypeOf((*BigqueryBiReservationPreferredTables)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationPreferredTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList",
-		reflect.TypeOf((*BigqueryBiReservationPreferredTablesList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationPreferredTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryBiReservationPreferredTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference",
-		reflect.TypeOf((*BigqueryBiReservationPreferredTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationPreferredTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts",
-		reflect.TypeOf((*BigqueryBiReservationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference",
-		reflect.TypeOf((*BigqueryBiReservationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryBiReservationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryBiReservationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

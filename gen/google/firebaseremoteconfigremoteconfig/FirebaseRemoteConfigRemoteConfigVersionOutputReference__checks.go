@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigVersionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigVersionOutputReferenceParameters
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewApihubPluginConfigTemplateAuthConfigTemplateOutputReferenceParam
 
 	return nil
 }
-

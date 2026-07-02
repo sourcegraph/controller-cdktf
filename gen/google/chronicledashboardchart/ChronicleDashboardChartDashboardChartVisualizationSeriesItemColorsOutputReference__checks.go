@@ -90,7 +90,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemC
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference) validatePutColorsParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference) validatePutColorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemC
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesItemColorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationSeriesItemColo
 
 	return nil
 }
-

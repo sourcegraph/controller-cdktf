@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetForceAttachParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -298,4 +298,3 @@ func validateNewComputeInstanceFromTemplateAttachedDiskOutputReferenceParameters
 
 	return nil
 }
-

@@ -131,7 +131,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,4 +247,3 @@ func validateNewCesToolsetMcpToolsetOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

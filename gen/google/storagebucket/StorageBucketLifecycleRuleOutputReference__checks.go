@@ -120,7 +120,7 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewStorageBucketLifecycleRuleOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

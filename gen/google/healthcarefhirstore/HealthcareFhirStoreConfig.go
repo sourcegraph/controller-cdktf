@@ -6,9 +6,9 @@ import (
 
 type HealthcareFhirStoreConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type HealthcareFhirStoreConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
@@ -45,7 +45,7 @@ type HealthcareFhirStoreConfig struct {
 	// The handling can always be changed from the default on an individual API call by setting the HTTP header Prefer: handling=strict or Prefer: handling=lenient.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
-	DefaultSearchHandlingStrict interface{} `field:"optional" json:"defaultSearchHandlingStrict" yaml:"defaultSearchHandlingStrict"`
+	DefaultSearchHandlingStrict any `field:"optional" json:"defaultSearchHandlingStrict" yaml:"defaultSearchHandlingStrict"`
 	// Whether to disable referential integrity in this FHIR store.
 	//
 	// This field is immutable after FHIR store
@@ -57,7 +57,7 @@ type HealthcareFhirStoreConfig struct {
 	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
-	DisableReferentialIntegrity interface{} `field:"optional" json:"disableReferentialIntegrity" yaml:"disableReferentialIntegrity"`
+	DisableReferentialIntegrity any `field:"optional" json:"disableReferentialIntegrity" yaml:"disableReferentialIntegrity"`
 	// Whether to disable resource versioning for this FHIR store.
 	//
 	// This field can not be changed after the creation
@@ -69,7 +69,7 @@ type HealthcareFhirStoreConfig struct {
 	// ** Changing this property may recreate the FHIR store (removing all data) **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
-	DisableResourceVersioning interface{} `field:"optional" json:"disableResourceVersioning" yaml:"disableResourceVersioning"`
+	DisableResourceVersioning any `field:"optional" json:"disableResourceVersioning" yaml:"disableResourceVersioning"`
 	// Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store.
 	//
 	// Importing resource histories creates resource interactions that appear to have
@@ -81,7 +81,7 @@ type HealthcareFhirStoreConfig struct {
 	// ** This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
-	EnableHistoryImport interface{} `field:"optional" json:"enableHistoryImport" yaml:"enableHistoryImport"`
+	EnableHistoryImport any `field:"optional" json:"enableHistoryImport" yaml:"enableHistoryImport"`
 	// Whether this FHIR store has the updateCreate capability.
 	//
 	// This determines if the client can use an Update
@@ -92,7 +92,7 @@ type HealthcareFhirStoreConfig struct {
 	// notifications.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
-	EnableUpdateCreate interface{} `field:"optional" json:"enableUpdateCreate" yaml:"enableUpdateCreate"`
+	EnableUpdateCreate any `field:"optional" json:"enableUpdateCreate" yaml:"enableUpdateCreate"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -124,11 +124,11 @@ type HealthcareFhirStoreConfig struct {
 	// notification_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#notification_configs HealthcareFhirStore#notification_configs}
-	NotificationConfigs interface{} `field:"optional" json:"notificationConfigs" yaml:"notificationConfigs"`
+	NotificationConfigs any `field:"optional" json:"notificationConfigs" yaml:"notificationConfigs"`
 	// stream_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
-	StreamConfigs interface{} `field:"optional" json:"streamConfigs" yaml:"streamConfigs"`
+	StreamConfigs any `field:"optional" json:"streamConfigs" yaml:"streamConfigs"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
@@ -138,4 +138,3 @@ type HealthcareFhirStoreConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#validation_config HealthcareFhirStore#validation_config}
 	ValidationConfig *HealthcareFhirStoreValidationConfig `field:"optional" json:"validationConfig" yaml:"validationConfig"`
 }
-

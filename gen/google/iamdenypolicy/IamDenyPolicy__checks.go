@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamDenyPolicy) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamDenyPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamDenyPolicy) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamDenyPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IamDenyPolicy) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicy) validatePutRulesParameters(value interface{}) error {
+func (i *jsiiProxy_IamDenyPolicy) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateIamDenyPolicy_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateIamDenyPolicy_IsConstructParameters(x interface{}) error {
+func validateIamDenyPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateIamDenyPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamDenyPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateIamDenyPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateIamDenyPolicy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamDenyPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateIamDenyPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateIamDenyPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamDenyPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_IamDenyPolicy) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamDenyPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -416,7 +416,7 @@ func (j *jsiiProxy_IamDenyPolicy) validateSetParentParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamDenyPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewIamDenyPolicyParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

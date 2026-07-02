@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstation.WorkstationsWorkstation",
-		reflect.TypeOf((*WorkstationsWorkstation)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationId", GoGetter: "WorkstationId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationIdInput", GoGetter: "WorkstationIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstation.WorkstationsWorkstationConfig",
-		reflect.TypeOf((*WorkstationsWorkstationConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeouts",
-		reflect.TypeOf((*WorkstationsWorkstationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstation.WorkstationsWorkstationTimeoutsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

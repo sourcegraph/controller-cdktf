@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenA
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewCesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuth
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package integrationconnectorsconnection
 
-
 type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow struct {
 	// Auth URL for Authorization Code Flow.
 	//
@@ -17,10 +16,9 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow struct {
 	// Whether to enable PKCE when the user performs the auth code flow.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#enable_pkce IntegrationConnectorsConnection#enable_pkce}
-	EnablePkce interface{} `field:"optional" json:"enablePkce" yaml:"enablePkce"`
+	EnablePkce any `field:"optional" json:"enablePkce" yaml:"enablePkce"`
 	// Scopes the connection will request when the user performs the auth code flow.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#scopes IntegrationConnectorsConnection#scopes}
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
-

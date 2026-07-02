@@ -12,9 +12,9 @@ type ClouddomainsRegistrationManagementSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type ClouddomainsRegistrationManagementSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type ClouddomainsRegistrationManagementSettingsOutputReference interface {
 	ResetTransferLockState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Tr
 	return returns
 }
 
-
 func NewClouddomainsRegistrationManagementSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClouddomainsRegistrationManagementSettingsOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewClouddomainsRegistrationManagementSettingsOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewClouddomainsRegistrationManagementSettingsOutputReference_Override(c Clo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddomainsRegistration.ClouddomainsRegistrationManagementSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetInternalValue(val *ClouddomainsRegistrationManagementSettings) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetInternalValue(val *ClouddomainsRegistrationManagementSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetPreferredRenewalMethod(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetPreferredRenewalMethod(val *string) {
 	if err := j.validateSetPreferredRenewalMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference)SetTransferLockState(val *string) {
+func (j *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) SetTransferLockState(val *string) {
 	if err := j.validateSetTransferLockStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Co
 	return returns
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) In
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Re
 	)
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (c *jsiiProxy_ClouddomainsRegistrationManagementSettingsOutputReference) To
 
 	return returns
 }
-

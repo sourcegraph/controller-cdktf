@@ -34,7 +34,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFolderIamAuditConfigAuditLogConfigListParameters(terraformResour
 
 	return nil
 }
-

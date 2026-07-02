@@ -12,9 +12,9 @@ type BiglakeIcebergTablePartitionSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type BiglakeIcebergTablePartitionSpecOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Fields() BiglakeIcebergTablePartitionSpecFieldsList
-	FieldsInput() interface{}
+	FieldsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BiglakeIcebergTablePartitionSpec
@@ -43,7 +43,7 @@ type BiglakeIcebergTablePartitionSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,10 +64,10 @@ type BiglakeIcebergTablePartitionSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFields(value interface{})
+	PutFields(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) Fields() Big
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) FieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) FieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fieldsInput",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewBiglakeIcebergTablePartitionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BiglakeIcebergTablePartitionSpecOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewBiglakeIcebergTablePartitionSpecOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewBiglakeIcebergTablePartitionSpecOutputReference_Override(b BiglakeIceber
 
 	_jsii_.Create(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetInternalValue(val *BiglakeIcebergTablePartitionSpec) {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) SetInternalValue(val *BiglakeIcebergTablePartitionSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) ComputeFqn()
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetListAttri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) GetStringMap
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,34 +441,34 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) Interpolatio
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) PutFields(value interface{}) {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) PutFields(value any) {
 	if err := b.validatePutFieldsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) ToString() *
 
 	return returns
 }
-

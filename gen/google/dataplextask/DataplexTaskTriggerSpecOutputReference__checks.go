@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskTriggerSpecOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewDataplexTaskTriggerSpecOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

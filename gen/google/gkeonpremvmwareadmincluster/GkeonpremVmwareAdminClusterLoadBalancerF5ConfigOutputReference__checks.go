@@ -106,7 +106,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReferencePa
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GkeHubFeatureIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGkeHubFeatureIamPolicy_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGkeHubFeatureIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGkeHubFeatureIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGkeHubFeatureIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGkeHubFeatureIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGkeHubFeatureIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGkeHubFeatureIamPolicy_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGkeHubFeatureIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGkeHubFeatureIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGkeHubFeatureIamPolicy_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGkeHubFeatureIamPolicyParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

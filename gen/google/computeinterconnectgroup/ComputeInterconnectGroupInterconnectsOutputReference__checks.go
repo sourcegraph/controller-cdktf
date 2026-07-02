@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeInterconnectGroupInterconnectsOutputReferenceParameters(t
 
 	return nil
 }
-

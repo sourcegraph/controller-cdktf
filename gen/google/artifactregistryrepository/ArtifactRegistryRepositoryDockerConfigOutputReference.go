@@ -12,9 +12,9 @@ type ArtifactRegistryRepositoryDockerConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type ArtifactRegistryRepositoryDockerConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	ImmutableTags() interface{}
-	SetImmutableTags(val interface{})
-	ImmutableTagsInput() interface{}
+	ImmutableTags() any
+	SetImmutableTags(val any)
+	ImmutableTagsInput() any
 	InternalValue() *ArtifactRegistryRepositoryDockerConfig
 	SetInternalValue(val *ArtifactRegistryRepositoryDockerConfig)
 	// Experimental.
@@ -43,7 +43,7 @@ type ArtifactRegistryRepositoryDockerConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ArtifactRegistryRepositoryDockerConfigOutputReference interface {
 	ResetImmutableTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ImmutableTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ImmutableTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutableTags",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Immuta
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ImmutableTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ImmutableTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutableTagsInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewArtifactRegistryRepositoryDockerConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryDockerConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewArtifactRegistryRepositoryDockerConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewArtifactRegistryRepositoryDockerConfigOutputReference_Override(a Artifac
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetImmutableTags(val interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetImmutableTags(val any) {
 	if err := j.validateSetImmutableTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetImmu
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetInternalValue(val *ArtifactRegistryRepositoryDockerConfig) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetInternalValue(val *ArtifactRegistryRepositoryDockerConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Comput
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Interp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ResetI
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) ToStri
 
 	return returns
 }
-

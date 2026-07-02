@@ -19,7 +19,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VmwareengineNetworkPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateVmwareengineNetworkPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateVmwareengineNetworkPolicy_IsConstructParameters(x interface{}) error {
+func validateVmwareengineNetworkPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateVmwareengineNetworkPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateVmwareengineNetworkPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateVmwareengineNetworkPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateVmwareengineNetworkPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateVmwareengineNetworkPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateVmwareengineNetworkPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateVmwareengineNetworkPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VmwareengineNetworkPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewVmwareengineNetworkPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

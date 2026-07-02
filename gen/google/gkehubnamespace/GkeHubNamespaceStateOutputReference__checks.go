@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubNamespaceStateOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubNamespaceStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubNamespaceStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeHubNamespaceStateOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

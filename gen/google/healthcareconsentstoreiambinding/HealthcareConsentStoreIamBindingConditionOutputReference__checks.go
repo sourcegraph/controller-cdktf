@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareConsentStoreIamBindingConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewHealthcareConsentStoreIamBindingConditionOutputReferenceParamete
 
 	return nil
 }
-

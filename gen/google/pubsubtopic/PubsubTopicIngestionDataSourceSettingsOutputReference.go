@@ -20,9 +20,9 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	CloudStorageInput() *PubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) CloudS
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Terraf
 	return returns
 }
 
-
 func NewPubsubTopicIngestionDataSourceSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicIngestionDataSourceSettingsOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewPubsubTopicIngestionDataSourceSettingsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewPubsubTopicIngestionDataSourceSettingsOutputReference_Override(p PubsubT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetInternalValue(val *PubsubTopicIngestionDataSourceSettings) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) SetInternalValue(val *PubsubTopicIngestionDataSourceSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,16 +385,16 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Comput
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetBoo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetBoo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetLis
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetStr
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) GetStr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Interp
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAws
 	_jsii_.InvokeVoid(
 		p,
 		"putAwsKinesis",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -577,7 +576,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAws
 	_jsii_.InvokeVoid(
 		p,
 		"putAwsMsk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -588,7 +587,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAzu
 	_jsii_.InvokeVoid(
 		p,
 		"putAzureEventHubs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -599,7 +598,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutClo
 	_jsii_.InvokeVoid(
 		p,
 		"putCloudStorage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -610,7 +609,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutCon
 	_jsii_.InvokeVoid(
 		p,
 		"putConfluentCloud",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutPla
 	_jsii_.InvokeVoid(
 		p,
 		"putPlatformLogsSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetP
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ToStri
 
 	return returns
 }
-

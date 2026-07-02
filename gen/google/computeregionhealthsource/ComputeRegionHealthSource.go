@@ -15,15 +15,15 @@ type ComputeRegionHealthSource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,11 +62,11 @@ type ComputeRegionHealthSource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -80,18 +80,18 @@ type ComputeRegionHealthSource interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionHealthSourceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type ComputeRegionHealthSource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type ComputeRegionHealthSource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type ComputeRegionHealthSource interface {
 	ResetProject()
 	ResetSources()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionHealthSource
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_ComputeRegionHealthSource) Timeouts() ComputeRegionHealthSour
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthSource) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -514,7 +514,6 @@ func (j *jsiiProxy_ComputeRegionHealthSource) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_source google_compute_region_health_source} Resource.
 func NewComputeRegionHealthSource(scope constructs.Construct, id *string, config *ComputeRegionHealthSourceConfig) ComputeRegionHealthSource {
@@ -527,7 +526,7 @@ func NewComputeRegionHealthSource(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -540,12 +539,12 @@ func NewComputeRegionHealthSource_Override(c ComputeRegionHealthSource, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetHealthAggregationPolicy(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetHealthAggregationPolicy(val *string) {
 	if err := j.validateSetHealthAggregationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetHealthAggregationPolicy(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -646,7 +645,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetSources(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetSources(val *[]*string) {
 	if err := j.validateSetSourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource)SetSources(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource)SetSourceType(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthSource) SetSourceType(val *string) {
 	if err := j.validateSetSourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func ComputeRegionHealthSource_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func ComputeRegionHealthSource_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionHealthSource_IsConstruct(x interface{}) *bool {
+func ComputeRegionHealthSource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthSource_IsConstructParameters(x); err != nil {
@@ -737,7 +736,7 @@ func ComputeRegionHealthSource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func ComputeRegionHealthSource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionHealthSource_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionHealthSource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthSource_IsTerraformElementParameters(x); err != nil {
@@ -756,7 +755,7 @@ func ComputeRegionHealthSource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func ComputeRegionHealthSource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionHealthSource_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionHealthSource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthSource_IsTerraformResourceParameters(x); err != nil {
@@ -775,7 +774,7 @@ func ComputeRegionHealthSource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthSource.ComputeRegionHealthSource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,31 +799,31 @@ func (c *jsiiProxy_ComputeRegionHealthSource) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionHealthSource) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionHealthSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,15 +951,15 @@ func (c *jsiiProxy_ComputeRegionHealthSource) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -979,7 +978,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -992,7 +991,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,18 +1005,18 @@ func (c *jsiiProxy_ComputeRegionHealthSource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionHealthSource) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) PutTimeouts(value *ComputeRegionHe
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,8 +1101,8 @@ func (c *jsiiProxy_ComputeRegionHealthSource) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1115,8 +1114,8 @@ func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1128,8 +1127,8 @@ func (c *jsiiProxy_ComputeRegionHealthSource) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1141,8 +1140,8 @@ func (c *jsiiProxy_ComputeRegionHealthSource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1167,8 +1166,8 @@ func (c *jsiiProxy_ComputeRegionHealthSource) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthSource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1179,4 +1178,3 @@ func (c *jsiiProxy_ComputeRegionHealthSource) ToTerraform() interface{} {
 
 	return returns
 }
-

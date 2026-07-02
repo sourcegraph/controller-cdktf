@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeStoragePoolResourceStatusOutputReferenceParameters(terraf
 
 	return nil
 }
-

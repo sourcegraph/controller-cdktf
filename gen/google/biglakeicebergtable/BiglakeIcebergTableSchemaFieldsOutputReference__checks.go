@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetNa
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewBiglakeIcebergTableSchemaFieldsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

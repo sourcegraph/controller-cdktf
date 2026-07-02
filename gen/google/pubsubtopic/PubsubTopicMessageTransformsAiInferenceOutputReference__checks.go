@@ -109,7 +109,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewPubsubTopicMessageTransformsAiInferenceOutputReferenceParameters
 
 	return nil
 }
-

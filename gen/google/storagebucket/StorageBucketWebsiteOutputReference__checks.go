@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketWebsiteOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketWebsiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketWebsiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStorageBucketWebsiteOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

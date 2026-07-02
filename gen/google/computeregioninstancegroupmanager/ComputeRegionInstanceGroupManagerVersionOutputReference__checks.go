@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerVersionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewComputeRegionInstanceGroupManagerVersionOutputReferenceParameter
 
 	return nil
 }
-

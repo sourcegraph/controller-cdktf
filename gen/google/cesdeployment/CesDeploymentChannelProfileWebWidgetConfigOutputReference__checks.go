@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCesDeploymentChannelProfileWebWidgetConfigOutputReferenceParamet
 
 	return nil
 }
-

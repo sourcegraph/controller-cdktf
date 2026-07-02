@@ -12,9 +12,9 @@ type HealthcarePipelineJobMappingPipelineJobOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,9 +36,9 @@ type HealthcarePipelineJobMappingPipelineJobOutputReference interface {
 	SetInternalValue(val *HealthcarePipelineJobMappingPipelineJob)
 	MappingConfig() HealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference
 	MappingConfigInput() *HealthcarePipelineJobMappingPipelineJobMappingConfig
-	ReconciliationDestination() interface{}
-	SetReconciliationDestination(val interface{})
-	ReconciliationDestinationInput() interface{}
+	ReconciliationDestination() any
+	SetReconciliationDestination(val any)
+	ReconciliationDestinationInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,7 +50,7 @@ type HealthcarePipelineJobMappingPipelineJobOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type HealthcarePipelineJobMappingPipelineJobOutputReference interface {
 	ResetReconciliationDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Mappi
 	return returns
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ReconciliationDestination() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ReconciliationDestination() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reconciliationDestination",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Recon
 	return returns
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ReconciliationDestinationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ReconciliationDestinationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reconciliationDestinationInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Terra
 	return returns
 }
 
-
 func NewHealthcarePipelineJobMappingPipelineJobOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcarePipelineJobMappingPipelineJobOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewHealthcarePipelineJobMappingPipelineJobOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobMappingPipelineJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewHealthcarePipelineJobMappingPipelineJobOutputReference_Override(h Health
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcarePipelineJob.HealthcarePipelineJobMappingPipelineJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetFhirStoreDestination(val *string) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetFhirStoreDestination(val *string) {
 	if err := j.validateSetFhirStoreDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetFhi
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetInternalValue(val *HealthcarePipelineJobMappingPipelineJob) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetInternalValue(val *HealthcarePipelineJobMappingPipelineJob) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetReconciliationDestination(val interface{}) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetReconciliationDestination(val any) {
 	if err := j.validateSetReconciliationDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetRec
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,16 +358,16 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Compu
 	return returns
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetBo
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetBo
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetLi
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetNu
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetNu
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetNu
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetSt
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) GetSt
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Inter
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) PutFh
 	_jsii_.InvokeVoid(
 		h,
 		"putFhirStreamingSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) PutMa
 	_jsii_.InvokeVoid(
 		h,
 		"putMappingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Reset
 	)
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) ToStr
 
 	return returns
 }
-

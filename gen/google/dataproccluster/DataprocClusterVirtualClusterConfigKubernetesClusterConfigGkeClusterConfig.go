@@ -1,6 +1,5 @@
 package dataproccluster
 
-
 type DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig struct {
 	// A target GKE cluster to deploy to.
 	//
@@ -11,6 +10,5 @@ type DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig 
 	// node_pool_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#node_pool_target DataprocCluster#node_pool_target}
-	NodePoolTarget interface{} `field:"optional" json:"nodePoolTarget" yaml:"nodePoolTarget"`
+	NodePoolTarget any `field:"optional" json:"nodePoolTarget" yaml:"nodePoolTarget"`
 }
-

@@ -34,7 +34,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHealthcareHl7V2StoreNotificationConfigsListParameters(terraformR
 
 	return nil
 }
-

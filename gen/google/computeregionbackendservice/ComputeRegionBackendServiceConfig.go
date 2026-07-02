@@ -6,9 +6,9 @@ import (
 
 type ComputeRegionBackendServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRegionBackendServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -44,7 +44,7 @@ type ComputeRegionBackendServiceConfig struct {
 	// backend block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
-	Backend interface{} `field:"optional" json:"backend" yaml:"backend"`
+	Backend any `field:"optional" json:"backend" yaml:"backend"`
 	// cdn_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
@@ -68,7 +68,7 @@ type ComputeRegionBackendServiceConfig struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
@@ -76,7 +76,7 @@ type ComputeRegionBackendServiceConfig struct {
 	// If true, enable Cloud CDN for this RegionBackendService.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
-	EnableCdn interface{} `field:"optional" json:"enableCdn" yaml:"enableCdn"`
+	EnableCdn any `field:"optional" json:"enableCdn" yaml:"enableCdn"`
 	// failover_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
@@ -261,4 +261,3 @@ type ComputeRegionBackendServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#tls_settings ComputeRegionBackendService#tls_settings}
 	TlsSettings *ComputeRegionBackendServiceTlsSettings `field:"optional" json:"tlsSettings" yaml:"tlsSettings"`
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolConditionsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2WorkerPoolConditionsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

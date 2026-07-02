@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobIamMemberConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocJobIamMemberConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

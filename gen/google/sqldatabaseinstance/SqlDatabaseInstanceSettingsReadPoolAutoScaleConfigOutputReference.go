@@ -12,9 +12,9 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableScaleIn() interface{}
-	SetDisableScaleIn(val interface{})
-	DisableScaleInInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	DisableScaleIn() any
+	SetDisableScaleIn(val any)
+	DisableScaleInInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
@@ -48,7 +48,7 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	SetScaleOutCooldownSeconds(val *float64)
 	ScaleOutCooldownSecondsInput() *float64
 	TargetMetrics() SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList
-	TargetMetricsInput() interface{}
+	TargetMetricsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,7 +60,7 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutTargetMetrics(value interface{})
+	PutTargetMetrics(value any)
 	ResetDisableScaleIn()
 	ResetEnabled()
 	ResetMaxNodeCount()
@@ -91,7 +91,7 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface
 	ResetTargetMetrics()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleIn() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleIn() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableScaleIn",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleInInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleInInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableScaleInInput",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) TargetMetricsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) TargetMetricsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"targetMetricsInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-
 func NewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetDisableScaleIn(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetDisableScaleIn(val any) {
 	if err := j.validateSetDisableScaleInParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetInternalValue(val *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetMaxNodeCount(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetMaxNodeCount(val *float64) {
 	if err := j.validateSetMaxNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetMinNodeCount(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetMinNodeCount(val *float64) {
 	if err := j.validateSetMinNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetScaleInCooldownSeconds(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetScaleInCooldownSeconds(val *float64) {
 	if err := j.validateSetScaleInCooldownSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetScaleOutCooldownSeconds(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetScaleOutCooldownSeconds(val *float64) {
 	if err := j.validateSetScaleOutCooldownSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,21 +641,21 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) PutTargetMetrics(value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) PutTargetMetrics(value any) {
 	if err := s.validatePutTargetMetricsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTargetMetrics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefer
 
 	return returns
 }
-

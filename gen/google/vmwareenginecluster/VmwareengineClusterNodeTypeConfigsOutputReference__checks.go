@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewVmwareengineClusterNodeTypeConfigsOutputReferenceParameters(terr
 
 	return nil
 }
-

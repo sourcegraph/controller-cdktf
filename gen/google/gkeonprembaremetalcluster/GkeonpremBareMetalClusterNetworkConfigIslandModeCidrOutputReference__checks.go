@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputRefere
 
 	return nil
 }
-

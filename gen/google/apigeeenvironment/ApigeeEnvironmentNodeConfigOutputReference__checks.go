@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeEnvironmentNodeConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApigeeEnvironmentNodeConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

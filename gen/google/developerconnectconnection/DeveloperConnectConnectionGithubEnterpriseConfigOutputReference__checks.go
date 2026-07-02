@@ -125,7 +125,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubEnterpriseConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGithubEnterpriseConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionGithubEnterpriseConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -257,4 +257,3 @@ func validateNewDeveloperConnectConnectionGithubEnterpriseConfigOutputReferenceP
 
 	return nil
 }
-

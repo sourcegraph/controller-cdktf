@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigAptOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigAptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigAptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewOsConfigPatchDeploymentPatchConfigAptOutputReferenceParameters(t
 
 	return nil
 }
-

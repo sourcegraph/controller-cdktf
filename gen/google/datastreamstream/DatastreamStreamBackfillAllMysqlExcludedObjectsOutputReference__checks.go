@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference) validatePutMysqlDatabasesParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference) validatePutMysqlDatabasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDatastreamStreamBackfillAllMysqlExcludedObjectsOutputReferencePa
 
 	return nil
 }
-

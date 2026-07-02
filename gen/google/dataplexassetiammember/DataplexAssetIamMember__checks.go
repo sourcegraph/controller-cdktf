@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataplexAssetIamMember) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataplexAssetIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataplexAssetIamMember) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataplexAssetIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataplexAssetIamMember_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDataplexAssetIamMember_IsConstructParameters(x interface{}) error {
+func validateDataplexAssetIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataplexAssetIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataplexAssetIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateDataplexAssetIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataplexAssetIamMember_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateDataplexAssetIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateDataplexAssetIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataplexAssetIamMember) validateSetAssetParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAssetIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataplexAssetIamMember) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAssetIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataplexAssetIamMember) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataplexAssetIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewDataplexAssetIamMemberParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

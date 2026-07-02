@@ -20,15 +20,15 @@ type IapWebCloudRunServiceIamMember interface {
 	Condition() IapWebCloudRunServiceIamMemberConditionOutputReference
 	ConditionInput() *IapWebCloudRunServiceIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type IapWebCloudRunServiceIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type IapWebCloudRunServiceIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type IapWebCloudRunServiceIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type IapWebCloudRunServiceIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebCloudRunServiceIamMember
@@ -198,8 +198,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) ConditionInput() *IapWebCloud
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member} Resource.
 func NewIapWebCloudRunServiceIamMember(scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamMemberConfig) IapWebCloudRunServiceIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewIapWebCloudRunServiceIamMember(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewIapWebCloudRunServiceIamMember_Override(i IapWebCloudRunServiceIamMember
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetCloudRunServiceName(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetCloudRunServiceName(val *string) {
 	if err := j.validateSetCloudRunServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetCloudRunServiceName(val *st
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetId(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetMember(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProject(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMember)SetRole(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func IapWebCloudRunServiceIamMember_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func IapWebCloudRunServiceIamMember_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebCloudRunServiceIamMember_IsConstruct(x interface{}) *bool {
+func IapWebCloudRunServiceIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func IapWebCloudRunServiceIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func IapWebCloudRunServiceIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebCloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool {
+func IapWebCloudRunServiceIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func IapWebCloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func IapWebCloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebCloudRunServiceIamMember_IsTerraformResource(x interface{}) *bool {
+func IapWebCloudRunServiceIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func IapWebCloudRunServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamMember.IapWebCloudRunServiceIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -911,7 +910,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) PutCondition(value *IapWebClo
 	_jsii_.InvokeVoid(
 		i,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1039,8 +1038,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1052,8 +1051,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1065,8 +1064,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1091,8 +1090,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1103,4 +1102,3 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

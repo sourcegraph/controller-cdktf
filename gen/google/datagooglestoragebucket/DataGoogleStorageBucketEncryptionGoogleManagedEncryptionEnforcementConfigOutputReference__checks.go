@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnfor
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcem
 
 	return nil
 }
-

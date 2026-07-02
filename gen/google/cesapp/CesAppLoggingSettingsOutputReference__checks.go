@@ -153,7 +153,7 @@ func (c *jsiiProxy_CesAppLoggingSettingsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewCesAppLoggingSettingsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

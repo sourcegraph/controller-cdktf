@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeering",
-		reflect.TypeOf((*VmwareengineNetworkPeering)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPeering](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEngineNetworkCanonical", GoGetter: "VmwareEngineNetworkCanonical"},
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEngineNetworkInput", GoGetter: "VmwareEngineNetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPeering{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringConfig",
-		reflect.TypeOf((*VmwareengineNetworkPeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPeeringConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeouts",
-		reflect.TypeOf((*VmwareengineNetworkPeeringTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPeeringTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPeering.VmwareengineNetworkPeeringTimeoutsOutputReference",
-		reflect.TypeOf((*VmwareengineNetworkPeeringTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPeeringTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPeeringTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

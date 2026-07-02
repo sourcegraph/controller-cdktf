@@ -1,11 +1,10 @@
 package cloudsecuritycompliancecloudcontrol
 
-
 type CloudSecurityComplianceCloudControlParameterSpecDefaultValue struct {
 	// Represents a boolean value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
-	BoolValue interface{} `field:"optional" json:"boolValue" yaml:"boolValue"`
+	BoolValue any `field:"optional" json:"boolValue" yaml:"boolValue"`
 	// Represents a double value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
@@ -23,4 +22,3 @@ type CloudSecurityComplianceCloudControlParameterSpecDefaultValue struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
 	StringValue *string `field:"optional" json:"stringValue" yaml:"stringValue"`
 }
-

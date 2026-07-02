@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxy",
-		reflect.TypeOf((*ComputeRegionTargetHttpsProxy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionTargetHttpsProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlMap", GoGetter: "UrlMap"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMapInput", GoGetter: "UrlMapInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionTargetHttpsProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxyConfig",
-		reflect.TypeOf((*ComputeRegionTargetHttpsProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionTargetHttpsProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxyTimeouts",
-		reflect.TypeOf((*ComputeRegionTargetHttpsProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionTargetHttpsProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionTargetHttpsProxy.ComputeRegionTargetHttpsProxyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionTargetHttpsProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionTargetHttpsProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionTargetHttpsProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

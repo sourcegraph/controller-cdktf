@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMeshCertificatesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterMeshCertificatesOutputReferenceParamet
 
 	return nil
 }
-

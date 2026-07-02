@@ -19,7 +19,7 @@ func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateAddMoveT
 	return nil
 }
 
-func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateMoveFrom
 	return nil
 }
 
-func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIapWebRegionForwardingRuleServiceIamBinding_GenerateConfigForImport
 	return nil
 }
 
-func validateIapWebRegionForwardingRuleServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateIapWebRegionForwardingRuleServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIapWebRegionForwardingRuleServiceIamBinding_IsConstructParameters(x
 	return nil
 }
 
-func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformElementParam
 	return nil
 }
 
-func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIapWebRegionForwardingRuleServiceIamBinding_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewIapWebRegionForwardingRuleServiceIamBindingParameters(scope cons
 
 	return nil
 }
-

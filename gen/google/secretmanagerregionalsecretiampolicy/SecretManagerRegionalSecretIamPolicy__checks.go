@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateAddMoveTargetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateMoveFromIdParam
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSecretManagerRegionalSecretIamPolicy_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateSecretManagerRegionalSecretIamPolicy_IsConstructParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSecretManagerRegionalSecretIamPolicy_IsConstructParameters(x interf
 	return nil
 }
 
-func validateSecretManagerRegionalSecretIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSecretManagerRegionalSecretIamPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateSecretManagerRegionalSecretIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSecretManagerRegionalSecretIamPolicy_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewSecretManagerRegionalSecretIamPolicyParameters(scope constructs.
 
 	return nil
 }
-

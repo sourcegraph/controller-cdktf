@@ -18,15 +18,15 @@ type SccNotificationConfig interface {
 	SetConfigId(val *string)
 	ConfigIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,32 +60,32 @@ type SccNotificationConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PubsubTopic() *string
 	SetPubsubTopic(val *string)
 	PubsubTopicInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccount() *string
 	StreamingConfig() SccNotificationConfigStreamingConfigOutputReference
 	StreamingConfigInput() *SccNotificationConfigStreamingConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccNotificationConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type SccNotificationConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type SccNotificationConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type SccNotificationConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccNotificationConfig
@@ -178,8 +178,8 @@ func (j *jsiiProxy_SccNotificationConfig) ConfigIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccNotificationConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SccNotificationConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccNotificationConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_SccNotificationConfig) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccNotificationConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_SccNotificationConfig) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccNotificationConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_SccNotificationConfig) PubsubTopicInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccNotificationConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_SccNotificationConfig) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccNotificationConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_SccNotificationConfig) Timeouts() SccNotificationConfigTimeou
 	return returns
 }
 
-func (j *jsiiProxy_SccNotificationConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccNotificationConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -467,7 +467,6 @@ func (j *jsiiProxy_SccNotificationConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_notification_config google_scc_notification_config} Resource.
 func NewSccNotificationConfig(scope constructs.Construct, id *string, config *SccNotificationConfigConfig) SccNotificationConfig {
@@ -480,7 +479,7 @@ func NewSccNotificationConfig(scope constructs.Construct, id *string, config *Sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -493,12 +492,12 @@ func NewSccNotificationConfig_Override(s SccNotificationConfig, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetConfigId(val *string) {
+func (j *jsiiProxy_SccNotificationConfig) SetConfigId(val *string) {
 	if err := j.validateSetConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccNotificationConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_SccNotificationConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccNotificationConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetDescription(val *string) {
+func (j *jsiiProxy_SccNotificationConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccNotificationConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +557,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetId(val *string) {
+func (j *jsiiProxy_SccNotificationConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccNotificationConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetOrganization(val *string) {
+func (j *jsiiProxy_SccNotificationConfig) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccNotificationConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccNotificationConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_SccNotificationConfig)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccNotificationConfig)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_SccNotificationConfig) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func SccNotificationConfig_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func SccNotificationConfig_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccNotificationConfig_IsConstruct(x interface{}) *bool {
+func SccNotificationConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccNotificationConfig_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func SccNotificationConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func SccNotificationConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccNotificationConfig_IsTerraformElement(x interface{}) *bool {
+func SccNotificationConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccNotificationConfig_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func SccNotificationConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func SccNotificationConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccNotificationConfig_IsTerraformResource(x interface{}) *bool {
+func SccNotificationConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccNotificationConfig_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func SccNotificationConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (s *jsiiProxy_SccNotificationConfig) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccNotificationConfig) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccNotificationConfig) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccNotificationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccNotificationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SccNotificationConfig) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (s *jsiiProxy_SccNotificationConfig) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccNotificationConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccNotificationConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -910,7 +909,7 @@ func (s *jsiiProxy_SccNotificationConfig) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (s *jsiiProxy_SccNotificationConfig) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (s *jsiiProxy_SccNotificationConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccNotificationConfig) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccNotificationConfig) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (s *jsiiProxy_SccNotificationConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_SccNotificationConfig) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_SccNotificationConfig) PutStreamingConfig(value *SccNotificat
 	_jsii_.InvokeVoid(
 		s,
 		"putStreamingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,7 +991,7 @@ func (s *jsiiProxy_SccNotificationConfig) PutTimeouts(value *SccNotificationConf
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,8 +1027,8 @@ func (s *jsiiProxy_SccNotificationConfig) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccNotificationConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccNotificationConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1041,8 +1040,8 @@ func (s *jsiiProxy_SccNotificationConfig) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_SccNotificationConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccNotificationConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1054,8 +1053,8 @@ func (s *jsiiProxy_SccNotificationConfig) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_SccNotificationConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccNotificationConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1067,8 +1066,8 @@ func (s *jsiiProxy_SccNotificationConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccNotificationConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccNotificationConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1093,8 +1092,8 @@ func (s *jsiiProxy_SccNotificationConfig) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccNotificationConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccNotificationConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1105,4 +1104,3 @@ func (s *jsiiProxy_SccNotificationConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

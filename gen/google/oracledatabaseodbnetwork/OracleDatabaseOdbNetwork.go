@@ -15,19 +15,19 @@ type OracleDatabaseOdbNetwork interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -75,28 +75,28 @@ type OracleDatabaseOdbNetwork interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseOdbNetworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type OracleDatabaseOdbNetwork interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type OracleDatabaseOdbNetwork interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type OracleDatabaseOdbNetwork interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseOdbNetwork
@@ -171,8 +171,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) Timeouts() OracleDatabaseOdbNetwork
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -560,7 +560,6 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network} Resource.
 func NewOracleDatabaseOdbNetwork(scope constructs.Construct, id *string, config *OracleDatabaseOdbNetworkConfig) OracleDatabaseOdbNetwork {
@@ -573,7 +572,7 @@ func NewOracleDatabaseOdbNetwork(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -586,12 +585,12 @@ func NewOracleDatabaseOdbNetwork_Override(o OracleDatabaseOdbNetwork, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetDeletionProtection(val interface{
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -632,7 +631,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetGcpOracleZone(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetGcpOracleZone(val *string) {
 	if err := j.validateSetGcpOracleZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetGcpOracleZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetOdbNetworkId(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetOdbNetworkId(val *string) {
 	if err := j.validateSetOdbNetworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetOdbNetworkId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func OracleDatabaseOdbNetwork_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func OracleDatabaseOdbNetwork_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseOdbNetwork_IsConstruct(x interface{}) *bool {
+func OracleDatabaseOdbNetwork_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseOdbNetwork_IsConstructParameters(x); err != nil {
@@ -794,7 +793,7 @@ func OracleDatabaseOdbNetwork_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func OracleDatabaseOdbNetwork_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseOdbNetwork_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseOdbNetwork_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseOdbNetwork_IsTerraformElementParameters(x); err != nil {
@@ -813,7 +812,7 @@ func OracleDatabaseOdbNetwork_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func OracleDatabaseOdbNetwork_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseOdbNetwork_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseOdbNetwork_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseOdbNetwork_IsTerraformResourceParameters(x); err != nil {
@@ -832,7 +831,7 @@ func OracleDatabaseOdbNetwork_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseOdbNetwork.OracleDatabaseOdbNetwork",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,31 +856,31 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,15 +1008,15 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1036,7 +1035,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,18 +1062,18 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1107,7 +1106,7 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) PutTimeouts(value *OracleDatabaseOd
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1167,8 +1166,8 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1180,8 +1179,8 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1193,8 +1192,8 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1206,8 +1205,8 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1232,8 +1231,8 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1244,4 +1243,3 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ToTerraform() interface{} {
 
 	return returns
 }
-

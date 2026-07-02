@@ -15,9 +15,9 @@ type OrgPolicyPolicyDryRunSpecRulesValuesOutputReference interface {
 	AllowedValuesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type OrgPolicyPolicyDryRunSpecRulesValuesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type OrgPolicyPolicyDryRunSpecRulesValuesOutputReference interface {
 	ResetDeniedValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) AllowedV
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) Terrafor
 	return returns
 }
 
-
 func NewOrgPolicyPolicyDryRunSpecRulesValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OrgPolicyPolicyDryRunSpecRulesValuesOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewOrgPolicyPolicyDryRunSpecRulesValuesOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewOrgPolicyPolicyDryRunSpecRulesValuesOutputReference_Override(o OrgPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetAllowedValues(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetAllowedValues(val *[]*string) {
 	if err := j.validateSetAllowedValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetAllowe
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetDeniedValues(val *[]*string) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetDeniedValues(val *[]*string) {
 	if err := j.validateSetDeniedValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetDenied
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetInternalValue(val *OrgPolicyPolicyDryRunSpecRulesValues) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetInternalValue(val *OrgPolicyPolicyDryRunSpecRulesValues) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) ComputeF
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetBoole
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetBoole
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetListA
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetNumbe
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetNumbe
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetNumbe
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetStrin
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) GetStrin
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) Interpol
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) ResetDen
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) ToString
 
 	return returns
 }
-

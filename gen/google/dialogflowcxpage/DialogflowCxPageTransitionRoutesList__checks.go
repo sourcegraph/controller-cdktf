@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPageTransitionRoutesListParameters(terraformResource
 
 	return nil
 }
-
