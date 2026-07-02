@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataAlertMethodList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloAnomalyConfigNoDataAlertMethodListParameters(terraformResourc
 
 	return nil
 }
-

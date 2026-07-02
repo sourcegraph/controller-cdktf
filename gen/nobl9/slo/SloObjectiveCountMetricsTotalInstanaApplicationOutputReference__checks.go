@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validatePutGroupByParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validatePutGroupByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetIncludeInternalParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetIncludeInternalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetIncludeSyntheticParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetIncludeSyntheticParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -317,4 +317,3 @@ func validateNewSloObjectiveCountMetricsTotalInstanaApplicationOutputReferencePa
 
 	return nil
 }
-

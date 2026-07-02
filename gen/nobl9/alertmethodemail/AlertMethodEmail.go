@@ -21,15 +21,15 @@ type AlertMethodEmail interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,15 +68,15 @@ type AlertMethodEmail interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	To() *[]*string
@@ -86,9 +86,9 @@ type AlertMethodEmail interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type AlertMethodEmail interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type AlertMethodEmail interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type AlertMethodEmail interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlertMethodEmail
@@ -201,8 +201,8 @@ func (j *jsiiProxy_AlertMethodEmail) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodEmail) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_AlertMethodEmail) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertMethodEmail) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_AlertMethodEmail) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodEmail) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_AlertMethodEmail) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlertMethodEmail) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_AlertMethodEmail) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodEmail) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_AlertMethodEmail) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodEmail) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertMethodEmail) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_AlertMethodEmail) ToInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_email nobl9_alert_method_email} Resource.
 func NewAlertMethodEmail(scope constructs.Construct, id *string, config *AlertMethodEmailConfig) AlertMethodEmail {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewAlertMethodEmail(scope constructs.Construct, id *string, config *AlertMe
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewAlertMethodEmail_Override(a AlertMethodEmail, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetBcc(val *[]*string) {
+func (j *jsiiProxy_AlertMethodEmail) SetBcc(val *[]*string) {
 	if err := j.validateSetBccParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetBcc(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetCc(val *[]*string) {
+func (j *jsiiProxy_AlertMethodEmail) SetCc(val *[]*string) {
 	if err := j.validateSetCcParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetCc(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlertMethodEmail) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetCount(val interface{}) {
+func (j *jsiiProxy_AlertMethodEmail) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlertMethodEmail) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetDescription(val *string) {
+func (j *jsiiProxy_AlertMethodEmail) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetDisplayName(val *string) {
+func (j *jsiiProxy_AlertMethodEmail) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlertMethodEmail) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetId(val *string) {
+func (j *jsiiProxy_AlertMethodEmail) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlertMethodEmail) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetName(val *string) {
+func (j *jsiiProxy_AlertMethodEmail) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetProject(val *string) {
+func (j *jsiiProxy_AlertMethodEmail) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlertMethodEmail) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlertMethodEmail) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_AlertMethodEmail)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodEmail)SetTo(val *[]*string) {
+func (j *jsiiProxy_AlertMethodEmail) SetTo(val *[]*string) {
 	if err := j.validateSetToParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func AlertMethodEmail_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func AlertMethodEmail_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlertMethodEmail_IsConstruct(x interface{}) *bool {
+func AlertMethodEmail_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodEmail_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func AlertMethodEmail_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func AlertMethodEmail_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertMethodEmail_IsTerraformElement(x interface{}) *bool {
+func AlertMethodEmail_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodEmail_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func AlertMethodEmail_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func AlertMethodEmail_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertMethodEmail_IsTerraformResource(x interface{}) *bool {
+func AlertMethodEmail_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodEmail_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func AlertMethodEmail_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodEmail.AlertMethodEmail",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (a *jsiiProxy_AlertMethodEmail) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodEmail) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlertMethodEmail) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodEmail) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertMethodEmail) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (a *jsiiProxy_AlertMethodEmail) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (a *jsiiProxy_AlertMethodEmail) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodEmail) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodEmail) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -946,7 +945,7 @@ func (a *jsiiProxy_AlertMethodEmail) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (a *jsiiProxy_AlertMethodEmail) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (a *jsiiProxy_AlertMethodEmail) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodEmail) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlertMethodEmail) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (a *jsiiProxy_AlertMethodEmail) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (a *jsiiProxy_AlertMethodEmail) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1058,8 +1057,8 @@ func (a *jsiiProxy_AlertMethodEmail) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AlertMethodEmail) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertMethodEmail) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1071,8 +1070,8 @@ func (a *jsiiProxy_AlertMethodEmail) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodEmail) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertMethodEmail) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1084,8 +1083,8 @@ func (a *jsiiProxy_AlertMethodEmail) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodEmail) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodEmail) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1097,8 +1096,8 @@ func (a *jsiiProxy_AlertMethodEmail) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodEmail) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodEmail) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1123,8 +1122,8 @@ func (a *jsiiProxy_AlertMethodEmail) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodEmail) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodEmail) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1135,4 +1134,3 @@ func (a *jsiiProxy_AlertMethodEmail) ToTerraform() interface{} {
 
 	return returns
 }
-

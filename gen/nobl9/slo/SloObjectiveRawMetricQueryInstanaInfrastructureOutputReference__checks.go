@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewSloObjectiveRawMetricQueryInstanaInfrastructureOutputReferencePa
 
 	return nil
 }
-

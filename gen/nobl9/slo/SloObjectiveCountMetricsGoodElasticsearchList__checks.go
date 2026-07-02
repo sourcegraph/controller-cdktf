@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodElasticsearchList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodElasticsearchList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodElasticsearchList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodElasticsearchListParameters(terrafor
 
 	return nil
 }
-

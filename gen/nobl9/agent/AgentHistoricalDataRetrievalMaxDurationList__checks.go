@@ -34,7 +34,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalMaxDurationList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AgentHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAgentHistoricalDataRetrievalMaxDurationListParameters(terraformR
 
 	return nil
 }
-

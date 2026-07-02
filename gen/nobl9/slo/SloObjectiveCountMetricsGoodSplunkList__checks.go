@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodSplunkList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodSplunkListParameters(terraformResour
 
 	return nil
 }
-

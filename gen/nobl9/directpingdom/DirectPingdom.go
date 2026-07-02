@@ -18,15 +18,15 @@ type DirectPingdom interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,9 +52,9 @@ type DirectPingdom interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCollectionEnabled() interface{}
-	SetLogCollectionEnabled(val interface{})
-	LogCollectionEnabledInput() interface{}
+	LogCollectionEnabled() any
+	SetLogCollectionEnabled(val any)
+	LogCollectionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -68,13 +68,13 @@ type DirectPingdom interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectPingdomQueryDelayOutputReference
 	QueryDelayInput() *DirectPingdomQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -85,16 +85,16 @@ type DirectPingdom interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DirectPingdom interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DirectPingdom interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type DirectPingdom interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectPingdom
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DirectPingdom) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectPingdom) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DirectPingdom) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectPingdom) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DirectPingdom) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectPingdom) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DirectPingdom) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) LogCollectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectPingdom) LogCollectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabled",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_DirectPingdom) LogCollectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) LogCollectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectPingdom) LogCollectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabledInput",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_DirectPingdom) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectPingdom) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DirectPingdom) QueryDelayInput() *DirectPingdomQueryDelay {
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectPingdom) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_DirectPingdom) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DirectPingdom) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectPingdom) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,7 +531,6 @@ func (j *jsiiProxy_DirectPingdom) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_pingdom nobl9_direct_pingdom} Resource.
 func NewDirectPingdom(scope constructs.Construct, id *string, config *DirectPingdomConfig) DirectPingdom {
 	_init_.Initialize()
@@ -543,7 +542,7 @@ func NewDirectPingdom(scope constructs.Construct, id *string, config *DirectPing
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewDirectPingdom_Override(d DirectPingdom, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetApiToken(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetApiToken(val *string) {
 	if err := j.validateSetApiTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_DirectPingdom)SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectPingdom) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_DirectPingdom)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectPingdom) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_DirectPingdom)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectPingdom) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DirectPingdom)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetDescription(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DirectPingdom)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_DirectPingdom)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectPingdom) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DirectPingdom)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetId(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_DirectPingdom)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectPingdom) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_DirectPingdom)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetLogCollectionEnabled(val interface{}) {
+func (j *jsiiProxy_DirectPingdom) SetLogCollectionEnabled(val any) {
 	if err := j.validateSetLogCollectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DirectPingdom)SetLogCollectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetName(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DirectPingdom)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetProject(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DirectPingdom)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectPingdom) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DirectPingdom)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectPingdom) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DirectPingdom)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectPingdom) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_DirectPingdom)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectPingdom)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectPingdom) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func DirectPingdom_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func DirectPingdom_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectPingdom_IsConstruct(x interface{}) *bool {
+func DirectPingdom_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectPingdom_IsConstructParameters(x); err != nil {
@@ -775,7 +774,7 @@ func DirectPingdom_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func DirectPingdom_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectPingdom_IsTerraformElement(x interface{}) *bool {
+func DirectPingdom_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectPingdom_IsTerraformElementParameters(x); err != nil {
@@ -794,7 +793,7 @@ func DirectPingdom_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func DirectPingdom_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectPingdom_IsTerraformResource(x interface{}) *bool {
+func DirectPingdom_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectPingdom_IsTerraformResourceParameters(x); err != nil {
@@ -813,7 +812,7 @@ func DirectPingdom_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directPingdom.DirectPingdom",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,31 +837,31 @@ func (d *jsiiProxy_DirectPingdom) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectPingdom) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectPingdom) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectPingdom) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectPingdom) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (d *jsiiProxy_DirectPingdom) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (d *jsiiProxy_DirectPingdom) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (d *jsiiProxy_DirectPingdom) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DirectPingdom) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (d *jsiiProxy_DirectPingdom) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (d *jsiiProxy_DirectPingdom) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DirectPingdom) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,15 +989,15 @@ func (d *jsiiProxy_DirectPingdom) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectPingdom) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectPingdom) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1017,7 +1016,7 @@ func (d *jsiiProxy_DirectPingdom) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (d *jsiiProxy_DirectPingdom) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,18 +1043,18 @@ func (d *jsiiProxy_DirectPingdom) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectPingdom) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectPingdom) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (d *jsiiProxy_DirectPingdom) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (d *jsiiProxy_DirectPingdom) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (d *jsiiProxy_DirectPingdom) PutQueryDelay(value *DirectPingdomQueryDelay) 
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (d *jsiiProxy_DirectPingdom) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectPingdom) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectPingdom) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1177,8 +1176,8 @@ func (d *jsiiProxy_DirectPingdom) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DirectPingdom) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectPingdom) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1190,8 +1189,8 @@ func (d *jsiiProxy_DirectPingdom) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DirectPingdom) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectPingdom) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1203,8 +1202,8 @@ func (d *jsiiProxy_DirectPingdom) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectPingdom) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectPingdom) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1229,8 +1228,8 @@ func (d *jsiiProxy_DirectPingdom) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectPingdom) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectPingdom) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1241,4 +1240,3 @@ func (d *jsiiProxy_DirectPingdom) ToTerraform() interface{} {
 
 	return returns
 }
-

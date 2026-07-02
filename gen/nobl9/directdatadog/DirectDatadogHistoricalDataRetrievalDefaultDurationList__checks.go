@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectDatadogHistoricalDataRetrievalDefaultDurationList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectDatadogHistoricalDataRetrievalDefaultDurationListParameter
 
 	return nil
 }
-

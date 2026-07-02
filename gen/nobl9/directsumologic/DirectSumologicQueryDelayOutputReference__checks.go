@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectSumologicQueryDelayOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DirectSumologicQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectSumologicQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectSumologicQueryDelayOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

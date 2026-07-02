@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectThousandeyesQueryDelayOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyesQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectThousandeyesQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectThousandeyesQueryDelayOutputReferenceParameters(terraformR
 
 	return nil
 }
-

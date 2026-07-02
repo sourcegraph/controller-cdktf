@@ -18,15 +18,15 @@ type DirectSplunkObservability interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,13 +65,13 @@ type DirectSplunkObservability interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectSplunkObservabilityQueryDelayOutputReference
 	QueryDelayInput() *DirectSplunkObservabilityQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Realm() *string
 	SetRealm(val *string)
 	RealmInput() *string
@@ -85,16 +85,16 @@ type DirectSplunkObservability interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DirectSplunkObservability interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DirectSplunkObservability interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type DirectSplunkObservability interface {
 	ResetQueryDelay()
 	ResetReleaseChannel()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectSplunkObservability
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DirectSplunkObservability) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectSplunkObservability) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DirectSplunkObservability) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectSplunkObservability) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DirectSplunkObservability) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectSplunkObservability) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_DirectSplunkObservability) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectSplunkObservability) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_DirectSplunkObservability) QueryDelayInput() *DirectSplunkObs
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectSplunkObservability) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_DirectSplunkObservability) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservability) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectSplunkObservability) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_DirectSplunkObservability) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_splunk_observability nobl9_direct_splunk_observability} Resource.
 func NewDirectSplunkObservability(scope constructs.Construct, id *string, config *DirectSplunkObservabilityConfig) DirectSplunkObservability {
 	_init_.Initialize()
@@ -542,7 +541,7 @@ func NewDirectSplunkObservability(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewDirectSplunkObservability_Override(d DirectSplunkObservability, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetAccessToken(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetAccessToken(val *string) {
 	if err := j.validateSetAccessTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetAccessToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectSplunkObservability) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectSplunkObservability) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetDescription(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectSplunkObservability) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetId(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectSplunkObservability) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetName(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetProject(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectSplunkObservability) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,7 +682,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectSplunkObservability) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetRealm(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetRealm(val *string) {
 	if err := j.validateSetRealmParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetRealm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_DirectSplunkObservability)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservability)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectSplunkObservability) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func DirectSplunkObservability_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func DirectSplunkObservability_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectSplunkObservability_IsConstruct(x interface{}) *bool {
+func DirectSplunkObservability_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectSplunkObservability_IsConstructParameters(x); err != nil {
@@ -774,7 +773,7 @@ func DirectSplunkObservability_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func DirectSplunkObservability_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectSplunkObservability_IsTerraformElement(x interface{}) *bool {
+func DirectSplunkObservability_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectSplunkObservability_IsTerraformElementParameters(x); err != nil {
@@ -793,7 +792,7 @@ func DirectSplunkObservability_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func DirectSplunkObservability_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectSplunkObservability_IsTerraformResource(x interface{}) *bool {
+func DirectSplunkObservability_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectSplunkObservability_IsTerraformResourceParameters(x); err != nil {
@@ -812,7 +811,7 @@ func DirectSplunkObservability_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservability",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,31 +836,31 @@ func (d *jsiiProxy_DirectSplunkObservability) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectSplunkObservability) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectSplunkObservability) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (d *jsiiProxy_DirectSplunkObservability) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,15 +988,15 @@ func (d *jsiiProxy_DirectSplunkObservability) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectSplunkObservability) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DirectSplunkObservability) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (d *jsiiProxy_DirectSplunkObservability) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,18 +1042,18 @@ func (d *jsiiProxy_DirectSplunkObservability) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectSplunkObservability) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (d *jsiiProxy_DirectSplunkObservability) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (d *jsiiProxy_DirectSplunkObservability) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (d *jsiiProxy_DirectSplunkObservability) PutQueryDelay(value *DirectSplunkO
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1155,8 +1154,8 @@ func (d *jsiiProxy_DirectSplunkObservability) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectSplunkObservability) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1168,8 +1167,8 @@ func (d *jsiiProxy_DirectSplunkObservability) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectSplunkObservability) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1181,8 +1180,8 @@ func (d *jsiiProxy_DirectSplunkObservability) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectSplunkObservability) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1194,8 +1193,8 @@ func (d *jsiiProxy_DirectSplunkObservability) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectSplunkObservability) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DirectSplunkObservability) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservability) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectSplunkObservability) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1232,4 +1231,3 @@ func (d *jsiiProxy_DirectSplunkObservability) ToTerraform() interface{} {
 
 	return returns
 }
-

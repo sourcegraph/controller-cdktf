@@ -19,7 +19,7 @@ func (a *jsiiProxy_AlertMethodMsteams) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (a *jsiiProxy_AlertMethodMsteams) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AlertMethodMsteams) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AlertMethodMsteams) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (a *jsiiProxy_AlertMethodMsteams) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AlertMethodMsteams) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAlertMethodMsteams_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateAlertMethodMsteams_IsConstructParameters(x interface{}) error {
+func validateAlertMethodMsteams_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAlertMethodMsteams_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAlertMethodMsteams_IsTerraformElementParameters(x interface{}) error {
+func validateAlertMethodMsteams_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAlertMethodMsteams_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateAlertMethodMsteams_IsTerraformResourceParameters(x interface{}) error {
+func validateAlertMethodMsteams_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateAlertMethodMsteams_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodMsteams) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AlertMethodMsteams) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_AlertMethodMsteams) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodMsteams) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AlertMethodMsteams) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AlertMethodMsteams) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodMsteams) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AlertMethodMsteams) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewAlertMethodMsteamsParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

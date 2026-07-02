@@ -114,7 +114,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveCountMetricsBadPingdomOutputReferenceParameters(terr
 
 	return nil
 }
-

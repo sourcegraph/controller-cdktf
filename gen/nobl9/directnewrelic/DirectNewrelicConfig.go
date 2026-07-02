@@ -6,9 +6,9 @@ import (
 
 type DirectNewrelicConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DirectNewrelicConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID number assigned to the New Relic user account.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic#account_id DirectNewrelic#account_id}
@@ -57,7 +57,7 @@ type DirectNewrelicConfig struct {
 	// [Logs documentation](https://docs.nobl9.com/features/slo-troubleshooting/event-logs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic#log_collection_enabled DirectNewrelic#log_collection_enabled}
-	LogCollectionEnabled interface{} `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
+	LogCollectionEnabled any `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
 	// query_delay block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic#query_delay DirectNewrelic#query_delay}
@@ -73,4 +73,3 @@ type DirectNewrelicConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_newrelic#source_of DirectNewrelic#source_of}
 	SourceOf *[]*string `field:"optional" json:"sourceOf" yaml:"sourceOf"`
 }
-

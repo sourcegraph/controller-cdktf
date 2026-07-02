@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryPingdomList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryPingdomListParameters(terraformResourc
 
 	return nil
 }
-

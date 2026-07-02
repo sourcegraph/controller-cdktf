@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveCountMetricsGoodSplunkOutputReferenceParameters(terr
 
 	return nil
 }
-

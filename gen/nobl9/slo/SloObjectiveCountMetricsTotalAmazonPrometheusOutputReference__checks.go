@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveCountMetricsTotalAmazonPrometheusOutputReferencePara
 
 	return nil
 }
-

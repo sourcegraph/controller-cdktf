@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validateInter
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutLabelParameters(value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutLa
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutServiceParameters(value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutServiceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutSe
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutSloParameters(value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validatePutSloParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -299,4 +299,3 @@ func validateNewReportSystemHealthReviewFiltersOutputReferenceParameters(terrafo
 
 	return nil
 }
-

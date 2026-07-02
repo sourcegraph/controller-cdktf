@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectCloudwatchHistoricalDataRetrievalDefaultDurationOutputRefe
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_AgentLogicMonitorConfigOutputReference) validateSetAccountPar
 	return nil
 }
 
-func (j *jsiiProxy_AgentLogicMonitorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentLogicMonitorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentLogicMonitorConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

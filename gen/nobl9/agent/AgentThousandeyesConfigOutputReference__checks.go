@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentThousandeyesConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AgentThousandeyesConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentThousandeyesConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentThousandeyesConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

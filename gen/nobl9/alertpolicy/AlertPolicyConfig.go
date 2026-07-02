@@ -6,9 +6,9 @@ import (
 
 type AlertPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type AlertPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#condition AlertPolicy#condition}
-	Condition interface{} `field:"required" json:"condition" yaml:"condition"`
+	Condition any `field:"required" json:"condition" yaml:"condition"`
 	// Unique name of the resource, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#name AlertPolicy#name}
@@ -38,7 +38,7 @@ type AlertPolicyConfig struct {
 	// alert_method block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#alert_method AlertPolicy#alert_method}
-	AlertMethod interface{} `field:"optional" json:"alertMethod" yaml:"alertMethod"`
+	AlertMethod any `field:"optional" json:"alertMethod" yaml:"alertMethod"`
 	// [Metadata annotations](https://docs.nobl9.com/features/labels/#metadata-annotations) attached to the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_policy#annotations AlertPolicy#annotations}
@@ -63,4 +63,3 @@ type AlertPolicyConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
-

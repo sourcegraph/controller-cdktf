@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectDynatraceHistoricalDataRetrievalMaxDurationListParameters(
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type BudgetAdjustment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -38,7 +38,7 @@ type BudgetAdjustment interface {
 	SetDuration(val *string)
 	DurationInput() *string
 	Filters() BudgetAdjustmentFiltersList
-	FiltersInput() interface{}
+	FiltersInput() any
 	FirstEventStart() *string
 	SetFirstEventStart(val *string)
 	FirstEventStartInput() *string
@@ -67,27 +67,27 @@ type BudgetAdjustment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rrule() *string
 	SetRrule(val *string)
 	RruleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type BudgetAdjustment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,14 +117,14 @@ type BudgetAdjustment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilters(value interface{})
+	PutFilters(value any)
 	ResetDescription()
 	ResetDisplayName()
 	ResetFilters()
@@ -133,17 +133,17 @@ type BudgetAdjustment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRrule()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BudgetAdjustment
@@ -161,8 +161,8 @@ func (j *jsiiProxy_BudgetAdjustment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetAdjustment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_BudgetAdjustment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BudgetAdjustment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_BudgetAdjustment) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetAdjustment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_BudgetAdjustment) Filters() BudgetAdjustmentFiltersList {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) FiltersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetAdjustment) FiltersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filtersInput",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_BudgetAdjustment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BudgetAdjustment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_BudgetAdjustment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BudgetAdjustment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_BudgetAdjustment) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_BudgetAdjustment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BudgetAdjustment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_BudgetAdjustment) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/budget_adjustment nobl9_budget_adjustment} Resource.
 func NewBudgetAdjustment(scope constructs.Construct, id *string, config *BudgetAdjustmentConfig) BudgetAdjustment {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewBudgetAdjustment(scope constructs.Construct, id *string, config *BudgetA
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewBudgetAdjustment_Override(b BudgetAdjustment, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetConnection(val interface{}) {
+func (j *jsiiProxy_BudgetAdjustment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetCount(val interface{}) {
+func (j *jsiiProxy_BudgetAdjustment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BudgetAdjustment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetDescription(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetDisplayName(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetDuration(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetDuration(val *string) {
 	if err := j.validateSetDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetFirstEventStart(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetFirstEventStart(val *string) {
 	if err := j.validateSetFirstEventStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetFirstEventStart(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BudgetAdjustment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetId(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BudgetAdjustment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetName(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BudgetAdjustment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -624,7 +623,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BudgetAdjustment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_BudgetAdjustment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BudgetAdjustment)SetRrule(val *string) {
+func (j *jsiiProxy_BudgetAdjustment) SetRrule(val *string) {
 	if err := j.validateSetRruleParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func BudgetAdjustment_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func BudgetAdjustment_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BudgetAdjustment_IsConstruct(x interface{}) *bool {
+func BudgetAdjustment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetAdjustment_IsConstructParameters(x); err != nil {
@@ -693,7 +692,7 @@ func BudgetAdjustment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func BudgetAdjustment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BudgetAdjustment_IsTerraformElement(x interface{}) *bool {
+func BudgetAdjustment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetAdjustment_IsTerraformElementParameters(x); err != nil {
@@ -712,7 +711,7 @@ func BudgetAdjustment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func BudgetAdjustment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BudgetAdjustment_IsTerraformResource(x interface{}) *bool {
+func BudgetAdjustment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBudgetAdjustment_IsTerraformResourceParameters(x); err != nil {
@@ -731,7 +730,7 @@ func BudgetAdjustment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.budgetAdjustment.BudgetAdjustment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,31 +755,31 @@ func (b *jsiiProxy_BudgetAdjustment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BudgetAdjustment) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BudgetAdjustment) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BudgetAdjustment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BudgetAdjustment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (b *jsiiProxy_BudgetAdjustment) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,15 +907,15 @@ func (b *jsiiProxy_BudgetAdjustment) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BudgetAdjustment) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetAdjustment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -935,7 +934,7 @@ func (b *jsiiProxy_BudgetAdjustment) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -948,7 +947,7 @@ func (b *jsiiProxy_BudgetAdjustment) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,18 +961,18 @@ func (b *jsiiProxy_BudgetAdjustment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BudgetAdjustment) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BudgetAdjustment) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -984,7 +983,7 @@ func (b *jsiiProxy_BudgetAdjustment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -995,18 +994,18 @@ func (b *jsiiProxy_BudgetAdjustment) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BudgetAdjustment) PutFilters(value interface{}) {
+func (b *jsiiProxy_BudgetAdjustment) PutFilters(value any) {
 	if err := b.validatePutFiltersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1058,8 +1057,8 @@ func (b *jsiiProxy_BudgetAdjustment) ResetRrule() {
 	)
 }
 
-func (b *jsiiProxy_BudgetAdjustment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BudgetAdjustment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1071,8 +1070,8 @@ func (b *jsiiProxy_BudgetAdjustment) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (b *jsiiProxy_BudgetAdjustment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BudgetAdjustment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1084,8 +1083,8 @@ func (b *jsiiProxy_BudgetAdjustment) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (b *jsiiProxy_BudgetAdjustment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetAdjustment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1097,8 +1096,8 @@ func (b *jsiiProxy_BudgetAdjustment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BudgetAdjustment) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetAdjustment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1123,8 +1122,8 @@ func (b *jsiiProxy_BudgetAdjustment) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BudgetAdjustment) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BudgetAdjustment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1135,4 +1134,3 @@ func (b *jsiiProxy_BudgetAdjustment) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -101,7 +101,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCompositeParameters(v
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCountMetricsParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCountMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) validatePutCountMetricsParameter
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) validatePutRawMetricParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveOutputReference) validatePutRawMetricParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,7 +244,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference) validateSetDisplayNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,7 +284,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference) validateSetOpParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) validateSetPrimaryParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveOutputReference) validateSetPrimaryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -363,4 +363,3 @@ func validateNewSloObjectiveOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

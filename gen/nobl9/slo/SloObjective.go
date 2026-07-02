@@ -1,6 +1,5 @@
 package slo
 
-
 type SloObjective struct {
 	// The numeric target for your objective.
 	//
@@ -13,7 +12,7 @@ type SloObjective struct {
 	// count_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#count_metrics Slo#count_metrics}
-	CountMetrics interface{} `field:"optional" json:"countMetrics" yaml:"countMetrics"`
+	CountMetrics any `field:"optional" json:"countMetrics" yaml:"countMetrics"`
 	// Name to be displayed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#display_name Slo#display_name}
@@ -29,11 +28,11 @@ type SloObjective struct {
 	// Is objective marked as primary.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#primary Slo#primary}
-	Primary interface{} `field:"optional" json:"primary" yaml:"primary"`
+	Primary any `field:"optional" json:"primary" yaml:"primary"`
 	// raw_metric block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#raw_metric Slo#raw_metric}
-	RawMetric interface{} `field:"optional" json:"rawMetric" yaml:"rawMetric"`
+	RawMetric any `field:"optional" json:"rawMetric" yaml:"rawMetric"`
 	// Designated value for slice.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#time_slice_target Slo#time_slice_target}
@@ -45,4 +44,3 @@ type SloObjective struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#value Slo#value}
 	Value *float64 `field:"optional" json:"value" yaml:"value"`
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value interface{}) error {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value interface{}) error {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewDirectLogicMonitorHistoricalDataRetrievalOutputReferenceParamete
 
 	return nil
 }
-

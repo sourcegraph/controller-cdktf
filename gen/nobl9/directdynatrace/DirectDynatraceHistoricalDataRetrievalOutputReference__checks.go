@@ -90,7 +90,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value interface{}) error {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validatePutDefaultDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value interface{}) error {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validatePutMaxDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewDirectDynatraceHistoricalDataRetrievalOutputReferenceParameters(
 
 	return nil
 }
-

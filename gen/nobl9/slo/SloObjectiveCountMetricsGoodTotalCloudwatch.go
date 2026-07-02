@@ -1,6 +1,5 @@
 package slo
 
-
 type SloObjectiveCountMetricsGoodTotalCloudwatch struct {
 	// Region of the CloudWatch instance.
 	//
@@ -13,7 +12,7 @@ type SloObjectiveCountMetricsGoodTotalCloudwatch struct {
 	// dimensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#dimensions Slo#dimensions}
-	Dimensions interface{} `field:"optional" json:"dimensions" yaml:"dimensions"`
+	Dimensions any `field:"optional" json:"dimensions" yaml:"dimensions"`
 	// JSON query.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#json Slo#json}
@@ -35,4 +34,3 @@ type SloObjectiveCountMetricsGoodTotalCloudwatch struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#stat Slo#stat}
 	Stat *string `field:"optional" json:"stat" yaml:"stat"`
 }
-

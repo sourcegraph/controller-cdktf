@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentHoneycombConfigOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AgentHoneycombConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentHoneycombConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentHoneycombConfigOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

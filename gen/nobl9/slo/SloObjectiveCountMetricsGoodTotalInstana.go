@@ -1,6 +1,5 @@
 package slo
 
-
 type SloObjectiveCountMetricsGoodTotalInstana struct {
 	// Instana metric type 'application' or 'infrastructure'.
 	//
@@ -9,10 +8,9 @@ type SloObjectiveCountMetricsGoodTotalInstana struct {
 	// application block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#application Slo#application}
-	Application interface{} `field:"optional" json:"application" yaml:"application"`
+	Application any `field:"optional" json:"application" yaml:"application"`
 	// infrastructure block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#infrastructure Slo#infrastructure}
-	Infrastructure interface{} `field:"optional" json:"infrastructure" yaml:"infrastructure"`
+	Infrastructure any `field:"optional" json:"infrastructure" yaml:"infrastructure"`
 }
-

@@ -21,9 +21,9 @@ type Slo interface {
 	AnomalyConfig() SloAnomalyConfigOutputReference
 	AnomalyConfigInput() *SloAnomalyConfig
 	Attachment() SloAttachmentList
-	AttachmentInput() interface{}
+	AttachmentInput() any
 	Attachments() SloAttachmentsList
-	AttachmentsInput() interface{}
+	AttachmentsInput() any
 	BudgetingMethod() *string
 	SetBudgetingMethod(val *string)
 	BudgetingMethodInput() *string
@@ -32,15 +32,15 @@ type Slo interface {
 	Composite() SloCompositeOutputReference
 	CompositeInput() *SloComposite
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,7 +65,7 @@ type Slo interface {
 	Indicator() SloIndicatorOutputReference
 	IndicatorInput() *SloIndicator
 	Label() SloLabelList
-	LabelInput() interface{}
+	LabelInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,7 +76,7 @@ type Slo interface {
 	// The tree node.
 	Node() constructs.Node
 	Objective() SloObjectiveList
-	ObjectiveInput() interface{}
+	ObjectiveInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -85,11 +85,11 @@ type Slo interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetrieveHistoricalDataFrom() *string
 	SetRetrieveHistoricalDataFrom(val *string)
 	RetrieveHistoricalDataFromInput() *string
@@ -99,7 +99,7 @@ type Slo interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tier() *string
@@ -111,9 +111,9 @@ type Slo interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type Slo interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,7 +143,7 @@ type Slo interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,12 +151,12 @@ type Slo interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnomalyConfig(value *SloAnomalyConfig)
-	PutAttachment(value interface{})
-	PutAttachments(value interface{})
+	PutAttachment(value any)
+	PutAttachments(value any)
 	PutComposite(value *SloComposite)
 	PutIndicator(value *SloIndicator)
-	PutLabel(value interface{})
-	PutObjective(value interface{})
+	PutLabel(value any)
+	PutObjective(value any)
 	PutTimeWindow(value *SloTimeWindow)
 	ResetAlertPolicies()
 	ResetAnnotations()
@@ -174,17 +174,17 @@ type Slo interface {
 	ResetOverrideLogicalId()
 	ResetRetrieveHistoricalDataFrom()
 	ResetTier()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Slo
@@ -262,8 +262,8 @@ func (j *jsiiProxy_Slo) Attachment() SloAttachmentList {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) AttachmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) AttachmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attachmentInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_Slo) Attachments() SloAttachmentsList {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) AttachmentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) AttachmentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attachmentsInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_Slo) CompositeInput() *SloComposite {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_Slo) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Slo) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_Slo) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_Slo) Label() SloLabelList {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) LabelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) LabelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelInput",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_Slo) Objective() SloObjectiveList {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) ObjectiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) ObjectiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"objectiveInput",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_Slo) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Slo) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_Slo) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Slo) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Slo) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -672,8 +672,8 @@ func (j *jsiiProxy_Slo) TerraformGeneratorMetadata() *cdktf.TerraformProviderGen
 	return returns
 }
 
-func (j *jsiiProxy_Slo) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Slo) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -732,7 +732,6 @@ func (j *jsiiProxy_Slo) TimeWindowInput() *SloTimeWindow {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo nobl9_slo} Resource.
 func NewSlo(scope constructs.Construct, id *string, config *SloConfig) Slo {
 	_init_.Initialize()
@@ -744,7 +743,7 @@ func NewSlo(scope constructs.Construct, id *string, config *SloConfig) Slo {
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.Slo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -757,12 +756,12 @@ func NewSlo_Override(s Slo, scope constructs.Construct, id *string, config *SloC
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.Slo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Slo)SetAlertPolicies(val *[]*string) {
+func (j *jsiiProxy_Slo) SetAlertPolicies(val *[]*string) {
 	if err := j.validateSetAlertPoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_Slo)SetAlertPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_Slo) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_Slo)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetBudgetingMethod(val *string) {
+func (j *jsiiProxy_Slo) SetBudgetingMethod(val *string) {
 	if err := j.validateSetBudgetingMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_Slo)SetBudgetingMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetConnection(val interface{}) {
+func (j *jsiiProxy_Slo) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_Slo)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetCount(val interface{}) {
+func (j *jsiiProxy_Slo) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_Slo)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Slo) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -825,7 +824,7 @@ func (j *jsiiProxy_Slo)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetDescription(val *string) {
+func (j *jsiiProxy_Slo) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_Slo)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetDisplayName(val *string) {
+func (j *jsiiProxy_Slo) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_Slo)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Slo) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -855,7 +854,7 @@ func (j *jsiiProxy_Slo)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetId(val *string) {
+func (j *jsiiProxy_Slo) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_Slo)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Slo) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_Slo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetName(val *string) {
+func (j *jsiiProxy_Slo) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_Slo)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetProject(val *string) {
+func (j *jsiiProxy_Slo) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_Slo)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Slo) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -907,7 +906,7 @@ func (j *jsiiProxy_Slo)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Slo) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_Slo)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetRetrieveHistoricalDataFrom(val *string) {
+func (j *jsiiProxy_Slo) SetRetrieveHistoricalDataFrom(val *string) {
 	if err := j.validateSetRetrieveHistoricalDataFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_Slo)SetRetrieveHistoricalDataFrom(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetService(val *string) {
+func (j *jsiiProxy_Slo) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_Slo)SetService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Slo)SetTier(val *string) {
+func (j *jsiiProxy_Slo) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func Slo_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.slo.Slo",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func Slo_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Slo_IsConstruct(x interface{}) *bool {
+func Slo_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlo_IsConstructParameters(x); err != nil {
@@ -998,7 +997,7 @@ func Slo_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.slo.Slo",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func Slo_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Slo_IsTerraformElement(x interface{}) *bool {
+func Slo_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlo_IsTerraformElementParameters(x); err != nil {
@@ -1017,7 +1016,7 @@ func Slo_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.slo.Slo",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func Slo_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Slo_IsTerraformResource(x interface{}) *bool {
+func Slo_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlo_IsTerraformResourceParameters(x); err != nil {
@@ -1036,7 +1035,7 @@ func Slo_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.slo.Slo",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1061,31 +1060,31 @@ func (s *jsiiProxy_Slo) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Slo) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Slo) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Slo) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Slo) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (s *jsiiProxy_Slo) GetBooleanAttribute(terraformAttribute *string) cdktf.IR
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func (s *jsiiProxy_Slo) GetBooleanMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,7 +1132,7 @@ func (s *jsiiProxy_Slo) GetListAttribute(terraformAttribute *string) *[]*string 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func (s *jsiiProxy_Slo) GetNumberAttribute(terraformAttribute *string) *float64 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func (s *jsiiProxy_Slo) GetNumberListAttribute(terraformAttribute *string) *[]*f
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,7 +1180,7 @@ func (s *jsiiProxy_Slo) GetNumberMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1197,7 +1196,7 @@ func (s *jsiiProxy_Slo) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,15 +1212,15 @@ func (s *jsiiProxy_Slo) GetStringMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Slo) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Slo) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1240,7 +1239,7 @@ func (s *jsiiProxy_Slo) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1253,7 +1252,7 @@ func (s *jsiiProxy_Slo) InterpolationForAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1267,18 +1266,18 @@ func (s *jsiiProxy_Slo) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Slo) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Slo) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1289,7 +1288,7 @@ func (s *jsiiProxy_Slo) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1300,7 +1299,7 @@ func (s *jsiiProxy_Slo) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1311,29 +1310,29 @@ func (s *jsiiProxy_Slo) PutAnomalyConfig(value *SloAnomalyConfig) {
 	_jsii_.InvokeVoid(
 		s,
 		"putAnomalyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_Slo) PutAttachment(value interface{}) {
+func (s *jsiiProxy_Slo) PutAttachment(value any) {
 	if err := s.validatePutAttachmentParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAttachment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_Slo) PutAttachments(value interface{}) {
+func (s *jsiiProxy_Slo) PutAttachments(value any) {
 	if err := s.validatePutAttachmentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAttachments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1344,7 +1343,7 @@ func (s *jsiiProxy_Slo) PutComposite(value *SloComposite) {
 	_jsii_.InvokeVoid(
 		s,
 		"putComposite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1355,29 +1354,29 @@ func (s *jsiiProxy_Slo) PutIndicator(value *SloIndicator) {
 	_jsii_.InvokeVoid(
 		s,
 		"putIndicator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_Slo) PutLabel(value interface{}) {
+func (s *jsiiProxy_Slo) PutLabel(value any) {
 	if err := s.validatePutLabelParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLabel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_Slo) PutObjective(value interface{}) {
+func (s *jsiiProxy_Slo) PutObjective(value any) {
 	if err := s.validatePutObjectiveParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putObjective",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1388,7 +1387,7 @@ func (s *jsiiProxy_Slo) PutTimeWindow(value *SloTimeWindow) {
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1504,8 +1503,8 @@ func (s *jsiiProxy_Slo) ResetTier() {
 	)
 }
 
-func (s *jsiiProxy_Slo) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Slo) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1517,8 +1516,8 @@ func (s *jsiiProxy_Slo) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Slo) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Slo) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1530,8 +1529,8 @@ func (s *jsiiProxy_Slo) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Slo) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Slo) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1543,8 +1542,8 @@ func (s *jsiiProxy_Slo) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Slo) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Slo) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1569,8 +1568,8 @@ func (s *jsiiProxy_Slo) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Slo) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Slo) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1581,4 +1580,3 @@ func (s *jsiiProxy_Slo) ToTerraform() interface{} {
 
 	return returns
 }
-

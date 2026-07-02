@@ -15,15 +15,15 @@ type AlertMethodPagerduty interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,26 +65,26 @@ type AlertMethodPagerduty interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SendResolution() AlertMethodPagerdutySendResolutionOutputReference
 	SendResolutionInput() *AlertMethodPagerdutySendResolution
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type AlertMethodPagerduty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type AlertMethodPagerduty interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type AlertMethodPagerduty interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSendResolution()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlertMethodPagerduty
@@ -158,8 +158,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_AlertMethodPagerduty) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertMethodPagerduty) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_AlertMethodPagerduty) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/alert_method_pagerduty nobl9_alert_method_pagerduty} Resource.
 func NewAlertMethodPagerduty(scope constructs.Construct, id *string, config *AlertMethodPagerdutyConfig) AlertMethodPagerduty {
 	_init_.Initialize()
@@ -460,7 +459,7 @@ func NewAlertMethodPagerduty(scope constructs.Construct, id *string, config *Ale
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewAlertMethodPagerduty_Override(a AlertMethodPagerduty, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetCount(val interface{}) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetDescription(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetDisplayName(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetId(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetIntegrationKey(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetIntegrationKey(val *string) {
 	if err := j.validateSetIntegrationKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetIntegrationKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetName(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetProject(val *string) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_AlertMethodPagerduty)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_AlertMethodPagerduty)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlertMethodPagerduty) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func AlertMethodPagerduty_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func AlertMethodPagerduty_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlertMethodPagerduty_IsConstruct(x interface{}) *bool {
+func AlertMethodPagerduty_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodPagerduty_IsConstructParameters(x); err != nil {
@@ -659,7 +658,7 @@ func AlertMethodPagerduty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func AlertMethodPagerduty_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertMethodPagerduty_IsTerraformElement(x interface{}) *bool {
+func AlertMethodPagerduty_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodPagerduty_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func AlertMethodPagerduty_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func AlertMethodPagerduty_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertMethodPagerduty_IsTerraformResource(x interface{}) *bool {
+func AlertMethodPagerduty_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertMethodPagerduty_IsTerraformResourceParameters(x); err != nil {
@@ -697,7 +696,7 @@ func AlertMethodPagerduty_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,31 +721,31 @@ func (a *jsiiProxy_AlertMethodPagerduty) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlertMethodPagerduty) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertMethodPagerduty) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,15 +873,15 @@ func (a *jsiiProxy_AlertMethodPagerduty) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -901,7 +900,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -914,7 +913,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,18 +927,18 @@ func (a *jsiiProxy_AlertMethodPagerduty) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlertMethodPagerduty) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -950,7 +949,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -961,7 +960,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,7 +971,7 @@ func (a *jsiiProxy_AlertMethodPagerduty) PutSendResolution(value *AlertMethodPag
 	_jsii_.InvokeVoid(
 		a,
 		"putSendResolution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (a *jsiiProxy_AlertMethodPagerduty) ResetSendResolution() {
 	)
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1037,8 +1036,8 @@ func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1050,8 +1049,8 @@ func (a *jsiiProxy_AlertMethodPagerduty) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1063,8 +1062,8 @@ func (a *jsiiProxy_AlertMethodPagerduty) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1089,8 +1088,8 @@ func (a *jsiiProxy_AlertMethodPagerduty) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertMethodPagerduty) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertMethodPagerduty) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1101,4 +1100,3 @@ func (a *jsiiProxy_AlertMethodPagerduty) ToTerraform() interface{} {
 
 	return returns
 }
-

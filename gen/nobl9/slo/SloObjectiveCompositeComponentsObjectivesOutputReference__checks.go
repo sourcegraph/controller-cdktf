@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) validatePutCompositeObjectiveParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) validatePutCompositeObjectiveParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewSloObjectiveCompositeComponentsObjectivesOutputReferenceParamete
 
 	return nil
 }
-

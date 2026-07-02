@@ -12,9 +12,9 @@ type DirectLogicMonitorHistoricalDataRetrievalOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,13 +26,13 @@ type DirectLogicMonitorHistoricalDataRetrievalOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DefaultDuration() DirectLogicMonitorHistoricalDataRetrievalDefaultDurationList
-	DefaultDurationInput() interface{}
+	DefaultDurationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DirectLogicMonitorHistoricalDataRetrieval
 	SetInternalValue(val *DirectLogicMonitorHistoricalDataRetrieval)
 	MaxDuration() DirectLogicMonitorHistoricalDataRetrievalMaxDurationList
-	MaxDurationInput() interface{}
+	MaxDurationInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type DirectLogicMonitorHistoricalDataRetrievalOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,11 +65,11 @@ type DirectLogicMonitorHistoricalDataRetrievalOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDefaultDuration(value interface{})
-	PutMaxDuration(value interface{})
+	PutDefaultDuration(value any)
+	PutMaxDuration(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Def
 	return returns
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) DefaultDurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) DefaultDurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultDurationInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Max
 	return returns
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) MaxDurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) MaxDurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"maxDurationInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Ter
 	return returns
 }
 
-
 func NewDirectLogicMonitorHistoricalDataRetrievalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectLogicMonitorHistoricalDataRetrievalOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDirectLogicMonitorHistoricalDataRetrievalOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDirectLogicMonitorHistoricalDataRetrievalOutputReference_Override(d Dire
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directLogicMonitor.DirectLogicMonitorHistoricalDataRetrievalOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetInternalValue(val *DirectLogicMonitorHistoricalDataRetrieval) {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) SetInternalValue(val *DirectLogicMonitorHistoricalDataRetrieval) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Com
 	return returns
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,45 +453,45 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Int
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) PutDefaultDuration(value interface{}) {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) PutDefaultDuration(value any) {
 	if err := d.validatePutDefaultDurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDefaultDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) PutMaxDuration(value interface{}) {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) PutMaxDuration(value any) {
 	if err := d.validatePutMaxDurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMaxDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalOutputReference) ToS
 
 	return returns
 }
-

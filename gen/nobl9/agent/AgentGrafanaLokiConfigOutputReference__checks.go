@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentGrafanaLokiConfigOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_AgentGrafanaLokiConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentGrafanaLokiConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentGrafanaLokiConfigOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

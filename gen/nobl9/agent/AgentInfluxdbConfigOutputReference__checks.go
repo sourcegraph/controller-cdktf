@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentInfluxdbConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AgentInfluxdbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentInfluxdbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentInfluxdbConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

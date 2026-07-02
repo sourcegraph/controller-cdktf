@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentDynatraceConfigOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

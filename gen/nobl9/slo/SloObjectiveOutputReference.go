@@ -12,9 +12,9 @@ type SloObjectiveOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -23,7 +23,7 @@ type SloObjectiveOutputReference interface {
 	Composite() SloObjectiveCompositeOutputReference
 	CompositeInput() *SloObjectiveComposite
 	CountMetrics() SloObjectiveCountMetricsList
-	CountMetricsInput() interface{}
+	CountMetricsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -34,19 +34,19 @@ type SloObjectiveOutputReference interface {
 	DisplayNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Op() *string
 	SetOp(val *string)
 	OpInput() *string
-	Primary() interface{}
-	SetPrimary(val interface{})
-	PrimaryInput() interface{}
+	Primary() any
+	SetPrimary(val any)
+	PrimaryInput() any
 	RawMetric() SloObjectiveRawMetricList
-	RawMetricInput() interface{}
+	RawMetricInput() any
 	Target() *float64
 	SetTarget(val *float64)
 	TargetInput() *float64
@@ -67,7 +67,7 @@ type SloObjectiveOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,8 +89,8 @@ type SloObjectiveOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutComposite(value *SloObjectiveComposite)
-	PutCountMetrics(value interface{})
-	PutRawMetric(value interface{})
+	PutCountMetrics(value any)
+	PutRawMetric(value any)
 	ResetComposite()
 	ResetCountMetrics()
 	ResetDisplayName()
@@ -102,7 +102,7 @@ type SloObjectiveOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ type jsiiProxy_SloObjectiveOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SloObjectiveOutputReference) CountMetrics() SloObjectiveCount
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) CountMetricsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) CountMetricsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"countMetricsInput",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_SloObjectiveOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_SloObjectiveOutputReference) OpInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) Primary() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) Primary() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primary",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_SloObjectiveOutputReference) Primary() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) PrimaryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) PrimaryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primaryInput",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_SloObjectiveOutputReference) RawMetric() SloObjectiveRawMetri
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference) RawMetricInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveOutputReference) RawMetricInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawMetricInput",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_SloObjectiveOutputReference) ValueInput() *float64 {
 	return returns
 }
 
-
 func NewSloObjectiveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveOutputReference {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewSloObjectiveOutputReference(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -408,12 +407,12 @@ func NewSloObjectiveOutputReference_Override(s SloObjectiveOutputReference, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetComplexObjectIndex(val interfa
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetComplexObjectIsFromSet(val *bo
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetName(val *string) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetOp(val *string) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetOp(val *string) {
 	if err := j.validateSetOpParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetOp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetPrimary(val interface{}) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetPrimary(val any) {
 	if err := j.validateSetPrimaryParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetPrimary(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetTarget(val *float64) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetTarget(val *float64) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetTarget(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetTimeSliceTarget(val *float64) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetTimeSliceTarget(val *float64) {
 	if err := j.validateSetTimeSliceTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SloObjectiveOutputReference)SetTimeSliceTarget(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveOutputReference)SetValue(val *float64) {
+func (j *jsiiProxy_SloObjectiveOutputReference) SetValue(val *float64) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,16 +557,16 @@ func (s *jsiiProxy_SloObjectiveOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (s *jsiiProxy_SloObjectiveOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -738,29 +737,29 @@ func (s *jsiiProxy_SloObjectiveOutputReference) PutComposite(value *SloObjective
 	_jsii_.InvokeVoid(
 		s,
 		"putComposite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) PutCountMetrics(value interface{}) {
+func (s *jsiiProxy_SloObjectiveOutputReference) PutCountMetrics(value any) {
 	if err := s.validatePutCountMetricsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCountMetrics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) PutRawMetric(value interface{}) {
+func (s *jsiiProxy_SloObjectiveOutputReference) PutRawMetric(value any) {
 	if err := s.validatePutRawMetricParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRawMetric",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -836,16 +835,16 @@ func (s *jsiiProxy_SloObjectiveOutputReference) ResetValue() {
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -864,4 +863,3 @@ func (s *jsiiProxy_SloObjectiveOutputReference) ToString() *string {
 
 	return returns
 }
-

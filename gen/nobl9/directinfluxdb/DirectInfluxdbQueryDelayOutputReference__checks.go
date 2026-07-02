@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectInfluxdbQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectInfluxdbQueryDelayOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

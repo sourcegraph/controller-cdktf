@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.Agent",
-		reflect.TypeOf((*Agent)(nil)).Elem(),
+		reflect.TypeFor[Agent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Agent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentAmazonPrometheusConfig",
-		reflect.TypeOf((*AgentAmazonPrometheusConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentAmazonPrometheusConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentAmazonPrometheusConfigOutputReference",
-		reflect.TypeOf((*AgentAmazonPrometheusConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentAmazonPrometheusConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentAmazonPrometheusConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,11 +233,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfig",
-		reflect.TypeOf((*AgentAppdynamicsConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentAppdynamicsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
-		reflect.TypeOf((*AgentAppdynamicsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentAppdynamicsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentAppdynamicsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,11 +271,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentAzureMonitorConfig",
-		reflect.TypeOf((*AgentAzureMonitorConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentAzureMonitorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentAzureMonitorConfigOutputReference",
-		reflect.TypeOf((*AgentAzureMonitorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentAzureMonitorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentAzureMonitorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,11 +309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentBigqueryConfig",
-		reflect.TypeOf((*AgentBigqueryConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentBigqueryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentBigqueryConfigOutputReference",
-		reflect.TypeOf((*AgentBigqueryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentBigqueryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentBigqueryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -345,11 +345,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentCloudwatchConfig",
-		reflect.TypeOf((*AgentCloudwatchConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentCloudwatchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentCloudwatchConfigOutputReference",
-		reflect.TypeOf((*AgentCloudwatchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentCloudwatchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentCloudwatchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -381,15 +381,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentConfig",
-		reflect.TypeOf((*AgentConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentDatadogConfig",
-		reflect.TypeOf((*AgentDatadogConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentDatadogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentDatadogConfigOutputReference",
-		reflect.TypeOf((*AgentDatadogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentDatadogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentDatadogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -423,11 +423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentDynatraceConfig",
-		reflect.TypeOf((*AgentDynatraceConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentDynatraceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentDynatraceConfigOutputReference",
-		reflect.TypeOf((*AgentDynatraceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentDynatraceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentDynatraceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentElasticsearchConfig",
-		reflect.TypeOf((*AgentElasticsearchConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentElasticsearchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentElasticsearchConfigOutputReference",
-		reflect.TypeOf((*AgentElasticsearchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentElasticsearchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentElasticsearchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,11 +499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentGcmConfig",
-		reflect.TypeOf((*AgentGcmConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentGcmConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentGcmConfigOutputReference",
-		reflect.TypeOf((*AgentGcmConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentGcmConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -527,7 +527,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentGcmConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -535,11 +535,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentGrafanaLokiConfig",
-		reflect.TypeOf((*AgentGrafanaLokiConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentGrafanaLokiConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentGrafanaLokiConfigOutputReference",
-		reflect.TypeOf((*AgentGrafanaLokiConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentGrafanaLokiConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -565,7 +565,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentGrafanaLokiConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -573,11 +573,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentGraphiteConfig",
-		reflect.TypeOf((*AgentGraphiteConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentGraphiteConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentGraphiteConfigOutputReference",
-		reflect.TypeOf((*AgentGraphiteConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentGraphiteConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -603,7 +603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentGraphiteConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -611,15 +611,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrieval",
-		reflect.TypeOf((*AgentHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -633,7 +633,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -641,7 +641,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -669,7 +669,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -677,11 +677,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -695,7 +695,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -703,7 +703,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -731,7 +731,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -739,7 +739,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*AgentHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -769,7 +769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -777,11 +777,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentHoneycombConfig",
-		reflect.TypeOf((*AgentHoneycombConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentHoneycombConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentHoneycombConfigOutputReference",
-		reflect.TypeOf((*AgentHoneycombConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentHoneycombConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -805,7 +805,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentHoneycombConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -813,11 +813,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentInfluxdbConfig",
-		reflect.TypeOf((*AgentInfluxdbConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentInfluxdbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentInfluxdbConfigOutputReference",
-		reflect.TypeOf((*AgentInfluxdbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentInfluxdbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -843,7 +843,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentInfluxdbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -851,11 +851,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentInstanaConfig",
-		reflect.TypeOf((*AgentInstanaConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentInstanaConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentInstanaConfigOutputReference",
-		reflect.TypeOf((*AgentInstanaConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentInstanaConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -881,7 +881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentInstanaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -889,11 +889,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentLightstepConfig",
-		reflect.TypeOf((*AgentLightstepConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentLightstepConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentLightstepConfigOutputReference",
-		reflect.TypeOf((*AgentLightstepConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentLightstepConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -924,7 +924,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentLightstepConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -932,11 +932,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfig",
-		reflect.TypeOf((*AgentLogicMonitorConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentLogicMonitorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfigOutputReference",
-		reflect.TypeOf((*AgentLogicMonitorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentLogicMonitorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
 			_jsii_.MemberProperty{JsiiProperty: "accountInput", GoGetter: "AccountInput"},
@@ -962,7 +962,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentLogicMonitorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -970,11 +970,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentNewrelicConfig",
-		reflect.TypeOf((*AgentNewrelicConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentNewrelicConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
-		reflect.TypeOf((*AgentNewrelicConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentNewrelicConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -1000,7 +1000,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentNewrelicConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1008,11 +1008,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentOpentsdbConfig",
-		reflect.TypeOf((*AgentOpentsdbConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentOpentsdbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentOpentsdbConfigOutputReference",
-		reflect.TypeOf((*AgentOpentsdbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentOpentsdbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1038,7 +1038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentOpentsdbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1046,11 +1046,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentPingdomConfig",
-		reflect.TypeOf((*AgentPingdomConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentPingdomConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentPingdomConfigOutputReference",
-		reflect.TypeOf((*AgentPingdomConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentPingdomConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1074,7 +1074,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentPingdomConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1082,11 +1082,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentPrometheusConfig",
-		reflect.TypeOf((*AgentPrometheusConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentPrometheusConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentPrometheusConfigOutputReference",
-		reflect.TypeOf((*AgentPrometheusConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentPrometheusConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1112,7 +1112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentPrometheusConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1120,11 +1120,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentQueryDelay",
-		reflect.TypeOf((*AgentQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[AgentQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentQueryDelayOutputReference",
-		reflect.TypeOf((*AgentQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1152,7 +1152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1160,11 +1160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentRedshiftConfig",
-		reflect.TypeOf((*AgentRedshiftConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentRedshiftConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentRedshiftConfigOutputReference",
-		reflect.TypeOf((*AgentRedshiftConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentRedshiftConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1188,7 +1188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentRedshiftConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1196,11 +1196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentSplunkConfig",
-		reflect.TypeOf((*AgentSplunkConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentSplunkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentSplunkConfigOutputReference",
-		reflect.TypeOf((*AgentSplunkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentSplunkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1226,7 +1226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentSplunkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1234,11 +1234,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentSplunkObservabilityConfig",
-		reflect.TypeOf((*AgentSplunkObservabilityConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentSplunkObservabilityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentSplunkObservabilityConfigOutputReference",
-		reflect.TypeOf((*AgentSplunkObservabilityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentSplunkObservabilityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1264,7 +1264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentSplunkObservabilityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1272,11 +1272,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentSumologicConfig",
-		reflect.TypeOf((*AgentSumologicConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentSumologicConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentSumologicConfigOutputReference",
-		reflect.TypeOf((*AgentSumologicConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentSumologicConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1302,7 +1302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentSumologicConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1310,11 +1310,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.agent.AgentThousandeyesConfig",
-		reflect.TypeOf((*AgentThousandeyesConfig)(nil)).Elem(),
+		reflect.TypeFor[AgentThousandeyesConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.agent.AgentThousandeyesConfigOutputReference",
-		reflect.TypeOf((*AgentThousandeyesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AgentThousandeyesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1338,7 +1338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AgentThousandeyesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

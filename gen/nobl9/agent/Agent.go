@@ -30,15 +30,15 @@ type Agent interface {
 	CloudwatchConfig() AgentCloudwatchConfigOutputReference
 	CloudwatchConfigInput() *AgentCloudwatchConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatadogConfig() AgentDatadogConfigOutputReference
 	DatadogConfigInput() *AgentDatadogConfig
 	// Experimental.
@@ -109,13 +109,13 @@ type Agent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() AgentQueryDelayOutputReference
 	QueryDelayInput() *AgentQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedshiftConfig() AgentRedshiftConfigOutputReference
 	RedshiftConfigInput() *AgentRedshiftConfig
 	ReleaseChannel() *string
@@ -134,7 +134,7 @@ type Agent interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThousandeyesConfig() AgentThousandeyesConfigOutputReference
@@ -143,9 +143,9 @@ type Agent interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -163,7 +163,7 @@ type Agent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -175,7 +175,7 @@ type Agent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -244,17 +244,17 @@ type Agent interface {
 	ResetSplunkObservabilityConfig()
 	ResetSumologicConfig()
 	ResetThousandeyesConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Agent
@@ -412,8 +412,8 @@ func (j *jsiiProxy_Agent) CloudwatchConfigInput() *AgentCloudwatchConfig {
 	return returns
 }
 
-func (j *jsiiProxy_Agent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Agent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_Agent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Agent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Agent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_Agent) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Agent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Agent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -932,8 +932,8 @@ func (j *jsiiProxy_Agent) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Agent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Agent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -962,8 +962,8 @@ func (j *jsiiProxy_Agent) QueryDelayInput() *AgentQueryDelay {
 	return returns
 }
 
-func (j *jsiiProxy_Agent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Agent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1112,8 +1112,8 @@ func (j *jsiiProxy_Agent) TerraformGeneratorMetadata() *cdktf.TerraformProviderG
 	return returns
 }
 
-func (j *jsiiProxy_Agent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Agent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1152,7 +1152,6 @@ func (j *jsiiProxy_Agent) ThousandeyesConfigInput() *AgentThousandeyesConfig {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/agent nobl9_agent} Resource.
 func NewAgent(scope constructs.Construct, id *string, config *AgentConfig) Agent {
 	_init_.Initialize()
@@ -1164,7 +1163,7 @@ func NewAgent(scope constructs.Construct, id *string, config *AgentConfig) Agent
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.agent.Agent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1177,12 +1176,12 @@ func NewAgent_Override(a Agent, scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.agent.Agent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Agent)SetAgentType(val *string) {
+func (j *jsiiProxy_Agent) SetAgentType(val *string) {
 	if err := j.validateSetAgentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1193,7 +1192,7 @@ func (j *jsiiProxy_Agent)SetAgentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetConnection(val interface{}) {
+func (j *jsiiProxy_Agent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1204,7 +1203,7 @@ func (j *jsiiProxy_Agent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetCount(val interface{}) {
+func (j *jsiiProxy_Agent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1215,7 +1214,7 @@ func (j *jsiiProxy_Agent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Agent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1223,7 +1222,7 @@ func (j *jsiiProxy_Agent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetDescription(val *string) {
+func (j *jsiiProxy_Agent) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func (j *jsiiProxy_Agent)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetDisplayName(val *string) {
+func (j *jsiiProxy_Agent) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1245,7 +1244,7 @@ func (j *jsiiProxy_Agent)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Agent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1253,7 +1252,7 @@ func (j *jsiiProxy_Agent)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetId(val *string) {
+func (j *jsiiProxy_Agent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1264,7 +1263,7 @@ func (j *jsiiProxy_Agent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Agent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1275,7 +1274,7 @@ func (j *jsiiProxy_Agent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetName(val *string) {
+func (j *jsiiProxy_Agent) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1286,7 +1285,7 @@ func (j *jsiiProxy_Agent)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetProject(val *string) {
+func (j *jsiiProxy_Agent) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1297,7 +1296,7 @@ func (j *jsiiProxy_Agent)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Agent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1305,7 +1304,7 @@ func (j *jsiiProxy_Agent)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Agent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1316,7 +1315,7 @@ func (j *jsiiProxy_Agent)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_Agent) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1327,7 +1326,7 @@ func (j *jsiiProxy_Agent)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Agent)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_Agent) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -1350,7 +1349,7 @@ func Agent_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.agent.Agent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1374,7 +1373,7 @@ func Agent_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Agent_IsConstruct(x interface{}) *bool {
+func Agent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAgent_IsConstructParameters(x); err != nil {
@@ -1385,7 +1384,7 @@ func Agent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.agent.Agent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1393,7 +1392,7 @@ func Agent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Agent_IsTerraformElement(x interface{}) *bool {
+func Agent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAgent_IsTerraformElementParameters(x); err != nil {
@@ -1404,7 +1403,7 @@ func Agent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.agent.Agent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1412,7 +1411,7 @@ func Agent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Agent_IsTerraformResource(x interface{}) *bool {
+func Agent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAgent_IsTerraformResourceParameters(x); err != nil {
@@ -1423,7 +1422,7 @@ func Agent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.agent.Agent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1448,31 +1447,31 @@ func (a *jsiiProxy_Agent) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_Agent) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Agent) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Agent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Agent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1488,7 +1487,7 @@ func (a *jsiiProxy_Agent) GetBooleanAttribute(terraformAttribute *string) cdktf.
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1504,7 +1503,7 @@ func (a *jsiiProxy_Agent) GetBooleanMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1520,7 +1519,7 @@ func (a *jsiiProxy_Agent) GetListAttribute(terraformAttribute *string) *[]*strin
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1536,7 +1535,7 @@ func (a *jsiiProxy_Agent) GetNumberAttribute(terraformAttribute *string) *float6
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1552,7 +1551,7 @@ func (a *jsiiProxy_Agent) GetNumberListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1568,7 +1567,7 @@ func (a *jsiiProxy_Agent) GetNumberMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1584,7 +1583,7 @@ func (a *jsiiProxy_Agent) GetStringAttribute(terraformAttribute *string) *string
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1600,15 +1599,15 @@ func (a *jsiiProxy_Agent) GetStringMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Agent) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Agent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1627,7 +1626,7 @@ func (a *jsiiProxy_Agent) ImportFrom(id *string, provider cdktf.TerraformProvide
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1640,7 +1639,7 @@ func (a *jsiiProxy_Agent) InterpolationForAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1654,18 +1653,18 @@ func (a *jsiiProxy_Agent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_Agent) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_Agent) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1676,7 +1675,7 @@ func (a *jsiiProxy_Agent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1687,7 +1686,7 @@ func (a *jsiiProxy_Agent) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1698,7 +1697,7 @@ func (a *jsiiProxy_Agent) PutAmazonPrometheusConfig(value *AgentAmazonPrometheus
 	_jsii_.InvokeVoid(
 		a,
 		"putAmazonPrometheusConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1709,7 +1708,7 @@ func (a *jsiiProxy_Agent) PutAppdynamicsConfig(value *AgentAppdynamicsConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putAppdynamicsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1720,7 +1719,7 @@ func (a *jsiiProxy_Agent) PutAzureMonitorConfig(value *AgentAzureMonitorConfig) 
 	_jsii_.InvokeVoid(
 		a,
 		"putAzureMonitorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1731,7 +1730,7 @@ func (a *jsiiProxy_Agent) PutBigqueryConfig(value *AgentBigqueryConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putBigqueryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1742,7 +1741,7 @@ func (a *jsiiProxy_Agent) PutCloudwatchConfig(value *AgentCloudwatchConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putCloudwatchConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1753,7 +1752,7 @@ func (a *jsiiProxy_Agent) PutDatadogConfig(value *AgentDatadogConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putDatadogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1764,7 +1763,7 @@ func (a *jsiiProxy_Agent) PutDynatraceConfig(value *AgentDynatraceConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putDynatraceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1775,7 +1774,7 @@ func (a *jsiiProxy_Agent) PutElasticsearchConfig(value *AgentElasticsearchConfig
 	_jsii_.InvokeVoid(
 		a,
 		"putElasticsearchConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1786,7 +1785,7 @@ func (a *jsiiProxy_Agent) PutGcmConfig(value *AgentGcmConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putGcmConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1797,7 +1796,7 @@ func (a *jsiiProxy_Agent) PutGrafanaLokiConfig(value *AgentGrafanaLokiConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putGrafanaLokiConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1808,7 +1807,7 @@ func (a *jsiiProxy_Agent) PutGraphiteConfig(value *AgentGraphiteConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putGraphiteConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1819,7 +1818,7 @@ func (a *jsiiProxy_Agent) PutHistoricalDataRetrieval(value *AgentHistoricalDataR
 	_jsii_.InvokeVoid(
 		a,
 		"putHistoricalDataRetrieval",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1830,7 +1829,7 @@ func (a *jsiiProxy_Agent) PutHoneycombConfig(value *AgentHoneycombConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putHoneycombConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1841,7 +1840,7 @@ func (a *jsiiProxy_Agent) PutInfluxdbConfig(value *AgentInfluxdbConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putInfluxdbConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1852,7 +1851,7 @@ func (a *jsiiProxy_Agent) PutInstanaConfig(value *AgentInstanaConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putInstanaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1863,7 +1862,7 @@ func (a *jsiiProxy_Agent) PutLightstepConfig(value *AgentLightstepConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putLightstepConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1874,7 +1873,7 @@ func (a *jsiiProxy_Agent) PutLogicMonitorConfig(value *AgentLogicMonitorConfig) 
 	_jsii_.InvokeVoid(
 		a,
 		"putLogicMonitorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1885,7 +1884,7 @@ func (a *jsiiProxy_Agent) PutNewrelicConfig(value *AgentNewrelicConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putNewrelicConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1896,7 +1895,7 @@ func (a *jsiiProxy_Agent) PutOpentsdbConfig(value *AgentOpentsdbConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putOpentsdbConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1907,7 +1906,7 @@ func (a *jsiiProxy_Agent) PutPingdomConfig(value *AgentPingdomConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putPingdomConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1918,7 +1917,7 @@ func (a *jsiiProxy_Agent) PutPrometheusConfig(value *AgentPrometheusConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putPrometheusConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1929,7 +1928,7 @@ func (a *jsiiProxy_Agent) PutQueryDelay(value *AgentQueryDelay) {
 	_jsii_.InvokeVoid(
 		a,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1940,7 +1939,7 @@ func (a *jsiiProxy_Agent) PutRedshiftConfig(value *AgentRedshiftConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putRedshiftConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1951,7 +1950,7 @@ func (a *jsiiProxy_Agent) PutSplunkConfig(value *AgentSplunkConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putSplunkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1962,7 +1961,7 @@ func (a *jsiiProxy_Agent) PutSplunkObservabilityConfig(value *AgentSplunkObserva
 	_jsii_.InvokeVoid(
 		a,
 		"putSplunkObservabilityConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1973,7 +1972,7 @@ func (a *jsiiProxy_Agent) PutSumologicConfig(value *AgentSumologicConfig) {
 	_jsii_.InvokeVoid(
 		a,
 		"putSumologicConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1984,7 +1983,7 @@ func (a *jsiiProxy_Agent) PutThousandeyesConfig(value *AgentThousandeyesConfig) 
 	_jsii_.InvokeVoid(
 		a,
 		"putThousandeyesConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2252,8 +2251,8 @@ func (a *jsiiProxy_Agent) ResetThousandeyesConfig() {
 	)
 }
 
-func (a *jsiiProxy_Agent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Agent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2265,8 +2264,8 @@ func (a *jsiiProxy_Agent) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Agent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Agent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2278,8 +2277,8 @@ func (a *jsiiProxy_Agent) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Agent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Agent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2291,8 +2290,8 @@ func (a *jsiiProxy_Agent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Agent) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Agent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2317,8 +2316,8 @@ func (a *jsiiProxy_Agent) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Agent) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Agent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2329,4 +2328,3 @@ func (a *jsiiProxy_Agent) ToTerraform() interface{} {
 
 	return returns
 }
-

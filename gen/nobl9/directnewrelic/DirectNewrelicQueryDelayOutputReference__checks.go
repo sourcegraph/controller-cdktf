@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectNewrelicQueryDelayOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelicQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelicQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectNewrelicQueryDelayOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

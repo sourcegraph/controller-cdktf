@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectRedshiftQueryDelayOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DirectRedshiftQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectRedshiftQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectRedshiftQueryDelayOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

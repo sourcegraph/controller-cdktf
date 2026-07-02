@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputRefere
 
 	return nil
 }
-

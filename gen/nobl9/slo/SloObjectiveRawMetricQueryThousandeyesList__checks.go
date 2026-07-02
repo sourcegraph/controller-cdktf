@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryThousandeyesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryThousandeyesListParameters(terraformRe
 
 	return nil
 }
-

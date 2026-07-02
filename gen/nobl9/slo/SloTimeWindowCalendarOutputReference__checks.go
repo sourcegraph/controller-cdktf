@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloTimeWindowCalendarOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowCalendarOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloTimeWindowCalendarOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloTimeWindowCalendarOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowCalendarOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloTimeWindowCalendarOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloTimeWindowCalendarOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

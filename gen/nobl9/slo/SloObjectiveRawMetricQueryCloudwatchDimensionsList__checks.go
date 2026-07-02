@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryCloudwatchDimensionsListParameters(ter
 
 	return nil
 }
-

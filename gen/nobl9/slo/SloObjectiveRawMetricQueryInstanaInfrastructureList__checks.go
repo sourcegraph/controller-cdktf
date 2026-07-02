@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureList) validate
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryInstanaInfrastructureListParameters(te
 
 	return nil
 }
-

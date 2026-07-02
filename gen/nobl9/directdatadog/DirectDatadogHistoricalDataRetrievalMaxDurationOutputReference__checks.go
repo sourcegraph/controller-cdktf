@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectDatadogHistoricalDataRetrievalMaxDurationOutputReferencePa
 
 	return nil
 }
-

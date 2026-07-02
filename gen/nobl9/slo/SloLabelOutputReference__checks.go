@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloLabelOutputReference) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_SloLabelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloLabelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloLabelOutputReference) validateSetComplexObjectIsFromSetPar
 	return nil
 }
 
-func (j *jsiiProxy_SloLabelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloLabelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloLabelOutputReferenceParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

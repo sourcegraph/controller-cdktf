@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectPingdom) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (d *jsiiProxy_DirectPingdom) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectPingdom) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectPingdom) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (d *jsiiProxy_DirectPingdom) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectPingdom) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDirectPingdom_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDirectPingdom_IsConstructParameters(x interface{}) error {
+func validateDirectPingdom_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDirectPingdom_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectPingdom_IsTerraformElementParameters(x interface{}) error {
+func validateDirectPingdom_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDirectPingdom_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectPingdom_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectPingdom_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DirectPingdom) validateSetApiTokenParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DirectPingdom) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectPingdom) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DirectPingdom) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DirectPingdom) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectPingdom) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DirectPingdom) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_DirectPingdom) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectPingdom) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DirectPingdom) validateSetProjectParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DirectPingdom) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectPingdom) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewDirectPingdomParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

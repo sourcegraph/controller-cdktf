@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentSplunkConfigOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_AgentSplunkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentSplunkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentSplunkConfigOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

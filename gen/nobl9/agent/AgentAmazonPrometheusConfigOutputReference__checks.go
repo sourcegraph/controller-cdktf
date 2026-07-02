@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAgentAmazonPrometheusConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

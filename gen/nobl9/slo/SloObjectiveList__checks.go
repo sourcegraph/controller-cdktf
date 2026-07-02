@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveList) validateResolveParameters(_context cdktf.IR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveListParameters(terraformResource cdktf.IInterpolatin
 
 	return nil
 }
-

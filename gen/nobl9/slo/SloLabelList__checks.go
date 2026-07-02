@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloLabelList) validateResolveParameters(_context cdktf.IResol
 	return nil
 }
 
-func (j *jsiiProxy_SloLabelList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloLabelList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloLabelListParameters(terraformResource cdktf.IInterpolatingPar
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveRawMetricQueryGcmOutputReferenceParameters(terraform
 
 	return nil
 }
-

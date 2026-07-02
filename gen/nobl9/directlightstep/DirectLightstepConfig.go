@@ -6,9 +6,9 @@ import (
 
 type DirectLightstepConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DirectLightstepConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Organization name registered in Lightstep.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#lightstep_organization DirectLightstep#lightstep_organization}
@@ -61,7 +61,7 @@ type DirectLightstepConfig struct {
 	// [Logs documentation](https://docs.nobl9.com/features/slo-troubleshooting/event-logs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#log_collection_enabled DirectLightstep#log_collection_enabled}
-	LogCollectionEnabled interface{} `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
+	LogCollectionEnabled any `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
 	// query_delay block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#query_delay DirectLightstep#query_delay}
@@ -81,4 +81,3 @@ type DirectLightstepConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_lightstep#url DirectLightstep#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloCompositeBurnRateConditionList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloCompositeBurnRateConditionListParameters(terraformResource cd
 
 	return nil
 }
-

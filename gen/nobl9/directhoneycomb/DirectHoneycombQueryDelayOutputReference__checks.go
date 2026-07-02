@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectHoneycombQueryDelayOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

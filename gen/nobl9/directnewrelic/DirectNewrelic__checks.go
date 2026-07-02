@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectNewrelic) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (d *jsiiProxy_DirectNewrelic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectNewrelic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectNewrelic) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (d *jsiiProxy_DirectNewrelic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectNewrelic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDirectNewrelic_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateDirectNewrelic_IsConstructParameters(x interface{}) error {
+func validateDirectNewrelic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDirectNewrelic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectNewrelic_IsTerraformElementParameters(x interface{}) error {
+func validateDirectNewrelic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDirectNewrelic_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectNewrelic_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectNewrelic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_DirectNewrelic) validateSetAccountIdParameters(val *float64) 
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DirectNewrelic) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DirectNewrelic) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelic) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelic) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DirectNewrelic) validateSetProjectParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectNewrelic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewDirectNewrelicParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

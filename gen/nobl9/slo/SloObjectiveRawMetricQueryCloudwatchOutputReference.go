@@ -15,9 +15,9 @@ type SloObjectiveRawMetricQueryCloudwatchOutputReference interface {
 	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type SloObjectiveRawMetricQueryCloudwatchOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dimensions() SloObjectiveRawMetricQueryCloudwatchDimensionsList
-	DimensionsInput() interface{}
+	DimensionsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Json() *string
 	SetJson(val *string)
 	JsonInput() *string
@@ -63,7 +63,7 @@ type SloObjectiveRawMetricQueryCloudwatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type SloObjectiveRawMetricQueryCloudwatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDimensions(value interface{})
+	PutDimensions(value any)
 	ResetAccountId()
 	ResetDimensions()
 	ResetJson()
@@ -94,7 +94,7 @@ type SloObjectiveRawMetricQueryCloudwatchOutputReference interface {
 	ResetStat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) AccountI
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Dimensio
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) DimensionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) DimensionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dimensionsInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Terrafor
 	return returns
 }
 
-
 func NewSloObjectiveRawMetricQueryCloudwatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveRawMetricQueryCloudwatchOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewSloObjectiveRawMetricQueryCloudwatchOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewSloObjectiveRawMetricQueryCloudwatchOutputReference_Override(s SloObject
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetAccountId(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetAccoun
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetJson(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetJson(val *string) {
 	if err := j.validateSetJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetJson(v
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetMetricName(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetMetricName(val *string) {
 	if err := j.validateSetMetricNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetMetric
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetNamesp
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetRegion(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetRegion
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetSql(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetSql(val *string) {
 	if err := j.validateSetSqlParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetSql(va
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetStat(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetStat(val *string) {
 	if err := j.validateSetStatParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetStat(v
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,16 +509,16 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,21 +675,21 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) PutDimensions(value interface{}) {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) PutDimensions(value any) {
 	if err := s.validatePutDimensionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDimensions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) ResetSta
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference) ToString
 
 	return returns
 }
-

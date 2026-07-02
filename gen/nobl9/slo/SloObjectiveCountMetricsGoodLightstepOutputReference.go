@@ -12,9 +12,9 @@ type SloObjectiveCountMetricsGoodLightstepOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SloObjectiveCountMetricsGoodLightstepOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Percentile() *float64
 	SetPercentile(val *float64)
 	PercentileInput() *float64
@@ -52,7 +52,7 @@ type SloObjectiveCountMetricsGoodLightstepOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type SloObjectiveCountMetricsGoodLightstepOutputReference interface {
 	ResetUql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) UqlInpu
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsGoodLightstepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodLightstepOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewSloObjectiveCountMetricsGoodLightstepOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLightstepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewSloObjectiveCountMetricsGoodLightstepOutputReference_Override(s SloObjec
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLightstepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetPercentile(val *float64) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetPercentile(val *float64) {
 	if err := j.validateSetPercentileParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetPerce
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetStreamId(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetStreamId(val *string) {
 	if err := j.validateSetStreamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetStrea
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTypeOfData(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetTypeOfData(val *string) {
 	if err := j.validateSetTypeOfDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetTypeO
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference)SetUql(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) SetUql(val *string) {
 	if err := j.validateSetUqlParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) Compute
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetBool
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetList
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetNumb
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) GetStri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) Interpo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) ResetUq
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference) ToStrin
 
 	return returns
 }
-

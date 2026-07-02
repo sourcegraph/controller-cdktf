@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateInterp
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validatePutLabelParameters(value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validatePutLabelParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetDis
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewReportSystemHealthReviewColumnOutputReferenceParameters(terrafor
 
 	return nil
 }
-

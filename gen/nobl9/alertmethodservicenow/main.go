@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertMethodServicenow.AlertMethodServicenow",
-		reflect.TypeOf((*AlertMethodServicenow)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodServicenow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertMethodServicenow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,6 +81,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertMethodServicenow.AlertMethodServicenowConfig",
-		reflect.TypeOf((*AlertMethodServicenowConfig)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodServicenowConfig](),
 	)
 }

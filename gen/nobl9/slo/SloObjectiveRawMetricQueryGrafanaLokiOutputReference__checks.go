@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveRawMetricQueryGrafanaLokiOutputReferenceParameters(t
 
 	return nil
 }
-

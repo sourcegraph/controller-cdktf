@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList) v
 	return nil
 }
 
-func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectCloudwatchHistoricalDataRetrievalDefaultDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectCloudwatchHistoricalDataRetrievalDefaultDurationListParame
 
 	return nil
 }
-

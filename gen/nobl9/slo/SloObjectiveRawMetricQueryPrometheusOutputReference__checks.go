@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveRawMetricQueryPrometheusOutputReferenceParameters(te
 
 	return nil
 }
-
