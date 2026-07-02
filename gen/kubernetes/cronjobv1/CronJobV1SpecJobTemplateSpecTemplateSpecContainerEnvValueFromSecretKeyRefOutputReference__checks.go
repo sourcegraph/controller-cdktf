@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSec
 
 	return nil
 }
-

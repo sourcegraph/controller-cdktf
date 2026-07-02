@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecSelectorMatchExpressionsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecSelectorMatchExpressionsListParameters(terraformRe
 
 	return nil
 }
-

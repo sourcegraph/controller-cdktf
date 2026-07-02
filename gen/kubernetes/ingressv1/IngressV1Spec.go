@@ -1,6 +1,5 @@
 package ingressv1
 
-
 type IngressV1Spec struct {
 	// default_backend block.
 	//
@@ -15,10 +14,9 @@ type IngressV1Spec struct {
 	// rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/ingress_v1#rule IngressV1#rule}
-	Rule interface{} `field:"optional" json:"rule" yaml:"rule"`
+	Rule any `field:"optional" json:"rule" yaml:"rule"`
 	// tls block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/ingress_v1#tls IngressV1#tls}
-	Tls interface{} `field:"optional" json:"tls" yaml:"tls"`
+	Tls any `field:"optional" json:"tls" yaml:"tls"`
 }
-

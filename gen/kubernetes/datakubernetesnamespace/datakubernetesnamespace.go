@@ -15,11 +15,11 @@ type DataKubernetesNamespace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,18 +48,18 @@ type DataKubernetesNamespace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() DataKubernetesNamespaceSpecList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataKubernetesNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataKubernetesNamespace
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataKubernetesNamespace) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesNamespace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataKubernetesNamespace) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesNamespace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_DataKubernetesNamespace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesNamespace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DataKubernetesNamespace) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesNamespace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataKubernetesNamespace) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/namespace kubernetes_namespace} Data Source.
 func NewDataKubernetesNamespace(scope constructs.Construct, id *string, config *DataKubernetesNamespaceConfig) DataKubernetesNamespace {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataKubernetesNamespace(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataKubernetesNamespace_Override(d DataKubernetesNamespace, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetCount(val interface{}) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataKubernetesNamespace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -344,7 +343,7 @@ func (j *jsiiProxy_DataKubernetesNamespace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -352,7 +351,7 @@ func (j *jsiiProxy_DataKubernetesNamespace)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetId(val *string) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataKubernetesNamespace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataKubernetesNamespace)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesNamespace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataKubernetesNamespace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -394,7 +393,7 @@ func DataKubernetesNamespace_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func DataKubernetesNamespace_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataKubernetesNamespace_IsConstruct(x interface{}) *bool {
+func DataKubernetesNamespace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesNamespace_IsConstructParameters(x); err != nil {
@@ -429,7 +428,7 @@ func DataKubernetesNamespace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func DataKubernetesNamespace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesNamespace_IsTerraformDataSource(x interface{}) *bool {
+func DataKubernetesNamespace_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesNamespace_IsTerraformDataSourceParameters(x); err != nil {
@@ -448,7 +447,7 @@ func DataKubernetesNamespace_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func DataKubernetesNamespace_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesNamespace_IsTerraformElement(x interface{}) *bool {
+func DataKubernetesNamespace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesNamespace_IsTerraformElementParameters(x); err != nil {
@@ -467,7 +466,7 @@ func DataKubernetesNamespace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesNamespace.DataKubernetesNamespace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -485,27 +484,27 @@ func DataKubernetesNamespace_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataKubernetesNamespace) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataKubernetesNamespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataKubernetesNamespace) PutMetadata(value *DataKubernetesNam
 	_jsii_.InvokeVoid(
 		d,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataKubernetesNamespace) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataKubernetesNamespace) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesNamespace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataKubernetesNamespace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesNamespace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataKubernetesNamespace) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesNamespace) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesNamespace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataKubernetesNamespace) ToTerraform() interface{} {
 
 	return returns
 }
-

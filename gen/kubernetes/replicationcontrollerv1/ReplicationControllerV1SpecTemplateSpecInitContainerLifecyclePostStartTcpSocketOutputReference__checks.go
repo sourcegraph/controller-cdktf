@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecycle
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePos
 
 	return nil
 }
-

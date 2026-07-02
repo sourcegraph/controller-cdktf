@@ -15,9 +15,9 @@ type JobMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type JobMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type JobMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_JobMetadataOutputReference) AnnotationsInput() *map[string]*s
 	return returns
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_JobMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewJobMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobMetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewJobMetadataOutputReference(terraformResource cdktf.IInterpolatingParent,
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewJobMetadataOutputReference_Override(j JobMetadataOutputReference, terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetAnnotations(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetComplexObjectIndex(val interfac
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetComplexObjectIsFromSet(val *boo
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetGenerateName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetInternalValue(val *JobMetadata) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetInternalValue(val *JobMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetInternalValue(val *JobMetadata)
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_JobMetadataOutputReference)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (j *jsiiProxy_JobMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (j *jsiiProxy_JobMetadataOutputReference) InterpolationForAttribute(propert
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (j *jsiiProxy_JobMetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (j *jsiiProxy_JobMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (j *jsiiProxy_JobMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

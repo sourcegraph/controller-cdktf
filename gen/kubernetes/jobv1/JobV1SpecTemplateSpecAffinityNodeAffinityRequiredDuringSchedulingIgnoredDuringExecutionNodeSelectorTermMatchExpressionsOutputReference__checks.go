@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewJobV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulin
 
 	return nil
 }
-

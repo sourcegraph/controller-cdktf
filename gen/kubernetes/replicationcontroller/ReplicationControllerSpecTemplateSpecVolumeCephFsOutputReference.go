@@ -12,9 +12,9 @@ type ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference interface 
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	SecretFile() *string
 	SetSecretFile(val *string)
 	SecretFileInput() *string
@@ -57,7 +57,7 @@ type ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference interface 
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	return returns
 }
 
-
 func NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetInternalValue(val *ReplicationControllerSpecTemplateSpecVolumeCephFs) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetInternalValue(val *ReplicationControllerSpecTemplateSpecVolumeCephFs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetMonitors(val *[]*string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetMonitors(val *[]*string) {
 	if err := j.validateSetMonitorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetSecretFile(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetSecretFile(val *string) {
 	if err := j.validateSetSecretFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,16 +439,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	_jsii_.InvokeVoid(
 		r,
 		"putSecretRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputRefere
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDu
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDu
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDurin
 
 	return nil
 }
-

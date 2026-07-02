@@ -120,7 +120,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutp
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutp
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputR
 
 	return nil
 }
-

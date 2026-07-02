@@ -15,9 +15,9 @@ type PodV1SpecVolumePersistentVolumeClaimOutputReference interface {
 	ClaimNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type PodV1SpecVolumePersistentVolumeClaimOutputReference interface {
 	Fqn() *string
 	InternalValue() *PodV1SpecVolumePersistentVolumeClaim
 	SetInternalValue(val *PodV1SpecVolumePersistentVolumeClaim)
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type PodV1SpecVolumePersistentVolumeClaimOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type PodV1SpecVolumePersistentVolumeClaimOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ClaimNam
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ReadOnly
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) Terrafor
 	return returns
 }
 
-
 func NewPodV1SpecVolumePersistentVolumeClaimOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecVolumePersistentVolumeClaimOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewPodV1SpecVolumePersistentVolumeClaimOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewPodV1SpecVolumePersistentVolumeClaimOutputReference_Override(p PodV1Spec
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumePersistentVolumeClaimOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetClaimName(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetClaimName(val *string) {
 	if err := j.validateSetClaimNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetClaimN
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetInternalValue(val *PodV1SpecVolumePersistentVolumeClaim) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetInternalValue(val *PodV1SpecVolumePersistentVolumeClaim) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetReadOn
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ComputeF
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetListA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ResetRea
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (p *jsiiProxy_PodV1SpecVolumePersistentVolumeClaimOutputReference) ToString
 
 	return returns
 }
-

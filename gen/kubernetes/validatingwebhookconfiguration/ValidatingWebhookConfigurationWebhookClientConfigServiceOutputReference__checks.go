@@ -98,7 +98,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookClientConfigServiceOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewValidatingWebhookConfigurationWebhookClientConfigServiceOutputRe
 
 	return nil
 }
-

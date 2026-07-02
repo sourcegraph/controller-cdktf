@@ -117,7 +117,7 @@ func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetCaBundleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetGroupPriorityMinimu
 	return nil
 }
 
-func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetInsecureSkipTlsVerifyParameters(val interface{}) error {
+func (j *jsiiProxy_ApiServiceSpecOutputReference) validateSetInsecureSkipTlsVerifyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewApiServiceSpecOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

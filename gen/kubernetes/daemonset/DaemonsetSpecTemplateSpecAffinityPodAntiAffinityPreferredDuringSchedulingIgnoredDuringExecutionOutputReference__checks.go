@@ -109,7 +109,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuri
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuri
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewDaemonsetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringS
 
 	return nil
 }
-

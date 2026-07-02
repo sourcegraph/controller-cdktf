@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorMat
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecTopologySpreadConstraintLabelSelectorMatchE
 
 	return nil
 }
-

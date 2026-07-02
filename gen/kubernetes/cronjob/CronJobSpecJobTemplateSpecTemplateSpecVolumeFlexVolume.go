@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolume struct {
 	// Driver is the name of the driver to use for this volume.
 	//
@@ -19,10 +18,9 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolume struct {
 	// Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#read_only CronJob#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// secret_ref block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#secret_ref CronJob#secret_ref}
 	SecretRef *CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef `field:"optional" json:"secretRef" yaml:"secretRef"`
 }
-

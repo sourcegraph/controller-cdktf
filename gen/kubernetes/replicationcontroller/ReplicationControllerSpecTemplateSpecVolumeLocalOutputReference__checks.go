@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeLocalOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewReplicationControllerSpecTemplateSpecVolumeLocalOutputReferenceP
 
 	return nil
 }
-

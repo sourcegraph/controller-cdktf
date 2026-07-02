@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedul
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduling
 
 	return nil
 }
-

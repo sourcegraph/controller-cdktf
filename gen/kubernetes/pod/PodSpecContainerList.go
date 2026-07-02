@@ -17,8 +17,8 @@ type PodSpecContainerList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecContainerList interface {
 	Get(index *float64) PodSpecContainerOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecContainerList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecContainerList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewPodSpecContainerList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecContainerList(terraformResource cdktf.IInterpolatingParent, terra
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecContainerList_Override(p PodSpecContainerList, terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecContainerList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecContainerList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecContainerList)SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecContainerList) AllWithMapKey(mapKeyAttributeName *stri
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecContainerList) Get(index *float64) PodSpecContainerOut
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecContainerList) ToString() *string {
 
 	return returns
 }
-

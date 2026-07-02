@@ -34,7 +34,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecSecurityContextSysctlLi
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecSecurityContextSysctlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecSecurityContextSysctlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecSecurityContextSysctlListP
 
 	return nil
 }
-

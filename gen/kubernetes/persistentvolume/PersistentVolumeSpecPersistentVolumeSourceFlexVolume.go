@@ -1,6 +1,5 @@
 package persistentvolume
 
-
 type PersistentVolumeSpecPersistentVolumeSourceFlexVolume struct {
 	// Driver is the name of the driver to use for this volume.
 	//
@@ -19,10 +18,9 @@ type PersistentVolumeSpecPersistentVolumeSourceFlexVolume struct {
 	// Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume#read_only PersistentVolume#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// secret_ref block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume#secret_ref PersistentVolume#secret_ref}
 	SecretRef *PersistentVolumeSpecPersistentVolumeSourceFlexVolumeSecretRef `field:"optional" json:"secretRef" yaml:"secretRef"`
 }
-

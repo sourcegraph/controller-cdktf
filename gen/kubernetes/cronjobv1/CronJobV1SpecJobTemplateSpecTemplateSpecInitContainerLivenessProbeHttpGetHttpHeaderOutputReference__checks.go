@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiveness
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiveness
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessPro
 
 	return nil
 }
-

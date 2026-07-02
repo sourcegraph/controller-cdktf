@@ -98,7 +98,7 @@ func (i *jsiiProxy_IngressStatusLoadBalancerIngressOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IngressStatusLoadBalancerIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressStatusLoadBalancerIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIngressStatusLoadBalancerIngressOutputReferenceParameters(terraf
 
 	return nil
 }
-

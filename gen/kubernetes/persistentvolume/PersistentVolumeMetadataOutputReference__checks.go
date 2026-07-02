@@ -106,7 +106,7 @@ func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) validateSetAnnotatio
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPersistentVolumeMetadataOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

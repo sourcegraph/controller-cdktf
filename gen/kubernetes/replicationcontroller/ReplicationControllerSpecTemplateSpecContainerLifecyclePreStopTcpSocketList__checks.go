@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreSto
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTc
 
 	return nil
 }
-

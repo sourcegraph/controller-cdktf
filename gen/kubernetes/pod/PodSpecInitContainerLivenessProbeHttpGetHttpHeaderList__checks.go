@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) valid
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecInitContainerLivenessProbeHttpGetHttpHeaderListParameters
 
 	return nil
 }
-

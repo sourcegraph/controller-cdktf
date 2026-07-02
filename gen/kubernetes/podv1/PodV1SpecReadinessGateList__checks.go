@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodV1SpecReadinessGateList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecReadinessGateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodV1SpecReadinessGateListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

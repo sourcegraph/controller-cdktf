@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaim)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaim](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaim{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,15 +63,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimConfig",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimConfig)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadata",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimMetadata)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,11 +121,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpec",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpec)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecList",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -147,7 +147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecOutputReference",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessModes", GoGetter: "AccessModes"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeName", GoGetter: "VolumeName"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeNameInput", GoGetter: "VolumeNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResources",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecResources)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResourcesList",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecResourcesList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -216,7 +216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,11 +250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelector",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelector)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelectorList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -276,11 +276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressions",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,7 +343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference",
-		reflect.TypeOf((*DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

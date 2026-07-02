@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDeploymentSpecTemplateSpecContainerEnvFromConfigMapRefOutputRefe
 
 	return nil
 }
-

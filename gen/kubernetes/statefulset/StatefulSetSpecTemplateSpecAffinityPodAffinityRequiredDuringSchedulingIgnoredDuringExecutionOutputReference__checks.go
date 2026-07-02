@@ -90,7 +90,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringS
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validatePutLabelSelectorParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validatePutLabelSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringS
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringS
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewStatefulSetSpecTemplateSpecAffinityPodAffinityRequiredDuringSche
 
 	return nil
 }
-

@@ -112,7 +112,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycl
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -275,4 +275,3 @@ func validateNewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePo
 
 	return nil
 }
-

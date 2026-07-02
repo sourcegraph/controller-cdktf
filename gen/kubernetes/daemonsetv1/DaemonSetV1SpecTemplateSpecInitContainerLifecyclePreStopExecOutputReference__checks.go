@@ -106,7 +106,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutp
 
 	return nil
 }
-

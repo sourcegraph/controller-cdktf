@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOut
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOut
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutput
 
 	return nil
 }
-

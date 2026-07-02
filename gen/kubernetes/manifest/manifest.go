@@ -18,15 +18,15 @@ type Manifest interface {
 	SetComputedFields(val *[]*string)
 	ComputedFieldsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,43 +45,43 @@ type Manifest interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Manifest() *map[string]interface{}
-	SetManifest(val *map[string]interface{})
-	ManifestInput() *map[string]interface{}
+	Manifest() *map[string]any
+	SetManifest(val *map[string]any)
+	ManifestInput() *map[string]any
 	// The tree node.
 	Node() constructs.Node
-	Object() *map[string]interface{}
-	SetObject(val *map[string]interface{})
-	ObjectInput() *map[string]interface{}
+	Object() *map[string]any
+	SetObject(val *map[string]any)
+	ObjectInput() *map[string]any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ManifestTimeoutsOutputReference
 	TimeoutsInput() *ManifestTimeouts
 	Wait() ManifestWaitOutputReference
 	WaitFor() ManifestWaitForOutputReference
-	WaitForInput() interface{}
+	WaitForInput() any
 	WaitInput() *ManifestWait
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type Manifest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type Manifest interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type Manifest interface {
 	ResetTimeouts()
 	ResetWait()
 	ResetWaitFor()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Manifest
@@ -179,8 +179,8 @@ func (j *jsiiProxy_Manifest) ComputedFieldsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Manifest) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_Manifest) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_Manifest) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Manifest) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_Manifest) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Manifest() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) Manifest() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"manifest",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_Manifest) Manifest() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) ManifestInput() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) ManifestInput() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"manifestInput",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_Manifest) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Object() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) Object() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"object",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_Manifest) Object() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) ObjectInput() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) ObjectInput() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"objectInput",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_Manifest) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Manifest) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_Manifest) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Manifest) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_Manifest) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Manifest) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_Manifest) WaitFor() ManifestWaitForOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) WaitForInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Manifest) WaitForInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForInput",
@@ -449,7 +449,6 @@ func (j *jsiiProxy_Manifest) WaitInput() *ManifestWait {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/manifest kubernetes_manifest} Resource.
 func NewManifest(scope constructs.Construct, id *string, config *ManifestConfig) Manifest {
 	_init_.Initialize()
@@ -461,7 +460,7 @@ func NewManifest(scope constructs.Construct, id *string, config *ManifestConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -474,12 +473,12 @@ func NewManifest_Override(m Manifest, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetComputedFields(val *[]*string) {
+func (j *jsiiProxy_Manifest) SetComputedFields(val *[]*string) {
 	if err := j.validateSetComputedFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_Manifest)SetComputedFields(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetConnection(val interface{}) {
+func (j *jsiiProxy_Manifest) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_Manifest)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetCount(val interface{}) {
+func (j *jsiiProxy_Manifest) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_Manifest)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Manifest) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_Manifest)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Manifest) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_Manifest)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Manifest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_Manifest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetManifest(val *map[string]interface{}) {
+func (j *jsiiProxy_Manifest) SetManifest(val *map[string]any) {
 	if err := j.validateSetManifestParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_Manifest)SetManifest(val *map[string]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetObject(val *map[string]interface{}) {
+func (j *jsiiProxy_Manifest) SetObject(val *map[string]any) {
 	if err := j.validateSetObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_Manifest)SetObject(val *map[string]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Manifest) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_Manifest)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Manifest) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func Manifest_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func Manifest_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Manifest_IsConstruct(x interface{}) *bool {
+func Manifest_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManifest_IsConstructParameters(x); err != nil {
@@ -627,7 +626,7 @@ func Manifest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func Manifest_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Manifest_IsTerraformElement(x interface{}) *bool {
+func Manifest_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManifest_IsTerraformElementParameters(x); err != nil {
@@ -646,7 +645,7 @@ func Manifest_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func Manifest_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Manifest_IsTerraformResource(x interface{}) *bool {
+func Manifest_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateManifest_IsTerraformResourceParameters(x); err != nil {
@@ -665,7 +664,7 @@ func Manifest_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,31 +689,31 @@ func (m *jsiiProxy_Manifest) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_Manifest) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_Manifest) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_Manifest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_Manifest) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (m *jsiiProxy_Manifest) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (m *jsiiProxy_Manifest) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (m *jsiiProxy_Manifest) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (m *jsiiProxy_Manifest) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (m *jsiiProxy_Manifest) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (m *jsiiProxy_Manifest) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (m *jsiiProxy_Manifest) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,15 +841,15 @@ func (m *jsiiProxy_Manifest) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_Manifest) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Manifest) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -869,7 +868,7 @@ func (m *jsiiProxy_Manifest) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -882,7 +881,7 @@ func (m *jsiiProxy_Manifest) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,18 +895,18 @@ func (m *jsiiProxy_Manifest) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_Manifest) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_Manifest) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -918,7 +917,7 @@ func (m *jsiiProxy_Manifest) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -929,7 +928,7 @@ func (m *jsiiProxy_Manifest) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -940,7 +939,7 @@ func (m *jsiiProxy_Manifest) PutFieldManager(value *ManifestFieldManager) {
 	_jsii_.InvokeVoid(
 		m,
 		"putFieldManager",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -951,7 +950,7 @@ func (m *jsiiProxy_Manifest) PutTimeouts(value *ManifestTimeouts) {
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -962,7 +961,7 @@ func (m *jsiiProxy_Manifest) PutWait(value *ManifestWait) {
 	_jsii_.InvokeVoid(
 		m,
 		"putWait",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (m *jsiiProxy_Manifest) PutWaitFor(value *ManifestWaitFor) {
 	_jsii_.InvokeVoid(
 		m,
 		"putWaitFor",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1033,8 +1032,8 @@ func (m *jsiiProxy_Manifest) ResetWaitFor() {
 	)
 }
 
-func (m *jsiiProxy_Manifest) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Manifest) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1046,8 +1045,8 @@ func (m *jsiiProxy_Manifest) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Manifest) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_Manifest) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1059,8 +1058,8 @@ func (m *jsiiProxy_Manifest) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Manifest) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Manifest) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1072,8 +1071,8 @@ func (m *jsiiProxy_Manifest) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_Manifest) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Manifest) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1098,8 +1097,8 @@ func (m *jsiiProxy_Manifest) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_Manifest) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_Manifest) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1110,4 +1109,3 @@ func (m *jsiiProxy_Manifest) ToTerraform() interface{} {
 
 	return returns
 }
-

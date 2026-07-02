@@ -1,6 +1,5 @@
 package job
 
-
 type JobSpecTemplateSpecInitContainerLifecyclePreStop struct {
 	// exec block.
 	//
@@ -13,6 +12,5 @@ type JobSpecTemplateSpecInitContainerLifecyclePreStop struct {
 	// tcp_socket block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#tcp_socket Job#tcp_socket}
-	TcpSocket interface{} `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
+	TcpSocket any `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
 }
-

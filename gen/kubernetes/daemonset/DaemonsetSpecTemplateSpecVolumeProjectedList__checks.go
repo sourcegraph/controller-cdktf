@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecTemplateSpecVolumeProjectedListParameters(terraform
 
 	return nil
 }
-

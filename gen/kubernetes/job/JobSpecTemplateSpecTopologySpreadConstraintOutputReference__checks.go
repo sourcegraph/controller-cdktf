@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validatePutLabelSelectorParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validatePutLabelSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewJobSpecTemplateSpecTopologySpreadConstraintOutputReferenceParame
 
 	return nil
 }
-

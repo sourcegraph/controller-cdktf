@@ -18,15 +18,15 @@ type Secret interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
@@ -45,9 +45,9 @@ type Secret interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Immutable() interface{}
-	SetImmutable(val interface{})
-	ImmutableInput() interface{}
+	Immutable() any
+	SetImmutable(val any)
+	ImmutableInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,32 +61,32 @@ type Secret interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SecretTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	WaitForServiceAccountToken() interface{}
-	SetWaitForServiceAccountToken(val interface{})
-	WaitForServiceAccountTokenInput() interface{}
+	WaitForServiceAccountToken() any
+	SetWaitForServiceAccountToken(val any)
+	WaitForServiceAccountTokenInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type Secret interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type Secret interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,17 +135,17 @@ type Secret interface {
 	ResetTimeouts()
 	ResetType()
 	ResetWaitForServiceAccountToken()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Secret
@@ -183,8 +183,8 @@ func (j *jsiiProxy_Secret) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_Secret) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Secret) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_Secret) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_Secret) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) Immutable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) Immutable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutable",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_Secret) Immutable() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) ImmutableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) ImmutableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutableInput",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_Secret) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Secret) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_Secret) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_Secret) TerraformGeneratorMetadata() *cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_Secret) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Secret) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_Secret) Timeouts() SecretTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_Secret) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) WaitForServiceAccountToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) WaitForServiceAccountToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForServiceAccountToken",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_Secret) WaitForServiceAccountToken() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForServiceAccountTokenInput",
@@ -472,7 +472,6 @@ func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/secret kubernetes_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
@@ -485,7 +484,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.secret.Secret",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -498,12 +497,12 @@ func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.secret.Secret",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_Secret)SetBinaryData(val *map[string]*string) {
+func (j *jsiiProxy_Secret) SetBinaryData(val *map[string]*string) {
 	if err := j.validateSetBinaryDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_Secret)SetBinaryData(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetConnection(val interface{}) {
+func (j *jsiiProxy_Secret) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_Secret)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetCount(val interface{}) {
+func (j *jsiiProxy_Secret) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_Secret)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetData(val *map[string]*string) {
+func (j *jsiiProxy_Secret) SetData(val *map[string]*string) {
 	if err := j.validateSetDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_Secret)SetData(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Secret) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_Secret)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Secret) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_Secret)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetId(val *string) {
+func (j *jsiiProxy_Secret) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_Secret)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetImmutable(val interface{}) {
+func (j *jsiiProxy_Secret) SetImmutable(val any) {
 	if err := j.validateSetImmutableParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_Secret)SetImmutable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Secret) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_Secret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Secret) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_Secret)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Secret) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_Secret)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetType(val *string) {
+func (j *jsiiProxy_Secret) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_Secret)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Secret)SetWaitForServiceAccountToken(val interface{}) {
+func (j *jsiiProxy_Secret) SetWaitForServiceAccountToken(val any) {
 	if err := j.validateSetWaitForServiceAccountTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func Secret_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.secret.Secret",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func Secret_GenerateConfigForImport(scope constructs.Construct, importToId *stri
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Secret_IsConstruct(x interface{}) *bool {
+func Secret_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecret_IsConstructParameters(x); err != nil {
@@ -684,7 +683,7 @@ func Secret_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.secret.Secret",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func Secret_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Secret_IsTerraformElement(x interface{}) *bool {
+func Secret_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecret_IsTerraformElementParameters(x); err != nil {
@@ -703,7 +702,7 @@ func Secret_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.secret.Secret",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func Secret_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Secret_IsTerraformResource(x interface{}) *bool {
+func Secret_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecret_IsTerraformResourceParameters(x); err != nil {
@@ -722,7 +721,7 @@ func Secret_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.secret.Secret",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,31 +746,31 @@ func (s *jsiiProxy_Secret) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_Secret) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_Secret) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_Secret) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_Secret) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_Secret) GetBooleanAttribute(terraformAttribute *string) cdktf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (s *jsiiProxy_Secret) GetBooleanMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (s *jsiiProxy_Secret) GetListAttribute(terraformAttribute *string) *[]*stri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (s *jsiiProxy_Secret) GetNumberAttribute(terraformAttribute *string) *float
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (s *jsiiProxy_Secret) GetNumberListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_Secret) GetNumberMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (s *jsiiProxy_Secret) GetStringAttribute(terraformAttribute *string) *strin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,15 +898,15 @@ func (s *jsiiProxy_Secret) GetStringMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_Secret) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Secret) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -926,7 +925,7 @@ func (s *jsiiProxy_Secret) ImportFrom(id *string, provider cdktf.TerraformProvid
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -939,7 +938,7 @@ func (s *jsiiProxy_Secret) InterpolationForAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,18 +952,18 @@ func (s *jsiiProxy_Secret) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_Secret) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_Secret) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -975,7 +974,7 @@ func (s *jsiiProxy_Secret) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -986,7 +985,7 @@ func (s *jsiiProxy_Secret) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -997,7 +996,7 @@ func (s *jsiiProxy_Secret) PutMetadata(value *SecretMetadata) {
 	_jsii_.InvokeVoid(
 		s,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (s *jsiiProxy_Secret) PutTimeouts(value *SecretTimeouts) {
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,8 +1075,8 @@ func (s *jsiiProxy_Secret) ResetWaitForServiceAccountToken() {
 	)
 }
 
-func (s *jsiiProxy_Secret) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Secret) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1089,8 +1088,8 @@ func (s *jsiiProxy_Secret) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Secret) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_Secret) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1102,8 +1101,8 @@ func (s *jsiiProxy_Secret) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Secret) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Secret) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1115,8 +1114,8 @@ func (s *jsiiProxy_Secret) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_Secret) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Secret) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1141,8 +1140,8 @@ func (s *jsiiProxy_Secret) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_Secret) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_Secret) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1153,4 +1152,3 @@ func (s *jsiiProxy_Secret) ToTerraform() interface{} {
 
 	return returns
 }
-

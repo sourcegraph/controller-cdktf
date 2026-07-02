@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputRefe
 
 	return nil
 }
-

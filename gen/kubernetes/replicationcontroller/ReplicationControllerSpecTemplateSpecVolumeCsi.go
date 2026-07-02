@@ -1,6 +1,5 @@
 package replicationcontroller
 
-
 type ReplicationControllerSpecTemplateSpecVolumeCsi struct {
 	// the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 	//
@@ -19,10 +18,9 @@ type ReplicationControllerSpecTemplateSpecVolumeCsi struct {
 	// Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: http://kubernetes.io/docs/user-guide/volumes#csi.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Attributes of the volume to publish.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#volume_attributes ReplicationController#volume_attributes}
 	VolumeAttributes *map[string]*string `field:"optional" json:"volumeAttributes" yaml:"volumeAttributes"`
 }
-

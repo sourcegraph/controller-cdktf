@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessPro
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessPro
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeH
 
 	return nil
 }
-

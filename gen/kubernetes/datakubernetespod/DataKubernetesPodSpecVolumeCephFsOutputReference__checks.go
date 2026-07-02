@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeCephFsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeCephFsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeCephFsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecVolumeCephFsOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IngressSpecRuleHttpPathBackendOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_IngressSpecRuleHttpPathBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressSpecRuleHttpPathBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIngressSpecRuleHttpPathBackendOutputReferenceParameters(terrafor
 
 	return nil
 }
-

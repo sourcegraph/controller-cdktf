@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecVolume struct {
 	// aws_elastic_block_store block.
 	//
@@ -93,7 +92,7 @@ type DeploymentSpecTemplateSpecVolume struct {
 	// projected block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#projected Deployment#projected}
-	Projected interface{} `field:"optional" json:"projected" yaml:"projected"`
+	Projected any `field:"optional" json:"projected" yaml:"projected"`
 	// quobyte block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#quobyte Deployment#quobyte}
@@ -111,4 +110,3 @@ type DeploymentSpecTemplateSpecVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#vsphere_volume Deployment#vsphere_volume}
 	VsphereVolume *DeploymentSpecTemplateSpecVolumeVsphereVolume `field:"optional" json:"vsphereVolume" yaml:"vsphereVolume"`
 }
-

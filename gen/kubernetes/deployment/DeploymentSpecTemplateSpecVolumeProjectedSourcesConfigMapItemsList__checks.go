@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItem
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsLi
 
 	return nil
 }
-

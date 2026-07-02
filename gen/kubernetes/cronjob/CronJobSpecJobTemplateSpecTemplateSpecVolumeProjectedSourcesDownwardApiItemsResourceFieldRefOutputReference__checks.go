@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesD
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDown
 
 	return nil
 }
-

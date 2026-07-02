@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStatefulSetSpecTemplateSpecContainerLivenessProbeExecOutputRefer
 
 	return nil
 }
-

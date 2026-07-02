@@ -18,9 +18,9 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	CreationStack() *[]*string
 	Env() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList
 	EnvFrom() CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList
-	EnvFromInput() interface{}
-	EnvInput() interface{}
+	EnvFromInput() any
+	EnvInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -43,8 +43,8 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	ImagePullPolicy() *string
 	SetImagePullPolicy(val *string)
 	ImagePullPolicyInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Lifecycle() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference
 	LifecycleInput() *CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle
 	LivenessProbe() CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference
@@ -53,7 +53,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	SetName(val *string)
 	NameInput() *string
 	Port() CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList
-	PortInput() interface{}
+	PortInput() any
 	ReadinessProbe() CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference
 	ReadinessProbeInput() *CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe
 	Resources() CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference
@@ -62,12 +62,12 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	SecurityContextInput() *CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext
 	StartupProbe() CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference
 	StartupProbeInput() *CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe
-	Stdin() interface{}
-	SetStdin(val interface{})
-	StdinInput() interface{}
-	StdinOnce() interface{}
-	SetStdinOnce(val interface{})
-	StdinOnceInput() interface{}
+	Stdin() any
+	SetStdin(val any)
+	StdinInput() any
+	StdinOnce() any
+	SetStdinOnce(val any)
+	StdinOnceInput() any
 	TerminationMessagePath() *string
 	SetTerminationMessagePath(val *string)
 	TerminationMessagePathInput() *string
@@ -82,18 +82,18 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tty() interface{}
-	SetTty(val interface{})
-	TtyInput() interface{}
+	Tty() any
+	SetTty(val any)
+	TtyInput() any
 	VolumeMount() CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList
-	VolumeMountInput() interface{}
+	VolumeMountInput() any
 	WorkingDir() *string
 	SetWorkingDir(val *string)
 	WorkingDirInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,16 +114,16 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnv(value interface{})
-	PutEnvFrom(value interface{})
+	PutEnv(value any)
+	PutEnvFrom(value any)
 	PutLifecycle(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle)
 	PutLivenessProbe(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe)
-	PutPort(value interface{})
+	PutPort(value any)
 	PutReadinessProbe(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe)
 	PutResources(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources)
 	PutSecurityContext(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext)
 	PutStartupProbe(value *CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe)
-	PutVolumeMount(value interface{})
+	PutVolumeMount(value any)
 	ResetArgs()
 	ResetCommand()
 	ResetEnv()
@@ -146,7 +146,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference interface 
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -199,8 +199,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) EnvFromInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) EnvFromInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envFromInput",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) EnvInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) EnvInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envInput",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Stdin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Stdin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdin",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinInput",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinOnce() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinOnce() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnce",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinOnceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) StdinOnceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnceInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Tty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Tty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tty",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) TtyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) TtyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ttyInput",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) VolumeMountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) VolumeMountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeMountInput",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-
 func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference {
 	_init_.Initialize()
 
@@ -660,7 +659,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -672,12 +671,12 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetCommand(val *[]*string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetCommand(val *[]*string) {
 	if err := j.validateSetCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetImagePullPolicy(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetImagePullPolicy(val *string) {
 	if err := j.validateSetImagePullPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetStdin(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetStdin(val any) {
 	if err := j.validateSetStdinParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetStdinOnce(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetStdinOnce(val any) {
 	if err := j.validateSetStdinOnceParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetTerminationMessagePath(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetTerminationMessagePath(val *string) {
 	if err := j.validateSetTerminationMessagePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetTerminationMessagePolicy(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetTerminationMessagePolicy(val *string) {
 	if err := j.validateSetTerminationMessagePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetTty(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetTty(val any) {
 	if err := j.validateSetTtyParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)SetWorkingDir(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) SetWorkingDir(val *string) {
 	if err := j.validateSetWorkingDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,16 +865,16 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,32 +1031,32 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutEnv(value interface{}) {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutEnv(value any) {
 	if err := c.validatePutEnvParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEnv",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutEnvFrom(value interface{}) {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutEnvFrom(value any) {
 	if err := c.validatePutEnvFromParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEnvFrom",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putLifecycle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,18 +1078,18 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putLivenessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutPort(value interface{}) {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutPort(value any) {
 	if err := c.validatePutPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putReadinessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,18 +1133,18 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"putStartupProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutVolumeMount(value interface{}) {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) PutVolumeMount(value any) {
 	if err := c.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVolumeMount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,16 +1308,16 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 	)
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1337,4 +1336,3 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputRefere
 
 	return returns
 }
-

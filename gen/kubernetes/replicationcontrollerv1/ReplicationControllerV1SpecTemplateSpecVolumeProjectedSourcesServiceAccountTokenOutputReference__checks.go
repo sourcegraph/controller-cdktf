@@ -106,7 +106,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeProjectedSources
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesSer
 
 	return nil
 }
-

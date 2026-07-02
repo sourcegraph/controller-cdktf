@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReplicationControllerSpecTemplateSpecHostAliasesListParameters(t
 
 	return nil
 }
-

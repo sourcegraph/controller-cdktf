@@ -131,7 +131,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewStatefulSetSpecTemplateSpecAffinityOutputReferenceParameters(ter
 
 	return nil
 }
-

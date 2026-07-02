@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapI
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItem
 
 	return nil
 }
-

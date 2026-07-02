@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsLi
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsListP
 
 	return nil
 }
-

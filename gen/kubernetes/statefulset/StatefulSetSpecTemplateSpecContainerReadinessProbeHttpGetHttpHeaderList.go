@@ -17,8 +17,8 @@ type StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList int
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList int
 	Get(index *float64) StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	return returns
 }
 
-
 func NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewStatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList_
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerReadinessProbeHttpGetHttp
 
 	return returns
 }
-

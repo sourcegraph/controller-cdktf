@@ -12,9 +12,9 @@ type PodSpecContainerEnvFromConfigMapRefOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type PodSpecContainerEnvFromConfigMapRefOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Optional() interface{}
-	SetOptional(val interface{})
-	OptionalInput() interface{}
+	Optional() any
+	SetOptional(val any)
+	OptionalInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type PodSpecContainerEnvFromConfigMapRefOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type PodSpecContainerEnvFromConfigMapRefOutputReference interface {
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) NameInput
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Optional() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Optional() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optional",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Optional(
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) OptionalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) OptionalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionalInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Terraform
 	return returns
 }
 
-
 func NewPodSpecContainerEnvFromConfigMapRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvFromConfigMapRefOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPodSpecContainerEnvFromConfigMapRefOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromConfigMapRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPodSpecContainerEnvFromConfigMapRefOutputReference_Override(p PodSpecCon
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromConfigMapRefOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetInternalValue(val *PodSpecContainerEnvFromConfigMapRef) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetInternalValue(val *PodSpecContainerEnvFromConfigMapRef) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetName(va
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetOptional(val interface{}) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetOptional(val any) {
 	if err := j.validateSetOptionalParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetOptiona
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) ComputeFq
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetListAt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) ResetOpti
 	)
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PodSpecContainerEnvFromConfigMapRefOutputReference) ToString(
 
 	return returns
 }
-

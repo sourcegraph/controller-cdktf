@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecDnsConfigOptionListParameters(terraformReso
 
 	return nil
 }
-

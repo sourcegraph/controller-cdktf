@@ -98,7 +98,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutput
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutput
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewHorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicyOutputRef
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewIngressV1SpecRuleHttpPathBackendOutputReferenceParameters(terraf
 
 	return nil
 }
-

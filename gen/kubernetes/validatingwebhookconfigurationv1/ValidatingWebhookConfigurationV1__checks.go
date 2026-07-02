@@ -19,7 +19,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateAddMoveTargetParame
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateMoveFromIdParameter
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validatePutMetadataParamete
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validatePutWebhookParameters(value interface{}) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) validatePutWebhookParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateValidatingWebhookConfigurationV1_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateValidatingWebhookConfigurationV1_IsConstructParameters(x interface{}) error {
+func validateValidatingWebhookConfigurationV1_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateValidatingWebhookConfigurationV1_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateValidatingWebhookConfigurationV1_IsTerraformElementParameters(x interface{}) error {
+func validateValidatingWebhookConfigurationV1_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateValidatingWebhookConfigurationV1_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateValidatingWebhookConfigurationV1_IsTerraformResourceParameters(x interface{}) error {
+func validateValidatingWebhookConfigurationV1_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateValidatingWebhookConfigurationV1_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetLifecycleParamet
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -456,4 +456,3 @@ func validateNewValidatingWebhookConfigurationV1Parameters(scope constructs.Cons
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) val
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStorageClassV1AllowedTopologiesMatchLabelExpressionsListParamete
 
 	return nil
 }
-

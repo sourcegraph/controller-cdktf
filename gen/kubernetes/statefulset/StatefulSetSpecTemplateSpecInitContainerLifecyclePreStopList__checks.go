@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList)
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLifecyclePreStopList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecTemplateSpecInitContainerLifecyclePreStopListPara
 
 	return nil
 }
-

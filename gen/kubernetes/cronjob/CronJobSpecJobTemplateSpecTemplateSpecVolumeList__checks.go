@@ -34,7 +34,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumeListParameters(terra
 
 	return nil
 }
-

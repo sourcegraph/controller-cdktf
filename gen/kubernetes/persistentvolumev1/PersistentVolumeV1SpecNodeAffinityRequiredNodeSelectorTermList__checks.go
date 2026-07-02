@@ -34,7 +34,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermLis
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermListPa
 
 	return nil
 }
-

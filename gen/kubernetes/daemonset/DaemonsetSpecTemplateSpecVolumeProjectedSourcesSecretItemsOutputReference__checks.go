@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOut
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOut
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDaemonsetSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutput
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDaemonsetSpecStrategyOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

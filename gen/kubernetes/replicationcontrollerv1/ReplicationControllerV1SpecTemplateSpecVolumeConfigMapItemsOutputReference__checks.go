@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOu
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOu
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsOutpu
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDeploymentV1SpecTemplateSpecReadinessGateOutputReferenceParamete
 
 	return nil
 }
-

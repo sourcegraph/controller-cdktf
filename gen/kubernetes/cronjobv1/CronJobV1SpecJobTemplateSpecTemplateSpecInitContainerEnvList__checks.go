@@ -34,7 +34,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList)
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvListPara
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelect
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelect
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorM
 
 	return nil
 }
-

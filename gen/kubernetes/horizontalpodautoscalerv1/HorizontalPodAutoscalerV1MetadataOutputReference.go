@@ -15,9 +15,9 @@ type HorizontalPodAutoscalerV1MetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type HorizontalPodAutoscalerV1MetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type HorizontalPodAutoscalerV1MetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) Annotations
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -299,7 +299,6 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) Uid() *stri
 	return returns
 }
 
-
 func NewHorizontalPodAutoscalerV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HorizontalPodAutoscalerV1MetadataOutputReference {
 	_init_.Initialize()
 
@@ -310,7 +309,7 @@ func NewHorizontalPodAutoscalerV1MetadataOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -322,12 +321,12 @@ func NewHorizontalPodAutoscalerV1MetadataOutputReference_Override(h HorizontalPo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetAnnotatio
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetGenerateName(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetGenerateName(val *string) {
 	if err := j.validateSetGenerateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetGenerateN
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetInternalValue(val *HorizontalPodAutoscalerV1Metadata) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetInternalValue(val *HorizontalPodAutoscalerV1Metadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetLabels(va
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetNamespace
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) ComputeFqn(
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetListAttr
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetStringAt
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) GetStringMa
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) Interpolati
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -663,16 +662,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) ResetNamesp
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -691,4 +690,3 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference) ToString() 
 
 	return returns
 }
-

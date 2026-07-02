@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDur
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validatePutNodeSelectorTermParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validatePutNodeSelectorTermParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDur
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuring
 
 	return nil
 }
-

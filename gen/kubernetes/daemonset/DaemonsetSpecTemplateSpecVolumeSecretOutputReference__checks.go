@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validatePutItemsParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeSecretOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewDaemonsetSpecTemplateSpecVolumeSecretOutputReferenceParameters(t
 
 	return nil
 }
-

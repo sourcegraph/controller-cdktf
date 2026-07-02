@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiI
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItem
 
 	return nil
 }
-

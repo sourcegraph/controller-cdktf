@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference) validatePutRangeParameters(value interface{}) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference) validatePutRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewPodSecurityPolicyV1Beta1SpecSupplementalGroupsOutputReferencePar
 
 	return nil
 }
-

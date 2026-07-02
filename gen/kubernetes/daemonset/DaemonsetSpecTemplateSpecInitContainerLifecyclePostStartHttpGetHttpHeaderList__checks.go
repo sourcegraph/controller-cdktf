@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePostStartHttpG
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecTemplateSpecInitContainerLifecyclePostStartHttpGetH
 
 	return nil
 }
-

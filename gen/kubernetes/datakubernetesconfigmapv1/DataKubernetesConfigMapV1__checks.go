@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataKubernetesConfigMapV1) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataKubernetesConfigMapV1) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataKubernetesConfigMapV1_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataKubernetesConfigMapV1_IsConstructParameters(x interface{}) error {
+func validateDataKubernetesConfigMapV1_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataKubernetesConfigMapV1_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataKubernetesConfigMapV1_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataKubernetesConfigMapV1_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataKubernetesConfigMapV1_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataKubernetesConfigMapV1_IsTerraformElementParameters(x interface{}) error {
+func validateDataKubernetesConfigMapV1_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func validateDataKubernetesConfigMapV1_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,4 +273,3 @@ func validateNewDataKubernetesConfigMapV1Parameters(scope constructs.Construct, 
 
 	return nil
 }
-

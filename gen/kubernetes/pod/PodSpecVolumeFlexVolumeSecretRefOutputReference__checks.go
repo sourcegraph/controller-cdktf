@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeFlexVolumeSecretRefOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeFlexVolumeSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeFlexVolumeSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodSpecVolumeFlexVolumeSecretRefOutputReferenceParameters(terraf
 
 	return nil
 }
-

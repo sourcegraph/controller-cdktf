@@ -98,7 +98,7 @@ func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateSetH
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEndpointsV1SubsetNotReadyAddressOutputReferenceParameters(terraf
 
 	return nil
 }
-

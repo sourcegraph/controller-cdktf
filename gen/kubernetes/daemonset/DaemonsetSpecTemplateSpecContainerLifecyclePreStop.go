@@ -1,6 +1,5 @@
 package daemonset
 
-
 type DaemonsetSpecTemplateSpecContainerLifecyclePreStop struct {
 	// exec block.
 	//
@@ -13,6 +12,5 @@ type DaemonsetSpecTemplateSpecContainerLifecyclePreStop struct {
 	// tcp_socket block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemonset#tcp_socket Daemonset#tcp_socket}
-	TcpSocket interface{} `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
+	TcpSocket any `field:"optional" json:"tcpSocket" yaml:"tcpSocket"`
 }
-

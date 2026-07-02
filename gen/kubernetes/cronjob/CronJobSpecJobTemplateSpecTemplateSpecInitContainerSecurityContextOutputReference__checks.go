@@ -131,7 +131,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityCo
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecInitContainerSecurityConte
 
 	return nil
 }
-

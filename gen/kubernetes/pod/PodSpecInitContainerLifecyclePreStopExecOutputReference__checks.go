@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopExecOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPodSpecInitContainerLifecyclePreStopExecOutputReferenceParameter
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type ClusterRoleBindingV1 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,28 +52,28 @@ type ClusterRoleBindingV1 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleRef() ClusterRoleBindingV1RoleRefOutputReference
 	RoleRefInput() *ClusterRoleBindingV1RoleRef
 	Subject() ClusterRoleBindingV1SubjectList
-	SubjectInput() interface{}
+	SubjectInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ClusterRoleBindingV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -103,7 +103,7 @@ type ClusterRoleBindingV1 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -112,22 +112,22 @@ type ClusterRoleBindingV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *ClusterRoleBindingV1Metadata)
 	PutRoleRef(value *ClusterRoleBindingV1RoleRef)
-	PutSubject(value interface{})
+	PutSubject(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ClusterRoleBindingV1
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) Subject() ClusterRoleBindingV1SubjectLi
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) SubjectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) SubjectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subjectInput",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClusterRoleBindingV1) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_ClusterRoleBindingV1) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cluster_role_binding_v1 kubernetes_cluster_role_binding_v1} Resource.
 func NewClusterRoleBindingV1(scope constructs.Construct, id *string, config *ClusterRoleBindingV1Config) ClusterRoleBindingV1 {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewClusterRoleBindingV1(scope constructs.Construct, id *string, config *Clu
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewClusterRoleBindingV1_Override(c ClusterRoleBindingV1, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetConnection(val interface{}) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetCount(val interface{}) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetId(val *string) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_ClusterRoleBindingV1)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ClusterRoleBindingV1) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func ClusterRoleBindingV1_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func ClusterRoleBindingV1_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ClusterRoleBindingV1_IsConstruct(x interface{}) *bool {
+func ClusterRoleBindingV1_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClusterRoleBindingV1_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func ClusterRoleBindingV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func ClusterRoleBindingV1_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ClusterRoleBindingV1_IsTerraformElement(x interface{}) *bool {
+func ClusterRoleBindingV1_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClusterRoleBindingV1_IsTerraformElementParameters(x); err != nil {
@@ -550,7 +549,7 @@ func ClusterRoleBindingV1_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func ClusterRoleBindingV1_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ClusterRoleBindingV1_IsTerraformResource(x interface{}) *bool {
+func ClusterRoleBindingV1_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClusterRoleBindingV1_IsTerraformResourceParameters(x); err != nil {
@@ -569,7 +568,7 @@ func ClusterRoleBindingV1_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,31 +593,31 @@ func (c *jsiiProxy_ClusterRoleBindingV1) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ClusterRoleBindingV1) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClusterRoleBindingV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,15 +745,15 @@ func (c *jsiiProxy_ClusterRoleBindingV1) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -773,7 +772,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -786,7 +785,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,18 +799,18 @@ func (c *jsiiProxy_ClusterRoleBindingV1) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ClusterRoleBindingV1) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -822,7 +821,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -833,7 +832,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -844,7 +843,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1) PutMetadata(value *ClusterRoleBindingV1
 	_jsii_.InvokeVoid(
 		c,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -855,18 +854,18 @@ func (c *jsiiProxy_ClusterRoleBindingV1) PutRoleRef(value *ClusterRoleBindingV1R
 	_jsii_.InvokeVoid(
 		c,
 		"putRoleRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) PutSubject(value interface{}) {
+func (c *jsiiProxy_ClusterRoleBindingV1) PutSubject(value any) {
 	if err := c.validatePutSubjectParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSubject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -886,8 +885,8 @@ func (c *jsiiProxy_ClusterRoleBindingV1) ResetOverrideLogicalId() {
 	)
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -899,8 +898,8 @@ func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -912,8 +911,8 @@ func (c *jsiiProxy_ClusterRoleBindingV1) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -925,8 +924,8 @@ func (c *jsiiProxy_ClusterRoleBindingV1) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -951,8 +950,8 @@ func (c *jsiiProxy_ClusterRoleBindingV1) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClusterRoleBindingV1) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -963,4 +962,3 @@ func (c *jsiiProxy_ClusterRoleBindingV1) ToTerraform() interface{} {
 
 	return returns
 }
-

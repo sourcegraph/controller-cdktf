@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateMetadataOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeploymentV1SpecTemplateMetadataOutputReferenceParameters(terraf
 
 	return nil
 }
-

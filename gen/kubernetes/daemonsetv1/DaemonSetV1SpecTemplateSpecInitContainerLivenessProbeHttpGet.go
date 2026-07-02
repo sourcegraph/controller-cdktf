@@ -1,6 +1,5 @@
 package daemonsetv1
 
-
 type DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
@@ -9,7 +8,7 @@ type DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// http_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#http_header DaemonSetV1#http_header}
-	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
+	HttpHeader any `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#path DaemonSetV1#path}
@@ -25,4 +24,3 @@ type DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#scheme DaemonSetV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

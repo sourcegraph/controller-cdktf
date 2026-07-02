@@ -34,7 +34,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecSelectorMatchExpressionsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCronJobSpecJobTemplateSpecSelectorMatchExpressionsListParameters
 
 	return nil
 }
-

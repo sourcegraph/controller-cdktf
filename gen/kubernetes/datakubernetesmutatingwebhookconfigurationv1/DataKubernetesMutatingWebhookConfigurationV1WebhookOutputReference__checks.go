@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesMutatingWebhookConfigurationV1WebhookOutputReferen
 
 	return nil
 }
-

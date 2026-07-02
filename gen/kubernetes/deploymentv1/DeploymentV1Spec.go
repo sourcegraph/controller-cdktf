@@ -1,6 +1,5 @@
 package deploymentv1
 
-
 type DeploymentV1Spec struct {
 	// template block.
 	//
@@ -15,7 +14,7 @@ type DeploymentV1Spec struct {
 	// Indicates that the deployment is paused.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#paused DeploymentV1#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// The maximum time in seconds for a deployment to make progress before it is considered to be failed.
 	//
 	// The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
@@ -41,4 +40,3 @@ type DeploymentV1Spec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#strategy DeploymentV1#strategy}
 	Strategy *DeploymentV1SpecStrategy `field:"optional" json:"strategy" yaml:"strategy"`
 }
-

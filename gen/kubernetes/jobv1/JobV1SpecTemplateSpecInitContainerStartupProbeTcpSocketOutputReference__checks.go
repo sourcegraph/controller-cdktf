@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutput
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutput
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputRef
 
 	return nil
 }
-

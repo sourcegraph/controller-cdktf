@@ -112,7 +112,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewJobSpecTemplateSpecContainerLivenessProbeOutputReferenceParamete
 
 	return nil
 }
-

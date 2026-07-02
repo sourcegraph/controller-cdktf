@@ -90,7 +90,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateInte
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validatePutMatchExpressionParameters(value interface{}) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validatePutMatchExpressionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewResourceQuotaV1SpecScopeSelectorOutputReferenceParameters(terraf
 
 	return nil
 }
-

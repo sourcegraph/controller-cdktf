@@ -90,7 +90,7 @@ func (p *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validateI
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (p *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewPersistentVolumeClaimV1SpecSelectorOutputReferenceParameters(ter
 
 	return nil
 }
-

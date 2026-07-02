@@ -34,7 +34,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHorizontalPodAutoscalerV2Beta2SpecBehaviorScaleDownPolicyListPar
 
 	return nil
 }
-

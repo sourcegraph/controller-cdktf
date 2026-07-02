@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOu
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecContainerSecurityContextSeccompProfileOutpu
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetApiVersion
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEnvEnvValueFromFieldRefOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

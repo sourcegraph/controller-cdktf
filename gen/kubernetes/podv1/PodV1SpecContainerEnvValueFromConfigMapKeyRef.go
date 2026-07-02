@@ -1,6 +1,5 @@
 package podv1
 
-
 type PodV1SpecContainerEnvValueFromConfigMapKeyRef struct {
 	// The key to select.
 	//
@@ -13,6 +12,5 @@ type PodV1SpecContainerEnvValueFromConfigMapKeyRef struct {
 	// Specify whether the ConfigMap or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_v1#optional PodV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

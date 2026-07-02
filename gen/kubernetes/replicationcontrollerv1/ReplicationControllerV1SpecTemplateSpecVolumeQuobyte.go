@@ -1,6 +1,5 @@
 package replicationcontrollerv1
 
-
 type ReplicationControllerV1SpecTemplateSpecVolumeQuobyte struct {
 	// Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 	//
@@ -17,10 +16,9 @@ type ReplicationControllerV1SpecTemplateSpecVolumeQuobyte struct {
 	// Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#read_only ReplicationControllerV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// User to map volume access to Defaults to serivceaccount user.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller_v1#user ReplicationControllerV1#user}
 	User *string `field:"optional" json:"user" yaml:"user"`
 }
-

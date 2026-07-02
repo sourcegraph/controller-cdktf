@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceField
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef
 
 	return nil
 }
-

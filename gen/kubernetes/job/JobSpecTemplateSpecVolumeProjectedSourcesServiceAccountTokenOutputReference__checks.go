@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenO
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewJobSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutp
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReferencePa
 
 	return nil
 }
-

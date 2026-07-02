@@ -12,9 +12,9 @@ type PodV1SpecVolumeAwsElasticBlockStoreOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type PodV1SpecVolumeAwsElasticBlockStoreOutputReference interface {
 	Partition() *float64
 	SetPartition(val *float64)
 	PartitionInput() *float64
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type PodV1SpecVolumeAwsElasticBlockStoreOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type PodV1SpecVolumeAwsElasticBlockStoreOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) Partition
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ReadOnly(
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) VolumeIdI
 	return returns
 }
 
-
 func NewPodV1SpecVolumeAwsElasticBlockStoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecVolumeAwsElasticBlockStoreOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewPodV1SpecVolumeAwsElasticBlockStoreOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewPodV1SpecVolumeAwsElasticBlockStoreOutputReference_Override(p PodV1SpecV
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAwsElasticBlockStoreOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetFsType(
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetInternalValue(val *PodV1SpecVolumeAwsElasticBlockStore) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetInternalValue(val *PodV1SpecVolumeAwsElasticBlockStore) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetPartition(val *float64) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetPartition(val *float64) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetPartiti
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetReadOnl
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference)SetVolumeId(val *string) {
+func (j *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) SetVolumeId(val *string) {
 	if err := j.validateSetVolumeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ComputeFq
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetListAt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ResetRead
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (p *jsiiProxy_PodV1SpecVolumeAwsElasticBlockStoreOutputReference) ToString(
 
 	return returns
 }
-

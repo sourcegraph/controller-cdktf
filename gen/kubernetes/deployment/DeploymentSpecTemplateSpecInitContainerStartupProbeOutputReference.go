@@ -12,9 +12,9 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference interfac
 	SetSuccessThreshold(val *float64)
 	SuccessThresholdInput() *float64
 	TcpSocket() DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocketList
-	TcpSocketInput() interface{}
+	TcpSocketInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *DeploymentSpecTemplateSpecInitContainerStartupProbeExec)
 	PutHttpGet(value *DeploymentSpecTemplateSpecInitContainerStartupProbeHttpGet)
-	PutTcpSocket(value interface{})
+	PutTcpSocket(value any)
 	ResetExec()
 	ResetFailureThreshold()
 	ResetHttpGet()
@@ -95,7 +95,7 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference interfac
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) TcpSocketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) TcpSocketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tcpSocketInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	return returns
 }
 
-
 func NewDeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewDeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewDeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetFailureThreshold(val *float64) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetFailureThreshold(val *float64) {
 	if err := j.validateSetFailureThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetInitialDelaySeconds(val *float64) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetInitialDelaySeconds(val *float64) {
 	if err := j.validateSetInitialDelaySecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetInternalValue(val *DeploymentSpecTemplateSpecInitContainerStartupProbe) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetInternalValue(val *DeploymentSpecTemplateSpecInitContainerStartupProbe) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetPeriodSeconds(val *float64) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetPeriodSeconds(val *float64) {
 	if err := j.validateSetPeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetSuccessThreshold(val *float64) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetSuccessThreshold(val *float64) {
 	if err := j.validateSetSuccessThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,16 +488,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"putExec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"putHttpGet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) PutTcpSocket(value interface{}) {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) PutTcpSocket(value any) {
 	if err := d.validatePutTcpSocketParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTcpSocket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerStartupProbeOutputRefe
 
 	return returns
 }
-

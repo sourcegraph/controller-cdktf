@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvFromList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvFromList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvFromList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerEnvFromListParameters(terrafor
 
 	return nil
 }
-

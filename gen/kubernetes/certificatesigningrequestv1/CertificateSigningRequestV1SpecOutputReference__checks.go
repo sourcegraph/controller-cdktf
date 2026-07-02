@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCertificateSigningRequestV1SpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

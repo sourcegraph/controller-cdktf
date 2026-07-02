@@ -12,9 +12,9 @@ type JobSpecTemplateSpecVolumeNfsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type JobSpecTemplateSpecVolumeNfsOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	Server() *string
 	SetServer(val *string)
 	ServerInput() *string
@@ -49,7 +49,7 @@ type JobSpecTemplateSpecVolumeNfsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type JobSpecTemplateSpecVolumeNfsOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) PathInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ReadOnly() inter
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeNfsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeNfsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewJobSpecTemplateSpecVolumeNfsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeNfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewJobSpecTemplateSpecVolumeNfsOutputReference_Override(j JobSpecTemplateSp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeNfsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetInternalValue(val *JobSpecTemplateSpecVolumeNfs) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetInternalValue(val *JobSpecTemplateSpecVolumeNfs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetPath(val *stri
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetReadOnly(val i
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetServer(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetServer(val *string) {
 	if err := j.validateSetServerParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetServer(val *st
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ResetReadOnly() 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeNfsOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewJobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReferenc
 
 	return nil
 }
-

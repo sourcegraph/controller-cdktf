@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerReadinessProbe
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ConfigMap) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (c *jsiiProxy_ConfigMap) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ConfigMap) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ConfigMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ConfigMap) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateConfigMap_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateConfigMap_IsConstructParameters(x interface{}) error {
+func validateConfigMap_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateConfigMap_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateConfigMap_IsTerraformElementParameters(x interface{}) error {
+func validateConfigMap_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateConfigMap_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateConfigMap_IsTerraformResourceParameters(x interface{}) error {
+func validateConfigMap_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ConfigMap) validateSetBinaryDataParameters(val *map[string]*s
 	return nil
 }
 
-func (j *jsiiProxy_ConfigMap) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigMap) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ConfigMap) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ConfigMap) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigMap) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ConfigMap) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ConfigMap) validateSetImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigMap) validateSetImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_ConfigMap) validateSetLifecycleParameters(val *cdktf.Terrafor
 	return nil
 }
 
-func (j *jsiiProxy_ConfigMap) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ConfigMap) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -461,4 +461,3 @@ func validateNewConfigMapParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

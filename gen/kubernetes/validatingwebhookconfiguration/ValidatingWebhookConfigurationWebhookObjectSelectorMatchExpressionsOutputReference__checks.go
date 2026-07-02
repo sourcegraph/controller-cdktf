@@ -98,7 +98,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpre
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpre
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewValidatingWebhookConfigurationWebhookObjectSelectorMatchExpressi
 
 	return nil
 }
-

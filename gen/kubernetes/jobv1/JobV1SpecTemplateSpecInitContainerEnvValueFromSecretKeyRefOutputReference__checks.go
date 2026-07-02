@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOut
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOut
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutput
 
 	return nil
 }
-

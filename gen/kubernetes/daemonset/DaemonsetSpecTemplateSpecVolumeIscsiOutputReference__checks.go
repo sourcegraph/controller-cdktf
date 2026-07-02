@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeIscsiOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDaemonsetSpecTemplateSpecVolumeIscsiOutputReferenceParameters(te
 
 	return nil
 }
-

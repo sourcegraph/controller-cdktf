@@ -142,7 +142,7 @@ func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,7 +231,7 @@ func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewPersistentVolumeSpecPersistentVolumeSourceCsiOutputReferencePara
 
 	return nil
 }
-

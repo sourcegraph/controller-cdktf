@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecRunAsUserRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSecurityPolicySpecRunAsUserRangeOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (p *jsiiProxy_PersistentVolumeClaimV1) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimV1) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PersistentVolumeClaimV1) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PersistentVolumeClaimV1) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PersistentVolumeClaimV1) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validatePersistentVolumeClaimV1_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validatePersistentVolumeClaimV1_IsConstructParameters(x interface{}) error {
+func validatePersistentVolumeClaimV1_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validatePersistentVolumeClaimV1_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validatePersistentVolumeClaimV1_IsTerraformElementParameters(x interface{}) error {
+func validatePersistentVolumeClaimV1_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validatePersistentVolumeClaimV1_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validatePersistentVolumeClaimV1_IsTerraformResourceParameters(x interface{}) error {
+func validatePersistentVolumeClaimV1_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validatePersistentVolumeClaimV1_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -383,7 +383,7 @@ func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -429,7 +429,7 @@ func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetWaitUntilBoundParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeClaimV1) validateSetWaitUntilBoundParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -467,4 +467,3 @@ func validateNewPersistentVolumeClaimV1Parameters(scope constructs.Construct, id
 
 	return nil
 }
-

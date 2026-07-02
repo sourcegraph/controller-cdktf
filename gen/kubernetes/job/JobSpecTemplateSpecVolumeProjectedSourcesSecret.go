@@ -1,11 +1,10 @@
 package job
 
-
 type JobSpecTemplateSpecVolumeProjectedSourcesSecret struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#items Job#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 	// Name of the secret in the pod's namespace to use. More info: http://kubernetes.io/docs/user-guide/volumes#secrets.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#name Job#name}
@@ -13,6 +12,5 @@ type JobSpecTemplateSpecVolumeProjectedSourcesSecret struct {
 	// Optional: Specify whether the Secret or it's keys must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#optional Job#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

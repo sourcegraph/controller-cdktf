@@ -12,9 +12,9 @@ type DaemonsetSpecStrategyRollingUpdateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type DaemonsetSpecStrategyRollingUpdateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DaemonsetSpecStrategyRollingUpdateOutputReference interface {
 	ResetMaxUnavailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) TerraformR
 	return returns
 }
 
-
 func NewDaemonsetSpecStrategyRollingUpdateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecStrategyRollingUpdateOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDaemonsetSpecStrategyRollingUpdateOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDaemonsetSpecStrategyRollingUpdateOutputReference_Override(d DaemonsetSp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetInternalValue(val *DaemonsetSpecStrategyRollingUpdate) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetInternalValue(val *DaemonsetSpecStrategyRollingUpdate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetMaxUnavailable(val *string) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetMaxUnavailable(val *string) {
 	if err := j.validateSetMaxUnavailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetMaxUnava
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetListAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetNumberA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetNumberL
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetNumberM
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetStringA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) GetStringM
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) ResetMaxUn
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) ToString()
 
 	return returns
 }
-

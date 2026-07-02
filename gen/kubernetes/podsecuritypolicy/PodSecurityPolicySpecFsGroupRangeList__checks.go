@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSecurityPolicySpecFsGroupRangeListParameters(terraformResourc
 
 	return nil
 }
-

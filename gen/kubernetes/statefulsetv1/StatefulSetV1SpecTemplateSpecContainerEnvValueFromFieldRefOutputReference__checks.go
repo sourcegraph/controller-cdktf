@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutput
 
 	return nil
 }
-

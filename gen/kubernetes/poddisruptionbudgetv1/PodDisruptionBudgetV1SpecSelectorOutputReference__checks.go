@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validateInt
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewPodDisruptionBudgetV1SpecSelectorOutputReferenceParameters(terra
 
 	return nil
 }
-

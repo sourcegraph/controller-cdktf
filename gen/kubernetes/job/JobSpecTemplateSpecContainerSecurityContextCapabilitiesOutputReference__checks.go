@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutput
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecContainerSecurityContextCapabilitiesOutputRef
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package daemonsetv1
 
-
 type DaemonSetV1SpecTemplateSpecVolume struct {
 	// aws_elastic_block_store block.
 	//
@@ -93,7 +92,7 @@ type DaemonSetV1SpecTemplateSpecVolume struct {
 	// projected block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#projected DaemonSetV1#projected}
-	Projected interface{} `field:"optional" json:"projected" yaml:"projected"`
+	Projected any `field:"optional" json:"projected" yaml:"projected"`
 	// quobyte block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#quobyte DaemonSetV1#quobyte}
@@ -111,4 +110,3 @@ type DaemonSetV1SpecTemplateSpecVolume struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/daemon_set_v1#vsphere_volume DaemonSetV1#vsphere_volume}
 	VsphereVolume *DaemonSetV1SpecTemplateSpecVolumeVsphereVolume `field:"optional" json:"vsphereVolume" yaml:"vsphereVolume"`
 }
-

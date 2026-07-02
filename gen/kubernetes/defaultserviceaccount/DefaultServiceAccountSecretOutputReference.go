@@ -12,9 +12,9 @@ type DefaultServiceAccountSecretOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DefaultServiceAccountSecretOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -43,7 +43,7 @@ type DefaultServiceAccountSecretOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type DefaultServiceAccountSecretOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_DefaultServiceAccountSecretOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewDefaultServiceAccountSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DefaultServiceAccountSecretOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewDefaultServiceAccountSecretOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewDefaultServiceAccountSecretOutputReference_Override(d DefaultServiceAcco
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DefaultServiceAccountSecretOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) ResetName() {
 	)
 }
 
-func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (d *jsiiProxy_DefaultServiceAccountSecretOutputReference) ToString() *strin
 
 	return returns
 }
-

@@ -131,7 +131,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityConte
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityConte
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityConte
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityConte
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityConte
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecContainerSecurityContextO
 
 	return nil
 }
-

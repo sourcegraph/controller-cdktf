@@ -123,7 +123,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validatePutRuleParameters(value interface{}) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationWebhookOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -342,4 +342,3 @@ func validateNewMutatingWebhookConfigurationWebhookOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecContainerLifecyclePreStopListParameter
 
 	return nil
 }
-

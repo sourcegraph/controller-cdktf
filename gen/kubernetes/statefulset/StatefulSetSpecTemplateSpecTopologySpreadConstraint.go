@@ -1,11 +1,10 @@
 package statefulset
 
-
 type StatefulSetSpecTemplateSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
-	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
+	LabelSelector any `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
@@ -21,4 +20,3 @@ type StatefulSetSpecTemplateSpecTopologySpreadConstraint struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
-

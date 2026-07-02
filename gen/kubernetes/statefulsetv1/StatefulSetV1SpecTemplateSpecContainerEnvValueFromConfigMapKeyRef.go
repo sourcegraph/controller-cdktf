@@ -1,6 +1,5 @@
 package statefulsetv1
 
-
 type StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// The key to select.
 	//
@@ -13,6 +12,5 @@ type StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// Specify whether the ConfigMap or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#optional StatefulSetV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

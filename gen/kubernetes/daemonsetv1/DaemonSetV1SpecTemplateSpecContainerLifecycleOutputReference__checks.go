@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewDaemonSetV1SpecTemplateSpecContainerLifecycleOutputReferencePara
 
 	return nil
 }
-

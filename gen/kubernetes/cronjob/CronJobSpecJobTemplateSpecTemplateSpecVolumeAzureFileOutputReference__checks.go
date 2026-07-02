@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputRefer
 
 	return nil
 }
-

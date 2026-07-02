@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSpecDnsConfigOptionOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

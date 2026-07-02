@@ -12,9 +12,9 @@ type JobSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type JobSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	GroupInput() *string
 	InternalValue() *JobSpecTemplateSpecVolumeQuobyte
 	SetInternalValue(val *JobSpecTemplateSpecVolumeQuobyte)
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	Registry() *string
 	SetRegistry(val *string)
 	RegistryInput() *string
@@ -55,7 +55,7 @@ type JobSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type JobSpecTemplateSpecVolumeQuobyteOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnly() i
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) VolumeInput(
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeQuobyteOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewJobSpecTemplateSpecVolumeQuobyteOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeQuobyteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewJobSpecTemplateSpecVolumeQuobyteOutputReference_Override(j JobSpecTempla
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeQuobyteOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetGroup(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetGroup(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetInternalValue(val *JobSpecTemplateSpecVolumeQuobyte) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetInternalValue(val *JobSpecTemplateSpecVolumeQuobyte) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetReadOnly(v
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetRegistry(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetRegistry(val *string) {
 	if err := j.validateSetRegistryParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetRegistry(v
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetUser(val *
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference)SetVolume(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) SetVolume(val *string) {
 	if err := j.validateSetVolumeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ComputeFqn()
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetListAttri
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) GetStringMap
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) Interpolatio
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ResetUser() 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeQuobyteOutputReference) ToString() *
 
 	return returns
 }
-

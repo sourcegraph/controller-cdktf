@@ -90,7 +90,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSource
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value interface{}) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSource
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDo
 
 	return nil
 }
-

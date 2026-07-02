@@ -106,7 +106,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOu
 
 	return nil
 }
-

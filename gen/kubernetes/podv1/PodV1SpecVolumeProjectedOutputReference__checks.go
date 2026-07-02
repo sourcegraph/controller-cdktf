@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateInterpolatio
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validatePutSourcesParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validatePutSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateSetDefaultMo
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewPodV1SpecVolumeProjectedOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

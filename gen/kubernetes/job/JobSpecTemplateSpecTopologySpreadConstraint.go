@@ -1,11 +1,10 @@
 package job
 
-
 type JobSpecTemplateSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#label_selector Job#label_selector}
-	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
+	LabelSelector any `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#max_skew Job#max_skew}
@@ -21,4 +20,3 @@ type JobSpecTemplateSpecTopologySpreadConstraint struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job#when_unsatisfiable Job#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
-

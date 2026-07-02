@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinu
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOp
 
 	return nil
 }
-

@@ -131,7 +131,7 @@ func (p *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewPodV1SpecContainerSecurityContextOutputReferenceParameters(terra
 
 	return nil
 }
-

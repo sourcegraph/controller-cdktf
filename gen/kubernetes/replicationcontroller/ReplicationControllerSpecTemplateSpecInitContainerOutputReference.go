@@ -18,9 +18,9 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	CreationStack() *[]*string
 	Env() ReplicationControllerSpecTemplateSpecInitContainerEnvList
 	EnvFrom() ReplicationControllerSpecTemplateSpecInitContainerEnvFromList
-	EnvFromInput() interface{}
-	EnvInput() interface{}
+	EnvFromInput() any
+	EnvInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -43,8 +43,8 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	ImagePullPolicy() *string
 	SetImagePullPolicy(val *string)
 	ImagePullPolicyInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Lifecycle() ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference
 	LifecycleInput() *ReplicationControllerSpecTemplateSpecInitContainerLifecycle
 	LivenessProbe() ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference
@@ -53,7 +53,7 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	SetName(val *string)
 	NameInput() *string
 	Port() ReplicationControllerSpecTemplateSpecInitContainerPortList
-	PortInput() interface{}
+	PortInput() any
 	ReadinessProbe() ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference
 	ReadinessProbeInput() *ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe
 	Resources() ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference
@@ -62,12 +62,12 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	SecurityContextInput() *ReplicationControllerSpecTemplateSpecInitContainerSecurityContext
 	StartupProbe() ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference
 	StartupProbeInput() *ReplicationControllerSpecTemplateSpecInitContainerStartupProbe
-	Stdin() interface{}
-	SetStdin(val interface{})
-	StdinInput() interface{}
-	StdinOnce() interface{}
-	SetStdinOnce(val interface{})
-	StdinOnceInput() interface{}
+	Stdin() any
+	SetStdin(val any)
+	StdinInput() any
+	StdinOnce() any
+	SetStdinOnce(val any)
+	StdinOnceInput() any
 	TerminationMessagePath() *string
 	SetTerminationMessagePath(val *string)
 	TerminationMessagePathInput() *string
@@ -82,18 +82,18 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tty() interface{}
-	SetTty(val interface{})
-	TtyInput() interface{}
+	Tty() any
+	SetTty(val any)
+	TtyInput() any
 	VolumeMount() ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList
-	VolumeMountInput() interface{}
+	VolumeMountInput() any
 	WorkingDir() *string
 	SetWorkingDir(val *string)
 	WorkingDirInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,16 +114,16 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnv(value interface{})
-	PutEnvFrom(value interface{})
+	PutEnv(value any)
+	PutEnvFrom(value any)
 	PutLifecycle(value *ReplicationControllerSpecTemplateSpecInitContainerLifecycle)
 	PutLivenessProbe(value *ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe)
-	PutPort(value interface{})
+	PutPort(value any)
 	PutReadinessProbe(value *ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe)
 	PutResources(value *ReplicationControllerSpecTemplateSpecInitContainerResources)
 	PutSecurityContext(value *ReplicationControllerSpecTemplateSpecInitContainerSecurityContext)
 	PutStartupProbe(value *ReplicationControllerSpecTemplateSpecInitContainerStartupProbe)
-	PutVolumeMount(value interface{})
+	PutVolumeMount(value any)
 	ResetArgs()
 	ResetCommand()
 	ResetEnv()
@@ -146,7 +146,7 @@ type ReplicationControllerSpecTemplateSpecInitContainerOutputReference interface
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -199,8 +199,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) EnvFromInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) EnvFromInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envFromInput",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) EnvInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) EnvInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envInput",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Stdin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Stdin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdin",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinInput",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinOnce() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinOnce() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnce",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinOnceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) StdinOnceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnceInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Tty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Tty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tty",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) TtyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) TtyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ttyInput",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) VolumeMountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) VolumeMountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeMountInput",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-
 func NewReplicationControllerSpecTemplateSpecInitContainerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecInitContainerOutputReference {
 	_init_.Initialize()
 
@@ -660,7 +659,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -672,12 +671,12 @@ func NewReplicationControllerSpecTemplateSpecInitContainerOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetCommand(val *[]*string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetCommand(val *[]*string) {
 	if err := j.validateSetCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetImagePullPolicy(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetImagePullPolicy(val *string) {
 	if err := j.validateSetImagePullPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetStdin(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetStdin(val any) {
 	if err := j.validateSetStdinParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetStdinOnce(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetStdinOnce(val any) {
 	if err := j.validateSetStdinOnceParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetTerminationMessagePath(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetTerminationMessagePath(val *string) {
 	if err := j.validateSetTerminationMessagePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetTerminationMessagePolicy(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetTerminationMessagePolicy(val *string) {
 	if err := j.validateSetTerminationMessagePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetTty(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetTty(val any) {
 	if err := j.validateSetTtyParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference)SetWorkingDir(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) SetWorkingDir(val *string) {
 	if err := j.validateSetWorkingDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,16 +865,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,32 +1031,32 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutEnv(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutEnv(value any) {
 	if err := r.validatePutEnvParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putEnv",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutEnvFrom(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutEnvFrom(value any) {
 	if err := r.validatePutEnvFromParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putEnvFrom",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putLifecycle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,18 +1078,18 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putLivenessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutPort(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutPort(value any) {
 	if err := r.validatePutPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putReadinessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,18 +1133,18 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	_jsii_.InvokeVoid(
 		r,
 		"putStartupProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutVolumeMount(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) PutVolumeMount(value any) {
 	if err := r.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putVolumeMount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,16 +1308,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1337,4 +1336,3 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputRefer
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1",
-		reflect.TypeOf((*ServiceAccountV1)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1Config",
-		reflect.TypeOf((*ServiceAccountV1Config)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1ImagePullSecret",
-		reflect.TypeOf((*ServiceAccountV1ImagePullSecret)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1ImagePullSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1ImagePullSecretList",
-		reflect.TypeOf((*ServiceAccountV1ImagePullSecretList)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1ImagePullSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1ImagePullSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1ImagePullSecretOutputReference",
-		reflect.TypeOf((*ServiceAccountV1ImagePullSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1ImagePullSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1ImagePullSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1Metadata",
-		reflect.TypeOf((*ServiceAccountV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1MetadataOutputReference",
-		reflect.TypeOf((*ServiceAccountV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1Secret",
-		reflect.TypeOf((*ServiceAccountV1Secret)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1Secret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretList",
-		reflect.TypeOf((*ServiceAccountV1SecretList)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1SecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1SecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1SecretOutputReference",
-		reflect.TypeOf((*ServiceAccountV1SecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1SecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1SecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1Timeouts",
-		reflect.TypeOf((*ServiceAccountV1Timeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceAccountV1.ServiceAccountV1TimeoutsOutputReference",
-		reflect.TypeOf((*ServiceAccountV1TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountV1TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountV1TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDaemonsetSpecTemplateSpecContainerEnvFromConfigMapRefOutputRefer
 
 	return nil
 }
-

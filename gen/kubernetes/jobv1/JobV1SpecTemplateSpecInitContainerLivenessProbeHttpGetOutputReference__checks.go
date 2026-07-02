@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputR
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference) validatePutHttpHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputR
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewJobV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputRefe
 
 	return nil
 }
-

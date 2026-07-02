@@ -12,9 +12,9 @@ type DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference interface
 	PdName() *string
 	SetPdName(val *string)
 	PdNameInput() *string
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference interface
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	return returns
 }
 
-
 func NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetInternalValue(val *DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetInternalValue(val *DaemonSetV1SpecTemplateSpecVolumeGcePersistentDisk) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetPartition(val *float64) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetPartition(val *float64) {
 	if err := j.validateSetPartitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetPdName(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetPdName(val *string) {
 	if err := j.validateSetPdNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefer
 
 	return returns
 }
-

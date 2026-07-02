@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.Env",
-		reflect.TypeOf((*Env)(nil)).Elem(),
+		reflect.TypeFor[Env](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Env{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvConfig",
-		reflect.TypeOf((*EnvConfig)(nil)).Elem(),
+		reflect.TypeFor[EnvConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnv",
-		reflect.TypeOf((*EnvEnv)(nil)).Elem(),
+		reflect.TypeFor[EnvEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvList",
-		reflect.TypeOf((*EnvEnvList)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvOutputReference",
-		reflect.TypeOf((*EnvEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,15 +153,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFrom",
-		reflect.TypeOf((*EnvEnvValueFrom)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromConfigMapKeyRef",
-		reflect.TypeOf((*EnvEnvValueFromConfigMapKeyRef)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromConfigMapKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromConfigMapKeyRefOutputReference",
-		reflect.TypeOf((*EnvEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromConfigMapKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvValueFromConfigMapKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromFieldRef",
-		reflect.TypeOf((*EnvEnvValueFromFieldRef)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromFieldRefOutputReference",
-		reflect.TypeOf((*EnvEnvValueFromFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvValueFromFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromOutputReference",
-		reflect.TypeOf((*EnvEnvValueFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvValueFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -292,11 +292,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRef",
-		reflect.TypeOf((*EnvEnvValueFromResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
-		reflect.TypeOf((*EnvEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,11 +336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRef",
-		reflect.TypeOf((*EnvEnvValueFromSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
-		reflect.TypeOf((*EnvEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvEnvValueFromSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -381,11 +381,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.env.EnvMetadata",
-		reflect.TypeOf((*EnvMetadata)(nil)).Elem(),
+		reflect.TypeFor[EnvMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.env.EnvMetadataOutputReference",
-		reflect.TypeOf((*EnvMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EnvMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EnvMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGet
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDaemonsetSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHtt
 
 	return nil
 }
-

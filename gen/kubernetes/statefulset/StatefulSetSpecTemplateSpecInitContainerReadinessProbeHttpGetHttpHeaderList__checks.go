@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGet
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetSpecTemplateSpecInitContainerReadinessProbeHttpGetHtt
 
 	return nil
 }
-

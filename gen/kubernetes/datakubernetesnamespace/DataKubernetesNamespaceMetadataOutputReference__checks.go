@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataKubernetesNamespaceMetadataOutputReference) validateSetAn
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesNamespaceMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesNamespaceMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataKubernetesNamespaceMetadataOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeSecretItemsListParameters(terraf
 
 	return nil
 }
-

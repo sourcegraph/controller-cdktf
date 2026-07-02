@@ -12,9 +12,9 @@ type PodSpecImagePullSecretsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PodSpecImagePullSecretsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -43,7 +43,7 @@ type PodSpecImagePullSecretsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type PodSpecImagePullSecretsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_PodSpecImagePullSecretsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewPodSpecImagePullSecretsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodSpecImagePullSecretsOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewPodSpecImagePullSecretsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecImagePullSecretsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewPodSpecImagePullSecretsOutputReference_Override(p PodSpecImagePullSecret
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecImagePullSecretsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecImagePullSecretsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) ToString() *string {
 
 	return returns
 }
-

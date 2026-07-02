@@ -90,7 +90,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOut
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOut
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutput
 
 	return nil
 }
-

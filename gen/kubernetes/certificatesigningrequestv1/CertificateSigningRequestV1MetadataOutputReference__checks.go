@@ -106,7 +106,7 @@ func (j *jsiiProxy_CertificateSigningRequestV1MetadataOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequestV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateSigningRequestV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCertificateSigningRequestV1MetadataOutputReferenceParameters(ter
 
 	return nil
 }
-

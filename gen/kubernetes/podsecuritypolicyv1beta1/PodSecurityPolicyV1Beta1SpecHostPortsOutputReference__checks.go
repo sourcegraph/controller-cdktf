@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodSecurityPolicyV1Beta1SpecHostPortsOutputReferenceParameters(t
 
 	return nil
 }
-

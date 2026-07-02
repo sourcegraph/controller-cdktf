@@ -12,9 +12,9 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 	ResetRevision()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) TerraformR
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecVolumeGitRepoOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference_Override(j JobV1SpecTe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetDirectory(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetDirectory(val *string) {
 	if err := j.validateSetDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetDirector
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetInternalValue(val *JobV1SpecTemplateSpecVolumeGitRepo) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetInternalValue(val *JobV1SpecTemplateSpecVolumeGitRepo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetRepository(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetReposito
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetRevision(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetRevision(val *string) {
 	if err := j.validateSetRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetRevision
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ComputeFqn
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetBoolean
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetBoolean
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetListAtt
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetNumberA
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetNumberL
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetNumberM
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetStringA
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetStringM
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Interpolat
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ResetRevis
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ToString()
 
 	return returns
 }
-

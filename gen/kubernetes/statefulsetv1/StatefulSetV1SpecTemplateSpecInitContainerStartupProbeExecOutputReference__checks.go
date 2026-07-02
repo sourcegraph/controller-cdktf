@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutput
 
 	return nil
 }
-

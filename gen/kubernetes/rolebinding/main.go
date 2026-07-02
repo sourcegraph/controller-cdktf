@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
-		reflect.TypeOf((*RoleBinding)(nil)).Elem(),
+		reflect.TypeFor[RoleBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingConfig",
-		reflect.TypeOf((*RoleBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadata",
-		reflect.TypeOf((*RoleBindingMetadata)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadataOutputReference",
-		reflect.TypeOf((*RoleBindingMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleBindingMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingRoleRef",
-		reflect.TypeOf((*RoleBindingRoleRef)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingRoleRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingRoleRefOutputReference",
-		reflect.TypeOf((*RoleBindingRoleRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingRoleRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupInput", GoGetter: "ApiGroupInput"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleBindingRoleRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubject",
-		reflect.TypeOf((*RoleBindingSubject)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingSubject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectList",
-		reflect.TypeOf((*RoleBindingSubjectList)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingSubjectList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleBindingSubjectList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -196,7 +196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectOutputReference",
-		reflect.TypeOf((*RoleBindingSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RoleBindingSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupInput", GoGetter: "ApiGroupInput"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleBindingSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

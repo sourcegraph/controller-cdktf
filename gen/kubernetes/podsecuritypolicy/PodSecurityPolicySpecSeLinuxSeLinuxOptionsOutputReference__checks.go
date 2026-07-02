@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewPodSecurityPolicySpecSeLinuxSeLinuxOptionsOutputReferenceParamet
 
 	return nil
 }
-

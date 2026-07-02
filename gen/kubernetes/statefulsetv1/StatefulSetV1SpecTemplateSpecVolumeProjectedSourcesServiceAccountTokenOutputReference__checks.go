@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAcc
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccoun
 
 	return nil
 }
-

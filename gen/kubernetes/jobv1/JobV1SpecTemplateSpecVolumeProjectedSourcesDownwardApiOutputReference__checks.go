@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputR
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputR
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewJobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputRefe
 
 	return nil
 }
-

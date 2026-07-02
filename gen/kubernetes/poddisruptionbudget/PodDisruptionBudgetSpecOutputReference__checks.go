@@ -109,7 +109,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewPodDisruptionBudgetSpecOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProb
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerStartupProbeEx
 
 	return nil
 }
-

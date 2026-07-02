@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressio
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsL
 
 	return nil
 }
-

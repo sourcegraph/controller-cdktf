@@ -1,6 +1,5 @@
 package statefulsetv1
 
-
 type StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// ClaimName is the name of a PersistentVolumeClaim in the same.
 	//
@@ -9,6 +8,5 @@ type StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaim struct {
 	// Will force the ReadOnly setting in VolumeMounts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#read_only StatefulSetV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

@@ -15,21 +15,21 @@ type JobSpecTemplateSpecOutputReference interface {
 	ActiveDeadlineSecondsInput() *float64
 	Affinity() JobSpecTemplateSpecAffinityOutputReference
 	AffinityInput() *JobSpecTemplateSpecAffinity
-	AutomountServiceAccountToken() interface{}
-	SetAutomountServiceAccountToken(val interface{})
-	AutomountServiceAccountTokenInput() interface{}
+	AutomountServiceAccountToken() any
+	SetAutomountServiceAccountToken(val any)
+	AutomountServiceAccountTokenInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Container() JobSpecTemplateSpecContainerList
-	ContainerInput() interface{}
+	ContainerInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -40,29 +40,29 @@ type JobSpecTemplateSpecOutputReference interface {
 	DnsPolicy() *string
 	SetDnsPolicy(val *string)
 	DnsPolicyInput() *string
-	EnableServiceLinks() interface{}
-	SetEnableServiceLinks(val interface{})
-	EnableServiceLinksInput() interface{}
+	EnableServiceLinks() any
+	SetEnableServiceLinks(val any)
+	EnableServiceLinksInput() any
 	// Experimental.
 	Fqn() *string
 	HostAliases() JobSpecTemplateSpecHostAliasesList
-	HostAliasesInput() interface{}
-	HostIpc() interface{}
-	SetHostIpc(val interface{})
-	HostIpcInput() interface{}
+	HostAliasesInput() any
+	HostIpc() any
+	SetHostIpc(val any)
+	HostIpcInput() any
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	HostNetwork() interface{}
-	SetHostNetwork(val interface{})
-	HostNetworkInput() interface{}
-	HostPid() interface{}
-	SetHostPid(val interface{})
-	HostPidInput() interface{}
+	HostNetwork() any
+	SetHostNetwork(val any)
+	HostNetworkInput() any
+	HostPid() any
+	SetHostPid(val any)
+	HostPidInput() any
 	ImagePullSecrets() JobSpecTemplateSpecImagePullSecretsList
-	ImagePullSecretsInput() interface{}
+	ImagePullSecretsInput() any
 	InitContainer() JobSpecTemplateSpecInitContainerList
-	InitContainerInput() interface{}
+	InitContainerInput() any
 	InternalValue() *JobSpecTemplateSpec
 	SetInternalValue(val *JobSpecTemplateSpec)
 	NodeName() *string
@@ -75,7 +75,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
 	ReadinessGate() JobSpecTemplateSpecReadinessGateList
-	ReadinessGateInput() interface{}
+	ReadinessGateInput() any
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
@@ -84,9 +84,9 @@ type JobSpecTemplateSpecOutputReference interface {
 	ServiceAccountName() *string
 	SetServiceAccountName(val *string)
 	ServiceAccountNameInput() *string
-	ShareProcessNamespace() interface{}
-	SetShareProcessNamespace(val interface{})
-	ShareProcessNamespaceInput() interface{}
+	ShareProcessNamespace() any
+	SetShareProcessNamespace(val any)
+	ShareProcessNamespaceInput() any
 	Subdomain() *string
 	SetSubdomain(val *string)
 	SubdomainInput() *string
@@ -102,15 +102,15 @@ type JobSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Toleration() JobSpecTemplateSpecTolerationList
-	TolerationInput() interface{}
+	TolerationInput() any
 	TopologySpreadConstraint() JobSpecTemplateSpecTopologySpreadConstraintList
-	TopologySpreadConstraintInput() interface{}
+	TopologySpreadConstraintInput() any
 	Volume() JobSpecTemplateSpecVolumeList
-	VolumeInput() interface{}
+	VolumeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,16 +132,16 @@ type JobSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAffinity(value *JobSpecTemplateSpecAffinity)
-	PutContainer(value interface{})
+	PutContainer(value any)
 	PutDnsConfig(value *JobSpecTemplateSpecDnsConfig)
-	PutHostAliases(value interface{})
-	PutImagePullSecrets(value interface{})
-	PutInitContainer(value interface{})
-	PutReadinessGate(value interface{})
+	PutHostAliases(value any)
+	PutImagePullSecrets(value any)
+	PutInitContainer(value any)
+	PutReadinessGate(value any)
 	PutSecurityContext(value *JobSpecTemplateSpecSecurityContext)
-	PutToleration(value interface{})
-	PutTopologySpreadConstraint(value interface{})
-	PutVolume(value interface{})
+	PutToleration(value any)
+	PutTopologySpreadConstraint(value any)
+	PutVolume(value any)
 	ResetActiveDeadlineSeconds()
 	ResetAffinity()
 	ResetAutomountServiceAccountToken()
@@ -171,7 +171,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -224,8 +224,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AffinityInput() *JobSpecT
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountToken",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountTo
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automountServiceAccountTokenInput",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) AutomountServiceAccountTo
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Container() JobSpecTempla
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containerInput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) DnsPolicyInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) EnableServiceLinks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) EnableServiceLinks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinks",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) EnableServiceLinks() inte
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) EnableServiceLinksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) EnableServiceLinksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableServiceLinksInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostAliases() JobSpecTemp
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostAliasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostAliasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostAliasesInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostAliasesInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostIpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostIpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpc",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostIpc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostIpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostIpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpcInput",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostnameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetwork",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetwork() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetworkInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostNetworkInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostPid() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostPid() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPid",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostPid() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostPidInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) HostPidInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPidInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ImagePullSecrets() JobSpe
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ImagePullSecretsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ImagePullSecretsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"imagePullSecretsInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) InitContainer() JobSpecTe
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) InitContainerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) InitContainerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"initContainerInput",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ReadinessGate() JobSpecTe
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ReadinessGateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ReadinessGateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readinessGateInput",
@@ -654,8 +654,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ServiceAccountNameInput()
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ShareProcessNamespace() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ShareProcessNamespace() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespace",
@@ -664,8 +664,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ShareProcessNamespace() i
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ShareProcessNamespaceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ShareProcessNamespaceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shareProcessNamespaceInput",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Toleration() JobSpecTempl
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) TolerationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) TolerationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tolerationInput",
@@ -764,8 +764,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) TopologySpreadConstraint(
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) TopologySpreadConstraintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) TopologySpreadConstraintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"topologySpreadConstraintInput",
@@ -784,8 +784,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Volume() JobSpecTemplateS
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) VolumeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) VolumeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeInput",
@@ -793,7 +793,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) VolumeInput() interface{}
 	)
 	return returns
 }
-
 
 func NewJobSpecTemplateSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecOutputReference {
 	_init_.Initialize()
@@ -805,7 +804,7 @@ func NewJobSpecTemplateSpecOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -817,12 +816,12 @@ func NewJobSpecTemplateSpecOutputReference_Override(j JobSpecTemplateSpecOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetActiveDeadlineSeconds(val *float64) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetActiveDeadlineSeconds(val *float64) {
 	if err := j.validateSetActiveDeadlineSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetActiveDeadlineSeconds(v
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetAutomountServiceAccountToken(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetAutomountServiceAccountToken(val any) {
 	if err := j.validateSetAutomountServiceAccountTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetAutomountServiceAccount
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetDnsPolicy(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetDnsPolicy(val *string) {
 	if err := j.validateSetDnsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetDnsPolicy(val *string) 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetEnableServiceLinks(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetEnableServiceLinks(val any) {
 	if err := j.validateSetEnableServiceLinksParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetEnableServiceLinks(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostIpc(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetHostIpc(val any) {
 	if err := j.validateSetHostIpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostIpc(val interface{}
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostNetwork(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetHostNetwork(val any) {
 	if err := j.validateSetHostNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostNetwork(val interfa
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostPid(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetHostPid(val any) {
 	if err := j.validateSetHostPidParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetHostPid(val interface{}
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetInternalValue(val *JobSpecTemplateSpec) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetInternalValue(val *JobSpecTemplateSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetInternalValue(val *JobS
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetNodeName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetNodeName(val *string) {
 	if err := j.validateSetNodeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetNodeName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetNodeSelector(val *map[string]*string) {
 	if err := j.validateSetNodeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -965,7 +964,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetNodeSelector(val *map[s
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetPriorityClassName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetPriorityClassName(val *string) {
 	if err := j.validateSetPriorityClassNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -976,7 +975,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetPriorityClassName(val *
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetRestartPolicy(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetRestartPolicy(val *string) {
 	if err := j.validateSetRestartPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -987,7 +986,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetRestartPolicy(val *stri
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetServiceAccountName(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetShareProcessNamespace(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetShareProcessNamespace(val any) {
 	if err := j.validateSetShareProcessNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetShareProcessNamespace(v
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetSubdomain(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetSubdomain(val *string) {
 	if err := j.validateSetSubdomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetSubdomain(val *string) 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetTerminationGracePeriodSeconds(val *float64) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetTerminationGracePeriodSeconds(val *float64) {
 	if err := j.validateSetTerminationGracePeriodSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetTerminationGracePeriodS
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,16 +1065,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1123,7 +1122,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,7 +1170,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1246,18 +1245,18 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutAffinity(value *JobSpe
 	_jsii_.InvokeVoid(
 		j,
 		"putAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutContainer(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutContainer(value any) {
 	if err := j.validatePutContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,51 +1267,51 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutDnsConfig(value *JobSp
 	_jsii_.InvokeVoid(
 		j,
 		"putDnsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutHostAliases(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutHostAliases(value any) {
 	if err := j.validatePutHostAliasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putHostAliases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutImagePullSecrets(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutImagePullSecrets(value any) {
 	if err := j.validatePutImagePullSecretsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putImagePullSecrets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutInitContainer(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutInitContainer(value any) {
 	if err := j.validatePutInitContainerParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putInitContainer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutReadinessGate(value any) {
 	if err := j.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putReadinessGate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,40 +1322,40 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutSecurityContext(value 
 	_jsii_.InvokeVoid(
 		j,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutToleration(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutToleration(value any) {
 	if err := j.validatePutTolerationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putToleration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutTopologySpreadConstraint(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutTopologySpreadConstraint(value any) {
 	if err := j.validatePutTopologySpreadConstraintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putTopologySpreadConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutVolume(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutVolume(value any) {
 	if err := j.validatePutVolumeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1576,16 +1575,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetVolume() {
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1604,4 +1603,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

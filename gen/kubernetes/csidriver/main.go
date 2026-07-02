@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriver",
-		reflect.TypeOf((*CsiDriver)(nil)).Elem(),
+		reflect.TypeFor[CsiDriver](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CsiDriver{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,15 +71,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverConfig",
-		reflect.TypeOf((*CsiDriverConfig)(nil)).Elem(),
+		reflect.TypeFor[CsiDriverConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverMetadata",
-		reflect.TypeOf((*CsiDriverMetadata)(nil)).Elem(),
+		reflect.TypeFor[CsiDriverMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverMetadataOutputReference",
-		reflect.TypeOf((*CsiDriverMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CsiDriverMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CsiDriverMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverSpec",
-		reflect.TypeOf((*CsiDriverSpec)(nil)).Elem(),
+		reflect.TypeFor[CsiDriverSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.csiDriver.CsiDriverSpecOutputReference",
-		reflect.TypeOf((*CsiDriverSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CsiDriverSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachRequired", GoGetter: "AttachRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "attachRequiredInput", GoGetter: "AttachRequiredInput"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeLifecycleModes", GoGetter: "VolumeLifecycleModes"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeLifecycleModesInput", GoGetter: "VolumeLifecycleModesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CsiDriverSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

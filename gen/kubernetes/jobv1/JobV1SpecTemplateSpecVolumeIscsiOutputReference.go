@@ -12,9 +12,9 @@ type JobV1SpecTemplateSpecVolumeIscsiOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,9 +41,9 @@ type JobV1SpecTemplateSpecVolumeIscsiOutputReference interface {
 	Lun() *float64
 	SetLun(val *float64)
 	LunInput() *float64
-	ReadOnly() interface{}
-	SetReadOnly(val interface{})
-	ReadOnlyInput() interface{}
+	ReadOnly() any
+	SetReadOnly(val any)
+	ReadOnlyInput() any
 	TargetPortal() *string
 	SetTargetPortal(val *string)
 	TargetPortalInput() *string
@@ -58,7 +58,7 @@ type JobV1SpecTemplateSpecVolumeIscsiOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type JobV1SpecTemplateSpecVolumeIscsiOutputReference interface {
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) LunInput() *
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ReadOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ReadOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnly",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ReadOnly() i
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ReadOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ReadOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewJobV1SpecTemplateSpecVolumeIscsiOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecVolumeIscsiOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewJobV1SpecTemplateSpecVolumeIscsiOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeIscsiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewJobV1SpecTemplateSpecVolumeIscsiOutputReference_Override(j JobV1SpecTemp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeIscsiOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetFsType(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetFsType(val *string) {
 	if err := j.validateSetFsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetFsType(val
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetInternalValue(val *JobV1SpecTemplateSpecVolumeIscsi) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetInternalValue(val *JobV1SpecTemplateSpecVolumeIscsi) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetIqn(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetIqn(val *string) {
 	if err := j.validateSetIqnParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetIqn(val *s
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetIscsiInterface(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetIscsiInterface(val *string) {
 	if err := j.validateSetIscsiInterfaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetIscsiInter
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetLun(val *float64) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetLun(val *float64) {
 	if err := j.validateSetLunParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetLun(val *f
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetReadOnly(val interface{}) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetReadOnly(val any) {
 	if err := j.validateSetReadOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetReadOnly(v
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetTargetPortal(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetTargetPortal(val *string) {
 	if err := j.validateSetTargetPortalParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetTargetPort
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,16 +449,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ComputeFqn()
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetListAttri
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) GetStringMap
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) Interpolatio
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,16 +654,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ResetReadOnl
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeIscsiOutputReference) ToString() *
 
 	return returns
 }
-

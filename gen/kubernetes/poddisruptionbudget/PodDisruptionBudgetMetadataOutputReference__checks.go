@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) validateSetAnnota
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodDisruptionBudgetMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodDisruptionBudgetMetadataOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

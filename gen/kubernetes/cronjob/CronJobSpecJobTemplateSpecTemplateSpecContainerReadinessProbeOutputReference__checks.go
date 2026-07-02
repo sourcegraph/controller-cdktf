@@ -112,7 +112,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbe
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbe
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOut
 
 	return nil
 }
-

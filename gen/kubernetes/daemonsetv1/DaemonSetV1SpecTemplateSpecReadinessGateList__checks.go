@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecReadinessGateList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonSetV1SpecTemplateSpecReadinessGateListParameters(terraform
 
 	return nil
 }
-

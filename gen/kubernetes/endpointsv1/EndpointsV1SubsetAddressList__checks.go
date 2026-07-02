@@ -34,7 +34,7 @@ func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetAddressList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsV1SubsetAddressList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEndpointsV1SubsetAddressListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

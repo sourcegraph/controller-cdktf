@@ -101,7 +101,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validatePu
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validatePutMetricParameters(value interface{}) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validatePutMetricParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -275,4 +275,3 @@ func validateNewHorizontalPodAutoscalerV2Beta2SpecOutputReferenceParameters(terr
 
 	return nil
 }
-

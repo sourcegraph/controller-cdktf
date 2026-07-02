@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItem
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItem
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOu
 
 	return nil
 }
-

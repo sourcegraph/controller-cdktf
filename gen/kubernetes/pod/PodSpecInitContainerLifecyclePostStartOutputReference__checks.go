@@ -112,7 +112,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -275,4 +275,3 @@ func validateNewPodSpecInitContainerLifecyclePostStartOutputReferenceParameters(
 
 	return nil
 }
-

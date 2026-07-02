@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReferencePar
 
 	return nil
 }
-

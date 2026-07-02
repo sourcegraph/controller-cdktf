@@ -1,6 +1,5 @@
 package persistentvolume
 
-
 type PersistentVolumeSpecPersistentVolumeSourceCinder struct {
 	// Volume ID used to identify the volume in Cinder. More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md.
 	//
@@ -15,6 +14,5 @@ type PersistentVolumeSpecPersistentVolumeSourceCinder struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/persistent_volume#read_only PersistentVolume#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

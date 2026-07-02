@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutp
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutp
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDeploymentSpecTemplateSpecContainerLivenessProbeTcpSocketOutputR
 
 	return nil
 }
-

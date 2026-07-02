@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeH
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeH
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReplicationControllerSpecTemplateSpecContainerReadinessProbeHttp
 
 	return nil
 }
-

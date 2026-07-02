@@ -34,7 +34,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeTcpSocketList)
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeTcpSocketList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeTcpSocketList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDaemonsetSpecTemplateSpecContainerLivenessProbeTcpSocketListPara
 
 	return nil
 }
-

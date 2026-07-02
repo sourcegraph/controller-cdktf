@@ -98,7 +98,7 @@ func (c *jsiiProxy_CronJobTimeoutsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CronJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CronJobTimeoutsOutputReference) validateSetDeleteParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CronJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCronJobTimeoutsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewStatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputRefere
 
 	return nil
 }
-

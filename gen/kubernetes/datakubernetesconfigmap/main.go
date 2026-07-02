@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
-		reflect.TypeOf((*DataKubernetesConfigMap)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesConfigMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryData", GoGetter: "BinaryData"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesConfigMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,15 +64,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapConfig",
-		reflect.TypeOf((*DataKubernetesConfigMapConfig)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesConfigMapConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapMetadata",
-		reflect.TypeOf((*DataKubernetesConfigMapMetadata)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesConfigMapMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMapMetadataOutputReference",
-		reflect.TypeOf((*DataKubernetesConfigMapMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesConfigMapMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesConfigMapMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

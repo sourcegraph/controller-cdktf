@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewJobSpecTemplateSpecImagePullSecretsOutputReferenceParameters(ter
 
 	return nil
 }
-

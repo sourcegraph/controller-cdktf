@@ -321,7 +321,7 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutPhotonPersistentDisk
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutProjectedParameters(value interface{}) error {
+func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutProjectedParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -469,7 +469,7 @@ func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -536,4 +536,3 @@ func validateNewPodSpecVolumeOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

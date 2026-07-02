@@ -131,7 +131,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecAffinityOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewDaemonsetSpecTemplateSpecAffinityOutputReferenceParameters(terra
 
 	return nil
 }
-

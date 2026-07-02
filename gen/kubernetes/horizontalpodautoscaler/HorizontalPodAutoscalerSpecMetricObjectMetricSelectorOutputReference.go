@@ -12,9 +12,9 @@ type HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference interf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,10 +27,10 @@ type HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference interf
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MatchExpressions() HorizontalPodAutoscalerSpecMetricObjectMetricSelectorMatchExpressionsList
-	MatchExpressionsInput() interface{}
+	MatchExpressionsInput() any
 	MatchLabels() *map[string]*string
 	SetMatchLabels(val *map[string]*string)
 	MatchLabelsInput() *map[string]*string
@@ -45,7 +45,7 @@ type HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMatchExpressions(value interface{})
+	PutMatchExpressions(value any)
 	ResetMatchExpressions()
 	ResetMatchLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) MatchExpressionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) MatchExpressionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	return returns
 }
 
-
 func NewHorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewHorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewHorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetMatchLabels(val *map[string]*string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetMatchLabels(val *map[string]*string) {
 	if err := j.validateSetMatchLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) PutMatchExpressions(value interface{}) {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) PutMatchExpressions(value any) {
 	if err := h.validatePutMatchExpressionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putMatchExpressions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorOutputRe
 
 	return returns
 }
-

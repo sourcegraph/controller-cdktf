@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReferencePa
 
 	return nil
 }
-

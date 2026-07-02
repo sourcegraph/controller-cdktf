@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsRe
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewJobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResou
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecAllowedHostPathsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecAllowedHostPathsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSecurityPolicySpecAllowedHostPathsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSecurityPolicySpecAllowedHostPathsListParameters(terraformRes
 
 	return nil
 }
-

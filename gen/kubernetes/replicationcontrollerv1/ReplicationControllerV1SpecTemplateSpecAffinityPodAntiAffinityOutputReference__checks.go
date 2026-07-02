@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinit
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinit
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinit
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityOu
 
 	return nil
 }
-

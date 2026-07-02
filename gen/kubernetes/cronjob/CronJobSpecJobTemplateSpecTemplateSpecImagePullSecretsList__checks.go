@@ -34,7 +34,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsList) v
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsListParame
 
 	return nil
 }
-

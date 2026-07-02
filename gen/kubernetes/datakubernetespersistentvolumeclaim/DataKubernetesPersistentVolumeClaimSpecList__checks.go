@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataKubernetesPersistentVolumeClaimSpecListParameters(terraformR
 
 	return nil
 }
-

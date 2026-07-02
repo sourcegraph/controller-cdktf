@@ -1,11 +1,10 @@
 package pod
 
-
 type PodSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod#label_selector Pod#label_selector}
-	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
+	LabelSelector any `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod#max_skew Pod#max_skew}
@@ -21,4 +20,3 @@ type PodSpecTopologySpreadConstraint struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod#when_unsatisfiable Pod#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
-

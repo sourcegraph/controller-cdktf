@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
-		reflect.TypeOf((*StatefulSetV1)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForRollout", GoGetter: "WaitForRollout"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForRolloutInput", GoGetter: "WaitForRolloutInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1Config",
-		reflect.TypeOf((*StatefulSetV1Config)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1Metadata",
-		reflect.TypeOf((*StatefulSetV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1MetadataOutputReference",
-		reflect.TypeOf((*StatefulSetV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1Spec",
-		reflect.TypeOf((*StatefulSetV1Spec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1Spec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeClaimTemplate", GoGetter: "VolumeClaimTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeClaimTemplateInput", GoGetter: "VolumeClaimTemplateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,15 +196,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelector",
-		reflect.TypeOf((*StatefulSetV1SpecSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecSelector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -226,7 +226,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,7 +267,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,15 +306,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplate",
-		reflect.TypeOf((*StatefulSetV1SpecTemplate)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateMetadata",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateMetadata)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateMetadataOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,7 +361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,19 +400,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinity",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinity)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinity",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinity)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -452,11 +452,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -470,7 +470,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -478,7 +478,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,15 +515,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -537,7 +537,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -545,7 +545,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -586,7 +586,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -614,7 +614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -622,15 +622,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -644,7 +644,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -652,11 +652,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -670,7 +670,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -678,7 +678,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -711,7 +711,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -719,7 +719,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -747,7 +747,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -755,7 +755,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -783,7 +783,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -791,7 +791,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -827,7 +827,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -835,11 +835,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinity",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinity)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -871,7 +871,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -879,11 +879,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -897,7 +897,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -905,7 +905,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -934,7 +934,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -942,15 +942,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -964,7 +964,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -972,11 +972,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -990,7 +990,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -998,7 +998,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1031,7 +1031,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1039,7 +1039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1070,7 +1070,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1078,7 +1078,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1111,7 +1111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1119,15 +1119,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1141,7 +1141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1149,11 +1149,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1167,7 +1167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1175,7 +1175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1208,7 +1208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1216,7 +1216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1247,7 +1247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1255,7 +1255,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1269,7 +1269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1277,7 +1277,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1310,7 +1310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1318,11 +1318,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinity",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinity)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1354,7 +1354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1362,11 +1362,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1380,7 +1380,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1388,7 +1388,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1417,7 +1417,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1425,15 +1425,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1447,7 +1447,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1455,11 +1455,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1473,7 +1473,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1481,7 +1481,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1514,7 +1514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1522,7 +1522,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1553,7 +1553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1561,7 +1561,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1594,7 +1594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1602,15 +1602,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1624,7 +1624,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1632,11 +1632,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1650,7 +1650,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1658,7 +1658,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1691,7 +1691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1699,7 +1699,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1730,7 +1730,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1738,7 +1738,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1752,7 +1752,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1760,7 +1760,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1793,7 +1793,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1801,23 +1801,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainer",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainer)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnv",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnv)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnv](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFrom",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFrom)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1846,7 +1846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvFromConfigMapRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1854,7 +1854,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1868,7 +1868,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvFromList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1876,7 +1876,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1911,7 +1911,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1919,11 +1919,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1952,7 +1952,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1960,7 +1960,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1974,7 +1974,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1982,7 +1982,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2015,7 +2015,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2023,15 +2023,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFrom",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFrom)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2064,7 +2064,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2072,11 +2072,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -2106,7 +2106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2114,7 +2114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2154,7 +2154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2162,11 +2162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2198,7 +2198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2206,11 +2206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2243,7 +2243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2251,11 +2251,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecycle",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecycle)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecycleOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2287,7 +2287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2295,15 +2295,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStart",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStart)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStart](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2330,7 +2330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2338,15 +2338,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2360,7 +2360,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2368,7 +2368,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2398,7 +2398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2406,7 +2406,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2446,7 +2446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2454,7 +2454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2468,7 +2468,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2476,7 +2476,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2512,7 +2512,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2520,11 +2520,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2538,7 +2538,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2546,7 +2546,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2572,7 +2572,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2580,15 +2580,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStop",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStop)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStop](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2615,7 +2615,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2623,15 +2623,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2645,7 +2645,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2653,7 +2653,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2683,7 +2683,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2691,7 +2691,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2731,7 +2731,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2739,7 +2739,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2753,7 +2753,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2761,7 +2761,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2797,7 +2797,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2805,11 +2805,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2823,7 +2823,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2831,7 +2831,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2857,7 +2857,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2865,7 +2865,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2879,7 +2879,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2887,15 +2887,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2922,7 +2922,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2930,15 +2930,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2952,7 +2952,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2960,7 +2960,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2990,7 +2990,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2998,7 +2998,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3038,7 +3038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3046,7 +3046,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3097,7 +3097,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3105,11 +3105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3123,7 +3123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3131,7 +3131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3157,7 +3157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3165,7 +3165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -3261,7 +3261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3269,11 +3269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerPort",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerPort)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerPortList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerPortList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3287,7 +3287,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3295,7 +3295,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerPortOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3333,7 +3333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3341,15 +3341,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -3376,7 +3376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3384,15 +3384,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3406,7 +3406,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3414,7 +3414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3444,7 +3444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3452,7 +3452,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3492,7 +3492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3500,7 +3500,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3551,7 +3551,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3559,11 +3559,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3577,7 +3577,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3585,7 +3585,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3611,7 +3611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3619,11 +3619,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerResources",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerResources)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerResourcesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3653,7 +3653,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3661,15 +3661,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContext",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilities",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilities)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -3699,7 +3699,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3707,7 +3707,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalationInput", GoGetter: "AllowPrivilegeEscalationInput"},
@@ -3761,7 +3761,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3769,11 +3769,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3809,7 +3809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3817,11 +3817,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3851,7 +3851,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3859,15 +3859,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -3894,7 +3894,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3902,15 +3902,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3924,7 +3924,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3932,7 +3932,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3962,7 +3962,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3970,7 +3970,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4010,7 +4010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4018,7 +4018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4069,7 +4069,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4077,11 +4077,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4095,7 +4095,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4103,7 +4103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4129,7 +4129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4137,11 +4137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerVolumeMount",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerVolumeMount)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerVolumeMount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerVolumeMountList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerVolumeMountList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerVolumeMountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4155,7 +4155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerVolumeMountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4163,7 +4163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerVolumeMountOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecContainerVolumeMountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecContainerVolumeMountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4200,7 +4200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerVolumeMountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4208,15 +4208,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfig",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecDnsConfig)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecDnsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOption",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecDnsConfigOption)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecDnsConfigOption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecDnsConfigOptionList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecDnsConfigOptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4230,7 +4230,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecDnsConfigOptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4238,7 +4238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecDnsConfigOptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecDnsConfigOptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4267,7 +4267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecDnsConfigOptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4275,7 +4275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecDnsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecDnsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4309,7 +4309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecDnsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4317,11 +4317,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecHostAliases",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecHostAliases)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecHostAliases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecHostAliasesList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecHostAliasesList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecHostAliasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4335,7 +4335,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4343,7 +4343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecHostAliasesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecHostAliasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecHostAliasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4371,7 +4371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4379,11 +4379,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecImagePullSecrets",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecImagePullSecrets)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecImagePullSecrets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecImagePullSecretsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecImagePullSecretsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecImagePullSecretsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4397,7 +4397,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4405,7 +4405,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4431,7 +4431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4439,23 +4439,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainer",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainer)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnv",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnv)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnv](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFrom",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFrom)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4484,7 +4484,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4492,7 +4492,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4506,7 +4506,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4514,7 +4514,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4549,7 +4549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4557,11 +4557,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4590,7 +4590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvFromSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4598,7 +4598,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4612,7 +4612,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4620,7 +4620,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4653,7 +4653,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4661,15 +4661,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFrom",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFrom)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4702,7 +4702,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4710,11 +4710,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -4744,7 +4744,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4752,7 +4752,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4792,7 +4792,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4800,11 +4800,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4836,7 +4836,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4844,11 +4844,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4881,7 +4881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4889,11 +4889,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecycle",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecycle)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecycleOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4925,7 +4925,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4933,15 +4933,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStart",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStart)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStart](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -4968,7 +4968,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4976,15 +4976,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4998,7 +4998,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5006,7 +5006,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5036,7 +5036,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5044,7 +5044,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5084,7 +5084,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5092,7 +5092,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5106,7 +5106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5114,7 +5114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5150,7 +5150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5158,11 +5158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5176,7 +5176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5184,7 +5184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5210,7 +5210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5218,15 +5218,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStop",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStop)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStop](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -5253,7 +5253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5261,15 +5261,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5283,7 +5283,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5291,7 +5291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5321,7 +5321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5329,7 +5329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5369,7 +5369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5377,7 +5377,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5391,7 +5391,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5399,7 +5399,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5435,7 +5435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5443,11 +5443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5461,7 +5461,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5469,7 +5469,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5495,7 +5495,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5503,7 +5503,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5517,7 +5517,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5525,15 +5525,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -5560,7 +5560,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5568,15 +5568,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5590,7 +5590,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5598,7 +5598,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5628,7 +5628,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5636,7 +5636,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5676,7 +5676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5684,7 +5684,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5735,7 +5735,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5743,11 +5743,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5761,7 +5761,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5769,7 +5769,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5795,7 +5795,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5803,7 +5803,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -5899,7 +5899,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5907,11 +5907,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerPort",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerPort)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerPortList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerPortList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5925,7 +5925,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5933,7 +5933,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerPortOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5971,7 +5971,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5979,15 +5979,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -6014,7 +6014,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6022,15 +6022,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6044,7 +6044,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6052,7 +6052,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6082,7 +6082,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6090,7 +6090,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6130,7 +6130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6138,7 +6138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6189,7 +6189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6197,11 +6197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6215,7 +6215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6223,7 +6223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6249,7 +6249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6257,11 +6257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerResources",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerResources)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerResourcesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6291,7 +6291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6299,15 +6299,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContext",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -6337,7 +6337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6345,7 +6345,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalationInput", GoGetter: "AllowPrivilegeEscalationInput"},
@@ -6399,7 +6399,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6407,11 +6407,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6447,7 +6447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6455,11 +6455,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6489,7 +6489,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6497,15 +6497,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbe",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExec",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -6532,7 +6532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6540,15 +6540,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6562,7 +6562,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6570,7 +6570,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6600,7 +6600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6608,7 +6608,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6648,7 +6648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6656,7 +6656,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6707,7 +6707,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6715,11 +6715,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocket",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6733,7 +6733,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6741,7 +6741,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6767,7 +6767,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6775,11 +6775,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerVolumeMount",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerVolumeMount)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerVolumeMount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerVolumeMountList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerVolumeMountList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerVolumeMountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6793,7 +6793,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerVolumeMountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6801,7 +6801,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6838,7 +6838,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerVolumeMountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6846,7 +6846,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSeconds", GoGetter: "ActiveDeadlineSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSecondsInput", GoGetter: "ActiveDeadlineSecondsInput"},
@@ -6962,7 +6962,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volume", GoGetter: "Volume"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInput", GoGetter: "VolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6970,11 +6970,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecReadinessGate",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecReadinessGate)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecReadinessGate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecReadinessGateList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecReadinessGateList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecReadinessGateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6988,7 +6988,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecReadinessGateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6996,7 +6996,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecReadinessGateOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecReadinessGateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecReadinessGateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7022,7 +7022,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecReadinessGateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7030,11 +7030,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContext",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7085,7 +7085,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7093,11 +7093,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7133,7 +7133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7141,11 +7141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfile",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7175,7 +7175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7183,11 +7183,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSysctl",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSysctl)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSysctl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSysctlList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSysctlList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSysctlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7201,7 +7201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSysctlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7209,7 +7209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecSecurityContextSysctlOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecSecurityContextSysctlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecSecurityContextSysctlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7237,7 +7237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSysctlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7245,11 +7245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecToleration",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecToleration)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecToleration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTolerationList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTolerationList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTolerationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7263,7 +7263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTolerationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7271,7 +7271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTolerationOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTolerationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTolerationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7310,7 +7310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTolerationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7318,15 +7318,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraint",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraint)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraint](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelector",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7340,7 +7340,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7348,11 +7348,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7366,7 +7366,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7374,7 +7374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7407,7 +7407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7415,7 +7415,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7446,7 +7446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7454,7 +7454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7468,7 +7468,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7476,7 +7476,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7513,7 +7513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "whenUnsatisfiable", GoGetter: "WhenUnsatisfiable"},
 			_jsii_.MemberProperty{JsiiProperty: "whenUnsatisfiableInput", GoGetter: "WhenUnsatisfiableInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7521,15 +7521,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolume",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolume)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolume](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStore",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStore)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStore](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7564,7 +7564,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeIdInput", GoGetter: "VolumeIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7572,11 +7572,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAzureDisk",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAzureDisk)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAzureDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAzureDiskOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAzureDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAzureDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cachingMode", GoGetter: "CachingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "cachingModeInput", GoGetter: "CachingModeInput"},
@@ -7615,7 +7615,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeAzureDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7623,11 +7623,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAzureFile",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAzureFile)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAzureFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAzureFileOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeAzureFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeAzureFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7661,7 +7661,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeAzureFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7669,11 +7669,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFs",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCephFs)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCephFs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCephFsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCephFsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7715,7 +7715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7723,11 +7723,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7757,7 +7757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7765,11 +7765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinder",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCinder)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCinder](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7801,7 +7801,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeIdInput", GoGetter: "VolumeIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7809,15 +7809,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeConfigMap",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeConfigMap)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeConfigMap](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeConfigMapItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeConfigMapItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeConfigMapItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7831,7 +7831,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7839,7 +7839,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7872,7 +7872,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeConfigMapItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7880,7 +7880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeConfigMapOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeConfigMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeConfigMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7917,7 +7917,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeConfigMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7925,15 +7925,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsi",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCsi)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCsi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7960,7 +7960,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7968,7 +7968,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8007,7 +8007,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeAttributes", GoGetter: "VolumeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeAttributesInput", GoGetter: "VolumeAttributesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCsiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8015,19 +8015,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApi",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApi)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItems](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -8057,7 +8057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8065,7 +8065,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8079,7 +8079,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8087,7 +8087,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8123,7 +8123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8131,11 +8131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8166,7 +8166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8174,7 +8174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeDownwardApiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeDownwardApiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8205,7 +8205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8213,11 +8213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeEmptyDir",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeEmptyDir)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeEmptyDir](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeEmptyDirOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeEmptyDirOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeEmptyDirOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8247,7 +8247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeEmptyDirOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8255,11 +8255,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFc",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFc)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFcOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8293,7 +8293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeFcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8301,11 +8301,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlexVolume",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlexVolume)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlexVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8344,7 +8344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeFlexVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8352,11 +8352,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8386,7 +8386,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8394,11 +8394,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlocker",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlocker)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlocker](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFlockerOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeFlockerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeFlockerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8428,7 +8428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeFlockerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8436,11 +8436,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGcePersistentDisk",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGcePersistentDisk)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGcePersistentDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8475,7 +8475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8483,11 +8483,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepo",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGitRepo)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGitRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8520,7 +8520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8528,11 +8528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGlusterfs",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGlusterfs)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGlusterfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGlusterfsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeGlusterfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeGlusterfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8563,7 +8563,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGlusterfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8571,11 +8571,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeHostPath",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeHostPath)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeHostPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeHostPathOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeHostPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeHostPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8605,7 +8605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeHostPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8613,11 +8613,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeIscsi",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeIscsi)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeIscsi](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeIscsiOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeIscsiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeIscsiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8657,7 +8657,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeIscsiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8665,7 +8665,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8679,7 +8679,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8687,11 +8687,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeLocal",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeLocal)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeLocal](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeLocalOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeLocalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeLocalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8718,7 +8718,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeLocalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8726,11 +8726,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeNfs",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeNfs)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeNfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeNfsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeNfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeNfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8761,7 +8761,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeNfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8769,7 +8769,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStore", GoGetter: "AwsElasticBlockStore"},
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStoreInput", GoGetter: "AwsElasticBlockStoreInput"},
@@ -8900,7 +8900,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vsphereVolume", GoGetter: "VsphereVolume"},
 			_jsii_.MemberProperty{JsiiProperty: "vsphereVolumeInput", GoGetter: "VsphereVolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8908,11 +8908,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaim",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaim)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaim](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
 			_jsii_.MemberProperty{JsiiProperty: "claimNameInput", GoGetter: "ClaimNameInput"},
@@ -8942,7 +8942,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8950,11 +8950,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDisk",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDisk)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8983,7 +8983,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8991,11 +8991,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjected",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjected)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjected](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9009,7 +9009,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9017,7 +9017,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9047,7 +9047,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9055,19 +9055,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSources",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSources)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMap",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMap)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMap](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9081,7 +9081,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9089,7 +9089,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9122,7 +9122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9130,7 +9130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9144,7 +9144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9152,7 +9152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9186,7 +9186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9194,19 +9194,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -9236,7 +9236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9244,7 +9244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9258,7 +9258,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9266,7 +9266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9303,7 +9303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9311,11 +9311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9346,7 +9346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9354,7 +9354,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9382,7 +9382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9390,7 +9390,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9404,7 +9404,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9412,7 +9412,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9452,7 +9452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9460,15 +9460,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecret",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecret)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9482,7 +9482,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9490,7 +9490,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9523,7 +9523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9531,7 +9531,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9545,7 +9545,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9553,7 +9553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9587,7 +9587,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9595,11 +9595,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -9631,7 +9631,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9639,11 +9639,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyte",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeQuobyte)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeQuobyte](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9680,7 +9680,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volume", GoGetter: "Volume"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInput", GoGetter: "VolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9688,11 +9688,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeRbd",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeRbd)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeRbd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeRbdOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeRbdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeRbdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitors", GoGetter: "CephMonitors"},
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitorsInput", GoGetter: "CephMonitorsInput"},
@@ -9739,7 +9739,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeRbdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9747,11 +9747,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeRbdSecretRef",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeRbdSecretRef)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeRbdSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9781,7 +9781,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeRbdSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9789,15 +9789,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeSecret",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeSecret)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeSecretItems",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeSecretItems)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeSecretItemsList",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9811,7 +9811,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9819,7 +9819,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeSecretItemsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9852,7 +9852,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9860,7 +9860,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeSecretOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9897,7 +9897,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9905,11 +9905,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeVsphereVolume",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeVsphereVolume)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeVsphereVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9938,7 +9938,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumePath", GoGetter: "VolumePath"},
 			_jsii_.MemberProperty{JsiiProperty: "volumePathInput", GoGetter: "VolumePathInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeVsphereVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9946,11 +9946,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategy",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategy)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyList",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategyList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9964,7 +9964,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecUpdateStrategyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9972,7 +9972,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10003,7 +10003,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecUpdateStrategyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10011,11 +10011,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyRollingUpdate",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategyRollingUpdate)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategyRollingUpdate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyRollingUpdateList",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategyRollingUpdateList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategyRollingUpdateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10029,7 +10029,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecUpdateStrategyRollingUpdateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10037,7 +10037,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecUpdateStrategyRollingUpdateOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecUpdateStrategyRollingUpdateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecUpdateStrategyRollingUpdateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10064,7 +10064,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecUpdateStrategyRollingUpdateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10072,11 +10072,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplate",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplate)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateList",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10090,7 +10090,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10098,11 +10098,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateMetadata",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateMetadata)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -10144,7 +10144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10152,7 +10152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10182,7 +10182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10190,11 +10190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpec",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpec)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessModes", GoGetter: "AccessModes"},
 			_jsii_.MemberProperty{JsiiProperty: "accessModesInput", GoGetter: "AccessModesInput"},
@@ -10233,7 +10233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeName", GoGetter: "VolumeName"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeNameInput", GoGetter: "VolumeNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10241,11 +10241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecResources",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecResources)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10275,7 +10275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10283,15 +10283,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelector",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecSelector)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecSelector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsList",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10305,7 +10305,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10313,7 +10313,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10346,7 +10346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10354,7 +10354,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference",
-		reflect.TypeOf((*StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10385,7 +10385,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10393,11 +10393,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1Timeouts",
-		reflect.TypeOf((*StatefulSetV1Timeouts)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1TimeoutsOutputReference",
-		reflect.TypeOf((*StatefulSetV1TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StatefulSetV1TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10433,7 +10433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StatefulSetV1TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

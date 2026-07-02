@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerResourcesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStatefulSetSpecTemplateSpecContainerResourcesOutputReferencePara
 
 	return nil
 }
-

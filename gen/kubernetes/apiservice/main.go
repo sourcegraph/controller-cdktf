@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.apiService.ApiService",
-		reflect.TypeOf((*ApiService)(nil)).Elem(),
+		reflect.TypeFor[ApiService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceConfig",
-		reflect.TypeOf((*ApiServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadata",
-		reflect.TypeOf((*ApiServiceMetadata)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
-		reflect.TypeOf((*ApiServiceMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiServiceMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceSpec",
-		reflect.TypeOf((*ApiServiceSpec)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecOutputReference",
-		reflect.TypeOf((*ApiServiceSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caBundle", GoGetter: "CaBundle"},
 			_jsii_.MemberProperty{JsiiProperty: "caBundleInput", GoGetter: "CaBundleInput"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionPriority", GoGetter: "VersionPriority"},
 			_jsii_.MemberProperty{JsiiProperty: "versionPriorityInput", GoGetter: "VersionPriorityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiServiceSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,11 +179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecService",
-		reflect.TypeOf((*ApiServiceSpecService)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceSpecService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.apiService.ApiServiceSpecServiceOutputReference",
-		reflect.TypeOf((*ApiServiceSpecServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiServiceSpecServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiServiceSpecServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

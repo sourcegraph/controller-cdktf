@@ -90,7 +90,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateInterpo
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validatePutRollingUpdateParameters(value interface{}) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validatePutRollingUpdateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewStatefulSetSpecUpdateStrategyOutputReferenceParameters(terraform
 
 	return nil
 }
-

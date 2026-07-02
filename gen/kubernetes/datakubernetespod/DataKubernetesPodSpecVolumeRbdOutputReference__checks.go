@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecVolumeRbdOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecReadinessGateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewJobSpecTemplateSpecReadinessGateOutputReferenceParameters(terraf
 
 	return nil
 }
-

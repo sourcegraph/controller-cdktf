@@ -112,7 +112,7 @@ func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validatePutHtt
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewPodV1SpecContainerStartupProbeOutputReferenceParameters(terrafor
 
 	return nil
 }
-

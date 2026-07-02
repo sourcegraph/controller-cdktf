@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerEnvValueFromResourceFieldRefOut
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecContainerEnvValueFromResourceFieldRefOutput
 
 	return nil
 }
-

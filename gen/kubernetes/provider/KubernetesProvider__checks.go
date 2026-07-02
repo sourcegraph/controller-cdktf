@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (k *jsiiProxy_KubernetesProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KubernetesProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validateKubernetesProvider_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateKubernetesProvider_IsConstructParameters(x interface{}) error {
+func validateKubernetesProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validateKubernetesProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKubernetesProvider_IsTerraformElementParameters(x interface{}) error {
+func validateKubernetesProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validateKubernetesProvider_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateKubernetesProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateKubernetesProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (j *jsiiProxy_KubernetesProvider) validateSetExperimentsParameters(val *Kub
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesProvider) validateSetInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_KubernetesProvider) validateSetInsecureParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -119,4 +119,3 @@ func validateNewKubernetesProviderParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

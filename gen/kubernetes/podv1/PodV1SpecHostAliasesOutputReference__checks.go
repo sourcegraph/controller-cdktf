@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateSetHostnamesPara
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPodV1SpecHostAliasesOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

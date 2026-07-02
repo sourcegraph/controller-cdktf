@@ -120,7 +120,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOu
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOu
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutpu
 
 	return nil
 }
-

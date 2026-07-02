@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReferenc
 
 	return nil
 }
-

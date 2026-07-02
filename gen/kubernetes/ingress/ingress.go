@@ -15,15 +15,15 @@ type Ingress interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,30 +52,30 @@ type Ingress interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() IngressSpecOutputReference
 	SpecInput() *IngressSpec
 	Status() IngressStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	WaitForLoadBalancer() interface{}
-	SetWaitForLoadBalancer(val interface{})
-	WaitForLoadBalancerInput() interface{}
+	WaitForLoadBalancer() any
+	SetWaitForLoadBalancer(val any)
+	WaitForLoadBalancerInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type Ingress interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type Ingress interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type Ingress interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWaitForLoadBalancer()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Ingress
@@ -147,8 +147,8 @@ func (j *jsiiProxy_Ingress) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ingress) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_Ingress) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ingress) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_Ingress) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ingress) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_Ingress) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Ingress) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_Ingress) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ingress) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_Ingress) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Ingress) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_Ingress) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) WaitForLoadBalancer() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ingress) WaitForLoadBalancer() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForLoadBalancer",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_Ingress) WaitForLoadBalancer() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) WaitForLoadBalancerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Ingress) WaitForLoadBalancerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForLoadBalancerInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_Ingress) WaitForLoadBalancerInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/ingress kubernetes_ingress} Resource.
 func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) Ingress {
@@ -399,7 +398,7 @@ func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) I
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewIngress_Override(i Ingress, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetConnection(val interface{}) {
+func (j *jsiiProxy_Ingress) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_Ingress)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetCount(val interface{}) {
+func (j *jsiiProxy_Ingress) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_Ingress)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Ingress) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_Ingress)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Ingress) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_Ingress)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetId(val *string) {
+func (j *jsiiProxy_Ingress) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_Ingress)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Ingress) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_Ingress)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Ingress) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_Ingress)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Ingress) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_Ingress)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetWaitForLoadBalancer(val interface{}) {
+func (j *jsiiProxy_Ingress) SetWaitForLoadBalancer(val any) {
 	if err := j.validateSetWaitForLoadBalancerParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func Ingress_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func Ingress_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Ingress_IsConstruct(x interface{}) *bool {
+func Ingress_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngress_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func Ingress_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func Ingress_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Ingress_IsTerraformElement(x interface{}) *bool {
+func Ingress_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngress_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func Ingress_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func Ingress_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Ingress_IsTerraformResource(x interface{}) *bool {
+func Ingress_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngress_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func Ingress_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (i *jsiiProxy_Ingress) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_Ingress) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_Ingress) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_Ingress) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_Ingress) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (i *jsiiProxy_Ingress) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (i *jsiiProxy_Ingress) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (i *jsiiProxy_Ingress) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (i *jsiiProxy_Ingress) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (i *jsiiProxy_Ingress) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_Ingress) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_Ingress) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (i *jsiiProxy_Ingress) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_Ingress) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Ingress) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -796,7 +795,7 @@ func (i *jsiiProxy_Ingress) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (i *jsiiProxy_Ingress) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (i *jsiiProxy_Ingress) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_Ingress) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_Ingress) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (i *jsiiProxy_Ingress) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,7 +855,7 @@ func (i *jsiiProxy_Ingress) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -867,7 +866,7 @@ func (i *jsiiProxy_Ingress) PutMetadata(value *IngressMetadata) {
 	_jsii_.InvokeVoid(
 		i,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_Ingress) PutSpec(value *IngressSpec) {
 	_jsii_.InvokeVoid(
 		i,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -906,8 +905,8 @@ func (i *jsiiProxy_Ingress) ResetWaitForLoadBalancer() {
 	)
 }
 
-func (i *jsiiProxy_Ingress) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_Ingress) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -919,8 +918,8 @@ func (i *jsiiProxy_Ingress) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_Ingress) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_Ingress) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -932,8 +931,8 @@ func (i *jsiiProxy_Ingress) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_Ingress) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Ingress) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -945,8 +944,8 @@ func (i *jsiiProxy_Ingress) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_Ingress) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Ingress) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -971,8 +970,8 @@ func (i *jsiiProxy_Ingress) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_Ingress) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_Ingress) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -983,4 +982,3 @@ func (i *jsiiProxy_Ingress) ToTerraform() interface{} {
 
 	return returns
 }
-

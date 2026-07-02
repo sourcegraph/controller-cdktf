@@ -109,7 +109,7 @@ func (s *jsiiProxy_ServiceSpecSessionAffinityConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ServiceSpecSessionAffinityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceSpecSessionAffinityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewServiceSpecSessionAffinityConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

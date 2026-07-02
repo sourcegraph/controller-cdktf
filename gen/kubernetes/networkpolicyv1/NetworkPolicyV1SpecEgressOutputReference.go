@@ -12,9 +12,9 @@ type NetworkPolicyV1SpecEgressOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,10 +27,10 @@ type NetworkPolicyV1SpecEgressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ports() NetworkPolicyV1SpecEgressPortsList
-	PortsInput() interface{}
+	PortsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,11 +40,11 @@ type NetworkPolicyV1SpecEgressOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	To() NetworkPolicyV1SpecEgressToList
-	ToInput() interface{}
+	ToInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type NetworkPolicyV1SpecEgressOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPorts(value interface{})
-	PutTo(value interface{})
+	PutPorts(value any)
+	PutTo(value any)
 	ResetPorts()
 	ResetTo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_NetworkPolicyV1SpecEgressOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) Ports() NetworkPoli
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portsInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) To() NetworkPolicyV
 	return returns
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ToInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ToInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"toInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ToInput() interface
 	)
 	return returns
 }
-
 
 func NewNetworkPolicyV1SpecEgressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkPolicyV1SpecEgressOutputReference {
 	_init_.Initialize()
@@ -205,7 +204,7 @@ func NewNetworkPolicyV1SpecEgressOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewNetworkPolicyV1SpecEgressOutputReference_Override(n NetworkPolicyV1SpecE
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.networkPolicyV1.NetworkPolicyV1SpecEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PutPorts(value interface{}) {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PutPorts(value any) {
 	if err := n.validatePutPortsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putPorts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PutTo(value interface{}) {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) PutTo(value any) {
 	if err := n.validatePutToParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putTo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ResetTo() {
 	)
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressOutputReference) ToString() *string 
 
 	return returns
 }
-

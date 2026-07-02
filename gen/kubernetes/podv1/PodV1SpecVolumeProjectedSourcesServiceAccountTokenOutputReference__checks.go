@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReferenc
 
 	return nil
 }
-

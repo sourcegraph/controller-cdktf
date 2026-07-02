@@ -12,9 +12,9 @@ type JobSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type JobSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -47,7 +47,7 @@ type JobSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type JobSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	ResetSecretRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Terra
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobSpecTemplateSpecInitContainerEnvFromOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewJobSpecTemplateSpecInitContainerEnvFromOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerEnvFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewJobSpecTemplateSpecInitContainerEnvFromOutputReference_Override(j JobSpe
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerEnvFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetPrefix(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetPre
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,16 +324,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Compu
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetBo
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetBo
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetLi
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetNu
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetNu
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetNu
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetSt
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) GetSt
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Inter
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) PutCo
 	_jsii_.InvokeVoid(
 		j,
 		"putConfigMapRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -516,7 +515,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) PutSe
 	_jsii_.InvokeVoid(
 		j,
 		"putSecretRef",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Reset
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerEnvFromOutputReference) ToStr
 
 	return returns
 }
-

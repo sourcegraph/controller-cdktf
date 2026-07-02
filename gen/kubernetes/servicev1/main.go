@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1",
-		reflect.TypeOf((*ServiceV1)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForLoadBalancer", GoGetter: "WaitForLoadBalancer"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForLoadBalancerInput", GoGetter: "WaitForLoadBalancerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1Config",
-		reflect.TypeOf((*ServiceV1Config)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1Metadata",
-		reflect.TypeOf((*ServiceV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1MetadataOutputReference",
-		reflect.TypeOf((*ServiceV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1Spec",
-		reflect.TypeOf((*ServiceV1Spec)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1Spec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecOutputReference",
-		reflect.TypeOf((*ServiceV1SpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocateLoadBalancerNodePorts", GoGetter: "AllocateLoadBalancerNodePorts"},
 			_jsii_.MemberProperty{JsiiProperty: "allocateLoadBalancerNodePortsInput", GoGetter: "AllocateLoadBalancerNodePortsInput"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1SpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPort",
-		reflect.TypeOf((*ServiceV1SpecPort)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortList",
-		reflect.TypeOf((*ServiceV1SpecPortList)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1SpecPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -257,7 +257,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortOutputReference",
-		reflect.TypeOf((*ServiceV1SpecPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appProtocol", GoGetter: "AppProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "appProtocolInput", GoGetter: "AppProtocolInput"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1SpecPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,15 +306,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfig",
-		reflect.TypeOf((*ServiceV1SpecSessionAffinityConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecSessionAffinityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIp",
-		reflect.TypeOf((*ServiceV1SpecSessionAffinityConfigClientIp)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecSessionAffinityConfigClientIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
-		reflect.TypeOf((*ServiceV1SpecSessionAffinityConfigClientIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecSessionAffinityConfigClientIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,7 +349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigOutputReference",
-		reflect.TypeOf((*ServiceV1SpecSessionAffinityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1SpecSessionAffinityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientIp", GoGetter: "ClientIp"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIpInput", GoGetter: "ClientIpInput"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1SpecSessionAffinityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -385,11 +385,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1Status",
-		reflect.TypeOf((*ServiceV1Status)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1Status](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusList",
-		reflect.TypeOf((*ServiceV1StatusList)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -402,7 +402,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -410,15 +410,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancer",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancer)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerIngress",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancerIngress)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancerIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerIngressList",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancerIngressList)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancerIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -431,7 +431,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusLoadBalancerIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -439,7 +439,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerIngressOutputReference",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancerIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancerIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusLoadBalancerIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,7 +473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerList",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancerList)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusLoadBalancerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -494,7 +494,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusLoadBalancerOutputReference",
-		reflect.TypeOf((*ServiceV1StatusLoadBalancerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusLoadBalancerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -519,7 +519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusLoadBalancerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -527,7 +527,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusOutputReference",
-		reflect.TypeOf((*ServiceV1StatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1StatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -552,7 +552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1StatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -560,11 +560,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1Timeouts",
-		reflect.TypeOf((*ServiceV1Timeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1TimeoutsOutputReference",
-		reflect.TypeOf((*ServiceV1TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceV1TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -591,7 +591,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceV1TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

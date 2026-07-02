@@ -106,7 +106,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 
 	return nil
 }
-

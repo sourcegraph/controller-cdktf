@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount",
-		reflect.TypeOf((*DefaultServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig",
-		reflect.TypeOf((*DefaultServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret",
-		reflect.TypeOf((*DefaultServiceAccountImagePullSecret)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountImagePullSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList",
-		reflect.TypeOf((*DefaultServiceAccountImagePullSecretList)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountImagePullSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountImagePullSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference",
-		reflect.TypeOf((*DefaultServiceAccountImagePullSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountImagePullSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata",
-		reflect.TypeOf((*DefaultServiceAccountMetadata)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
-		reflect.TypeOf((*DefaultServiceAccountMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret",
-		reflect.TypeOf((*DefaultServiceAccountSecret)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList",
-		reflect.TypeOf((*DefaultServiceAccountSecretList)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
-		reflect.TypeOf((*DefaultServiceAccountSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts",
-		reflect.TypeOf((*DefaultServiceAccountTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
-		reflect.TypeOf((*DefaultServiceAccountTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DefaultServiceAccountTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DefaultServiceAccountTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

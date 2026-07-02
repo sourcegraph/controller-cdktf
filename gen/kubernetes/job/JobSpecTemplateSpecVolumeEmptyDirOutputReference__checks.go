@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeEmptyDirOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecVolumeEmptyDirOutputReferenceParameters(terra
 
 	return nil
 }
-

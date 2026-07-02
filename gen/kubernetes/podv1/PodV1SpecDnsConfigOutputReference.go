@@ -12,9 +12,9 @@ type PodV1SpecDnsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type PodV1SpecDnsConfigOutputReference interface {
 	SetNameservers(val *[]*string)
 	NameserversInput() *[]*string
 	Option() PodV1SpecDnsConfigOptionList
-	OptionInput() interface{}
+	OptionInput() any
 	Searches() *[]*string
 	SetSearches(val *[]*string)
 	SearchesInput() *[]*string
@@ -48,7 +48,7 @@ type PodV1SpecDnsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type PodV1SpecDnsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOption(value interface{})
+	PutOption(value any)
 	ResetNameservers()
 	ResetOption()
 	ResetSearches()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_PodV1SpecDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) Option() PodV1SpecDnsConfi
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) OptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) OptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"optionInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewPodV1SpecDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecDnsConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewPodV1SpecDnsConfigOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewPodV1SpecDnsConfigOutputReference_Override(p PodV1SpecDnsConfigOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetInternalValue(val *PodV1SpecDnsConfig) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetInternalValue(val *PodV1SpecDnsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetInternalValue(val *PodV1
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetNameservers(val *[]*string) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetNameservers(val *[]*string) {
 	if err := j.validateSetNameserversParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetNameservers(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetSearches(val *[]*string) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetSearches(val *[]*string) {
 	if err := j.validateSetSearchesParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetSearches(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecDnsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) PutOption(value interface{}) {
+func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) PutOption(value any) {
 	if err := p.validatePutOptionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putOption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) ResetSearches() {
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (p *jsiiProxy_PodV1SpecDnsConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

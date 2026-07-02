@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataKubernetesPodMetadataOutputReference) validateSetAnnotati
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataKubernetesPodMetadataOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

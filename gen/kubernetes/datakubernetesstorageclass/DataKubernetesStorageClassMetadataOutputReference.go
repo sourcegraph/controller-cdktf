@@ -15,9 +15,9 @@ type DataKubernetesStorageClassMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type DataKubernetesStorageClassMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DataKubernetesStorageClassMetadataOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) Annotation
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -251,7 +251,6 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) Uid() *str
 	return returns
 }
 
-
 func NewDataKubernetesStorageClassMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataKubernetesStorageClassMetadataOutputReference {
 	_init_.Initialize()
 
@@ -262,7 +261,7 @@ func NewDataKubernetesStorageClassMetadataOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -274,12 +273,12 @@ func NewDataKubernetesStorageClassMetadataOutputReference_Override(d DataKuberne
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetAnnotati
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetInternalValue(val *DataKubernetesStorageClassMetadata) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetInternalValue(val *DataKubernetesStorageClassMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetLabels(v
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetName(val
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetBoolean
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetListAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetNumberA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetNumberL
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetNumberM
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetStringA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) GetStringM
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) Interpolat
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -577,16 +576,16 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) ResetName(
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -605,4 +604,3 @@ func (d *jsiiProxy_DataKubernetesStorageClassMetadataOutputReference) ToString()
 
 	return returns
 }
-

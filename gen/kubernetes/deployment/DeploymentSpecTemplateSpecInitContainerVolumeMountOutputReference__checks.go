@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewDeploymentSpecTemplateSpecInitContainerVolumeMountOutputReferenc
 
 	return nil
 }
-

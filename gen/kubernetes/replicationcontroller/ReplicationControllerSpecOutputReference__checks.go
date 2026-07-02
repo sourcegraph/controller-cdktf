@@ -109,7 +109,7 @@ func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewReplicationControllerSpecOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

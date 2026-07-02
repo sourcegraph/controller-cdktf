@@ -12,9 +12,9 @@ type ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference in
 	InternalValue() *ReplicationControllerV1SpecTemplateSpecContainerLifecycle
 	SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecContainerLifecycle)
 	PostStart() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePostStartList
-	PostStartInput() interface{}
+	PostStartInput() any
 	PreStop() ReplicationControllerV1SpecTemplateSpecContainerLifecyclePreStopList
-	PreStopInput() interface{}
+	PreStopInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPostStart(value interface{})
-	PutPreStop(value interface{})
+	PutPostStart(value any)
+	PutPreStop(value any)
 	ResetPostStart()
 	ResetPreStop()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PostStartInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PostStartInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"postStartInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PreStopInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PreStopInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preStopInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	return returns
 }
 
-
 func NewReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference)SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecContainerLifecycle) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) SetInternalValue(val *ReplicationControllerV1SpecTemplateSpecContainerLifecycle) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PutPostStart(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PutPostStart(value any) {
 	if err := r.validatePutPostStartParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putPostStart",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PutPreStop(value interface{}) {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) PutPreStop(value any) {
 	if err := r.validatePutPreStopParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putPreStop",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLifecycleOutp
 
 	return returns
 }
-

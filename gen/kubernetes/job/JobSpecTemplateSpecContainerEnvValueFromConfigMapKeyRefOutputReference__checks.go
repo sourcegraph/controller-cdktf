@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutput
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutput
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewJobSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputRef
 
 	return nil
 }
-

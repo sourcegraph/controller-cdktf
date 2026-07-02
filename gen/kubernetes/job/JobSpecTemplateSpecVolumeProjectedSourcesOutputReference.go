@@ -12,16 +12,16 @@ type JobSpecTemplateSpecVolumeProjectedSourcesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConfigMap() JobSpecTemplateSpecVolumeProjectedSourcesConfigMapList
-	ConfigMapInput() interface{}
+	ConfigMapInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -31,10 +31,10 @@ type JobSpecTemplateSpecVolumeProjectedSourcesOutputReference interface {
 	DownwardApiInput() *JobSpecTemplateSpecVolumeProjectedSourcesDownwardApi
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Secret() JobSpecTemplateSpecVolumeProjectedSourcesSecretList
-	SecretInput() interface{}
+	SecretInput() any
 	ServiceAccountToken() JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 	ServiceAccountTokenInput() *JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken
 	// Experimental.
@@ -48,7 +48,7 @@ type JobSpecTemplateSpecVolumeProjectedSourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,9 +69,9 @@ type JobSpecTemplateSpecVolumeProjectedSourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConfigMap(value interface{})
+	PutConfigMap(value any)
 	PutDownwardApi(value *JobSpecTemplateSpecVolumeProjectedSourcesDownwardApi)
-	PutSecret(value interface{})
+	PutSecret(value any)
 	PutServiceAccountToken(value *JobSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken)
 	ResetConfigMap()
 	ResetDownwardApi()
@@ -79,7 +79,7 @@ type JobSpecTemplateSpecVolumeProjectedSourcesOutputReference interface {
 	ResetServiceAccountToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Con
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) ConfigMapInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) ConfigMapInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configMapInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Sec
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SecretInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SecretInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Ter
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobSpecTemplateSpecVolumeProjectedSourcesOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesOutputReference_Override(j JobS
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Com
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Get
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,21 +503,21 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Int
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) PutConfigMap(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) PutConfigMap(value any) {
 	if err := j.validatePutConfigMapParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putConfigMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -529,18 +528,18 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Put
 	_jsii_.InvokeVoid(
 		j,
 		"putDownwardApi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) PutSecret(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) PutSecret(value any) {
 	if err := j.validatePutSecretParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putSecret",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Put
 	_jsii_.InvokeVoid(
 		j,
 		"putServiceAccountToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Res
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesOutputReference) ToS
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendServicePortOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIngressV1SpecRuleHttpPathBackendServicePortOutputReferenceParame
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldR
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDeploymentSpecTemplateSpecContainerEnvValueFromResourceFieldRefO
 
 	return nil
 }
-

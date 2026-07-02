@@ -106,7 +106,7 @@ func (j *jsiiProxy_ReplicationControllerMetadataOutputReference) validateSetAnno
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReplicationControllerMetadataOutputReferenceParameters(terraform
 
 	return nil
 }
-

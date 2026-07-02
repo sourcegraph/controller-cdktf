@@ -120,7 +120,7 @@ func (p *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewPodV1SpecVolumeDownwardApiItemsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

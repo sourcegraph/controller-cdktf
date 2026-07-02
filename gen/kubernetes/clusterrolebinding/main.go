@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
-		reflect.TypeOf((*ClusterRoleBinding)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingConfig",
-		reflect.TypeOf((*ClusterRoleBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingMetadata",
-		reflect.TypeOf((*ClusterRoleBindingMetadata)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingMetadataOutputReference",
-		reflect.TypeOf((*ClusterRoleBindingMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleBindingMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingRoleRef",
-		reflect.TypeOf((*ClusterRoleBindingRoleRef)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingRoleRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingRoleRefOutputReference",
-		reflect.TypeOf((*ClusterRoleBindingRoleRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingRoleRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupInput", GoGetter: "ApiGroupInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleBindingRoleRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubject",
-		reflect.TypeOf((*ClusterRoleBindingSubject)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingSubject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectList",
-		reflect.TypeOf((*ClusterRoleBindingSubjectList)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingSubjectList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleBindingSubjectList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBindingSubjectOutputReference",
-		reflect.TypeOf((*ClusterRoleBindingSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ClusterRoleBindingSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "apiGroupInput", GoGetter: "ApiGroupInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ClusterRoleBindingSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

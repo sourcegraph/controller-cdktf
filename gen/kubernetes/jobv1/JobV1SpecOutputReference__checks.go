@@ -152,7 +152,7 @@ func (j *jsiiProxy_JobV1SpecOutputReference) validateSetCompletionsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_JobV1SpecOutputReference) validateSetInternalValueParameters(
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecOutputReference) validateSetManualSelectorParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecOutputReference) validateSetManualSelectorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -288,4 +288,3 @@ func validateNewJobV1SpecOutputReferenceParameters(terraformResource cdktf.IInte
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
-		reflect.TypeOf((*ReplicationController)(nil)).Elem(),
+		reflect.TypeFor[ReplicationController](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationController{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerConfig",
-		reflect.TypeOf((*ReplicationControllerConfig)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerMetadata",
-		reflect.TypeOf((*ReplicationControllerMetadata)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerMetadataOutputReference",
-		reflect.TypeOf((*ReplicationControllerMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,11 +132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpec",
-		reflect.TypeOf((*ReplicationControllerSpec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplate",
-		reflect.TypeOf((*ReplicationControllerSpecTemplate)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateMetadata",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateMetadata)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateMetadataOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,7 +237,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,19 +275,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinity",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinity)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinity",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinity)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -382,7 +382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -390,15 +390,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -420,7 +420,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -489,7 +489,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -497,15 +497,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -519,7 +519,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -527,11 +527,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -553,7 +553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -586,7 +586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -594,7 +594,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -622,7 +622,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -630,7 +630,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -658,7 +658,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -666,7 +666,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -702,7 +702,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -710,11 +710,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinity",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinity)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -746,7 +746,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -754,11 +754,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -772,7 +772,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -780,7 +780,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -809,7 +809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -817,15 +817,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -839,7 +839,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -847,11 +847,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -865,7 +865,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -873,7 +873,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -906,7 +906,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -914,7 +914,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -945,7 +945,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -953,7 +953,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -986,7 +986,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -994,15 +994,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1016,7 +1016,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1024,11 +1024,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1042,7 +1042,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1050,7 +1050,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1083,7 +1083,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1091,7 +1091,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1122,7 +1122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1130,7 +1130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1144,7 +1144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1152,7 +1152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1185,7 +1185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1193,11 +1193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1229,7 +1229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1237,11 +1237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1255,7 +1255,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1263,7 +1263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1292,7 +1292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1300,15 +1300,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1322,7 +1322,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1330,11 +1330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1348,7 +1348,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1356,7 +1356,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1389,7 +1389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1397,7 +1397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1428,7 +1428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1436,7 +1436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1469,7 +1469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1477,15 +1477,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1499,7 +1499,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1507,11 +1507,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1525,7 +1525,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1533,7 +1533,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1566,7 +1566,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1574,7 +1574,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1605,7 +1605,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1613,7 +1613,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1627,7 +1627,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1635,7 +1635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1668,7 +1668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topologyKeyInput", GoGetter: "TopologyKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1676,23 +1676,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainer",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainer)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnv",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnv)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnv](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFrom",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFrom)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1721,7 +1721,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1729,7 +1729,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1743,7 +1743,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvFromList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1751,7 +1751,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1786,7 +1786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1794,11 +1794,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1827,7 +1827,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvFromSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1835,7 +1835,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1849,7 +1849,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1857,7 +1857,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1890,7 +1890,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1898,15 +1898,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFrom",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFrom)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1939,7 +1939,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1947,11 +1947,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -1981,7 +1981,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1989,7 +1989,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2029,7 +2029,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvValueFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2037,11 +2037,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2073,7 +2073,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2081,11 +2081,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2118,7 +2118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2126,11 +2126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycle",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecycle)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2162,7 +2162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2170,15 +2170,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStart",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStart)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStart](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2205,7 +2205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2213,15 +2213,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2235,7 +2235,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2243,7 +2243,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2273,7 +2273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2281,7 +2281,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2321,7 +2321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2329,7 +2329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2343,7 +2343,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2351,7 +2351,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2387,7 +2387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2395,11 +2395,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2413,7 +2413,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2421,7 +2421,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2447,7 +2447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2455,15 +2455,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStop",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStop)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStop](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2490,7 +2490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2498,15 +2498,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2520,7 +2520,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2528,7 +2528,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2558,7 +2558,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2566,7 +2566,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2606,7 +2606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2614,7 +2614,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2628,7 +2628,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2636,7 +2636,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2672,7 +2672,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2680,11 +2680,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2698,7 +2698,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2706,7 +2706,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2732,7 +2732,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2740,7 +2740,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2754,7 +2754,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2762,15 +2762,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -2797,7 +2797,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2805,15 +2805,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2827,7 +2827,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2835,7 +2835,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2865,7 +2865,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2873,7 +2873,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2913,7 +2913,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2921,7 +2921,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2972,7 +2972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2980,11 +2980,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2998,7 +2998,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3006,7 +3006,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3032,7 +3032,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3040,7 +3040,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -3136,7 +3136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3144,11 +3144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPort",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerPort)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerPortList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3162,7 +3162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3170,7 +3170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3208,7 +3208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3216,15 +3216,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -3251,7 +3251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3259,15 +3259,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3281,7 +3281,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3289,7 +3289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3319,7 +3319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3327,7 +3327,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3367,7 +3367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3375,7 +3375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3426,7 +3426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3434,11 +3434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3452,7 +3452,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3460,7 +3460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3486,7 +3486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3494,11 +3494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResources",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerResources)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3528,7 +3528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3536,15 +3536,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContext",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -3574,7 +3574,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3582,7 +3582,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalationInput", GoGetter: "AllowPrivilegeEscalationInput"},
@@ -3636,7 +3636,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3644,11 +3644,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3684,7 +3684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3692,11 +3692,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3726,7 +3726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3734,15 +3734,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -3769,7 +3769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3777,15 +3777,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3799,7 +3799,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3807,7 +3807,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3837,7 +3837,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3845,7 +3845,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3885,7 +3885,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3893,7 +3893,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3944,7 +3944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3952,11 +3952,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3970,7 +3970,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3978,7 +3978,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4004,7 +4004,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4012,11 +4012,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMount",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerVolumeMount)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerVolumeMount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMountList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerVolumeMountList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerVolumeMountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4030,7 +4030,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerVolumeMountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4038,7 +4038,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4075,7 +4075,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerVolumeMountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4083,15 +4083,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfig",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecDnsConfig)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecDnsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOption",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecDnsConfigOption)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecDnsConfigOption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOptionList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecDnsConfigOptionList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecDnsConfigOptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4105,7 +4105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4113,7 +4113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4142,7 +4142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4150,7 +4150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecDnsConfigOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecDnsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecDnsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4184,7 +4184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecDnsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4192,11 +4192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliases",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecHostAliases)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecHostAliases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecHostAliasesList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecHostAliasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4210,7 +4210,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4218,7 +4218,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecHostAliasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecHostAliasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4246,7 +4246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4254,11 +4254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecrets",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecImagePullSecrets)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecImagePullSecrets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecImagePullSecretsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecImagePullSecretsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4272,7 +4272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4280,7 +4280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4306,7 +4306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4314,23 +4314,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainer",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainer)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnv",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnv)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnv](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFrom",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFrom)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4359,7 +4359,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4367,7 +4367,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4381,7 +4381,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4389,7 +4389,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4424,7 +4424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4432,11 +4432,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4465,7 +4465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4473,7 +4473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4487,7 +4487,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4495,7 +4495,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4528,7 +4528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueFromInput", GoGetter: "ValueFromInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4536,15 +4536,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFrom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4577,7 +4577,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4585,11 +4585,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -4619,7 +4619,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4627,7 +4627,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4667,7 +4667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4675,11 +4675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4711,7 +4711,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4719,11 +4719,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4756,7 +4756,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4764,11 +4764,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycle",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecycle)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecycle](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4800,7 +4800,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecycleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4808,15 +4808,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStart",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStart)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStart](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -4843,7 +4843,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4851,15 +4851,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4873,7 +4873,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4881,7 +4881,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4911,7 +4911,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4919,7 +4919,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4959,7 +4959,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4967,7 +4967,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4981,7 +4981,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4989,7 +4989,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5025,7 +5025,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5033,11 +5033,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5051,7 +5051,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5059,7 +5059,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5085,7 +5085,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5093,15 +5093,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStop",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStop)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStop](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -5128,7 +5128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5136,15 +5136,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5158,7 +5158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5166,7 +5166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5196,7 +5196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5204,7 +5204,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5244,7 +5244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5252,7 +5252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5266,7 +5266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5274,7 +5274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5310,7 +5310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5318,11 +5318,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5336,7 +5336,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5344,7 +5344,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5370,7 +5370,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5378,7 +5378,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5392,7 +5392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5400,15 +5400,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -5435,7 +5435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5443,15 +5443,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5465,7 +5465,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5473,7 +5473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5503,7 +5503,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5511,7 +5511,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5551,7 +5551,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5559,7 +5559,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5610,7 +5610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5618,11 +5618,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5636,7 +5636,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5644,7 +5644,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5670,7 +5670,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5678,7 +5678,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -5774,7 +5774,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5782,11 +5782,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPort",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerPort)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPortList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerPortList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5800,7 +5800,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5808,7 +5808,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5846,7 +5846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5854,15 +5854,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -5889,7 +5889,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5897,15 +5897,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5919,7 +5919,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5927,7 +5927,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5957,7 +5957,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5965,7 +5965,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6005,7 +6005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6013,7 +6013,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6064,7 +6064,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6072,11 +6072,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6090,7 +6090,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6098,7 +6098,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6124,7 +6124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6132,11 +6132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResources",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerResources)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6166,7 +6166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6174,15 +6174,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContext",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContext](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -6212,7 +6212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6220,7 +6220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalationInput", GoGetter: "AllowPrivilegeEscalationInput"},
@@ -6274,7 +6274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6282,11 +6282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6322,7 +6322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6330,11 +6330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6364,7 +6364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6372,15 +6372,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbe",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
 			_jsii_.MemberProperty{JsiiProperty: "commandInput", GoGetter: "CommandInput"},
@@ -6407,7 +6407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6415,15 +6415,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6437,7 +6437,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6445,7 +6445,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6475,7 +6475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6483,7 +6483,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6523,7 +6523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6531,7 +6531,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6582,7 +6582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6590,11 +6590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocket",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6608,7 +6608,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6616,7 +6616,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6642,7 +6642,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6650,11 +6650,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMount",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerVolumeMount)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerVolumeMount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6668,7 +6668,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6676,7 +6676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6713,7 +6713,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6721,7 +6721,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSeconds", GoGetter: "ActiveDeadlineSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSecondsInput", GoGetter: "ActiveDeadlineSecondsInput"},
@@ -6837,7 +6837,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volume", GoGetter: "Volume"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInput", GoGetter: "VolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6845,11 +6845,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGate",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecReadinessGate)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecReadinessGate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGateList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecReadinessGateList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecReadinessGateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6863,7 +6863,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecReadinessGateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6871,7 +6871,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecReadinessGateOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecReadinessGateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecReadinessGateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6897,7 +6897,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecReadinessGateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6905,11 +6905,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContext",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContext)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6960,7 +6960,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6968,11 +6968,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7008,7 +7008,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7016,11 +7016,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7050,7 +7050,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7058,11 +7058,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctl",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSysctl)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSysctl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctlList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSysctlList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSysctlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7076,7 +7076,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextSysctlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7084,7 +7084,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7112,7 +7112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextSysctlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7120,11 +7120,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecToleration",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecToleration)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecToleration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTolerationList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTolerationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7138,7 +7138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7146,7 +7146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTolerationOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTolerationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTolerationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7185,7 +7185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7193,15 +7193,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraint",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraint)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraint](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelector",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelector)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7215,7 +7215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7223,11 +7223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7241,7 +7241,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7249,7 +7249,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7282,7 +7282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7290,7 +7290,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7321,7 +7321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7329,7 +7329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7343,7 +7343,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7351,7 +7351,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7388,7 +7388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "whenUnsatisfiable", GoGetter: "WhenUnsatisfiable"},
 			_jsii_.MemberProperty{JsiiProperty: "whenUnsatisfiableInput", GoGetter: "WhenUnsatisfiableInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7396,15 +7396,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolume",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolume)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolume](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStore](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7439,7 +7439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeIdInput", GoGetter: "VolumeIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7447,11 +7447,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDisk",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAzureDisk)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAzureDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cachingMode", GoGetter: "CachingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "cachingModeInput", GoGetter: "CachingModeInput"},
@@ -7490,7 +7490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeAzureDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7498,11 +7498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFile",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAzureFile)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAzureFile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7536,7 +7536,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7544,11 +7544,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFs",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCephFs)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCephFs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7590,7 +7590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7598,11 +7598,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7632,7 +7632,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7640,11 +7640,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinder",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCinder)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCinder](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7676,7 +7676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeIdInput", GoGetter: "VolumeIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCinderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7684,15 +7684,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMap",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeConfigMap)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeConfigMap](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeConfigMapItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeConfigMapItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7706,7 +7706,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7714,7 +7714,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7747,7 +7747,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7755,7 +7755,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7792,7 +7792,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7800,15 +7800,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsi",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCsi)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCsi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7835,7 +7835,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7843,7 +7843,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7882,7 +7882,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeAttributes", GoGetter: "VolumeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeAttributesInput", GoGetter: "VolumeAttributesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCsiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7890,19 +7890,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApi",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApi)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItems](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -7932,7 +7932,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7940,7 +7940,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7954,7 +7954,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7962,7 +7962,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7998,7 +7998,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8006,11 +8006,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8041,7 +8041,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8049,7 +8049,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8080,7 +8080,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeDownwardApiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8088,11 +8088,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDir",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeEmptyDir)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeEmptyDir](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8122,7 +8122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8130,11 +8130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFc",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFc)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFcOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8168,7 +8168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeFcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8176,11 +8176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolume",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlexVolume)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlexVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8219,7 +8219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeFlexVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8227,11 +8227,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8261,7 +8261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8269,11 +8269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlocker",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlocker)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlocker](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8303,7 +8303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeFlockerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8311,11 +8311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGcePersistentDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8350,7 +8350,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeGcePersistentDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8358,11 +8358,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepo",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGitRepo)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGitRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8395,7 +8395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeGitRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8403,11 +8403,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfs",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGlusterfs)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGlusterfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8438,7 +8438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8446,11 +8446,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPath",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeHostPath)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeHostPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8480,7 +8480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8488,11 +8488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsi",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeIscsi)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeIscsi](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8532,7 +8532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeIscsiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8540,7 +8540,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8554,7 +8554,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8562,11 +8562,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocal",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeLocal)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeLocal](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8593,7 +8593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeLocalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8601,11 +8601,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfs",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeNfs)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeNfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8636,7 +8636,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeNfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8644,7 +8644,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStore", GoGetter: "AwsElasticBlockStore"},
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStoreInput", GoGetter: "AwsElasticBlockStoreInput"},
@@ -8775,7 +8775,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vsphereVolume", GoGetter: "VsphereVolume"},
 			_jsii_.MemberProperty{JsiiProperty: "vsphereVolumeInput", GoGetter: "VsphereVolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8783,11 +8783,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaim](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
 			_jsii_.MemberProperty{JsiiProperty: "claimNameInput", GoGetter: "ClaimNameInput"},
@@ -8817,7 +8817,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8825,11 +8825,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8858,7 +8858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumePhotonPersistentDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8866,11 +8866,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjected",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjected)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjected](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8884,7 +8884,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8892,7 +8892,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8922,7 +8922,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8930,19 +8930,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSources",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSources)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMap",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMap)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMap](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8956,7 +8956,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8964,7 +8964,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8997,7 +8997,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9005,7 +9005,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9019,7 +9019,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9027,7 +9027,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9061,7 +9061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9069,19 +9069,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApi](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
@@ -9111,7 +9111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9119,7 +9119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9133,7 +9133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9141,7 +9141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9178,7 +9178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9186,11 +9186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9221,7 +9221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9229,7 +9229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9257,7 +9257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9265,7 +9265,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9279,7 +9279,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9287,7 +9287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9327,7 +9327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9335,15 +9335,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9357,7 +9357,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9365,7 +9365,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9398,7 +9398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9406,7 +9406,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9420,7 +9420,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9428,7 +9428,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9462,7 +9462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9470,11 +9470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -9506,7 +9506,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9514,11 +9514,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyte",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeQuobyte)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeQuobyte](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9555,7 +9555,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volume", GoGetter: "Volume"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeInput", GoGetter: "VolumeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeQuobyteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9563,11 +9563,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbd",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeRbd)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeRbd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitors", GoGetter: "CephMonitors"},
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitorsInput", GoGetter: "CephMonitorsInput"},
@@ -9614,7 +9614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeRbdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9622,11 +9622,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9656,7 +9656,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9664,15 +9664,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecret",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeSecret)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItems",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeSecretItems)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItemsList",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9686,7 +9686,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9694,7 +9694,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9727,7 +9727,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9735,7 +9735,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9772,7 +9772,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9780,11 +9780,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolume",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeVsphereVolume)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeVsphereVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference",
-		reflect.TypeOf((*ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9813,7 +9813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumePath", GoGetter: "VolumePath"},
 			_jsii_.MemberProperty{JsiiProperty: "volumePathInput", GoGetter: "VolumePathInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeVsphereVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9821,11 +9821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerTimeouts",
-		reflect.TypeOf((*ReplicationControllerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference",
-		reflect.TypeOf((*ReplicationControllerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ReplicationControllerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9858,7 +9858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ReplicationControllerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

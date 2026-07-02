@@ -90,7 +90,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validatePutPathParameters(value interface{}) error {
+func (i *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validatePutPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IngressV1SpecRuleHttpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewIngressV1SpecRuleHttpOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

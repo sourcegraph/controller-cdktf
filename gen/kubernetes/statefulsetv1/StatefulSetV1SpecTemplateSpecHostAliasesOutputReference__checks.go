@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStatefulSetV1SpecTemplateSpecHostAliasesOutputReferenceParameter
 
 	return nil
 }
-

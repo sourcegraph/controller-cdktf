@@ -1,6 +1,5 @@
 package replicationcontroller
 
-
 type ReplicationControllerSpecTemplateSpecVolumeSecret struct {
 	// Optional: mode bits to use on created files by default.
 	//
@@ -11,14 +10,13 @@ type ReplicationControllerSpecTemplateSpecVolumeSecret struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#items ReplicationController#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 	// Optional: Specify whether the Secret or its keys must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#optional ReplicationController#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 	// Name of the secret in the pod's namespace to use. More info: http://kubernetes.io/docs/user-guide/volumes#secrets.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
 	SecretName *string `field:"optional" json:"secretName" yaml:"secretName"`
 }
-

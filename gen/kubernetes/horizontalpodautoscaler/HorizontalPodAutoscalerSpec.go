@@ -1,6 +1,5 @@
 package horizontalpodautoscaler
 
-
 type HorizontalPodAutoscalerSpec struct {
 	// Upper limit for the number of pods that can be set by the autoscaler.
 	//
@@ -17,7 +16,7 @@ type HorizontalPodAutoscalerSpec struct {
 	// metric block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler#metric HorizontalPodAutoscaler#metric}
-	Metric interface{} `field:"optional" json:"metric" yaml:"metric"`
+	Metric any `field:"optional" json:"metric" yaml:"metric"`
 	// Lower limit for the number of pods that can be set by the autoscaler, defaults to `1`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler#min_replicas HorizontalPodAutoscaler#min_replicas}
@@ -29,4 +28,3 @@ type HorizontalPodAutoscalerSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/horizontal_pod_autoscaler#target_cpu_utilization_percentage HorizontalPodAutoscaler#target_cpu_utilization_percentage}
 	TargetCpuUtilizationPercentage *float64 `field:"optional" json:"targetCpuUtilizationPercentage" yaml:"targetCpuUtilizationPercentage"`
 }
-

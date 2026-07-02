@@ -15,15 +15,15 @@ type ValidatingWebhookConfigurationV1 interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,26 +52,26 @@ type ValidatingWebhookConfigurationV1 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Webhook() ValidatingWebhookConfigurationV1WebhookList
-	WebhookInput() interface{}
+	WebhookInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type ValidatingWebhookConfigurationV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type ValidatingWebhookConfigurationV1 interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -109,22 +109,22 @@ type ValidatingWebhookConfigurationV1 interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *ValidatingWebhookConfigurationV1Metadata)
-	PutWebhook(value interface{})
+	PutWebhook(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ValidatingWebhookConfigurationV1
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) Webhook() ValidatingWebhook
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1) WebhookInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) WebhookInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"webhookInput",
@@ -351,7 +351,6 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) WebhookInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1} Resource.
 func NewValidatingWebhookConfigurationV1(scope constructs.Construct, id *string, config *ValidatingWebhookConfigurationV1Config) ValidatingWebhookConfigurationV1 {
@@ -364,7 +363,7 @@ func NewValidatingWebhookConfigurationV1(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewValidatingWebhookConfigurationV1_Override(v ValidatingWebhookConfigurati
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetConnection(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetCount(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetId(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func ValidatingWebhookConfigurationV1_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func ValidatingWebhookConfigurationV1_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ValidatingWebhookConfigurationV1_IsConstruct(x interface{}) *bool {
+func ValidatingWebhookConfigurationV1_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateValidatingWebhookConfigurationV1_IsConstructParameters(x); err != nil {
@@ -508,7 +507,7 @@ func ValidatingWebhookConfigurationV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func ValidatingWebhookConfigurationV1_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ValidatingWebhookConfigurationV1_IsTerraformElement(x interface{}) *bool {
+func ValidatingWebhookConfigurationV1_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateValidatingWebhookConfigurationV1_IsTerraformElementParameters(x); err != nil {
@@ -527,7 +526,7 @@ func ValidatingWebhookConfigurationV1_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func ValidatingWebhookConfigurationV1_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ValidatingWebhookConfigurationV1_IsTerraformResource(x interface{}) *bool {
+func ValidatingWebhookConfigurationV1_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateValidatingWebhookConfigurationV1_IsTerraformResourceParameters(x); err != nil {
@@ -546,7 +545,7 @@ func ValidatingWebhookConfigurationV1_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,31 +570,31 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,15 +722,15 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -750,7 +749,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -763,7 +762,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,18 +776,18 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -799,7 +798,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -810,7 +809,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -821,18 +820,18 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) PutMetadata(value *Validati
 	_jsii_.InvokeVoid(
 		v,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) PutWebhook(value interface{}) {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) PutWebhook(value any) {
 	if err := v.validatePutWebhookParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"putWebhook",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -852,8 +851,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ResetOverrideLogicalId() {
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -865,8 +864,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeAttributes() *map
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -878,8 +877,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -891,8 +890,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToHclTerraform() interface{
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -917,8 +916,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -929,4 +928,3 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1) ToTerraform() interface{} {
 
 	return returns
 }
-

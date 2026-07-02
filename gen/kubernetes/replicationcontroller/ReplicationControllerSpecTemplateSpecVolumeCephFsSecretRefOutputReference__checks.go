@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOut
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewReplicationControllerSpecTemplateSpecVolumeCephFsSecretRefOutput
 
 	return nil
 }
-

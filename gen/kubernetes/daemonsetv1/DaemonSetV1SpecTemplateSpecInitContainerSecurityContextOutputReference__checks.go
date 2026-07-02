@@ -131,7 +131,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetAllowPrivilegeEscalationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetPrivilegedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetReadOnlyRootFilesystemParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateSetRunAsNonRootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,4 +327,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputRef
 
 	return nil
 }
-

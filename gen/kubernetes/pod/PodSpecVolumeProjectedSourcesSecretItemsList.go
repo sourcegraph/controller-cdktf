@@ -17,8 +17,8 @@ type PodSpecVolumeProjectedSourcesSecretItemsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PodSpecVolumeProjectedSourcesSecretItemsList interface {
 	Get(index *float64) PodSpecVolumeProjectedSourcesSecretItemsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewPodSpecVolumeProjectedSourcesSecretItemsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesSecretItemsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPodSpecVolumeProjectedSourcesSecretItemsList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPodSpecVolumeProjectedSourcesSecretItemsList_Override(p PodSpecVolumePro
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretItemsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) AllWithMapKey(m
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) Get(index *floa
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesSecretItemsList) ToString() *str
 
 	return returns
 }
-

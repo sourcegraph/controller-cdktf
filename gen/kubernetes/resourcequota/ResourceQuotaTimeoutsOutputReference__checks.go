@@ -98,7 +98,7 @@ func (r *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateSetCreateParame
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ResourceQuotaTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewResourceQuotaTimeoutsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

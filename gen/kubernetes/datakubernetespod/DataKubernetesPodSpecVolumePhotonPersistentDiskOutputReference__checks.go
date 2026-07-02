@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumePhotonPersistentDiskOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecVolumePhotonPersistentDiskOutputReferencePa
 
 	return nil
 }
-

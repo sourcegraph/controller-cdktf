@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecAffinityPodAntiAffinityOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesPodSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesPodSpecAffinityPodAntiAffinityOutputReferenceParam
 
 	return nil
 }
-

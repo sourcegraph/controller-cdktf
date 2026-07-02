@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePostStartList) validat
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePostStartList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePostStartList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobV1SpecTemplateSpecContainerLifecyclePostStartListParameters(t
 
 	return nil
 }
-

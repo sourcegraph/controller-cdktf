@@ -1,6 +1,5 @@
 package deployment
 
-
 type DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef struct {
 	// The key of the secret to select from. Must be a valid secret key.
 	//
@@ -13,6 +12,5 @@ type DeploymentSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef struct {
 	// Specify whether the Secret or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment#optional Deployment#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

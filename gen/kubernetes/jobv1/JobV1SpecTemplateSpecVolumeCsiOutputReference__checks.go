@@ -109,7 +109,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateSetInt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -253,4 +253,3 @@ func validateNewJobV1SpecTemplateSpecVolumeCsiOutputReferenceParameters(terrafor
 
 	return nil
 }
-

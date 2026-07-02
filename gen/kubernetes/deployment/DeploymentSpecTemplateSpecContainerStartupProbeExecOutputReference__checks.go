@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerStartupProbeExecOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerStartupProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeploymentSpecTemplateSpecContainerStartupProbeExecOutputReferen
 
 	return nil
 }
-

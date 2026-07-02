@@ -15,9 +15,9 @@ type RoleBindingMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type RoleBindingMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type RoleBindingMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference) AnnotationsInput() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -275,7 +275,6 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewRoleBindingMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RoleBindingMetadataOutputReference {
 	_init_.Initialize()
 
@@ -286,7 +285,7 @@ func NewRoleBindingMetadataOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -298,12 +297,12 @@ func NewRoleBindingMetadataOutputReference_Override(r RoleBindingMetadataOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetAnnotations(val *map[st
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetInternalValue(val *RoleBindingMetadata) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetInternalValue(val *RoleBindingMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetInternalValue(val *Role
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetLabels(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetName(val *string) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetNamespace(val *string) 
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -620,16 +619,16 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (r *jsiiProxy_RoleBindingMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RoleBindingMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -648,4 +647,3 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) ToString() *string {
 
 	return returns
 }
-

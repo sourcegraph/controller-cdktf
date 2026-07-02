@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) va
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReplicationControllerSpecTemplateSpecImagePullSecretsListParamet
 
 	return nil
 }
-

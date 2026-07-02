@@ -120,7 +120,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiI
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiI
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiItem
 
 	return nil
 }
-

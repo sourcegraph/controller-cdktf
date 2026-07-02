@@ -1,6 +1,5 @@
 package podsecuritypolicy
 
-
 type PodSecurityPolicySpecSupplementalGroups struct {
 	// rule is the strategy that will dictate what supplemental groups is used in the SecurityContext.
 	//
@@ -9,6 +8,5 @@ type PodSecurityPolicySpecSupplementalGroups struct {
 	// range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/pod_security_policy#range PodSecurityPolicy#range}
-	Range interface{} `field:"optional" json:"range" yaml:"range"`
+	Range any `field:"optional" json:"range" yaml:"range"`
 }
-

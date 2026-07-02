@@ -17,8 +17,8 @@ type ValidatingWebhookConfigurationWebhookRuleList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ValidatingWebhookConfigurationWebhookRuleList interface {
 	Get(index *float64) ValidatingWebhookConfigurationWebhookRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewValidatingWebhookConfigurationWebhookRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ValidatingWebhookConfigurationWebhookRuleList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewValidatingWebhookConfigurationWebhookRuleList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewValidatingWebhookConfigurationWebhookRuleList_Override(v ValidatingWebho
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) AllWithMapKey(
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) Get(index *flo
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList) ToString() *st
 
 	return returns
 }
-

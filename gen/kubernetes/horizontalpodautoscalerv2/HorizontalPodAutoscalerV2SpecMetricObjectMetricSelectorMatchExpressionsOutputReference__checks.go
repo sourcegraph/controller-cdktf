@@ -98,7 +98,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchE
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchE
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewHorizontalPodAutoscalerV2SpecMetricObjectMetricSelectorMatchExpr
 
 	return nil
 }
-

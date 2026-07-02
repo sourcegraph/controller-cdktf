@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecReadinessGateList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecReadinessGateListParameters(terraformR
 
 	return nil
 }
-

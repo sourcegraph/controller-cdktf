@@ -98,7 +98,7 @@ func (s *jsiiProxy_ServiceSpecSessionAffinityConfigClientIpOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ServiceSpecSessionAffinityConfigClientIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceSpecSessionAffinityConfigClientIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewServiceSpecSessionAffinityConfigClientIpOutputReferenceParameter
 
 	return nil
 }
-

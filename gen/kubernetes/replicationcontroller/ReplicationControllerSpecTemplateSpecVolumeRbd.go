@@ -1,6 +1,5 @@
 package replicationcontroller
 
-
 type ReplicationControllerSpecTemplateSpecVolumeRbd struct {
 	// A collection of Ceph monitors. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it.
 	//
@@ -31,10 +30,9 @@ type ReplicationControllerSpecTemplateSpecVolumeRbd struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// secret_ref block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 	SecretRef *ReplicationControllerSpecTemplateSpecVolumeRbdSecretRef `field:"optional" json:"secretRef" yaml:"secretRef"`
 }
-

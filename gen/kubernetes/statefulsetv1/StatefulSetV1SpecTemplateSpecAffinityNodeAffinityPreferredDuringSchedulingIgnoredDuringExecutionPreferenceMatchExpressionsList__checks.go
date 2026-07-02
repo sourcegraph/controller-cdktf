@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDur
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetV1SpecTemplateSpecAffinityNodeAffinityPreferredDuring
 
 	return nil
 }
-

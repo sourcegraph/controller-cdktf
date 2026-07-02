@@ -98,7 +98,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatch
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatch
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExp
 
 	return nil
 }
-

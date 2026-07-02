@@ -17,8 +17,8 @@ type ServiceV1SpecPortList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ServiceV1SpecPortList interface {
 	Get(index *float64) ServiceV1SpecPortOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ServiceV1SpecPortList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceV1SpecPortList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ServiceV1SpecPortList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewServiceV1SpecPortList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceV1SpecPortList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewServiceV1SpecPortList(terraformResource cdktf.IInterpolatingParent, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewServiceV1SpecPortList_Override(s ServiceV1SpecPortList, terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecPortList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceV1SpecPortList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ServiceV1SpecPortList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceV1SpecPortList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ServiceV1SpecPortList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceV1SpecPortList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ServiceV1SpecPortList)SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_ServiceV1SpecPortList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ServiceV1SpecPortList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_ServiceV1SpecPortList) AllWithMapKey(mapKeyAttributeName *str
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_ServiceV1SpecPortList) Get(index *float64) ServiceV1SpecPortO
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceV1SpecPortList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceV1SpecPortList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_ServiceV1SpecPortList) ToString() *string {
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutp
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDaemonSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputR
 
 	return nil
 }
-

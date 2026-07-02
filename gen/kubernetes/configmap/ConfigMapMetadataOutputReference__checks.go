@@ -106,7 +106,7 @@ func (j *jsiiProxy_ConfigMapMetadataOutputReference) validateSetAnnotationsParam
 	return nil
 }
 
-func (j *jsiiProxy_ConfigMapMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConfigMapMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewConfigMapMetadataOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

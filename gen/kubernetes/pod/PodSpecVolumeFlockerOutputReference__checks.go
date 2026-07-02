@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecVolumeFlockerOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeFlockerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeFlockerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPodSpecVolumeFlockerOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

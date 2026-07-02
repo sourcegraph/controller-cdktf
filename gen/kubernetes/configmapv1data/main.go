@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1Data",
-		reflect.TypeOf((*ConfigMapV1Data)(nil)).Elem(),
+		reflect.TypeFor[ConfigMapV1Data](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigMapV1Data{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataConfig",
-		reflect.TypeOf((*ConfigMapV1DataConfig)(nil)).Elem(),
+		reflect.TypeFor[ConfigMapV1DataConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataMetadata",
-		reflect.TypeOf((*ConfigMapV1DataMetadata)(nil)).Elem(),
+		reflect.TypeFor[ConfigMapV1DataMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataMetadataOutputReference",
-		reflect.TypeOf((*ConfigMapV1DataMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ConfigMapV1DataMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ConfigMapV1DataMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

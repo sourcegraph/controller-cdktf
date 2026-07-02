@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpression
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsLi
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webhook", GoGetter: "Webhook"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,15 +60,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1Config",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1Config)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1Metadata",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1MetadataOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -112,15 +112,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1Webhook",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1Webhook)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1Webhook](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfig",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfig)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caBundle", GoGetter: "CaBundle"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigService",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigService)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -201,7 +201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,7 +237,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelector",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelector)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -283,11 +283,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,7 +343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,11 +377,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelector",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelector)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -394,7 +394,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -402,11 +402,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -427,7 +427,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -462,7 +462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,7 +496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "admissionReviewVersions", GoGetter: "AdmissionReviewVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "clientConfig", GoGetter: "ClientConfig"},
@@ -531,7 +531,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSeconds", GoGetter: "TimeoutSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -539,11 +539,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookRule",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookRule)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookRuleList",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookRuleList)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -564,7 +564,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookRuleOutputReference",
-		reflect.TypeOf((*DataKubernetesMutatingWebhookConfigurationV1WebhookRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesMutatingWebhookConfigurationV1WebhookRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroups", GoGetter: "ApiGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "apiVersions", GoGetter: "ApiVersions"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

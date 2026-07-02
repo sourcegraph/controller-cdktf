@@ -1,6 +1,5 @@
 package statefulsetv1
 
-
 type StatefulSetV1SpecTemplateSpecVolumeFlexVolume struct {
 	// Driver is the name of the driver to use for this volume.
 	//
@@ -19,10 +18,9 @@ type StatefulSetV1SpecTemplateSpecVolumeFlexVolume struct {
 	// Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#read_only StatefulSetV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// secret_ref block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#secret_ref StatefulSetV1#secret_ref}
 	SecretRef *StatefulSetV1SpecTemplateSpecVolumeFlexVolumeSecretRef `field:"optional" json:"secretRef" yaml:"secretRef"`
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStatefulSetV1SpecTemplateSpecSecurityContextSeccompProfileOutput
 
 	return nil
 }
-

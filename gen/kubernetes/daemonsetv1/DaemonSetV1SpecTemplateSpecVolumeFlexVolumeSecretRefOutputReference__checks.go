@@ -98,7 +98,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDaemonSetV1SpecTemplateSpecVolumeFlexVolumeSecretRefOutputRefere
 
 	return nil
 }
-

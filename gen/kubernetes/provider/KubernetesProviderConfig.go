@@ -1,6 +1,5 @@
 package provider
 
-
 type KubernetesProviderConfig struct {
 	// Alias name.
 	//
@@ -59,7 +58,7 @@ type KubernetesProviderConfig struct {
 	// Whether server should be accessed without verifying the TLS certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs#insecure KubernetesProvider#insecure}
-	Insecure interface{} `field:"optional" json:"insecure" yaml:"insecure"`
+	Insecure any `field:"optional" json:"insecure" yaml:"insecure"`
 	// The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs#password KubernetesProvider#password}
@@ -77,4 +76,3 @@ type KubernetesProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs#username KubernetesProvider#username}
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
-

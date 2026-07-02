@@ -98,7 +98,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceHostPathOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceHostPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceHostPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPersistentVolumeV1SpecPersistentVolumeSourceHostPathOutputRefere
 
 	return nil
 }
-

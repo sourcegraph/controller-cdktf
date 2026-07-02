@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSched
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSched
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewJobV1SpecTemplateSpecAffinityNodeAffinityPreferredDuringScheduli
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesResourceMetadataOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesResourceMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesResourceMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataKubernetesResourceMetadataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

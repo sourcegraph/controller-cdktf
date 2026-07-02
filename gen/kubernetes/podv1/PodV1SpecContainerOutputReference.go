@@ -18,9 +18,9 @@ type PodV1SpecContainerOutputReference interface {
 	CommandInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type PodV1SpecContainerOutputReference interface {
 	CreationStack() *[]*string
 	Env() PodV1SpecContainerEnvList
 	EnvFrom() PodV1SpecContainerEnvFromList
-	EnvFromInput() interface{}
-	EnvInput() interface{}
+	EnvFromInput() any
+	EnvInput() any
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -43,8 +43,8 @@ type PodV1SpecContainerOutputReference interface {
 	ImagePullPolicy() *string
 	SetImagePullPolicy(val *string)
 	ImagePullPolicyInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Lifecycle() PodV1SpecContainerLifecycleOutputReference
 	LifecycleInput() *PodV1SpecContainerLifecycle
 	LivenessProbe() PodV1SpecContainerLivenessProbeOutputReference
@@ -53,7 +53,7 @@ type PodV1SpecContainerOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	Port() PodV1SpecContainerPortList
-	PortInput() interface{}
+	PortInput() any
 	ReadinessProbe() PodV1SpecContainerReadinessProbeOutputReference
 	ReadinessProbeInput() *PodV1SpecContainerReadinessProbe
 	Resources() PodV1SpecContainerResourcesOutputReference
@@ -62,12 +62,12 @@ type PodV1SpecContainerOutputReference interface {
 	SecurityContextInput() *PodV1SpecContainerSecurityContext
 	StartupProbe() PodV1SpecContainerStartupProbeOutputReference
 	StartupProbeInput() *PodV1SpecContainerStartupProbe
-	Stdin() interface{}
-	SetStdin(val interface{})
-	StdinInput() interface{}
-	StdinOnce() interface{}
-	SetStdinOnce(val interface{})
-	StdinOnceInput() interface{}
+	Stdin() any
+	SetStdin(val any)
+	StdinInput() any
+	StdinOnce() any
+	SetStdinOnce(val any)
+	StdinOnceInput() any
 	TerminationMessagePath() *string
 	SetTerminationMessagePath(val *string)
 	TerminationMessagePathInput() *string
@@ -82,18 +82,18 @@ type PodV1SpecContainerOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Tty() interface{}
-	SetTty(val interface{})
-	TtyInput() interface{}
+	Tty() any
+	SetTty(val any)
+	TtyInput() any
 	VolumeMount() PodV1SpecContainerVolumeMountList
-	VolumeMountInput() interface{}
+	VolumeMountInput() any
 	WorkingDir() *string
 	SetWorkingDir(val *string)
 	WorkingDirInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,16 +114,16 @@ type PodV1SpecContainerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEnv(value interface{})
-	PutEnvFrom(value interface{})
+	PutEnv(value any)
+	PutEnvFrom(value any)
 	PutLifecycle(value *PodV1SpecContainerLifecycle)
 	PutLivenessProbe(value *PodV1SpecContainerLivenessProbe)
-	PutPort(value interface{})
+	PutPort(value any)
 	PutReadinessProbe(value *PodV1SpecContainerReadinessProbe)
 	PutResources(value *PodV1SpecContainerResources)
 	PutSecurityContext(value *PodV1SpecContainerSecurityContext)
 	PutStartupProbe(value *PodV1SpecContainerStartupProbe)
-	PutVolumeMount(value interface{})
+	PutVolumeMount(value any)
 	ResetArgs()
 	ResetCommand()
 	ResetEnv()
@@ -146,7 +146,7 @@ type PodV1SpecContainerOutputReference interface {
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -199,8 +199,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) CommandInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvFrom() PodV1SpecContain
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvFromInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvFromInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envFromInput",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvFromInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) EnvInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"envInput",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) ImagePullPolicyInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) Port() PodV1SpecContainerP
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) PortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) PortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) StartupProbeInput() *PodV1
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) Stdin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) Stdin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdin",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) Stdin() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinInput",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinOnce() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinOnce() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnce",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinOnce() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinOnceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) StdinOnceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stdinOnceInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) Tty() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) Tty() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tty",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) Tty() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) TtyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) TtyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ttyInput",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) VolumeMount() PodV1SpecCon
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference) VolumeMountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) VolumeMountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeMountInput",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) WorkingDirInput() *string 
 	return returns
 }
 
-
 func NewPodV1SpecContainerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PodV1SpecContainerOutputReference {
 	_init_.Initialize()
 
@@ -660,7 +659,7 @@ func NewPodV1SpecContainerOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -672,12 +671,12 @@ func NewPodV1SpecContainerOutputReference_Override(p PodV1SpecContainerOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetArgs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetCommand(val *[]*string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetCommand(val *[]*string) {
 	if err := j.validateSetCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetCommand(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetImage(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetImage(val *string) {
 	if err := j.validateSetImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetImagePullPolicy(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetImagePullPolicy(val *string) {
 	if err := j.validateSetImagePullPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetImagePullPolicy(val *str
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetName(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetStdin(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetStdin(val any) {
 	if err := j.validateSetStdinParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetStdin(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetStdinOnce(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetStdinOnce(val any) {
 	if err := j.validateSetStdinOnceParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetStdinOnce(val interface{
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerminationMessagePath(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetTerminationMessagePath(val *string) {
 	if err := j.validateSetTerminationMessagePathParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerminationMessagePath(v
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerminationMessagePolicy(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetTerminationMessagePolicy(val *string) {
 	if err := j.validateSetTerminationMessagePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerminationMessagePolicy
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTty(val interface{}) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetTty(val any) {
 	if err := j.validateSetTtyParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetTty(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecContainerOutputReference)SetWorkingDir(val *string) {
+func (j *jsiiProxy_PodV1SpecContainerOutputReference) SetWorkingDir(val *string) {
 	if err := j.validateSetWorkingDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,16 +865,16 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,32 +1031,32 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutEnv(value interface{}) {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutEnv(value any) {
 	if err := p.validatePutEnvParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putEnv",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutEnvFrom(value interface{}) {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutEnvFrom(value any) {
 	if err := p.validatePutEnvFromParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putEnvFrom",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutLifecycle(value *PodV1S
 	_jsii_.InvokeVoid(
 		p,
 		"putLifecycle",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1079,18 +1078,18 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutLivenessProbe(value *Po
 	_jsii_.InvokeVoid(
 		p,
 		"putLivenessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutPort(value interface{}) {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutPort(value any) {
 	if err := p.validatePutPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutReadinessProbe(value *P
 	_jsii_.InvokeVoid(
 		p,
 		"putReadinessProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutResources(value *PodV1S
 	_jsii_.InvokeVoid(
 		p,
 		"putResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutSecurityContext(value *
 	_jsii_.InvokeVoid(
 		p,
 		"putSecurityContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,18 +1133,18 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutStartupProbe(value *Pod
 	_jsii_.InvokeVoid(
 		p,
 		"putStartupProbe",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutVolumeMount(value interface{}) {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) PutVolumeMount(value any) {
 	if err := p.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putVolumeMount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,16 +1308,16 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) ResetWorkingDir() {
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodV1SpecContainerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1337,4 +1336,3 @@ func (p *jsiiProxy_PodV1SpecContainerOutputReference) ToString() *string {
 
 	return returns
 }
-

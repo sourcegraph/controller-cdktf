@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
-		reflect.TypeOf((*ResourceQuotaV1)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Config",
-		reflect.TypeOf((*ResourceQuotaV1Config)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Metadata",
-		reflect.TypeOf((*ResourceQuotaV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1MetadataOutputReference",
-		reflect.TypeOf((*ResourceQuotaV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Spec",
-		reflect.TypeOf((*ResourceQuotaV1Spec)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1Spec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecOutputReference",
-		reflect.TypeOf((*ResourceQuotaV1SpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1SpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelector",
-		reflect.TypeOf((*ResourceQuotaV1SpecScopeSelector)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecScopeSelector](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpression",
-		reflect.TypeOf((*ResourceQuotaV1SpecScopeSelectorMatchExpression)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecScopeSelectorMatchExpression](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionList",
-		reflect.TypeOf((*ResourceQuotaV1SpecScopeSelectorMatchExpressionList)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecScopeSelectorMatchExpressionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -209,7 +209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference",
-		reflect.TypeOf((*ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1SpecScopeSelectorOutputReference",
-		reflect.TypeOf((*ResourceQuotaV1SpecScopeSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1SpecScopeSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1Timeouts",
-		reflect.TypeOf((*ResourceQuotaV1Timeouts)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1Timeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1TimeoutsOutputReference",
-		reflect.TypeOf((*ResourceQuotaV1TimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceQuotaV1TimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceQuotaV1TimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

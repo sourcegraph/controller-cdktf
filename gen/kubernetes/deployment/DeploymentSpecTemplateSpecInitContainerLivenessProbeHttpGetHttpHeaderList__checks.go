@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHt
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpH
 
 	return nil
 }
-

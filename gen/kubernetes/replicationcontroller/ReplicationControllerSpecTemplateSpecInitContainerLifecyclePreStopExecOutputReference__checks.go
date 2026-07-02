@@ -106,7 +106,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePr
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreSt
 
 	return nil
 }
-

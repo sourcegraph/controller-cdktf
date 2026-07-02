@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataKubernetesResource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataKubernetesResource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataKubernetesResource_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDataKubernetesResource_IsConstructParameters(x interface{}) error {
+func validateDataKubernetesResource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataKubernetesResource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataKubernetesResource_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataKubernetesResource_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataKubernetesResource_IsTerraformDataSourceParameters(x interface{
 	return nil
 }
 
-func validateDataKubernetesResource_IsTerraformElementParameters(x interface{}) error {
+func validateDataKubernetesResource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataKubernetesResource) validateSetApiVersionParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesResource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesResource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataKubernetesResource) validateSetLifecycleParameters(val *c
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesResource) validateSetObjectParameters(val *map[string]interface{}) error {
+func (j *jsiiProxy_DataKubernetesResource) validateSetObjectParameters(val *map[string]any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewDataKubernetesResourceParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

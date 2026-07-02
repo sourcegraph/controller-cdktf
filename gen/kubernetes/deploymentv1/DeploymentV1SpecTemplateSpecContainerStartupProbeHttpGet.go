@@ -1,6 +1,5 @@
 package deploymentv1
 
-
 type DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
@@ -9,7 +8,7 @@ type DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGet struct {
 	// http_header block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#http_header DeploymentV1#http_header}
-	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
+	HttpHeader any `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#path DeploymentV1#path}
@@ -25,4 +24,3 @@ type DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/deployment_v1#scheme DeploymentV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
-

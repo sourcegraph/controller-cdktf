@@ -90,7 +90,7 @@ func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateInterpol
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutPrefe
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewPodV1SpecAffinityPodAffinityOutputReferenceParameters(terraformR
 
 	return nil
 }
-

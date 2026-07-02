@@ -1,6 +1,5 @@
 package cronjob
 
-
 type CronJobSpecJobTemplateSpecTemplateSpecVolumeRbd struct {
 	// A collection of Ceph monitors. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it.
 	//
@@ -31,10 +30,9 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeRbd struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#read_only CronJob#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// secret_ref block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/cron_job#secret_ref CronJob#secret_ref}
 	SecretRef *CronJobSpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef `field:"optional" json:"secretRef" yaml:"secretRef"`
 }
-

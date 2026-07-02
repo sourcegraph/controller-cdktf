@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecDnsConfigOptionList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecDnsConfigOptionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecDnsConfigOptionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecDnsConfigOptionListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

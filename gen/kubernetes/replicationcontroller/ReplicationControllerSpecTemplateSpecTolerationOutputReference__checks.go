@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecTolerationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewReplicationControllerSpecTemplateSpecTolerationOutputReferencePa
 
 	return nil
 }
-

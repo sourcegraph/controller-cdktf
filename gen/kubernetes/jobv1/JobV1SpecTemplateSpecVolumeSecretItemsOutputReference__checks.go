@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeSecretItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewJobV1SpecTemplateSpecVolumeSecretItemsOutputReferenceParameters(
 
 	return nil
 }
-

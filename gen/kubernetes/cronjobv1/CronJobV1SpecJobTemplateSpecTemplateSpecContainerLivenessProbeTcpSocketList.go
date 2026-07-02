@@ -17,8 +17,8 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList
 	Get(index *float64) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	return returns
 }
 
-
 func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketL
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketL
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	)
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProb
 
 	return returns
 }
-

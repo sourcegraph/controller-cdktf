@@ -1,6 +1,5 @@
 package statefulsetv1
 
-
 type StatefulSetV1SpecTemplateSpecVolumeDownwardApi struct {
 	// Optional: mode bits to use on created files by default.
 	//
@@ -11,6 +10,5 @@ type StatefulSetV1SpecTemplateSpecVolumeDownwardApi struct {
 	// items block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set_v1#items StatefulSetV1#items}
-	Items interface{} `field:"optional" json:"items" yaml:"items"`
+	Items any `field:"optional" json:"items" yaml:"items"`
 }
-

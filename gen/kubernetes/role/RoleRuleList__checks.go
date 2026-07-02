@@ -34,7 +34,7 @@ func (r *jsiiProxy_RoleRuleList) validateResolveParameters(_context cdktf.IResol
 	return nil
 }
 
-func (j *jsiiProxy_RoleRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RoleRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRoleRuleListParameters(terraformResource cdktf.IInterpolatingPar
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDeploymentSpecStrategyRollingUpdateOutputReferenceParameters(ter
 
 	return nil
 }
-

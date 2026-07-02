@@ -106,7 +106,7 @@ func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStatefulSetV1SpecVolumeClaimTemplateMetadataOutputReferenceParam
 
 	return nil
 }
-

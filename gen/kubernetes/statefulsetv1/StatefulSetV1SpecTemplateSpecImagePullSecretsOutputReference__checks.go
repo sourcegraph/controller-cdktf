@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewStatefulSetV1SpecTemplateSpecImagePullSecretsOutputReferencePara
 
 	return nil
 }
-

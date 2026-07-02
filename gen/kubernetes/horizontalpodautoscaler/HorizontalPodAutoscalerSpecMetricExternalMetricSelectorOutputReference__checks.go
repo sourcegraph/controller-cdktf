@@ -90,7 +90,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutput
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutput
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutput
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewHorizontalPodAutoscalerSpecMetricExternalMetricSelectorOutputRef
 
 	return nil
 }
-

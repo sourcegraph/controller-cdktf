@@ -12,9 +12,9 @@ type JobSpecTemplateSpecTopologySpreadConstraintOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,10 +27,10 @@ type JobSpecTemplateSpecTopologySpreadConstraintOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LabelSelector() JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
-	LabelSelectorInput() interface{}
+	LabelSelectorInput() any
 	MaxSkew() *float64
 	SetMaxSkew(val *float64)
 	MaxSkewInput() *float64
@@ -51,7 +51,7 @@ type JobSpecTemplateSpecTopologySpreadConstraintOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type JobSpecTemplateSpecTopologySpreadConstraintOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLabelSelector(value interface{})
+	PutLabelSelector(value any)
 	ResetLabelSelector()
 	ResetMaxSkew()
 	ResetTopologyKey()
 	ResetWhenUnsatisfiable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) L
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) LabelSelectorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) LabelSelectorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelSelectorInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) W
 	return returns
 }
 
-
 func NewJobSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobSpecTemplateSpecTopologySpreadConstraintOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintOutputReference_Override(j Jo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetMaxSkew(val *float64) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetMaxSkew(val *float64) {
 	if err := j.validateSetMaxSkewParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetTopologyKey(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetTopologyKey(val *string) {
 	if err := j.validateSetTopologyKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference)SetWhenUnsatisfiable(val *string) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) SetWhenUnsatisfiable(val *string) {
 	if err := j.validateSetWhenUnsatisfiableParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) C
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := j.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		j,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) G
 	_jsii_.Invoke(
 		j,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) I
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) PutLabelSelector(value interface{}) {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) PutLabelSelector(value any) {
 	if err := j.validatePutLabelSelectorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		j,
 		"putLabelSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) R
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := j.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintOutputReference) T
 
 	return returns
 }
-

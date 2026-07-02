@@ -34,7 +34,7 @@ func (i *jsiiProxy_IngressClassSpecParametersList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_IngressClassSpecParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IngressClassSpecParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIngressClassSpecParametersListParameters(terraformResource cdktf
 
 	return nil
 }
-

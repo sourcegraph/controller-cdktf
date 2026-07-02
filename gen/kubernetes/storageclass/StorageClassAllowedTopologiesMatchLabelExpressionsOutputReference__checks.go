@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageClassAllowedTopologiesMatchLabelExpressionsOutputReferenc
 
 	return nil
 }
-

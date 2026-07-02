@@ -90,7 +90,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validatePutMatchExpressionsParameters(value interface{}) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validatePutMatchExpressionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferenceP
 
 	return nil
 }
-

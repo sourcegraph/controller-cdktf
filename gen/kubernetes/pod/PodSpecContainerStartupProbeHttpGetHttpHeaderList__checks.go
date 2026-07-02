@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecContainerStartupProbeHttpGetHttpHeaderListParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReferenc
 
 	return nil
 }
-

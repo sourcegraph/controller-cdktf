@@ -90,7 +90,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) validatePutConditionParameters(value interface{}) error {
+func (m *jsiiProxy_ManifestWaitOutputReference) validatePutConditionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManifestWaitOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_ManifestWaitOutputReference) validateSetInternalValueParamete
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) validateSetRolloutParameters(val interface{}) error {
+func (j *jsiiProxy_ManifestWaitOutputReference) validateSetRolloutParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewManifestWaitOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

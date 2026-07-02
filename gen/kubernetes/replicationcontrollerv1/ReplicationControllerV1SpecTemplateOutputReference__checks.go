@@ -120,7 +120,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewReplicationControllerV1SpecTemplateOutputReferenceParameters(ter
 
 	return nil
 }
-

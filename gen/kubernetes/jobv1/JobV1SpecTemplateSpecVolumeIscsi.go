@@ -1,6 +1,5 @@
 package jobv1
 
-
 type JobV1SpecTemplateSpecVolumeIscsi struct {
 	// Target iSCSI Qualified Name.
 	//
@@ -29,6 +28,5 @@ type JobV1SpecTemplateSpecVolumeIscsi struct {
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#read_only JobV1#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

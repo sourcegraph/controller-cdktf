@@ -6,9 +6,9 @@ import (
 
 type ServiceAccountConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ServiceAccountConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#metadata ServiceAccount#metadata}
@@ -26,7 +26,7 @@ type ServiceAccountConfig struct {
 	// Enable automatic mounting of the service account token.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#automount_service_account_token ServiceAccount#automount_service_account_token}
-	AutomountServiceAccountToken interface{} `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
+	AutomountServiceAccountToken any `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#id ServiceAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -35,14 +35,13 @@ type ServiceAccountConfig struct {
 	// image_pull_secret block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#image_pull_secret ServiceAccount#image_pull_secret}
-	ImagePullSecret interface{} `field:"optional" json:"imagePullSecret" yaml:"imagePullSecret"`
+	ImagePullSecret any `field:"optional" json:"imagePullSecret" yaml:"imagePullSecret"`
 	// secret block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#secret ServiceAccount#secret}
-	Secret interface{} `field:"optional" json:"secret" yaml:"secret"`
+	Secret any `field:"optional" json:"secret" yaml:"secret"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
 	Timeouts *ServiceAccountTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

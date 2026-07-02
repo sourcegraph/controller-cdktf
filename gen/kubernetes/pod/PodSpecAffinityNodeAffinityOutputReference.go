@@ -12,9 +12,9 @@ type PodSpecAffinityNodeAffinityOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type PodSpecAffinityNodeAffinityOutputReference interface {
 	InternalValue() *PodSpecAffinityNodeAffinity
 	SetInternalValue(val *PodSpecAffinityNodeAffinity)
 	PreferredDuringSchedulingIgnoredDuringExecution() PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
-	PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{}
+	PreferredDuringSchedulingIgnoredDuringExecutionInput() any
 	RequiredDuringSchedulingIgnoredDuringExecution() PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 	RequiredDuringSchedulingIgnoredDuringExecutionInput() *PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
 	// Experimental.
@@ -44,7 +44,7 @@ type PodSpecAffinityNodeAffinityOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type PodSpecAffinityNodeAffinityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{})
+	PutPreferredDuringSchedulingIgnoredDuringExecution(value any)
 	PutRequiredDuringSchedulingIgnoredDuringExecution(value *PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)
 	ResetPreferredDuringSchedulingIgnoredDuringExecution()
 	ResetRequiredDuringSchedulingIgnoredDuringExecution()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_PodSpecAffinityNodeAffinityOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PreferredDuringSc
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PreferredDuringSchedulingIgnoredDuringExecutionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preferredDuringSchedulingIgnoredDuringExecutionInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewPodSpecAffinityNodeAffinityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecAffinityNodeAffinityOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewPodSpecAffinityNodeAffinityOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecAffinityNodeAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewPodSpecAffinityNodeAffinityOutputReference_Override(p PodSpecAffinityNod
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.pod.PodSpecAffinityNodeAffinityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetInternalValue(val *PodSpecAffinityNodeAffinity) {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) SetInternalValue(val *PodSpecAffinityNodeAffinity) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{}) {
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PutPreferredDuringSchedulingIgnoredDuringExecution(value any) {
 	if err := p.validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPreferredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) PutRequiredDuring
 	_jsii_.InvokeVoid(
 		p,
 		"putRequiredDuringSchedulingIgnoredDuringExecution",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) ResetRequiredDuri
 	)
 }
 
-func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityOutputReference) ToString() *strin
 
 	return returns
 }
-

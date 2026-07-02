@@ -12,9 +12,9 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	RunAsGroup() *string
 	SetRunAsGroup(val *string)
 	RunAsGroupInput() *string
-	RunAsNonRoot() interface{}
-	SetRunAsNonRoot(val interface{})
-	RunAsNonRootInput() interface{}
+	RunAsNonRoot() any
+	SetRunAsNonRoot(val any)
+	RunAsNonRootInput() any
 	RunAsUser() *string
 	SetRunAsUser(val *string)
 	RunAsUserInput() *string
@@ -49,7 +49,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	SetSupplementalGroups(val *[]*float64)
 	SupplementalGroupsInput() *[]*float64
 	Sysctl() DeploymentV1SpecTemplateSpecSecurityContextSysctlList
-	SysctlInput() interface{}
+	SysctlInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSeccompProfile(value *DeploymentV1SpecTemplateSpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *DeploymentV1SpecTemplateSpecSecurityContextSeLinuxOptions)
-	PutSysctl(value interface{})
+	PutSysctl(value any)
 	ResetFsGroup()
 	ResetRunAsGroup()
 	ResetRunAsNonRoot()
@@ -95,7 +95,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	ResetSysctl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) R
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) RunAsNonRoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) RunAsNonRoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runAsNonRoot",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) R
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) RunAsNonRootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) RunAsNonRootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runAsNonRootInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) S
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SysctlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SysctlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sysctlInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) T
 	return returns
 }
 
-
 func NewDeploymentV1SpecTemplateSpecSecurityContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecTemplateSpecSecurityContextOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewDeploymentV1SpecTemplateSpecSecurityContextOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecSecurityContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewDeploymentV1SpecTemplateSpecSecurityContextOutputReference_Override(d De
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecSecurityContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetFsGroup(val *string) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetFsGroup(val *string) {
 	if err := j.validateSetFsGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetInternalValue(val *DeploymentV1SpecTemplateSpecSecurityContext) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetInternalValue(val *DeploymentV1SpecTemplateSpecSecurityContext) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetRunAsGroup(val *string) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetRunAsGroup(val *string) {
 	if err := j.validateSetRunAsGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetRunAsNonRoot(val interface{}) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetRunAsNonRoot(val any) {
 	if err := j.validateSetRunAsNonRootParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetRunAsUser(val *string) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetRunAsUser(val *string) {
 	if err := j.validateSetRunAsUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetSupplementalGroups(val *[]*float64) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetSupplementalGroups(val *[]*float64) {
 	if err := j.validateSetSupplementalGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,16 +488,16 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) C
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) G
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) P
 	_jsii_.InvokeVoid(
 		d,
 		"putSeccompProfile",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) P
 	_jsii_.InvokeVoid(
 		d,
 		"putSeLinuxOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) PutSysctl(value interface{}) {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) PutSysctl(value any) {
 	if err := d.validatePutSysctlParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSysctl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) T
 
 	return returns
 }
-

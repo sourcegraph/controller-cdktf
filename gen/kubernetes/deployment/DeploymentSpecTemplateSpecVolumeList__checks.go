@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecVolumeListParameters(terraformResource
 
 	return nil
 }
-

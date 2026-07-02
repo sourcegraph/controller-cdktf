@@ -11,12 +11,12 @@ import (
 type EndpointsV1SubsetOutputReference interface {
 	cdktf.ComplexObject
 	Address() EndpointsV1SubsetAddressList
-	AddressInput() interface{}
+	AddressInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,12 +29,12 @@ type EndpointsV1SubsetOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NotReadyAddress() EndpointsV1SubsetNotReadyAddressList
-	NotReadyAddressInput() interface{}
+	NotReadyAddressInput() any
 	Port() EndpointsV1SubsetPortList
-	PortInput() interface{}
+	PortInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type EndpointsV1SubsetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,15 +67,15 @@ type EndpointsV1SubsetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAddress(value interface{})
-	PutNotReadyAddress(value interface{})
-	PutPort(value interface{})
+	PutAddress(value any)
+	PutNotReadyAddress(value any)
+	PutPort(value any)
 	ResetAddress()
 	ResetNotReadyAddress()
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) Address() EndpointsV1Subset
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) AddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) AddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"addressInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) AddressInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) NotReadyAddress() Endpoints
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) NotReadyAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) NotReadyAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notReadyAddressInput",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) Port() EndpointsV1SubsetPor
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) PortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) PortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"portInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
-
 func NewEndpointsV1SubsetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EndpointsV1SubsetOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEndpointsV1SubsetOutputReference(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEndpointsV1SubsetOutputReference_Override(e EndpointsV1SubsetOutputRefer
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetComplexObjectIndex(val in
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,16 +313,16 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,43 +479,43 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutAddress(value interface{}) {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutAddress(value any) {
 	if err := e.validatePutAddressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAddress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutNotReadyAddress(value interface{}) {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutNotReadyAddress(value any) {
 	if err := e.validatePutNotReadyAddressParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putNotReadyAddress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutPort(value interface{}) {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) PutPort(value any) {
 	if err := e.validatePutPortParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putPort",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) ResetPort() {
 	)
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -14,23 +14,23 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	SetAllowedCapabilities(val *[]*string)
 	AllowedCapabilitiesInput() *[]*string
 	AllowedFlexVolumes() PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList
-	AllowedFlexVolumesInput() interface{}
+	AllowedFlexVolumesInput() any
 	AllowedHostPaths() PodSecurityPolicyV1Beta1SpecAllowedHostPathsList
-	AllowedHostPathsInput() interface{}
+	AllowedHostPathsInput() any
 	AllowedProcMountTypes() *[]*string
 	SetAllowedProcMountTypes(val *[]*string)
 	AllowedProcMountTypesInput() *[]*string
 	AllowedUnsafeSysctls() *[]*string
 	SetAllowedUnsafeSysctls(val *[]*string)
 	AllowedUnsafeSysctlsInput() *[]*string
-	AllowPrivilegeEscalation() interface{}
-	SetAllowPrivilegeEscalation(val interface{})
-	AllowPrivilegeEscalationInput() interface{}
+	AllowPrivilegeEscalation() any
+	SetAllowPrivilegeEscalation(val any)
+	AllowPrivilegeEscalationInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,9 +44,9 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	DefaultAddCapabilities() *[]*string
 	SetDefaultAddCapabilities(val *[]*string)
 	DefaultAddCapabilitiesInput() *[]*string
-	DefaultAllowPrivilegeEscalation() interface{}
-	SetDefaultAllowPrivilegeEscalation(val interface{})
-	DefaultAllowPrivilegeEscalationInput() interface{}
+	DefaultAllowPrivilegeEscalation() any
+	SetDefaultAllowPrivilegeEscalation(val any)
+	DefaultAllowPrivilegeEscalationInput() any
 	ForbiddenSysctls() *[]*string
 	SetForbiddenSysctls(val *[]*string)
 	ForbiddenSysctlsInput() *[]*string
@@ -54,25 +54,25 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	Fqn() *string
 	FsGroup() PodSecurityPolicyV1Beta1SpecFsGroupOutputReference
 	FsGroupInput() *PodSecurityPolicyV1Beta1SpecFsGroup
-	HostIpc() interface{}
-	SetHostIpc(val interface{})
-	HostIpcInput() interface{}
-	HostNetwork() interface{}
-	SetHostNetwork(val interface{})
-	HostNetworkInput() interface{}
-	HostPid() interface{}
-	SetHostPid(val interface{})
-	HostPidInput() interface{}
+	HostIpc() any
+	SetHostIpc(val any)
+	HostIpcInput() any
+	HostNetwork() any
+	SetHostNetwork(val any)
+	HostNetworkInput() any
+	HostPid() any
+	SetHostPid(val any)
+	HostPidInput() any
 	HostPorts() PodSecurityPolicyV1Beta1SpecHostPortsList
-	HostPortsInput() interface{}
+	HostPortsInput() any
 	InternalValue() *PodSecurityPolicyV1Beta1Spec
 	SetInternalValue(val *PodSecurityPolicyV1Beta1Spec)
-	Privileged() interface{}
-	SetPrivileged(val interface{})
-	PrivilegedInput() interface{}
-	ReadOnlyRootFilesystem() interface{}
-	SetReadOnlyRootFilesystem(val interface{})
-	ReadOnlyRootFilesystemInput() interface{}
+	Privileged() any
+	SetPrivileged(val any)
+	PrivilegedInput() any
+	ReadOnlyRootFilesystem() any
+	SetReadOnlyRootFilesystem(val any)
+	ReadOnlyRootFilesystemInput() any
 	RequiredDropCapabilities() *[]*string
 	SetRequiredDropCapabilities(val *[]*string)
 	RequiredDropCapabilitiesInput() *[]*string
@@ -98,7 +98,7 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,10 +119,10 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAllowedFlexVolumes(value interface{})
-	PutAllowedHostPaths(value interface{})
+	PutAllowedFlexVolumes(value any)
+	PutAllowedHostPaths(value any)
 	PutFsGroup(value *PodSecurityPolicyV1Beta1SpecFsGroup)
-	PutHostPorts(value interface{})
+	PutHostPorts(value any)
 	PutRunAsGroup(value *PodSecurityPolicyV1Beta1SpecRunAsGroup)
 	PutRunAsUser(value *PodSecurityPolicyV1Beta1SpecRunAsUser)
 	PutSeLinux(value *PodSecurityPolicyV1Beta1SpecSeLinux)
@@ -148,7 +148,7 @@ type PodSecurityPolicyV1Beta1SpecOutputReference interface {
 	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedFlexVolum
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedFlexVolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedFlexVolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedFlexVolumesInput",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedHostPaths
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedHostPathsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedHostPathsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedHostPathsInput",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowedUnsafeSys
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEscalation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEscalation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPrivilegeEscalation",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEs
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEscalationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEscalationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPrivilegeEscalationInput",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) AllowPrivilegeEs
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAddCapabi
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAllowPrivilegeEscalation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAllowPrivilegeEscalation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultAllowPrivilegeEscalation",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAllowPriv
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAllowPrivilegeEscalationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) DefaultAllowPrivilegeEscalationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultAllowPrivilegeEscalationInput",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) FsGroupInput() *
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpc",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpc() interf
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpcInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpcInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostIpcInput",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostIpcInput() i
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetwork",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetwork() in
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostNetworkInput",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostNetworkInput
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPid() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPid() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPid",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPid() interf
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPidInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPidInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPidInput",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPorts() PodS
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) HostPortsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostPortsInput",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) InternalValue() 
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) Privileged() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) Privileged() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privileged",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) Privileged() int
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PrivilegedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PrivilegedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privilegedInput",
@@ -511,8 +511,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PrivilegedInput(
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ReadOnlyRootFilesystem() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ReadOnlyRootFilesystem() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyRootFilesystem",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ReadOnlyRootFile
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ReadOnlyRootFilesystemInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ReadOnlyRootFilesystemInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"readOnlyRootFilesystemInput",
@@ -671,7 +671,6 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) VolumesInput() *
 	return returns
 }
 
-
 func NewPodSecurityPolicyV1Beta1SpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSecurityPolicyV1Beta1SpecOutputReference {
 	_init_.Initialize()
 
@@ -682,7 +681,7 @@ func NewPodSecurityPolicyV1Beta1SpecOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -694,12 +693,12 @@ func NewPodSecurityPolicyV1Beta1SpecOutputReference_Override(p PodSecurityPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedCapabilities(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetAllowedCapabilities(val *[]*string) {
 	if err := j.validateSetAllowedCapabilitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedCapabil
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedProcMountTypes(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetAllowedProcMountTypes(val *[]*string) {
 	if err := j.validateSetAllowedProcMountTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedProcMou
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedUnsafeSysctls(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetAllowedUnsafeSysctls(val *[]*string) {
 	if err := j.validateSetAllowedUnsafeSysctlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowedUnsafeS
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowPrivilegeEscalation(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetAllowPrivilegeEscalation(val any) {
 	if err := j.validateSetAllowPrivilegeEscalationParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetAllowPrivilege
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetDefaultAddCapabilities(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetDefaultAddCapabilities(val *[]*string) {
 	if err := j.validateSetDefaultAddCapabilitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetDefaultAddCapa
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetDefaultAllowPrivilegeEscalation(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetDefaultAllowPrivilegeEscalation(val any) {
 	if err := j.validateSetDefaultAllowPrivilegeEscalationParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetDefaultAllowPr
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetForbiddenSysctls(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetForbiddenSysctls(val *[]*string) {
 	if err := j.validateSetForbiddenSysctlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetForbiddenSysct
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostIpc(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetHostIpc(val any) {
 	if err := j.validateSetHostIpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostIpc(val in
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostNetwork(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetHostNetwork(val any) {
 	if err := j.validateSetHostNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostNetwork(va
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostPid(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetHostPid(val any) {
 	if err := j.validateSetHostPidParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetHostPid(val in
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetInternalValue(val *PodSecurityPolicyV1Beta1Spec) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetInternalValue(val *PodSecurityPolicyV1Beta1Spec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetPrivileged(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetPrivileged(val any) {
 	if err := j.validateSetPrivilegedParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetPrivileged(val
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetReadOnlyRootFilesystem(val interface{}) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetReadOnlyRootFilesystem(val any) {
 	if err := j.validateSetReadOnlyRootFilesystemParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetReadOnlyRootFi
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetRequiredDropCapabilities(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetRequiredDropCapabilities(val *[]*string) {
 	if err := j.validateSetRequiredDropCapabilitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetRequiredDropCa
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference)SetVolumes(val *[]*string) {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) SetVolumes(val *[]*string) {
 	if err := j.validateSetVolumesParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,16 +920,16 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,32 +1086,32 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutAllowedFlexVolumes(value interface{}) {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutAllowedFlexVolumes(value any) {
 	if err := p.validatePutAllowedFlexVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAllowedFlexVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutAllowedHostPaths(value interface{}) {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutAllowedHostPaths(value any) {
 	if err := p.validatePutAllowedHostPathsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAllowedHostPaths",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,18 +1122,18 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutFsGroup(value
 	_jsii_.InvokeVoid(
 		p,
 		"putFsGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutHostPorts(value interface{}) {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutHostPorts(value any) {
 	if err := p.validatePutHostPortsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putHostPorts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutRunAsGroup(va
 	_jsii_.InvokeVoid(
 		p,
 		"putRunAsGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,7 +1155,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutRunAsUser(val
 	_jsii_.InvokeVoid(
 		p,
 		"putRunAsUser",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1167,7 +1166,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutSeLinux(value
 	_jsii_.InvokeVoid(
 		p,
 		"putSeLinux",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) PutSupplementalG
 	_jsii_.InvokeVoid(
 		p,
 		"putSupplementalGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1334,16 +1333,16 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ResetVolumes() {
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1362,4 +1361,3 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecOutputReference) ToString() *stri
 
 	return returns
 }
-

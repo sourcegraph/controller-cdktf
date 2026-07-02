@@ -98,7 +98,7 @@ func (l *jsiiProxy_LabelsMetadataOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_LabelsMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LabelsMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewLabelsMetadataOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

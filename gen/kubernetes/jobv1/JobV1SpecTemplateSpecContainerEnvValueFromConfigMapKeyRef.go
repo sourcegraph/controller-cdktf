@@ -1,6 +1,5 @@
 package jobv1
 
-
 type JobV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// The key to select.
 	//
@@ -13,6 +12,5 @@ type JobV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef struct {
 	// Specify whether the ConfigMap or its key must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/job_v1#optional JobV1#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodV1SpecVolumeProjectedSourcesSecretItemsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPodV1SpecVolumeProjectedSourcesSecretItemsOutputReferenceParamet
 
 	return nil
 }
-

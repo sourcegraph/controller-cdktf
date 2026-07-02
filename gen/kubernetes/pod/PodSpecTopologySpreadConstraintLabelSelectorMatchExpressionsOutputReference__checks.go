@@ -98,7 +98,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsO
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsO
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutp
 
 	return nil
 }
-

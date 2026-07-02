@@ -34,7 +34,7 @@ func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStatefulSetV1SpecVolumeClaimTemplateListParameters(terraformReso
 
 	return nil
 }
-

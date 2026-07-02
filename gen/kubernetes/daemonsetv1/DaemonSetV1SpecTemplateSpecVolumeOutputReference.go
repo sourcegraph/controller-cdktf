@@ -22,9 +22,9 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	CinderInput() *DaemonSetV1SpecTemplateSpecVolumeCinder
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,8 +59,8 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	GlusterfsInput() *DaemonSetV1SpecTemplateSpecVolumeGlusterfs
 	HostPath() DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference
 	HostPathInput() *DaemonSetV1SpecTemplateSpecVolumeHostPath
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Iscsi() DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference
 	IscsiInput() *DaemonSetV1SpecTemplateSpecVolumeIscsi
 	Local() DaemonSetV1SpecTemplateSpecVolumeLocalOutputReference
@@ -75,7 +75,7 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	PhotonPersistentDisk() DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference
 	PhotonPersistentDiskInput() *DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk
 	Projected() DaemonSetV1SpecTemplateSpecVolumeProjectedList
-	ProjectedInput() interface{}
+	ProjectedInput() any
 	Quobyte() DaemonSetV1SpecTemplateSpecVolumeQuobyteOutputReference
 	QuobyteInput() *DaemonSetV1SpecTemplateSpecVolumeQuobyte
 	Rbd() DaemonSetV1SpecTemplateSpecVolumeRbdOutputReference
@@ -95,7 +95,7 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -137,7 +137,7 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	PutNfs(value *DaemonSetV1SpecTemplateSpecVolumeNfs)
 	PutPersistentVolumeClaim(value *DaemonSetV1SpecTemplateSpecVolumePersistentVolumeClaim)
 	PutPhotonPersistentDisk(value *DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDisk)
-	PutProjected(value interface{})
+	PutProjected(value any)
 	PutQuobyte(value *DaemonSetV1SpecTemplateSpecVolumeQuobyte)
 	PutRbd(value *DaemonSetV1SpecTemplateSpecVolumeRbd)
 	PutSecret(value *DaemonSetV1SpecTemplateSpecVolumeSecret)
@@ -171,7 +171,7 @@ type DaemonSetV1SpecTemplateSpecVolumeOutputReference interface {
 	ResetVsphereVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) CinderInput
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) HostPathInp
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -684,8 +684,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) Projected()
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ProjectedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ProjectedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"projectedInput",
@@ -794,7 +794,6 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) VsphereVolu
 	return returns
 }
 
-
 func NewDaemonSetV1SpecTemplateSpecVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DaemonSetV1SpecTemplateSpecVolumeOutputReference {
 	_init_.Initialize()
 
@@ -805,7 +804,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -817,12 +816,12 @@ func NewDaemonSetV1SpecTemplateSpecVolumeOutputReference_Override(d DaemonSetV1S
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetName(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,16 +900,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutAwsElast
 	_jsii_.InvokeVoid(
 		d,
 		"putAwsElasticBlockStore",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1092,7 +1091,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutAzureDis
 	_jsii_.InvokeVoid(
 		d,
 		"putAzureDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1103,7 +1102,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutAzureFil
 	_jsii_.InvokeVoid(
 		d,
 		"putAzureFile",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1114,7 +1113,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutCephFs(v
 	_jsii_.InvokeVoid(
 		d,
 		"putCephFs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutCinder(v
 	_jsii_.InvokeVoid(
 		d,
 		"putCinder",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutConfigMa
 	_jsii_.InvokeVoid(
 		d,
 		"putConfigMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutCsi(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putCsi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutDownward
 	_jsii_.InvokeVoid(
 		d,
 		"putDownwardApi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutEmptyDir
 	_jsii_.InvokeVoid(
 		d,
 		"putEmptyDir",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutFc(value
 	_jsii_.InvokeVoid(
 		d,
 		"putFc",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutFlexVolu
 	_jsii_.InvokeVoid(
 		d,
 		"putFlexVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1202,7 +1201,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutFlocker(
 	_jsii_.InvokeVoid(
 		d,
 		"putFlocker",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutGcePersi
 	_jsii_.InvokeVoid(
 		d,
 		"putGcePersistentDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1224,7 +1223,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutGitRepo(
 	_jsii_.InvokeVoid(
 		d,
 		"putGitRepo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1235,7 +1234,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutGlusterf
 	_jsii_.InvokeVoid(
 		d,
 		"putGlusterfs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1246,7 +1245,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutHostPath
 	_jsii_.InvokeVoid(
 		d,
 		"putHostPath",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutIscsi(va
 	_jsii_.InvokeVoid(
 		d,
 		"putIscsi",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,7 +1267,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutLocal(va
 	_jsii_.InvokeVoid(
 		d,
 		"putLocal",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1279,7 +1278,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutNfs(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putNfs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1290,7 +1289,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutPersiste
 	_jsii_.InvokeVoid(
 		d,
 		"putPersistentVolumeClaim",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,18 +1300,18 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutPhotonPe
 	_jsii_.InvokeVoid(
 		d,
 		"putPhotonPersistentDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutProjected(value interface{}) {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutProjected(value any) {
 	if err := d.validatePutProjectedParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putProjected",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,7 +1322,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutQuobyte(
 	_jsii_.InvokeVoid(
 		d,
 		"putQuobyte",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1334,7 +1333,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutRbd(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putRbd",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1345,7 +1344,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutSecret(v
 	_jsii_.InvokeVoid(
 		d,
 		"putSecret",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1356,7 +1355,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) PutVsphereV
 	_jsii_.InvokeVoid(
 		d,
 		"putVsphereVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1576,16 +1575,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ResetVspher
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1604,4 +1603,3 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) ToString() 
 
 	return returns
 }
-

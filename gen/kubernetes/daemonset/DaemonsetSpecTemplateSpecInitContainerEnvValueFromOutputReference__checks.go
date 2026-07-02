@@ -142,7 +142,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvValueFromOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDaemonsetSpecTemplateSpecInitContainerEnvValueFromOutputReferenc
 
 	return nil
 }
-

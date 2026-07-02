@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.Ingress",
-		reflect.TypeOf((*Ingress)(nil)).Elem(),
+		reflect.TypeFor[Ingress](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForLoadBalancer", GoGetter: "WaitForLoadBalancer"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForLoadBalancerInput", GoGetter: "WaitForLoadBalancerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Ingress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressConfig",
-		reflect.TypeOf((*IngressConfig)(nil)).Elem(),
+		reflect.TypeFor[IngressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressMetadata",
-		reflect.TypeOf((*IngressMetadata)(nil)).Elem(),
+		reflect.TypeFor[IngressMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressMetadataOutputReference",
-		reflect.TypeOf((*IngressMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,15 +132,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpec",
-		reflect.TypeOf((*IngressSpec)(nil)).Elem(),
+		reflect.TypeFor[IngressSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecBackend",
-		reflect.TypeOf((*IngressSpecBackend)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecBackend](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecBackendOutputReference",
-		reflect.TypeOf((*IngressSpecBackendOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecBackendOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecBackendOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,7 +178,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecOutputReference",
-		reflect.TypeOf((*IngressSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backend", GoGetter: "Backend"},
 			_jsii_.MemberProperty{JsiiProperty: "backendInput", GoGetter: "BackendInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,15 +225,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRule",
-		reflect.TypeOf((*IngressSpecRule)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttp",
-		reflect.TypeOf((*IngressSpecRuleHttp)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpOutputReference",
-		reflect.TypeOf((*IngressSpecRuleHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,15 +268,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPath",
-		reflect.TypeOf((*IngressSpecRuleHttpPath)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpPath](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathBackend",
-		reflect.TypeOf((*IngressSpecRuleHttpPathBackend)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpPathBackend](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathBackendOutputReference",
-		reflect.TypeOf((*IngressSpecRuleHttpPathBackendOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpPathBackendOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleHttpPathBackendOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -314,7 +314,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathList",
-		reflect.TypeOf((*IngressSpecRuleHttpPathList)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpPathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleHttpPathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -336,7 +336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathOutputReference",
-		reflect.TypeOf((*IngressSpecRuleHttpPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleHttpPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backend", GoGetter: "Backend"},
 			_jsii_.MemberProperty{JsiiProperty: "backendInput", GoGetter: "BackendInput"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleHttpPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,7 +375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleList",
-		reflect.TypeOf((*IngressSpecRuleList)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -397,7 +397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleOutputReference",
-		reflect.TypeOf((*IngressSpecRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -427,7 +427,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -435,11 +435,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecTls",
-		reflect.TypeOf((*IngressSpecTls)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecTls](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecTlsList",
-		reflect.TypeOf((*IngressSpecTlsList)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecTlsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecTlsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressSpecTlsOutputReference",
-		reflect.TypeOf((*IngressSpecTlsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressSpecTlsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressSpecTlsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,11 +499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressStatus",
-		reflect.TypeOf((*IngressStatus)(nil)).Elem(),
+		reflect.TypeFor[IngressStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusList",
-		reflect.TypeOf((*IngressStatusList)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -516,7 +516,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -524,15 +524,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancer",
-		reflect.TypeOf((*IngressStatusLoadBalancer)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancer](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerIngress",
-		reflect.TypeOf((*IngressStatusLoadBalancerIngress)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancerIngress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerIngressList",
-		reflect.TypeOf((*IngressStatusLoadBalancerIngressList)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancerIngressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusLoadBalancerIngressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -553,7 +553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerIngressOutputReference",
-		reflect.TypeOf((*IngressStatusLoadBalancerIngressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancerIngressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusLoadBalancerIngressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -587,7 +587,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerList",
-		reflect.TypeOf((*IngressStatusLoadBalancerList)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusLoadBalancerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -608,7 +608,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusLoadBalancerOutputReference",
-		reflect.TypeOf((*IngressStatusLoadBalancerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusLoadBalancerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -633,7 +633,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusLoadBalancerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -641,7 +641,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.ingress.IngressStatusOutputReference",
-		reflect.TypeOf((*IngressStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IngressStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IngressStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

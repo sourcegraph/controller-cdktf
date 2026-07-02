@@ -106,7 +106,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePostStartExecOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePostStartExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePostStartExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPodSpecContainerLifecyclePostStartExecOutputReferenceParameters(
 
 	return nil
 }
-

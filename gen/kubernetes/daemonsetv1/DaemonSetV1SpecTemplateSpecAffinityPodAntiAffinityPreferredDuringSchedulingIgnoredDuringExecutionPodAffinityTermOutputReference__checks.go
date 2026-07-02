@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDu
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validatePutLabelSelectorParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validatePutLabelSelectorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDu
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDurin
 
 	return nil
 }
-

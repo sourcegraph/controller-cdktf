@@ -34,7 +34,7 @@ func (e *jsiiProxy_EnvEnvList) validateResolveParameters(_context cdktf.IResolve
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EnvEnvList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEnvEnvListParameters(terraformResource cdktf.IInterpolatingParen
 
 	return nil
 }
-

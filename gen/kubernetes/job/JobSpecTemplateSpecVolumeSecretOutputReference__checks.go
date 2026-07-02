@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateInter
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validatePutItemsParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validatePutItemsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeSecretOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewJobSpecTemplateSpecVolumeSecretOutputReferenceParameters(terrafo
 
 	return nil
 }
-

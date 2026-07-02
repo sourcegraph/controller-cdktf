@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocke
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentSpecTemplateSpecContainerLifecyclePostStartTcpSocketLi
 
 	return nil
 }
-

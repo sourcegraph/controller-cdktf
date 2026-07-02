@@ -12,9 +12,9 @@ type ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -49,7 +49,7 @@ type ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference in
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	return returns
 }
 
-
 func NewReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeConfigMapItemsOutp
 
 	return returns
 }
-

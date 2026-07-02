@@ -98,7 +98,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeHostPathOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeHostPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeHostPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewJobSpecTemplateSpecVolumeHostPathOutputReferenceParameters(terra
 
 	return nil
 }
-

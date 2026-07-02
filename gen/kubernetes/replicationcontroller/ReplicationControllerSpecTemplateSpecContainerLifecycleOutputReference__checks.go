@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutput
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validatePutPostStartParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutput
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validatePutPreStopParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutput
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecycleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewReplicationControllerSpecTemplateSpecContainerLifecycleOutputRef
 
 	return nil
 }
-

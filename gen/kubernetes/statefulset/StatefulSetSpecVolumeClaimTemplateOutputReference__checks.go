@@ -120,7 +120,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewStatefulSetSpecVolumeClaimTemplateOutputReferenceParameters(terr
 
 	return nil
 }
-

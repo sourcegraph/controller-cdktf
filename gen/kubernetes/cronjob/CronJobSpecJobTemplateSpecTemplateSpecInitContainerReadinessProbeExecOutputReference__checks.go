@@ -106,7 +106,7 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerReadinessP
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCronJobSpecJobTemplateSpecTemplateSpecInitContainerReadinessProb
 
 	return nil
 }
-

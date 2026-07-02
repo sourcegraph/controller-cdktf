@@ -1,6 +1,5 @@
 package statefulset
 
-
 type StatefulSetSpecTemplateSpec struct {
 	// Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers.
 	//
@@ -15,11 +14,11 @@ type StatefulSetSpecTemplateSpec struct {
 	// AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#automount_service_account_token StatefulSet#automount_service_account_token}
-	AutomountServiceAccountToken interface{} `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
+	AutomountServiceAccountToken any `field:"optional" json:"automountServiceAccountToken" yaml:"automountServiceAccountToken"`
 	// container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#container StatefulSet#container}
-	Container interface{} `field:"optional" json:"container" yaml:"container"`
+	Container any `field:"optional" json:"container" yaml:"container"`
 	// dns_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#dns_config StatefulSet#dns_config}
@@ -33,15 +32,15 @@ type StatefulSetSpecTemplateSpec struct {
 	// Enables generating environment variables for service discovery. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#enable_service_links StatefulSet#enable_service_links}
-	EnableServiceLinks interface{} `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
+	EnableServiceLinks any `field:"optional" json:"enableServiceLinks" yaml:"enableServiceLinks"`
 	// host_aliases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#host_aliases StatefulSet#host_aliases}
-	HostAliases interface{} `field:"optional" json:"hostAliases" yaml:"hostAliases"`
+	HostAliases any `field:"optional" json:"hostAliases" yaml:"hostAliases"`
 	// Use the host's ipc namespace. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#host_ipc StatefulSet#host_ipc}
-	HostIpc interface{} `field:"optional" json:"hostIpc" yaml:"hostIpc"`
+	HostIpc any `field:"optional" json:"hostIpc" yaml:"hostIpc"`
 	// Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#hostname StatefulSet#hostname}
@@ -51,19 +50,19 @@ type StatefulSetSpecTemplateSpec struct {
 	// Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#host_network StatefulSet#host_network}
-	HostNetwork interface{} `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
+	HostNetwork any `field:"optional" json:"hostNetwork" yaml:"hostNetwork"`
 	// Use the host's pid namespace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#host_pid StatefulSet#host_pid}
-	HostPid interface{} `field:"optional" json:"hostPid" yaml:"hostPid"`
+	HostPid any `field:"optional" json:"hostPid" yaml:"hostPid"`
 	// image_pull_secrets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#image_pull_secrets StatefulSet#image_pull_secrets}
-	ImagePullSecrets interface{} `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
+	ImagePullSecrets any `field:"optional" json:"imagePullSecrets" yaml:"imagePullSecrets"`
 	// init_container block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#init_container StatefulSet#init_container}
-	InitContainer interface{} `field:"optional" json:"initContainer" yaml:"initContainer"`
+	InitContainer any `field:"optional" json:"initContainer" yaml:"initContainer"`
 	// NodeName is a request to schedule this pod onto a specific node.
 	//
 	// If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
@@ -85,7 +84,7 @@ type StatefulSetSpecTemplateSpec struct {
 	// readiness_gate block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#readiness_gate StatefulSet#readiness_gate}
-	ReadinessGate interface{} `field:"optional" json:"readinessGate" yaml:"readinessGate"`
+	ReadinessGate any `field:"optional" json:"readinessGate" yaml:"readinessGate"`
 	// Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: http://kubernetes.io/docs/user-guide/pod-states#restartpolicy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#restart_policy StatefulSet#restart_policy}
@@ -103,7 +102,7 @@ type StatefulSetSpecTemplateSpec struct {
 	// When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#share_process_namespace StatefulSet#share_process_namespace}
-	ShareProcessNamespace interface{} `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
+	ShareProcessNamespace any `field:"optional" json:"shareProcessNamespace" yaml:"shareProcessNamespace"`
 	// If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#subdomain StatefulSet#subdomain}
@@ -117,14 +116,13 @@ type StatefulSetSpecTemplateSpec struct {
 	// toleration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#toleration StatefulSet#toleration}
-	Toleration interface{} `field:"optional" json:"toleration" yaml:"toleration"`
+	Toleration any `field:"optional" json:"toleration" yaml:"toleration"`
 	// topology_spread_constraint block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#topology_spread_constraint StatefulSet#topology_spread_constraint}
-	TopologySpreadConstraint interface{} `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
+	TopologySpreadConstraint any `field:"optional" json:"topologySpreadConstraint" yaml:"topologySpreadConstraint"`
 	// volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/stateful_set#volume StatefulSet#volume}
-	Volume interface{} `field:"optional" json:"volume" yaml:"volume"`
+	Volume any `field:"optional" json:"volume" yaml:"volume"`
 }
-

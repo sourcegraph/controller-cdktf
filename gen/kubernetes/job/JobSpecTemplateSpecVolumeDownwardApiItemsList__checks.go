@@ -34,7 +34,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewJobSpecTemplateSpecVolumeDownwardApiItemsListParameters(terrafor
 
 	return nil
 }
-

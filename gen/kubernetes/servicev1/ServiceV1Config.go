@@ -6,9 +6,9 @@ import (
 
 type ServiceV1Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ServiceV1Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#metadata ServiceV1#metadata}
@@ -39,6 +39,5 @@ type ServiceV1Config struct {
 	// Terraform will wait for the load balancer to have at least 1 endpoint before considering the resource created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/service_v1#wait_for_load_balancer ServiceV1#wait_for_load_balancer}
-	WaitForLoadBalancer interface{} `field:"optional" json:"waitForLoadBalancer" yaml:"waitForLoadBalancer"`
+	WaitForLoadBalancer any `field:"optional" json:"waitForLoadBalancer" yaml:"waitForLoadBalancer"`
 }
-

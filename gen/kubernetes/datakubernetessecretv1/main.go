@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesSecretV1.DataKubernetesSecretV1",
-		reflect.TypeOf((*DataKubernetesSecretV1)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesSecretV1](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryData", GoGetter: "BinaryData"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesSecretV1{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesSecretV1.DataKubernetesSecretV1Config",
-		reflect.TypeOf((*DataKubernetesSecretV1Config)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesSecretV1Config](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-kubernetes.dataKubernetesSecretV1.DataKubernetesSecretV1Metadata",
-		reflect.TypeOf((*DataKubernetesSecretV1Metadata)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesSecretV1Metadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-kubernetes.dataKubernetesSecretV1.DataKubernetesSecretV1MetadataOutputReference",
-		reflect.TypeOf((*DataKubernetesSecretV1MetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataKubernetesSecretV1MetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataKubernetesSecretV1MetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

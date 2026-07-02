@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateInterpolat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validatePutFromParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validatePutFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validatePutFromPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validatePutPortsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validatePutPortsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewNetworkPolicyV1SpecIngressOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

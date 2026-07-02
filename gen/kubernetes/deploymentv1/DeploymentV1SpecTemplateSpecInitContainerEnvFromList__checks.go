@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvFromList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvFromList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvFromList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeploymentV1SpecTemplateSpecInitContainerEnvFromListParameters(t
 
 	return nil
 }
-

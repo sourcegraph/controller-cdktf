@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataKubernetesServiceV1SpecSessionAffinityConfigOutputReferenceP
 
 	return nil
 }
-

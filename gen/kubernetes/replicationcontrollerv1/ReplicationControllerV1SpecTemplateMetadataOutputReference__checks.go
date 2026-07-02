@@ -106,7 +106,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReplicationControllerV1SpecTemplateMetadataOutputReferenceParame
 
 	return nil
 }
-

@@ -15,11 +15,11 @@ type DataKubernetesIngress interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,19 +48,19 @@ type DataKubernetesIngress interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() DataKubernetesIngressSpecList
 	Status() DataKubernetesIngressStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataKubernetesIngress interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataKubernetesIngress
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataKubernetesIngress) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesIngress) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesIngress) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataKubernetesIngress) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesIngress) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesIngress) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataKubernetesIngress) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesIngress) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataKubernetesIngress) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataKubernetesIngress) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesIngress) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataKubernetesIngress) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -306,7 +306,6 @@ func (j *jsiiProxy_DataKubernetesIngress) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/data-sources/ingress kubernetes_ingress} Data Source.
 func NewDataKubernetesIngress(scope constructs.Construct, id *string, config *DataKubernetesIngressConfig) DataKubernetesIngress {
 	_init_.Initialize()
@@ -318,7 +317,7 @@ func NewDataKubernetesIngress(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -331,12 +330,12 @@ func NewDataKubernetesIngress_Override(d DataKubernetesIngress, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetCount(val interface{}) {
+func (j *jsiiProxy_DataKubernetesIngress) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataKubernetesIngress)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataKubernetesIngress) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataKubernetesIngress)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataKubernetesIngress) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataKubernetesIngress)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetId(val *string) {
+func (j *jsiiProxy_DataKubernetesIngress) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataKubernetesIngress)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataKubernetesIngress) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataKubernetesIngress)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesIngress)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataKubernetesIngress) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func DataKubernetesIngress_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataKubernetesIngress_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataKubernetesIngress_IsConstruct(x interface{}) *bool {
+func DataKubernetesIngress_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesIngress_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataKubernetesIngress_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataKubernetesIngress_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesIngress_IsTerraformDataSource(x interface{}) *bool {
+func DataKubernetesIngress_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesIngress_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataKubernetesIngress_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataKubernetesIngress_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataKubernetesIngress_IsTerraformElement(x interface{}) *bool {
+func DataKubernetesIngress_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataKubernetesIngress_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataKubernetesIngress_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataKubernetesIngress_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataKubernetesIngress) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataKubernetesIngress) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataKubernetesIngress) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataKubernetesIngress) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataKubernetesIngress) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataKubernetesIngress) PutMetadata(value *DataKubernetesIngre
 	_jsii_.InvokeVoid(
 		d,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -705,8 +704,8 @@ func (d *jsiiProxy_DataKubernetesIngress) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesIngress) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -718,8 +717,8 @@ func (d *jsiiProxy_DataKubernetesIngress) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataKubernetesIngress) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -731,8 +730,8 @@ func (d *jsiiProxy_DataKubernetesIngress) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesIngress) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -744,8 +743,8 @@ func (d *jsiiProxy_DataKubernetesIngress) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesIngress) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataKubernetesIngress) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesIngress) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataKubernetesIngress) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -782,4 +781,3 @@ func (d *jsiiProxy_DataKubernetesIngress) ToTerraform() interface{} {
 
 	return returns
 }
-

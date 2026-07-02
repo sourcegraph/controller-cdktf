@@ -1,6 +1,5 @@
 package apiservicev1
 
-
 type ApiServiceV1Spec struct {
 	// Group is the API group name this server hosts.
 	//
@@ -33,10 +32,9 @@ type ApiServiceV1Spec struct {
 	// This is strongly discouraged. You should use the CABundle instead.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/api_service_v1#insecure_skip_tls_verify ApiServiceV1#insecure_skip_tls_verify}
-	InsecureSkipTlsVerify interface{} `field:"optional" json:"insecureSkipTlsVerify" yaml:"insecureSkipTlsVerify"`
+	InsecureSkipTlsVerify any `field:"optional" json:"insecureSkipTlsVerify" yaml:"insecureSkipTlsVerify"`
 	// service block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.15.0/docs/resources/api_service_v1#service ApiServiceV1#service}
 	Service *ApiServiceV1SpecService `field:"optional" json:"service" yaml:"service"`
 }
-

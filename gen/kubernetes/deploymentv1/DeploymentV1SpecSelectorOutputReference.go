@@ -12,9 +12,9 @@ type DeploymentV1SpecSelectorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type DeploymentV1SpecSelectorOutputReference interface {
 	InternalValue() *DeploymentV1SpecSelector
 	SetInternalValue(val *DeploymentV1SpecSelector)
 	MatchExpressions() DeploymentV1SpecSelectorMatchExpressionsList
-	MatchExpressionsInput() interface{}
+	MatchExpressionsInput() any
 	MatchLabels() *map[string]*string
 	SetMatchLabels(val *map[string]*string)
 	MatchLabelsInput() *map[string]*string
@@ -45,7 +45,7 @@ type DeploymentV1SpecSelectorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type DeploymentV1SpecSelectorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutMatchExpressions(value interface{})
+	PutMatchExpressions(value any)
 	ResetMatchExpressions()
 	ResetMatchLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DeploymentV1SpecSelectorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) MatchExpressions() D
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) MatchExpressionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) MatchExpressionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewDeploymentV1SpecSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecSelectorOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDeploymentV1SpecSelectorOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDeploymentV1SpecSelectorOutputReference_Override(d DeploymentV1SpecSelec
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetInternalValue(val *DeploymentV1SpecSelector) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetInternalValue(val *DeploymentV1SpecSelector) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetMatchLabels(val *map[string]*string) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetMatchLabels(val *map[string]*string) {
 	if err := j.validateSetMatchLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetMatchLabels(val *m
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentV1SpecSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) PutMatchExpressions(value interface{}) {
+func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) PutMatchExpressions(value any) {
 	if err := d.validatePutMatchExpressionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMatchExpressions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) ResetMatchLabels() {
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorOutputReference) ToString() *string {
 
 	return returns
 }
-

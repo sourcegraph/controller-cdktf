@@ -90,7 +90,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validatePutConfigMapParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validatePutConfigMapParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validatePutSecretParameters(value interface{}) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validatePutSecretParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -306,4 +306,3 @@ func validateNewDaemonSetV1SpecTemplateSpecVolumeProjectedSourcesOutputReference
 
 	return nil
 }
-

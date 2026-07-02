@@ -112,7 +112,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference) validatePutTcpSocketParameters(value interface{}) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference) validatePutTcpSocketParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewReplicationControllerSpecTemplateSpecInitContainerReadinessProbe
 
 	return nil
 }
-

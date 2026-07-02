@@ -98,7 +98,7 @@ func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourcePhotonPersistentDis
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourcePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourcePhotonPersistentDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPersistentVolumeSpecPersistentVolumeSourcePhotonPersistentDiskOu
 
 	return nil
 }
-

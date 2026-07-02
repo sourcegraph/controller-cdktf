@@ -106,7 +106,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerSecurityContextCapabilities
 	return nil
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDaemonsetSpecTemplateSpecContainerSecurityContextCapabilitiesOut
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageClassV1MetadataOutputReference) validateSetAnnotations
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageClassV1MetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewStorageClassV1MetadataOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

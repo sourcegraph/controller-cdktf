@@ -34,7 +34,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPodSpecVolumeProjectedSourcesDownwardApiItemsListParameters(terr
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutPreferredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validatePutRequiredDuringSchedulingIgnoredDuringExecutionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewJobSpecTemplateSpecAffinityPodAntiAffinityOutputReferenceParamet
 
 	return nil
 }
-

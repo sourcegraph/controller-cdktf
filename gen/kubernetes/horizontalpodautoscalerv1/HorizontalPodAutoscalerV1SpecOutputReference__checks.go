@@ -109,7 +109,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV1SpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV1SpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewHorizontalPodAutoscalerV1SpecOutputReferenceParameters(terraform
 
 	return nil
 }
-
