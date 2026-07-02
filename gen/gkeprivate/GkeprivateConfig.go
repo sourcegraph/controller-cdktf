@@ -10,7 +10,7 @@ type GkeprivateConfig struct {
 	// Experimental.
 	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Providers *[]interface{} `field:"optional" json:"providers" yaml:"providers"`
+	Providers *[]any `field:"optional" json:"providers" yaml:"providers"`
 	// Experimental.
 	SkipAssetCreationFromLocalModules *bool `field:"optional" json:"skipAssetCreationFromLocalModules" yaml:"skipAssetCreationFromLocalModules"`
 	// The _name_ of the secondary subnet ip range to use for pods.
@@ -28,7 +28,7 @@ type GkeprivateConfig struct {
 	// List of _names_ of the additional secondary subnet ip ranges to use for pods.
 	AdditionalIpRangePods *[]*string `field:"optional" json:"additionalIpRangePods" yaml:"additionalIpRangePods"`
 	// the configuration for individual additional subnetworks attached to the cluster.
-	AdditionalIpRangesConfig *[]interface{} `field:"optional" json:"additionalIpRangesConfig" yaml:"additionalIpRangesConfig"`
+	AdditionalIpRangesConfig *[]any `field:"optional" json:"additionalIpRangesConfig" yaml:"additionalIpRangesConfig"`
 	// This will enable Cloud DNS additive VPC scope.
 	//
 	// Must provide a domain name that is unique within the VPC. For this to work cluster_dns = `CLOUD_DNS` and cluster_dns_scope = `CLUSTER_SCOPE` must both be set as well.
@@ -58,7 +58,7 @@ type GkeprivateConfig struct {
 	// Cluster autoscaling configuration.
 	//
 	// See [more details](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#clusterautoscaling)
-	ClusterAutoscaling interface{} `field:"optional" json:"clusterAutoscaling" yaml:"clusterAutoscaling"`
+	ClusterAutoscaling any `field:"optional" json:"clusterAutoscaling" yaml:"clusterAutoscaling"`
 	// The suffix used for all cluster service records.
 	ClusterDnsDomain *string `field:"optional" json:"clusterDnsDomain" yaml:"clusterDnsDomain"`
 	// Which in-cluster DNS provider should be used.
@@ -93,7 +93,7 @@ type GkeprivateConfig struct {
 	//
 	// The object format is {state = string, key_name = string}. Valid values of state are: "ENCRYPTED"; "DECRYPTED". key_name is the name of a CloudKMS key.
 	// [object Object].
-	DatabaseEncryption *[]interface{} `field:"optional" json:"databaseEncryption" yaml:"databaseEncryption"`
+	DatabaseEncryption *[]any `field:"optional" json:"databaseEncryption" yaml:"databaseEncryption"`
 	// The desired datapath provider for this cluster.
 	//
 	// By default, `DATAPATH_PROVIDER_UNSPECIFIED` enables the IPTables-based kube-proxy implementation. `ADVANCED_DATAPATH` enables Dataplane-V2 feature.
@@ -289,7 +289,7 @@ type GkeprivateConfig struct {
 	// List of maintenance exclusions.
 	//
 	// A cluster can have up to three.
-	MaintenanceExclusions *[]interface{} `field:"optional" json:"maintenanceExclusions" yaml:"maintenanceExclusions"`
+	MaintenanceExclusions *[]any `field:"optional" json:"maintenanceExclusions" yaml:"maintenanceExclusions"`
 	// Frequency of the recurring maintenance window in RFC5545 format.
 	MaintenanceRecurrence *string `field:"optional" json:"maintenanceRecurrence" yaml:"maintenanceRecurrence"`
 	// Time window specified for daily or recurring maintenance operations in RFC3339 format 05:00.
@@ -297,7 +297,7 @@ type GkeprivateConfig struct {
 	// List of master authorized networks.
 	//
 	// If none are provided, disallow external access (except the cluster node IPs, which GKE automatically whitelists).
-	MasterAuthorizedNetworks *[]interface{} `field:"optional" json:"masterAuthorizedNetworks" yaml:"masterAuthorizedNetworks"`
+	MasterAuthorizedNetworks *[]any `field:"optional" json:"masterAuthorizedNetworks" yaml:"masterAuthorizedNetworks"`
 	// Whether the cluster master is accessible globally (from any region) or only within the same region as the private endpoint.
 	//
 	// true.
@@ -343,7 +343,7 @@ type GkeprivateConfig struct {
 	// Specifies how node metadata is exposed to the workload running on the node GKE_METADATA.
 	NodeMetadata *string `field:"optional" json:"nodeMetadata" yaml:"nodeMetadata"`
 	// List of maps containing node pools [object Object] The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
-	NodePools *[]*map[string]interface{} `field:"optional" json:"nodePools" yaml:"nodePools"`
+	NodePools *[]*map[string]any `field:"optional" json:"nodePools" yaml:"nodePools"`
 	// Map of strings containing cgroup node config by node-pool name.
 	//
 	// Note: GKE is removing cgroup v1 support in 1.35.
@@ -368,7 +368,7 @@ type GkeprivateConfig struct {
 	// Map of lists containing node network tags by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsTags *map[string]*[]*string `field:"optional" json:"nodePoolsTags" yaml:"nodePoolsTags"`
 	// Map of lists containing node taints by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
-	NodePoolsTaints *map[string]*[]interface{} `field:"optional" json:"nodePoolsTaints" yaml:"nodePoolsTaints"`
+	NodePoolsTaints *map[string]*[]any `field:"optional" json:"nodePoolsTaints" yaml:"nodePoolsTaints"`
 	// Map of strings containing transparent hugepage defrag node config by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	NodePoolsTransparentHugepageDefrag *map[string]*string `field:"optional" json:"nodePoolsTransparentHugepageDefrag" yaml:"nodePoolsTransparentHugepageDefrag"`
 	// Map of strings containing transparent hugepage enabled node config by node-pool name The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
@@ -392,9 +392,9 @@ type GkeprivateConfig struct {
 	// The subnetwork to use for the hosted master network.
 	PrivateEndpointSubnetwork *string `field:"optional" json:"privateEndpointSubnetwork" yaml:"privateEndpointSubnetwork"`
 	// The Ray Operator Addon configuration for this cluster.
-	RayOperatorConfig interface{} `field:"optional" json:"rayOperatorConfig" yaml:"rayOperatorConfig"`
+	RayOperatorConfig any `field:"optional" json:"rayOperatorConfig" yaml:"rayOperatorConfig"`
 	// RBACBindingConfig allows user to restrict ClusterRoleBindings an RoleBindings that can be created.
-	RbacBindingConfig interface{} `field:"optional" json:"rbacBindingConfig" yaml:"rbacBindingConfig"`
+	RbacBindingConfig any `field:"optional" json:"rbacBindingConfig" yaml:"rbacBindingConfig"`
 	// The region to host the cluster in (optional if zonal cluster / required if regional).
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Whether is a regional cluster (zonal cluster if set false.
@@ -445,7 +445,7 @@ type GkeprivateConfig struct {
 	// The log_config for shadow firewall rules.
 	//
 	// You can set this variable to `null` to disable logging.
-	ShadowFirewallRulesLogConfig interface{} `field:"optional" json:"shadowFirewallRulesLogConfig" yaml:"shadowFirewallRulesLogConfig"`
+	ShadowFirewallRulesLogConfig any `field:"optional" json:"shadowFirewallRulesLogConfig" yaml:"shadowFirewallRulesLogConfig"`
 	// The firewall priority of GKE shadow firewall rules.
 	//
 	// The priority should be less than default firewall, which is 1000.
@@ -486,4 +486,3 @@ type GkeprivateConfig struct {
 	// The zones to host the cluster in (optional if regional cluster / required if zonal).
 	Zones *[]*string `field:"optional" json:"zones" yaml:"zones"`
 }
-

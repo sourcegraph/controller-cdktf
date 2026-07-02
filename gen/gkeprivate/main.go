@@ -10,7 +10,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-gkeprivate.Gkeprivate",
-		reflect.TypeOf((*Gkeprivate)(nil)).Elem(),
+		reflect.TypeFor[Gkeprivate](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addClusterFirewallRules", GoGetter: "AddClusterFirewallRules"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalIpRangePods", GoGetter: "AdditionalIpRangePods"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesOutput", GoGetter: "ZonesOutput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Gkeprivate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
 			return &j
@@ -238,6 +238,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-gkeprivate.GkeprivateConfig",
-		reflect.TypeOf((*GkeprivateConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeprivateConfig](),
 	)
 }
