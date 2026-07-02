@@ -10,7 +10,7 @@ type AwsvpcConfig struct {
 	// Experimental.
 	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Providers *[]interface{} `field:"optional" json:"providers" yaml:"providers"`
+	Providers *[]any `field:"optional" json:"providers" yaml:"providers"`
 	// Experimental.
 	SkipAssetCreationFromLocalModules *bool `field:"optional" json:"skipAssetCreationFromLocalModules" yaml:"skipAssetCreationFromLocalModules"`
 	// The Autonomous System Number (ASN) for the Amazon side of the gateway.
@@ -60,7 +60,7 @@ type AwsvpcConfig struct {
 	// Controls if VPC should be created (it affects almost all resources) true.
 	CreateVpc *bool `field:"optional" json:"createVpc" yaml:"createVpc"`
 	// Maps of Customer Gateway's attributes (BGP ASN and Gateway's Internet-routable external IP address) The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
-	CustomerGateways *map[string]*map[string]interface{} `field:"optional" json:"customerGateways" yaml:"customerGateways"`
+	CustomerGateways *map[string]*map[string]any `field:"optional" json:"customerGateways" yaml:"customerGateways"`
 	// Additional tags for the Customer Gateway The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	CustomerGatewayTags *map[string]*string `field:"optional" json:"customerGatewayTags" yaml:"customerGatewayTags"`
 	// Additional tags for the database subnets network ACL The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
@@ -482,4 +482,3 @@ type AwsvpcConfig struct {
 	// Additional tags for the VPN gateway The property type contains a map, they have special handling, please see {@link cdk.tf /module-map-inputs the docs}.
 	VpnGatewayTags *map[string]*string `field:"optional" json:"vpnGatewayTags" yaml:"vpnGatewayTags"`
 }
-
