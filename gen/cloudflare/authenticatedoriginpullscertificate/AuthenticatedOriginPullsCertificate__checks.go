@@ -19,7 +19,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateAddMoveTargetPar
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateMoveFromIdParame
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AuthenticatedOriginPullsCertificate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAuthenticatedOriginPullsCertificate_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateAuthenticatedOriginPullsCertificate_IsConstructParameters(x interface{}) error {
+func validateAuthenticatedOriginPullsCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAuthenticatedOriginPullsCertificate_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateAuthenticatedOriginPullsCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateAuthenticatedOriginPullsCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAuthenticatedOriginPullsCertificate_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateAuthenticatedOriginPullsCertificate_IsTerraformResourceParameters(x interface{}) error {
+func validateAuthenticatedOriginPullsCertificate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCertificatePa
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetPrivateKeyPar
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewAuthenticatedOriginPullsCertificateParameters(scope constructs.C
 
 	return nil
 }
-

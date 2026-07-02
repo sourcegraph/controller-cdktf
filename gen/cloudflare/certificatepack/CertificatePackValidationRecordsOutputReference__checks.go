@@ -114,7 +114,7 @@ func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetH
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePackValidationRecordsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewCertificatePackValidationRecordsOutputReferenceParameters(terraf
 
 	return nil
 }
-

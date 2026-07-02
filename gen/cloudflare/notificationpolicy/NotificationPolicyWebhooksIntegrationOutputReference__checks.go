@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotificationPolicyWebhooksIntegrationOutputReferenceParameters(t
 
 	return nil
 }
-

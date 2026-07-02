@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersOverridesCategories struct {
 	// Action to perform in the tag-level override.
 	//
@@ -15,6 +14,5 @@ type RulesetRulesActionParametersOverridesCategories struct {
 	// Defines if the current tag-level override enables or disables the ruleset rules with the specified tag.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 }
-

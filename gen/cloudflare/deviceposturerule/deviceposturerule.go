@@ -18,15 +18,15 @@ type DevicePostureRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,13 +49,13 @@ type DevicePostureRule interface {
 	SetId(val *string)
 	IdInput() *string
 	Input() DevicePostureRuleInputList
-	InputInput() interface{}
+	InputInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Match() DevicePostureRuleMatchList
-	MatchInput() interface{}
+	MatchInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -66,18 +66,18 @@ type DevicePostureRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -87,9 +87,9 @@ type DevicePostureRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type DevicePostureRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,15 +119,15 @@ type DevicePostureRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutInput(value interface{})
-	PutMatch(value interface{})
+	PutInput(value any)
+	PutMatch(value any)
 	ResetDescription()
 	ResetExpiration()
 	ResetId()
@@ -138,17 +138,17 @@ type DevicePostureRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSchedule()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DevicePostureRule
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DevicePostureRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DevicePostureRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DevicePostureRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_DevicePostureRule) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_DevicePostureRule) Input() DevicePostureRuleInputList {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) InputInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRule) InputInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inputInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DevicePostureRule) Match() DevicePostureRuleMatchList {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) MatchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRule) MatchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_DevicePostureRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DevicePostureRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_DevicePostureRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_DevicePostureRule) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DevicePostureRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,7 +496,6 @@ func (j *jsiiProxy_DevicePostureRule) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule cloudflare_device_posture_rule} Resource.
 func NewDevicePostureRule(scope constructs.Construct, id *string, config *DevicePostureRuleConfig) DevicePostureRule {
 	_init_.Initialize()
@@ -508,7 +507,7 @@ func NewDevicePostureRule(scope constructs.Construct, id *string, config *Device
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -521,12 +520,12 @@ func NewDevicePostureRule_Override(d DevicePostureRule, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetAccountId(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_DevicePostureRule)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_DevicePostureRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_DevicePostureRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetCount(val interface{}) {
+func (j *jsiiProxy_DevicePostureRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DevicePostureRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DevicePostureRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -567,7 +566,7 @@ func (j *jsiiProxy_DevicePostureRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetDescription(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_DevicePostureRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetExpiration(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetExpiration(val *string) {
 	if err := j.validateSetExpirationParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DevicePostureRule)SetExpiration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DevicePostureRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -597,7 +596,7 @@ func (j *jsiiProxy_DevicePostureRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetId(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_DevicePostureRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DevicePostureRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_DevicePostureRule)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetName(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_DevicePostureRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DevicePostureRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_DevicePostureRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DevicePostureRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_DevicePostureRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetSchedule(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DevicePostureRule)SetSchedule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRule)SetType(val *string) {
+func (j *jsiiProxy_DevicePostureRule) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func DevicePostureRule_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func DevicePostureRule_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DevicePostureRule_IsConstruct(x interface{}) *bool {
+func DevicePostureRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDevicePostureRule_IsConstructParameters(x); err != nil {
@@ -718,7 +717,7 @@ func DevicePostureRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func DevicePostureRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DevicePostureRule_IsTerraformElement(x interface{}) *bool {
+func DevicePostureRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDevicePostureRule_IsTerraformElementParameters(x); err != nil {
@@ -737,7 +736,7 @@ func DevicePostureRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func DevicePostureRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DevicePostureRule_IsTerraformResource(x interface{}) *bool {
+func DevicePostureRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDevicePostureRule_IsTerraformResourceParameters(x); err != nil {
@@ -756,7 +755,7 @@ func DevicePostureRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,31 +780,31 @@ func (d *jsiiProxy_DevicePostureRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DevicePostureRule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DevicePostureRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DevicePostureRule) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (d *jsiiProxy_DevicePostureRule) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DevicePostureRule) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (d *jsiiProxy_DevicePostureRule) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (d *jsiiProxy_DevicePostureRule) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (d *jsiiProxy_DevicePostureRule) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (d *jsiiProxy_DevicePostureRule) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,15 +932,15 @@ func (d *jsiiProxy_DevicePostureRule) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DevicePostureRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DevicePostureRule) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -973,7 +972,7 @@ func (d *jsiiProxy_DevicePostureRule) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,18 +986,18 @@ func (d *jsiiProxy_DevicePostureRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DevicePostureRule) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1009,7 +1008,7 @@ func (d *jsiiProxy_DevicePostureRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1020,29 +1019,29 @@ func (d *jsiiProxy_DevicePostureRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) PutInput(value interface{}) {
+func (d *jsiiProxy_DevicePostureRule) PutInput(value any) {
 	if err := d.validatePutInputParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) PutMatch(value interface{}) {
+func (d *jsiiProxy_DevicePostureRule) PutMatch(value any) {
 	if err := d.validatePutMatchParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1110,8 +1109,8 @@ func (d *jsiiProxy_DevicePostureRule) ResetSchedule() {
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DevicePostureRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1123,8 +1122,8 @@ func (d *jsiiProxy_DevicePostureRule) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DevicePostureRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1136,8 +1135,8 @@ func (d *jsiiProxy_DevicePostureRule) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DevicePostureRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1149,8 +1148,8 @@ func (d *jsiiProxy_DevicePostureRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DevicePostureRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1175,8 +1174,8 @@ func (d *jsiiProxy_DevicePostureRule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DevicePostureRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1187,4 +1186,3 @@ func (d *jsiiProxy_DevicePostureRule) ToTerraform() interface{} {
 
 	return returns
 }
-

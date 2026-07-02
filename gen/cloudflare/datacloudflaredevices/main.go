@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevices",
-		reflect.TypeOf((*DataCloudflareDevices)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDevices](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareDevices{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesConfig",
-		reflect.TypeOf((*DataCloudflareDevicesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDevicesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevices",
-		reflect.TypeOf((*DataCloudflareDevicesDevices)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDevicesDevices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesList",
-		reflect.TypeOf((*DataCloudflareDevicesDevicesList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDevicesDevicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareDevicesDevicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
-		reflect.TypeOf((*DataCloudflareDevicesDevicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareDevicesDevicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userName", GoGetter: "UserName"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareDevicesDevicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

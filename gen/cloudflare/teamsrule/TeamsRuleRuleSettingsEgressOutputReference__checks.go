@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewTeamsRuleRuleSettingsEgressOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

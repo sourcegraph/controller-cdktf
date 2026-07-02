@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateSetEnforceParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference) validateSetEnforceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewTeamsRuleRuleSettingsCheckSessionOutputReferenceParameters(terra
 
 	return nil
 }
-

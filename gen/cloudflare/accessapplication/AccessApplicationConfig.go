@@ -6,9 +6,9 @@ import (
 
 type AccessApplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AccessApplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Friendly name of the Access Application.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#name AccessApplication#name}
@@ -34,15 +34,15 @@ type AccessApplicationConfig struct {
 	// Option to show/hide applications in App Launcher. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#app_launcher_visible AccessApplication#app_launcher_visible}
-	AppLauncherVisible interface{} `field:"optional" json:"appLauncherVisible" yaml:"appLauncherVisible"`
+	AppLauncherVisible any `field:"optional" json:"appLauncherVisible" yaml:"appLauncherVisible"`
 	// Option to skip identity provider selection if only one is configured in `allowed_idps`. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#auto_redirect_to_identity AccessApplication#auto_redirect_to_identity}
-	AutoRedirectToIdentity interface{} `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
+	AutoRedirectToIdentity any `field:"optional" json:"autoRedirectToIdentity" yaml:"autoRedirectToIdentity"`
 	// cors_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#cors_headers AccessApplication#cors_headers}
-	CorsHeaders interface{} `field:"optional" json:"corsHeaders" yaml:"corsHeaders"`
+	CorsHeaders any `field:"optional" json:"corsHeaders" yaml:"corsHeaders"`
 	// Option that returns a custom error message when a user is denied access to the application.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#custom_deny_message AccessApplication#custom_deny_message}
@@ -62,11 +62,11 @@ type AccessApplicationConfig struct {
 	// Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#enable_binding_cookie AccessApplication#enable_binding_cookie}
-	EnableBindingCookie interface{} `field:"optional" json:"enableBindingCookie" yaml:"enableBindingCookie"`
+	EnableBindingCookie any `field:"optional" json:"enableBindingCookie" yaml:"enableBindingCookie"`
 	// Option to add the `HttpOnly` cookie flag to access tokens.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#http_only_cookie_attribute AccessApplication#http_only_cookie_attribute}
-	HttpOnlyCookieAttribute interface{} `field:"optional" json:"httpOnlyCookieAttribute" yaml:"httpOnlyCookieAttribute"`
+	HttpOnlyCookieAttribute any `field:"optional" json:"httpOnlyCookieAttribute" yaml:"httpOnlyCookieAttribute"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#id AccessApplication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -87,7 +87,7 @@ type AccessApplicationConfig struct {
 	// Option to return a 401 status code in service authentication rules on failed requests. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#service_auth_401_redirect AccessApplication#service_auth_401_redirect}
-	ServiceAuth401Redirect interface{} `field:"optional" json:"serviceAuth401Redirect" yaml:"serviceAuth401Redirect"`
+	ServiceAuth401Redirect any `field:"optional" json:"serviceAuth401Redirect" yaml:"serviceAuth401Redirect"`
 	// How often a user will be forced to re-authorise.
 	//
 	// Must be in the format `48h` or `2h45m`. Defaults to `24h`.
@@ -97,7 +97,7 @@ type AccessApplicationConfig struct {
 	// Option to skip the authorization interstitial when using the CLI. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#skip_interstitial AccessApplication#skip_interstitial}
-	SkipInterstitial interface{} `field:"optional" json:"skipInterstitial" yaml:"skipInterstitial"`
+	SkipInterstitial any `field:"optional" json:"skipInterstitial" yaml:"skipInterstitial"`
 	// The application type. Available values: `app_launcher`, `bookmark`, `biso`, `dash_sso`, `saas`, `self_hosted`, `ssh`, `vnc`, `warp`. Defaults to `self_hosted`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#type AccessApplication#type}
@@ -107,4 +107,3 @@ type AccessApplicationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_application#zone_id AccessApplication#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
-

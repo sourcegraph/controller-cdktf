@@ -90,7 +90,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateInter
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutPathParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutPa
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutQueryParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validatePutQueryParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,7 +249,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetOriginParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersUriOutputReference) validateSetOriginParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -304,4 +304,3 @@ func validateNewRulesetRulesActionParametersUriOutputReferenceParameters(terrafo
 
 	return nil
 }
-

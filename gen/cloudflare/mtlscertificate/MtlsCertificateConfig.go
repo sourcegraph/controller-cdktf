@@ -6,9 +6,9 @@ import (
 
 type MtlsCertificateConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MtlsCertificateConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
@@ -26,7 +26,7 @@ type MtlsCertificateConfig struct {
 	// Whether this is a CA or leaf certificate. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
-	Ca interface{} `field:"required" json:"ca" yaml:"ca"`
+	Ca any `field:"required" json:"ca" yaml:"ca"`
 	// Certificate you intend to use with mTLS-enabled services. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
@@ -45,4 +45,3 @@ type MtlsCertificateConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
 }
-

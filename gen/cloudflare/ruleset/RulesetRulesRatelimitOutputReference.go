@@ -15,9 +15,9 @@ type RulesetRulesRatelimitOutputReference interface {
 	CharacteristicsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type RulesetRulesRatelimitOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MitigationTimeout() *float64
 	SetMitigationTimeout(val *float64)
 	MitigationTimeoutInput() *float64
@@ -44,9 +44,9 @@ type RulesetRulesRatelimitOutputReference interface {
 	RequestsPerPeriod() *float64
 	SetRequestsPerPeriod(val *float64)
 	RequestsPerPeriodInput() *float64
-	RequestsToOrigin() interface{}
-	SetRequestsToOrigin(val interface{})
-	RequestsToOriginInput() interface{}
+	RequestsToOrigin() any
+	SetRequestsToOrigin(val any)
+	RequestsToOriginInput() any
 	ScorePerPeriod() *float64
 	SetScorePerPeriod(val *float64)
 	ScorePerPeriodInput() *float64
@@ -64,7 +64,7 @@ type RulesetRulesRatelimitOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type RulesetRulesRatelimitOutputReference interface {
 	ResetScoreResponseHeaderName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) CharacteristicsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsPerPeriodInput(
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOrigin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOrigin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestsToOrigin",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOrigin() inte
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOriginInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) RequestsToOriginInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestsToOriginInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesRatelimitOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewRulesetRulesRatelimitOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewRulesetRulesRatelimitOutputReference_Override(r RulesetRulesRatelimitOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCharacteristics(val *[]*string) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetCharacteristics(val *[]*string) {
 	if err := j.validateSetCharacteristicsParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCharacteristics(val *
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCountingExpression(val *string) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetCountingExpression(val *string) {
 	if err := j.validateSetCountingExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetCountingExpression(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetMitigationTimeout(val *float64) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetMitigationTimeout(val *float64) {
 	if err := j.validateSetMitigationTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetMitigationTimeout(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetPeriod(val *float64) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetPeriod(val *float64) {
 	if err := j.validateSetPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetPeriod(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsPerPeriod(val *float64) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetRequestsPerPeriod(val *float64) {
 	if err := j.validateSetRequestsPerPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsPerPeriod(val
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsToOrigin(val interface{}) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetRequestsToOrigin(val any) {
 	if err := j.validateSetRequestsToOriginParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetRequestsToOrigin(val 
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScorePerPeriod(val *float64) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetScorePerPeriod(val *float64) {
 	if err := j.validateSetScorePerPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScorePerPeriod(val *f
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScoreResponseHeaderName(val *string) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetScoreResponseHeaderName(val *string) {
 	if err := j.validateSetScoreResponseHeaderNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetScoreResponseHeaderNa
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesRatelimitOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesRatelimitOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ResetScoreResponseHeade
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (r *jsiiProxy_RulesetRulesRatelimitOutputReference) ToString() *string {
 
 	return returns
 }
-

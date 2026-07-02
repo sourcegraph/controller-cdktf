@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRulesetRulesActionParametersBrowserTtlOutputReferenceParameters(
 
 	return nil
 }
-

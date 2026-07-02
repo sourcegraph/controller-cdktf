@@ -12,9 +12,9 @@ type RulesetRulesActionParametersAutominifyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type RulesetRulesActionParametersAutominifyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Css() interface{}
-	SetCss(val interface{})
-	CssInput() interface{}
+	Css() any
+	SetCss(val any)
+	CssInput() any
 	// Experimental.
 	Fqn() *string
-	Html() interface{}
-	SetHtml(val interface{})
-	HtmlInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Js() interface{}
-	SetJs(val interface{})
-	JsInput() interface{}
+	Html() any
+	SetHtml(val any)
+	HtmlInput() any
+	InternalValue() any
+	SetInternalValue(val any)
+	Js() any
+	SetJs(val any)
+	JsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type RulesetRulesActionParametersAutominifyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type RulesetRulesActionParametersAutominifyOutputReference interface {
 	ResetJs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Css() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Css() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"css",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Css() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) CssInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) CssInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cssInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Html() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Html() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"html",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Html()
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) HtmlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) HtmlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"htmlInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) HtmlIn
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Js() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Js() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"js",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Js() i
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) JsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) JsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Terraf
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersAutominifyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersAutominifyOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewRulesetRulesActionParametersAutominifyOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewRulesetRulesActionParametersAutominifyOutputReference_Override(r Ruleset
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetCss(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetCss(val any) {
 	if err := j.validateSetCssParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetCss(
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetHtml(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetHtml(val any) {
 	if err := j.validateSetHtmlParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetHtml
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetJs(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetJs(val any) {
 	if err := j.validateSetJsParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetJs(v
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Comput
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetLis
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Interp
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) ResetJ
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) ToStri
 
 	return returns
 }
-

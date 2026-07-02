@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetDisableStaleWhileUpdatingParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetDisableStaleWhileUpdatingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersServeStaleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewRulesetRulesActionParametersServeStaleOutputReferenceParameters(
 
 	return nil
 }
-

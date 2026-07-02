@@ -12,9 +12,9 @@ type WaitingRoomTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type WaitingRoomTimeoutsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type WaitingRoomTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type WaitingRoomTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_WaitingRoomTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) UpdateInput() *string {
 	return returns
 }
 
-
 func NewWaitingRoomTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WaitingRoomTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewWaitingRoomTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewWaitingRoomTimeoutsOutputReference_Override(w WaitingRoomTimeoutsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetCreate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_WaitingRoomTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (w *jsiiProxy_WaitingRoomTimeoutsOutputReference) ToString() *string {
 
 	return returns
 }
-

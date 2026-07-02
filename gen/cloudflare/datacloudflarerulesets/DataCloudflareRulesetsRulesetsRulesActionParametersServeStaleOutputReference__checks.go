@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersServeStale
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOut
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (l *jsiiProxy_ListItemValueRedirectList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_ListItemValueRedirectList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemValueRedirectList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewListItemValueRedirectListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

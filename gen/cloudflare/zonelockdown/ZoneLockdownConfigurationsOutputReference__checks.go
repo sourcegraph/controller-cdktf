@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneLockdownConfigurationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewZoneLockdownConfigurationsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

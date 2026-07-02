@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerMonitorHeaderList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerMonitorHeaderListParameters(terraformResource cdktf.
 
 	return nil
 }
-

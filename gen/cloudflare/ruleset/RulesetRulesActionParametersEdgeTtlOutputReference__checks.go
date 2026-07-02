@@ -90,7 +90,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateI
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validatePutStatusCodeTtlParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validatePutStatusCodeTtlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewRulesetRulesActionParametersEdgeTtlOutputReferenceParameters(ter
 
 	return nil
 }
-

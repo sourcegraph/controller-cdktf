@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessPolicyRequireOktaList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOktaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOktaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessPolicyRequireOktaListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
-		reflect.TypeOf((*AccessApplication)(nil)).Elem(),
+		reflect.TypeFor[AccessApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -123,15 +123,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig",
-		reflect.TypeOf((*AccessApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders",
-		reflect.TypeOf((*AccessApplicationCorsHeaders)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationCorsHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
-		reflect.TypeOf((*AccessApplicationCorsHeadersList)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationCorsHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessApplicationCorsHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -153,7 +153,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
-		reflect.TypeOf((*AccessApplicationCorsHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationCorsHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeaders", GoGetter: "AllowAllHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeadersInput", GoGetter: "AllowAllHeadersInput"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessApplicationCorsHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp",
-		reflect.TypeOf((*AccessApplicationSaasApp)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationSaasApp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
-		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessApplicationSaasAppOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

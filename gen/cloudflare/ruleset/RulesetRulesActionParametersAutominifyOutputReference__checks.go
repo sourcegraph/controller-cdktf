@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetCssParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetCssParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetHtmlParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetHtmlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetJsParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersAutominifyOutputReference) validateSetJsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewRulesetRulesActionParametersAutominifyOutputReferenceParameters(
 
 	return nil
 }
-

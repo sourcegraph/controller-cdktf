@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerRulesOverridesPopPoolsListParameters(terraformResour
 
 	return nil
 }
-

@@ -1,15 +1,14 @@
 package loadbalancer
 
-
 type LoadBalancerRulesOverrides struct {
 	// adaptive_routing block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
-	AdaptiveRouting interface{} `field:"optional" json:"adaptiveRouting" yaml:"adaptiveRouting"`
+	AdaptiveRouting any `field:"optional" json:"adaptiveRouting" yaml:"adaptiveRouting"`
 	// country_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
-	CountryPools interface{} `field:"optional" json:"countryPools" yaml:"countryPools"`
+	CountryPools any `field:"optional" json:"countryPools" yaml:"countryPools"`
 	// A list of pool IDs ordered by their failover priority. Used whenever [`pop_pools`](#pop_pools)/[`country_pools`](#country_pools)/[`region_pools`](#region_pools) are not defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
@@ -21,19 +20,19 @@ type LoadBalancerRulesOverrides struct {
 	// location_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
-	LocationStrategy interface{} `field:"optional" json:"locationStrategy" yaml:"locationStrategy"`
+	LocationStrategy any `field:"optional" json:"locationStrategy" yaml:"locationStrategy"`
 	// pop_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
-	PopPools interface{} `field:"optional" json:"popPools" yaml:"popPools"`
+	PopPools any `field:"optional" json:"popPools" yaml:"popPools"`
 	// random_steering block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
-	RandomSteering interface{} `field:"optional" json:"randomSteering" yaml:"randomSteering"`
+	RandomSteering any `field:"optional" json:"randomSteering" yaml:"randomSteering"`
 	// region_pools block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
-	RegionPools interface{} `field:"optional" json:"regionPools" yaml:"regionPools"`
+	RegionPools any `field:"optional" json:"regionPools" yaml:"regionPools"`
 	// Configure cookie attributes for session affinity cookie.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
@@ -41,7 +40,7 @@ type LoadBalancerRulesOverrides struct {
 	// session_affinity_attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
-	SessionAffinityAttributes interface{} `field:"optional" json:"sessionAffinityAttributes" yaml:"sessionAffinityAttributes"`
+	SessionAffinityAttributes any `field:"optional" json:"sessionAffinityAttributes" yaml:"sessionAffinityAttributes"`
 	// Time, in seconds, until this load balancer's session affinity cookie expires after being created.
 	//
 	// This parameter is ignored unless a supported session affinity policy is set. The current default of `82800` (23 hours) will be used unless [`session_affinity_ttl`](#session_affinity_ttl) is explicitly set. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. Valid values are between `1800` and `604800`.
@@ -61,4 +60,3 @@ type LoadBalancerRulesOverrides struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
-

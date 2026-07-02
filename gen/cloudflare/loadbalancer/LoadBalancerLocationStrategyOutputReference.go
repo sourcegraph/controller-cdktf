@@ -12,9 +12,9 @@ type LoadBalancerLocationStrategyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type LoadBalancerLocationStrategyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -46,7 +46,7 @@ type LoadBalancerLocationStrategyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type LoadBalancerLocationStrategyOutputReference interface {
 	ResetPreferEcs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_LoadBalancerLocationStrategyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewLoadBalancerLocationStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerLocationStrategyOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewLoadBalancerLocationStrategyOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewLoadBalancerLocationStrategyOutputReference_Override(l LoadBalancerLocat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetMode(val *stri
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetPreferEcs(val *string) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetPreferEcs(val *string) {
 	if err := j.validateSetPreferEcsParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetPreferEcs(val 
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerLocationStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) ResetPreferEcs()
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (l *jsiiProxy_LoadBalancerLocationStrategyOutputReference) ToString() *stri
 
 	return returns
 }
-

@@ -18,21 +18,21 @@ type FallbackDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Domains() FallbackDomainDomainsList
-	DomainsInput() interface{}
+	DomainsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,24 +58,24 @@ type FallbackDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type FallbackDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,30 +105,30 @@ type FallbackDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDomains(value interface{})
+	PutDomains(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FallbackDomain
@@ -166,8 +166,8 @@ func (j *jsiiProxy_FallbackDomain) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FallbackDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_FallbackDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FallbackDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_FallbackDomain) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FallbackDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_FallbackDomain) Domains() FallbackDomainDomainsList {
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) DomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FallbackDomain) DomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"domainsInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_FallbackDomain) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FallbackDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_FallbackDomain) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FallbackDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_FallbackDomain) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_FallbackDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FallbackDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_FallbackDomain) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/fallback_domain cloudflare_fallback_domain} Resource.
 func NewFallbackDomain(scope constructs.Construct, id *string, config *FallbackDomainConfig) FallbackDomain {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewFallbackDomain(scope constructs.Construct, id *string, config *FallbackD
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewFallbackDomain_Override(f FallbackDomain, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetAccountId(val *string) {
+func (j *jsiiProxy_FallbackDomain) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_FallbackDomain)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_FallbackDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_FallbackDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_FallbackDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_FallbackDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FallbackDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_FallbackDomain)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FallbackDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_FallbackDomain)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetId(val *string) {
+func (j *jsiiProxy_FallbackDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_FallbackDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FallbackDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_FallbackDomain)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetPolicyId(val *string) {
+func (j *jsiiProxy_FallbackDomain) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_FallbackDomain)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FallbackDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -496,7 +495,7 @@ func (j *jsiiProxy_FallbackDomain)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FallbackDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FallbackDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func FallbackDomain_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func FallbackDomain_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FallbackDomain_IsConstruct(x interface{}) *bool {
+func FallbackDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFallbackDomain_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func FallbackDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func FallbackDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FallbackDomain_IsTerraformElement(x interface{}) *bool {
+func FallbackDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFallbackDomain_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func FallbackDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func FallbackDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FallbackDomain_IsTerraformResource(x interface{}) *bool {
+func FallbackDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFallbackDomain_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func FallbackDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (f *jsiiProxy_FallbackDomain) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FallbackDomain) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FallbackDomain) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FallbackDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FallbackDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (f *jsiiProxy_FallbackDomain) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (f *jsiiProxy_FallbackDomain) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (f *jsiiProxy_FallbackDomain) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (f *jsiiProxy_FallbackDomain) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (f *jsiiProxy_FallbackDomain) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (f *jsiiProxy_FallbackDomain) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (f *jsiiProxy_FallbackDomain) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (f *jsiiProxy_FallbackDomain) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FallbackDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FallbackDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -796,7 +795,7 @@ func (f *jsiiProxy_FallbackDomain) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (f *jsiiProxy_FallbackDomain) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (f *jsiiProxy_FallbackDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FallbackDomain) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FallbackDomain) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (f *jsiiProxy_FallbackDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (f *jsiiProxy_FallbackDomain) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (f *jsiiProxy_FallbackDomain) PutDomains(value interface{}) {
+func (f *jsiiProxy_FallbackDomain) PutDomains(value any) {
 	if err := f.validatePutDomainsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putDomains",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (f *jsiiProxy_FallbackDomain) ResetPolicyId() {
 	)
 }
 
-func (f *jsiiProxy_FallbackDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FallbackDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -908,8 +907,8 @@ func (f *jsiiProxy_FallbackDomain) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (f *jsiiProxy_FallbackDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FallbackDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -921,8 +920,8 @@ func (f *jsiiProxy_FallbackDomain) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (f *jsiiProxy_FallbackDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FallbackDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -934,8 +933,8 @@ func (f *jsiiProxy_FallbackDomain) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FallbackDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FallbackDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -960,8 +959,8 @@ func (f *jsiiProxy_FallbackDomain) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FallbackDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FallbackDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -972,4 +971,3 @@ func (f *jsiiProxy_FallbackDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

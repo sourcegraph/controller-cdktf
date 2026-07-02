@@ -12,9 +12,9 @@ type LoadBalancerAdaptiveRoutingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type LoadBalancerAdaptiveRoutingOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FailoverAcrossPools() interface{}
-	SetFailoverAcrossPools(val interface{})
-	FailoverAcrossPoolsInput() interface{}
+	FailoverAcrossPools() any
+	SetFailoverAcrossPools(val any)
+	FailoverAcrossPoolsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type LoadBalancerAdaptiveRoutingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type LoadBalancerAdaptiveRoutingOutputReference interface {
 	ResetFailoverAcrossPools()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) FailoverAcrossPools() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) FailoverAcrossPools() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failoverAcrossPools",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) FailoverAcrossPoo
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) FailoverAcrossPoolsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) FailoverAcrossPoolsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failoverAcrossPoolsInput",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewLoadBalancerAdaptiveRoutingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerAdaptiveRoutingOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewLoadBalancerAdaptiveRoutingOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewLoadBalancerAdaptiveRoutingOutputReference_Override(l LoadBalancerAdapti
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerAdaptiveRoutingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetFailoverAcrossPools(val interface{}) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetFailoverAcrossPools(val any) {
 	if err := j.validateSetFailoverAcrossPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetFailoverAcrossP
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) ResetFailoverAcro
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) ToString() *strin
 
 	return returns
 }
-

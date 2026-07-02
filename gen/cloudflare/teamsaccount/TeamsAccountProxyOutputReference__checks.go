@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetInternalValuePar
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTcpParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTcpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTerraformResourc
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetUdpParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetUdpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

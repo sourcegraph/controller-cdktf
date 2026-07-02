@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpectrumApplicationOriginPortRangeOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationOriginPortRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpectrumApplicationOriginPortRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSpectrumApplicationOriginPortRangeOutputReferenceParameters(terr
 
 	return nil
 }
-

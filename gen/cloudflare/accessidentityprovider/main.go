@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
-		reflect.TypeOf((*AccessIdentityProvider)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessIdentityProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfig",
-		reflect.TypeOf((*AccessIdentityProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigA",
-		reflect.TypeOf((*AccessIdentityProviderConfigA)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
-		reflect.TypeOf((*AccessIdentityProviderConfigAList)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderConfigAList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessIdentityProviderConfigAList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
-		reflect.TypeOf((*AccessIdentityProviderConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiToken", GoGetter: "ApiToken"},
 			_jsii_.MemberProperty{JsiiProperty: "apiTokenInput", GoGetter: "ApiTokenInput"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenUrlInput", GoGetter: "TokenUrlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessIdentityProviderConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfig",
-		reflect.TypeOf((*AccessIdentityProviderScimConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderScimConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigList",
-		reflect.TypeOf((*AccessIdentityProviderScimConfigList)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderScimConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessIdentityProviderScimConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -239,7 +239,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
-		reflect.TypeOf((*AccessIdentityProviderScimConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessIdentityProviderScimConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDeprovision", GoGetter: "UserDeprovision"},
 			_jsii_.MemberProperty{JsiiProperty: "userDeprovisionInput", GoGetter: "UserDeprovisionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessIdentityProviderScimConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

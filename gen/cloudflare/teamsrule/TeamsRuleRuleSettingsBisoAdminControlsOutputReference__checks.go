@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableCopyPasteParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableCopyPasteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableDownloadParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableDownloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableKeyboardParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableKeyboardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisablePrintingParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisablePrintingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableUploadParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference) validateSetDisableUploadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,4 +298,3 @@ func validateNewTeamsRuleRuleSettingsBisoAdminControlsOutputReferenceParameters(
 
 	return nil
 }
-

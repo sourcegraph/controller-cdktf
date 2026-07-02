@@ -10,25 +10,25 @@ import (
 
 type AccessGroupRequireOutputReference interface {
 	cdktf.ComplexObject
-	AnyValidServiceToken() interface{}
-	SetAnyValidServiceToken(val interface{})
-	AnyValidServiceTokenInput() interface{}
+	AnyValidServiceToken() any
+	SetAnyValidServiceToken(val any)
+	AnyValidServiceTokenInput() any
 	AuthMethod() *string
 	SetAuthMethod(val *string)
 	AuthMethodInput() *string
 	Azure() AccessGroupRequireAzureList
-	AzureInput() interface{}
-	Certificate() interface{}
-	SetCertificate(val interface{})
-	CertificateInput() interface{}
+	AzureInput() any
+	Certificate() any
+	SetCertificate(val any)
+	CertificateInput() any
 	CommonName() *string
 	SetCommonName(val *string)
 	CommonNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,9 +48,9 @@ type AccessGroupRequireOutputReference interface {
 	SetEmailDomain(val *[]*string)
 	EmailDomainInput() *[]*string
 	EmailInput() *[]*string
-	Everyone() interface{}
-	SetEveryone(val interface{})
-	EveryoneInput() interface{}
+	Everyone() any
+	SetEveryone(val any)
+	EveryoneInput() any
 	ExternalEvaluation() AccessGroupRequireExternalEvaluationOutputReference
 	ExternalEvaluationInput() *AccessGroupRequireExternalEvaluation
 	// Experimental.
@@ -59,14 +59,14 @@ type AccessGroupRequireOutputReference interface {
 	SetGeo(val *[]*string)
 	GeoInput() *[]*string
 	Github() AccessGroupRequireGithubList
-	GithubInput() interface{}
+	GithubInput() any
 	Group() *[]*string
 	SetGroup(val *[]*string)
 	GroupInput() *[]*string
 	Gsuite() AccessGroupRequireGsuiteList
-	GsuiteInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	GsuiteInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Ip() *[]*string
 	SetIp(val *[]*string)
 	IpInput() *[]*string
@@ -77,9 +77,9 @@ type AccessGroupRequireOutputReference interface {
 	SetLoginMethod(val *[]*string)
 	LoginMethodInput() *[]*string
 	Okta() AccessGroupRequireOktaList
-	OktaInput() interface{}
+	OktaInput() any
 	Saml() AccessGroupRequireSamlList
-	SamlInput() interface{}
+	SamlInput() any
 	ServiceToken() *[]*string
 	SetServiceToken(val *[]*string)
 	ServiceTokenInput() *[]*string
@@ -94,7 +94,7 @@ type AccessGroupRequireOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,12 +115,12 @@ type AccessGroupRequireOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAzure(value interface{})
+	PutAzure(value any)
 	PutExternalEvaluation(value *AccessGroupRequireExternalEvaluation)
-	PutGithub(value interface{})
-	PutGsuite(value interface{})
-	PutOkta(value interface{})
-	PutSaml(value interface{})
+	PutGithub(value any)
+	PutGsuite(value any)
+	PutOkta(value any)
+	PutSaml(value any)
 	ResetAnyValidServiceToken()
 	ResetAuthMethod()
 	ResetAzure()
@@ -143,7 +143,7 @@ type AccessGroupRequireOutputReference interface {
 	ResetServiceToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,8 +156,8 @@ type jsiiProxy_AccessGroupRequireOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) AnyValidServiceToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) AnyValidServiceToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"anyValidServiceToken",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) AnyValidServiceToken() int
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) AnyValidServiceTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) AnyValidServiceTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"anyValidServiceTokenInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Azure() AccessGroupRequire
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) AzureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) AzureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) AzureInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) Certificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) Certificate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"certificate",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Certificate() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) CertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) CertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"certificateInput",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) CommonNameInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) EmailInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) Everyone() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) Everyone() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"everyone",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Everyone() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) EveryoneInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) EveryoneInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"everyoneInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Github() AccessGroupRequir
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) GithubInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) GithubInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"githubInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Gsuite() AccessGroupRequir
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) GsuiteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) GsuiteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gsuiteInput",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) GsuiteInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Okta() AccessGroupRequireO
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) OktaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) OktaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oktaInput",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) Saml() AccessGroupRequireS
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference) SamlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SamlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"samlInput",
@@ -626,7 +626,6 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewAccessGroupRequireOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupRequireOutputReference {
 	_init_.Initialize()
 
@@ -637,7 +636,7 @@ func NewAccessGroupRequireOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -649,12 +648,12 @@ func NewAccessGroupRequireOutputReference_Override(a AccessGroupRequireOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetAnyValidServiceToken(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetAnyValidServiceToken(val any) {
 	if err := j.validateSetAnyValidServiceTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetAnyValidServiceToken(val
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetAuthMethod(val *string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetAuthMethod(val *string) {
 	if err := j.validateSetAuthMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetAuthMethod(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetCertificate(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetCertificate(val any) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetCertificate(val interfac
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetCommonName(val *string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetCommonName(val *string) {
 	if err := j.validateSetCommonNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetCommonName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetDevicePosture(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetDevicePosture(val *[]*string) {
 	if err := j.validateSetDevicePostureParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetDevicePosture(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEmail(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetEmail(val *[]*string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEmail(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEmailDomain(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetEmailDomain(val *[]*string) {
 	if err := j.validateSetEmailDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEmailDomain(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEveryone(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetEveryone(val any) {
 	if err := j.validateSetEveryoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetEveryone(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetGeo(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetGeo(val *[]*string) {
 	if err := j.validateSetGeoParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetGeo(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetGroup(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetGroup(val *[]*string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetGroup(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetIp(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetIp(val *[]*string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetIp(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetIpList(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetIpList(val *[]*string) {
 	if err := j.validateSetIpListParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetIpList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetLoginMethod(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetLoginMethod(val *[]*string) {
 	if err := j.validateSetLoginMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetLoginMethod(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetServiceToken(val *[]*string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetServiceToken(val *[]*string) {
 	if err := j.validateSetServiceTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetServiceToken(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_AccessGroupRequireOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -876,16 +875,16 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,21 +1041,21 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) PutAzure(value interface{}) {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) PutAzure(value any) {
 	if err := a.validatePutAzureParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAzure",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1067,51 +1066,51 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) PutExternalEvaluation(valu
 	_jsii_.InvokeVoid(
 		a,
 		"putExternalEvaluation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) PutGithub(value interface{}) {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) PutGithub(value any) {
 	if err := a.validatePutGithubParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGithub",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) PutGsuite(value interface{}) {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) PutGsuite(value any) {
 	if err := a.validatePutGsuiteParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putGsuite",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) PutOkta(value interface{}) {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) PutOkta(value any) {
 	if err := a.validatePutOktaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOkta",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) PutSaml(value interface{}) {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) PutSaml(value any) {
 	if err := a.validatePutSamlParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putSaml",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,16 +1274,16 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) ResetServiceToken() {
 	)
 }
 
-func (a *jsiiProxy_AccessGroupRequireOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessGroupRequireOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1303,4 +1302,3 @@ func (a *jsiiProxy_AccessGroupRequireOutputReference) ToString() *string {
 
 	return returns
 }
-

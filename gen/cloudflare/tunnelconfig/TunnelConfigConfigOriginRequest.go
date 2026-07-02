@@ -1,11 +1,10 @@
 package tunnelconfig
 
-
 type TunnelConfigConfigOriginRequest struct {
 	// Runs as jump host.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#bastion_mode TunnelConfigA#bastion_mode}
-	BastionMode interface{} `field:"optional" json:"bastionMode" yaml:"bastionMode"`
+	BastionMode any `field:"optional" json:"bastionMode" yaml:"bastionMode"`
 	// Path to the certificate authority (CA) for the certificate of your origin.
 	//
 	// This option should be used only if your certificate is not signed by Cloudflare. Defaults to `""`.
@@ -21,7 +20,7 @@ type TunnelConfigConfigOriginRequest struct {
 	// Disables chunked transfer encoding. Useful if you are running a Web Server Gateway Interface (WSGI) server. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#disable_chunked_encoding TunnelConfigA#disable_chunked_encoding}
-	DisableChunkedEncoding interface{} `field:"optional" json:"disableChunkedEncoding" yaml:"disableChunkedEncoding"`
+	DisableChunkedEncoding any `field:"optional" json:"disableChunkedEncoding" yaml:"disableChunkedEncoding"`
 	// Sets the HTTP Host header on requests sent to the local service. Defaults to `""`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#http_host_header TunnelConfigA#http_host_header}
@@ -29,7 +28,7 @@ type TunnelConfigConfigOriginRequest struct {
 	// ip_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ip_rules TunnelConfigA#ip_rules}
-	IpRules interface{} `field:"optional" json:"ipRules" yaml:"ipRules"`
+	IpRules any `field:"optional" json:"ipRules" yaml:"ipRules"`
 	// Maximum number of idle keepalive connections between Tunnel and your origin.
 	//
 	// This does not restrict the total number of concurrent connections. Defaults to `100`.
@@ -45,13 +44,13 @@ type TunnelConfigConfigOriginRequest struct {
 	// Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#no_happy_eyeballs TunnelConfigA#no_happy_eyeballs}
-	NoHappyEyeballs interface{} `field:"optional" json:"noHappyEyeballs" yaml:"noHappyEyeballs"`
+	NoHappyEyeballs any `field:"optional" json:"noHappyEyeballs" yaml:"noHappyEyeballs"`
 	// Disables TLS verification of the certificate presented by your origin.
 	//
 	// Will allow any certificate from the origin to be accepted. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#no_tls_verify TunnelConfigA#no_tls_verify}
-	NoTlsVerify interface{} `field:"optional" json:"noTlsVerify" yaml:"noTlsVerify"`
+	NoTlsVerify any `field:"optional" json:"noTlsVerify" yaml:"noTlsVerify"`
 	// Hostname that cloudflared should expect from your origin server certificate. Defaults to `""`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#origin_server_name TunnelConfigA#origin_server_name}
@@ -87,4 +86,3 @@ type TunnelConfigConfigOriginRequest struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#tls_timeout TunnelConfigA#tls_timeout}
 	TlsTimeout *string `field:"optional" json:"tlsTimeout" yaml:"tlsTimeout"`
 }
-

@@ -34,7 +34,7 @@ func (w *jsiiProxy_WaitingRoomRulesRulesList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomRulesRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWaitingRoomRulesRulesListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

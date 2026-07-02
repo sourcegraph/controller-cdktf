@@ -15,9 +15,9 @@ type PagesProjectBuildConfigOutputReference interface {
 	BuildCommandInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type PagesProjectBuildConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type PagesProjectBuildConfigOutputReference interface {
 	ResetWebAnalyticsToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) BuildCommandInput() *
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) WebAnalyticsTokenInpu
 	return returns
 }
 
-
 func NewPagesProjectBuildConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectBuildConfigOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewPagesProjectBuildConfigOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewPagesProjectBuildConfigOutputReference_Override(p PagesProjectBuildConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pagesProject.PagesProjectBuildConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetBuildCommand(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetBuildCommand(val *string) {
 	if err := j.validateSetBuildCommandParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetBuildCommand(val *s
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetDestinationDir(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetDestinationDir(val *string) {
 	if err := j.validateSetDestinationDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetDestinationDir(val 
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val *PagesProjectBuildConfig) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetInternalValue(val *PagesProjectBuildConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetRootDir(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetRootDir(val *string) {
 	if err := j.validateSetRootDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetRootDir(val *string
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetWebAnalyticsTag(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetWebAnalyticsTag(val *string) {
 	if err := j.validateSetWebAnalyticsTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetWebAnalyticsTag(val
 	)
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference)SetWebAnalyticsToken(val *string) {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) SetWebAnalyticsToken(val *string) {
 	if err := j.validateSetWebAnalyticsTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) ResetWebAnalyticsToke
 	)
 }
 
-func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

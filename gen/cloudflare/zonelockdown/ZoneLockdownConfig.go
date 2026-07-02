@@ -6,9 +6,9 @@ import (
 
 type ZoneLockdownConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type ZoneLockdownConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// configurations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown#configurations ZoneLockdown#configurations}
-	Configurations interface{} `field:"required" json:"configurations" yaml:"configurations"`
+	Configurations any `field:"required" json:"configurations" yaml:"configurations"`
 	// A list of simple wildcard patterns to match requests against. The order of the urls is unimportant.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown#urls ZoneLockdown#urls}
@@ -43,8 +43,7 @@ type ZoneLockdownConfig struct {
 	// Boolean of whether this zone lockdown is currently paused. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown#paused ZoneLockdown#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone_lockdown#priority ZoneLockdown#priority}.
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 }
-

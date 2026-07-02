@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessGroupRequireList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupRequireList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupRequireList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessGroupRequireListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

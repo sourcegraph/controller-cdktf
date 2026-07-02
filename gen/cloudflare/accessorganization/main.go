@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
-		reflect.TypeOf((*AccessOrganization)(nil)).Elem(),
+		reflect.TypeFor[AccessOrganization](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessOrganization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationConfig",
-		reflect.TypeOf((*AccessOrganizationConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessOrganizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesign",
-		reflect.TypeOf((*AccessOrganizationLoginDesign)(nil)).Elem(),
+		reflect.TypeFor[AccessOrganizationLoginDesign](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignList",
-		reflect.TypeOf((*AccessOrganizationLoginDesignList)(nil)).Elem(),
+		reflect.TypeFor[AccessOrganizationLoginDesignList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessOrganizationLoginDesignList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
-		reflect.TypeOf((*AccessOrganizationLoginDesignOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessOrganizationLoginDesignOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColorInput", GoGetter: "BackgroundColorInput"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textColorInput", GoGetter: "TextColorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessOrganizationLoginDesignOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

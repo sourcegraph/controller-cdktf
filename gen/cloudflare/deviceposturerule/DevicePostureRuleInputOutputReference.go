@@ -15,9 +15,9 @@ type DevicePostureRuleInputOutputReference interface {
 	CheckDisksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,19 +37,19 @@ type DevicePostureRuleInputOutputReference interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	Exists() interface{}
-	SetExists(val interface{})
-	ExistsInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	Exists() any
+	SetExists(val any)
+	ExistsInput() any
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
@@ -68,12 +68,12 @@ type DevicePostureRuleInputOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	RequireAll() interface{}
-	SetRequireAll(val interface{})
-	RequireAllInput() interface{}
-	Running() interface{}
-	SetRunning(val interface{})
-	RunningInput() interface{}
+	RequireAll() any
+	SetRequireAll(val any)
+	RequireAllInput() any
+	Running() any
+	SetRunning(val any)
+	RunningInput() any
 	SensorConfig() *string
 	SetSensorConfig(val *string)
 	SensorConfigInput() *string
@@ -100,7 +100,7 @@ type DevicePostureRuleInputOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type DevicePostureRuleInputOutputReference interface {
 	ResetVersionOperator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) CheckDisksInput() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) DomainInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Enabled() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) EnabledInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Exists() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Exists() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exists",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Exists() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ExistsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) ExistsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"existsInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) PathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAll() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAll() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAll",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAll() interface
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireAllInput",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RequireAllInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Running() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Running() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"running",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) Running() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RunningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) RunningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runningInput",
@@ -626,7 +626,6 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) VersionOperatorInput()
 	return returns
 }
 
-
 func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DevicePostureRuleInputOutputReference {
 	_init_.Initialize()
 
@@ -637,7 +636,7 @@ func NewDevicePostureRuleInputOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -649,12 +648,12 @@ func NewDevicePostureRuleInputOutputReference_Override(d DevicePostureRuleInputO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetCheckDisks(val *[]*string) {
 	if err := j.validateSetCheckDisksParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetCheckDisks(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplianceStatus(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetComplianceStatus(val *string) {
 	if err := j.validateSetComplianceStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetComplianceStatus(val
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetConnectionId(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetConnectionId(val *string) {
 	if err := j.validateSetConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetConnectionId(val *st
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetDomain(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetExists(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetExists(val any) {
 	if err := j.validateSetExistsParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetExists(val interface
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetId(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOperator(val *string) {
 	if err := j.validateSetOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOperator(val *string
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOs(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroName(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOsDistroName(val *string) {
 	if err := j.validateSetOsDistroNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroName(val *st
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOsDistroRevision(val *string) {
 	if err := j.validateSetOsDistroRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOsDistroRevision(val
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOverall(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetOverall(val *string) {
 	if err := j.validateSetOverallParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetOverall(val *string)
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRequireAll(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRequireAll(val any) {
 	if err := j.validateSetRequireAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRequireAll(val inter
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interface{}) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetRunning(val any) {
 	if err := j.validateSetRunningParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetRunning(val interfac
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSensorConfig(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetSensorConfig(val *string) {
 	if err := j.validateSetSensorConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSensorConfig(val *st
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSha256(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetSha256(val *string) {
 	if err := j.validateSetSha256Parameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetSha256(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetThumbprint(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetThumbprint(val *string) {
 	if err := j.validateSetThumbprintParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetThumbprint(val *stri
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersion(val *string)
 	)
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference)SetVersionOperator(val *string) {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) SetVersionOperator(val *string) {
 	if err := j.validateSetVersionOperatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,16 +941,16 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,7 +1078,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1275,16 +1274,16 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ResetVersionOperator()
 	)
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1303,4 +1302,3 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) ToString() *string {
 
 	return returns
 }
-

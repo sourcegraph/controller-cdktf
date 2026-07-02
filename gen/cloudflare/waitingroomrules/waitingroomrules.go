@@ -15,15 +15,15 @@ type WaitingRoomRules interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,17 +50,17 @@ type WaitingRoomRules interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() WaitingRoomRulesRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WaitingRoomId() *string
@@ -73,9 +73,9 @@ type WaitingRoomRules interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type WaitingRoomRules interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,30 +105,30 @@ type WaitingRoomRules interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRules(value interface{})
+	PutRules(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRules()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WaitingRoomRules
@@ -146,8 +146,8 @@ func (j *jsiiProxy_WaitingRoomRules) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomRules) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_WaitingRoomRules) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WaitingRoomRules) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_WaitingRoomRules) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomRules) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_WaitingRoomRules) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WaitingRoomRules) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_WaitingRoomRules) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomRules) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_WaitingRoomRules) Rules() WaitingRoomRulesRulesList {
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaitingRoomRules) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_WaitingRoomRules) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_WaitingRoomRules) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WaitingRoomRules) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_WaitingRoomRules) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room_rules cloudflare_waiting_room_rules} Resource.
 func NewWaitingRoomRules(scope constructs.Construct, id *string, config *WaitingRoomRulesConfig) WaitingRoomRules {
 	_init_.Initialize()
@@ -388,7 +387,7 @@ func NewWaitingRoomRules(scope constructs.Construct, id *string, config *Waiting
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewWaitingRoomRules_Override(w WaitingRoomRules, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetConnection(val interface{}) {
+func (j *jsiiProxy_WaitingRoomRules) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetCount(val interface{}) {
+func (j *jsiiProxy_WaitingRoomRules) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WaitingRoomRules) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WaitingRoomRules) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetId(val *string) {
+func (j *jsiiProxy_WaitingRoomRules) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WaitingRoomRules) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WaitingRoomRules) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +473,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WaitingRoomRules) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetWaitingRoomId(val *string) {
+func (j *jsiiProxy_WaitingRoomRules) SetWaitingRoomId(val *string) {
 	if err := j.validateSetWaitingRoomIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_WaitingRoomRules)SetWaitingRoomId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WaitingRoomRules)SetZoneId(val *string) {
+func (j *jsiiProxy_WaitingRoomRules) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func WaitingRoomRules_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func WaitingRoomRules_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WaitingRoomRules_IsConstruct(x interface{}) *bool {
+func WaitingRoomRules_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWaitingRoomRules_IsConstructParameters(x); err != nil {
@@ -554,7 +553,7 @@ func WaitingRoomRules_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func WaitingRoomRules_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WaitingRoomRules_IsTerraformElement(x interface{}) *bool {
+func WaitingRoomRules_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWaitingRoomRules_IsTerraformElementParameters(x); err != nil {
@@ -573,7 +572,7 @@ func WaitingRoomRules_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func WaitingRoomRules_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WaitingRoomRules_IsTerraformResource(x interface{}) *bool {
+func WaitingRoomRules_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWaitingRoomRules_IsTerraformResourceParameters(x); err != nil {
@@ -592,7 +591,7 @@ func WaitingRoomRules_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,31 +616,31 @@ func (w *jsiiProxy_WaitingRoomRules) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WaitingRoomRules) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WaitingRoomRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (w *jsiiProxy_WaitingRoomRules) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,15 +768,15 @@ func (w *jsiiProxy_WaitingRoomRules) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomRules) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WaitingRoomRules) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -796,7 +795,7 @@ func (w *jsiiProxy_WaitingRoomRules) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -809,7 +808,7 @@ func (w *jsiiProxy_WaitingRoomRules) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,18 +822,18 @@ func (w *jsiiProxy_WaitingRoomRules) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WaitingRoomRules) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -845,7 +844,7 @@ func (w *jsiiProxy_WaitingRoomRules) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -856,18 +855,18 @@ func (w *jsiiProxy_WaitingRoomRules) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) PutRules(value interface{}) {
+func (w *jsiiProxy_WaitingRoomRules) PutRules(value any) {
 	if err := w.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (w *jsiiProxy_WaitingRoomRules) ResetRules() {
 	)
 }
 
-func (w *jsiiProxy_WaitingRoomRules) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WaitingRoomRules) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -908,8 +907,8 @@ func (w *jsiiProxy_WaitingRoomRules) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomRules) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WaitingRoomRules) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -921,8 +920,8 @@ func (w *jsiiProxy_WaitingRoomRules) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomRules) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WaitingRoomRules) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -934,8 +933,8 @@ func (w *jsiiProxy_WaitingRoomRules) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomRules) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WaitingRoomRules) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -960,8 +959,8 @@ func (w *jsiiProxy_WaitingRoomRules) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WaitingRoomRules) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WaitingRoomRules) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -972,4 +971,3 @@ func (w *jsiiProxy_WaitingRoomRules) ToTerraform() interface{} {
 
 	return returns
 }
-

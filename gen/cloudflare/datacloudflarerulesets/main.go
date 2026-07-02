@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
-		reflect.TypeOf((*DataCloudflareRulesets)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesets](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesets{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,15 +70,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsConfig",
-		reflect.TypeOf((*DataCloudflareRulesetsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilter",
-		reflect.TypeOf((*DataCloudflareRulesetsFilter)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsFilterOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,11 +125,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesets",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesets)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -150,7 +150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,19 +189,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRules",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRules)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParameters",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParameters)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominify",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersAutominify)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersAutominify](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -222,7 +222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersAutominifyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersBrowserTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,19 +316,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKey](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKey](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookie](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -349,7 +349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyCookieOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -383,11 +383,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -408,7 +408,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,11 +443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHost](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -460,7 +460,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -468,7 +468,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -493,7 +493,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyHostOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -501,7 +501,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -514,7 +514,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -522,7 +522,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -551,7 +551,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -559,11 +559,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryString](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -576,7 +576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -584,7 +584,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -610,7 +610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -618,11 +618,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -635,7 +635,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -643,7 +643,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -670,7 +670,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -678,7 +678,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -691,7 +691,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -699,7 +699,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheByDeviceType", GoGetter: "CacheByDeviceType"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheDeceptionArmor", GoGetter: "CacheDeceptionArmor"},
@@ -727,7 +727,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -735,11 +735,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -752,7 +752,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -760,7 +760,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -787,7 +787,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -795,11 +795,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -812,7 +812,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -820,7 +820,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,11 +855,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -872,7 +872,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -880,7 +880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -906,7 +906,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -914,11 +914,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -931,7 +931,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -939,7 +939,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -965,7 +965,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -973,11 +973,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValue",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValue)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -990,7 +990,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -998,7 +998,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1025,7 +1025,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1033,11 +1033,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrl](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1050,7 +1050,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1058,7 +1058,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1084,7 +1084,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersFromValueTargetUrlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1092,11 +1092,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeaders",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersHeaders)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1109,7 +1109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1117,7 +1117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1145,7 +1145,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1153,7 +1153,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1166,7 +1166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1174,11 +1174,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersMatchedData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1191,7 +1191,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1199,7 +1199,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1224,7 +1224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersMatchedDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1232,11 +1232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOrigin",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOrigin)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOrigin](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOriginList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOriginList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1249,7 +1249,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOriginList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1257,7 +1257,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1283,7 +1283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOriginOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1291,7 +1291,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticHttpsRewrites", GoGetter: "AutomaticHttpsRewrites"},
 			_jsii_.MemberProperty{JsiiProperty: "autominify", GoGetter: "Autominify"},
@@ -1362,7 +1362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1370,15 +1370,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverrides",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverrides)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverrides](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategories](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1391,7 +1391,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1399,7 +1399,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -1427,7 +1427,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1435,7 +1435,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1448,7 +1448,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1456,7 +1456,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "categories", GoGetter: "Categories"},
@@ -1486,7 +1486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1494,11 +1494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1511,7 +1511,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1519,7 +1519,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1549,7 +1549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1557,11 +1557,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponse",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersResponse)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponseList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersResponseList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersResponseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1574,7 +1574,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersResponseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1582,7 +1582,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1609,7 +1609,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1617,11 +1617,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStale",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersServeStale)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersServeStale](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1634,7 +1634,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1642,7 +1642,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1667,7 +1667,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersServeStaleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1675,11 +1675,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSni",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersSni)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersSni](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSniList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersSniList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersSniList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1692,7 +1692,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersSniList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1700,7 +1700,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1725,7 +1725,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersSniOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1733,11 +1733,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUri",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUri)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUri](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1750,7 +1750,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1758,7 +1758,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1785,7 +1785,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1793,11 +1793,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPath",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriPath)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1810,7 +1810,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1818,7 +1818,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1844,7 +1844,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1852,11 +1852,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1869,7 +1869,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1877,7 +1877,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1903,7 +1903,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1911,11 +1911,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesExposedCredentialCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1928,7 +1928,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1936,7 +1936,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1962,7 +1962,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameExpression", GoGetter: "UsernameExpression"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesExposedCredentialCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1970,7 +1970,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1983,7 +1983,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1991,11 +1991,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLogging",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesLogging)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesLogging](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesLoggingList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesLoggingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2008,7 +2008,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesLoggingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2016,7 +2016,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesLoggingOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesLoggingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesLoggingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2042,7 +2042,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesLoggingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2050,7 +2050,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionParameters", GoGetter: "ActionParameters"},
@@ -2086,7 +2086,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2094,11 +2094,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimit",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesRatelimit)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesRatelimit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesRatelimitList)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesRatelimitList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2111,7 +2111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesRatelimitList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2119,7 +2119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference",
-		reflect.TypeOf((*DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "characteristics", GoGetter: "Characteristics"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2151,7 +2151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesRatelimitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

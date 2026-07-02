@@ -17,8 +17,8 @@ type LoadBalancerRulesOverridesAdaptiveRoutingList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LoadBalancerRulesOverridesAdaptiveRoutingList interface {
 	Get(index *float64) LoadBalancerRulesOverridesAdaptiveRoutingOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewLoadBalancerRulesOverridesAdaptiveRoutingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRulesOverridesAdaptiveRoutingList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLoadBalancerRulesOverridesAdaptiveRoutingList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLoadBalancerRulesOverridesAdaptiveRoutingList_Override(l LoadBalancerRul
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) AllWithMapKey(
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) Get(index *flo
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) ToString() *st
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PasswordExpression() *string
 	SetPasswordExpression(val *string)
 	PasswordExpressionInput() *string
@@ -46,7 +46,7 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type RulesetRulesExposedCredentialCheckOutputReference interface {
 	ResetUsernameExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) UsernameEx
 	return returns
 }
 
-
 func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesExposedCredentialCheckOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRule
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetPasswordExpression(val *string) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetPasswordExpression(val *string) {
 	if err := j.validateSetPasswordExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetPassword
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference)SetUsernameExpression(val *string) {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) SetUsernameExpression(val *string) {
 	if err := j.validateSetUsernameExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ComputeFqn
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetBoolean
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetBoolean
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetListAtt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetNumberA
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetNumberL
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetNumberM
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetStringA
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) GetStringM
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Interpolat
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ResetUsern
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) ToString()
 
 	return returns
 }
-

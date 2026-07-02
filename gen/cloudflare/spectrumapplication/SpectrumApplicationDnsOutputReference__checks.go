@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpectrumApplicationDnsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpectrumApplicationDnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSpectrumApplicationDnsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

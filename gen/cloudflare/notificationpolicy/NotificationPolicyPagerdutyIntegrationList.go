@@ -17,8 +17,8 @@ type NotificationPolicyPagerdutyIntegrationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NotificationPolicyPagerdutyIntegrationList interface {
 	Get(index *float64) NotificationPolicyPagerdutyIntegrationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewNotificationPolicyPagerdutyIntegrationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyPagerdutyIntegrationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNotificationPolicyPagerdutyIntegrationList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNotificationPolicyPagerdutyIntegrationList_Override(n NotificationPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) AllWithMapKey(map
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Get(index *float6
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) ToString() *strin
 
 	return returns
 }
-

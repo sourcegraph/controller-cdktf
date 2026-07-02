@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRules struct {
 	// Criteria for an HTTP request to trigger the ruleset rule action.
 	//
@@ -17,7 +16,7 @@ type RulesetRules struct {
 	// action_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
-	ActionParameters interface{} `field:"optional" json:"actionParameters" yaml:"actionParameters"`
+	ActionParameters any `field:"optional" json:"actionParameters" yaml:"actionParameters"`
 	// Brief summary of the ruleset rule and its intended use.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#description Ruleset#description}
@@ -25,11 +24,11 @@ type RulesetRules struct {
 	// Whether the rule is active.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// exposed_credential_check block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
-	ExposedCredentialCheck interface{} `field:"optional" json:"exposedCredentialCheck" yaml:"exposedCredentialCheck"`
+	ExposedCredentialCheck any `field:"optional" json:"exposedCredentialCheck" yaml:"exposedCredentialCheck"`
 	// Unique rule identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#id Ruleset#id}
@@ -44,11 +43,11 @@ type RulesetRules struct {
 	// logging block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#logging Ruleset#logging}
-	Logging interface{} `field:"optional" json:"logging" yaml:"logging"`
+	Logging any `field:"optional" json:"logging" yaml:"logging"`
 	// ratelimit block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
-	Ratelimit interface{} `field:"optional" json:"ratelimit" yaml:"ratelimit"`
+	Ratelimit any `field:"optional" json:"ratelimit" yaml:"ratelimit"`
 	// Rule reference.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#ref Ruleset#ref}
@@ -58,4 +57,3 @@ type RulesetRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#version Ruleset#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

@@ -12,9 +12,9 @@ type LoadBalancerPoolLoadSheddingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type LoadBalancerPoolLoadSheddingOutputReference interface {
 	DefaultPolicyInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SessionPercent() *float64
 	SetSessionPercent(val *float64)
 	SessionPercentInput() *float64
@@ -52,7 +52,7 @@ type LoadBalancerPoolLoadSheddingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type LoadBalancerPoolLoadSheddingOutputReference interface {
 	ResetSessionPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewLoadBalancerPoolLoadSheddingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPoolLoadSheddingOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewLoadBalancerPoolLoadSheddingOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewLoadBalancerPoolLoadSheddingOutputReference_Override(l LoadBalancerPoolL
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetDefaultPercent(val *float64) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetDefaultPercent(val *float64) {
 	if err := j.validateSetDefaultPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetDefaultPercent
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetDefaultPolicy(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetDefaultPolicy(val *string) {
 	if err := j.validateSetDefaultPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetDefaultPolicy(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetSessionPercent(val *float64) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetSessionPercent(val *float64) {
 	if err := j.validateSetSessionPercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetSessionPercent
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetSessionPolicy(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetSessionPolicy(val *string) {
 	if err := j.validateSetSessionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetSessionPolicy(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) ResetSessionPoli
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (l *jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference) ToString() *stri
 
 	return returns
 }
-

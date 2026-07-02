@@ -98,7 +98,7 @@ func (f *jsiiProxy_FallbackDomainDomainsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetDnsServerPar
 	return nil
 }
 
-func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FallbackDomainDomainsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFallbackDomainDomainsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

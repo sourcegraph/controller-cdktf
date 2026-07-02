@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerRulesList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerRulesListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

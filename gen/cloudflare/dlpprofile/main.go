@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfile",
-		reflect.TypeOf((*DlpProfile)(nil)).Elem(),
+		reflect.TypeFor[DlpProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DlpProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileConfig",
-		reflect.TypeOf((*DlpProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntry",
-		reflect.TypeOf((*DlpProfileEntry)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileEntry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryList",
-		reflect.TypeOf((*DlpProfileEntryList)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileEntryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DlpProfileEntryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -108,7 +108,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryOutputReference",
-		reflect.TypeOf((*DlpProfileEntryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileEntryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DlpProfileEntryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPattern",
-		reflect.TypeOf((*DlpProfileEntryPattern)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileEntryPattern](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
-		reflect.TypeOf((*DlpProfileEntryPatternOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DlpProfileEntryPatternOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DlpProfileEntryPatternOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

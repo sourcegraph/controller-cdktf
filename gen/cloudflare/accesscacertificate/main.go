@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
-		reflect.TypeOf((*AccessCaCertificate)(nil)).Elem(),
+		reflect.TypeFor[AccessCaCertificate](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessCaCertificate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig",
-		reflect.TypeOf((*AccessCaCertificateConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessCaCertificateConfig](),
 	)
 }

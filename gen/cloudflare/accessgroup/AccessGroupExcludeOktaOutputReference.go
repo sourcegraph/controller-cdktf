@@ -12,9 +12,9 @@ type AccessGroupExcludeOktaOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AccessGroupExcludeOktaOutputReference interface {
 	IdentityProviderId() *string
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *[]*string
 	SetName(val *[]*string)
 	NameInput() *[]*string
@@ -46,7 +46,7 @@ type AccessGroupExcludeOktaOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AccessGroupExcludeOktaOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_AccessGroupExcludeOktaOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) IdentityProviderIdInpu
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewAccessGroupExcludeOktaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupExcludeOktaOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAccessGroupExcludeOktaOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAccessGroupExcludeOktaOutputReference_Override(a AccessGroupExcludeOktaO
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetIdentityProviderId(val *string) {
 	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetIdentityProviderId(v
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetName(val *[]*string) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetName(val *[]*string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetName(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupExcludeOktaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) ResetName() {
 	)
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AccessGroupExcludeOktaOutputReference) ToString() *string {
 
 	return returns
 }
-

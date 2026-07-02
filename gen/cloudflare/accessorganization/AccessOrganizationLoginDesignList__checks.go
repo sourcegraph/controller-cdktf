@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganizationLoginDesignList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessOrganizationLoginDesignListParameters(terraformResource cd
 
 	return nil
 }
-

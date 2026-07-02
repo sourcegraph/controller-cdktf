@@ -106,7 +106,7 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetApproval
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetEmailLis
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyApprovalGroupOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAccessPolicyApprovalGroupOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

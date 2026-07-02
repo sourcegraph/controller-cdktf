@@ -34,7 +34,7 @@ func (e *jsiiProxy_EmailRoutingCatchAllMatcherList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingCatchAllMatcherList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingCatchAllMatcherList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEmailRoutingCatchAllMatcherListParameters(terraformResource cdkt
 
 	return nil
 }
-

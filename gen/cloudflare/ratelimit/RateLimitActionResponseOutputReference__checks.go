@@ -106,7 +106,7 @@ func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetBodyParame
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitActionResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewRateLimitActionResponseOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

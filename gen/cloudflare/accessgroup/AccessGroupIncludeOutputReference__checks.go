@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validateInterpolationForAt
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutAzureParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutAzureParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutExternalEvaluat
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGithubParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGithubParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGithubParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGsuiteParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGsuiteParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutGsuiteParameter
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutOktaParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutOktaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -225,7 +225,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutOktaParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutSamlParameters(value interface{}) error {
+func (a *jsiiProxy_AccessGroupIncludeOutputReference) validatePutSamlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (a *jsiiProxy_AccessGroupIncludeOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetAnyValidServiceTokenParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetAnyValidServiceTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetAuthMethodParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetCertificateParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetCertificateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetCommonNameParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetEmailDomainPara
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetEveryoneParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetEveryoneParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetGroupParameters
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -536,4 +536,3 @@ func validateNewAccessGroupIncludeOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

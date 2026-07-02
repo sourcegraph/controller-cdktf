@@ -98,7 +98,7 @@ func (r *jsiiProxy_RateLimitMatchResponseOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetInternalVal
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetOriginTrafficParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchResponseOutputReference) validateSetOriginTrafficParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewRateLimitMatchResponseOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

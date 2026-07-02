@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTrigger",
-		reflect.TypeOf((*WorkerCronTrigger)(nil)).Elem(),
+		reflect.TypeFor[WorkerCronTrigger](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkerCronTrigger{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.workerCronTrigger.WorkerCronTriggerConfig",
-		reflect.TypeOf((*WorkerCronTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkerCronTriggerConfig](),
 	)
 }

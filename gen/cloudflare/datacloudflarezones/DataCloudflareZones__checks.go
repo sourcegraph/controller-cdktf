@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataCloudflareZones) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCloudflareZones) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func validateDataCloudflareZones_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateDataCloudflareZones_IsConstructParameters(x interface{}) error {
+func validateDataCloudflareZones_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func validateDataCloudflareZones_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCloudflareZones_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataCloudflareZones_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -154,7 +154,7 @@ func validateDataCloudflareZones_IsTerraformDataSourceParameters(x interface{}) 
 	return nil
 }
 
-func validateDataCloudflareZones_IsTerraformElementParameters(x interface{}) error {
+func validateDataCloudflareZones_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func validateDataCloudflareZones_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZones) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZones) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDataCloudflareZonesParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

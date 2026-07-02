@@ -6,9 +6,9 @@ import (
 
 type SpectrumApplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SpectrumApplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// dns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
@@ -34,7 +34,7 @@ type SpectrumApplicationConfig struct {
 	// Enables Argo Smart Routing. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
-	ArgoSmartRouting interface{} `field:"optional" json:"argoSmartRouting" yaml:"argoSmartRouting"`
+	ArgoSmartRouting any `field:"optional" json:"argoSmartRouting" yaml:"argoSmartRouting"`
 	// edge_ips block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
@@ -47,7 +47,7 @@ type SpectrumApplicationConfig struct {
 	// Enables the IP Firewall for this application. Defaults to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
-	IpFirewall interface{} `field:"optional" json:"ipFirewall" yaml:"ipFirewall"`
+	IpFirewall any `field:"optional" json:"ipFirewall" yaml:"ipFirewall"`
 	// A list of destination addresses to the origin. e.g. `tcp://192.0.2.1:22`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
@@ -77,4 +77,3 @@ type SpectrumApplicationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
 	TrafficType *string `field:"optional" json:"trafficType" yaml:"trafficType"`
 }
-

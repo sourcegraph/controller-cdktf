@@ -153,7 +153,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewPageRuleActionsCacheKeyFieldsOutputReferenceParameters(terraform
 
 	return nil
 }
-

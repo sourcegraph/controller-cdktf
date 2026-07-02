@@ -90,7 +90,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateInter
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validatePutIpRulesParameters(value interface{}) error {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validatePutIpRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetBastionModeParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetBastionModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -157,7 +157,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetCa
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,7 +230,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetDisableChunkedEncodingParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetDisableChunkedEncodingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetKe
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetNoHappyEyeballsParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetNoHappyEyeballsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetNo
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetNoTlsVerifyParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) validateSetNoTlsVerifyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,4 +397,3 @@ func validateNewTunnelConfigConfigOriginRequestOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetIncludeSubdomainsParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetIncludeSubdomainsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetNosniffParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetNosniffParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetPreloadParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) validateSetPreloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewZoneSettingsOverrideSettingsSecurityHeaderOutputReferenceParamet
 
 	return nil
 }
-

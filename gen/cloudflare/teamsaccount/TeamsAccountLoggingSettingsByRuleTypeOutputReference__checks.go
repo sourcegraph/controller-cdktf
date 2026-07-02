@@ -131,7 +131,7 @@ func (t *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewTeamsAccountLoggingSettingsByRuleTypeOutputReferenceParameters(t
 
 	return nil
 }
-

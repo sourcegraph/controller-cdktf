@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersCacheKeyListParameters(terraformReso
 
 	return nil
 }
-

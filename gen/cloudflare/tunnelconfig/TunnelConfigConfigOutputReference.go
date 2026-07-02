@@ -12,9 +12,9 @@ type TunnelConfigConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,7 +28,7 @@ type TunnelConfigConfigOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	IngressRule() TunnelConfigConfigIngressRuleList
-	IngressRuleInput() interface{}
+	IngressRuleInput() any
 	InternalValue() *TunnelConfigConfig
 	SetInternalValue(val *TunnelConfigConfig)
 	OriginRequest() TunnelConfigConfigOriginRequestOutputReference
@@ -46,7 +46,7 @@ type TunnelConfigConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,14 +67,14 @@ type TunnelConfigConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIngressRule(value interface{})
+	PutIngressRule(value any)
 	PutOriginRequest(value *TunnelConfigConfigOriginRequest)
 	PutWarpRouting(value *TunnelConfigConfigWarpRouting)
 	ResetOriginRequest()
 	ResetWarpRouting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_TunnelConfigConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference) IngressRule() TunnelConfig
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference) IngressRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) IngressRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressRuleInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference) WarpRoutingInput() *Tunnel
 	return returns
 }
 
-
 func NewTunnelConfigConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewTunnelConfigConfigOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewTunnelConfigConfigOutputReference_Override(t TunnelConfigConfigOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetInternalValue(val *TunnelConfigConfig) {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) SetInternalValue(val *TunnelConfigConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetInternalValue(val *Tunne
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TunnelConfigConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,16 +312,16 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -338,7 +337,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -354,7 +353,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,21 +478,21 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) PutIngressRule(value interface{}) {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) PutIngressRule(value any) {
 	if err := t.validatePutIngressRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putIngressRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -504,7 +503,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) PutOriginRequest(value *Tu
 	_jsii_.InvokeVoid(
 		t,
 		"putOriginRequest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -515,7 +514,7 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) PutWarpRouting(value *Tunn
 	_jsii_.InvokeVoid(
 		t,
 		"putWarpRouting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) ResetWarpRouting() {
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TunnelConfigConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (t *jsiiProxy_TunnelConfigConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

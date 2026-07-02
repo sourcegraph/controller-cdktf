@@ -34,7 +34,7 @@ func (c *jsiiProxy_CertificatePackValidationErrorsList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCertificatePackValidationErrorsListParameters(terraformResource 
 
 	return nil
 }
-

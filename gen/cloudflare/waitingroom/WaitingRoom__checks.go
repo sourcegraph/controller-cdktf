@@ -19,7 +19,7 @@ func (w *jsiiProxy_WaitingRoom) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoom) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WaitingRoom) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WaitingRoom) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WaitingRoom) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WaitingRoom) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateWaitingRoom_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateWaitingRoom_IsConstructParameters(x interface{}) error {
+func validateWaitingRoom_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateWaitingRoom_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWaitingRoom_IsTerraformElementParameters(x interface{}) error {
+func validateWaitingRoom_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateWaitingRoom_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWaitingRoom_IsTerraformResourceParameters(x interface{}) error {
+func validateWaitingRoom_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateWaitingRoom_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetDisableSessionRenewalParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetDisableSessionRenewalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetJsonResponseEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetJsonResponseEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetPathParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,7 +503,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetQueueAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -539,7 +539,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetSessionDurationParameters(val *float6
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoom) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -593,4 +593,3 @@ func validateNewWaitingRoomParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

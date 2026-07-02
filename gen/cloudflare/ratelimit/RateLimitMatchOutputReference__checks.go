@@ -120,7 +120,7 @@ func (r *jsiiProxy_RateLimitMatchOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RateLimitMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewRateLimitMatchOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

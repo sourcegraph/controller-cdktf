@@ -98,7 +98,7 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAuthenticatedOriginPullsCertificateTimeoutsOutputReferenceParame
 
 	return nil
 }
-

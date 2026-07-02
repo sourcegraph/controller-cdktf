@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
-		reflect.TypeOf((*CustomSsl)(nil)).Elem(),
+		reflect.TypeFor[CustomSsl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomSsl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslConfig",
-		reflect.TypeOf((*CustomSslConfig)(nil)).Elem(),
+		reflect.TypeFor[CustomSslConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptions",
-		reflect.TypeOf((*CustomSslCustomSslOptions)(nil)).Elem(),
+		reflect.TypeFor[CustomSslCustomSslOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
-		reflect.TypeOf((*CustomSslCustomSslOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomSslCustomSslOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethodInput", GoGetter: "BundleMethodInput"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomSslCustomSslOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriority",
-		reflect.TypeOf((*CustomSslCustomSslPriority)(nil)).Elem(),
+		reflect.TypeFor[CustomSslCustomSslPriority](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityList",
-		reflect.TypeOf((*CustomSslCustomSslPriorityList)(nil)).Elem(),
+		reflect.TypeFor[CustomSslCustomSslPriorityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomSslCustomSslPriorityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
-		reflect.TypeOf((*CustomSslCustomSslPriorityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CustomSslCustomSslPriorityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CustomSslCustomSslPriorityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

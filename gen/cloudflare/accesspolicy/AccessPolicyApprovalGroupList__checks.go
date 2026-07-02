@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessPolicyApprovalGroupList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyApprovalGroupList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyApprovalGroupList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessPolicyApprovalGroupListParameters(terraformResource cdktf.
 
 	return nil
 }
-

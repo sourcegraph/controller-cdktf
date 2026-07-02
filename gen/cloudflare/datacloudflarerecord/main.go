@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecord",
-		reflect.TypeOf((*DataCloudflareRecord)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRecord](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneName", GoGetter: "ZoneName"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCloudflareRecord{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.dataCloudflareRecord.DataCloudflareRecordConfig",
-		reflect.TypeOf((*DataCloudflareRecordConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCloudflareRecordConfig](),
 	)
 }

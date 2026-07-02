@@ -15,9 +15,9 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	AddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,15 +28,15 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	Header() LoadBalancerPoolOriginsHeaderList
-	HeaderInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	HeaderInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -54,7 +54,7 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,13 +75,13 @@ type LoadBalancerPoolOriginsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHeader(value interface{})
+	PutHeader(value any)
 	ResetEnabled()
 	ResetHeader()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) AddressInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Enabled() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Header() LoadBalancer
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) HeaderInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) HeaderInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headerInput",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) HeaderInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) WeightInput() *float6
 	return returns
 }
 
-
 func NewLoadBalancerPoolOriginsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerPoolOriginsOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewLoadBalancerPoolOriginsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewLoadBalancerPoolOriginsOutputReference_Override(l LoadBalancerPoolOrigin
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetAddress(val *string
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetEnabled(val interfa
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference)SetWeight(val *float64) {
+func (j *jsiiProxy_LoadBalancerPoolOriginsOutputReference) SetWeight(val *float64) {
 	if err := j.validateSetWeightParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,16 +403,16 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,21 +569,21 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PutHeader(value interface{}) {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) PutHeader(value any) {
 	if err := l.validatePutHeaderParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,16 +611,16 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ResetWeight() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (l *jsiiProxy_LoadBalancerPoolOriginsOutputReference) ToString() *string {
 
 	return returns
 }
-

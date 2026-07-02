@@ -12,9 +12,9 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	DefaultInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -46,7 +46,7 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type RulesetRulesActionParametersBrowserTtlOutputReference interface {
 	ResetMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Terraf
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RulesetRulesActionParametersBrowserTtlOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r Ruleset
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetDefault(val *float64) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetDefault(val *float64) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetDefa
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetMode(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetMode
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Comput
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetLis
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Interp
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ResetM
 	)
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference) ToStri
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type CustomHostname interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomMetadata() *map[string]*string
 	SetCustomMetadata(val *map[string]*string)
 	CustomMetadataInput() *map[string]*string
@@ -64,23 +64,23 @@ type CustomHostname interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Ssl() CustomHostnameSslList
-	SslInput() interface{}
+	SslInput() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	WaitForSslPendingValidation() interface{}
-	SetWaitForSslPendingValidation(val interface{})
-	WaitForSslPendingValidationInput() interface{}
+	WaitForSslPendingValidation() any
+	SetWaitForSslPendingValidation(val any)
+	WaitForSslPendingValidationInput() any
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -88,9 +88,9 @@ type CustomHostname interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type CustomHostname interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,14 +120,14 @@ type CustomHostname interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSsl(value interface{})
+	PutSsl(value any)
 	ResetCustomMetadata()
 	ResetCustomOriginServer()
 	ResetCustomOriginSni()
@@ -137,17 +137,17 @@ type CustomHostname interface {
 	ResetOverrideLogicalId()
 	ResetSsl()
 	ResetWaitForSslPendingValidation()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CustomHostname
@@ -165,8 +165,8 @@ func (j *jsiiProxy_CustomHostname) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_CustomHostname) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomHostname) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CustomHostname) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_CustomHostname) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CustomHostname) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_CustomHostname) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_CustomHostname) Ssl() CustomHostnameSslList {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) SslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) SslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sslInput",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_CustomHostname) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CustomHostname) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_CustomHostname) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForSslPendingValidation",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CustomHostname) WaitForSslPendingValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForSslPendingValidationInput",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_CustomHostname) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/custom_hostname cloudflare_custom_hostname} Resource.
 func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHostnameConfig) CustomHostname {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewCustomHostname(scope constructs.Construct, id *string, config *CustomHos
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewCustomHostname_Override(c CustomHostname, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetConnection(val interface{}) {
+func (j *jsiiProxy_CustomHostname) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_CustomHostname)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetCount(val interface{}) {
+func (j *jsiiProxy_CustomHostname) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_CustomHostname)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetCustomMetadata(val *map[string]*string) {
+func (j *jsiiProxy_CustomHostname) SetCustomMetadata(val *map[string]*string) {
 	if err := j.validateSetCustomMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_CustomHostname)SetCustomMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetCustomOriginServer(val *string) {
+func (j *jsiiProxy_CustomHostname) SetCustomOriginServer(val *string) {
 	if err := j.validateSetCustomOriginServerParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_CustomHostname)SetCustomOriginServer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetCustomOriginSni(val *string) {
+func (j *jsiiProxy_CustomHostname) SetCustomOriginSni(val *string) {
 	if err := j.validateSetCustomOriginSniParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_CustomHostname)SetCustomOriginSni(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CustomHostname) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_CustomHostname)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CustomHostname) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_CustomHostname)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetHostname(val *string) {
+func (j *jsiiProxy_CustomHostname) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_CustomHostname)SetHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetId(val *string) {
+func (j *jsiiProxy_CustomHostname) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_CustomHostname)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CustomHostname) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_CustomHostname)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CustomHostname) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -647,7 +646,7 @@ func (j *jsiiProxy_CustomHostname)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CustomHostname) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_CustomHostname)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetWaitForSslPendingValidation(val interface{}) {
+func (j *jsiiProxy_CustomHostname) SetWaitForSslPendingValidation(val any) {
 	if err := j.validateSetWaitForSslPendingValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_CustomHostname)SetWaitForSslPendingValidation(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CustomHostname)SetZoneId(val *string) {
+func (j *jsiiProxy_CustomHostname) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func CustomHostname_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func CustomHostname_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CustomHostname_IsConstruct(x interface{}) *bool {
+func CustomHostname_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomHostname_IsConstructParameters(x); err != nil {
@@ -727,7 +726,7 @@ func CustomHostname_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func CustomHostname_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomHostname_IsTerraformElement(x interface{}) *bool {
+func CustomHostname_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomHostname_IsTerraformElementParameters(x); err != nil {
@@ -746,7 +745,7 @@ func CustomHostname_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func CustomHostname_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CustomHostname_IsTerraformResource(x interface{}) *bool {
+func CustomHostname_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCustomHostname_IsTerraformResourceParameters(x); err != nil {
@@ -765,7 +764,7 @@ func CustomHostname_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,31 +789,31 @@ func (c *jsiiProxy_CustomHostname) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CustomHostname) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CustomHostname) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (c *jsiiProxy_CustomHostname) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (c *jsiiProxy_CustomHostname) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (c *jsiiProxy_CustomHostname) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_CustomHostname) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (c *jsiiProxy_CustomHostname) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (c *jsiiProxy_CustomHostname) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (c *jsiiProxy_CustomHostname) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,15 +941,15 @@ func (c *jsiiProxy_CustomHostname) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostname) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomHostname) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -969,7 +968,7 @@ func (c *jsiiProxy_CustomHostname) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_CustomHostname) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,18 +995,18 @@ func (c *jsiiProxy_CustomHostname) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CustomHostname) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (c *jsiiProxy_CustomHostname) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1029,18 +1028,18 @@ func (c *jsiiProxy_CustomHostname) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) PutSsl(value interface{}) {
+func (c *jsiiProxy_CustomHostname) PutSsl(value any) {
 	if err := c.validatePutSslParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSsl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,8 +1099,8 @@ func (c *jsiiProxy_CustomHostname) ResetWaitForSslPendingValidation() {
 	)
 }
 
-func (c *jsiiProxy_CustomHostname) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomHostname) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1113,8 +1112,8 @@ func (c *jsiiProxy_CustomHostname) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostname) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CustomHostname) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1126,8 +1125,8 @@ func (c *jsiiProxy_CustomHostname) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostname) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomHostname) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1139,8 +1138,8 @@ func (c *jsiiProxy_CustomHostname) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostname) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomHostname) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1165,8 +1164,8 @@ func (c *jsiiProxy_CustomHostname) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CustomHostname) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CustomHostname) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1177,4 +1176,3 @@ func (c *jsiiProxy_CustomHostname) ToTerraform() interface{} {
 
 	return returns
 }
-

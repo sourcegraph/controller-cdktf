@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApiShieldAuthIdCharacteristicsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

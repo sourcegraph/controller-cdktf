@@ -16,7 +16,7 @@ type WorkerScript interface {
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	AnalyticsEngineBinding() WorkerScriptAnalyticsEngineBindingList
-	AnalyticsEngineBindingInput() interface{}
+	AnalyticsEngineBindingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CompatibilityDate() *string
@@ -26,18 +26,18 @@ type WorkerScript interface {
 	SetCompatibilityFlags(val *[]*string)
 	CompatibilityFlagsInput() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Content() *string
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,54 +54,54 @@ type WorkerScript interface {
 	SetId(val *string)
 	IdInput() *string
 	KvNamespaceBinding() WorkerScriptKvNamespaceBindingList
-	KvNamespaceBindingInput() interface{}
+	KvNamespaceBindingInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Module() interface{}
-	SetModule(val interface{})
-	ModuleInput() interface{}
+	Module() any
+	SetModule(val any)
+	ModuleInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PlainTextBinding() WorkerScriptPlainTextBindingList
-	PlainTextBindingInput() interface{}
+	PlainTextBindingInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueueBinding() WorkerScriptQueueBindingList
-	QueueBindingInput() interface{}
+	QueueBindingInput() any
 	R2BucketBinding() WorkerScriptR2BucketBindingList
-	R2BucketBindingInput() interface{}
+	R2BucketBindingInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecretTextBinding() WorkerScriptSecretTextBindingList
-	SecretTextBindingInput() interface{}
+	SecretTextBindingInput() any
 	ServiceBinding() WorkerScriptServiceBindingList
-	ServiceBindingInput() interface{}
+	ServiceBindingInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WebassemblyBinding() WorkerScriptWebassemblyBindingList
-	WebassemblyBindingInput() interface{}
+	WebassemblyBindingInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type WorkerScript interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,21 +131,21 @@ type WorkerScript interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAnalyticsEngineBinding(value interface{})
-	PutKvNamespaceBinding(value interface{})
-	PutPlainTextBinding(value interface{})
-	PutQueueBinding(value interface{})
-	PutR2BucketBinding(value interface{})
-	PutSecretTextBinding(value interface{})
-	PutServiceBinding(value interface{})
-	PutWebassemblyBinding(value interface{})
+	PutAnalyticsEngineBinding(value any)
+	PutKvNamespaceBinding(value any)
+	PutPlainTextBinding(value any)
+	PutQueueBinding(value any)
+	PutR2BucketBinding(value any)
+	PutSecretTextBinding(value any)
+	PutServiceBinding(value any)
+	PutWebassemblyBinding(value any)
 	ResetAnalyticsEngineBinding()
 	ResetCompatibilityDate()
 	ResetCompatibilityFlags()
@@ -161,17 +161,17 @@ type WorkerScript interface {
 	ResetSecretTextBinding()
 	ResetServiceBinding()
 	ResetWebassemblyBinding()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkerScript
@@ -209,8 +209,8 @@ func (j *jsiiProxy_WorkerScript) AnalyticsEngineBinding() WorkerScriptAnalyticsE
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) AnalyticsEngineBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) AnalyticsEngineBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"analyticsEngineBindingInput",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_WorkerScript) CompatibilityFlagsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_WorkerScript) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkerScript) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_WorkerScript) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_WorkerScript) KvNamespaceBinding() WorkerScriptKvNamespaceBin
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) KvNamespaceBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) KvNamespaceBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kvNamespaceBindingInput",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_WorkerScript) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) Module() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) Module() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"module",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_WorkerScript) Module() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) ModuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) ModuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"moduleInput",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_WorkerScript) PlainTextBinding() WorkerScriptPlainTextBinding
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) PlainTextBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) PlainTextBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"plainTextBindingInput",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_WorkerScript) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkerScript) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_WorkerScript) QueueBinding() WorkerScriptQueueBindingList {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) QueueBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) QueueBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueBindingInput",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_WorkerScript) R2BucketBinding() WorkerScriptR2BucketBindingLi
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) R2BucketBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) R2BucketBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"r2BucketBindingInput",
@@ -539,8 +539,8 @@ func (j *jsiiProxy_WorkerScript) R2BucketBindingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -559,8 +559,8 @@ func (j *jsiiProxy_WorkerScript) SecretTextBinding() WorkerScriptSecretTextBindi
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) SecretTextBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) SecretTextBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretTextBindingInput",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_WorkerScript) ServiceBinding() WorkerScriptServiceBindingList
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) ServiceBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) ServiceBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceBindingInput",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_WorkerScript) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkerScript) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -629,8 +629,8 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBinding() WorkerScriptWebassemblyBin
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"webassemblyBindingInput",
@@ -638,7 +638,6 @@ func (j *jsiiProxy_WorkerScript) WebassemblyBindingInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/worker_script cloudflare_worker_script} Resource.
 func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScriptConfig) WorkerScript {
@@ -651,7 +650,7 @@ func NewWorkerScript(scope constructs.Construct, id *string, config *WorkerScrip
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -664,12 +663,12 @@ func NewWorkerScript_Override(w WorkerScript, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetAccountId(val *string) {
+func (j *jsiiProxy_WorkerScript) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_WorkerScript)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetCompatibilityDate(val *string) {
+func (j *jsiiProxy_WorkerScript) SetCompatibilityDate(val *string) {
 	if err := j.validateSetCompatibilityDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_WorkerScript)SetCompatibilityDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetCompatibilityFlags(val *[]*string) {
+func (j *jsiiProxy_WorkerScript) SetCompatibilityFlags(val *[]*string) {
 	if err := j.validateSetCompatibilityFlagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_WorkerScript)SetCompatibilityFlags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkerScript) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_WorkerScript)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetContent(val *string) {
+func (j *jsiiProxy_WorkerScript) SetContent(val *string) {
 	if err := j.validateSetContentParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_WorkerScript)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkerScript) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_WorkerScript)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkerScript) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_WorkerScript)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkerScript) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -751,7 +750,7 @@ func (j *jsiiProxy_WorkerScript)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetId(val *string) {
+func (j *jsiiProxy_WorkerScript) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_WorkerScript)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkerScript) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_WorkerScript)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetModule(val interface{}) {
+func (j *jsiiProxy_WorkerScript) SetModule(val any) {
 	if err := j.validateSetModuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_WorkerScript)SetModule(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetName(val *string) {
+func (j *jsiiProxy_WorkerScript) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_WorkerScript)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkerScript) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -803,7 +802,7 @@ func (j *jsiiProxy_WorkerScript)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkerScript)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkerScript) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func WorkerScript_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func WorkerScript_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkerScript_IsConstruct(x interface{}) *bool {
+func WorkerScript_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerScript_IsConstructParameters(x); err != nil {
@@ -861,7 +860,7 @@ func WorkerScript_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func WorkerScript_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkerScript_IsTerraformElement(x interface{}) *bool {
+func WorkerScript_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerScript_IsTerraformElementParameters(x); err != nil {
@@ -880,7 +879,7 @@ func WorkerScript_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func WorkerScript_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkerScript_IsTerraformResource(x interface{}) *bool {
+func WorkerScript_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkerScript_IsTerraformResourceParameters(x); err != nil {
@@ -899,7 +898,7 @@ func WorkerScript_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -924,31 +923,31 @@ func (w *jsiiProxy_WorkerScript) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkerScript) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkerScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (w *jsiiProxy_WorkerScript) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (w *jsiiProxy_WorkerScript) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (w *jsiiProxy_WorkerScript) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (w *jsiiProxy_WorkerScript) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (w *jsiiProxy_WorkerScript) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (w *jsiiProxy_WorkerScript) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (w *jsiiProxy_WorkerScript) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,15 +1075,15 @@ func (w *jsiiProxy_WorkerScript) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScript) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerScript) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1103,7 +1102,7 @@ func (w *jsiiProxy_WorkerScript) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1116,7 +1115,7 @@ func (w *jsiiProxy_WorkerScript) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1130,18 +1129,18 @@ func (w *jsiiProxy_WorkerScript) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkerScript) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (w *jsiiProxy_WorkerScript) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1163,95 +1162,95 @@ func (w *jsiiProxy_WorkerScript) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutAnalyticsEngineBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutAnalyticsEngineBinding(value any) {
 	if err := w.validatePutAnalyticsEngineBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putAnalyticsEngineBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutKvNamespaceBinding(value any) {
 	if err := w.validatePutKvNamespaceBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putKvNamespaceBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutPlainTextBinding(value any) {
 	if err := w.validatePutPlainTextBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putPlainTextBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutQueueBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutQueueBinding(value any) {
 	if err := w.validatePutQueueBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putQueueBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutR2BucketBinding(value any) {
 	if err := w.validatePutR2BucketBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putR2BucketBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutSecretTextBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutSecretTextBinding(value any) {
 	if err := w.validatePutSecretTextBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putSecretTextBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutServiceBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutServiceBinding(value any) {
 	if err := w.validatePutServiceBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putServiceBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value interface{}) {
+func (w *jsiiProxy_WorkerScript) PutWebassemblyBinding(value any) {
 	if err := w.validatePutWebassemblyBindingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putWebassemblyBinding",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1359,8 +1358,8 @@ func (w *jsiiProxy_WorkerScript) ResetWebassemblyBinding() {
 	)
 }
 
-func (w *jsiiProxy_WorkerScript) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkerScript) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1372,8 +1371,8 @@ func (w *jsiiProxy_WorkerScript) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScript) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkerScript) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1385,8 +1384,8 @@ func (w *jsiiProxy_WorkerScript) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScript) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerScript) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1398,8 +1397,8 @@ func (w *jsiiProxy_WorkerScript) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScript) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerScript) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1424,8 +1423,8 @@ func (w *jsiiProxy_WorkerScript) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScript) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkerScript) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1436,4 +1435,3 @@ func (w *jsiiProxy_WorkerScript) ToTerraform() interface{} {
 
 	return returns
 }
-

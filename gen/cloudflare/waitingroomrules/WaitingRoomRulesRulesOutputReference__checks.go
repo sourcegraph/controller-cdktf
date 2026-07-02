@@ -106,7 +106,7 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetActionParame
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetExpressionPa
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WaitingRoomRulesRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewWaitingRoomRulesRulesOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

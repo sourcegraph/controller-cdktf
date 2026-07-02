@@ -16,15 +16,15 @@ type OriginCaCertificate interface {
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Csr() *string
 	SetCsr(val *string)
 	CsrInput() *string
@@ -61,11 +61,11 @@ type OriginCaCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestedValidity() *float64
 	SetRequestedValidity(val *float64)
 	RequestedValidityInput() *float64
@@ -75,16 +75,16 @@ type OriginCaCertificate interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type OriginCaCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type OriginCaCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type OriginCaCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequestedValidity()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OriginCaCertificate
@@ -166,8 +166,8 @@ func (j *jsiiProxy_OriginCaCertificate) Certificate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OriginCaCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_OriginCaCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OriginCaCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_OriginCaCertificate) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OriginCaCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_OriginCaCertificate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OriginCaCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_OriginCaCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OriginCaCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OriginCaCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OriginCaCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -446,7 +446,6 @@ func (j *jsiiProxy_OriginCaCertificate) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource.
 func NewOriginCaCertificate(scope constructs.Construct, id *string, config *OriginCaCertificateConfig) OriginCaCertificate {
 	_init_.Initialize()
@@ -458,7 +457,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_OriginCaCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_OriginCaCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetCsr(val *string) {
+func (j *jsiiProxy_OriginCaCertificate) SetCsr(val *string) {
 	if err := j.validateSetCsrParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetCsr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OriginCaCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OriginCaCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetHostnames(val *[]*string) {
+func (j *jsiiProxy_OriginCaCertificate) SetHostnames(val *[]*string) {
 	if err := j.validateSetHostnamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetHostnames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetId(val *string) {
+func (j *jsiiProxy_OriginCaCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OriginCaCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetMinDaysForRenewal(val *float64) {
+func (j *jsiiProxy_OriginCaCertificate) SetMinDaysForRenewal(val *float64) {
 	if err := j.validateSetMinDaysForRenewalParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetMinDaysForRenewal(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OriginCaCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OriginCaCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetRequestedValidity(val *float64) {
+func (j *jsiiProxy_OriginCaCertificate) SetRequestedValidity(val *float64) {
 	if err := j.validateSetRequestedValidityParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_OriginCaCertificate)SetRequestedValidity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OriginCaCertificate)SetRequestType(val *string) {
+func (j *jsiiProxy_OriginCaCertificate) SetRequestType(val *string) {
 	if err := j.validateSetRequestTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func OriginCaCertificate_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func OriginCaCertificate_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OriginCaCertificate_IsConstruct(x interface{}) *bool {
+func OriginCaCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOriginCaCertificate_IsConstructParameters(x); err != nil {
@@ -657,7 +656,7 @@ func OriginCaCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func OriginCaCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OriginCaCertificate_IsTerraformElement(x interface{}) *bool {
+func OriginCaCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOriginCaCertificate_IsTerraformElementParameters(x); err != nil {
@@ -676,7 +675,7 @@ func OriginCaCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func OriginCaCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OriginCaCertificate_IsTerraformResource(x interface{}) *bool {
+func OriginCaCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOriginCaCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -695,7 +694,7 @@ func OriginCaCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,31 +719,31 @@ func (o *jsiiProxy_OriginCaCertificate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OriginCaCertificate) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OriginCaCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (o *jsiiProxy_OriginCaCertificate) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,15 +871,15 @@ func (o *jsiiProxy_OriginCaCertificate) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OriginCaCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OriginCaCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -899,7 +898,7 @@ func (o *jsiiProxy_OriginCaCertificate) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -912,7 +911,7 @@ func (o *jsiiProxy_OriginCaCertificate) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,18 +925,18 @@ func (o *jsiiProxy_OriginCaCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OriginCaCertificate) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -948,7 +947,7 @@ func (o *jsiiProxy_OriginCaCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -959,7 +958,7 @@ func (o *jsiiProxy_OriginCaCertificate) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1003,8 +1002,8 @@ func (o *jsiiProxy_OriginCaCertificate) ResetRequestedValidity() {
 	)
 }
 
-func (o *jsiiProxy_OriginCaCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OriginCaCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1016,8 +1015,8 @@ func (o *jsiiProxy_OriginCaCertificate) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (o *jsiiProxy_OriginCaCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OriginCaCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1029,8 +1028,8 @@ func (o *jsiiProxy_OriginCaCertificate) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OriginCaCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1042,8 +1041,8 @@ func (o *jsiiProxy_OriginCaCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OriginCaCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1068,8 +1067,8 @@ func (o *jsiiProxy_OriginCaCertificate) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OriginCaCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OriginCaCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1080,4 +1079,3 @@ func (o *jsiiProxy_OriginCaCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

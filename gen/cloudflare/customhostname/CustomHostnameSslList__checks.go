@@ -34,7 +34,7 @@ func (c *jsiiProxy_CustomHostnameSslList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameSslList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCustomHostnameSslListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

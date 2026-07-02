@@ -6,9 +6,9 @@ import (
 
 type NotificationPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NotificationPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
@@ -32,7 +32,7 @@ type NotificationPolicyConfig struct {
 	// The status of the notification policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// The name of the notification policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#name NotificationPolicy#name}
@@ -44,7 +44,7 @@ type NotificationPolicyConfig struct {
 	// email_integration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#email_integration NotificationPolicy#email_integration}
-	EmailIntegration interface{} `field:"optional" json:"emailIntegration" yaml:"emailIntegration"`
+	EmailIntegration any `field:"optional" json:"emailIntegration" yaml:"emailIntegration"`
 	// filters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
@@ -57,10 +57,9 @@ type NotificationPolicyConfig struct {
 	// pagerduty_integration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#pagerduty_integration NotificationPolicy#pagerduty_integration}
-	PagerdutyIntegration interface{} `field:"optional" json:"pagerdutyIntegration" yaml:"pagerdutyIntegration"`
+	PagerdutyIntegration any `field:"optional" json:"pagerdutyIntegration" yaml:"pagerdutyIntegration"`
 	// webhooks_integration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/notification_policy#webhooks_integration NotificationPolicy#webhooks_integration}
-	WebhooksIntegration interface{} `field:"optional" json:"webhooksIntegration" yaml:"webhooksIntegration"`
+	WebhooksIntegration any `field:"optional" json:"webhooksIntegration" yaml:"webhooksIntegration"`
 }
-

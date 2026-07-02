@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsL4OverrideOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsL4OverrideOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsL4OverrideOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewTeamsRuleRuleSettingsL4OverrideOutputReferenceParameters(terrafo
 
 	return nil
 }
-

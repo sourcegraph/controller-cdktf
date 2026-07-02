@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDeviceManagedNetworksConfigAOutputReferenceParameters(terraformR
 
 	return nil
 }
-

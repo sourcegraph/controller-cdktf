@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllow
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllMethodsParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllMethodsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllow
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllOriginsParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowAllOriginsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -158,7 +158,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllow
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetAllow
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -334,4 +334,3 @@ func validateNewAccessApplicationCorsHeadersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

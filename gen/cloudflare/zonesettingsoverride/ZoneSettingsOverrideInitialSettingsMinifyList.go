@@ -36,7 +36,7 @@ type ZoneSettingsOverrideInitialSettingsMinifyList interface {
 	Get(index *float64) ZoneSettingsOverrideInitialSettingsMinifyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewZoneSettingsOverrideInitialSettingsMinifyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZoneSettingsOverrideInitialSettingsMinifyList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewZoneSettingsOverrideInitialSettingsMinifyList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewZoneSettingsOverrideInitialSettingsMinifyList_Override(z ZoneSettingsOve
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) AllWithMapKey(
 	_jsii_.Invoke(
 		z,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Get(index *flo
 	_jsii_.Invoke(
 		z,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsMinifyList) ToString() *st
 
 	return returns
 }
-

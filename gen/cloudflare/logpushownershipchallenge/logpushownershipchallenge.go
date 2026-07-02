@@ -18,15 +18,15 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,15 +57,15 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -75,9 +75,9 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type LogpushOwnershipChallenge interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type LogpushOwnershipChallenge interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LogpushOwnershipChallenge
@@ -168,8 +168,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogpushOwnershipChallenge) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -388,7 +388,6 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/logpush_ownership_challenge cloudflare_logpush_ownership_challenge} Resource.
 func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config *LogpushOwnershipChallengeConfig) LogpushOwnershipChallenge {
 	_init_.Initialize()
@@ -400,7 +399,7 @@ func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -413,12 +412,12 @@ func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetAccountId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetConnection(val interface{}) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetCount(val interface{}) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetDestinationConf(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetDestinationConf(val *string) {
 	if err := j.validateSetDestinationConfParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetDestinationConf(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge)SetZoneId(val *string) {
+func (j *jsiiProxy_LogpushOwnershipChallenge) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func LogpushOwnershipChallenge_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func LogpushOwnershipChallenge_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
+func LogpushOwnershipChallenge_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpushOwnershipChallenge_IsConstructParameters(x); err != nil {
@@ -577,7 +576,7 @@ func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool {
+func LogpushOwnershipChallenge_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpushOwnershipChallenge_IsTerraformElementParameters(x); err != nil {
@@ -596,7 +595,7 @@ func LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LogpushOwnershipChallenge_IsTerraformResource(x interface{}) *bool {
+func LogpushOwnershipChallenge_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogpushOwnershipChallenge_IsTerraformResourceParameters(x); err != nil {
@@ -615,7 +614,7 @@ func LogpushOwnershipChallenge_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,31 +639,31 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LogpushOwnershipChallenge) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LogpushOwnershipChallenge) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,15 +791,15 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -819,7 +818,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -832,7 +831,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,18 +845,18 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LogpushOwnershipChallenge) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -868,7 +867,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -879,7 +878,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -915,8 +914,8 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ResetZoneId() {
 	)
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -928,8 +927,8 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -941,8 +940,8 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -954,8 +953,8 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -980,8 +979,8 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogpushOwnershipChallenge) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -992,4 +991,3 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -17,8 +17,8 @@ type LoadBalancerRegionPoolsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LoadBalancerRegionPoolsList interface {
 	Get(index *float64) LoadBalancerRegionPoolsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoadBalancerRegionPoolsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewLoadBalancerRegionPoolsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoadBalancerRegionPoolsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLoadBalancerRegionPoolsList(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLoadBalancerRegionPoolsList_Override(l LoadBalancerRegionPoolsList, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRegionPoolsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoadBalancerRegionPoolsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoadBalancerRegionPoolsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRegionPoolsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoadBalancerRegionPoolsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LoadBalancerRegionPoolsList) AllWithMapKey(mapKeyAttributeNam
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LoadBalancerRegionPoolsList) Get(index *float64) LoadBalancer
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRegionPoolsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoadBalancerRegionPoolsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LoadBalancerRegionPoolsList) ToString() *string {
 
 	return returns
 }
-

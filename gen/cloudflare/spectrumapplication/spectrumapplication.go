@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application cloudflare_spectrum_application}.
 type SpectrumApplication interface {
 	cdktf.TerraformResource
-	ArgoSmartRouting() interface{}
-	SetArgoSmartRouting(val interface{})
-	ArgoSmartRoutingInput() interface{}
+	ArgoSmartRouting() any
+	SetArgoSmartRouting(val any)
+	ArgoSmartRoutingInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,9 +46,9 @@ type SpectrumApplication interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpFirewall() interface{}
-	SetIpFirewall(val interface{})
-	IpFirewallInput() interface{}
+	IpFirewall() any
+	SetIpFirewall(val any)
+	IpFirewallInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -73,18 +73,18 @@ type SpectrumApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProxyProtocol() *string
 	SetProxyProtocol(val *string)
 	ProxyProtocolInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tls() *string
@@ -100,9 +100,9 @@ type SpectrumApplication interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type SpectrumApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type SpectrumApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -157,17 +157,17 @@ type SpectrumApplication interface {
 	ResetProxyProtocol()
 	ResetTls()
 	ResetTrafficType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SpectrumApplication
@@ -175,8 +175,8 @@ type jsiiProxy_SpectrumApplication struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_SpectrumApplication) ArgoSmartRouting() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) ArgoSmartRouting() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"argoSmartRouting",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SpectrumApplication) ArgoSmartRouting() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) ArgoSmartRoutingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) ArgoSmartRoutingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"argoSmartRoutingInput",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_SpectrumApplication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_SpectrumApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpectrumApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_SpectrumApplication) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_SpectrumApplication) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) IpFirewall() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) IpFirewall() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipFirewall",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_SpectrumApplication) IpFirewall() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) IpFirewallInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) IpFirewallInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipFirewallInput",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_SpectrumApplication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SpectrumApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_SpectrumApplication) ProxyProtocolInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpectrumApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_SpectrumApplication) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SpectrumApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpectrumApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -615,7 +615,6 @@ func (j *jsiiProxy_SpectrumApplication) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource.
 func NewSpectrumApplication(scope constructs.Construct, id *string, config *SpectrumApplicationConfig) SpectrumApplication {
 	_init_.Initialize()
@@ -627,7 +626,7 @@ func NewSpectrumApplication(scope constructs.Construct, id *string, config *Spec
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -640,12 +639,12 @@ func NewSpectrumApplication_Override(s SpectrumApplication, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetArgoSmartRouting(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication) SetArgoSmartRouting(val any) {
 	if err := j.validateSetArgoSmartRoutingParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_SpectrumApplication)SetArgoSmartRouting(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_SpectrumApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_SpectrumApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpectrumApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_SpectrumApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpectrumApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_SpectrumApplication)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetId(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_SpectrumApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetIpFirewall(val interface{}) {
+func (j *jsiiProxy_SpectrumApplication) SetIpFirewall(val any) {
 	if err := j.validateSetIpFirewallParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_SpectrumApplication)SetIpFirewall(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpectrumApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_SpectrumApplication)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetOriginDirect(val *[]*string) {
+func (j *jsiiProxy_SpectrumApplication) SetOriginDirect(val *[]*string) {
 	if err := j.validateSetOriginDirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_SpectrumApplication)SetOriginDirect(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *float64) {
+func (j *jsiiProxy_SpectrumApplication) SetOriginPort(val *float64) {
 	if err := j.validateSetOriginPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_SpectrumApplication)SetOriginPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetProtocol(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_SpectrumApplication)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpectrumApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -768,7 +767,7 @@ func (j *jsiiProxy_SpectrumApplication)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpectrumApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_SpectrumApplication)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetProxyProtocol(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetProxyProtocol(val *string) {
 	if err := j.validateSetProxyProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_SpectrumApplication)SetProxyProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetTls(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetTls(val *string) {
 	if err := j.validateSetTlsParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_SpectrumApplication)SetTls(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetTrafficType(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetTrafficType(val *string) {
 	if err := j.validateSetTrafficTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_SpectrumApplication)SetTrafficType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpectrumApplication)SetZoneId(val *string) {
+func (j *jsiiProxy_SpectrumApplication) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func SpectrumApplication_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func SpectrumApplication_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SpectrumApplication_IsConstruct(x interface{}) *bool {
+func SpectrumApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpectrumApplication_IsConstructParameters(x); err != nil {
@@ -870,7 +869,7 @@ func SpectrumApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func SpectrumApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SpectrumApplication_IsTerraformElement(x interface{}) *bool {
+func SpectrumApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpectrumApplication_IsTerraformElementParameters(x); err != nil {
@@ -889,7 +888,7 @@ func SpectrumApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func SpectrumApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SpectrumApplication_IsTerraformResource(x interface{}) *bool {
+func SpectrumApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpectrumApplication_IsTerraformResourceParameters(x); err != nil {
@@ -908,7 +907,7 @@ func SpectrumApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,31 +932,31 @@ func (s *jsiiProxy_SpectrumApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplication) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SpectrumApplication) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpectrumApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (s *jsiiProxy_SpectrumApplication) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (s *jsiiProxy_SpectrumApplication) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (s *jsiiProxy_SpectrumApplication) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,7 +1036,7 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (s *jsiiProxy_SpectrumApplication) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func (s *jsiiProxy_SpectrumApplication) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1085,15 +1084,15 @@ func (s *jsiiProxy_SpectrumApplication) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpectrumApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1112,7 +1111,7 @@ func (s *jsiiProxy_SpectrumApplication) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (s *jsiiProxy_SpectrumApplication) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,18 +1138,18 @@ func (s *jsiiProxy_SpectrumApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplication) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SpectrumApplication) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1161,7 +1160,7 @@ func (s *jsiiProxy_SpectrumApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (s *jsiiProxy_SpectrumApplication) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1183,7 +1182,7 @@ func (s *jsiiProxy_SpectrumApplication) PutDns(value *SpectrumApplicationDns) {
 	_jsii_.InvokeVoid(
 		s,
 		"putDns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1194,7 +1193,7 @@ func (s *jsiiProxy_SpectrumApplication) PutEdgeIps(value *SpectrumApplicationEdg
 	_jsii_.InvokeVoid(
 		s,
 		"putEdgeIps",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (s *jsiiProxy_SpectrumApplication) PutOriginDns(value *SpectrumApplicationO
 	_jsii_.InvokeVoid(
 		s,
 		"putOriginDns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (s *jsiiProxy_SpectrumApplication) PutOriginPortRange(value *SpectrumApplic
 	_jsii_.InvokeVoid(
 		s,
 		"putOriginPortRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1316,8 +1315,8 @@ func (s *jsiiProxy_SpectrumApplication) ResetTrafficType() {
 	)
 }
 
-func (s *jsiiProxy_SpectrumApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpectrumApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1329,8 +1328,8 @@ func (s *jsiiProxy_SpectrumApplication) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpectrumApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1342,8 +1341,8 @@ func (s *jsiiProxy_SpectrumApplication) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpectrumApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1355,8 +1354,8 @@ func (s *jsiiProxy_SpectrumApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpectrumApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1381,8 +1380,8 @@ func (s *jsiiProxy_SpectrumApplication) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpectrumApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpectrumApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1393,4 +1392,3 @@ func (s *jsiiProxy_SpectrumApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

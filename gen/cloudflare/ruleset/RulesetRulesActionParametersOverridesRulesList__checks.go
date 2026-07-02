@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersOverridesRulesListParameters(terrafo
 
 	return nil
 }
-

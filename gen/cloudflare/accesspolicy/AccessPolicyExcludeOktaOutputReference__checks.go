@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateSetIdentityPr
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyExcludeOktaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessPolicyExcludeOktaOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

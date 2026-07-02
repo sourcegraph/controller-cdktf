@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesRandomSteeringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerRulesOverridesRandomSteeringOutputReferenceParameter
 
 	return nil
 }
-

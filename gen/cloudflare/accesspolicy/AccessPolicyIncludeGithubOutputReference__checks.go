@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateSetIdentity
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeGithubOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAccessPolicyIncludeGithubOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

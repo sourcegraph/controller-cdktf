@@ -15,24 +15,24 @@ type IpsecTunnel interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	AllowNullCipher() interface{}
-	SetAllowNullCipher(val interface{})
-	AllowNullCipherInput() interface{}
+	AllowNullCipher() any
+	SetAllowNullCipher(val any)
+	AllowNullCipherInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudflareEndpoint() *string
 	SetCloudflareEndpoint(val *string)
 	CloudflareEndpointInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomerEndpoint() *string
 	SetCustomerEndpoint(val *string)
 	CustomerEndpointInput() *string
@@ -54,9 +54,9 @@ type IpsecTunnel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HealthCheckEnabled() interface{}
-	SetHealthCheckEnabled(val interface{})
-	HealthCheckEnabledInput() interface{}
+	HealthCheckEnabled() any
+	SetHealthCheckEnabled(val any)
+	HealthCheckEnabledInput() any
 	HealthCheckTarget() *string
 	SetHealthCheckTarget(val *string)
 	HealthCheckTargetInput() *string
@@ -86,21 +86,21 @@ type IpsecTunnel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Psk() *string
 	SetPsk(val *string)
 	PskInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteId() *string
 	SetRemoteId(val *string)
 	RemoteIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserId() *string
@@ -110,9 +110,9 @@ type IpsecTunnel interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -130,7 +130,7 @@ type IpsecTunnel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -142,7 +142,7 @@ type IpsecTunnel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type IpsecTunnel interface {
 	ResetPsk()
 	ResetRemoteId()
 	ResetUserId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IpsecTunnel
@@ -202,8 +202,8 @@ func (j *jsiiProxy_IpsecTunnel) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) AllowNullCipher() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) AllowNullCipher() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNullCipher",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_IpsecTunnel) AllowNullCipher() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) AllowNullCipherInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) AllowNullCipherInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNullCipherInput",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_IpsecTunnel) CloudflareEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_IpsecTunnel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IpsecTunnel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_IpsecTunnel) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_IpsecTunnel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthCheckEnabled",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) HealthCheckEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"healthCheckEnabledInput",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_IpsecTunnel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IpsecTunnel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_IpsecTunnel) PskInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IpsecTunnel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_IpsecTunnel) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IpsecTunnel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IpsecTunnel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -662,7 +662,6 @@ func (j *jsiiProxy_IpsecTunnel) UserIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel cloudflare_ipsec_tunnel} Resource.
 func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelConfig) IpsecTunnel {
 	_init_.Initialize()
@@ -674,7 +673,7 @@ func NewIpsecTunnel(scope constructs.Construct, id *string, config *IpsecTunnelC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -687,12 +686,12 @@ func NewIpsecTunnel_Override(i IpsecTunnel, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetAccountId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_IpsecTunnel)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetAllowNullCipher(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel) SetAllowNullCipher(val any) {
 	if err := j.validateSetAllowNullCipherParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_IpsecTunnel)SetAllowNullCipher(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetCloudflareEndpoint(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetCloudflareEndpoint(val *string) {
 	if err := j.validateSetCloudflareEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_IpsecTunnel)SetCloudflareEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetConnection(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_IpsecTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetCount(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_IpsecTunnel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetCustomerEndpoint(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetCustomerEndpoint(val *string) {
 	if err := j.validateSetCustomerEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_IpsecTunnel)SetCustomerEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IpsecTunnel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -766,7 +765,7 @@ func (j *jsiiProxy_IpsecTunnel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetDescription(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_IpsecTunnel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IpsecTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -785,7 +784,7 @@ func (j *jsiiProxy_IpsecTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetFqdnId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetFqdnId(val *string) {
 	if err := j.validateSetFqdnIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_IpsecTunnel)SetFqdnId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
+func (j *jsiiProxy_IpsecTunnel) SetHealthCheckEnabled(val any) {
 	if err := j.validateSetHealthCheckEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_IpsecTunnel)SetHealthCheckEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetHealthCheckTarget(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetHealthCheckTarget(val *string) {
 	if err := j.validateSetHealthCheckTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_IpsecTunnel)SetHealthCheckTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetHealthCheckType(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetHealthCheckType(val *string) {
 	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_IpsecTunnel)SetHealthCheckType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetHexId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetHexId(val *string) {
 	if err := j.validateSetHexIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_IpsecTunnel)SetHexId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_IpsecTunnel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetInterfaceAddress(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetInterfaceAddress(val *string) {
 	if err := j.validateSetInterfaceAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_IpsecTunnel)SetInterfaceAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IpsecTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_IpsecTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetName(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_IpsecTunnel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IpsecTunnel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -892,7 +891,7 @@ func (j *jsiiProxy_IpsecTunnel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IpsecTunnel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_IpsecTunnel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetPsk(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetPsk(val *string) {
 	if err := j.validateSetPskParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func (j *jsiiProxy_IpsecTunnel)SetPsk(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetRemoteId(val *string) {
 	if err := j.validateSetRemoteIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_IpsecTunnel)SetRemoteId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpsecTunnel)SetUserId(val *string) {
+func (j *jsiiProxy_IpsecTunnel) SetUserId(val *string) {
 	if err := j.validateSetUserIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func IpsecTunnel_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func IpsecTunnel_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IpsecTunnel_IsConstruct(x interface{}) *bool {
+func IpsecTunnel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIpsecTunnel_IsConstructParameters(x); err != nil {
@@ -983,7 +982,7 @@ func IpsecTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func IpsecTunnel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IpsecTunnel_IsTerraformElement(x interface{}) *bool {
+func IpsecTunnel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIpsecTunnel_IsTerraformElementParameters(x); err != nil {
@@ -1002,7 +1001,7 @@ func IpsecTunnel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func IpsecTunnel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IpsecTunnel_IsTerraformResource(x interface{}) *bool {
+func IpsecTunnel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIpsecTunnel_IsTerraformResourceParameters(x); err != nil {
@@ -1021,7 +1020,7 @@ func IpsecTunnel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1046,31 +1045,31 @@ func (i *jsiiProxy_IpsecTunnel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IpsecTunnel) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IpsecTunnel) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IpsecTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,7 +1085,7 @@ func (i *jsiiProxy_IpsecTunnel) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,7 +1101,7 @@ func (i *jsiiProxy_IpsecTunnel) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (i *jsiiProxy_IpsecTunnel) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,7 +1165,7 @@ func (i *jsiiProxy_IpsecTunnel) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,7 +1181,7 @@ func (i *jsiiProxy_IpsecTunnel) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,15 +1197,15 @@ func (i *jsiiProxy_IpsecTunnel) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IpsecTunnel) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IpsecTunnel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1225,7 +1224,7 @@ func (i *jsiiProxy_IpsecTunnel) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (i *jsiiProxy_IpsecTunnel) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1252,18 +1251,18 @@ func (i *jsiiProxy_IpsecTunnel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IpsecTunnel) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IpsecTunnel) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1274,7 +1273,7 @@ func (i *jsiiProxy_IpsecTunnel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1285,7 +1284,7 @@ func (i *jsiiProxy_IpsecTunnel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1393,8 +1392,8 @@ func (i *jsiiProxy_IpsecTunnel) ResetUserId() {
 	)
 }
 
-func (i *jsiiProxy_IpsecTunnel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IpsecTunnel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1406,8 +1405,8 @@ func (i *jsiiProxy_IpsecTunnel) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IpsecTunnel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IpsecTunnel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1419,8 +1418,8 @@ func (i *jsiiProxy_IpsecTunnel) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (i *jsiiProxy_IpsecTunnel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IpsecTunnel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1432,8 +1431,8 @@ func (i *jsiiProxy_IpsecTunnel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IpsecTunnel) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IpsecTunnel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1458,8 +1457,8 @@ func (i *jsiiProxy_IpsecTunnel) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IpsecTunnel) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IpsecTunnel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1470,4 +1469,3 @@ func (i *jsiiProxy_IpsecTunnel) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesRatelimit struct {
 	// List of parameters that define how Cloudflare tracks the request rate for this rule.
 	//
@@ -27,7 +26,7 @@ type RulesetRulesRatelimit struct {
 	// Whether to include requests to origin within the Rate Limiting count.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
-	RequestsToOrigin interface{} `field:"optional" json:"requestsToOrigin" yaml:"requestsToOrigin"`
+	RequestsToOrigin any `field:"optional" json:"requestsToOrigin" yaml:"requestsToOrigin"`
 	// The maximum aggregate score over the period of time that will trigger Rate Limiting rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
@@ -37,4 +36,3 @@ type RulesetRulesRatelimit struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 	ScoreResponseHeaderName *string `field:"optional" json:"scoreResponseHeaderName" yaml:"scoreResponseHeaderName"`
 }
-

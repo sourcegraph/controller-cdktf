@@ -1,11 +1,10 @@
 package tunnelconfig
 
-
 type TunnelConfigConfigOriginRequestIpRules struct {
 	// Whether to allow the IP prefix.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#allow TunnelConfigA#allow}
-	Allow interface{} `field:"optional" json:"allow" yaml:"allow"`
+	Allow any `field:"optional" json:"allow" yaml:"allow"`
 	// Ports to use within the IP rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#ports TunnelConfigA#ports}
@@ -15,4 +14,3 @@ type TunnelConfigConfigOriginRequestIpRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/tunnel_config#prefix TunnelConfigA#prefix}
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
-

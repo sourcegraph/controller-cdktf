@@ -6,9 +6,9 @@ import (
 
 type ZoneConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ZoneConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Account ID to manage the zone resource in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone#account_id Zone#account_id}
@@ -35,11 +35,11 @@ type ZoneConfig struct {
 	// Whether to scan for DNS records on creation. Ignored after zone is created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone#jump_start Zone#jump_start}
-	JumpStart interface{} `field:"optional" json:"jumpStart" yaml:"jumpStart"`
+	JumpStart any `field:"optional" json:"jumpStart" yaml:"jumpStart"`
 	// Whether this zone is paused (traffic bypasses Cloudflare). Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone#paused Zone#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// The name of the commercial plan to apply to the zone.
 	//
 	// Available values: `free`, `lite`, `pro`, `pro_plus`, `business`, `enterprise`, `partners_free`, `partners_pro`, `partners_business`, `partners_enterprise`.
@@ -53,4 +53,3 @@ type ZoneConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/zone#type Zone#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

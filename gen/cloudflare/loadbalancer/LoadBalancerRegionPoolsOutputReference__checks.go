@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRegionPoolsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerRegionPoolsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

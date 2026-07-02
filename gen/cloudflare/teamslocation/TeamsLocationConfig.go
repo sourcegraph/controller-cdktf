@@ -6,9 +6,9 @@ import (
 
 type TeamsLocationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type TeamsLocationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location#account_id TeamsLocation#account_id}
@@ -30,7 +30,7 @@ type TeamsLocationConfig struct {
 	// Indicator that this is the default location.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location#client_default TeamsLocation#client_default}
-	ClientDefault interface{} `field:"optional" json:"clientDefault" yaml:"clientDefault"`
+	ClientDefault any `field:"optional" json:"clientDefault" yaml:"clientDefault"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location#id TeamsLocation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,6 +39,5 @@ type TeamsLocationConfig struct {
 	// networks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_location#networks TeamsLocation#networks}
-	Networks interface{} `field:"optional" json:"networks" yaml:"networks"`
+	Networks any `field:"optional" json:"networks" yaml:"networks"`
 }
-

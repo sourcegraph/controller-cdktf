@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersEdgeTtl struct {
 	// Default edge TTL.
 	//
@@ -13,6 +12,5 @@ type RulesetRulesActionParametersEdgeTtl struct {
 	// status_code_ttl block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
-	StatusCodeTtl interface{} `field:"optional" json:"statusCodeTtl" yaml:"statusCodeTtl"`
+	StatusCodeTtl any `field:"optional" json:"statusCodeTtl" yaml:"statusCodeTtl"`
 }
-
