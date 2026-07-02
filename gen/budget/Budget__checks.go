@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (b *jsiiProxy_Budget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_Budget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (b *jsiiProxy_Budget) validateAddOverrideParameters(path *string, value int
 	return nil
 }
 
-func (b *jsiiProxy_Budget) validateAddProviderParameters(provider interface{}) error {
+func (b *jsiiProxy_Budget) validateAddProviderParameters(provider any) error {
 	if provider == nil {
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (b *jsiiProxy_Budget) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
-func validateBudget_IsConstructParameters(x interface{}) error {
+func validateBudget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func validateBudget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBudget_IsTerraformElementParameters(x interface{}) error {
+func validateBudget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -132,4 +132,3 @@ func validateNewBudgetParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-
