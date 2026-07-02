@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-random.provider.RandomProvider",
-		reflect.TypeOf((*RandomProvider)(nil)).Elem(),
+		reflect.TypeFor[RandomProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -34,7 +34,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RandomProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -42,6 +42,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-random.provider.RandomProviderConfig",
-		reflect.TypeOf((*RandomProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[RandomProviderConfig](),
 	)
 }

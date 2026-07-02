@@ -16,15 +16,15 @@ type Password interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,9 +48,9 @@ type Password interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Lower() interface{}
-	SetLower(val interface{})
-	LowerInput() interface{}
+	Lower() any
+	SetLower(val any)
+	LowerInput() any
 	MinLower() *float64
 	SetMinLower(val *float64)
 	MinLowerInput() *float64
@@ -65,12 +65,12 @@ type Password interface {
 	MinUpperInput() *float64
 	// The tree node.
 	Node() constructs.Node
-	Number() interface{}
-	SetNumber(val interface{})
-	NumberInput() interface{}
-	Numeric() interface{}
-	SetNumeric(val interface{})
-	NumericInput() interface{}
+	Number() any
+	SetNumber(val any)
+	NumberInput() any
+	Numeric() any
+	SetNumeric(val any)
+	NumericInput() any
 	OverrideSpecial() *string
 	SetOverrideSpecial(val *string)
 	OverrideSpecialInput() *string
@@ -79,31 +79,31 @@ type Password interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Result() *string
-	Special() interface{}
-	SetSpecial(val interface{})
-	SpecialInput() interface{}
+	Special() any
+	SetSpecial(val any)
+	SpecialInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	Upper() interface{}
-	SetUpper(val interface{})
-	UpperInput() interface{}
+	Upper() any
+	SetUpper(val any)
+	UpperInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type Password interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type Password interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type Password interface {
 	ResetOverrideSpecial()
 	ResetSpecial()
 	ResetUpper()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Password
@@ -192,8 +192,8 @@ func (j *jsiiProxy_Password) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_Password) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Password) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_Password) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_Password) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Lower() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Lower() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lower",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_Password) Lower() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) LowerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) LowerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lowerInput",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_Password) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Number() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Number() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"number",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_Password) Number() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) NumberInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) NumberInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"numberInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_Password) NumberInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Numeric() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Numeric() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"numeric",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_Password) Numeric() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) NumericInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) NumericInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"numericInput",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_Password) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Password) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_Password) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_Password) Result() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Special() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Special() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"special",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_Password) Special() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) SpecialInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) SpecialInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"specialInput",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_Password) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_Password) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Password) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_Password) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Password) Upper() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) Upper() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"upper",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_Password) Upper() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Password) UpperInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Password) UpperInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"upperInput",
@@ -601,7 +601,6 @@ func (j *jsiiProxy_Password) UpperInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/password random_password} Resource.
 func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig) Password {
@@ -614,7 +613,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-random.password.Password",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -627,12 +626,12 @@ func NewPassword_Override(p Password, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-random.password.Password",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Password)SetConnection(val interface{}) {
+func (j *jsiiProxy_Password) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_Password)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetCount(val interface{}) {
+func (j *jsiiProxy_Password) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_Password)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Password) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -662,7 +661,7 @@ func (j *jsiiProxy_Password)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Password) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_Password)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Password) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_Password)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetLength(val *float64) {
+func (j *jsiiProxy_Password) SetLength(val *float64) {
 	if err := j.validateSetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_Password)SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Password) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_Password)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_Password)SetLower(val interface{}) {
+func (j *jsiiProxy_Password) SetLower(val any) {
 	if err := j.validateSetLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_Password)SetLower(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinLower(val *float64) {
+func (j *jsiiProxy_Password) SetMinLower(val *float64) {
 	if err := j.validateSetMinLowerParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_Password)SetMinLower(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinNumeric(val *float64) {
+func (j *jsiiProxy_Password) SetMinNumeric(val *float64) {
 	if err := j.validateSetMinNumericParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_Password)SetMinNumeric(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinSpecial(val *float64) {
+func (j *jsiiProxy_Password) SetMinSpecial(val *float64) {
 	if err := j.validateSetMinSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_Password)SetMinSpecial(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetMinUpper(val *float64) {
+func (j *jsiiProxy_Password) SetMinUpper(val *float64) {
 	if err := j.validateSetMinUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_Password)SetMinUpper(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetNumber(val interface{}) {
+func (j *jsiiProxy_Password) SetNumber(val any) {
 	if err := j.validateSetNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_Password)SetNumber(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetNumeric(val interface{}) {
+func (j *jsiiProxy_Password) SetNumeric(val any) {
 	if err := j.validateSetNumericParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_Password)SetNumeric(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetOverrideSpecial(val *string) {
+func (j *jsiiProxy_Password) SetOverrideSpecial(val *string) {
 	if err := j.validateSetOverrideSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_Password)SetOverrideSpecial(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Password) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -799,7 +798,7 @@ func (j *jsiiProxy_Password)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Password) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_Password)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetSpecial(val interface{}) {
+func (j *jsiiProxy_Password) SetSpecial(val any) {
 	if err := j.validateSetSpecialParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_Password)SetSpecial(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Password)SetUpper(val interface{}) {
+func (j *jsiiProxy_Password) SetUpper(val any) {
 	if err := j.validateSetUpperParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func Password_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.password.Password",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func Password_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Password_IsConstruct(x interface{}) *bool {
+func Password_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePassword_IsConstructParameters(x); err != nil {
@@ -879,7 +878,7 @@ func Password_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.password.Password",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func Password_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Password_IsTerraformElement(x interface{}) *bool {
+func Password_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePassword_IsTerraformElementParameters(x); err != nil {
@@ -898,7 +897,7 @@ func Password_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.password.Password",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func Password_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Password_IsTerraformResource(x interface{}) *bool {
+func Password_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePassword_IsTerraformResourceParameters(x); err != nil {
@@ -917,7 +916,7 @@ func Password_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.password.Password",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -942,31 +941,31 @@ func (p *jsiiProxy_Password) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_Password) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_Password) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_Password) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_Password) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (p *jsiiProxy_Password) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (p *jsiiProxy_Password) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (p *jsiiProxy_Password) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,7 +1029,7 @@ func (p *jsiiProxy_Password) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1046,7 +1045,7 @@ func (p *jsiiProxy_Password) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1062,7 +1061,7 @@ func (p *jsiiProxy_Password) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,7 +1077,7 @@ func (p *jsiiProxy_Password) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1094,15 +1093,15 @@ func (p *jsiiProxy_Password) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_Password) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Password) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1121,7 +1120,7 @@ func (p *jsiiProxy_Password) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (p *jsiiProxy_Password) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,18 +1147,18 @@ func (p *jsiiProxy_Password) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_Password) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_Password) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (p *jsiiProxy_Password) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (p *jsiiProxy_Password) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1281,8 +1280,8 @@ func (p *jsiiProxy_Password) ResetUpper() {
 	)
 }
 
-func (p *jsiiProxy_Password) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Password) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1294,8 +1293,8 @@ func (p *jsiiProxy_Password) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Password) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Password) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1307,8 +1306,8 @@ func (p *jsiiProxy_Password) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Password) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Password) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1320,8 +1319,8 @@ func (p *jsiiProxy_Password) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Password) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Password) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1346,8 +1345,8 @@ func (p *jsiiProxy_Password) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_Password) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Password) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1358,4 +1357,3 @@ func (p *jsiiProxy_Password) ToTerraform() interface{} {
 
 	return returns
 }
-

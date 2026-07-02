@@ -15,15 +15,15 @@ type Pet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,27 +57,27 @@ type Pet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Separator() *string
 	SetSeparator(val *string)
 	SeparatorInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type Pet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type Pet interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type Pet interface {
 	ResetOverrideLogicalId()
 	ResetPrefix()
 	ResetSeparator()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Pet
@@ -149,8 +149,8 @@ func (j *jsiiProxy_Pet) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Pet) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Pet) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Pet) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Pet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Pet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_Pet) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Pet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Pet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_Pet) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Pet) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Pet) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_Pet) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Pet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Pet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_Pet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGen
 	return returns
 }
 
-func (j *jsiiProxy_Pet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Pet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,7 +389,6 @@ func (j *jsiiProxy_Pet) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.5.1/docs/resources/pet random_pet} Resource.
 func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	_init_.Initialize()
@@ -401,7 +400,7 @@ func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 
 	_jsii_.Create(
 		"@cdktf/provider-random.pet.Pet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -414,12 +413,12 @@ func NewPet_Override(p Pet, scope constructs.Construct, id *string, config *PetC
 
 	_jsii_.Create(
 		"@cdktf/provider-random.pet.Pet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Pet)SetConnection(val interface{}) {
+func (j *jsiiProxy_Pet) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_Pet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetCount(val interface{}) {
+func (j *jsiiProxy_Pet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_Pet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Pet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -449,7 +448,7 @@ func (j *jsiiProxy_Pet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Pet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_Pet)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetKeepers(val *map[string]*string) {
+func (j *jsiiProxy_Pet) SetKeepers(val *map[string]*string) {
 	if err := j.validateSetKeepersParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_Pet)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetLength(val *float64) {
+func (j *jsiiProxy_Pet) SetLength(val *float64) {
 	if err := j.validateSetLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_Pet)SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Pet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_Pet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetPrefix(val *string) {
+func (j *jsiiProxy_Pet) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_Pet)SetPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Pet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_Pet)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Pet) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_Pet)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Pet)SetSeparator(val *string) {
+func (j *jsiiProxy_Pet) SetSeparator(val *string) {
 	if err := j.validateSetSeparatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func Pet_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.pet.Pet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func Pet_GenerateConfigForImport(scope constructs.Construct, importToId *string,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Pet_IsConstruct(x interface{}) *bool {
+func Pet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePet_IsConstructParameters(x); err != nil {
@@ -578,7 +577,7 @@ func Pet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.pet.Pet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func Pet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Pet_IsTerraformElement(x interface{}) *bool {
+func Pet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePet_IsTerraformElementParameters(x); err != nil {
@@ -597,7 +596,7 @@ func Pet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.pet.Pet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func Pet_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Pet_IsTerraformResource(x interface{}) *bool {
+func Pet_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePet_IsTerraformResourceParameters(x); err != nil {
@@ -616,7 +615,7 @@ func Pet_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-random.pet.Pet",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,31 +640,31 @@ func (p *jsiiProxy_Pet) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_Pet) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_Pet) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_Pet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_Pet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (p *jsiiProxy_Pet) GetBooleanAttribute(terraformAttribute *string) cdktf.IR
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (p *jsiiProxy_Pet) GetBooleanMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (p *jsiiProxy_Pet) GetListAttribute(terraformAttribute *string) *[]*string 
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (p *jsiiProxy_Pet) GetNumberAttribute(terraformAttribute *string) *float64 
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (p *jsiiProxy_Pet) GetNumberListAttribute(terraformAttribute *string) *[]*f
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (p *jsiiProxy_Pet) GetNumberMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (p *jsiiProxy_Pet) GetStringAttribute(terraformAttribute *string) *string {
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,15 +792,15 @@ func (p *jsiiProxy_Pet) GetStringMapAttribute(terraformAttribute *string) *map[s
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_Pet) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Pet) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -820,7 +819,7 @@ func (p *jsiiProxy_Pet) ImportFrom(id *string, provider cdktf.TerraformProvider)
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -833,7 +832,7 @@ func (p *jsiiProxy_Pet) InterpolationForAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,18 +846,18 @@ func (p *jsiiProxy_Pet) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_Pet) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_Pet) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -869,7 +868,7 @@ func (p *jsiiProxy_Pet) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -880,7 +879,7 @@ func (p *jsiiProxy_Pet) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -924,8 +923,8 @@ func (p *jsiiProxy_Pet) ResetSeparator() {
 	)
 }
 
-func (p *jsiiProxy_Pet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Pet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -937,8 +936,8 @@ func (p *jsiiProxy_Pet) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Pet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Pet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -950,8 +949,8 @@ func (p *jsiiProxy_Pet) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Pet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Pet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -963,8 +962,8 @@ func (p *jsiiProxy_Pet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Pet) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Pet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -989,8 +988,8 @@ func (p *jsiiProxy_Pet) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_Pet) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Pet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1001,4 +1000,3 @@ func (p *jsiiProxy_Pet) ToTerraform() interface{} {
 
 	return returns
 }
-
