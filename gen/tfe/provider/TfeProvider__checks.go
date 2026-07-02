@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (t *jsiiProxy_TfeProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TfeProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validateTfeProvider_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateTfeProvider_IsConstructParameters(x interface{}) error {
+func validateTfeProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validateTfeProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTfeProvider_IsTerraformElementParameters(x interface{}) error {
+func validateTfeProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validateTfeProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTfeProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateTfeProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func validateTfeProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_TfeProvider) validateSetSslSkipVerifyParameters(val interface{}) error {
+func (j *jsiiProxy_TfeProvider) validateSetSslSkipVerifyParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -103,4 +103,3 @@ func validateNewTfeProviderParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

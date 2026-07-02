@@ -106,7 +106,7 @@ func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetBranchParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetIdentifierParamet
 	return nil
 }
 
-func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetIngressSubmodulesParameters(val interface{}) error {
+func (j *jsiiProxy_PolicySetVcsRepoOutputReference) validateSetIngressSubmodulesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewPolicySetVcsRepoOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

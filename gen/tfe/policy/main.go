@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.policy.Policy",
-		reflect.TypeOf((*Policy)(nil)).Elem(),
+		reflect.TypeFor[Policy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Policy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,6 +83,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.policy.PolicyConfig",
-		reflect.TypeOf((*PolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyConfig](),
 	)
 }

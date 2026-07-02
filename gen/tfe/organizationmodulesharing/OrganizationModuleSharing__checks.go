@@ -19,7 +19,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OrganizationModuleSharing) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OrganizationModuleSharing) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationModuleSharing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OrganizationModuleSharing) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateOrganizationModuleSharing_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateOrganizationModuleSharing_IsConstructParameters(x interface{}) error {
+func validateOrganizationModuleSharing_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateOrganizationModuleSharing_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateOrganizationModuleSharing_IsTerraformElementParameters(x interface{}) error {
+func validateOrganizationModuleSharing_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateOrganizationModuleSharing_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateOrganizationModuleSharing_IsTerraformResourceParameters(x interface{}) error {
+func validateOrganizationModuleSharing_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateOrganizationModuleSharing_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationModuleSharing) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_OrganizationModuleSharing) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationModuleSharing) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_OrganizationModuleSharing) validateSetOrganizationParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationModuleSharing) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OrganizationModuleSharing) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewOrganizationModuleSharingParameters(scope constructs.Construct, 
 
 	return nil
 }
-

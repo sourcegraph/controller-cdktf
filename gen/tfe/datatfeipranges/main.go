@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
-		reflect.TypeOf((*DataTfeIpRanges)(nil)).Elem(),
+		reflect.TypeFor[DataTfeIpRanges](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vcs", GoGetter: "Vcs"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeIpRanges{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRangesConfig",
-		reflect.TypeOf((*DataTfeIpRangesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeIpRangesConfig](),
 	)
 }

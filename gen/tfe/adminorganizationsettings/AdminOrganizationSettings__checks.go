@@ -19,7 +19,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AdminOrganizationSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AdminOrganizationSettings) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (a *jsiiProxy_AdminOrganizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AdminOrganizationSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAdminOrganizationSettings_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateAdminOrganizationSettings_IsConstructParameters(x interface{}) error {
+func validateAdminOrganizationSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAdminOrganizationSettings_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateAdminOrganizationSettings_IsTerraformElementParameters(x interface{}) error {
+func validateAdminOrganizationSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAdminOrganizationSettings_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateAdminOrganizationSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateAdminOrganizationSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateAdminOrganizationSettings_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) validateSetAccessBetaToolsParameters(val interface{}) error {
+func (j *jsiiProxy_AdminOrganizationSettings) validateSetAccessBetaToolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (j *jsiiProxy_AdminOrganizationSettings) validateSetAccessBetaToolsParamete
 	return nil
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AdminOrganizationSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_AdminOrganizationSettings) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AdminOrganizationSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -354,7 +354,7 @@ func (j *jsiiProxy_AdminOrganizationSettings) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) validateSetGlobalModuleSharingParameters(val interface{}) error {
+func (j *jsiiProxy_AdminOrganizationSettings) validateSetGlobalModuleSharingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,7 +406,7 @@ func (j *jsiiProxy_AdminOrganizationSettings) validateSetOrganizationParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AdminOrganizationSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AdminOrganizationSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -475,4 +475,3 @@ func validateNewAdminOrganizationSettingsParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
-		reflect.TypeOf((*OrganizationRunTask)(nil)).Elem(),
+		reflect.TypeFor[OrganizationRunTask](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationRunTask{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,6 +83,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTaskConfig",
-		reflect.TypeOf((*OrganizationRunTaskConfig)(nil)).Elem(),
+		reflect.TypeFor[OrganizationRunTaskConfig](),
 	)
 }

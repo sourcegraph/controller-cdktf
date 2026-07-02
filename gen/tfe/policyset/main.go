@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.policySet.PolicySet",
-		reflect.TypeOf((*PolicySet)(nil)).Elem(),
+		reflect.TypeFor[PolicySet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdsInput", GoGetter: "WorkspaceIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicySet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.policySet.PolicySetConfig",
-		reflect.TypeOf((*PolicySetConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicySetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.policySet.PolicySetVcsRepo",
-		reflect.TypeOf((*PolicySetVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[PolicySetVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference",
-		reflect.TypeOf((*PolicySetVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicySetVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "branchInput", GoGetter: "BranchInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicySetVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

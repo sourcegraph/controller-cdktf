@@ -15,9 +15,9 @@ type WorkspaceVcsRepoOutputReference interface {
 	BranchInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,9 +36,9 @@ type WorkspaceVcsRepoOutputReference interface {
 	Identifier() *string
 	SetIdentifier(val *string)
 	IdentifierInput() *string
-	IngressSubmodules() interface{}
-	SetIngressSubmodules(val interface{})
-	IngressSubmodulesInput() interface{}
+	IngressSubmodules() any
+	SetIngressSubmodules(val any)
+	IngressSubmodulesInput() any
 	InternalValue() *WorkspaceVcsRepo
 	SetInternalValue(val *WorkspaceVcsRepo)
 	OauthTokenId() *string
@@ -58,7 +58,7 @@ type WorkspaceVcsRepoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type WorkspaceVcsRepoOutputReference interface {
 	ResetTagsRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) BranchInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IngressSubmodules() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IngressSubmodules() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressSubmodules",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IngressSubmodules() interfac
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IngressSubmodulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) IngressSubmodulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressSubmodulesInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) TerraformResource() cdktf.II
 	return returns
 }
 
-
 func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspaceVcsRepoOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewWorkspaceVcsRepoOutputReference_Override(w WorkspaceVcsRepoOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetGithubAppInstallationId(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetGithubAppInstallationId(val *string) {
 	if err := j.validateSetGithubAppInstallationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetGithubAppInstallationId(va
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetIdentifier(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetIdentifier(val *string) {
 	if err := j.validateSetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetIngressSubmodules(val interface{}) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetIngressSubmodules(val any) {
 	if err := j.validateSetIngressSubmodulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetIngressSubmodules(val inte
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetInternalValue(val *WorkspaceVcsRepo) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetInternalValue(val *WorkspaceVcsRepo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetInternalValue(val *Workspa
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetOauthTokenId(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetOauthTokenId(val *string) {
 	if err := j.validateSetOauthTokenIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetOauthTokenId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTagsRegex(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetTagsRegex(val *string) {
 	if err := j.validateSetTagsRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTagsRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetTagsRegex() {
 	)
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ToString() *string {
 
 	return returns
 }
-

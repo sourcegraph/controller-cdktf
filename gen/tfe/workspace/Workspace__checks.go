@@ -19,7 +19,7 @@ func (w *jsiiProxy_Workspace) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (w *jsiiProxy_Workspace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_Workspace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_Workspace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Workspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_Workspace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateWorkspace_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateWorkspace_IsConstructParameters(x interface{}) error {
+func validateWorkspace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkspace_IsTerraformElementParameters(x interface{}) error {
+func validateWorkspace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateWorkspace_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkspace_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkspace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_Workspace) validateSetAgentPoolIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetAllowDestroyPlanParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetAllowDestroyPlanParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_Workspace) validateSetAllowDestroyPlanParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetAssessmentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetAssessmentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_Workspace) validateSetAssessmentsEnabledParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetAutoApplyParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetAutoApplyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func (j *jsiiProxy_Workspace) validateSetAutoApplyParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_Workspace) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_Workspace) validateSetExecutionModeParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetFileTriggersEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetFileTriggersEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_Workspace) validateSetFileTriggersEnabledParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -469,7 +469,7 @@ func (j *jsiiProxy_Workspace) validateSetForceDeleteParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetGlobalRemoteStateParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetGlobalRemoteStateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -513,7 +513,7 @@ func (j *jsiiProxy_Workspace) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetOperationsParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetOperationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -549,7 +549,7 @@ func (j *jsiiProxy_Workspace) validateSetProjectIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -595,7 +595,7 @@ func (j *jsiiProxy_Workspace) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetQueueAllRunsParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetQueueAllRunsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -639,7 +639,7 @@ func (j *jsiiProxy_Workspace) validateSetSourceUrlParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetSpeculativeEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetSpeculativeEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -667,7 +667,7 @@ func (j *jsiiProxy_Workspace) validateSetSshKeyIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Workspace) validateSetStructuredRunOutputEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_Workspace) validateSetStructuredRunOutputEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -745,4 +745,3 @@ func validateNewWorkspaceParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

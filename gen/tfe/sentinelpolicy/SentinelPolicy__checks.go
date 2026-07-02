@@ -19,7 +19,7 @@ func (s *jsiiProxy_SentinelPolicy) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (s *jsiiProxy_SentinelPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SentinelPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SentinelPolicy) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (s *jsiiProxy_SentinelPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SentinelPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSentinelPolicy_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateSentinelPolicy_IsConstructParameters(x interface{}) error {
+func validateSentinelPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSentinelPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSentinelPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateSentinelPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSentinelPolicy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSentinelPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateSentinelPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSentinelPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SentinelPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SentinelPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_SentinelPolicy) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SentinelPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SentinelPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SentinelPolicy) validateSetPolicyParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_SentinelPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SentinelPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -454,4 +454,3 @@ func validateNewSentinelPolicyParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeOrganizationMembersMembersOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizationMembersMembersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeOrganizationMembersMembersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataTfeOrganizationMembersMembersOutputReferenceParameters(terra
 
 	return nil
 }
-
