@@ -15,9 +15,9 @@ type SelfSignedCertSubjectOutputReference interface {
 	CommonNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type SelfSignedCertSubjectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type SelfSignedCertSubjectOutputReference interface {
 	ResetStreetAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) CommonNameInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewSelfSignedCertSubjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SelfSignedCertSubjectOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewSelfSignedCertSubjectOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewSelfSignedCertSubjectOutputReference_Override(s SelfSignedCertSubjectOut
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCertSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetCommonName(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetCommonName(val *string) {
 	if err := j.validateSetCommonNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetCommonName(val *strin
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetCountry(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetCountry(val *string) {
 	if err := j.validateSetCountryParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetCountry(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetInternalValue(val *SelfSignedCertSubject) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetInternalValue(val *SelfSignedCertSubject) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetInternalValue(val *Se
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetLocality(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetLocality(val *string) {
 	if err := j.validateSetLocalityParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetLocality(val *string)
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetOrganization(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetOrganization(val *str
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetOrganizationalUnit(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetOrganizationalUnit(va
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetPostalCode(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetPostalCode(val *string) {
 	if err := j.validateSetPostalCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetPostalCode(val *strin
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetProvince(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetProvince(val *string) {
 	if err := j.validateSetProvinceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetProvince(val *string)
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetSerialNumber(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetSerialNumber(val *string) {
 	if err := j.validateSetSerialNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetSerialNumber(val *str
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetStreetAddress(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetStreetAddress(val *[]*string) {
 	if err := j.validateSetStreetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetStreetAddress(val *[]
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) ResetStreetAddress() {
 	)
 }
 
-func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (s *jsiiProxy_SelfSignedCertSubjectOutputReference) ToString() *string {
 
 	return returns
 }
-

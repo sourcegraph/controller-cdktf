@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.provider.TlsProvider",
-		reflect.TypeOf((*TlsProvider)(nil)).Elem(),
+		reflect.TypeFor[TlsProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -37,7 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TlsProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -45,10 +45,10 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.provider.TlsProviderConfig",
-		reflect.TypeOf((*TlsProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[TlsProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.provider.TlsProviderProxy",
-		reflect.TypeOf((*TlsProviderProxy)(nil)).Elem(),
+		reflect.TypeFor[TlsProviderProxy](),
 	)
 }

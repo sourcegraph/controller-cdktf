@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
-		reflect.TypeOf((*DataTlsPublicKey)(nil)).Elem(),
+		reflect.TypeFor[DataTlsPublicKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTlsPublicKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,6 +65,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKeyConfig",
-		reflect.TypeOf((*DataTlsPublicKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTlsPublicKeyConfig](),
 	)
 }

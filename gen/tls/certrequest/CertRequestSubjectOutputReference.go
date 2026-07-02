@@ -15,9 +15,9 @@ type CertRequestSubjectOutputReference interface {
 	CommonNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type CertRequestSubjectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type CertRequestSubjectOutputReference interface {
 	ResetStreetAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference) CommonNameInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertRequestSubjectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewCertRequestSubjectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CertRequestSubjectOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewCertRequestSubjectOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewCertRequestSubjectOutputReference_Override(c CertRequestSubjectOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetCommonName(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetCommonName(val *string) {
 	if err := j.validateSetCommonNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetCommonName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetCountry(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetCountry(val *string) {
 	if err := j.validateSetCountryParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetCountry(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetInternalValue(val *CertRequestSubject) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetInternalValue(val *CertRequestSubject) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetInternalValue(val *CertR
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetLocality(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetLocality(val *string) {
 	if err := j.validateSetLocalityParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetLocality(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetOrganization(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetOrganization(val *string
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetOrganizationalUnit(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetOrganizationalUnit(val *
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetPostalCode(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetPostalCode(val *string) {
 	if err := j.validateSetPostalCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetPostalCode(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetProvince(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetProvince(val *string) {
 	if err := j.validateSetProvinceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetProvince(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetSerialNumber(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetSerialNumber(val *string) {
 	if err := j.validateSetSerialNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetSerialNumber(val *string
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetStreetAddress(val *[]*string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetStreetAddress(val *[]*string) {
 	if err := j.validateSetStreetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetStreetAddress(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CertRequestSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CertRequestSubjectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) ResetStreetAddress() {
 	)
 }
 
-func (c *jsiiProxy_CertRequestSubjectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CertRequestSubjectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -18,20 +18,20 @@ type TlsProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	Proxy() *TlsProviderProxy
 	SetProxy(val *TlsProviderProxy)
 	ProxyInput() *TlsProviderProxy
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -39,7 +39,7 @@ type TlsProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -48,17 +48,17 @@ type TlsProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProxy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TlsProvider
@@ -96,8 +96,8 @@ func (j *jsiiProxy_TlsProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TlsProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TlsProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_TlsProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TlsProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TlsProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_TlsProvider) ProxyInput() *TlsProviderProxy {
 	return returns
 }
 
-func (j *jsiiProxy_TlsProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TlsProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -206,7 +206,6 @@ func (j *jsiiProxy_TlsProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs tls} Resource.
 func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderConfig) TlsProvider {
 	_init_.Initialize()
@@ -218,7 +217,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.provider.TlsProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -231,12 +230,12 @@ func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.provider.TlsProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TlsProvider)SetAlias(val *string) {
+func (j *jsiiProxy_TlsProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -244,7 +243,7 @@ func (j *jsiiProxy_TlsProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TlsProvider)SetProxy(val *TlsProviderProxy) {
+func (j *jsiiProxy_TlsProvider) SetProxy(val *TlsProviderProxy) {
 	if err := j.validateSetProxyParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func TlsProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.provider.TlsProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func TlsProvider_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TlsProvider_IsConstruct(x interface{}) *bool {
+func TlsProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTlsProvider_IsConstructParameters(x); err != nil {
@@ -302,7 +301,7 @@ func TlsProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.provider.TlsProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func TlsProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TlsProvider_IsTerraformElement(x interface{}) *bool {
+func TlsProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTlsProvider_IsTerraformElementParameters(x); err != nil {
@@ -321,7 +320,7 @@ func TlsProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.provider.TlsProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func TlsProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TlsProvider_IsTerraformProvider(x interface{}) *bool {
+func TlsProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTlsProvider_IsTerraformProviderParameters(x); err != nil {
@@ -340,7 +339,7 @@ func TlsProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.provider.TlsProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -358,14 +357,14 @@ func TlsProvider_TfResourceType() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TlsProvider) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TlsProvider) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -376,7 +375,7 @@ func (t *jsiiProxy_TlsProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -404,8 +403,8 @@ func (t *jsiiProxy_TlsProvider) ResetProxy() {
 	)
 }
 
-func (t *jsiiProxy_TlsProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TlsProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -417,8 +416,8 @@ func (t *jsiiProxy_TlsProvider) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TlsProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TlsProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -430,8 +429,8 @@ func (t *jsiiProxy_TlsProvider) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (t *jsiiProxy_TlsProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TlsProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -443,8 +442,8 @@ func (t *jsiiProxy_TlsProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TlsProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TlsProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -469,8 +468,8 @@ func (t *jsiiProxy_TlsProvider) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TlsProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TlsProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -481,4 +480,3 @@ func (t *jsiiProxy_TlsProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

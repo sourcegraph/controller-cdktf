@@ -106,7 +106,7 @@ func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetCommonNamePa
 	return nil
 }
 
-func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SelfSignedCertSubjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,4 +270,3 @@ func validateNewSelfSignedCertSubjectOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

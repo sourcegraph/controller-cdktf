@@ -29,15 +29,15 @@ type LocallySignedCert interface {
 	SetCertRequestPem(val *string)
 	CertRequestPemInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,9 +54,9 @@ type LocallySignedCert interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	IsCaCertificate() interface{}
-	SetIsCaCertificate(val interface{})
-	IsCaCertificateInput() interface{}
+	IsCaCertificate() any
+	SetIsCaCertificate(val any)
+	IsCaCertificateInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,19 +68,19 @@ type LocallySignedCert interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadyForRenewal() cdktf.IResolvable
-	SetSubjectKeyId() interface{}
-	SetSetSubjectKeyId(val interface{})
-	SetSubjectKeyIdInput() interface{}
+	SetSubjectKeyId() any
+	SetSetSubjectKeyId(val any)
+	SetSubjectKeyIdInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidityEndTime() *string
@@ -92,9 +92,9 @@ type LocallySignedCert interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type LocallySignedCert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type LocallySignedCert interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type LocallySignedCert interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSetSubjectKeyId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LocallySignedCert
@@ -265,8 +265,8 @@ func (j *jsiiProxy_LocallySignedCert) CertRequestPemInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_LocallySignedCert) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocallySignedCert) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_LocallySignedCert) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_LocallySignedCert) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) IsCaCertificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) IsCaCertificate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCaCertificate",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_LocallySignedCert) IsCaCertificate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) IsCaCertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) IsCaCertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCaCertificateInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_LocallySignedCert) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LocallySignedCert) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_LocallySignedCert) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_LocallySignedCert) ReadyForRenewal() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyId() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setSubjectKeyId",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyId() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyIdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LocallySignedCert) SetSubjectKeyIdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setSubjectKeyIdInput",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_LocallySignedCert) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LocallySignedCert) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LocallySignedCert) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -535,7 +535,6 @@ func (j *jsiiProxy_LocallySignedCert) ValidityStartTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/locally_signed_cert tls_locally_signed_cert} Resource.
 func NewLocallySignedCert(scope constructs.Construct, id *string, config *LocallySignedCertConfig) LocallySignedCert {
 	_init_.Initialize()
@@ -547,7 +546,7 @@ func NewLocallySignedCert(scope constructs.Construct, id *string, config *Locall
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -560,12 +559,12 @@ func NewLocallySignedCert_Override(l LocallySignedCert, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetAllowedUses(val *[]*string) {
+func (j *jsiiProxy_LocallySignedCert) SetAllowedUses(val *[]*string) {
 	if err := j.validateSetAllowedUsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_LocallySignedCert)SetAllowedUses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetCaCertPem(val *string) {
+func (j *jsiiProxy_LocallySignedCert) SetCaCertPem(val *string) {
 	if err := j.validateSetCaCertPemParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_LocallySignedCert)SetCaCertPem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetCaPrivateKeyPem(val *string) {
+func (j *jsiiProxy_LocallySignedCert) SetCaPrivateKeyPem(val *string) {
 	if err := j.validateSetCaPrivateKeyPemParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_LocallySignedCert)SetCaPrivateKeyPem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetCertRequestPem(val *string) {
+func (j *jsiiProxy_LocallySignedCert) SetCertRequestPem(val *string) {
 	if err := j.validateSetCertRequestPemParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_LocallySignedCert)SetCertRequestPem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetConnection(val interface{}) {
+func (j *jsiiProxy_LocallySignedCert) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_LocallySignedCert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetCount(val interface{}) {
+func (j *jsiiProxy_LocallySignedCert) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_LocallySignedCert)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LocallySignedCert) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_LocallySignedCert)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetEarlyRenewalHours(val *float64) {
+func (j *jsiiProxy_LocallySignedCert) SetEarlyRenewalHours(val *float64) {
 	if err := j.validateSetEarlyRenewalHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_LocallySignedCert)SetEarlyRenewalHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LocallySignedCert) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_LocallySignedCert)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetIsCaCertificate(val interface{}) {
+func (j *jsiiProxy_LocallySignedCert) SetIsCaCertificate(val any) {
 	if err := j.validateSetIsCaCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_LocallySignedCert)SetIsCaCertificate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LocallySignedCert) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_LocallySignedCert)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LocallySignedCert) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -688,7 +687,7 @@ func (j *jsiiProxy_LocallySignedCert)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LocallySignedCert) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_LocallySignedCert)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetSetSubjectKeyId(val interface{}) {
+func (j *jsiiProxy_LocallySignedCert) SetSetSubjectKeyId(val any) {
 	if err := j.validateSetSetSubjectKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_LocallySignedCert)SetSetSubjectKeyId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocallySignedCert)SetValidityPeriodHours(val *float64) {
+func (j *jsiiProxy_LocallySignedCert) SetValidityPeriodHours(val *float64) {
 	if err := j.validateSetValidityPeriodHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func LocallySignedCert_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func LocallySignedCert_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LocallySignedCert_IsConstruct(x interface{}) *bool {
+func LocallySignedCert_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocallySignedCert_IsConstructParameters(x); err != nil {
@@ -768,7 +767,7 @@ func LocallySignedCert_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func LocallySignedCert_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LocallySignedCert_IsTerraformElement(x interface{}) *bool {
+func LocallySignedCert_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocallySignedCert_IsTerraformElementParameters(x); err != nil {
@@ -787,7 +786,7 @@ func LocallySignedCert_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func LocallySignedCert_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LocallySignedCert_IsTerraformResource(x interface{}) *bool {
+func LocallySignedCert_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLocallySignedCert_IsTerraformResourceParameters(x); err != nil {
@@ -806,7 +805,7 @@ func LocallySignedCert_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -831,31 +830,31 @@ func (l *jsiiProxy_LocallySignedCert) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LocallySignedCert) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LocallySignedCert) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LocallySignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LocallySignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (l *jsiiProxy_LocallySignedCert) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (l *jsiiProxy_LocallySignedCert) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (l *jsiiProxy_LocallySignedCert) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (l *jsiiProxy_LocallySignedCert) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (l *jsiiProxy_LocallySignedCert) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (l *jsiiProxy_LocallySignedCert) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (l *jsiiProxy_LocallySignedCert) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,15 +982,15 @@ func (l *jsiiProxy_LocallySignedCert) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocallySignedCert) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1010,7 +1009,7 @@ func (l *jsiiProxy_LocallySignedCert) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1023,7 +1022,7 @@ func (l *jsiiProxy_LocallySignedCert) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,18 +1036,18 @@ func (l *jsiiProxy_LocallySignedCert) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LocallySignedCert) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LocallySignedCert) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1059,7 +1058,7 @@ func (l *jsiiProxy_LocallySignedCert) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1070,7 +1069,7 @@ func (l *jsiiProxy_LocallySignedCert) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1106,8 +1105,8 @@ func (l *jsiiProxy_LocallySignedCert) ResetSetSubjectKeyId() {
 	)
 }
 
-func (l *jsiiProxy_LocallySignedCert) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocallySignedCert) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1119,8 +1118,8 @@ func (l *jsiiProxy_LocallySignedCert) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LocallySignedCert) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1132,8 +1131,8 @@ func (l *jsiiProxy_LocallySignedCert) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocallySignedCert) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1145,8 +1144,8 @@ func (l *jsiiProxy_LocallySignedCert) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocallySignedCert) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1171,8 +1170,8 @@ func (l *jsiiProxy_LocallySignedCert) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LocallySignedCert) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LocallySignedCert) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1183,4 +1182,3 @@ func (l *jsiiProxy_LocallySignedCert) ToTerraform() interface{} {
 
 	return returns
 }
-

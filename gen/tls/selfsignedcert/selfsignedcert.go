@@ -19,15 +19,15 @@ type SelfSignedCert interface {
 	CdktfStack() cdktf.TerraformStack
 	CertPem() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,9 +50,9 @@ type SelfSignedCert interface {
 	IpAddresses() *[]*string
 	SetIpAddresses(val *[]*string)
 	IpAddressesInput() *[]*string
-	IsCaCertificate() interface{}
-	SetIsCaCertificate(val interface{})
-	IsCaCertificateInput() interface{}
+	IsCaCertificate() any
+	SetIsCaCertificate(val any)
+	IsCaCertificateInput() any
 	KeyAlgorithm() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -68,24 +68,24 @@ type SelfSignedCert interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadyForRenewal() cdktf.IResolvable
-	SetAuthorityKeyId() interface{}
-	SetSetAuthorityKeyId(val interface{})
-	SetAuthorityKeyIdInput() interface{}
-	SetSubjectKeyId() interface{}
-	SetSetSubjectKeyId(val interface{})
-	SetSubjectKeyIdInput() interface{}
+	SetAuthorityKeyId() any
+	SetSetAuthorityKeyId(val any)
+	SetAuthorityKeyIdInput() any
+	SetSubjectKeyId() any
+	SetSetSubjectKeyId(val any)
+	SetSubjectKeyIdInput() any
 	Subject() SelfSignedCertSubjectOutputReference
 	SubjectInput() *SelfSignedCertSubject
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Uris() *[]*string
@@ -100,9 +100,9 @@ type SelfSignedCert interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type SelfSignedCert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type SelfSignedCert interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type SelfSignedCert interface {
 	ResetSetSubjectKeyId()
 	ResetSubject()
 	ResetUris()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SelfSignedCert
@@ -209,8 +209,8 @@ func (j *jsiiProxy_SelfSignedCert) CertPem() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_SelfSignedCert) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SelfSignedCert) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_SelfSignedCert) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_SelfSignedCert) IpAddressesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) IsCaCertificate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) IsCaCertificate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCaCertificate",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_SelfSignedCert) IsCaCertificate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) IsCaCertificateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) IsCaCertificateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCaCertificateInput",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_SelfSignedCert) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SelfSignedCert) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_SelfSignedCert) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_SelfSignedCert) ReadyForRenewal() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyId() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setAuthorityKeyId",
@@ -469,8 +469,8 @@ func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyId() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyIdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyIdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setAuthorityKeyIdInput",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_SelfSignedCert) SetAuthorityKeyIdInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) SetSubjectKeyId() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) SetSubjectKeyId() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setSubjectKeyId",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_SelfSignedCert) SetSubjectKeyId() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) SetSubjectKeyIdInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SelfSignedCert) SetSubjectKeyIdInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setSubjectKeyIdInput",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_SelfSignedCert) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_SelfSignedCert) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SelfSignedCert) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -609,7 +609,6 @@ func (j *jsiiProxy_SelfSignedCert) ValidityStartTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/self_signed_cert tls_self_signed_cert} Resource.
 func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSignedCertConfig) SelfSignedCert {
 	_init_.Initialize()
@@ -621,7 +620,7 @@ func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSigne
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -634,12 +633,12 @@ func NewSelfSignedCert_Override(s SelfSignedCert, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetAllowedUses(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCert) SetAllowedUses(val *[]*string) {
 	if err := j.validateSetAllowedUsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_SelfSignedCert)SetAllowedUses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetConnection(val interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_SelfSignedCert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetCount(val interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_SelfSignedCert)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCert) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_SelfSignedCert)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetDnsNames(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCert) SetDnsNames(val *[]*string) {
 	if err := j.validateSetDnsNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_SelfSignedCert)SetDnsNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetEarlyRenewalHours(val *float64) {
+func (j *jsiiProxy_SelfSignedCert) SetEarlyRenewalHours(val *float64) {
 	if err := j.validateSetEarlyRenewalHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_SelfSignedCert)SetEarlyRenewalHours(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SelfSignedCert) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -710,7 +709,7 @@ func (j *jsiiProxy_SelfSignedCert)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetIpAddresses(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCert) SetIpAddresses(val *[]*string) {
 	if err := j.validateSetIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_SelfSignedCert)SetIpAddresses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetIsCaCertificate(val interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetIsCaCertificate(val any) {
 	if err := j.validateSetIsCaCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_SelfSignedCert)SetIsCaCertificate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SelfSignedCert) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_SelfSignedCert)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetPrivateKeyPem(val *string) {
+func (j *jsiiProxy_SelfSignedCert) SetPrivateKeyPem(val *string) {
 	if err := j.validateSetPrivateKeyPemParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_SelfSignedCert)SetPrivateKeyPem(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SelfSignedCert) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -762,7 +761,7 @@ func (j *jsiiProxy_SelfSignedCert)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_SelfSignedCert)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetSetAuthorityKeyId(val interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetSetAuthorityKeyId(val any) {
 	if err := j.validateSetSetAuthorityKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_SelfSignedCert)SetSetAuthorityKeyId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetSetSubjectKeyId(val interface{}) {
+func (j *jsiiProxy_SelfSignedCert) SetSetSubjectKeyId(val any) {
 	if err := j.validateSetSetSubjectKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_SelfSignedCert)SetSetSubjectKeyId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetUris(val *[]*string) {
+func (j *jsiiProxy_SelfSignedCert) SetUris(val *[]*string) {
 	if err := j.validateSetUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_SelfSignedCert)SetUris(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SelfSignedCert)SetValidityPeriodHours(val *float64) {
+func (j *jsiiProxy_SelfSignedCert) SetValidityPeriodHours(val *float64) {
 	if err := j.validateSetValidityPeriodHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func SelfSignedCert_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func SelfSignedCert_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SelfSignedCert_IsConstruct(x interface{}) *bool {
+func SelfSignedCert_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSelfSignedCert_IsConstructParameters(x); err != nil {
@@ -864,7 +863,7 @@ func SelfSignedCert_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func SelfSignedCert_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SelfSignedCert_IsTerraformElement(x interface{}) *bool {
+func SelfSignedCert_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSelfSignedCert_IsTerraformElementParameters(x); err != nil {
@@ -883,7 +882,7 @@ func SelfSignedCert_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func SelfSignedCert_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SelfSignedCert_IsTerraformResource(x interface{}) *bool {
+func SelfSignedCert_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSelfSignedCert_IsTerraformResourceParameters(x); err != nil {
@@ -902,7 +901,7 @@ func SelfSignedCert_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -927,31 +926,31 @@ func (s *jsiiProxy_SelfSignedCert) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SelfSignedCert) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SelfSignedCert) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SelfSignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SelfSignedCert) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (s *jsiiProxy_SelfSignedCert) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (s *jsiiProxy_SelfSignedCert) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (s *jsiiProxy_SelfSignedCert) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (s *jsiiProxy_SelfSignedCert) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (s *jsiiProxy_SelfSignedCert) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (s *jsiiProxy_SelfSignedCert) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (s *jsiiProxy_SelfSignedCert) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,15 +1078,15 @@ func (s *jsiiProxy_SelfSignedCert) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCert) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SelfSignedCert) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1106,7 +1105,7 @@ func (s *jsiiProxy_SelfSignedCert) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (s *jsiiProxy_SelfSignedCert) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,18 +1132,18 @@ func (s *jsiiProxy_SelfSignedCert) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SelfSignedCert) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SelfSignedCert) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (s *jsiiProxy_SelfSignedCert) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (s *jsiiProxy_SelfSignedCert) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (s *jsiiProxy_SelfSignedCert) PutSubject(value *SelfSignedCertSubject) {
 	_jsii_.InvokeVoid(
 		s,
 		"putSubject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1253,8 +1252,8 @@ func (s *jsiiProxy_SelfSignedCert) ResetUris() {
 	)
 }
 
-func (s *jsiiProxy_SelfSignedCert) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SelfSignedCert) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1266,8 +1265,8 @@ func (s *jsiiProxy_SelfSignedCert) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCert) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SelfSignedCert) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1279,8 +1278,8 @@ func (s *jsiiProxy_SelfSignedCert) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCert) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SelfSignedCert) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1292,8 +1291,8 @@ func (s *jsiiProxy_SelfSignedCert) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCert) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SelfSignedCert) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1318,8 +1317,8 @@ func (s *jsiiProxy_SelfSignedCert) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SelfSignedCert) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SelfSignedCert) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1330,4 +1329,3 @@ func (s *jsiiProxy_SelfSignedCert) ToTerraform() interface{} {
 
 	return returns
 }
-
