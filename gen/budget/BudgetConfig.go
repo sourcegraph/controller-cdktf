@@ -10,7 +10,7 @@ type BudgetConfig struct {
 	// Experimental.
 	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
-	Providers *[]interface{} `field:"optional" json:"providers" yaml:"providers"`
+	Providers *[]any `field:"optional" json:"providers" yaml:"providers"`
 	// Experimental.
 	SkipAssetCreationFromLocalModules *bool `field:"optional" json:"skipAssetCreationFromLocalModules" yaml:"skipAssetCreationFromLocalModules"`
 	// The amount to use as the budget.
@@ -56,4 +56,3 @@ type BudgetConfig struct {
 	// If omitted, all services will be included in the budget. Service ids can be found at https://cloud.google.com/skus/
 	Services *[]*string `field:"optional" json:"services" yaml:"services"`
 }
-

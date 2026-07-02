@@ -10,7 +10,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-budget.Budget",
-		reflect.TypeOf((*Budget)(nil)).Elem(),
+		reflect.TypeFor[Budget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addProvider", GoMethod: "AddProvider"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Budget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
 			return &j
@@ -61,6 +61,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-budget.BudgetConfig",
-		reflect.TypeOf((*BudgetConfig)(nil)).Elem(),
+		reflect.TypeFor[BudgetConfig](),
 	)
 }
