@@ -10,7 +10,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (t *jsiiProxy_TimeProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TimeProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -46,7 +46,7 @@ func validateTimeProvider_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateTimeProvider_IsConstructParameters(x interface{}) error {
+func validateTimeProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -54,7 +54,7 @@ func validateTimeProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTimeProvider_IsTerraformElementParameters(x interface{}) error {
+func validateTimeProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func validateTimeProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTimeProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateTimeProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -85,4 +85,3 @@ func validateNewTimeProviderParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

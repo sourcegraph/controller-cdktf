@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-time.staticResource.StaticResource",
-		reflect.TypeOf((*StaticResource)(nil)).Elem(),
+		reflect.TypeFor[StaticResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unix", GoGetter: "Unix"},
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StaticResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-time.staticResource.StaticResourceConfig",
-		reflect.TypeOf((*StaticResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[StaticResourceConfig](),
 	)
 }

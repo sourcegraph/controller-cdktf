@@ -19,7 +19,7 @@ func (s *jsiiProxy_Sleep) validateAddMoveTargetParameters(moveTarget *string) er
 	return nil
 }
 
-func (s *jsiiProxy_Sleep) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_Sleep) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_Sleep) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sleep) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_Sleep) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateSleep_GenerateConfigForImportParameters(scope constructs.Construct,
 	return nil
 }
 
-func validateSleep_IsConstructParameters(x interface{}) error {
+func validateSleep_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateSleep_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSleep_IsTerraformElementParameters(x interface{}) error {
+func validateSleep_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateSleep_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSleep_IsTerraformResourceParameters(x interface{}) error {
+func validateSleep_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateSleep_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Sleep) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Sleep) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_Sleep) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_Sleep) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Sleep) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_Sleep) validateSetLifecycleParameters(val *cdktf.TerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_Sleep) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Sleep) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -427,4 +427,3 @@ func validateNewSleepParameters(scope constructs.Construct, id *string, config *
 
 	return nil
 }
-

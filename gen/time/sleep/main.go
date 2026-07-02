@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-time.sleep.Sleep",
-		reflect.TypeOf((*Sleep)(nil)).Elem(),
+		reflect.TypeFor[Sleep](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggers", GoGetter: "Triggers"},
 			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Sleep{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-time.sleep.SleepConfig",
-		reflect.TypeOf((*SleepConfig)(nil)).Elem(),
+		reflect.TypeFor[SleepConfig](),
 	)
 }

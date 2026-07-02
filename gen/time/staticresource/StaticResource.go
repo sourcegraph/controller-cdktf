@@ -15,15 +15,15 @@ type StaticResource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Day() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -52,11 +52,11 @@ type StaticResource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rfc3339() *string
 	SetRfc3339(val *string)
 	Rfc3339Input() *string
@@ -64,7 +64,7 @@ type StaticResource interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Triggers() *map[string]*string
@@ -76,9 +76,9 @@ type StaticResource interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type StaticResource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type StaticResource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type StaticResource interface {
 	ResetOverrideLogicalId()
 	ResetRfc3339()
 	ResetTriggers()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StaticResource
@@ -148,8 +148,8 @@ func (j *jsiiProxy_StaticResource) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StaticResource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_StaticResource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StaticResource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_StaticResource) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StaticResource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_StaticResource) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StaticResource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_StaticResource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StaticResource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_StaticResource) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_StaticResource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StaticResource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -418,7 +418,6 @@ func (j *jsiiProxy_StaticResource) Year() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static time_static} Resource.
 func NewStaticResource(scope constructs.Construct, id *string, config *StaticResourceConfig) StaticResource {
 	_init_.Initialize()
@@ -430,7 +429,7 @@ func NewStaticResource(scope constructs.Construct, id *string, config *StaticRes
 
 	_jsii_.Create(
 		"@cdktf/provider-time.staticResource.StaticResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -443,12 +442,12 @@ func NewStaticResource_Override(s StaticResource, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-time.staticResource.StaticResource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetConnection(val interface{}) {
+func (j *jsiiProxy_StaticResource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_StaticResource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetCount(val interface{}) {
+func (j *jsiiProxy_StaticResource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_StaticResource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StaticResource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_StaticResource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StaticResource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_StaticResource)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StaticResource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_StaticResource)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StaticResource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_StaticResource)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StaticResource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_StaticResource)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetRfc3339(val *string) {
+func (j *jsiiProxy_StaticResource) SetRfc3339(val *string) {
 	if err := j.validateSetRfc3339Parameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_StaticResource)SetRfc3339(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StaticResource)SetTriggers(val *map[string]*string) {
+func (j *jsiiProxy_StaticResource) SetTriggers(val *map[string]*string) {
 	if err := j.validateSetTriggersParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func StaticResource_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.staticResource.StaticResource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func StaticResource_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StaticResource_IsConstruct(x interface{}) *bool {
+func StaticResource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStaticResource_IsConstructParameters(x); err != nil {
@@ -585,7 +584,7 @@ func StaticResource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.staticResource.StaticResource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func StaticResource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StaticResource_IsTerraformElement(x interface{}) *bool {
+func StaticResource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStaticResource_IsTerraformElementParameters(x); err != nil {
@@ -604,7 +603,7 @@ func StaticResource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.staticResource.StaticResource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func StaticResource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StaticResource_IsTerraformResource(x interface{}) *bool {
+func StaticResource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStaticResource_IsTerraformResourceParameters(x); err != nil {
@@ -623,7 +622,7 @@ func StaticResource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.staticResource.StaticResource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -648,31 +647,31 @@ func (s *jsiiProxy_StaticResource) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StaticResource) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StaticResource) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StaticResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StaticResource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (s *jsiiProxy_StaticResource) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (s *jsiiProxy_StaticResource) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func (s *jsiiProxy_StaticResource) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (s *jsiiProxy_StaticResource) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (s *jsiiProxy_StaticResource) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (s *jsiiProxy_StaticResource) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (s *jsiiProxy_StaticResource) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,15 +799,15 @@ func (s *jsiiProxy_StaticResource) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StaticResource) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StaticResource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -827,7 +826,7 @@ func (s *jsiiProxy_StaticResource) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -840,7 +839,7 @@ func (s *jsiiProxy_StaticResource) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,18 +853,18 @@ func (s *jsiiProxy_StaticResource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StaticResource) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StaticResource) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -876,7 +875,7 @@ func (s *jsiiProxy_StaticResource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -887,7 +886,7 @@ func (s *jsiiProxy_StaticResource) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -915,8 +914,8 @@ func (s *jsiiProxy_StaticResource) ResetTriggers() {
 	)
 }
 
-func (s *jsiiProxy_StaticResource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StaticResource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -928,8 +927,8 @@ func (s *jsiiProxy_StaticResource) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_StaticResource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StaticResource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -941,8 +940,8 @@ func (s *jsiiProxy_StaticResource) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (s *jsiiProxy_StaticResource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StaticResource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -954,8 +953,8 @@ func (s *jsiiProxy_StaticResource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StaticResource) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StaticResource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -980,8 +979,8 @@ func (s *jsiiProxy_StaticResource) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StaticResource) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StaticResource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -992,4 +991,3 @@ func (s *jsiiProxy_StaticResource) ToTerraform() interface{} {
 
 	return returns
 }
-

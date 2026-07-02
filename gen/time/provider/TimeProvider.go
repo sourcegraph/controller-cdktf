@@ -18,17 +18,17 @@ type TimeProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -36,7 +36,7 @@ type TimeProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -44,17 +44,17 @@ type TimeProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TimeProvider
@@ -92,8 +92,8 @@ func (j *jsiiProxy_TimeProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TimeProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TimeProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_TimeProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TimeProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TimeProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_TimeProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_TimeProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TimeProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -182,7 +182,6 @@ func (j *jsiiProxy_TimeProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs time} Resource.
 func NewTimeProvider(scope constructs.Construct, id *string, config *TimeProviderConfig) TimeProvider {
 	_init_.Initialize()
@@ -194,7 +193,7 @@ func NewTimeProvider(scope constructs.Construct, id *string, config *TimeProvide
 
 	_jsii_.Create(
 		"@cdktf/provider-time.provider.TimeProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -207,12 +206,12 @@ func NewTimeProvider_Override(t TimeProvider, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-time.provider.TimeProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TimeProvider)SetAlias(val *string) {
+func (j *jsiiProxy_TimeProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -232,7 +231,7 @@ func TimeProvider_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.provider.TimeProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -256,7 +255,7 @@ func TimeProvider_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TimeProvider_IsConstruct(x interface{}) *bool {
+func TimeProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTimeProvider_IsConstructParameters(x); err != nil {
@@ -267,7 +266,7 @@ func TimeProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.provider.TimeProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -275,7 +274,7 @@ func TimeProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TimeProvider_IsTerraformElement(x interface{}) *bool {
+func TimeProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTimeProvider_IsTerraformElementParameters(x); err != nil {
@@ -286,7 +285,7 @@ func TimeProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.provider.TimeProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func TimeProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TimeProvider_IsTerraformProvider(x interface{}) *bool {
+func TimeProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTimeProvider_IsTerraformProviderParameters(x); err != nil {
@@ -305,7 +304,7 @@ func TimeProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-time.provider.TimeProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -323,14 +322,14 @@ func TimeProvider_TfResourceType() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TimeProvider) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TimeProvider) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -341,7 +340,7 @@ func (t *jsiiProxy_TimeProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -361,8 +360,8 @@ func (t *jsiiProxy_TimeProvider) ResetOverrideLogicalId() {
 	)
 }
 
-func (t *jsiiProxy_TimeProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TimeProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -374,8 +373,8 @@ func (t *jsiiProxy_TimeProvider) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (t *jsiiProxy_TimeProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TimeProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -387,8 +386,8 @@ func (t *jsiiProxy_TimeProvider) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (t *jsiiProxy_TimeProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TimeProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -400,8 +399,8 @@ func (t *jsiiProxy_TimeProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TimeProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TimeProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -426,8 +425,8 @@ func (t *jsiiProxy_TimeProvider) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TimeProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TimeProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -438,4 +437,3 @@ func (t *jsiiProxy_TimeProvider) ToTerraform() interface{} {
 
 	return returns
 }
-
