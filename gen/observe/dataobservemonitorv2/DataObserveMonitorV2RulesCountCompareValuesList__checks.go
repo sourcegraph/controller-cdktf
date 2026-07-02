@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareValuesList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorV2RulesCountCompareValuesListParameters(terraf
 
 	return nil
 }
-

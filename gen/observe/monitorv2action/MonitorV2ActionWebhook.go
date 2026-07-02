@@ -1,6 +1,5 @@
 package monitorv2action
 
-
 type MonitorV2ActionWebhook struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2_action#body MonitorV2Action#body}.
 	Body *string `field:"required" json:"body" yaml:"body"`
@@ -13,6 +12,5 @@ type MonitorV2ActionWebhook struct {
 	// headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_v2_action#headers MonitorV2Action#headers}
-	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
+	Headers any `field:"optional" json:"headers" yaml:"headers"`
 }
-

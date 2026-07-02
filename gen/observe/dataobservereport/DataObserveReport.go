@@ -15,16 +15,16 @@ type DataObserveReport interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedAt() *string
 	CreatedBy() DataObserveReportCreatedByList
-	CreatedByInput() interface{}
+	CreatedByInput() any
 	Dashboard() DataObserveReportDashboardList
-	DashboardInput() interface{}
+	DashboardInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,22 +65,22 @@ type DataObserveReport interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() DataObserveReportScheduleList
-	ScheduleInput() interface{}
+	ScheduleInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdatedAt() *string
 	UpdatedBy() DataObserveReportUpdatedByList
-	UpdatedByInput() interface{}
+	UpdatedByInput() any
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,10 +102,10 @@ type DataObserveReport interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCreatedBy(value interface{})
-	PutDashboard(value interface{})
-	PutSchedule(value interface{})
-	PutUpdatedBy(value interface{})
+	PutCreatedBy(value any)
+	PutDashboard(value any)
+	PutSchedule(value any)
+	PutUpdatedBy(value any)
 	ResetCreatedBy()
 	ResetDashboard()
 	ResetEmailBccRecipients()
@@ -115,18 +115,18 @@ type DataObserveReport interface {
 	ResetOverrideLogicalId()
 	ResetSchedule()
 	ResetUpdatedBy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataObserveReport
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataObserveReport) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveReport) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataObserveReport) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataObserveReport) CreatedBy() DataObserveReportCreatedByList
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) CreatedByInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) CreatedByInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createdByInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_DataObserveReport) Dashboard() DataObserveReportDashboardList
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) DashboardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) DashboardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dashboardInput",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_DataObserveReport) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_DataObserveReport) Schedule() DataObserveReportScheduleList {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) ScheduleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) ScheduleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scheduleInput",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_DataObserveReport) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveReport) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_DataObserveReport) UpdatedBy() DataObserveReportUpdatedByList
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReport) UpdatedByInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveReport) UpdatedByInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"updatedByInput",
@@ -513,7 +513,6 @@ func (j *jsiiProxy_DataObserveReport) UpdatedByInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/report observe_report} Data Source.
 func NewDataObserveReport(scope constructs.Construct, id *string, config *DataObserveReportConfig) DataObserveReport {
@@ -526,7 +525,7 @@ func NewDataObserveReport(scope constructs.Construct, id *string, config *DataOb
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -539,12 +538,12 @@ func NewDataObserveReport_Override(d DataObserveReport, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetCount(val interface{}) {
+func (j *jsiiProxy_DataObserveReport) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_DataObserveReport)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataObserveReport) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DataObserveReport)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetEmailBccRecipients(val *[]*string) {
+func (j *jsiiProxy_DataObserveReport) SetEmailBccRecipients(val *[]*string) {
 	if err := j.validateSetEmailBccRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_DataObserveReport)SetEmailBccRecipients(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetEmailRecipients(val *[]*string) {
+func (j *jsiiProxy_DataObserveReport) SetEmailRecipients(val *[]*string) {
 	if err := j.validateSetEmailRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_DataObserveReport)SetEmailRecipients(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveReport) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_DataObserveReport)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetId(val *string) {
+func (j *jsiiProxy_DataObserveReport) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_DataObserveReport)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveReport) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_DataObserveReport)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DataObserveReport)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveReport) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func DataObserveReport_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func DataObserveReport_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataObserveReport_IsConstruct(x interface{}) *bool {
+func DataObserveReport_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveReport_IsConstructParameters(x); err != nil {
@@ -670,7 +669,7 @@ func DataObserveReport_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func DataObserveReport_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveReport_IsTerraformDataSource(x interface{}) *bool {
+func DataObserveReport_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveReport_IsTerraformDataSourceParameters(x); err != nil {
@@ -689,7 +688,7 @@ func DataObserveReport_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func DataObserveReport_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveReport_IsTerraformElement(x interface{}) *bool {
+func DataObserveReport_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveReport_IsTerraformElementParameters(x); err != nil {
@@ -708,7 +707,7 @@ func DataObserveReport_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -726,27 +725,27 @@ func DataObserveReport_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReport) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataObserveReport) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveReport) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataObserveReport) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataObserveReport) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataObserveReport) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataObserveReport) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (d *jsiiProxy_DataObserveReport) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataObserveReport) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (d *jsiiProxy_DataObserveReport) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (d *jsiiProxy_DataObserveReport) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataObserveReport) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,51 +903,51 @@ func (d *jsiiProxy_DataObserveReport) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) PutCreatedBy(value interface{}) {
+func (d *jsiiProxy_DataObserveReport) PutCreatedBy(value any) {
 	if err := d.validatePutCreatedByParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCreatedBy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) PutDashboard(value interface{}) {
+func (d *jsiiProxy_DataObserveReport) PutDashboard(value any) {
 	if err := d.validatePutDashboardParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDashboard",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) PutSchedule(value interface{}) {
+func (d *jsiiProxy_DataObserveReport) PutSchedule(value any) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) PutUpdatedBy(value interface{}) {
+func (d *jsiiProxy_DataObserveReport) PutUpdatedBy(value any) {
 	if err := d.validatePutUpdatedByParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putUpdatedBy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1008,8 +1007,8 @@ func (d *jsiiProxy_DataObserveReport) ResetUpdatedBy() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveReport) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveReport) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1021,8 +1020,8 @@ func (d *jsiiProxy_DataObserveReport) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReport) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveReport) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1034,8 +1033,8 @@ func (d *jsiiProxy_DataObserveReport) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReport) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveReport) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1047,8 +1046,8 @@ func (d *jsiiProxy_DataObserveReport) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReport) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveReport) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1073,8 +1072,8 @@ func (d *jsiiProxy_DataObserveReport) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReport) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveReport) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1085,4 +1084,3 @@ func (d *jsiiProxy_DataObserveReport) ToTerraform() interface{} {
 
 	return returns
 }
-

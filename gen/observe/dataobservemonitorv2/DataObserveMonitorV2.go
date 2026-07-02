@@ -13,16 +13,16 @@ import (
 type DataObserveMonitorV2 interface {
 	cdktf.TerraformDataSource
 	Actions() DataObserveMonitorV2ActionsList
-	ActionsInput() interface{}
+	ActionsInput() any
 	Bindings() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomVariables() *string
 	DataStabilizationDelay() *string
 	// Experimental.
@@ -40,7 +40,7 @@ type DataObserveMonitorV2 interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Groupings() DataObserveMonitorV2GroupingsList
-	GroupingsInput() interface{}
+	GroupingsInput() any
 	IconUrl() *string
 	Id() *string
 	SetId(val *string)
@@ -56,7 +56,7 @@ type DataObserveMonitorV2 interface {
 	SetName(val *string)
 	NameInput() *string
 	NoDataRules() DataObserveMonitorV2NoDataRulesList
-	NoDataRulesInput() interface{}
+	NoDataRulesInput() any
 	// The tree node.
 	Node() constructs.Node
 	Oid() *string
@@ -65,27 +65,27 @@ type DataObserveMonitorV2 interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuleKind() *string
 	Rules() DataObserveMonitorV2RulesList
-	RulesInput() interface{}
+	RulesInput() any
 	Scheduling() DataObserveMonitorV2SchedulingList
-	SchedulingInput() interface{}
+	SchedulingInput() any
 	Stage() DataObserveMonitorV2StageList
-	StageInput() interface{}
+	StageInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
 	SetWorkspace(val *string)
 	WorkspaceInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,12 +107,12 @@ type DataObserveMonitorV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutActions(value interface{})
-	PutGroupings(value interface{})
-	PutNoDataRules(value interface{})
-	PutRules(value interface{})
-	PutScheduling(value interface{})
-	PutStage(value interface{})
+	PutActions(value any)
+	PutGroupings(value any)
+	PutNoDataRules(value any)
+	PutRules(value any)
+	PutScheduling(value any)
+	PutStage(value any)
 	ResetActions()
 	ResetGroupings()
 	ResetId()
@@ -125,18 +125,18 @@ type DataObserveMonitorV2 interface {
 	ResetScheduling()
 	ResetStage()
 	ResetWorkspace()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataObserveMonitorV2
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Actions() DataObserveMonitorV2ActionsLi
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) ActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) ActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Groupings() DataObserveMonitorV2Groupin
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) GroupingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) GroupingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupingsInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) NoDataRules() DataObserveMonitorV2NoDat
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) NoDataRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) NoDataRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noDataRulesInput",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Rules() DataObserveMonitorV2RulesList {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Scheduling() DataObserveMonitorV2Schedu
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) SchedulingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) SchedulingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"schedulingInput",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Stage() DataObserveMonitorV2StageList {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) StageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) StageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stageInput",
@@ -534,8 +534,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataObserveMonitorV2) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -574,7 +574,6 @@ func (j *jsiiProxy_DataObserveMonitorV2) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2 observe_monitor_v2} Data Source.
 func NewDataObserveMonitorV2(scope constructs.Construct, id *string, config *DataObserveMonitorV2Config) DataObserveMonitorV2 {
 	_init_.Initialize()
@@ -586,7 +585,7 @@ func NewDataObserveMonitorV2(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -599,12 +598,12 @@ func NewDataObserveMonitorV2_Override(d DataObserveMonitorV2, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetCount(val interface{}) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetId(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetName(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetWorkspace(val *string) {
+func (j *jsiiProxy_DataObserveMonitorV2) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func DataObserveMonitorV2_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func DataObserveMonitorV2_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataObserveMonitorV2_IsConstruct(x interface{}) *bool {
+func DataObserveMonitorV2_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveMonitorV2_IsConstructParameters(x); err != nil {
@@ -730,7 +729,7 @@ func DataObserveMonitorV2_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func DataObserveMonitorV2_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveMonitorV2_IsTerraformDataSource(x interface{}) *bool {
+func DataObserveMonitorV2_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveMonitorV2_IsTerraformDataSourceParameters(x); err != nil {
@@ -749,7 +748,7 @@ func DataObserveMonitorV2_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func DataObserveMonitorV2_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataObserveMonitorV2_IsTerraformElement(x interface{}) *bool {
+func DataObserveMonitorV2_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataObserveMonitorV2_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func DataObserveMonitorV2_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -786,27 +785,27 @@ func DataObserveMonitorV2_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataObserveMonitorV2) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DataObserveMonitorV2) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,73 +963,73 @@ func (d *jsiiProxy_DataObserveMonitorV2) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutActions(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutActions(value any) {
 	if err := d.validatePutActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutGroupings(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutGroupings(value any) {
 	if err := d.validatePutGroupingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putGroupings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutNoDataRules(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutNoDataRules(value any) {
 	if err := d.validatePutNoDataRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putNoDataRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutRules(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutRules(value any) {
 	if err := d.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutScheduling(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutScheduling(value any) {
 	if err := d.validatePutSchedulingParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putScheduling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) PutStage(value interface{}) {
+func (d *jsiiProxy_DataObserveMonitorV2) PutStage(value any) {
 	if err := d.validatePutStageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putStage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1114,8 +1113,8 @@ func (d *jsiiProxy_DataObserveMonitorV2) ResetWorkspace() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1127,8 +1126,8 @@ func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1140,8 +1139,8 @@ func (d *jsiiProxy_DataObserveMonitorV2) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveMonitorV2) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1153,8 +1152,8 @@ func (d *jsiiProxy_DataObserveMonitorV2) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveMonitorV2) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1179,8 +1178,8 @@ func (d *jsiiProxy_DataObserveMonitorV2) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataObserveMonitorV2) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1191,4 +1190,3 @@ func (d *jsiiProxy_DataObserveMonitorV2) ToTerraform() interface{} {
 
 	return returns
 }
-

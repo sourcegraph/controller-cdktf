@@ -90,7 +90,7 @@ func (r *jsiiProxy_ReportDashboardOutputReference) validateInterpolationForAttri
 	return nil
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) validatePutParametersParameters(value interface{}) error {
+func (r *jsiiProxy_ReportDashboardOutputReference) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_ReportDashboardOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_ReportDashboardOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportDashboardOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewReportDashboardOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

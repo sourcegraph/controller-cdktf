@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitorV2ActionsList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitorV2ActionsListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

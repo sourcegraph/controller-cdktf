@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveIngestInfo.DataObserveIngestInfo",
-		reflect.TypeOf((*DataObserveIngestInfo)(nil)).Elem(),
+		reflect.TypeFor[DataObserveIngestInfo](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveIngestInfo{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveIngestInfo.DataObserveIngestInfoConfig",
-		reflect.TypeOf((*DataObserveIngestInfoConfig)(nil)).Elem(),
+		reflect.TypeFor[DataObserveIngestInfoConfig](),
 	)
 }

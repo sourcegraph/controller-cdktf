@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateInterpolati
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutCountParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutCountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutCountPar
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutPromoteParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutPromoteParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutPromoteP
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutThresholdParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validatePutThresholdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -315,4 +315,3 @@ func validateNewDataObserveMonitorV2RulesOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

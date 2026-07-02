@@ -19,7 +19,7 @@ func (s *jsiiProxy_SourceDataset) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (s *jsiiProxy_SourceDataset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SourceDataset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SourceDataset) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (s *jsiiProxy_SourceDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SourceDataset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SourceDataset) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (s *jsiiProxy_SourceDataset) validatePutFieldParameters(value interface{}) error {
+func (s *jsiiProxy_SourceDataset) validatePutFieldParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateSourceDataset_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateSourceDataset_IsConstructParameters(x interface{}) error {
+func validateSourceDataset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateSourceDataset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSourceDataset_IsTerraformElementParameters(x interface{}) error {
+func validateSourceDataset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateSourceDataset_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateSourceDataset_IsTerraformResourceParameters(x interface{}) error {
+func validateSourceDataset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_SourceDataset) validateSetBatchSeqFieldParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SourceDataset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDataset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_SourceDataset) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_SourceDataset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDataset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_SourceDataset) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SourceDataset) validateSetIsInsertOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDataset) validateSetIsInsertOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -441,7 +441,7 @@ func (j *jsiiProxy_SourceDataset) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SourceDataset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SourceDataset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -545,4 +545,3 @@ func validateNewSourceDatasetParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

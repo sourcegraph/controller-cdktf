@@ -98,7 +98,7 @@ func (f *jsiiProxy_FiledropEndpointOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_FiledropEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FiledropEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFiledropEndpointOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

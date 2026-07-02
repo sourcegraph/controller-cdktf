@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDataset",
-		reflect.TypeOf((*DataObserveDataset)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDataset](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerationDisabled", GoGetter: "AccelerationDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "accelerationDisabledSource", GoGetter: "AccelerationDisabledSource"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveDataset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetConfig",
-		reflect.TypeOf((*DataObserveDatasetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetCorrelationTag",
-		reflect.TypeOf((*DataObserveDatasetCorrelationTag)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetCorrelationTag](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetCorrelationTagList",
-		reflect.TypeOf((*DataObserveDatasetCorrelationTagList)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetCorrelationTagList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveDatasetCorrelationTagList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetCorrelationTagOutputReference",
-		reflect.TypeOf((*DataObserveDatasetCorrelationTagOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetCorrelationTagOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveDatasetCorrelationTagOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetStage",
-		reflect.TypeOf((*DataObserveDatasetStage)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetStage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetStageList",
-		reflect.TypeOf((*DataObserveDatasetStageList)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetStageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveDatasetStageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -172,7 +172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataObserveDataset.DataObserveDatasetStageOutputReference",
-		reflect.TypeOf((*DataObserveDatasetStageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataObserveDatasetStageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataObserveDatasetStageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

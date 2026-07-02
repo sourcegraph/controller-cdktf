@@ -6,9 +6,9 @@ import (
 
 type PollerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PollerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Poller name. Must be unique within workspace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#name Poller#name}
@@ -46,7 +46,7 @@ type PollerConfig struct {
 	// Whether to disable poller.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#disabled Poller#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// gcp_monitoring block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#gcp_monitoring Poller#gcp_monitoring}
@@ -77,8 +77,7 @@ type PollerConfig struct {
 	// Skips validating any provided external API credentials against their external APIs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#skip_external_validation Poller#skip_external_validation}
-	SkipExternalValidation interface{} `field:"optional" json:"skipExternalValidation" yaml:"skipExternalValidation"`
+	SkipExternalValidation any `field:"optional" json:"skipExternalValidation" yaml:"skipExternalValidation"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/poller#tags Poller#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

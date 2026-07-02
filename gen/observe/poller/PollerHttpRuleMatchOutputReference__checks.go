@@ -114,7 +114,7 @@ func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) validateSetBodyParameters
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewPollerHttpRuleMatchOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

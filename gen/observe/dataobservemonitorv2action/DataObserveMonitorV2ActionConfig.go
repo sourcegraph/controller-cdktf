@@ -6,9 +6,9 @@ import (
 
 type DataObserveMonitorV2ActionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type DataObserveMonitorV2ActionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// email block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2_action#email DataObserveMonitorV2Action#email}
-	Email interface{} `field:"optional" json:"email" yaml:"email"`
+	Email any `field:"optional" json:"email" yaml:"email"`
 	// Resource ID for this object.  One of either `id` or `name` must be provided.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2_action#id DataObserveMonitorV2Action#id}
@@ -37,10 +37,9 @@ type DataObserveMonitorV2ActionConfig struct {
 	// webhook block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2_action#webhook DataObserveMonitorV2Action#webhook}
-	Webhook interface{} `field:"optional" json:"webhook" yaml:"webhook"`
+	Webhook any `field:"optional" json:"webhook" yaml:"webhook"`
 	// OID of the workspace this object is contained in.  Must be specified if looking up by name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2_action#workspace DataObserveMonitorV2Action#workspace}
 	Workspace *string `field:"optional" json:"workspace" yaml:"workspace"`
 }
-

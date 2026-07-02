@@ -6,9 +6,9 @@ import (
 
 type MonitorActionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitorActionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Monitor action name. Must be unique within workspace.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_action#name MonitorAction#name}
@@ -47,7 +47,7 @@ type MonitorActionConfig struct {
 	// Enables a final update when a monitor action notification is closed (no longer triggered).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_action#notify_on_close MonitorAction#notify_on_close}
-	NotifyOnClose interface{} `field:"optional" json:"notifyOnClose" yaml:"notifyOnClose"`
+	NotifyOnClose any `field:"optional" json:"notifyOnClose" yaml:"notifyOnClose"`
 	// Limits 10 alerts to the defined time period.
 	//
 	// For email actions the minimum
@@ -61,4 +61,3 @@ type MonitorActionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/monitor_action#webhook MonitorAction#webhook}
 	Webhook *MonitorActionWebhook `field:"optional" json:"webhook" yaml:"webhook"`
 }
-

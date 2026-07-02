@@ -34,7 +34,7 @@ func (r *jsiiProxy_ReferenceTableSchemaList) validateResolveParameters(_context 
 	return nil
 }
 
-func (j *jsiiProxy_ReferenceTableSchemaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReferenceTableSchemaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewReferenceTableSchemaListParameters(terraformResource cdktf.IInte
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type MonitorNotificationSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type MonitorNotificationSpecOutputReference interface {
 	Merge() *string
 	SetMerge(val *string)
 	MergeInput() *string
-	NotifyOnClose() interface{}
-	SetNotifyOnClose(val interface{})
-	NotifyOnCloseInput() interface{}
+	NotifyOnClose() any
+	SetNotifyOnClose(val any)
+	NotifyOnCloseInput() any
 	NotifyOnReminder() cdktf.IResolvable
 	ReminderFrequency() *string
 	SetReminderFrequency(val *string)
@@ -53,7 +53,7 @@ type MonitorNotificationSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type MonitorNotificationSpecOutputReference interface {
 	ResetReminderFrequency()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ type jsiiProxy_MonitorNotificationSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference) MergeInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference) NotifyOnClose() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) NotifyOnClose() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyOnClose",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference) NotifyOnClose() inter
 	return returns
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference) NotifyOnCloseInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) NotifyOnCloseInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyOnCloseInput",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewMonitorNotificationSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorNotificationSpecOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewMonitorNotificationSpecOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorNotificationSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewMonitorNotificationSpecOutputReference_Override(m MonitorNotificationSpe
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitor.MonitorNotificationSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetImportance(val *string) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetImportance(val *string) {
 	if err := j.validateSetImportanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetImportance(val *str
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetInternalValue(val *MonitorNotificationSpec) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetInternalValue(val *MonitorNotificationSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetMerge(val *string) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetMerge(val *string) {
 	if err := j.validateSetMergeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetMerge(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetNotifyOnClose(val interface{}) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetNotifyOnClose(val any) {
 	if err := j.validateSetNotifyOnCloseParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetNotifyOnClose(val i
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetReminderFrequency(val *string) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetReminderFrequency(val *string) {
 	if err := j.validateSetReminderFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetReminderFrequency(v
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_MonitorNotificationSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorNotificationSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -598,16 +597,16 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) ResetReminderFrequenc
 	)
 }
 
-func (m *jsiiProxy_MonitorNotificationSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorNotificationSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (m *jsiiProxy_MonitorNotificationSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

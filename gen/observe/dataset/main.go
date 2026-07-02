@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataset.Dataset",
-		reflect.TypeOf((*Dataset)(nil)).Elem(),
+		reflect.TypeFor[Dataset](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerationDisabled", GoGetter: "AccelerationDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "accelerationDisabledInput", GoGetter: "AccelerationDisabledInput"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Dataset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataset.DatasetConfig",
-		reflect.TypeOf((*DatasetConfig)(nil)).Elem(),
+		reflect.TypeFor[DatasetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.dataset.DatasetStage",
-		reflect.TypeOf((*DatasetStage)(nil)).Elem(),
+		reflect.TypeFor[DatasetStage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataset.DatasetStageList",
-		reflect.TypeOf((*DatasetStageList)(nil)).Elem(),
+		reflect.TypeFor[DatasetStageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasetStageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.dataset.DatasetStageOutputReference",
-		reflect.TypeOf((*DatasetStageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatasetStageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatasetStageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

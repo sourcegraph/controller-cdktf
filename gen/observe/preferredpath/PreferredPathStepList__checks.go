@@ -34,7 +34,7 @@ func (p *jsiiProxy_PreferredPathStepList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PreferredPathStepList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPreferredPathStepListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

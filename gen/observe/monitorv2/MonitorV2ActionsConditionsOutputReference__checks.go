@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateInterpolat
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validatePutCompareTermsParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validatePutCompareTermsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewMonitorV2ActionsConditionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

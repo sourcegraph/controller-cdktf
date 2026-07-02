@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerHttpTimestampOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTimestampOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpTimestampOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PollerHttpTimestampOutputReference) validateSetFormatParamete
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTimestampOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerHttpTimestampOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewPollerHttpTimestampOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

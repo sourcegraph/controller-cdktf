@@ -19,7 +19,7 @@ func (m *jsiiProxy_MonitorAction) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAction) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MonitorAction) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MonitorAction) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (m *jsiiProxy_MonitorAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MonitorAction) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateMonitorAction_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateMonitorAction_IsConstructParameters(x interface{}) error {
+func validateMonitorAction_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateMonitorAction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMonitorAction_IsTerraformElementParameters(x interface{}) error {
+func validateMonitorAction_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateMonitorAction_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMonitorAction_IsTerraformResourceParameters(x interface{}) error {
+func validateMonitorAction_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateMonitorAction_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_MonitorAction) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorAction) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_MonitorAction) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_MonitorAction) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorAction) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_MonitorAction) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_MonitorAction) validateSetNotifyOnCloseParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorAction) validateSetNotifyOnCloseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -416,7 +416,7 @@ func (j *jsiiProxy_MonitorAction) validateSetNotifyOnCloseParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_MonitorAction) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MonitorAction) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewMonitorActionParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

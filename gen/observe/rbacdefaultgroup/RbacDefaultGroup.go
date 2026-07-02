@@ -15,15 +15,15 @@ type RbacDefaultGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type RbacDefaultGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type RbacDefaultGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type RbacDefaultGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type RbacDefaultGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RbacDefaultGroup
@@ -139,8 +139,8 @@ func (j *jsiiProxy_RbacDefaultGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacDefaultGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_RbacDefaultGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RbacDefaultGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_RbacDefaultGroup) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacDefaultGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_RbacDefaultGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RbacDefaultGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_RbacDefaultGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RbacDefaultGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_RbacDefaultGroup) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_RbacDefaultGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RbacDefaultGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_RbacDefaultGroup) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/rbac_default_group observe_rbac_default_group} Resource.
 func NewRbacDefaultGroup(scope constructs.Construct, id *string, config *RbacDefaultGroupConfig) RbacDefaultGroup {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewRbacDefaultGroup(scope constructs.Construct, id *string, config *RbacDef
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewRbacDefaultGroup_Override(r RbacDefaultGroup, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_RbacDefaultGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_RbacDefaultGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RbacDefaultGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RbacDefaultGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetGroup(val *string) {
+func (j *jsiiProxy_RbacDefaultGroup) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetId(val *string) {
+func (j *jsiiProxy_RbacDefaultGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RbacDefaultGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RbacDefaultGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_RbacDefaultGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RbacDefaultGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RbacDefaultGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func RbacDefaultGroup_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func RbacDefaultGroup_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RbacDefaultGroup_IsConstruct(x interface{}) *bool {
+func RbacDefaultGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRbacDefaultGroup_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func RbacDefaultGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func RbacDefaultGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RbacDefaultGroup_IsTerraformElement(x interface{}) *bool {
+func RbacDefaultGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRbacDefaultGroup_IsTerraformElementParameters(x); err != nil {
@@ -515,7 +514,7 @@ func RbacDefaultGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func RbacDefaultGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RbacDefaultGroup_IsTerraformResource(x interface{}) *bool {
+func RbacDefaultGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRbacDefaultGroup_IsTerraformResourceParameters(x); err != nil {
@@ -534,7 +533,7 @@ func RbacDefaultGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.rbacDefaultGroup.RbacDefaultGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,31 +558,31 @@ func (r *jsiiProxy_RbacDefaultGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RbacDefaultGroup) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RbacDefaultGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (r *jsiiProxy_RbacDefaultGroup) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,15 +710,15 @@ func (r *jsiiProxy_RbacDefaultGroup) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RbacDefaultGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -738,7 +737,7 @@ func (r *jsiiProxy_RbacDefaultGroup) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -751,7 +750,7 @@ func (r *jsiiProxy_RbacDefaultGroup) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,18 +764,18 @@ func (r *jsiiProxy_RbacDefaultGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RbacDefaultGroup) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -787,7 +786,7 @@ func (r *jsiiProxy_RbacDefaultGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -798,7 +797,7 @@ func (r *jsiiProxy_RbacDefaultGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -818,8 +817,8 @@ func (r *jsiiProxy_RbacDefaultGroup) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RbacDefaultGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -831,8 +830,8 @@ func (r *jsiiProxy_RbacDefaultGroup) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RbacDefaultGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -844,8 +843,8 @@ func (r *jsiiProxy_RbacDefaultGroup) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RbacDefaultGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -857,8 +856,8 @@ func (r *jsiiProxy_RbacDefaultGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RbacDefaultGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -883,8 +882,8 @@ func (r *jsiiProxy_RbacDefaultGroup) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RbacDefaultGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RbacDefaultGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -895,4 +894,3 @@ func (r *jsiiProxy_RbacDefaultGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

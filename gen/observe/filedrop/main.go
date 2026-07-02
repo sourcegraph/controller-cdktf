@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.Filedrop",
-		reflect.TypeOf((*Filedrop)(nil)).Elem(),
+		reflect.TypeFor[Filedrop](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Filedrop{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropConfig",
-		reflect.TypeOf((*FiledropConfig)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropConfigA",
-		reflect.TypeOf((*FiledropConfigA)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropConfigAOutputReference",
-		reflect.TypeOf((*FiledropConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,15 +130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropConfigProvider",
-		reflect.TypeOf((*FiledropConfigProvider)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigProvider](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropConfigProviderAws",
-		reflect.TypeOf((*FiledropConfigProviderAws)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigProviderAws](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropConfigProviderAwsOutputReference",
-		reflect.TypeOf((*FiledropConfigProviderAwsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigProviderAwsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropConfigProviderAwsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropConfigProviderOutputReference",
-		reflect.TypeOf((*FiledropConfigProviderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropConfigProviderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aws", GoGetter: "Aws"},
 			_jsii_.MemberProperty{JsiiProperty: "awsInput", GoGetter: "AwsInput"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropConfigProviderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropEndpoint",
-		reflect.TypeOf((*FiledropEndpoint)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointList",
-		reflect.TypeOf((*FiledropEndpointList)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpointList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropEndpointList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointOutputReference",
-		reflect.TypeOf((*FiledropEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointS3",
-		reflect.TypeOf((*FiledropEndpointS3)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpointS3](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointS3List",
-		reflect.TypeOf((*FiledropEndpointS3List)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpointS3List](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropEndpointS3List{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -292,7 +292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropEndpointS3OutputReference",
-		reflect.TypeOf((*FiledropEndpointS3OutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropEndpointS3OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropEndpointS3OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,11 +327,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.filedrop.FiledropTimeouts",
-		reflect.TypeOf((*FiledropTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FiledropTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.filedrop.FiledropTimeoutsOutputReference",
-		reflect.TypeOf((*FiledropTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FiledropTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FiledropTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

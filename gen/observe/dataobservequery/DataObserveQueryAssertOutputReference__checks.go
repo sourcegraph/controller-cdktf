@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveQueryAssertOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataObserveQueryAssertOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryAssertOutputReference) validateSetUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryAssertOutputReference) validateSetUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewDataObserveQueryAssertOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

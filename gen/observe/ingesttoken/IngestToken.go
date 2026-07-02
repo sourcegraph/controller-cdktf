@@ -15,15 +15,15 @@ type IngestToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type IngestToken interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,16 +60,16 @@ type IngestToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -79,9 +79,9 @@ type IngestToken interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type IngestToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type IngestToken interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type IngestToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IngestToken
@@ -153,8 +153,8 @@ func (j *jsiiProxy_IngestToken) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngestToken) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_IngestToken) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IngestToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_IngestToken) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngestToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_IngestToken) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngestToken) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_IngestToken) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngestToken) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_IngestToken) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IngestToken) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_IngestToken) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IngestToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_IngestToken) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IngestToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IngestToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_IngestToken) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/ingest_token observe_ingest_token} Resource.
 func NewIngestToken(scope constructs.Construct, id *string, config *IngestTokenConfig) IngestToken {
 	_init_.Initialize()
@@ -435,7 +434,7 @@ func NewIngestToken(scope constructs.Construct, id *string, config *IngestTokenC
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -448,12 +447,12 @@ func NewIngestToken_Override(i IngestToken, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetConnection(val interface{}) {
+func (j *jsiiProxy_IngestToken) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_IngestToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetCount(val interface{}) {
+func (j *jsiiProxy_IngestToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IngestToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IngestToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_IngestToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetDescription(val *string) {
+func (j *jsiiProxy_IngestToken) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IngestToken)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetDisabled(val interface{}) {
+func (j *jsiiProxy_IngestToken) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_IngestToken)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IngestToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IngestToken)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetId(val *string) {
+func (j *jsiiProxy_IngestToken) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IngestToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IngestToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IngestToken)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetName(val *string) {
+func (j *jsiiProxy_IngestToken) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IngestToken)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IngestToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_IngestToken)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IngestToken) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IngestToken)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IngestToken)SetWorkspace(val *string) {
+func (j *jsiiProxy_IngestToken) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func IngestToken_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func IngestToken_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IngestToken_IsConstruct(x interface{}) *bool {
+func IngestToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngestToken_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func IngestToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func IngestToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IngestToken_IsTerraformElement(x interface{}) *bool {
+func IngestToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngestToken_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func IngestToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func IngestToken_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IngestToken_IsTerraformResource(x interface{}) *bool {
+func IngestToken_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIngestToken_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func IngestToken_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.ingestToken.IngestToken",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (i *jsiiProxy_IngestToken) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IngestToken) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IngestToken) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IngestToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IngestToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (i *jsiiProxy_IngestToken) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (i *jsiiProxy_IngestToken) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (i *jsiiProxy_IngestToken) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (i *jsiiProxy_IngestToken) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (i *jsiiProxy_IngestToken) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (i *jsiiProxy_IngestToken) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (i *jsiiProxy_IngestToken) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (i *jsiiProxy_IngestToken) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IngestToken) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IngestToken) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -865,7 +864,7 @@ func (i *jsiiProxy_IngestToken) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IngestToken) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (i *jsiiProxy_IngestToken) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IngestToken) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IngestToken) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (i *jsiiProxy_IngestToken) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IngestToken) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -969,8 +968,8 @@ func (i *jsiiProxy_IngestToken) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IngestToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IngestToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -982,8 +981,8 @@ func (i *jsiiProxy_IngestToken) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IngestToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IngestToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -995,8 +994,8 @@ func (i *jsiiProxy_IngestToken) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (i *jsiiProxy_IngestToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IngestToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1008,8 +1007,8 @@ func (i *jsiiProxy_IngestToken) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IngestToken) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IngestToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1034,8 +1033,8 @@ func (i *jsiiProxy_IngestToken) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IngestToken) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IngestToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1046,4 +1045,3 @@ func (i *jsiiProxy_IngestToken) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataObserveMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitor) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataObserveMonitor) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitor) validatePutNotificationSpecParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitor) validatePutNotificationSpecParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutNotificationSpecParameters(val
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitor) validatePutRuleParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitor) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutRuleParameters(value interface
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitor) validatePutStageParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitor) validatePutStageParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDataObserveMonitor_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataObserveMonitor_IsConstructParameters(x interface{}) error {
+func validateDataObserveMonitor_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDataObserveMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataObserveMonitor_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataObserveMonitor_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDataObserveMonitor_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataObserveMonitor_IsTerraformElementParameters(x interface{}) error {
+func validateDataObserveMonitor_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDataObserveMonitor_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitor) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitor) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -348,4 +348,3 @@ func validateNewDataObserveMonitorParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

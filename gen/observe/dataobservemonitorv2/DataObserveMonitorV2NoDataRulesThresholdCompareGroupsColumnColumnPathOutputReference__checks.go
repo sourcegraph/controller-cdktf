@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnCo
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnCo
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnColumnPathOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveMonitorV2NoDataRulesThresholdCompareGroupsColumnColum
 
 	return nil
 }
-

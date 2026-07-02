@@ -98,7 +98,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPollerCloudwatchMetricsQueryDimensionOutputReferenceParameters(t
 
 	return nil
 }
-

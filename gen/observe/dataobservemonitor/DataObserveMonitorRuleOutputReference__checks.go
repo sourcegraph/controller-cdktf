@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validateInterpolationF
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutChangeParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutChangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutChangeParam
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutCountParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutCountParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutCountParame
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutFacetParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutFacetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutFacetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutGroupByGroupParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutGroupByGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutGroupByGrou
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutLogParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutLogParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutLogParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutPromoteParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutPromoteParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutPromotePara
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutThresholdParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validatePutThresholdParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataObserveMonitorRuleOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -439,4 +439,3 @@ func validateNewDataObserveMonitorRuleOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveReportDashboardParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveReportDashboardParametersOutputReferenceParameters(te
 
 	return nil
 }
-

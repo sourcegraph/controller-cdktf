@@ -109,7 +109,7 @@ func (f *jsiiProxy_FiledropConfigProviderOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_FiledropConfigProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FiledropConfigProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewFiledropConfigProviderOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

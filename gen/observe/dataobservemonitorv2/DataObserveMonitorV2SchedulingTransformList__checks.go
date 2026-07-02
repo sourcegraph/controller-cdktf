@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingTransformList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingTransformList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorV2SchedulingTransformListParameters(terraformR
 
 	return nil
 }
-

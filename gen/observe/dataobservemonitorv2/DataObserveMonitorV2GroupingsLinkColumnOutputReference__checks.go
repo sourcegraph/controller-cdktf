@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2GroupingsLinkColumnOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataObserveMonitorV2GroupingsLinkColumnOutputReferenceParameters
 
 	return nil
 }
-

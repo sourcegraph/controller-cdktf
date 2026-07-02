@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.Poller",
-		reflect.TypeOf((*Poller)(nil)).Elem(),
+		reflect.TypeFor[Poller](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Poller{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,11 +116,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerAwsSnapshot",
-		reflect.TypeOf((*PollerAwsSnapshot)(nil)).Elem(),
+		reflect.TypeFor[PollerAwsSnapshot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerAwsSnapshotOutputReference",
-		reflect.TypeOf((*PollerAwsSnapshotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerAwsSnapshotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArn", GoGetter: "AssumeRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArnInput", GoGetter: "AssumeRoleArnInput"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerAwsSnapshotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerChunk",
-		reflect.TypeOf((*PollerChunk)(nil)).Elem(),
+		reflect.TypeFor[PollerChunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerChunkOutputReference",
-		reflect.TypeOf((*PollerChunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerChunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerChunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetrics",
-		reflect.TypeOf((*PollerCloudwatchMetrics)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsOutputReference",
-		reflect.TypeOf((*PollerCloudwatchMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArn", GoGetter: "AssumeRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "assumeRoleArnInput", GoGetter: "AssumeRoleArnInput"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,15 +248,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQuery",
-		reflect.TypeOf((*PollerCloudwatchMetricsQuery)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQuery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimension",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimension)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryDimension](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionList",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimensionList)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryDimensionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryDimensionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -278,7 +278,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryDimensionOutputReference",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryDimensionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryDimensionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryDimensionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,7 +315,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryList",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryList)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -337,7 +337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryOutputReference",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,11 +382,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilter",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilter)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterList",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterList)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -408,7 +408,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -452,11 +452,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilter",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilter)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilterTagFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterList",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilterList)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilterTagFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -470,7 +470,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -478,7 +478,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference",
-		reflect.TypeOf((*PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterTagFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -515,15 +515,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerConfig",
-		reflect.TypeOf((*PollerConfig)(nil)).Elem(),
+		reflect.TypeFor[PollerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerGcpMonitoring",
-		reflect.TypeOf((*PollerGcpMonitoring)(nil)).Elem(),
+		reflect.TypeFor[PollerGcpMonitoring](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerGcpMonitoringOutputReference",
-		reflect.TypeOf((*PollerGcpMonitoringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerGcpMonitoringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -563,7 +563,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalLimit", GoGetter: "TotalLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "totalLimitInput", GoGetter: "TotalLimitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerGcpMonitoringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -571,11 +571,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttp",
-		reflect.TypeOf((*PollerHttp)(nil)).Elem(),
+		reflect.TypeFor[PollerHttp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpOutputReference",
-		reflect.TypeOf((*PollerHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "bodyInput", GoGetter: "BodyInput"},
@@ -630,7 +630,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampInput", GoGetter: "TimestampInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -638,11 +638,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpRequest",
-		reflect.TypeOf((*PollerHttpRequest)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRequest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRequestList",
-		reflect.TypeOf((*PollerHttpRequestList)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRequestList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -656,7 +656,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRequestList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -664,7 +664,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRequestOutputReference",
-		reflect.TypeOf((*PollerHttpRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "authSchemeInput", GoGetter: "AuthSchemeInput"},
@@ -712,7 +712,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -720,15 +720,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpRule",
-		reflect.TypeOf((*PollerHttpRule)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpRuleDecoder",
-		reflect.TypeOf((*PollerHttpRuleDecoder)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleDecoder](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRuleDecoderOutputReference",
-		reflect.TypeOf((*PollerHttpRuleDecoderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleDecoderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -754,7 +754,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRuleDecoderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -762,7 +762,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRuleList",
-		reflect.TypeOf((*PollerHttpRuleList)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -776,7 +776,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -784,11 +784,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpRuleMatch",
-		reflect.TypeOf((*PollerHttpRuleMatch)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRuleMatchOutputReference",
-		reflect.TypeOf((*PollerHttpRuleMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "authSchemeInput", GoGetter: "AuthSchemeInput"},
@@ -836,7 +836,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRuleMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -844,7 +844,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpRuleOutputReference",
-		reflect.TypeOf((*PollerHttpRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -878,7 +878,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -886,11 +886,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpTemplate",
-		reflect.TypeOf((*PollerHttpTemplate)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpTemplateOutputReference",
-		reflect.TypeOf((*PollerHttpTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "authSchemeInput", GoGetter: "AuthSchemeInput"},
@@ -938,7 +938,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -946,11 +946,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerHttpTimestamp",
-		reflect.TypeOf((*PollerHttpTimestamp)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpTimestamp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpTimestampList",
-		reflect.TypeOf((*PollerHttpTimestampList)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpTimestampList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -964,7 +964,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpTimestampList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -972,7 +972,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerHttpTimestampOutputReference",
-		reflect.TypeOf((*PollerHttpTimestampOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerHttpTimestampOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "truncate", GoGetter: "Truncate"},
 			_jsii_.MemberProperty{JsiiProperty: "truncateInput", GoGetter: "TruncateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerHttpTimestampOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1018,11 +1018,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerMongodbatlas",
-		reflect.TypeOf((*PollerMongodbatlas)(nil)).Elem(),
+		reflect.TypeFor[PollerMongodbatlas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerMongodbatlasOutputReference",
-		reflect.TypeOf((*PollerMongodbatlasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerMongodbatlasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1056,7 +1056,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerMongodbatlasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1064,11 +1064,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.poller.PollerPubsub",
-		reflect.TypeOf((*PollerPubsub)(nil)).Elem(),
+		reflect.TypeFor[PollerPubsub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.poller.PollerPubsubOutputReference",
-		reflect.TypeOf((*PollerPubsubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PollerPubsubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1098,7 +1098,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PollerPubsubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

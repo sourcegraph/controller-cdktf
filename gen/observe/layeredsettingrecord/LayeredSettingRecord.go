@@ -15,15 +15,15 @@ type LayeredSettingRecord interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,11 +53,11 @@ type LayeredSettingRecord interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Setting() *string
 	SetSetting(val *string)
 	SettingInput() *string
@@ -67,12 +67,12 @@ type LayeredSettingRecord interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	ValueBool() interface{}
-	SetValueBool(val interface{})
-	ValueBoolInput() interface{}
+	ValueBool() any
+	SetValueBool(val any)
+	ValueBoolInput() any
 	ValueDuration() *string
 	SetValueDuration(val *string)
 	ValueDurationInput() *string
@@ -95,9 +95,9 @@ type LayeredSettingRecord interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type LayeredSettingRecord interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type LayeredSettingRecord interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type LayeredSettingRecord interface {
 	ResetValueInt64()
 	ResetValueString()
 	ResetValueTimestamp()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LayeredSettingRecord
@@ -172,8 +172,8 @@ func (j *jsiiProxy_LayeredSettingRecord) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LayeredSettingRecord) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_LayeredSettingRecord) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LayeredSettingRecord) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_LayeredSettingRecord) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LayeredSettingRecord) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_LayeredSettingRecord) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LayeredSettingRecord) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_LayeredSettingRecord) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LayeredSettingRecord) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_LayeredSettingRecord) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LayeredSettingRecord) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_LayeredSettingRecord) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) ValueBool() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LayeredSettingRecord) ValueBool() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"valueBool",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_LayeredSettingRecord) ValueBool() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LayeredSettingRecord) ValueBoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LayeredSettingRecord) ValueBoolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"valueBoolInput",
@@ -542,7 +542,6 @@ func (j *jsiiProxy_LayeredSettingRecord) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/layered_setting_record observe_layered_setting_record} Resource.
 func NewLayeredSettingRecord(scope constructs.Construct, id *string, config *LayeredSettingRecordConfig) LayeredSettingRecord {
 	_init_.Initialize()
@@ -554,7 +553,7 @@ func NewLayeredSettingRecord(scope constructs.Construct, id *string, config *Lay
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -567,12 +566,12 @@ func NewLayeredSettingRecord_Override(l LayeredSettingRecord, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetConnection(val interface{}) {
+func (j *jsiiProxy_LayeredSettingRecord) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetCount(val interface{}) {
+func (j *jsiiProxy_LayeredSettingRecord) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -602,7 +601,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LayeredSettingRecord) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetId(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LayeredSettingRecord) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetName(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LayeredSettingRecord) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -651,7 +650,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LayeredSettingRecord) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetSetting(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetSetting(val *string) {
 	if err := j.validateSetSettingParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetSetting(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetTarget(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetTarget(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueBool(val interface{}) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueBool(val any) {
 	if err := j.validateSetValueBoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueBool(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueDuration(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueDuration(val *string) {
 	if err := j.validateSetValueDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueFloat64(val *float64) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueFloat64(val *float64) {
 	if err := j.validateSetValueFloat64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueFloat64(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueInt64(val *float64) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueInt64(val *float64) {
 	if err := j.validateSetValueInt64Parameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueInt64(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueString(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueString(val *string) {
 	if err := j.validateSetValueStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueString(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetValueTimestamp(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetValueTimestamp(val *string) {
 	if err := j.validateSetValueTimestampParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_LayeredSettingRecord)SetValueTimestamp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LayeredSettingRecord)SetWorkspace(val *string) {
+func (j *jsiiProxy_LayeredSettingRecord) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func LayeredSettingRecord_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func LayeredSettingRecord_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LayeredSettingRecord_IsConstruct(x interface{}) *bool {
+func LayeredSettingRecord_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLayeredSettingRecord_IsConstructParameters(x); err != nil {
@@ -808,7 +807,7 @@ func LayeredSettingRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func LayeredSettingRecord_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LayeredSettingRecord_IsTerraformElement(x interface{}) *bool {
+func LayeredSettingRecord_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLayeredSettingRecord_IsTerraformElementParameters(x); err != nil {
@@ -827,7 +826,7 @@ func LayeredSettingRecord_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func LayeredSettingRecord_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LayeredSettingRecord_IsTerraformResource(x interface{}) *bool {
+func LayeredSettingRecord_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLayeredSettingRecord_IsTerraformResourceParameters(x); err != nil {
@@ -846,7 +845,7 @@ func LayeredSettingRecord_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.layeredSettingRecord.LayeredSettingRecord",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -871,31 +870,31 @@ func (l *jsiiProxy_LayeredSettingRecord) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LayeredSettingRecord) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LayeredSettingRecord) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (l *jsiiProxy_LayeredSettingRecord) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,15 +1022,15 @@ func (l *jsiiProxy_LayeredSettingRecord) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LayeredSettingRecord) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1050,7 +1049,7 @@ func (l *jsiiProxy_LayeredSettingRecord) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (l *jsiiProxy_LayeredSettingRecord) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,18 +1076,18 @@ func (l *jsiiProxy_LayeredSettingRecord) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LayeredSettingRecord) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (l *jsiiProxy_LayeredSettingRecord) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (l *jsiiProxy_LayeredSettingRecord) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1178,8 +1177,8 @@ func (l *jsiiProxy_LayeredSettingRecord) ResetValueTimestamp() {
 	)
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LayeredSettingRecord) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1191,8 +1190,8 @@ func (l *jsiiProxy_LayeredSettingRecord) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LayeredSettingRecord) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1204,8 +1203,8 @@ func (l *jsiiProxy_LayeredSettingRecord) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LayeredSettingRecord) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1217,8 +1216,8 @@ func (l *jsiiProxy_LayeredSettingRecord) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LayeredSettingRecord) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1243,8 +1242,8 @@ func (l *jsiiProxy_LayeredSettingRecord) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LayeredSettingRecord) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LayeredSettingRecord) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1255,4 +1254,3 @@ func (l *jsiiProxy_LayeredSettingRecord) ToTerraform() interface{} {
 
 	return returns
 }
-

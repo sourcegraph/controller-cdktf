@@ -17,8 +17,8 @@ type MonitorV2ActionWebhookHeadersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type MonitorV2ActionWebhookHeadersList interface {
 	Get(index *float64) MonitorV2ActionWebhookHeadersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMonitorV2ActionWebhookHeadersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorV2ActionWebhookHeadersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewMonitorV2ActionWebhookHeadersList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewMonitorV2ActionWebhookHeadersList_Override(m MonitorV2ActionWebhookHeade
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MonitorV2ActionWebhookHeadersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (m *jsiiProxy_MonitorV2ActionWebhookHeadersList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (m *jsiiProxy_MonitorV2ActionWebhookHeadersList) Get(index *float64) Monito
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2ActionWebhookHeadersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorV2ActionWebhookHeadersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (m *jsiiProxy_MonitorV2ActionWebhookHeadersList) ToString() *string {
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetAliasParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetInputParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetInternalValueParame
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetOutputStageParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2StageOutputReference) validateSetOutputStageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewMonitorV2StageOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

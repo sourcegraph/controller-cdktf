@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateInterpo
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validatePutColumnPathParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validatePutColumnPathParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validatePutColu
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validatePutLinkColumnParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validatePutLinkColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2GroupingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewDataObserveMonitorV2GroupingsOutputReferenceParameters(terraform
 
 	return nil
 }
-

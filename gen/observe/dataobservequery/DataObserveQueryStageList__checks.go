@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveQueryStageList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveQueryStageList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveQueryStageList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveQueryStageListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

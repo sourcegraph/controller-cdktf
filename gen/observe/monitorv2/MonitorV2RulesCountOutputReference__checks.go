@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validatePutCompareGroupsParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validatePutCompareGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validatePutCompareGroupsP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (m *jsiiProxy_MonitorV2RulesCountOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewMonitorV2RulesCountOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

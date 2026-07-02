@@ -15,9 +15,9 @@ type MonitorActionEmailOutputReference interface {
 	BodyTemplateInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type MonitorActionEmailOutputReference interface {
 	Fqn() *string
 	InternalValue() *MonitorActionEmail
 	SetInternalValue(val *MonitorActionEmail)
-	IsHtml() interface{}
-	SetIsHtml(val interface{})
-	IsHtmlInput() interface{}
+	IsHtml() any
+	SetIsHtml(val any)
+	IsHtmlInput() any
 	SubjectTemplate() *string
 	SetSubjectTemplate(val *string)
 	SubjectTemplateInput() *string
@@ -52,7 +52,7 @@ type MonitorActionEmailOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type MonitorActionEmailOutputReference interface {
 	ResetIsHtml()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference) BodyTemplateInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActionEmailOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference) InternalValue() *MonitorAc
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference) IsHtml() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActionEmailOutputReference) IsHtml() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHtml",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference) IsHtml() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference) IsHtmlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitorActionEmailOutputReference) IsHtmlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isHtmlInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewMonitorActionEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitorActionEmailOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewMonitorActionEmailOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorAction.MonitorActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewMonitorActionEmailOutputReference_Override(m MonitorActionEmailOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.monitorAction.MonitorActionEmailOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetBodyTemplate(val *string) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetBodyTemplate(val *string) {
 	if err := j.validateSetBodyTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetBodyTemplate(val *string
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetInternalValue(val *MonitorActionEmail) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetInternalValue(val *MonitorActionEmail) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetInternalValue(val *Monit
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetIsHtml(val interface{}) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetIsHtml(val any) {
 	if err := j.validateSetIsHtmlParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetIsHtml(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetSubjectTemplate(val *string) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetSubjectTemplate(val *string) {
 	if err := j.validateSetSubjectTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetSubjectTemplate(val *str
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetTargetAddresses(val *[]*string) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetTargetAddresses(val *[]*string) {
 	if err := j.validateSetTargetAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetTargetAddresses(val *[]*
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_MonitorActionEmailOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_MonitorActionEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorActionEmailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitorActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitorActionEmailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) ResetIsHtml() {
 	)
 }
 
-func (m *jsiiProxy_MonitorActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitorActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (m *jsiiProxy_MonitorActionEmailOutputReference) ToString() *string {
 
 	return returns
 }
-

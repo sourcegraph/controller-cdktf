@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataObserveMonitorRuleThresholdList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorRuleThresholdList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorRuleThresholdList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataObserveMonitorRuleThresholdListParameters(terraformResource 
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutIntervalParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutIntervalParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutInt
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutScheduledParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutScheduledParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutSch
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutTransformParameters(value interface{}) error {
+func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validatePutTransformParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (d *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorV2SchedulingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -315,4 +315,3 @@ func validateNewDataObserveMonitorV2SchedulingOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataObserveMonitorActionWebhookOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataObserveMonitorActionWebhookOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataObserveMonitorActionWebhookOutputReferenceParameters(terrafo
 
 	return nil
 }
-

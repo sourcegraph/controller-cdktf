@@ -12,9 +12,9 @@ type ResourceGrantsGrantOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ResourceGrantsGrantOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Oid() *string
 	Role() *string
 	SetRole(val *string)
@@ -47,7 +47,7 @@ type ResourceGrantsGrantOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ResourceGrantsGrantOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ResourceGrantsGrantOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -203,7 +203,6 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewResourceGrantsGrantOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ResourceGrantsGrantOutputReference {
 	_init_.Initialize()
 
@@ -214,7 +213,7 @@ func NewResourceGrantsGrantOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsGrantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -226,12 +225,12 @@ func NewResourceGrantsGrantOutputReference_Override(r ResourceGrantsGrantOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.resourceGrants.ResourceGrantsGrantOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetRole(val *string) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetSubject(val *string) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetSubject(val *string) {
 	if err := j.validateSetSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetSubject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -297,7 +296,7 @@ func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ResourceGrantsGrantOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResourceGrantsGrantOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,16 +320,16 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -346,7 +345,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -362,7 +361,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -378,7 +377,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,23 +486,23 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ResourceGrantsGrantOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ResourceGrantsGrantOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -522,4 +521,3 @@ func (r *jsiiProxy_ResourceGrantsGrantOutputReference) ToString() *string {
 
 	return returns
 }
-

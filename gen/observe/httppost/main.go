@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-observe.httpPost.HttpPost",
-		reflect.TypeOf((*HttpPost)(nil)).Elem(),
+		reflect.TypeFor[HttpPost](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acked", GoGetter: "Acked"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HttpPost{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,6 +82,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-observe.httpPost.HttpPostConfig",
-		reflect.TypeOf((*HttpPostConfig)(nil)).Elem(),
+		reflect.TypeFor[HttpPostConfig](),
 	)
 }

@@ -6,9 +6,9 @@ import (
 
 type PreferredPathConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PreferredPathConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#description PreferredPath#description}.
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#name PreferredPath#name}.
@@ -28,7 +28,7 @@ type PreferredPathConfig struct {
 	// step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#step PreferredPath#step}
-	Step interface{} `field:"required" json:"step" yaml:"step"`
+	Step any `field:"required" json:"step" yaml:"step"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#folder PreferredPath#folder}.
 	Folder *string `field:"optional" json:"folder" yaml:"folder"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#id PreferredPath#id}.
@@ -39,4 +39,3 @@ type PreferredPathConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/preferred_path#workspace PreferredPath#workspace}.
 	Workspace *string `field:"optional" json:"workspace" yaml:"workspace"`
 }
-

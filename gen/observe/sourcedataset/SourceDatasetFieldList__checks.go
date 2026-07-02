@@ -34,7 +34,7 @@ func (s *jsiiProxy_SourceDatasetFieldList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SourceDatasetFieldList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSourceDatasetFieldListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

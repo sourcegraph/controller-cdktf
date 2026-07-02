@@ -19,7 +19,7 @@ func (r *jsiiProxy_RbacStatement) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (r *jsiiProxy_RbacStatement) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RbacStatement) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RbacStatement) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (r *jsiiProxy_RbacStatement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RbacStatement) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateRbacStatement_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateRbacStatement_IsConstructParameters(x interface{}) error {
+func validateRbacStatement_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateRbacStatement_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRbacStatement_IsTerraformElementParameters(x interface{}) error {
+func validateRbacStatement_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateRbacStatement_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRbacStatement_IsTerraformResourceParameters(x interface{}) error {
+func validateRbacStatement_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateRbacStatement_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatement) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RbacStatement) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_RbacStatement) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatement) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RbacStatement) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_RbacStatement) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatement) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RbacStatement) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewRbacStatementParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

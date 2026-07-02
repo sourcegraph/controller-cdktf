@@ -12,24 +12,24 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset observe_dataset}.
 type Dataset interface {
 	cdktf.TerraformResource
-	AccelerationDisabled() interface{}
-	SetAccelerationDisabled(val interface{})
-	AccelerationDisabledInput() interface{}
+	AccelerationDisabled() any
+	SetAccelerationDisabled(val any)
+	AccelerationDisabledInput() any
 	AccelerationDisabledSource() *string
 	SetAccelerationDisabledSource(val *string)
 	AccelerationDisabledSourceInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataTableViewState() *string
 	SetDataTableViewState(val *string)
 	DataTableViewStateInput() *string
@@ -81,23 +81,23 @@ type Dataset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RematerializationMode() *string
 	SetRematerializationMode(val *string)
 	RematerializationModeInput() *string
 	Stage() DatasetStageList
-	StageInput() interface{}
+	StageInput() any
 	StorageIntegration() *string
 	SetStorageIntegration(val *string)
 	StorageIntegrationInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Workspace() *string
@@ -107,9 +107,9 @@ type Dataset interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type Dataset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,14 +139,14 @@ type Dataset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStage(value interface{})
+	PutStage(value any)
 	ResetAccelerationDisabled()
 	ResetAccelerationDisabledSource()
 	ResetDataTableViewState()
@@ -161,17 +161,17 @@ type Dataset interface {
 	ResetPathCost()
 	ResetRematerializationMode()
 	ResetStorageIntegration()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Dataset
@@ -179,8 +179,8 @@ type jsiiProxy_Dataset struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Dataset) AccelerationDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) AccelerationDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accelerationDisabled",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_Dataset) AccelerationDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) AccelerationDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) AccelerationDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accelerationDisabledInput",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_Dataset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_Dataset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Dataset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_Dataset) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_Dataset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Dataset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -529,8 +529,8 @@ func (j *jsiiProxy_Dataset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_Dataset) Stage() DatasetStageList {
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) StageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dataset) StageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stageInput",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_Dataset) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_Dataset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Dataset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_Dataset) WorkspaceInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/resources/dataset observe_dataset} Resource.
 func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) Dataset {
 	_init_.Initialize()
@@ -661,7 +660,7 @@ func NewDataset(scope constructs.Construct, id *string, config *DatasetConfig) D
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataset.Dataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -674,12 +673,12 @@ func NewDataset_Override(d Dataset, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-observe.dataset.Dataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetAccelerationDisabled(val interface{}) {
+func (j *jsiiProxy_Dataset) SetAccelerationDisabled(val any) {
 	if err := j.validateSetAccelerationDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_Dataset)SetAccelerationDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetAccelerationDisabledSource(val *string) {
+func (j *jsiiProxy_Dataset) SetAccelerationDisabledSource(val *string) {
 	if err := j.validateSetAccelerationDisabledSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_Dataset)SetAccelerationDisabledSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetConnection(val interface{}) {
+func (j *jsiiProxy_Dataset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_Dataset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetCount(val interface{}) {
+func (j *jsiiProxy_Dataset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_Dataset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetDataTableViewState(val *string) {
+func (j *jsiiProxy_Dataset) SetDataTableViewState(val *string) {
 	if err := j.validateSetDataTableViewStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_Dataset)SetDataTableViewState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Dataset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_Dataset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetDescription(val *string) {
+func (j *jsiiProxy_Dataset) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_Dataset)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Dataset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_Dataset)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetFreshness(val *string) {
+func (j *jsiiProxy_Dataset) SetFreshness(val *string) {
 	if err := j.validateSetFreshnessParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_Dataset)SetFreshness(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetIconUrl(val *string) {
+func (j *jsiiProxy_Dataset) SetIconUrl(val *string) {
 	if err := j.validateSetIconUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_Dataset)SetIconUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetId(val *string) {
+func (j *jsiiProxy_Dataset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_Dataset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetInputs(val *map[string]*string) {
+func (j *jsiiProxy_Dataset) SetInputs(val *map[string]*string) {
 	if err := j.validateSetInputsParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_Dataset)SetInputs(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Dataset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_Dataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetName(val *string) {
+func (j *jsiiProxy_Dataset) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_Dataset)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetOnDemandMaterializationLength(val *string) {
+func (j *jsiiProxy_Dataset) SetOnDemandMaterializationLength(val *string) {
 	if err := j.validateSetOnDemandMaterializationLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_Dataset)SetOnDemandMaterializationLength(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetPathCost(val *float64) {
+func (j *jsiiProxy_Dataset) SetPathCost(val *float64) {
 	if err := j.validateSetPathCostParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_Dataset)SetPathCost(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Dataset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -857,7 +856,7 @@ func (j *jsiiProxy_Dataset)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Dataset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_Dataset)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetRematerializationMode(val *string) {
+func (j *jsiiProxy_Dataset) SetRematerializationMode(val *string) {
 	if err := j.validateSetRematerializationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_Dataset)SetRematerializationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetStorageIntegration(val *string) {
+func (j *jsiiProxy_Dataset) SetStorageIntegration(val *string) {
 	if err := j.validateSetStorageIntegrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_Dataset)SetStorageIntegration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dataset)SetWorkspace(val *string) {
+func (j *jsiiProxy_Dataset) SetWorkspace(val *string) {
 	if err := j.validateSetWorkspaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func Dataset_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataset.Dataset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func Dataset_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Dataset_IsConstruct(x interface{}) *bool {
+func Dataset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataset_IsConstructParameters(x); err != nil {
@@ -948,7 +947,7 @@ func Dataset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataset.Dataset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func Dataset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Dataset_IsTerraformElement(x interface{}) *bool {
+func Dataset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataset_IsTerraformElementParameters(x); err != nil {
@@ -967,7 +966,7 @@ func Dataset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataset.Dataset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func Dataset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Dataset_IsTerraformResource(x interface{}) *bool {
+func Dataset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataset_IsTerraformResourceParameters(x); err != nil {
@@ -986,7 +985,7 @@ func Dataset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observe.dataset.Dataset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1011,31 +1010,31 @@ func (d *jsiiProxy_Dataset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_Dataset) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_Dataset) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_Dataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_Dataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (d *jsiiProxy_Dataset) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (d *jsiiProxy_Dataset) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (d *jsiiProxy_Dataset) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (d *jsiiProxy_Dataset) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,7 +1114,7 @@ func (d *jsiiProxy_Dataset) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1131,7 +1130,7 @@ func (d *jsiiProxy_Dataset) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1147,7 +1146,7 @@ func (d *jsiiProxy_Dataset) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1163,15 +1162,15 @@ func (d *jsiiProxy_Dataset) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_Dataset) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dataset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1190,7 +1189,7 @@ func (d *jsiiProxy_Dataset) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (d *jsiiProxy_Dataset) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1217,18 +1216,18 @@ func (d *jsiiProxy_Dataset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_Dataset) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_Dataset) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (d *jsiiProxy_Dataset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1250,18 +1249,18 @@ func (d *jsiiProxy_Dataset) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_Dataset) PutStage(value interface{}) {
+func (d *jsiiProxy_Dataset) PutStage(value any) {
 	if err := d.validatePutStageParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putStage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1361,8 +1360,8 @@ func (d *jsiiProxy_Dataset) ResetStorageIntegration() {
 	)
 }
 
-func (d *jsiiProxy_Dataset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_Dataset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1374,8 +1373,8 @@ func (d *jsiiProxy_Dataset) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Dataset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_Dataset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1387,8 +1386,8 @@ func (d *jsiiProxy_Dataset) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Dataset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dataset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1400,8 +1399,8 @@ func (d *jsiiProxy_Dataset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Dataset) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dataset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1426,8 +1425,8 @@ func (d *jsiiProxy_Dataset) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_Dataset) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dataset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1438,4 +1437,3 @@ func (d *jsiiProxy_Dataset) ToTerraform() interface{} {
 
 	return returns
 }
-

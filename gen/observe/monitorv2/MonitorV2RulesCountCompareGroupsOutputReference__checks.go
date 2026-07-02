@@ -101,7 +101,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validatePutC
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validatePutCompareValuesParameters(value interface{}) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validatePutCompareValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewMonitorV2RulesCountCompareGroupsOutputReferenceParameters(terraf
 
 	return nil
 }
-
